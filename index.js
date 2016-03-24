@@ -16,9 +16,10 @@ function onError(res){
 }
 
 function onSuccess(data){
-    console.log(data);
+    //console.log(data);
     hideLoading();
     SP.init(data);
+    PC.init(data);
     
 }
 

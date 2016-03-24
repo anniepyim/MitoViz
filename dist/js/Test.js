@@ -17,9 +17,10 @@ function onError(res){
 }
 
 function onSuccess(data){
-    console.log(data);
+    //console.log(data);
     hideLoading();
     SP.init(data);
+    PC.init(data);
     
 }
 
@@ -71,8 +72,6 @@ module.exports = parser;
 var d3 = require('d3');
 var colorbrewer = require('colorbrewer');
 var SP = require('./scatterplot.js');
-var parser = require('./parser.js');
-
 
 var PIEmargin = {top: 20, right: 20, bottom: 30, left: 10},
     pieDim = {w:250, h: 250, rpadding:200},
@@ -90,86 +89,74 @@ var PIEsvg = d3.select("body").append("svg")
 var color = d3.scale.ordinal()
     .range(["#8dd3c7","#ffffb3","#bebada","#fb8072","#80b1d3","#fdb462","#b3de69","#fccde5","#d9d9d9","#bc80bd","#ccebc5","#f781bf","#fbb4ae","#b3cde3","#ffed6f","#decbe4","#fed9a6"]);
 
-function piechart(){
+var PC = function(obj) {
+    if (obj instanceof PC) return obj;
+    if (!(this instanceof PC)) return new PC(obj);
+    this.PCwrapped = obj;
+};
 
-   // create function to draw the arcs of the pie slices.
-   var arc = d3.svg.arc().outerRadius(pieDimr - 10).innerRadius(0);
+PC.draw = function(jsondata){
 
-   // create a function to compute the pie slice angles.
-   var pie = d3.layout.pie().sort(null).value(function(d) { return d.count; });
+    // create function to draw the arcs of the pie slices.
+    var arc = d3.svg.arc().outerRadius(pieDimr - 10).innerRadius(0);
 
-    parser.parse(['./data/HCT11683-3.json', './data/HCT11683-4.json'], function(){}, function(csvdata){
-        
-    //console.log(csvdata);    
-        
-    
-   //d3.csv("data/data.csv", function(error, csvdata) {
-      //if (error) throw error;
-      
-      var data = d3.nest()
-            .key(function(d) { return d.func;})
-            .entries(csvdata);
+    // create a function to compute the pie slice angles.
+    var pie = d3.layout.pie().sort(null).value(function(d) { return d.count; });
 
-      data.forEach(function(d) {
-         d.func = d.key;
-         d.count = d.values.length;
-      });
+    var data = d3.nest()
+        .key(function(d) { return d.func;})
+        .entries(jsondata);
 
-      var g = PIEsvg.append("g")
-            .attr("transform", "translate("+pieDim.w/2+","+pieDim.h/2+")")
-            .selectAll(".arc")
-            .data(pie(data))
-            .enter().append("g")
-            .attr("class", "arc");
+    data.forEach(function(d) {
+     d.func = d.key;
+     d.count = d.values.length;
+    });
 
-      g.append("path")
-         .attr("d", arc)
-         .style("fill", function(d) { return color(d.data.func); })
-         .on("mouseover",mouseover);
+    var g = PIEsvg.append("g")
+        .attr("transform", "translate("+pieDim.w/2+","+pieDim.h/2+")")
+        .selectAll(".arc")
+        .data(pie(data))
+        .enter().append("g")
+        .attr("class", "arc");
 
-      var legend = PIEsvg.selectAll(".legend")
-            .data(color.domain())
-            .enter().append("g")
-            .attr("class", "legend")
-            .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+    g.append("path")
+     .attr("d", arc)
+     .style("fill", function(d) { return color(d.data.func); })
+     .on("mouseover",mouseover);
 
-      legend.append("rect")
-         .attr("x", pieDim.w+10)
-         .attr("width", 18)
-         .attr("height", 18)
-         .style("fill", color);
+    var legend = PIEsvg.selectAll(".legend")
+        .data(color.domain())
+        .enter().append("g")
+        .attr("class", "legend")
+        .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
 
-      legend.append("text")
-         .attr("x", pieDim.w+32)
-         .attr("y", 9)
-         .attr("dy", ".35em")
-         .style("text-anchor", "start")
-         .text(function(d) { return d; });
+    legend.append("rect")
+     .attr("x", pieDim.w+10)
+     .attr("width", 18)
+     .attr("height", 18)
+     .style("fill", color);
 
-      function mouseover(d){
-          SP.update(d.data.func, color(d.data.func));
-      }
+    legend.append("text")
+     .attr("x", pieDim.w+32)
+     .attr("y", 9)
+     .attr("dy", ".35em")
+     .style("text-anchor", "start")
+     .text(function(d) { return d; });
 
-   });
+    function mouseover(d){
+      SP.update(jsondata,d.data.func, color(d.data.func));
+    }
 
-}
+};
 
-module.exports = piechart;
-},{"./parser.js":2,"./scatterplot.js":4,"colorbrewer":23,"d3":24}],4:[function(require,module,exports){
+PC.init = function(jsondata){
+    PC.draw(jsondata);
+};
+
+module.exports = PC;
+},{"./scatterplot.js":4,"colorbrewer":23,"d3":24}],4:[function(require,module,exports){
 var d3 = require('d3');
 var colorbrewer = require('colorbrewer');
-
-var parser = require('./parser.js');
-
-var jsondata = [];
-
-parser.parse(['./data/HCT11683-3.json', './data/HCT11683-4.json'], function(){}, function(data){
-    jsondata.push(data);
-    //console.log(jsondata);
-});
-
-
-//console.log(jsondata);
 
 var SPmargin = {top: 20, right: 20, bottom: 30, left: 40},
    SPwidth = 900 - SPmargin.left - SPmargin.right,
@@ -220,90 +207,239 @@ var SP = function(obj) {
     this.SPwrapped = obj;
 };
 
-SP.init = function(jsondata){
-  
-   //d3.csv("data/data.csv", function(error, jsondata) {
-      //if (error) throw error;
+SP.draw = function(jsondata){
 
-      var data = [];
+    var data = [];
 
-      jsondata.forEach(function(d) {
-         if(d.func== "Apoptosis" && !isNaN(parseFloat(d.value)) && isFinite(d.value)) data.push(d);
-      });
+    jsondata.forEach(function(d) {
+     if(d.func== "Apoptosis" && !isNaN(parseFloat(d.value)) && isFinite(d.value)) data.push(d);
+    });
 
-      data.forEach(function(d) {
-         d.value= +d.value;
-      });
+    data.forEach(function(d) {
+     d.value= +d.value;
+    });
 
-      x.domain(data.map(function(d) {return d.sample;}));
+    x.domain(data.map(function(d) {return d.sample;}));
 
-      var ymin = Math.abs(d3.min(data, function(d) { return d.value; }));
-      var ymax = Math.abs(d3.max(data, function(d) { return d.value; }));
-      var yabs = Math.max(ymin,ymax);
-      y.domain([yabs*-1, yabs]);
-      //y.domain([-5,5])
+    var ymin = Math.abs(d3.min(data, function(d) { return d.value; }));
+    var ymax = Math.abs(d3.max(data, function(d) { return d.value; }));
+    var yabs = Math.max(ymin,ymax);
+    y.domain([yabs*-1, yabs]);
+    //y.domain([-5,5])
 
-      color2.domain([yabs*-1, yabs]);
+    color2.domain([yabs*-1, yabs]);
 
-      SPsvg.append("g")
-         .attr("class", "x axis")
-         .attr("transform", "translate(0," + SPheight/2 + ")")
-         .call(xAxis)
-         .append("text")
-         .attr("class", "label")
-         .attr("x", SPwidth)
-         .attr("y", -6)
-         .style("text-anchor", "end")
-         .text("Sample");
+    SPsvg.append("g")
+     .attr("class", "x axis")
+     .attr("transform", "translate(0," + SPheight/2 + ")")
+     .call(xAxis)
+     .append("text")
+     .attr("class", "label")
+     .attr("x", SPwidth)
+     .attr("y", -6)
+     .style("text-anchor", "end")
+     .text("Sample");
 
-      SPsvg.append("g")
-         .attr("class", "y axis")
-         .call(yAxis)
-         .append("text")
-         .attr("class", "label")
-         .attr("transform", "rotate(-90)")
-         .attr("y", 6)
-         .attr("dy", ".71em")
-         .style("text-anchor", "end")
-         .text("Log2 Fold change");
+    SPsvg.append("g")
+     .attr("class", "y axis")
+     .call(yAxis)
+     .append("text")
+     .attr("class", "label")
+     .attr("transform", "rotate(-90)")
+     .attr("y", 6)
+     .attr("dy", ".71em")
+     .style("text-anchor", "end")
+     .text("Log2 Fold change");
 
-      SPsvg.append("rect")
-         .attr("class","SPrect")
-         .attr("x", SPwidth-180)
-         .attr("width", 18)
-         .attr("height", 18)
-         .style("fill", "#8dd3c7");
+    SPsvg.append("rect")
+     .attr("class","SPrect")
+     .attr("x", SPwidth-180)
+     .attr("width", 18)
+     .attr("height", 18)
+     .style("fill", "#8dd3c7");
 
-      SPsvg.append("text")
-         .attr("class","SPtitle")
-         .text("Apoptosis")
-         .attr("transform", "translate("+(SPwidth-155)+",13)");
+    SPsvg.append("text")
+     .attr("class","SPtitle")
+     .text("Apoptosis")
+     .attr("transform", "translate("+(SPwidth-155)+",13)");
 
 
-      var nodedata = data.map(function(d) {
-         return {
-            x: x(d.sample),
-            y: y(d.value),
-            r: 3.5,
-            value: d.value,
-            sample: d.sample,
-            func: d.func,
-            gene: d.gene,
-            mutation: d.mutation};
-      });
+    var nodedata = data.map(function(d) {
+     return {
+        x: x(d.sample),
+        y: y(d.value),
+        r: 3.5,
+        value: d.value,
+        sample: d.sample,
+        func: d.func,
+        gene: d.gene,
+        mutation: d.mutation};
+    });
 
-      var nodes = SPsvg.selectAll("circle.node")
-         .data(nodedata);
+    var nodes = SPsvg.selectAll("circle.node")
+     .data(nodedata);
 
-      nodes.enter().append("circle")
-         .attr("class", "node")
-         .attr("r", function(d) { return d.mutation !== "NULL" ? highlightradius : d.r; })
-         .attr("cx", function(d) { return d.x; })
-         .attr("cy", function(d) { return d.y; })
-         .style("fill", function(d){return d.mutation !== "NULL" ? mutatedcolor : color2(d.value);})
-         .style("stroke", "black")
-         .style("stroke-width", 0.5)
-         .on("mouseover", function(d) {
+    nodes.enter().append("circle")
+     .attr("class", "node")
+     .attr("r", function(d) { return d.mutation !== "NULL" ? highlightradius : d.r; })
+     .attr("cx", function(d) { return d.x; })
+     .attr("cy", function(d) { return d.y; })
+     .style("fill", function(d){return d.mutation !== "NULL" ? mutatedcolor : color2(d.value);})
+     .style("stroke", "black")
+     .style("stroke-width", 0.5)
+     .on("mouseover", function(d) {
+        var muts = d.mutation.split("|");
+        var muttext = "<br>";
+        for (i = 0; i < muts.length; i++) { 
+            muttext += muts[i] + "<br>";
+        }
+        tooltipheight = (53+muts.length*13).toString()+"px";
+        div.transition()        
+              .duration(200)      
+              .style("opacity", 0.9)
+              .style("height", tooltipheight);
+        div.html("Gene: " + d.gene + "<br>" +
+                 "Function: " + d.func + "<br>"+
+                 "Log2 Fold Change: " + d.value + "<br>" +
+                 "Mutation: " + muttext)  
+              .style("left", (d3.event.pageX+5) + "px")     
+              .style("top", (d3.event.pageY - 10) + "px");
+        //BC1.update(d.sample);
+        //BC2.update(d.sample);
+        SP.update2(d.gene, d.sample);
+     })                  
+     .on("mouseout", function(d) {       
+         div.transition()        
+             .duration(500)      
+             .style("opacity", 0);   
+        //BC1.update("NULL");
+        //BC2.update("NULL");
+        SP.update2("NULL");
+     });
+
+    var norm = d3.random.normal(0, 1.5);
+    var iterations = 0;
+    
+    function collide(node) {
+      var r = node.r + 16,
+          nx1 = node.x - r,
+          nx2 = node.x + r,
+          ny1 = node.y - r,
+          ny2 = node.y + r;
+      return function(quad, x1, y1, x2, y2) {
+        if (quad.point && (quad.point !== node)) {
+          var x = node.x - quad.point.x,
+              y = node.y - quad.point.y,
+              l = Math.sqrt(x * x + y * y),
+              r = node.r + quad.point.r;
+          if (l < r)
+            node.x += norm();
+        }
+        return x1 > nx2 || x2 < nx1 || y1 > ny2 || y2 < ny1;
+      };
+    }
+    
+    while(iterations++ < 100) {
+        var q = d3.geom.quadtree(nodedata);
+
+        for(var i = 0; i < nodedata.length; i++)
+            q.visit(collide(nodedata[i]));
+    }
+
+    nodes.transition()
+      .attr("cx", function(d) { return d.x; });
+
+};
+
+SP.update = function(jsondata,nfunc, ncolor){
+     
+    var newdata=[];
+
+    jsondata.forEach(function(d) {
+        if(d.func==nfunc && !isNaN(parseFloat(d.value)) && isFinite(d.value)) {newdata.push(d);}
+    });
+
+    newdata.forEach(function(d) {
+    d.value = +d.value;
+    });
+
+    //Update scale domains
+    var ymin = Math.abs(d3.min(newdata, function(d) { return d.value; }));
+    var ymax = Math.abs(d3.max(newdata, function(d) { return d.value; }));
+    var yabs = Math.max(ymin,ymax);
+    y.domain([yabs*-1, yabs]);
+
+    SPsvg.select(".y.axis")
+        .transition()
+        .duration(1000)
+        .call(yAxis);
+
+    color2.domain([yabs*-1, yabs]);
+
+    SPsvg.selectAll("text.SPtitle").text(nfunc);
+    SPsvg.selectAll("rect.SPrect").style("fill",ncolor);
+
+    var newnodedata = newdata.map(function(d) {
+    return {
+       x: x(d.sample),
+       y: y(d.value),
+       r: 3.5,
+       value: d.value,
+       sample: d.sample,
+       func: d.func,
+       gene: d.gene,
+       mutation: d.mutation};
+    });
+
+    var newnodes = SPsvg.selectAll("circle.node")
+        .data(newnodedata);
+    
+    var norm = d3.random.normal(0, 1.5);
+    var iterations = 0;
+    function collide(node) {
+        var r = node.r + 16,
+        nx1 = node.x - r,
+        nx2 = node.x + r,
+        ny1 = node.y - r,
+        ny2 = node.y + r;
+        return function(quad, x1, y1, x2, y2) {
+            if (quad.point && (quad.point !== node)) {
+                var x = node.x - quad.point.x,
+                y = node.y - quad.point.y,
+                l = Math.sqrt(x * x + y * y),
+                r = node.r + quad.point.r;
+            if (l < r)
+                node.x += norm();
+        }
+        return x1 > nx2 || x2 < nx1 || y1 > ny2 || y2 < ny1;
+        };
+    }
+
+    while(iterations++ < 100) {
+    var q = d3.geom.quadtree(newnodedata);
+
+    for(var i = 0; i < newnodedata.length; i++)
+       q.visit(collide(newnodedata[i]));
+    }
+    
+    //Update all circles
+    newnodes.transition()
+        .duration(1000)
+        .attr("r", function(d){return d.mutation !== "NULL" ? highlightradius : d.r; })
+        .attr("cx", function(d) { return d.x; })
+        .attr("cy", function(d) { return d.y; })
+        .style("fill", function(d) {return d.mutation !== "NULL" ? mutatedcolor : color2(d.value);});
+
+    //Enter new circles
+    newnodes.enter().append("circle")
+        .attr("class", "node")
+        .attr("r", function(d){return d.mutation !== "NULL" ? highlightradius : d.r; })
+        .attr("cx", function(d) { return d.x; })
+        .attr("cy", function(d) { return d.y; })
+        .style("fill", function(d) {return d.mutation !== "NULL" ? mutatedcolor : color2(d.value);})
+        .style("stroke", "black")
+        .style("stroke-width", 0.5)
+        .on("mouseover", function(d) {      
             var muts = d.mutation.split("|");
             var muttext = "<br>";
             for (i = 0; i < muts.length; i++) { 
@@ -311,189 +447,34 @@ SP.init = function(jsondata){
             }
             tooltipheight = (53+muts.length*13).toString()+"px";
             div.transition()        
-                  .duration(200)      
-                  .style("opacity", 0.9)
-                  .style("height", tooltipheight);
+                .duration(200)      
+                .style("opacity", 0.9)
+                .style("height", tooltipheight);
             div.html("Gene: " + d.gene + "<br>" +
-                     "Function: " + d.func + "<br>"+
-                     "Log2 Fold Change: " + d.value + "<br>" +
-                     "Mutation: " + muttext)  
-                  .style("left", (d3.event.pageX+5) + "px")     
-                  .style("top", (d3.event.pageY - 10) + "px");
-            //BC1.update(d.sample);
-            //BC2.update(d.sample);
+             "Function: " + d.func + "<br>"+
+             "Log2 Fold Change: " + d.value + "<br>" +
+             "Mutation: " + muttext)  
+                .style("left", (d3.event.pageX+5) + "px")     
+                .style("top", (d3.event.pageY - 10) + "px");
+                //BC1.update(d.sample);
+                //BC2.update(d.sample);
             SP.update2(d.gene, d.sample);
-         })                  
-         .on("mouseout", function(d) {       
-             div.transition()        
-                 .duration(500)      
-                 .style("opacity", 0);   
-            //BC1.update("NULL");
-            //BC2.update("NULL");
+        })                  
+        .on("mouseout", function(d) {       
+            div.transition()        
+                .duration(500)      
+                .style("opacity", 0);   
+                //BC1.update("NULL");
+                //BC2.update("NULL");
             SP.update2("NULL");
-         });
-       
-       var norm = d3.random.normal(0, 1.5);
-       var iterations = 0;
-       function collide(node) {
-          var r = node.r + 16,
-              nx1 = node.x - r,
-              nx2 = node.x + r,
-              ny1 = node.y - r,
-              ny2 = node.y + r;
-          return function(quad, x1, y1, x2, y2) {
-            if (quad.point && (quad.point !== node)) {
-              var x = node.x - quad.point.x,
-                  y = node.y - quad.point.y,
-                  l = Math.sqrt(x * x + y * y),
-                  r = node.r + quad.point.r;
-              if (l < r)
-                node.x += norm();
-            }
-            return x1 > nx2 || x2 < nx1 || y1 > ny2 || y2 < ny1;
-          };
-        }
+        });
 
-         while(iterations++ < 100) {
-            var q = d3.geom.quadtree(nodedata);
-          
-            for(var i = 0; i < nodedata.length; i++)
-               q.visit(collide(nodedata[i]));
-        }
+    // Remove old
+    newnodes.exit()
+        .transition(1000)
+        .attr("r", 0)
+        .remove();    
 
-        nodes.transition()
-          .attr("cx", function(d) { return d.x; });
-   //});
-};
-
-SP.update = function(nfunc, ncolor){
-
-    d3.csv("data/data.csv", function(error, jsondata) {
-        if (error) throw error;
-         
-        var newdata=[];
-
-         jsondata.forEach(function(d) {
-            if(d.func==nfunc && !isNaN(parseFloat(d.value)) && isFinite(d.value)) {newdata.push(d);}
-         });
-
-         newdata.forEach(function(d) {
-            d.value = +d.value;
-         });
-
-         //Update scale domains
-         var ymin = Math.abs(d3.min(newdata, function(d) { return d.value; }));
-         var ymax = Math.abs(d3.max(newdata, function(d) { return d.value; }));
-         var yabs = Math.max(ymin,ymax);
-         y.domain([yabs*-1, yabs]);
-
-         color2.domain([yabs*-1, yabs]);
-
-         SPsvg.selectAll("text.SPtitle").text(nfunc);
-         SPsvg.selectAll("rect.SPrect").style("fill",ncolor);
-
-         var newnodedata = newdata.map(function(d) {
-            return {
-               x: x(d.sample),
-               y: y(d.value),
-               r: 3.5,
-               value: d.value,
-               sample: d.sample,
-               func: d.func,
-               gene: d.gene,
-               mutation: d.mutation};
-         });
-
-         var newnodes = SPsvg.selectAll("circle.node")
-            .data(newnodedata);
-        
-        var norm = d3.random.normal(0, 1.5);
-        var iterations = 0;
-        function collide(node) {
-          var r = node.r + 16,
-              nx1 = node.x - r,
-              nx2 = node.x + r,
-              ny1 = node.y - r,
-              ny2 = node.y + r;
-          return function(quad, x1, y1, x2, y2) {
-            if (quad.point && (quad.point !== node)) {
-              var x = node.x - quad.point.x,
-                  y = node.y - quad.point.y,
-                  l = Math.sqrt(x * x + y * y),
-                  r = node.r + quad.point.r;
-              if (l < r)
-                node.x += norm();
-            }
-            return x1 > nx2 || x2 < nx1 || y1 > ny2 || y2 < ny1;
-          };
-        }
-
-         while(iterations++ < 100) {
-            var q = d3.geom.quadtree(newnodedata);
-
-            for(var i = 0; i < newnodedata.length; i++)
-               q.visit(collide(newnodedata[i]));
-        }
-
-         //Update all circles
-         newnodes.transition()
-            .duration(1000)
-            .attr("r", function(d){return d.mutation !== "NULL" ? highlightradius : d.r; })
-            .attr("cx", function(d) { return d.x; })
-            .attr("cy", function(d) { return d.y; })
-            .style("fill", function(d) {return d.mutation !== "NULL" ? mutatedcolor : color2(d.value);});
-
-         //Enter new circles
-         newnodes.enter().append("circle")
-            .attr("class", "node")
-            .attr("r", function(d){return d.mutation !== "NULL" ? highlightradius : d.r; })
-            .attr("cx", function(d) { return d.x; })
-            .attr("cy", function(d) { return d.y; })
-            .style("fill", function(d) {return d.mutation !== "NULL" ? mutatedcolor : color2(d.value);})
-            .style("stroke", "black")
-            .style("stroke-width", 0.5)
-            .on("mouseover", function(d) {      
-                var muts = d.mutation.split("|");
-                var muttext = "<br>";
-                for (i = 0; i < muts.length; i++) { 
-                    muttext += muts[i] + "<br>";
-                }
-                tooltipheight = (53+muts.length*13).toString()+"px";
-                div.transition()        
-                  .duration(200)      
-                  .style("opacity", 0.9)
-                  .style("height", tooltipheight);
-                div.html("Gene: " + d.gene + "<br>" +
-                     "Function: " + d.func + "<br>"+
-                     "Log2 Fold Change: " + d.value + "<br>" +
-                     "Mutation: " + muttext)  
-                  .style("left", (d3.event.pageX+5) + "px")     
-                  .style("top", (d3.event.pageY - 10) + "px");
-               //BC1.update(d.sample);
-               //BC2.update(d.sample);
-               SP.update2(d.gene, d.sample);
-            })                  
-            .on("mouseout", function(d) {       
-                div.transition()        
-                    .duration(500)      
-                    .style("opacity", 0);   
-               //BC1.update("NULL");
-               //BC2.update("NULL");
-               SP.update2("NULL");
-            });
-
-         // Remove old
-         newnodes.exit()
-            .transition(1000)
-            .attr("r", 0)
-            .remove();
-
-         SPsvg.select(".y.axis")
-            .transition()
-            .duration(1000)
-            .call(yAxis);
-
-    });
 };
 
 SP.update2 = function(ingene, insample){
@@ -547,7 +528,11 @@ SP.update2 = function(ingene, insample){
             .style("opacity", 0);  
     }*/
 
-    };
+};
+
+SP.init = function(jsondata){
+    SP.draw(jsondata);   
+};
 
 
 if (typeof define === "function" && define.amd) {
@@ -557,7 +542,7 @@ if (typeof define === "function" && define.amd) {
 } else {
     this.SP = SP;
 }
-},{"./parser.js":2,"colorbrewer":23,"d3":24}],5:[function(require,module,exports){
+},{"colorbrewer":23,"d3":24}],5:[function(require,module,exports){
 module.exports = require('./lib/axios');
 },{"./lib/axios":7}],6:[function(require,module,exports){
 'use strict';
