@@ -1,6 +1,18 @@
 var d3 = require('d3');
 var colorbrewer = require('colorbrewer');
 
+var parser = require('./parser.js');
+
+var jsondata = [];
+
+parser.parse(['./data/HCT11683-3.json', './data/HCT11683-4.json'], function(){}, function(data){
+    jsondata.push(data);
+    //console.log(jsondata);
+});
+
+
+//console.log(jsondata);
+
 var SPmargin = {top: 20, right: 20, bottom: 30, left: 40},
    SPwidth = 900 - SPmargin.left - SPmargin.right,
    SPheight = 400 - SPmargin.top - SPmargin.bottom;
@@ -50,14 +62,14 @@ var SP = function(obj) {
     this.SPwrapped = obj;
 };
 
-SP.init = function(){
+SP.init = function(jsondata){
   
-   d3.csv("data/data.csv", function(error, csvdata) {
-      if (error) throw error;
+   //d3.csv("data/data.csv", function(error, jsondata) {
+      //if (error) throw error;
 
       var data = [];
 
-      csvdata.forEach(function(d) {
+      jsondata.forEach(function(d) {
          if(d.func== "Apoptosis" && !isNaN(parseFloat(d.value)) && isFinite(d.value)) data.push(d);
       });
 
@@ -193,17 +205,17 @@ SP.init = function(){
 
         nodes.transition()
           .attr("cx", function(d) { return d.x; });
-   });
+   //});
 };
 
 SP.update = function(nfunc, ncolor){
 
-    d3.csv("data/data.csv", function(error, csvdata) {
+    d3.csv("data/data.csv", function(error, jsondata) {
         if (error) throw error;
          
         var newdata=[];
 
-         csvdata.forEach(function(d) {
+         jsondata.forEach(function(d) {
             if(d.func==nfunc && !isNaN(parseFloat(d.value)) && isFinite(d.value)) {newdata.push(d);}
          });
 

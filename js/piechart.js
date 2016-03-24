@@ -1,6 +1,8 @@
 var d3 = require('d3');
 var colorbrewer = require('colorbrewer');
 var SP = require('./scatterplot.js');
+var parser = require('./parser.js');
+
 
 var PIEmargin = {top: 20, right: 20, bottom: 30, left: 10},
     pieDim = {w:250, h: 250, rpadding:200},
@@ -26,8 +28,13 @@ function piechart(){
    // create a function to compute the pie slice angles.
    var pie = d3.layout.pie().sort(null).value(function(d) { return d.count; });
 
-   d3.csv("data/data.csv", function(error, csvdata) {
-      if (error) throw error;
+    parser.parse(['./data/HCT11683-3.json', './data/HCT11683-4.json'], function(){}, function(csvdata){
+        
+    //console.log(csvdata);    
+        
+    
+   //d3.csv("data/data.csv", function(error, csvdata) {
+      //if (error) throw error;
       
       var data = d3.nest()
             .key(function(d) { return d.func;})
