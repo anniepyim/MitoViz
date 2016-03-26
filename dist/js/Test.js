@@ -78,6 +78,8 @@ var PIEmargin = {top: 20, right: 20, bottom: 30, left: 10},
     pieDimr = Math.min(pieDim.w, pieDim.h)/2;
         
 // create svg for pie chart.
+//d3.select("#imsp").remove();
+
 var PIEsvg = d3.select("#piechart").append("svg")
       .attr("width", pieDim.w+pieDim.rpadding)
       .attr("height", 400)
@@ -106,11 +108,17 @@ PC.draw = function(jsondata){
     var data = d3.nest()
         .key(function(d) { return d.func;})
         .entries(jsondata);
-
+    
+    var id = 0;
+    
     data.forEach(function(d) {
-     d.func = d.key;
-     d.count = d.values.length;
+        d.func = d.key;
+        d.count = d.values.length;
+        d.id = id;
+        id += 1;
     });
+    
+    console.log(data);
 
     var g = PIEsvg.append("g")
         .attr("transform", "translate("+pieDim.w/2+","+pieDim.h/2+")")
@@ -163,6 +171,7 @@ var SPmargin = {top: 20, right: 20, bottom: 30, left: 40},
    SPheight = 400 - SPmargin.top - SPmargin.bottom;
 
 var SPsvg = d3.select("#scatterplot").append("svg")
+    .attr("id","imsp")
       .attr("width", SPwidth + SPmargin.left + SPmargin.right)
       .attr("height", SPheight + SPmargin.top + SPmargin.bottom)
       .append("g")

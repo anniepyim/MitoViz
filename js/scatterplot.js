@@ -6,6 +6,7 @@ var SPmargin = {top: 20, right: 20, bottom: 30, left: 40},
    SPheight = 400 - SPmargin.top - SPmargin.bottom;
 
 var SPsvg = d3.select("#scatterplot").append("svg")
+    .attr("id","imsp")
       .attr("width", SPwidth + SPmargin.left + SPmargin.right)
       .attr("height", SPheight + SPmargin.top + SPmargin.bottom)
       .append("g")
