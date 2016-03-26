@@ -7,7 +7,7 @@ var PIEmargin = {top: 20, right: 20, bottom: 30, left: 10},
     pieDimr = Math.min(pieDim.w, pieDim.h)/2;
         
 // create svg for pie chart.
-var PIEsvg = d3.select("body").append("svg")
+var PIEsvg = d3.select("#piechart").append("svg")
       .attr("width", pieDim.w+pieDim.rpadding)
       .attr("height", 400)
       .append("g")

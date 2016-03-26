@@ -78,7 +78,7 @@ var PIEmargin = {top: 20, right: 20, bottom: 30, left: 10},
     pieDimr = Math.min(pieDim.w, pieDim.h)/2;
         
 // create svg for pie chart.
-var PIEsvg = d3.select("body").append("svg")
+var PIEsvg = d3.select("#piechart").append("svg")
       .attr("width", pieDim.w+pieDim.rpadding)
       .attr("height", 400)
       .append("g")
@@ -162,7 +162,7 @@ var SPmargin = {top: 20, right: 20, bottom: 30, left: 40},
    SPwidth = 900 - SPmargin.left - SPmargin.right,
    SPheight = 400 - SPmargin.top - SPmargin.bottom;
 
-var SPsvg = d3.select("body").append("svg")
+var SPsvg = d3.select("#scatterplot").append("svg")
       .attr("width", SPwidth + SPmargin.left + SPmargin.right)
       .attr("height", SPheight + SPmargin.top + SPmargin.bottom)
       .append("g")
@@ -182,11 +182,11 @@ var yAxis = d3.svg.axis()
      .scale(y)
      .orient("left");
 
-var div = d3.select("body").append("div")   
+var div = d3.select("#scatterplot").append("div")   
      .attr("class", "tooltip")
      .style("opacity", 0);
 
-/*var div2 = d3.select("body").append("div")   
+/*var div2 = d3.select("scatterplot").append("div")   
      .attr("class", "tooltip")
      .style("opacity", 0);*/
 
@@ -423,7 +423,6 @@ SP.init = function(jsondata){
     SP.drawaxis();
     SP.update(jsondata,"Apoptosis","#fb8072");
 };
-
 
 if (typeof define === "function" && define.amd) {
     define(SP);
