@@ -9,19 +9,6 @@ body {
   shape-rendering: crispEdges;
 }
 
-div2.tooltip {   
-  position: absolute;           
-  text-align: left;           
-  width: 300px;                  
-  height: 55px;                 
-  padding: 6px;             
-  font: 12px sans-serif;        
-  background: lightsteelblue;   
-  border: 2px;      
-  border-radius: 6px;           
-  pointer-events: none;         
-}
-
 div.tooltip {   
   position: absolute;           
   text-align: left;           
@@ -34,8 +21,20 @@ div.tooltip {
   border-radius: 6px;           
   pointer-events: none;         
 }
-    
 
+div.heatmaptooltip {   
+  position: absolute;           
+  text-align: left;           
+  width: 300px;                  
+  height: 55px;                 
+  padding: 6px;             
+  font: 12px sans-serif;        
+  background: lightsteelblue;   
+  border: 2px;      
+  border-radius: 6px;           
+  pointer-events: none;         
+}
+    
 .title {
    font: 12px verdana;  
 }
@@ -47,6 +46,15 @@ div.tooltip {
 .legend {
    font: 12px verdana;  
 }
+
+.cell{
+    stroke: #E6E6E6;
+    stroke-width:2px;   
+  }
+
+text.text-hover {
+        fill: red;
+      }
 
 #scatterplot {
     display: inline-block;

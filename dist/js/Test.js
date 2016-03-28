@@ -6,6 +6,7 @@ var d3 = require('d3');
 //Modules
 var SP = require('./js/scatterplot.js');
 var PC = require('./js/piechart.js');
+var heatmap = require('./js/heatmap.js');
 var parser = require('./js/parser.js');
 
 function hideLoading(){ 
@@ -21,7 +22,7 @@ function onSuccess(data){
     hideLoading();
     SP.init(data);
     PC.init(data);
-    
+    heatmap.init(data);
 }
 
 parser.parse(['./data/HCT11683-3.json', './data/HCT11683-4.json'], onError, onSuccess);
@@ -31,7 +32,257 @@ parser.parse(['./data/HCT11683-3.json', './data/HCT11683-4.json'], onError, onSu
 //SP.init();
 //PC();
 
-},{"./js/parser.js":2,"./js/piechart.js":3,"./js/scatterplot.js":4,"d3":24}],2:[function(require,module,exports){
+},{"./js/heatmap.js":2,"./js/parser.js":3,"./js/piechart.js":4,"./js/scatterplot.js":5,"d3":25}],2:[function(require,module,exports){
+var d3 = require('d3');
+var colorbrewer = require('colorbrewer');
+
+var div = d3.select("#heatmap").append("div")   
+     .attr("class", "heatmaptooltip")
+     .style("opacity", 0);
+
+var heatmap = function(obj) {
+    if (obj instanceof heatmap) return obj;
+    if (!(this instanceof heatmap)) return new heatmap(obj);
+    this.heatmapwrapped = obj;
+};
+
+heatmap.processData = function(jsondata,nfunc){
+    
+    var newdata = [];
+    
+    jsondata.forEach(function(d) {
+        if(d.func==nfunc && !isNaN(parseFloat(d.value)) && isFinite(d.value)) {newdata.push(d);}
+    });
+    
+    //create map for gene and sample data
+    var genedata = d3.nest()
+        .key(function(d) { return d.gene;})
+        .entries(newdata);
+
+    var sampledata = d3.nest()
+        .key(function(d) { return d.sample;})
+        .entries(newdata);
+
+    var id = 1;
+    var genemap = {};
+    var genelist = [];
+    genedata.forEach(function(d){
+        genemap[d.key] = id;
+        genelist.push(d.key);
+        id += 1;
+    });
+
+    id = 1;
+    var samplemap = {};
+    var samplelist = [];
+    sampledata.forEach(function(d){
+        samplemap[d.key] = id;
+        samplelist.push(d.key);
+        id += 1;
+    });
+
+    outdata = [];
+
+    newdata.forEach(function(d) {
+        outdata.push({
+            sample : samplemap[d.sample],
+            gene : genemap[d.gene],
+            value: d.value,
+            samplename : d.sample,
+            genename : d.gene,
+            func : d.func,
+            mutation : d.mutation
+        });
+    });
+    
+    heatmap.draw(outdata,samplelist,genelist);
+};
+
+heatmap.draw = function(jsondata,samplelist,genelist){
+    
+    console.log(jsondata);
+    
+    jsondata.forEach(function(d) {
+            d.sample = +d.sample;
+            d.gene = +d.gene;
+            d.value = +d.value;
+        });
+          
+    var margin = { top: 60, right: 0, bottom: 100, left: 100 },
+        width = 1400 - margin.left - margin.right,
+        height = 430 - margin.top - margin.bottom,
+        gridheight = height / samplelist.length,
+        gridwidth = width / genelist.length,
+        legendElementWidth = width/9,
+          colors = colorbrewer.RdYlGn[9];
+          //datasets = ["data.tsv", "data2.tsv"];
+
+      var svg = d3.select("#heatmap").append("svg")
+            .attr("id","heatmapsvg")
+          .attr("width", width + margin.left + margin.right)
+          .attr("height", height + margin.top + margin.bottom)
+          .append("g")
+          .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    
+                var ymin = Math.abs(d3.min(jsondata, function(d) { return d.value; }));
+            var ymax = Math.abs(d3.max(jsondata, function(d) { return d.value; }));
+            var yabs = Math.max(ymin,ymax);
+    
+          var colorScale = d3.scale.quantile()
+              .domain([yabs*-1, 0,yabs])
+              .range(colors);
+    
+    var rowSortOrder=false;
+  var colSortOrder=false;
+    var row_number = samplelist.length;
+    var col_number = genelist.length;
+      var rowLabels = svg.append("g").selectAll(".rowLabel")
+          .data(samplelist)
+          .enter().append("text")
+            .text(function (d) { return d; })
+            .attr("x", 0)
+            .attr("y", function (d, i) { return i * gridheight; })
+            .style("text-anchor", "end")
+            .attr("transform", "translate(-6," + gridheight / 1.5 + ")")
+            .attr("class", function (d,i) { return "rowLabel r"+i;} ) 
+      .on("mouseover", function(d) {d3.select(this).classed("text-hover",true);})
+      .on("mouseout" , function(d) {d3.select(this).classed("text-hover",false);})
+      .on("click", function(d,i) {rowSortOrder=!rowSortOrder; sortbylabel("r",i,rowSortOrder);//d3.select("#order").property("selectedIndex", 4).node().focus();
+                                 });
+
+      var colLabels = svg.append("g").selectAll(".colLabel")
+          .data(genelist)
+          .enter().append("text")
+            .text(function(d) { return d; })
+            .attr("x", 0)
+            .attr("y", function(d, i) { return i * gridwidth; })
+            .style("text-anchor", "left")
+            .attr("transform", "translate(" + gridwidth / 2 + ", -6 ) rotate (-90)")
+            .attr("class",  function (d,i) { return "colLabel c"+i;} )
+      .on("mouseover", function(d) {d3.select(this).classed("text-hover",true);})
+      .on("mouseout" , function(d) {d3.select(this).classed("text-hover",false);})
+      .on("click", function(d,i) {colSortOrder=!colSortOrder;  sortbylabel("c",i,colSortOrder);//d3.select("#order").property("selectedIndex", 4).node().focus();
+                                 });
+    
+          var cells = svg.append("g").selectAll(".cell")
+              .data(jsondata, function(d) {return d.sample+':'+d.gene;});
+
+          //cells.append("title");
+
+          cells.enter().append("rect")
+              .attr("x", function(d) { return (d.gene - 1) * gridwidth; })
+              .attr("y", function(d) { return (d.sample - 1) * gridheight; })
+              .attr("rx", 4)
+              .attr("ry", 4)
+              .attr("class", function(d){return "cell cr"+(d.sample-1)+" cc"+(d.gene-1);})
+              .attr("width", gridwidth)
+              .attr("height", gridheight)
+              .style("fill", colors[4])
+                .on("mouseover", function(d) {heatmap.mouseoverfunc(d, d.genename);})                  
+                .on("mouseout", function(d) {heatmap.mouseoverfunc(d,"NULL");});
+
+          cells.transition().duration(1000)
+              .style("fill", function(d) { return colorScale(d.value); });
+
+          cells.select("title").text(function(d) { return d.value; });
+          
+          cells.exit().remove();
+
+          var legend = svg.append("g").selectAll(".legend")
+                .data([Math.round(yabs*10)/10*-1,0,0,0,0,0,0,0,Math.round(yabs*10)/10]);
+
+          legend.enter().append("g")
+              .attr("class", "legend");
+
+          legend.append("rect")
+            .attr("x", function(d, i) { return legendElementWidth * i; })
+            .attr("y", height + 15)
+            .attr("width", legendElementWidth)
+            .attr("height", 20)
+            .style("fill", function(d, i) { return colors[i]; });
+
+          legend.append("text")
+            .attr("class", "mono")
+            .text(function(d, i) {return (i === 0 || i === 4 || i === 8)? d : "";})
+            .attr("x", function(d, i) { return legendElementWidth * i + legendElementWidth/2; })
+            .attr("y", height + 50);
+
+          legend.exit().remove();
+    
+    function sortbylabel(rORc,i,sortOrder){
+          
+          console.log("called");
+       var t = svg.transition().duration(3000);
+       var log2r=[];
+       var sorted; // sorted is zero-based index
+       d3.selectAll(".c"+rORc+i) 
+         .filter(function(ce){
+            log2r.push(ce.value);
+          })
+       ;
+          console.log(log2r);
+       if(rORc=="r"){ // sort log2ratio of a gene
+         sorted=d3.range(col_number).sort(function(a,b){ if(sortOrder){ return log2r[b]-log2r[a];}else{ return log2r[a]-log2r[b];}});
+         t.selectAll(".cell")
+           .attr("x", function(d) { return sorted.indexOf(d.gene-1) * gridwidth; })
+           ;
+         t.selectAll(".colLabel")
+          .attr("y", function (d, i) { return sorted.indexOf(i) * gridwidth; })
+         ;
+       }else{ // sort log2ratio of a contrast
+         sorted=d3.range(row_number).sort(function(a,b){if(sortOrder){ return log2r[b]-log2r[a];}else{ return log2r[a]-log2r[b];}});
+         t.selectAll(".cell")
+           .attr("y", function(d) { return sorted.indexOf(d.sample-1) * gridheight; })
+           ;
+         t.selectAll(".rowLabel")
+          .attr("y", function (d, i) { return sorted.indexOf(i) * gridheight; })
+         ;
+       }
+  }
+
+};
+
+heatmap.mouseoverfunc = function(d, ingene){
+    
+    if (ingene == "NULL") {
+        div.transition()        
+            .duration(500)      
+            .style("opacity", 0);  
+    }
+    else{
+        var muts = d.mutation.split("|");
+        var muttext = "<br>";
+        for (i = 0; i < muts.length; i++) { 
+            muttext += muts[i] + "<br>";
+        }
+        tooltipheight = (53+muts.length*13).toString()+"px";
+        div.transition()        
+              .duration(200)      
+              .style("opacity", 0.9)
+              .style("height", tooltipheight);
+        div.html("Gene: " + d.genename + "<br>" +
+                 "Function: " + d.func + "<br>"+
+                 "Log2 Fold Change: " + d.value + "<br>" +
+                 "Mutation: " + muttext)  
+              .style("left", (d3.event.pageX+5) + "px")     
+              .style("top", (d3.event.pageY - 10) + "px");
+    }
+};
+
+
+
+heatmap.init = function(jsondata){
+    heatmap.processData(jsondata,"Apoptosis");
+};
+
+if (typeof define === "function" && define.amd) {
+    define(heatmap);
+} else if (typeof module === "object" && module.exports) {
+    module.exports = heatmap;
+} else {
+    this.heatmap = heatmap;
+}
+},{"colorbrewer":24,"d3":25}],3:[function(require,module,exports){
 var axios = require('axios');
 var _ = require('underscore');
 
@@ -68,17 +319,18 @@ module.exports = parser;
 
 
 
-},{"axios":5,"underscore":26}],3:[function(require,module,exports){
+},{"axios":6,"underscore":27}],4:[function(require,module,exports){
 var d3 = require('d3');
 var colorbrewer = require('colorbrewer');
 var SP = require('./scatterplot.js');
+var heatmap = require('./heatmap.js');
 
 var PIEmargin = {top: 20, right: 20, bottom: 30, left: 10},
     pieDim = {w:250, h: 250, rpadding:200},
     pieDimr = Math.min(pieDim.w, pieDim.h)/2;
         
 // create svg for pie chart.
-//d3.select("#imsp").remove();
+
 
 var PIEsvg = d3.select("#piechart").append("svg")
       .attr("width", pieDim.w+pieDim.rpadding)
@@ -109,16 +361,10 @@ PC.draw = function(jsondata){
         .key(function(d) { return d.func;})
         .entries(jsondata);
     
-    var id = 0;
-    
     data.forEach(function(d) {
         d.func = d.key;
         d.count = d.values.length;
-        d.id = id;
-        id += 1;
     });
-    
-    console.log(data);
 
     var g = PIEsvg.append("g")
         .attr("transform", "translate("+pieDim.w/2+","+pieDim.h/2+")")
@@ -152,7 +398,9 @@ PC.draw = function(jsondata){
      .text(function(d) { return d; });
 
     function mouseover(d){
-      SP.update(jsondata,d.data.func, color(d.data.func));
+        SP.update(jsondata,d.data.func, color(d.data.func));
+        d3.select("#heatmapsvg").remove();
+        heatmap.processData(jsondata,d.data.func);
     }
 
 };
@@ -162,7 +410,7 @@ PC.init = function(jsondata){
 };
 
 module.exports = PC;
-},{"./scatterplot.js":4,"colorbrewer":23,"d3":24}],4:[function(require,module,exports){
+},{"./heatmap.js":2,"./scatterplot.js":5,"colorbrewer":24,"d3":25}],5:[function(require,module,exports){
 var d3 = require('d3');
 var colorbrewer = require('colorbrewer');
 
@@ -195,12 +443,7 @@ var div = d3.select("#scatterplot").append("div")
      .attr("class", "tooltip")
      .style("opacity", 0);
 
-/*var div2 = d3.select("scatterplot").append("div")   
-     .attr("class", "tooltip")
-     .style("opacity", 0);*/
-
 var color = d3.scale.linear()
-      //.domain([-5,5])
       .range(["#fb6a4a", "#74c476"])
       .interpolate(d3.interpolateHsl);
 
@@ -340,8 +583,8 @@ SP.update = function(jsondata,nfunc,ncolor){
      .style("fill", function(d){return d.mutation !== "NULL" ? mutatedcolor : color(d.value);})
      .style("stroke", "black")
      .style("stroke-width", 0.5)
-     .on("mouseover", function(d) {mouseoverfunc(d, d.gene);})                  
-     .on("mouseout", function(d) {mouseoverfunc(d,"NULL");});
+     .on("mouseover", function(d) {SP.mouseoverfunc(d, d.gene);})                  
+     .on("mouseout", function(d) {SP.mouseoverfunc(d,"NULL");});
     
     nodes.exit()
         .transition(1000)
@@ -350,7 +593,7 @@ SP.update = function(jsondata,nfunc,ncolor){
 
 };
 
-mouseoverfunc = function(d, ingene){
+SP.mouseoverfunc = function(d, ingene){
     
     if (ingene == "NULL") {
         div.transition()        
@@ -440,9 +683,9 @@ if (typeof define === "function" && define.amd) {
 } else {
     this.SP = SP;
 }
-},{"colorbrewer":23,"d3":24}],5:[function(require,module,exports){
+},{"colorbrewer":24,"d3":25}],6:[function(require,module,exports){
 module.exports = require('./lib/axios');
-},{"./lib/axios":7}],6:[function(require,module,exports){
+},{"./lib/axios":8}],7:[function(require,module,exports){
 'use strict';
 
 var utils = require('./../utils');
@@ -574,7 +817,7 @@ module.exports = function xhrAdapter(resolve, reject, config) {
   request.send(requestData);
 };
 
-},{"./../helpers/btoa":12,"./../helpers/buildURL":13,"./../helpers/cookies":15,"./../helpers/isURLSameOrigin":17,"./../helpers/parseHeaders":18,"./../helpers/transformData":20,"./../utils":21}],7:[function(require,module,exports){
+},{"./../helpers/btoa":13,"./../helpers/buildURL":14,"./../helpers/cookies":16,"./../helpers/isURLSameOrigin":18,"./../helpers/parseHeaders":19,"./../helpers/transformData":21,"./../utils":22}],8:[function(require,module,exports){
 'use strict';
 
 var defaults = require('./defaults');
@@ -696,7 +939,7 @@ utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
   axios[method] = bind(Axios.prototype[method], defaultInstance);
 });
 
-},{"./core/InterceptorManager":8,"./core/dispatchRequest":9,"./defaults":10,"./helpers/bind":11,"./helpers/combineURLs":14,"./helpers/isAbsoluteURL":16,"./helpers/spread":19,"./helpers/transformData":20,"./utils":21}],8:[function(require,module,exports){
+},{"./core/InterceptorManager":9,"./core/dispatchRequest":10,"./defaults":11,"./helpers/bind":12,"./helpers/combineURLs":15,"./helpers/isAbsoluteURL":17,"./helpers/spread":20,"./helpers/transformData":21,"./utils":22}],9:[function(require,module,exports){
 'use strict';
 
 var utils = require('./../utils');
@@ -750,7 +993,7 @@ InterceptorManager.prototype.forEach = function forEach(fn) {
 
 module.exports = InterceptorManager;
 
-},{"./../utils":21}],9:[function(require,module,exports){
+},{"./../utils":22}],10:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -788,7 +1031,7 @@ module.exports = function dispatchRequest(config) {
 
 
 }).call(this,require('_process'))
-},{"../adapters/http":6,"../adapters/xhr":6,"_process":25}],10:[function(require,module,exports){
+},{"../adapters/http":7,"../adapters/xhr":7,"_process":26}],11:[function(require,module,exports){
 'use strict';
 
 var utils = require('./utils');
@@ -853,7 +1096,7 @@ module.exports = {
   xsrfHeaderName: 'X-XSRF-TOKEN'
 };
 
-},{"./utils":21}],11:[function(require,module,exports){
+},{"./utils":22}],12:[function(require,module,exports){
 'use strict';
 
 module.exports = function bind(fn, thisArg) {
@@ -866,7 +1109,7 @@ module.exports = function bind(fn, thisArg) {
   };
 };
 
-},{}],12:[function(require,module,exports){
+},{}],13:[function(require,module,exports){
 'use strict';
 
 // btoa polyfill for IE<10 courtesy https://github.com/davidchambers/Base64.js
@@ -904,7 +1147,7 @@ function btoa(input) {
 
 module.exports = btoa;
 
-},{}],13:[function(require,module,exports){
+},{}],14:[function(require,module,exports){
 'use strict';
 
 var utils = require('./../utils');
@@ -973,7 +1216,7 @@ module.exports = function buildURL(url, params, paramsSerializer) {
 };
 
 
-},{"./../utils":21}],14:[function(require,module,exports){
+},{"./../utils":22}],15:[function(require,module,exports){
 'use strict';
 
 /**
@@ -987,7 +1230,7 @@ module.exports = function combineURLs(baseURL, relativeURL) {
   return baseURL.replace(/\/+$/, '') + '/' + relativeURL.replace(/^\/+/, '');
 };
 
-},{}],15:[function(require,module,exports){
+},{}],16:[function(require,module,exports){
 'use strict';
 
 var utils = require('./../utils');
@@ -1042,7 +1285,7 @@ module.exports = (
   })()
 );
 
-},{"./../utils":21}],16:[function(require,module,exports){
+},{"./../utils":22}],17:[function(require,module,exports){
 'use strict';
 
 /**
@@ -1058,7 +1301,7 @@ module.exports = function isAbsoluteURL(url) {
   return /^([a-z][a-z\d\+\-\.]*:)?\/\//i.test(url);
 };
 
-},{}],17:[function(require,module,exports){
+},{}],18:[function(require,module,exports){
 'use strict';
 
 var utils = require('./../utils');
@@ -1128,7 +1371,7 @@ module.exports = (
   })()
 );
 
-},{"./../utils":21}],18:[function(require,module,exports){
+},{"./../utils":22}],19:[function(require,module,exports){
 'use strict';
 
 var utils = require('./../utils');
@@ -1167,7 +1410,7 @@ module.exports = function parseHeaders(headers) {
   return parsed;
 };
 
-},{"./../utils":21}],19:[function(require,module,exports){
+},{"./../utils":22}],20:[function(require,module,exports){
 'use strict';
 
 /**
@@ -1196,7 +1439,7 @@ module.exports = function spread(callback) {
   };
 };
 
-},{}],20:[function(require,module,exports){
+},{}],21:[function(require,module,exports){
 'use strict';
 
 var utils = require('./../utils');
@@ -1218,7 +1461,7 @@ module.exports = function transformData(data, headers, fns) {
   return data;
 };
 
-},{"./../utils":21}],21:[function(require,module,exports){
+},{"./../utils":22}],22:[function(require,module,exports){
 'use strict';
 
 /*global toString:true*/
@@ -1464,7 +1707,7 @@ module.exports = {
   trim: trim
 };
 
-},{}],22:[function(require,module,exports){
+},{}],23:[function(require,module,exports){
 // This product includes color specifications and designs developed by Cynthia Brewer (http://colorbrewer.org/).
 // JavaScript specs as packaged in the D3 library (d3js.org). Please see license at http://colorbrewer.org/export/LICENSE.txt
 !function() {
@@ -1781,10 +2024,10 @@ if (typeof define === "function" && define.amd) {
 
 }();
 
-},{}],23:[function(require,module,exports){
+},{}],24:[function(require,module,exports){
 module.exports = require('./colorbrewer.js');
 
-},{"./colorbrewer.js":22}],24:[function(require,module,exports){
+},{"./colorbrewer.js":23}],25:[function(require,module,exports){
 !function() {
   var d3 = {
     version: "3.5.16"
@@ -11339,7 +11582,7 @@ module.exports = require('./colorbrewer.js');
   });
   if (typeof define === "function" && define.amd) this.d3 = d3, define(d3); else if (typeof module === "object" && module.exports) module.exports = d3; else this.d3 = d3;
 }();
-},{}],25:[function(require,module,exports){
+},{}],26:[function(require,module,exports){
 // shim for using process in browser
 
 var process = module.exports = {};
@@ -11432,7 +11675,7 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}],26:[function(require,module,exports){
+},{}],27:[function(require,module,exports){
 //     Underscore.js 1.7.0
 //     http://underscorejs.org
 //     (c) 2009-2014 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors

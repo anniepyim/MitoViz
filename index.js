@@ -5,22 +5,23 @@ var d3 = require('d3');
 //Modules
 var SP = require('./js/scatterplot.js');
 var PC = require('./js/piechart.js');
+var heatmap = require('./js/heatmap.js');
 var parser = require('./js/parser.js');
 
-function hideLoading(){ 
+function hideLoading() {
     d3.select('#loading').remove();
 }
 
-function onError(res){
+function onError(res) {
     hideLoading();
 }
 
-function onSuccess(data){
+function onSuccess(data) {
     //console.log(data);
     hideLoading();
     SP.init(data);
     PC.init(data);
-    
+    heatmap.init(data);
 }
 
 parser.parse(['./data/HCT11683-3.json', './data/HCT11683-4.json'], onError, onSuccess);
