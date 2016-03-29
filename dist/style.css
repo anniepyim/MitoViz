@@ -12,7 +12,7 @@ body {
 div.tooltip {   
   position: absolute;           
   text-align: left;           
-  width: 300px;                  
+  width: 350px;                  
   height: 55px;                 
   padding: 6px;             
   font: 12px sans-serif;        
@@ -25,7 +25,7 @@ div.tooltip {
 div.heatmaptooltip {   
   position: absolute;           
   text-align: left;           
-  width: 300px;                  
+  width: 400px;                  
   height: 55px;                 
   padding: 6px;             
   font: 12px sans-serif;        

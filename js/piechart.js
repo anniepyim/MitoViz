@@ -3,18 +3,9 @@ var colorbrewer = require('colorbrewer');
 var SP = require('./scatterplot.js');
 var heatmap = require('./heatmap.js');
 
-var PIEmargin = {
-        top: 20
-        , right: 20
-        , bottom: 30
-        , left: 10
-    }
-    , pieDim = {
-        w: 250
-        , h: 250
-        , rpadding: 200
-    }
-    , pieDimr = Math.min(pieDim.w, pieDim.h) / 2;
+var PIEmargin = {top: 20, right: 20, bottom: 30, left: 10}, 
+    pieDim = {w: 250, h: 250, rpadding: 200}, 
+    pieDimr = Math.min(pieDim.w, pieDim.h) / 2;
 
 // create svg for pie chart.
 

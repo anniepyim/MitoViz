@@ -9,15 +9,15 @@ var PC = require('./js/piechart.js');
 var heatmap = require('./js/heatmap.js');
 var parser = require('./js/parser.js');
 
-function hideLoading(){ 
+function hideLoading() {
     d3.select('#loading').remove();
 }
 
-function onError(res){
+function onError(res) {
     hideLoading();
 }
 
-function onSuccess(data){
+function onSuccess(data) {
     //console.log(data);
     hideLoading();
     SP.init(data);
@@ -25,48 +25,55 @@ function onSuccess(data){
     heatmap.init(data);
 }
 
-parser.parse(['./data/HCT11683-3.json', './data/HCT11683-4.json'], onError, onSuccess);
+parser.parse(['./data/116833.json', './data/116834.json', './data/11654.json','./data/RPE1H2B-213.json','./data/RPE153-123.json'], onError, onSuccess);
 
 
 //fetch('', function(data){console.log(data);});
 //SP.init();
 //PC();
-
 },{"./js/heatmap.js":2,"./js/parser.js":3,"./js/piechart.js":4,"./js/scatterplot.js":5,"d3":25}],2:[function(require,module,exports){
 var d3 = require('d3');
 var colorbrewer = require('colorbrewer');
 
-var div = d3.select("#heatmap").append("div")   
-     .attr("class", "heatmaptooltip")
-     .style("opacity", 0);
+var SP = require('./scatterplot.js');
 
-var heatmap = function(obj) {
+var div = d3.select("#heatmap").append("div")
+    .attr("class", "heatmaptooltip")
+    .style("opacity", 0);
+
+var heatmap = function (obj) {
     if (obj instanceof heatmap) return obj;
     if (!(this instanceof heatmap)) return new heatmap(obj);
     this.heatmapwrapped = obj;
 };
 
-heatmap.processData = function(jsondata,nfunc){
-    
+heatmap.processData = function (jsondata, nfunc) {
+
     var newdata = [];
-    
-    jsondata.forEach(function(d) {
-        if(d.func==nfunc && !isNaN(parseFloat(d.value)) && isFinite(d.value)) {newdata.push(d);}
+
+    jsondata.forEach(function (d) {
+        if (d.func == nfunc && !isNaN(parseFloat(d.value)) && isFinite(d.value)) {
+            newdata.push(d);
+        }
     });
-    
+
     //create map for gene and sample data
     var genedata = d3.nest()
-        .key(function(d) { return d.gene;})
+        .key(function (d) {
+            return d.gene;
+        })
         .entries(newdata);
 
     var sampledata = d3.nest()
-        .key(function(d) { return d.sample;})
+        .key(function (d) {
+            return d.sample;
+        })
         .entries(newdata);
 
     var id = 1;
     var genemap = {};
     var genelist = [];
-    genedata.forEach(function(d){
+    genedata.forEach(function (d) {
         genemap[d.key] = id;
         genelist.push(d.key);
         id += 1;
@@ -75,7 +82,7 @@ heatmap.processData = function(jsondata,nfunc){
     id = 1;
     var samplemap = {};
     var samplelist = [];
-    sampledata.forEach(function(d){
+    sampledata.forEach(function (d) {
         samplemap[d.key] = id;
         samplelist.push(d.key);
         id += 1;
@@ -83,196 +90,262 @@ heatmap.processData = function(jsondata,nfunc){
 
     outdata = [];
 
-    newdata.forEach(function(d) {
+    newdata.forEach(function (d) {
         outdata.push({
-            sample : samplemap[d.sample],
-            gene : genemap[d.gene],
-            value: d.value,
-            samplename : d.sample,
-            genename : d.gene,
-            func : d.func,
-            mutation : d.mutation
+            rowidx: samplemap[d.sample], 
+            colidx: genemap[d.gene], 
+            value: d.value, 
+            sample: d.sample, 
+            gene: d.gene, 
+            func: d.func, 
+            mutation: d.mutation
         });
     });
-    
-    heatmap.draw(outdata,samplelist,genelist);
+
+    heatmap.draw(outdata, samplelist, genelist);
 };
 
-heatmap.draw = function(jsondata,samplelist,genelist){
+heatmap.draw = function (jsondata, samplelist, genelist) {
+
+    jsondata.forEach(function (d) {
+        d.rowidx = +d.rowidx;
+        d.colidx = +d.colidx;
+        d.value = +d.value;
+    });
+
     
-    console.log(jsondata);
+    var HMmargin = {top: 60, right: 0, bottom: 100, left: 80}, 
+        HMwidth = 1300 - HMmargin.left - HMmargin.right, 
+        HMheight = 430 - HMmargin.top - HMmargin.bottom,
+        gridheight = HMheight / samplelist.length, 
+        gridwidth = HMwidth / genelist.length, 
+        legendElementWidth = HMwidth / 9, 
+        colors = colorbrewer.RdYlGn[9];
+
+    var svg = d3.select("#heatmap").append("svg")
+        .attr("id", "heatmapsvg")
+        .attr("width", HMwidth + HMmargin.left + HMmargin.right)
+        .attr("height", HMheight + HMmargin.top + HMmargin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + HMmargin.left + "," + HMmargin.top + ")");
     
-    jsondata.forEach(function(d) {
-            d.sample = +d.sample;
-            d.gene = +d.gene;
-            d.value = +d.value;
+    var rowSortOrder = false,
+        colSortOrder = false,
+        row_number = samplelist.length,
+        col_number = genelist.length;
+    
+    var ymin = Math.abs(d3.min(jsondata, function (d) {
+        return d.value;
+    }));
+    var ymax = Math.abs(d3.max(jsondata, function (d) {
+        return d.value;
+    }));
+    var yabs = Math.max(ymin, ymax);
+
+    var colorScale = d3.scale.quantile()
+        .domain([yabs * -1, 0, yabs])
+        .range(colors);
+
+    var rowLabels = svg.append("g").selectAll(".rowLabel")
+        .data(samplelist)
+        .enter().append("text")
+        .text(function (d) {
+            return d;
+        })
+        .attr("x", 0)
+        .attr("y", function (d, i) {
+            return i * gridheight;
+        })
+        .style("text-anchor", "end")
+        .attr("transform", "translate(-6," + gridheight / 1.5 + ")")
+        .attr("class", function (d, i) {
+            return "rowLabel r" + i;
+        })
+        .on("mouseover", function (d) {
+            d3.select(this).classed("text-hover", true);
+        })
+        .on("mouseout", function (d) {
+            d3.select(this).classed("text-hover", false);
+        })
+        .on("click", function (d, i) {
+            rowSortOrder = !rowSortOrder;
+            sortbylabel("r", i, rowSortOrder); //d3.select("#order").property("selectedIndex", 4).node().focus();
         });
-          
-    var margin = { top: 60, right: 0, bottom: 100, left: 100 },
-        width = 1400 - margin.left - margin.right,
-        height = 430 - margin.top - margin.bottom,
-        gridheight = height / samplelist.length,
-        gridwidth = width / genelist.length,
-        legendElementWidth = width/9,
-          colors = colorbrewer.RdYlGn[9];
-          //datasets = ["data.tsv", "data2.tsv"];
 
-      var svg = d3.select("#heatmap").append("svg")
-            .attr("id","heatmapsvg")
-          .attr("width", width + margin.left + margin.right)
-          .attr("height", height + margin.top + margin.bottom)
-          .append("g")
-          .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-    
-                var ymin = Math.abs(d3.min(jsondata, function(d) { return d.value; }));
-            var ymax = Math.abs(d3.max(jsondata, function(d) { return d.value; }));
-            var yabs = Math.max(ymin,ymax);
-    
-          var colorScale = d3.scale.quantile()
-              .domain([yabs*-1, 0,yabs])
-              .range(colors);
-    
-    var rowSortOrder=false;
-  var colSortOrder=false;
-    var row_number = samplelist.length;
-    var col_number = genelist.length;
-      var rowLabels = svg.append("g").selectAll(".rowLabel")
-          .data(samplelist)
-          .enter().append("text")
-            .text(function (d) { return d; })
-            .attr("x", 0)
-            .attr("y", function (d, i) { return i * gridheight; })
-            .style("text-anchor", "end")
-            .attr("transform", "translate(-6," + gridheight / 1.5 + ")")
-            .attr("class", function (d,i) { return "rowLabel r"+i;} ) 
-      .on("mouseover", function(d) {d3.select(this).classed("text-hover",true);})
-      .on("mouseout" , function(d) {d3.select(this).classed("text-hover",false);})
-      .on("click", function(d,i) {rowSortOrder=!rowSortOrder; sortbylabel("r",i,rowSortOrder);//d3.select("#order").property("selectedIndex", 4).node().focus();
-                                 });
+    var colLabels = svg.append("g").selectAll(".colLabel")
+        .data(genelist)
+        .enter().append("text")
+        .text(function (d) {
+            return d;
+        })
+        .attr("x", 0)
+        .attr("y", function (d, i) {
+            return i * gridwidth;
+        })
+        .style("text-anchor", "left")
+        .attr("transform", "translate(" + gridwidth / 2 + ", -6 ) rotate (-90)")
+        .attr("class", function (d, i) {
+            return "colLabel c" + i;
+        })
+        .on("mouseover", function (d) {
+            d3.select(this).classed("text-hover", true);
+        })
+        .on("mouseout", function (d) {
+            d3.select(this).classed("text-hover", false);
+        })
+        .on("click", function (d, i) {
+            colSortOrder = !colSortOrder;
+            sortbylabel("c", i, colSortOrder); //d3.select("#order").property("selectedIndex", 4).node().focus();
+        });
 
-      var colLabels = svg.append("g").selectAll(".colLabel")
-          .data(genelist)
-          .enter().append("text")
-            .text(function(d) { return d; })
-            .attr("x", 0)
-            .attr("y", function(d, i) { return i * gridwidth; })
-            .style("text-anchor", "left")
-            .attr("transform", "translate(" + gridwidth / 2 + ", -6 ) rotate (-90)")
-            .attr("class",  function (d,i) { return "colLabel c"+i;} )
-      .on("mouseover", function(d) {d3.select(this).classed("text-hover",true);})
-      .on("mouseout" , function(d) {d3.select(this).classed("text-hover",false);})
-      .on("click", function(d,i) {colSortOrder=!colSortOrder;  sortbylabel("c",i,colSortOrder);//d3.select("#order").property("selectedIndex", 4).node().focus();
-                                 });
-    
-          var cells = svg.append("g").selectAll(".cell")
-              .data(jsondata, function(d) {return d.sample+':'+d.gene;});
+    var cells = svg.append("g").selectAll(".cell")
+        .data(jsondata, function (d) {
+            return d.rowidx + ':' + d.colidx;
+        });
 
-          //cells.append("title");
+    //cells.append("title");
 
-          cells.enter().append("rect")
-              .attr("x", function(d) { return (d.gene - 1) * gridwidth; })
-              .attr("y", function(d) { return (d.sample - 1) * gridheight; })
-              .attr("rx", 4)
-              .attr("ry", 4)
-              .attr("class", function(d){return "cell cr"+(d.sample-1)+" cc"+(d.gene-1);})
-              .attr("width", gridwidth)
-              .attr("height", gridheight)
-              .style("fill", colors[4])
-                .on("mouseover", function(d) {heatmap.mouseoverfunc(d, d.genename);})                  
-                .on("mouseout", function(d) {heatmap.mouseoverfunc(d,"NULL");});
+    cells.enter().append("rect")
+        .attr("x", function (d) {
+            return (d.colidx - 1) * gridwidth;
+        })
+        .attr("y", function (d) {
+            return (d.rowidx - 1) * gridheight;
+        })
+        .attr("rx", 4)
+        .attr("ry", 4)
+        .attr("class", function (d) {
+            return "cell cr" + (d.rowidx - 1) + " cc" + (d.colidx - 1);
+        })
+        .attr("width", gridwidth)
+        .attr("height", gridheight)
+        .style("fill", colors[4])
+        .on("mouseover", function (d) {
+            heatmap.mouseoverfunc(d, d.gene);
+            SP.highlight(d,d.gene);
+        })
+        .on("mouseout", function (d) {
+            heatmap.mouseoverfunc(d, "NULL");
+            SP.highlight(d,"NULL");
+        });
 
-          cells.transition().duration(1000)
-              .style("fill", function(d) { return colorScale(d.value); });
+    cells.transition().duration(1000)
+        .style("fill", function (d) {
+            return colorScale(d.value);
+        });
 
-          cells.select("title").text(function(d) { return d.value; });
-          
-          cells.exit().remove();
+    cells.select("title").text(function (d) {
+        return d.value;
+    });
 
-          var legend = svg.append("g").selectAll(".legend")
-                .data([Math.round(yabs*10)/10*-1,0,0,0,0,0,0,0,Math.round(yabs*10)/10]);
+    cells.exit().remove();
 
-          legend.enter().append("g")
-              .attr("class", "legend");
+    var legend = svg.append("g").selectAll(".legend")
+        .data([Math.round(yabs * 10) / 10 * -1, 0, 0, 0, 0, 0, 0, 0, Math.round(yabs * 10) / 10]);
 
-          legend.append("rect")
-            .attr("x", function(d, i) { return legendElementWidth * i; })
-            .attr("y", height + 15)
-            .attr("width", legendElementWidth)
-            .attr("height", 20)
-            .style("fill", function(d, i) { return colors[i]; });
+    legend.enter().append("g")
+        .attr("class", "legend");
 
-          legend.append("text")
-            .attr("class", "mono")
-            .text(function(d, i) {return (i === 0 || i === 4 || i === 8)? d : "";})
-            .attr("x", function(d, i) { return legendElementWidth * i + legendElementWidth/2; })
-            .attr("y", height + 50);
+    legend.append("rect")
+        .attr("x", function (d, i) {
+            return legendElementWidth * i;
+        })
+        .attr("y", HMheight + 15)
+        .attr("width", legendElementWidth)
+        .attr("height", 20)
+        .style("fill", function (d, i) {
+            return colors[i];
+        });
 
-          legend.exit().remove();
-    
-    function sortbylabel(rORc,i,sortOrder){
-          
-          console.log("called");
-       var t = svg.transition().duration(3000);
-       var log2r=[];
-       var sorted; // sorted is zero-based index
-       d3.selectAll(".c"+rORc+i) 
-         .filter(function(ce){
-            log2r.push(ce.value);
-          })
-       ;
-          console.log(log2r);
-       if(rORc=="r"){ // sort log2ratio of a gene
-         sorted=d3.range(col_number).sort(function(a,b){ if(sortOrder){ return log2r[b]-log2r[a];}else{ return log2r[a]-log2r[b];}});
-         t.selectAll(".cell")
-           .attr("x", function(d) { return sorted.indexOf(d.gene-1) * gridwidth; })
-           ;
-         t.selectAll(".colLabel")
-          .attr("y", function (d, i) { return sorted.indexOf(i) * gridwidth; })
-         ;
-       }else{ // sort log2ratio of a contrast
-         sorted=d3.range(row_number).sort(function(a,b){if(sortOrder){ return log2r[b]-log2r[a];}else{ return log2r[a]-log2r[b];}});
-         t.selectAll(".cell")
-           .attr("y", function(d) { return sorted.indexOf(d.sample-1) * gridheight; })
-           ;
-         t.selectAll(".rowLabel")
-          .attr("y", function (d, i) { return sorted.indexOf(i) * gridheight; })
-         ;
-       }
-  }
+    legend.append("text")
+        .attr("class", "mono")
+        .text(function (d, i) {
+            return (i === 0 || i === 4 || i === 8) ? d : "";
+        })
+        .attr("x", function (d, i) {
+            return legendElementWidth * i + legendElementWidth / 2;
+        })
+        .attr("y", HMheight + 50);
+
+    legend.exit().remove();
+
+    function sortbylabel(rORc, i, sortOrder) {
+
+        var t = svg.transition().duration(3000);
+        var log2r = [];
+        var sorted; // sorted is zero-based index
+        d3.selectAll(".c" + rORc + i)
+            .filter(function (ce) {
+                log2r.push(ce.value);
+            });
+        if (rORc == "r") { // sort log2ratio of a gene
+            sorted = d3.range(col_number).sort(function (a, b) {
+                if (sortOrder) {
+                    return log2r[b] - log2r[a];
+                } else {
+                    return log2r[a] - log2r[b];
+                }
+            });
+            t.selectAll(".cell")
+                .attr("x", function (d) {
+                    return sorted.indexOf(d.colidx - 1) * gridwidth;
+                });
+            t.selectAll(".colLabel")
+                .attr("y", function (d, i) {
+                    return sorted.indexOf(i) * gridwidth;
+                });
+        } else { // sort log2ratio of a contrast
+            sorted = d3.range(row_number).sort(function (a, b) {
+                if (sortOrder) {
+                    return log2r[b] - log2r[a];
+                } else {
+                    return log2r[a] - log2r[b];
+                }
+            });
+            t.selectAll(".cell")
+                .attr("y", function (d) {
+                    return sorted.indexOf(d.rowidx - 1) * gridheight;
+                });
+            t.selectAll(".rowLabel")
+                .attr("y", function (d, i) {
+                    return sorted.indexOf(i) * gridheight;
+                });
+        }
+        console.log(sorted);
+    }
 
 };
 
-heatmap.mouseoverfunc = function(d, ingene){
-    
+heatmap.mouseoverfunc = function (d, ingene) {
+
     if (ingene == "NULL") {
-        div.transition()        
-            .duration(500)      
-            .style("opacity", 0);  
-    }
-    else{
-        var muts = d.mutation.split("|");
+        div.transition()
+            .duration(500)
+            .style("opacity", 0);
+    } else {
+        var muts = d.mutation.split(",");
         var muttext = "<br>";
-        for (i = 0; i < muts.length; i++) { 
+        for (i = 0; i < muts.length; i++) {
             muttext += muts[i] + "<br>";
         }
-        tooltipheight = (53+muts.length*13).toString()+"px";
-        div.transition()        
-              .duration(200)      
-              .style("opacity", 0.9)
-              .style("height", tooltipheight);
-        div.html("Gene: " + d.genename + "<br>" +
-                 "Function: " + d.func + "<br>"+
-                 "Log2 Fold Change: " + d.value + "<br>" +
-                 "Mutation: " + muttext)  
-              .style("left", (d3.event.pageX+5) + "px")     
-              .style("top", (d3.event.pageY - 10) + "px");
+        tooltipheight = (53 + muts.length * 13).toString() + "px";
+        div.transition()
+            .duration(200)
+            .style("opacity", 0.9)
+            .style("height", tooltipheight);
+        div.html("Gene: " + d.gene + "<br>" +
+                "Function: " + d.func + "<br>" +
+                "Log2 Fold Change: " + d.value + "<br>" +
+                "Mutation: " + muttext)
+            .style("left", (d3.event.pageX + 5) + "px")
+            .style("top", (d3.event.pageY - 10) + "px");
     }
 };
 
 
 
-heatmap.init = function(jsondata){
-    heatmap.processData(jsondata,"Apoptosis");
+heatmap.init = function (jsondata) {
+    heatmap.processData(jsondata, "Apoptosis");
 };
 
 if (typeof define === "function" && define.amd) {
@@ -282,7 +355,7 @@ if (typeof define === "function" && define.amd) {
 } else {
     this.heatmap = heatmap;
 }
-},{"colorbrewer":24,"d3":25}],3:[function(require,module,exports){
+},{"./scatterplot.js":5,"colorbrewer":24,"d3":25}],3:[function(require,module,exports){
 var axios = require('axios');
 var _ = require('underscore');
 
@@ -325,87 +398,97 @@ var colorbrewer = require('colorbrewer');
 var SP = require('./scatterplot.js');
 var heatmap = require('./heatmap.js');
 
-var PIEmargin = {top: 20, right: 20, bottom: 30, left: 10},
-    pieDim = {w:250, h: 250, rpadding:200},
-    pieDimr = Math.min(pieDim.w, pieDim.h)/2;
-        
+var PIEmargin = {top: 20, right: 20, bottom: 30, left: 10}, 
+    pieDim = {w: 250, h: 250, rpadding: 200}, 
+    pieDimr = Math.min(pieDim.w, pieDim.h) / 2;
+
 // create svg for pie chart.
 
 
 var PIEsvg = d3.select("#piechart").append("svg")
-      .attr("width", pieDim.w+pieDim.rpadding)
-      .attr("height", 400)
-      .append("g")
-      .attr("transform", "translate(" + PIEmargin.left + "," + PIEmargin.top + ")");
+    .attr("width", pieDim.w + pieDim.rpadding)
+    .attr("height", 400)
+    .append("g")
+    .attr("transform", "translate(" + PIEmargin.left + "," + PIEmargin.top + ")");
 
 //var color = d3.scale.category20();
 
 var color = d3.scale.ordinal()
-    .range(["#8dd3c7","#ffffb3","#bebada","#fb8072","#80b1d3","#fdb462","#b3de69","#fccde5","#d9d9d9","#bc80bd","#ccebc5","#f781bf","#fbb4ae","#b3cde3","#ffed6f","#decbe4","#fed9a6"]);
+    .range(["#8dd3c7", "#ffffb3", "#bebada", "#fb8072", "#80b1d3", "#fdb462", "#b3de69", "#fccde5", "#d9d9d9", "#bc80bd", "#ccebc5", "#f781bf", "#fbb4ae", "#b3cde3", "#ffed6f", "#decbe4", "#fed9a6"]);
 
-var PC = function(obj) {
+var PC = function (obj) {
     if (obj instanceof PC) return obj;
     if (!(this instanceof PC)) return new PC(obj);
     this.PCwrapped = obj;
 };
 
-PC.draw = function(jsondata){
+PC.draw = function (jsondata) {
 
     // create function to draw the arcs of the pie slices.
     var arc = d3.svg.arc().outerRadius(pieDimr - 10).innerRadius(0);
 
     // create a function to compute the pie slice angles.
-    var pie = d3.layout.pie().sort(null).value(function(d) { return d.count; });
+    var pie = d3.layout.pie().sort(null).value(function (d) {
+        return d.count;
+    });
 
     var data = d3.nest()
-        .key(function(d) { return d.func;})
+        .key(function (d) {
+            return d.func;
+        })
         .entries(jsondata);
-    
-    data.forEach(function(d) {
+
+    data.forEach(function (d) {
         d.func = d.key;
         d.count = d.values.length;
     });
 
     var g = PIEsvg.append("g")
-        .attr("transform", "translate("+pieDim.w/2+","+pieDim.h/2+")")
+        .attr("transform", "translate(" + pieDim.w / 2 + "," + pieDim.h / 2 + ")")
         .selectAll(".arc")
         .data(pie(data))
         .enter().append("g")
         .attr("class", "arc");
 
     g.append("path")
-     .attr("d", arc)
-     .style("fill", function(d) { return color(d.data.func); })
-     .on("mouseover",mouseover);
+        .attr("d", arc)
+        .style("fill", function (d) {
+            return color(d.data.func);
+        })
+        .on("mouseover", mouseover);
 
     var legend = PIEsvg.selectAll(".legend")
         .data(color.domain())
         .enter().append("g")
         .attr("class", "legend")
-        .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+        .attr("transform", function (d, i) {
+            return "translate(0," + i * 20 + ")";
+        });
 
     legend.append("rect")
-     .attr("x", pieDim.w+10)
-     .attr("width", 18)
-     .attr("height", 18)
-     .style("fill", color);
+        .attr("x", pieDim.w + 10)
+        .attr("width", 18)
+        .attr("height", 18)
+        .style("fill", color);
 
     legend.append("text")
-     .attr("x", pieDim.w+32)
-     .attr("y", 9)
-     .attr("dy", ".35em")
-     .style("text-anchor", "start")
-     .text(function(d) { return d; });
+        .attr("x", pieDim.w + 32)
+        .attr("y", 9)
+        .attr("dy", ".35em")
+        .style("text-anchor", "start")
+        .text(function (d) {
+            return d;
+        });
 
-    function mouseover(d){
-        SP.update(jsondata,d.data.func, color(d.data.func));
+    function mouseover(d) {
+        SP.update(jsondata, d.data.func, color(d.data.func));
         d3.select("#heatmapsvg").remove();
-        heatmap.processData(jsondata,d.data.func);
+        heatmap.processData(jsondata, d.data.func);
     }
 
 };
 
-PC.init = function(jsondata){
+PC.init = function (jsondata) {
     PC.draw(jsondata);
 };
 
@@ -414,236 +497,272 @@ module.exports = PC;
 var d3 = require('d3');
 var colorbrewer = require('colorbrewer');
 
-var SPmargin = {top: 20, right: 20, bottom: 30, left: 40},
-   SPwidth = 900 - SPmargin.left - SPmargin.right,
-   SPheight = 400 - SPmargin.top - SPmargin.bottom;
+var SPmargin = {top: 20, right: 20, bottom: 30, left: 40}, 
+    SPwidth = 900 - SPmargin.left - SPmargin.right, 
+    SPheight = 400 - SPmargin.top - SPmargin.bottom;
 
 var SPsvg = d3.select("#scatterplot").append("svg")
-    .attr("id","imsp")
-      .attr("width", SPwidth + SPmargin.left + SPmargin.right)
-      .attr("height", SPheight + SPmargin.top + SPmargin.bottom)
-      .append("g")
-      .attr("transform", "translate(" + SPmargin.left + "," + SPmargin.top + ")");
+    .attr("id", "imsp")
+    .attr("width", SPwidth + SPmargin.left + SPmargin.right)
+    .attr("height", SPheight + SPmargin.top + SPmargin.bottom)
+    .append("g")
+    .attr("transform", "translate(" + SPmargin.left + "," + SPmargin.top + ")");
 
 var x = d3.scale.ordinal()
-  .rangeRoundPoints([0,SPwidth],1);
+    .rangeRoundPoints([0, SPwidth], 1);
 
 var y = d3.scale.linear()
-     .range([SPheight, 0]);
+    .range([SPheight, 0]);
 
 var xAxis = d3.svg.axis()
-     .scale(x)
-     .orient("bottom");
+    .scale(x)
+    .orient("bottom");
 
 var yAxis = d3.svg.axis()
-     .scale(y)
-     .orient("left");
+    .scale(y)
+    .orient("left");
 
-var div = d3.select("#scatterplot").append("div")   
-     .attr("class", "tooltip")
-     .style("opacity", 0);
+var div = d3.select("#scatterplot").append("div")
+    .attr("class", "tooltip")
+    .style("opacity", 0);
 
 var color = d3.scale.linear()
-      .range(["#fb6a4a", "#74c476"])
-      .interpolate(d3.interpolateHsl);
+    .range(["#fb6a4a", "#74c476"])
+    .interpolate(d3.interpolateHsl);
 
 var mutatedcolor = "#6baed6";
 var highlightcolor = "#f768a1";
 var highlightradius = 6.5;
 
-var SP = function(obj) {
+var SP = function (obj) {
     if (obj instanceof SP) return obj;
     if (!(this instanceof SP)) return new SP(obj);
     this.SPwrapped = obj;
 };
 
-SP.drawaxis = function(){
-    
-    SPsvg.append("g")
-     .attr("class", "x axis")
-     .attr("transform", "translate(0," + SPheight/2 + ")")
-     .append("text")
-     .attr("class", "label")
-     .attr("x", SPwidth)
-     .attr("y", -6)
-     .style("text-anchor", "end")
-     .text("Sample");
+SP.drawaxis = function () {
 
     SPsvg.append("g")
-     .attr("class", "y axis")
-     .append("text")
-     .attr("class", "label")
-     .attr("transform", "rotate(-90)")
-     .attr("y", 6)
-     .attr("dy", ".71em")
-     .style("text-anchor", "end")
-     .text("Log2 Fold change");
+        .attr("class", "x axis")
+        .attr("transform", "translate(0," + SPheight / 2 + ")")
+        .append("text")
+        .attr("class", "label")
+        .attr("x", SPwidth)
+        .attr("y", -6)
+        .style("text-anchor", "end")
+        .text("Sample");
+
+    SPsvg.append("g")
+        .attr("class", "y axis")
+        .append("text")
+        .attr("class", "label")
+        .attr("transform", "rotate(-90)")
+        .attr("y", 6)
+        .attr("dy", ".71em")
+        .style("text-anchor", "end")
+        .text("Log2 Fold change");
 
     SPsvg.append("rect")
-     .attr("class","SPrect")
-     .attr("x", SPwidth-180)
-     .attr("width", 18)
-     .attr("height", 18);
+        .attr("class", "SPrect")
+        .attr("x", SPwidth - 180)
+        .attr("width", 18)
+        .attr("height", 18);
 
     SPsvg.append("text")
-     .attr("class","SPtitle")
-     .attr("transform", "translate("+(SPwidth-155)+",13)");
+        .attr("class", "SPtitle")
+        .attr("transform", "translate(" + (SPwidth - 155) + ",13)");
 
 };
 
-SP.update = function(jsondata,nfunc,ncolor){
+SP.update = function (jsondata, nfunc, ncolor) {
 
     var data = [];
 
-    jsondata.forEach(function(d) {
-        if(d.func==nfunc && !isNaN(parseFloat(d.value)) && isFinite(d.value)) {data.push(d);}
-    });
-    
-    data.forEach(function(d) {
-     d.value= +d.value;
+    jsondata.forEach(function (d) {
+        if (d.func == nfunc && !isNaN(parseFloat(d.value)) && isFinite(d.value)) {
+            data.push(d);
+        }
     });
 
-    x.domain(data.map(function(d) {return d.sample;}));
+    data.forEach(function (d) {
+        d.value = +d.value;
+    });
 
-    var ymin = Math.abs(d3.min(data, function(d) { return d.value; }));
-    var ymax = Math.abs(d3.max(data, function(d) { return d.value; }));
-    var yabs = Math.max(ymin,ymax);
-    y.domain([yabs*-1, yabs]);
+    x.domain(data.map(function (d) {
+        return d.sample;
+    }));
+
+    var ymin = Math.abs(d3.min(data, function (d) {
+        return d.value;
+    }));
+    var ymax = Math.abs(d3.max(data, function (d) {
+        return d.value;
+    }));
+    var yabs = Math.max(ymin, ymax);
+    y.domain([yabs * -1, yabs]);
     //y.domain([-5,5])
-    
+
     SPsvg.selectAll("text.SPtitle").text(nfunc);
-    SPsvg.selectAll("rect.SPrect").style("fill",ncolor);
-    
+    SPsvg.selectAll("rect.SPrect").style("fill", ncolor);
+
     SPsvg.select(".y.axis")
         .transition()
         .duration(1000)
         .call(yAxis);
-    
+
     SPsvg.select(".x.axis")
         .call(xAxis);
-    
-    color.domain([yabs*-1, yabs]);
 
-    var nodedata = data.map(function(d) {
-     return {
-        x: x(d.sample),
-        y: y(d.value),
-        r: 3.5,
-        value: d.value,
-        sample: d.sample,
-        func: d.func,
-        gene: d.gene,
-        mutation: d.mutation};
+    color.domain([yabs * -1, yabs]);
+
+    var nodedata = data.map(function (d) {
+        return {
+            x: x(d.sample), 
+            y: y(d.value), 
+            r: 3.5,
+            value: d.value,
+            sample: d.sample,
+            func: d.func,
+            gene: d.gene,
+            mutation: d.mutation
+        };
     });
 
     var nodes = SPsvg.selectAll("circle.node")
-     .data(nodedata);
+        .data(nodedata);
 
     var norm = d3.random.normal(0, 1.5);
     var iterations = 0;
-    
+
     function collide(node) {
-      var r = node.r + 16,
-          nx1 = node.x - r,
-          nx2 = node.x + r,
-          ny1 = node.y - r,
-          ny2 = node.y + r;
-      return function(quad, x1, y1, x2, y2) {
-        if (quad.point && (quad.point !== node)) {
-          var x = node.x - quad.point.x,
-              y = node.y - quad.point.y,
-              l = Math.sqrt(x * x + y * y),
-              r = node.r + quad.point.r;
-          if (l < r)
-            node.x += norm();
-        }
-        return x1 > nx2 || x2 < nx1 || y1 > ny2 || y2 < ny1;
-      };
+        var r = node.r + 16,
+            nx1 = node.x - r,
+            nx2 = node.x + r,
+            ny1 = node.y - r,
+            ny2 = node.y + r;
+        return function (quad, x1, y1, x2, y2) {
+            if (quad.point && (quad.point !== node)) {
+                var x = node.x - quad.point.x,
+                    y = node.y - quad.point.y,
+                    l = Math.sqrt(x * x + y * y),
+                    r = node.r + quad.point.r;
+                if (l < r)
+                    node.x += norm();
+            }
+            return x1 > nx2 || x2 < nx1 || y1 > ny2 || y2 < ny1;
+        };
     }
-    
-    while(iterations++ < 100) {
+
+    while (iterations++ < 100) {
         var q = d3.geom.quadtree(nodedata);
 
-        for(var i = 0; i < nodedata.length; i++)
+        for (var i = 0; i < nodedata.length; i++)
             q.visit(collide(nodedata[i]));
     }
-    
+
     nodes.transition()
         .duration(1000)
-        .attr("r", function(d){return d.mutation !== "NULL" ? highlightradius : d.r; })
-        .attr("cx", function(d) { return d.x; })
-        .attr("cy", function(d) { return d.y; })
-        .style("fill", function(d) {return d.mutation !== "NULL" ? mutatedcolor : color(d.value);});
-    
+        .attr("r", function (d) {
+            return d.mutation !== "NULL" ? highlightradius : d.r;
+        })
+        .attr("cx", function (d) {
+            return d.x;
+        })
+        .attr("cy", function (d) {
+            return d.y;
+        })
+        .style("fill", function (d) {
+            return d.mutation !== "NULL" ? mutatedcolor : color(d.value);
+        });
+
     nodes.enter().append("circle")
-     .attr("class", "node")
-     .attr("r", function(d) { return d.mutation !== "NULL" ? highlightradius : d.r; })
-     .attr("cx", function(d) { return d.x; })
-     .attr("cy", function(d) { return d.y; })
-     .style("fill", function(d){return d.mutation !== "NULL" ? mutatedcolor : color(d.value);})
-     .style("stroke", "black")
-     .style("stroke-width", 0.5)
-     .on("mouseover", function(d) {SP.mouseoverfunc(d, d.gene);})                  
-     .on("mouseout", function(d) {SP.mouseoverfunc(d,"NULL");});
-    
+        .attr("class", "node")
+        .attr("r", function (d) {
+            return d.mutation !== "NULL" ? highlightradius : d.r;
+        })
+        .attr("cx", function (d) {
+            return d.x;
+        })
+        .attr("cy", function (d) {
+            return d.y;
+        })
+        .style("fill", function (d) {
+            return d.mutation !== "NULL" ? mutatedcolor : color(d.value);
+        })
+        .style("stroke", "black")
+        .style("stroke-width", 0.5)
+        .on("mouseover", function (d) {
+            SP.mouseoverfunc(d, d.gene);
+            SP.highlight(d, d.gene);
+        })
+        .on("mouseout", function (d) {
+            SP.mouseoverfunc(d, "NULL");
+            SP.highlight(d, "NULL");
+        });
+
     nodes.exit()
         .transition(1000)
         .attr("r", 0)
-        .remove();  
+        .remove();
 
 };
 
-SP.mouseoverfunc = function(d, ingene){
-    
+SP.mouseoverfunc = function (d, ingene) {
+
     if (ingene == "NULL") {
-        div.transition()        
-            .duration(500)      
-            .style("opacity", 0);  
-    }
-    else{
-        var muts = d.mutation.split("|");
+        div.transition()
+            .duration(500)
+            .style("opacity", 0);
+    } else {
+        var muts = d.mutation.split(",");
         var muttext = "<br>";
-        for (i = 0; i < muts.length; i++) { 
+        for (i = 0; i < muts.length; i++) {
             muttext += muts[i] + "<br>";
         }
-        tooltipheight = (53+muts.length*13).toString()+"px";
-        div.transition()        
-              .duration(200)      
-              .style("opacity", 0.9)
-              .style("height", tooltipheight);
+        tooltipheight = (53 + muts.length * 13).toString() + "px";
+        div.transition()
+            .duration(200)
+            .style("opacity", 0.9)
+            .style("height", tooltipheight);
         div.html("Gene: " + d.gene + "<br>" +
-                 "Function: " + d.func + "<br>"+
-                 "Log2 Fold Change: " + d.value + "<br>" +
-                 "Mutation: " + muttext)  
-              .style("left", (d3.event.pageX+5) + "px")     
-              .style("top", (d3.event.pageY - 10) + "px");
+                "Function: " + d.func + "<br>" +
+                "Log2 Fold Change: " + d.value + "<br>" +
+                "Mutation: " + muttext)
+            .style("left", (d3.event.pageX + 5) + "px")
+            .style("top", (d3.event.pageY - 10) + "px");
     }
-    
-    /*var targetgene;
+
+
+
+};
+
+SP.highlight = function(d, ingene){
+        /*var targetgene;
     var targetfunc;
     var targetlog2;
     var targetmut;
     var targetx;
     var targety;*/
     SPsvg.selectAll("circle.node")
-          .transition()
-          .duration(500)
-          .style("fill", function(d) {
-                if (d.gene == ingene){
-                    /*if (d.sample != insample && (d.sample == "8/3 clone 3" || d.sample == "8/3 clone 4")){
-                        targetgene = d.gene;
-                        targetfunc = d.func;
-                        targetlog2 = d.value;
-                        targetmut = d.mutation;
-                        targetx = d.x;
-                        targety = d.y;
-                    }*/
-                    return highlightcolor;
-                }
-                else if (d.mutation !== "NULL") return mutatedcolor;
-                else return color(d.value);
-            })
-          .attr("r", function(d) {return d.gene == ingene ? highlightradius : d.mutation !== "NULL" ? highlightradius : d.r; });
+        .transition()
+        .duration(500)
+        .style("fill", function (d) {
+            if (d.gene == ingene) {
+                /*if (d.sample != insample && (d.sample == "8/3 clone 3" || d.sample == "8/3 clone 4")){
+                    targetgene = d.gene;
+                    targetfunc = d.func;
+                    targetlog2 = d.value;
+                    targetmut = d.mutation;
+                    targetx = d.x;
+                    targety = d.y;
+                }*/
+                return highlightcolor;
+            } else if (d.mutation !== "NULL") return mutatedcolor;
+            else return color(d.value);
+        })
+        .attr("r", function (d) {
+            return d.gene == ingene ? highlightradius : d.mutation !== "NULL" ? highlightradius : d.r;
+        });
 
     /*if (ingene != "NULL"){
         var muts = targetmut.split("|");
@@ -668,12 +787,11 @@ SP.mouseoverfunc = function(d, ingene){
             .duration(500)      
             .style("opacity", 0);  
     }*/
-    
 };
 
-SP.init = function(jsondata){
+SP.init = function (jsondata) {
     SP.drawaxis();
-    SP.update(jsondata,"Apoptosis","#fb8072");
+    SP.update(jsondata, "Apoptosis", "#fb8072");
 };
 
 if (typeof define === "function" && define.amd) {

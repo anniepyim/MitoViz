@@ -1,14 +1,9 @@
 var d3 = require('d3');
 var colorbrewer = require('colorbrewer');
 
-var SPmargin = {
-        top: 20
-        , right: 20
-        , bottom: 30
-        , left: 40
-    }
-    , SPwidth = 900 - SPmargin.left - SPmargin.right
-    , SPheight = 400 - SPmargin.top - SPmargin.bottom;
+var SPmargin = {top: 20, right: 20, bottom: 30, left: 40}, 
+    SPwidth = 900 - SPmargin.left - SPmargin.right, 
+    SPheight = 400 - SPmargin.top - SPmargin.bottom;
 
 var SPsvg = d3.select("#scatterplot").append("svg")
     .attr("id", "imsp")
@@ -126,14 +121,14 @@ SP.update = function (jsondata, nfunc, ncolor) {
 
     var nodedata = data.map(function (d) {
         return {
-            x: x(d.sample)
-            , y: y(d.value)
-            , r: 3.5
-            , value: d.value
-            , sample: d.sample
-            , func: d.func
-            , gene: d.gene
-            , mutation: d.mutation
+            x: x(d.sample), 
+            y: y(d.value), 
+            r: 3.5,
+            value: d.value,
+            sample: d.sample,
+            func: d.func,
+            gene: d.gene,
+            mutation: d.mutation
         };
     });
 
@@ -144,17 +139,17 @@ SP.update = function (jsondata, nfunc, ncolor) {
     var iterations = 0;
 
     function collide(node) {
-        var r = node.r + 16
-            , nx1 = node.x - r
-            , nx2 = node.x + r
-            , ny1 = node.y - r
-            , ny2 = node.y + r;
+        var r = node.r + 16,
+            nx1 = node.x - r,
+            nx2 = node.x + r,
+            ny1 = node.y - r,
+            ny2 = node.y + r;
         return function (quad, x1, y1, x2, y2) {
             if (quad.point && (quad.point !== node)) {
-                var x = node.x - quad.point.x
-                    , y = node.y - quad.point.y
-                    , l = Math.sqrt(x * x + y * y)
-                    , r = node.r + quad.point.r;
+                var x = node.x - quad.point.x,
+                    y = node.y - quad.point.y,
+                    l = Math.sqrt(x * x + y * y),
+                    r = node.r + quad.point.r;
                 if (l < r)
                     node.x += norm();
             }
@@ -202,9 +197,11 @@ SP.update = function (jsondata, nfunc, ncolor) {
         .style("stroke-width", 0.5)
         .on("mouseover", function (d) {
             SP.mouseoverfunc(d, d.gene);
+            SP.highlight(d, d.gene);
         })
         .on("mouseout", function (d) {
             SP.mouseoverfunc(d, "NULL");
+            SP.highlight(d, "NULL");
         });
 
     nodes.exit()
@@ -221,7 +218,7 @@ SP.mouseoverfunc = function (d, ingene) {
             .duration(500)
             .style("opacity", 0);
     } else {
-        var muts = d.mutation.split("|");
+        var muts = d.mutation.split(",");
         var muttext = "<br>";
         for (i = 0; i < muts.length; i++) {
             muttext += muts[i] + "<br>";
@@ -239,7 +236,12 @@ SP.mouseoverfunc = function (d, ingene) {
             .style("top", (d3.event.pageY - 10) + "px");
     }
 
-    /*var targetgene;
+
+
+};
+
+SP.highlight = function(d, ingene){
+        /*var targetgene;
     var targetfunc;
     var targetlog2;
     var targetmut;
@@ -289,7 +291,6 @@ SP.mouseoverfunc = function (d, ingene) {
             .duration(500)      
             .style("opacity", 0);  
     }*/
-
 };
 
 SP.init = function (jsondata) {

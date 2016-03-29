@@ -91,7 +91,7 @@ sample,gene,func,value,mutation
 8/3 clone 4,SLC25A5,Apoptosis,-0.161661,NULL
 5/4,SLC25A6,Apoptosis,0,NULL
 8/3 clone 3,SLC25A6,Apoptosis,-0.104808,NULL
-8/3 clone 3,SLC25A6,Apoptosis,-0.126065,NULL
+8/3 clone 4,SLC25A6,Apoptosis,-0.114948,NULL
 5/4,TP53,Apoptosis,-0.527106,NULL
 8/3 clone 3,TP53,Apoptosis,0.0677488,NULL
 8/3 clone 4,TP53,Apoptosis,-0.0378891,NULL

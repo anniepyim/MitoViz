@@ -24,7 +24,7 @@ function onSuccess(data) {
     heatmap.init(data);
 }
 
-parser.parse(['./data/HCT11683-3.json', './data/HCT11683-4.json'], onError, onSuccess);
+parser.parse(['./data/116833.json', './data/116834.json', './data/11654.json','./data/RPE1H2B-213.json','./data/RPE153-123.json'], onError, onSuccess);
 
 
 //fetch('', function(data){console.log(data);});
