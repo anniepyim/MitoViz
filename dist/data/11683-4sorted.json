@@ -1,0 +1,3992 @@
+[
+  {
+    "sample":"8/3 clone 4",
+    "gene":"AARS2",
+    "func":"Translation",
+    "value":-0.149526,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ABCB7",
+    "func":"Fe-S cluster biosynthesis",
+    "value":-0.0865812,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ACAA2",
+    "func":"Fatty acid beta-oxidation",
+    "value":-0.0698862,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ACAD10",
+    "func":"Fatty acid beta-oxidation",
+    "value":0.117782,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ACAD11",
+    "func":"Fatty acid beta-oxidation",
+    "value":-0.07237,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ACAD8",
+    "func":"Fatty acid beta-oxidation",
+    "value":-0.0535693,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ACAD9",
+    "func":"Electron transport chain",
+    "value":-0.0304927,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ACADM",
+    "func":"Fatty acid beta-oxidation",
+    "value":-0.00219481,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ACADS",
+    "func":"Fatty acid beta-oxidation",
+    "value":0.30256,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ACADSB",
+    "func":"Fatty acid beta-oxidation",
+    "value":-0.139928,
+    "mutation":"chr10 124800853 C>T SYNONYMOUS_CODING"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ACADVL",
+    "func":"Fatty acid beta-oxidation",
+    "value":0.197981,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ACO2",
+    "func":"Tricarboxylic acid cycle",
+    "value":0.107476,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ACSL1",
+    "func":"Fatty acid beta-oxidation",
+    "value":-0.195099,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ACSL3",
+    "func":"Fatty acid beta-oxidation",
+    "value":0.0829252,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ACSL4",
+    "func":"Fatty acid beta-oxidation",
+    "value":-0.304549,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ACSL5",
+    "func":"Fatty acid beta-oxidation",
+    "value":-0.0216742,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ACSM3",
+    "func":"Fatty acid beta-oxidation",
+    "value":-1.21203,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ACSS2",
+    "func":"Fatty acid beta-oxidation",
+    "value":0.127468,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"AFG3L2",
+    "func":"Mitochondrial Dynamics",
+    "value":-0.144147,
+    "mutation":"chr18 12351342 C>T SYNONYMOUS_CODING"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"AIFM1",
+    "func":"Apoptosis",
+    "value":-0.0639697,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"AK3",
+    "func":"Replication & Transcription",
+    "value":-0.287436,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"AK4",
+    "func":"Replication & Transcription",
+    "value":0.0753016,
+    "mutation":"chr1 65695853 A>G UTR_3_PRIME"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ALAD",
+    "func":"Heme Biosynthesis",
+    "value":-0.152154,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ALAS1",
+    "func":"Heme Biosynthesis",
+    "value":0.268602,
+    "mutation":"chr3 52238726 T>C NON_SYNONYMOUS_CODING"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ALDOA",
+    "func":"Glycolysis",
+    "value":0.0443773,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ALDOC",
+    "func":"Glycolysis",
+    "value":-0.251196,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"AMBRA1",
+    "func":"Mitochondrial Dynamics",
+    "value":0.00582663,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ANP32A",
+    "func":"Apoptosis",
+    "value":-0.0878795,
+    "mutation":"chr15 69071514 GA>G UTR_3_PRIME"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"APAF1",
+    "func":"Apoptosis",
+    "value":0.187441,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"APEX1",
+    "func":"Replication & Transcription",
+    "value":-0.124135,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"APEX2",
+    "func":"Replication & Transcription",
+    "value":-0.191744,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"APOPT1",
+    "func":"Apoptosis",
+    "value":0.120067,
+    "mutation":"chr14 104029449 G>A SYNONYMOUS_CODING"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ARG2",
+    "func":"Urea Cycle",
+    "value":0.182306,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ASL",
+    "func":"Urea Cycle",
+    "value":0.147646,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ASS1",
+    "func":"Urea Cycle",
+    "value":-0.183861,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ATAD3A",
+    "func":"Translation",
+    "value":-0.0623268,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ATAD3B",
+    "func":"Translation",
+    "value":-0.105794,
+    "mutation":"chr1 1425753 T>C NON_SYNONYMOUS_CODING"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ATP5A1",
+    "func":"Electron transport chain",
+    "value":0.0283794,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ATP5B",
+    "func":"Electron transport chain",
+    "value":0.0237488,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ATP5C1",
+    "func":"Electron transport chain",
+    "value":-0.0927877,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ATP5D",
+    "func":"Electron transport chain",
+    "value":-0.280493,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ATP5E",
+    "func":"Electron transport chain",
+    "value":0.00416477,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ATP5F1",
+    "func":"Electron transport chain",
+    "value":-0.0781282,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ATP5G1",
+    "func":"Electron transport chain",
+    "value":-0.0796746,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ATP5G2",
+    "func":"Electron transport chain",
+    "value":0.032902,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ATP5G3",
+    "func":"Electron transport chain",
+    "value":-0.0639379,
+    "mutation":"chr2 176043097 A>G SYNONYMOUS_CODING"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ATP5H",
+    "func":"Electron transport chain",
+    "value":-0.0874471,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ATP5I",
+    "func":"Electron transport chain",
+    "value":-0.0456102,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ATP5J",
+    "func":"Electron transport chain",
+    "value":-0.139744,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ATP5J2",
+    "func":"Electron transport chain",
+    "value":-0.0531182,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ATP5L",
+    "func":"Electron transport chain",
+    "value":-0.0980944,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ATP5O",
+    "func":"Electron transport chain",
+    "value":-0.202999,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ATPAF1",
+    "func":"Electron transport chain",
+    "value":-0.161207,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ATPAF2",
+    "func":"Electron transport chain",
+    "value":-0.102574,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ATPIF1",
+    "func":"Electron transport chain",
+    "value":0.0149309,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"BAD",
+    "func":"Apoptosis",
+    "value":0.115038,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"BAK1",
+    "func":"Apoptosis",
+    "value":0.145208,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"BAX",
+    "func":"Apoptosis",
+    "value":-0.110623,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"BBC3",
+    "func":"Apoptosis",
+    "value":-0.0424351,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"BCKDHA",
+    "func":"ROS defense",
+    "value":-0.211162,
+    "mutation":"chr19 41928652 C>T SYNONYMOUS_CODING,chr19 41930396 A>G SYNONYMOUS_CODING"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"BCKDHB",
+    "func":"ROS defense",
+    "value":-0.0162456,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"BCL2",
+    "func":"Apoptosis",
+    "value":-0.105766,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"BCL2L1",
+    "func":"Apoptosis",
+    "value":0.31248,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"BCL2L11",
+    "func":"Apoptosis",
+    "value":-0.211716,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"BCS1L",
+    "func":"Electron transport chain",
+    "value":-0.0521047,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"BECN1",
+    "func":"Mitochondrial Dynamics",
+    "value":0.016066,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"BID",
+    "func":"Apoptosis",
+    "value":0.00813488,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"BIK",
+    "func":"Apoptosis",
+    "value":0.284175,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"BNIP3",
+    "func":"Mitochondrial Dynamics",
+    "value":-0.0671011,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"BNIP3L",
+    "func":"Mitochondrial Dynamics",
+    "value":0.430641,
+    "mutation":"chr8 26269032 C>T UTR_3_PRIME,chr8 26269412 C>T UTR_3_PRIME"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"BOLA3",
+    "func":"Fe-S cluster biosynthesis",
+    "value":-0.0450613,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"BRP44",
+    "func":"Pyruvate transfer",
+    "value":0.0495591,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"BRP44L",
+    "func":"Pyruvate transfer",
+    "value":-0.50263,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"C10orf2",
+    "func":"Replication & Transcription",
+    "value":-0.308421,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"C1orf31",
+    "func":"Electron transport chain",
+    "value":-0.0796426,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"C20orf7",
+    "func":"Electron transport chain",
+    "value":0.0544652,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"C22orf32",
+    "func":"Calcium trafficking",
+    "value":-0.180246,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"C2orf56",
+    "func":"Electron transport chain",
+    "value":-0.204755,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"C7orf44",
+    "func":"Electron transport chain",
+    "value":-0.0104869,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"C8orf38",
+    "func":"Electron transport chain",
+    "value":0.367178,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"CARS2",
+    "func":"Translation",
+    "value":0.0654724,
+    "mutation":"chr13 111293915 T>G NON_SYNONYMOUS_CODING,chr13 111319754 T>C SYNONYMOUS_CODING"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"CASP3",
+    "func":"Apoptosis",
+    "value":-0.0146694,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"CASP7",
+    "func":"Apoptosis",
+    "value":0.17878,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"CASP9",
+    "func":"Apoptosis",
+    "value":0.303798,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"CCDC109B",
+    "func":"Calcium trafficking",
+    "value":0.00468975,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"CCDC56",
+    "func":"Electron transport chain",
+    "value":0.143628,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"CCDC90A",
+    "func":"Calcium trafficking",
+    "value":0.0309917,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"CDK1",
+    "func":"Apoptosis",
+    "value":-0.0397718,
+    "mutation":"chr10 62554500 G>A UTR_3_PRIME"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"CDK5RAP1",
+    "func":"Replication & Transcription",
+    "value":-0.0168755,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"CDKAL1",
+    "func":"Replication & Transcription",
+    "value":-0.000901661,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"CDS1",
+    "func":"Cardiolipin biosynthesis",
+    "value":0.0421188,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"CHCHD4",
+    "func":"Import & Sorting",
+    "value":-0.212576,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"CHCHD8",
+    "func":"Electron transport chain",
+    "value":-0.15832,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"CIAO1",
+    "func":"Fe-S cluster biosynthesis",
+    "value":-0.201216,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"CIAPIN1",
+    "func":"Fe-S cluster biosynthesis",
+    "value":0.0837265,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"CLPP",
+    "func":"Translation",
+    "value":0.00753039,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"CLPX",
+    "func":"Translation",
+    "value":-0.23506,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"CMPK2",
+    "func":"Replication & Transcription",
+    "value":-0.0126885,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"COA5",
+    "func":"Electron transport chain",
+    "value":-0.313539,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"COX10",
+    "func":"Electron transport chain",
+    "value":-0.0525018,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"COX11",
+    "func":"Electron transport chain",
+    "value":-0.0629839,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"COX14",
+    "func":"Electron transport chain",
+    "value":-0.00146884,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"COX15",
+    "func":"Electron transport chain",
+    "value":-0.199195,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"COX17",
+    "func":"Electron transport chain",
+    "value":0.0454067,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"COX18",
+    "func":"Electron transport chain",
+    "value":-0.0143549,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"COX19",
+    "func":"Electron transport chain",
+    "value":0.0523711,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"COX20",
+    "func":"Electron transport chain",
+    "value":0.189542,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"COX4I1",
+    "func":"Electron transport chain",
+    "value":-0.068013,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"COX5A",
+    "func":"Electron transport chain",
+    "value":-0.19911,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"COX5B",
+    "func":"Electron transport chain",
+    "value":-0.175582,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"COX6A1",
+    "func":"Electron transport chain",
+    "value":-0.134194,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"COX6B1",
+    "func":"Electron transport chain",
+    "value":-0.0130243,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"COX6B2",
+    "func":"Electron transport chain",
+    "value":0.403943,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"COX6C",
+    "func":"Electron transport chain",
+    "value":0.22578,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"COX7A2",
+    "func":"Electron transport chain",
+    "value":0.0428264,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"COX7B",
+    "func":"Electron transport chain",
+    "value":-0.0921356,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"COX7C",
+    "func":"Electron transport chain",
+    "value":-0.0982152,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"COX8A",
+    "func":"Electron transport chain",
+    "value":0.0655758,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"CPOX",
+    "func":"Heme Biosynthesis",
+    "value":0.423338,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"CPS1",
+    "func":"Urea Cycle",
+    "value":0.00700915,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"CPT1A",
+    "func":"Fatty acid beta-oxidation",
+    "value":-0.119009,
+    "mutation":"chr11 68523910 T>C UTR_3_PRIME"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"CPT1B",
+    "func":"Fatty acid beta-oxidation",
+    "value":0.00435455,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"CPT1C",
+    "func":"Fatty acid beta-oxidation",
+    "value":-0.371911,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"CPT2",
+    "func":"Fatty acid beta-oxidation",
+    "value":0.00254906,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"CRAT",
+    "func":"Fatty acid beta-oxidation",
+    "value":0.301034,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"CREB1",
+    "func":"Replication & Transcription",
+    "value":0.0162427,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"CRLS1",
+    "func":"Cardiolipin biosynthesis",
+    "value":-0.242873,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"CS",
+    "func":"Tricarboxylic acid cycle",
+    "value":-0.000261202,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"CYC1",
+    "func":"Electron transport chain",
+    "value":0.207579,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"CYCS",
+    "func":"Apoptosis",
+    "value":-0.194029,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"DAP3",
+    "func":"Translation",
+    "value":0.0310415,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"DARS2",
+    "func":"Translation",
+    "value":0.200554,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"DDX28",
+    "func":"Translation",
+    "value":-0.179379,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"DECR1",
+    "func":"Fatty acid beta-oxidation",
+    "value":0.346698,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"DHX30",
+    "func":"Translation",
+    "value":0.110168,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"DIABLO",
+    "func":"Apoptosis",
+    "value":0.0315832,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"DLAT",
+    "func":"Formation of Acetyl CoA",
+    "value":0.0918819,
+    "mutation":"chr11 111916647 G>A NON_SYNONYMOUS_CODING,chr11 111933404 C>T UTR_3_PRIME,chr11 111933678 A>G UTR_3_PRIME"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"DLD",
+    "func":"Tricarboxylic acid cycle",
+    "value":0.00178492,
+    "mutation":"chr7 107560191 C>T UTR_3_PRIME"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"DLST",
+    "func":"Tricarboxylic acid cycle",
+    "value":-0.0193699,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"DNAJC19",
+    "func":"Import & Sorting",
+    "value":-0.261243,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"DNM1",
+    "func":"Apoptosis",
+    "value":-0.208299,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"DNM1L",
+    "func":"Mitochondrial Dynamics",
+    "value":0.0668568,
+    "mutation":"chr12 32854366 A>C SYNONYMOUS_CODING,chr12 32875406 A>G SYNONYMOUS_CODING,chr12 32896365 G>C UTR_3_PRIME,chr12 32896366 A>T UTR_3_PRIME"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"DUS2L",
+    "func":"Replication & Transcription",
+    "value":0.173201,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"DYNLL1",
+    "func":"Mitochondrial Dynamics",
+    "value":0.132498,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"EARS2",
+    "func":"Translation",
+    "value":-0.105327,
+    "mutation":"chr16 23535680 A>C UTR_3_PRIME"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ECHS1",
+    "func":"Fatty acid beta-oxidation",
+    "value":-0.0198006,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ECSIT",
+    "func":"Electron transport chain",
+    "value":-0.197428,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"EFHA1",
+    "func":"Calcium trafficking",
+    "value":0.0941747,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"EFHA2",
+    "func":"Calcium trafficking",
+    "value":6.58875,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"EIF3M",
+    "func":"Apoptosis",
+    "value":-0.302734,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ELAC2",
+    "func":"Replication & Transcription",
+    "value":-0.0271843,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ENDOG",
+    "func":"Replication & Transcription",
+    "value":-0.142321,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ENO1",
+    "func":"Glycolysis",
+    "value":-0.105793,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ENO2",
+    "func":"Glycolysis",
+    "value":0.103881,
+    "mutation":"chr12 7032253 C>T UTR_3_PRIME"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ENO3",
+    "func":"Glycolysis",
+    "value":-0.336932,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"FABP5",
+    "func":"Fatty acid beta-oxidation",
+    "value":-0.176679,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"FABP6",
+    "func":"Fatty acid beta-oxidation",
+    "value":-1.15216,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"FAM96A",
+    "func":"Fe-S cluster biosynthesis",
+    "value":-0.0978824,
+    "mutation":"chr15 64385851 T>C SYNONYMOUS_CODING"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"FAM96B",
+    "func":"Fe-S cluster biosynthesis",
+    "value":0.132824,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"FARS2",
+    "func":"Translation",
+    "value":-0.0302814,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"FDX1",
+    "func":"Fe-S cluster biosynthesis",
+    "value":-0.027222,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"FDX1L",
+    "func":"Fe-S cluster biosynthesis",
+    "value":0.0478151,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"FDXR",
+    "func":"Fe-S cluster biosynthesis",
+    "value":-0.072754,
+    "mutation":"chr17 72862650 C>T NON_SYNONYMOUS_CODING"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"FECH",
+    "func":"Heme Biosynthesis",
+    "value":0.257169,
+    "mutation":"chr18 55221648 T>C SYNONYMOUS_CODING"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"FH",
+    "func":"Tricarboxylic acid cycle",
+    "value":-0.195075,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"FIS1",
+    "func":"Mitochondrial Dynamics",
+    "value":-0.0896701,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"FOXRED1",
+    "func":"Electron transport chain",
+    "value":-0.163417,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"FXN",
+    "func":"Fe-S cluster biosynthesis",
+    "value":-0.13834,
+    "mutation":"chr9 71687924 C>T UTR_3_PRIME"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"GABARAP",
+    "func":"Mitochondrial Dynamics",
+    "value":-0.0141709,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"GAPDH",
+    "func":"Glycolysis",
+    "value":0.0737415,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"GAPDHS",
+    "func":"Glycolysis",
+    "value":-0.152441,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"GARS",
+    "func":"Translation",
+    "value":0.0795567,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"GATC",
+    "func":"Translation",
+    "value":-0.134127,
+    "mutation":"chr12 120901045 G>A UTR_3_PRIME"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"GCLC",
+    "func":"ROS defense",
+    "value":0.0823115,
+    "mutation":"chr6 53363452 A>G UTR_3_PRIME"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"GCLM",
+    "func":"ROS defense",
+    "value":0.533289,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"GDAP1",
+    "func":"Mitochondrial Dynamics",
+    "value":0.302993,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"GFER",
+    "func":"Import & Sorting",
+    "value":0.128593,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"GFM1",
+    "func":"Translation",
+    "value":0.0842604,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"GFM2",
+    "func":"Translation",
+    "value":-0.00980616,
+    "mutation":"chr5 74046464 C>T SYNONYMOUS_CODING"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"GLRX2",
+    "func":"ROS defense",
+    "value":0.00203471,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"GLRX5",
+    "func":"Fe-S cluster biosynthesis",
+    "value":-0.0729508,
+    "mutation":"chr14 96010866 A>G UTR_3_PRIME"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"GOT2",
+    "func":"Fatty acid beta-oxidation",
+    "value":-0.0968905,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"GPI",
+    "func":"Glycolysis",
+    "value":-0.051997,
+    "mutation":"chr19 34891482 C>G UTR_3_PRIME"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"GPX1",
+    "func":"ROS defense",
+    "value":0.172346,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"GPX4",
+    "func":"ROS defense",
+    "value":0.0747163,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"GRPEL1",
+    "func":"Import & Sorting",
+    "value":-0.219739,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"GRPEL2",
+    "func":"Import & Sorting",
+    "value":-0.320543,
+    "mutation":"chr5 148733364 C>T UTR_3_PRIME"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"GSR",
+    "func":"ROS defense",
+    "value":0.646717,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"GSS",
+    "func":"ROS defense",
+    "value":-0.0508654,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"GSTA1",
+    "func":"ROS defense",
+    "value":-0.361613,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"GSTA2",
+    "func":"ROS defense",
+    "value":-0.507733,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"GSTA4",
+    "func":"ROS defense",
+    "value":0.00449738,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"GSTP1",
+    "func":"ROS defense",
+    "value":0.0123256,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"GTPBP3",
+    "func":"Replication & Transcription",
+    "value":0.0408971,
+    "mutation":"chr19 17450016 T>C NON_SYNONYMOUS_CODING"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"HADH",
+    "func":"Fatty acid beta-oxidation",
+    "value":-0.291199,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"HADHA",
+    "func":"Fatty acid beta-oxidation",
+    "value":-0.063294,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"HADHB",
+    "func":"Fatty acid beta-oxidation",
+    "value":0.0656966,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"HARS2",
+    "func":"Translation",
+    "value":0.192133,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"HCCS",
+    "func":"Electron transport chain",
+    "value":0.12553,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"HK1",
+    "func":"Glycolysis",
+    "value":-0.16152,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"HK2",
+    "func":"Glycolysis",
+    "value":-0.576645,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"HMBS",
+    "func":"Heme Biosynthesis",
+    "value":0.0993594,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"HSCB",
+    "func":"Fe-S cluster biosynthesis",
+    "value":-0.108502,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"HSD17B10",
+    "func":"Replication & Transcription",
+    "value":-0.0612962,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"HSPA9",
+    "func":"Import & Sorting",
+    "value":-0.0158553,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"HTRA2",
+    "func":"Apoptosis",
+    "value":-0.0706354,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"IARS2",
+    "func":"Translation",
+    "value":0.103212,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"IBA57",
+    "func":"Fe-S cluster biosynthesis",
+    "value":0.0667054,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"IDH1",
+    "func":"Tricarboxylic acid cycle",
+    "value":0.130127,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"IDH2",
+    "func":"Tricarboxylic acid cycle",
+    "value":0.0162712,
+    "mutation":"chr15 90631825 G>A SYNONYMOUS_CODING"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"IDH3A",
+    "func":"Tricarboxylic acid cycle",
+    "value":-0.0488134,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"IDH3B",
+    "func":"Tricarboxylic acid cycle",
+    "value":-0.178582,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"IDH3G",
+    "func":"Tricarboxylic acid cycle",
+    "value":0.071899,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"IMMP1L",
+    "func":"Import & Sorting",
+    "value":-0.104824,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"IMMP2L",
+    "func":"Import & Sorting",
+    "value":-0.214458,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ISCA1",
+    "func":"Fe-S cluster biosynthesis",
+    "value":-0.0570175,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ISCA2",
+    "func":"Fe-S cluster biosynthesis",
+    "value":-0.201973,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ISCU",
+    "func":"Fe-S cluster biosynthesis",
+    "value":-0.258082,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ITPR1",
+    "func":"Calcium trafficking",
+    "value":-0.0970921,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ITPR2",
+    "func":"Calcium trafficking",
+    "value":-0.241855,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"ITPR3",
+    "func":"Calcium trafficking",
+    "value":-0.036393,
+    "mutation":"chr6 33653448 C>T SYNONYMOUS_CODING"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"KARS",
+    "func":"Translation",
+    "value":-0.129599,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"KIAA0391",
+    "func":"Replication & Transcription",
+    "value":0.0655984,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"KIF1B",
+    "func":"Mitochondrial Dynamics",
+    "value":0.131005,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"KIF5B",
+    "func":"Mitochondrial Dynamics",
+    "value":0.219993,
+    "mutation":"chr10 32323708 T>C NON_SYNONYMOUS_CODING"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"LARS2",
+    "func":"Translation",
+    "value":0.0475841,
+    "mutation":"chr3 45559519 T>C SYNONYMOUS_CODING"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"LDHA",
+    "func":"Glycolysis",
+    "value":0.0889178,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"LDHB",
+    "func":"Glycolysis",
+    "value":-0.184072,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"LETM1",
+    "func":"Calcium trafficking",
+    "value":-0.0469126,
+    "mutation":"chr4 1815990 G>A UTR_3_PRIME"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"LIG3",
+    "func":"Replication & Transcription",
+    "value":0.0323954,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"LONP1",
+    "func":"Translation",
+    "value":-0.0790062,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"LRPPRC",
+    "func":"Translation",
+    "value":-0.242699,
+    "mutation":"chr2 44209477 C>T SYNONYMOUS_CODING"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"LYRM4",
+    "func":"Fe-S cluster biosynthesis",
+    "value":-0.302234,
+    "mutation":"chr6 5260936 A>C NON_SYNONYMOUS_CODING"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MAPK1",
+    "func":"Apoptosis",
+    "value":0.0912568,
+    "mutation":"chr22 22115353 G>A UTR_3_PRIME,chr22 22115886 C>T UTR_3_PRIME,chr22 22116128 AG>A UTR_3_PRIME,chr22 22116202 C>G UTR_3_PRIME,chr22 22116467 C>T UTR_3_PRIME"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MAPK3",
+    "func":"Apoptosis",
+    "value":0.144985,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MARCH5",
+    "func":"Mitochondrial Dynamics",
+    "value":0.0634793,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MARS2",
+    "func":"Translation",
+    "value":-0.207087,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MCL1",
+    "func":"Apoptosis",
+    "value":-0.0701898,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MCU",
+    "func":"Calcium trafficking",
+    "value":-0.0125512,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MDH2",
+    "func":"Tricarboxylic acid cycle",
+    "value":-0.211619,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MFF",
+    "func":"Mitochondrial Dynamics",
+    "value":0.0460338,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MFN1",
+    "func":"Mitochondrial Dynamics",
+    "value":-0.0148787,
+    "mutation":"chr3 179096508 C>G NON_SYNONYMOUS_CODING"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MFN2",
+    "func":"Mitochondrial Dynamics",
+    "value":0.0933886,
+    "mutation":"chr1 12073251 GA>G UTR_3_PRIME"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MICU1",
+    "func":"Calcium trafficking",
+    "value":0.0638281,
+    "mutation":"chr10 74127374 C>T UTR_3_PRIME"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MIPEP",
+    "func":"Import & Sorting",
+    "value":-0.214021,
+    "mutation":"chr13 24411772 T>C NON_SYNONYMOUS_CODING"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MMS19",
+    "func":"Fe-S cluster biosynthesis",
+    "value":-0.156191,
+    "mutation":"chr10 99220707 C>T NON_SYNONYMOUS_CODING,chr10 99240758 G>C NON_SYNONYMOUS_CODING"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MNF1",
+    "func":"Electron transport chain",
+    "value":0.0273449,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MPV17",
+    "func":"ROS defense",
+    "value":-0.052778,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MPV17L2",
+    "func":"Translation",
+    "value":0.14848,
+    "mutation":"chr19 18304700 A>G NON_SYNONYMOUS_CODING,chr19 18305824 C>T SYNONYMOUS_CODING,chr19 18307108 C>T UTR_3_PRIME"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL1",
+    "func":"Translation",
+    "value":-0.227114,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL10",
+    "func":"Translation",
+    "value":-0.132056,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL11",
+    "func":"Translation",
+    "value":-0.0772832,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL12",
+    "func":"Translation",
+    "value":-0.0738082,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL13",
+    "func":"Translation",
+    "value":0.176335,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL14",
+    "func":"Translation",
+    "value":-0.101645,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL15",
+    "func":"Translation",
+    "value":0.385674,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL16",
+    "func":"Translation",
+    "value":0.0129749,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL17",
+    "func":"Translation",
+    "value":-0.0857078,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL18",
+    "func":"Translation",
+    "value":0.0184957,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL19",
+    "func":"Translation",
+    "value":-0.0814975,
+    "mutation":"chr2 75874241 G>A SYNONYMOUS_CODING"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL2",
+    "func":"Translation",
+    "value":-0.176211,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL20",
+    "func":"Translation",
+    "value":-0.111956,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL21",
+    "func":"Translation",
+    "value":-0.314368,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL22",
+    "func":"Translation",
+    "value":-0.0739706,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL23",
+    "func":"Translation",
+    "value":-0.0266808,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL24",
+    "func":"Translation",
+    "value":0.0195,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL27",
+    "func":"Translation",
+    "value":0.0271411,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL28",
+    "func":"Translation",
+    "value":0.189019,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL3",
+    "func":"Translation",
+    "value":-0.11165,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL30",
+    "func":"Translation",
+    "value":-0.241341,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL32",
+    "func":"Translation",
+    "value":-0.146458,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL33",
+    "func":"Translation",
+    "value":-0.0489463,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL34",
+    "func":"Translation",
+    "value":-0.0426032,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL35",
+    "func":"Translation",
+    "value":-0.0165203,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL36",
+    "func":"Translation",
+    "value":-0.315835,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL37",
+    "func":"Translation",
+    "value":-0.107545,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL38",
+    "func":"Translation",
+    "value":-0.0414651,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL39",
+    "func":"Translation",
+    "value":-0.103618,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL4",
+    "func":"Translation",
+    "value":-0.0373348,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL40",
+    "func":"Translation",
+    "value":0.0131546,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL41",
+    "func":"Translation",
+    "value":-0.0435911,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL42",
+    "func":"Translation",
+    "value":-0.109029,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL43",
+    "func":"Translation",
+    "value":0.0258386,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL44",
+    "func":"Translation",
+    "value":0.00959437,
+    "mutation":"chr2 224824617 A>G SYNONYMOUS_CODING"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL45",
+    "func":"Translation",
+    "value":-0.133363,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL46",
+    "func":"Translation",
+    "value":-0.0920675,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL47",
+    "func":"Translation",
+    "value":-0.061929,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL48",
+    "func":"Translation",
+    "value":-0.0873772,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL49",
+    "func":"Translation",
+    "value":0.0574586,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL50",
+    "func":"Translation",
+    "value":-0.308818,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL51",
+    "func":"Translation",
+    "value":-0.104853,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL52",
+    "func":"Translation",
+    "value":-0.00426847,
+    "mutation":"chr14 23303641 A>C UTR_3_PRIME"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL53",
+    "func":"Translation",
+    "value":-0.0405194,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL54",
+    "func":"Translation",
+    "value":-0.149118,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL55",
+    "func":"Translation",
+    "value":-0.00788737,
+    "mutation":"chr1 228295502 C>T NON_SYNONYMOUS_CODING,chr1 228296012 C>T UTR_5_PRIME"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPL9",
+    "func":"Translation",
+    "value":-0.14015,
+    "mutation":"chr1 151735576 T>C NON_SYNONYMOUS_CODING"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPS10",
+    "func":"Translation",
+    "value":-0.132393,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPS11",
+    "func":"Translation",
+    "value":0.0148652,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPS12",
+    "func":"Translation",
+    "value":-0.156604,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPS14",
+    "func":"Translation",
+    "value":-0.159318,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPS15",
+    "func":"Translation",
+    "value":0.0350329,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPS16",
+    "func":"Translation",
+    "value":0.052238,
+    "mutation":"chr10 75009107 T>A UTR_3_PRIME"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPS17",
+    "func":"Translation",
+    "value":-0.287765,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPS18A",
+    "func":"Translation",
+    "value":-0.00261844,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPS18B",
+    "func":"Translation",
+    "value":0.0426341,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPS18C",
+    "func":"Translation",
+    "value":-0.208024,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPS2",
+    "func":"Translation",
+    "value":-0.00801462,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPS21",
+    "func":"Translation",
+    "value":-0.135029,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPS22",
+    "func":"Translation",
+    "value":-0.0603326,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPS23",
+    "func":"Translation",
+    "value":0.107175,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPS24",
+    "func":"Translation",
+    "value":-0.140879,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPS25",
+    "func":"Translation",
+    "value":-0.124068,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPS26",
+    "func":"Translation",
+    "value":-0.13493,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPS27",
+    "func":"Translation",
+    "value":-0.269886,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPS28",
+    "func":"Translation",
+    "value":0.458526,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPS30",
+    "func":"Translation",
+    "value":-0.149332,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPS31",
+    "func":"Translation",
+    "value":-0.26939,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPS33",
+    "func":"Translation",
+    "value":-0.166635,
+    "mutation":"chr7 140706031 G>A UTR_3_PRIME,chr7 140706157 G>T UTR_3_PRIME"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPS34",
+    "func":"Translation",
+    "value":-0.151907,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPS35",
+    "func":"Translation",
+    "value":-0.190929,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPS36",
+    "func":"Translation",
+    "value":-0.0815098,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPS5",
+    "func":"Translation",
+    "value":-0.179265,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPS6",
+    "func":"Translation",
+    "value":-0.0723524,
+    "mutation":"chr21 35515117 G>A UTR_3_PRIME"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPS7",
+    "func":"Translation",
+    "value":-0.0113833,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRPS9",
+    "func":"Translation",
+    "value":-0.140931,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MRRF",
+    "func":"Translation",
+    "value":-0.268859,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MSTO1",
+    "func":"Mitochondrial Dynamics",
+    "value":-0.10051,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MTFMT",
+    "func":"Translation",
+    "value":-0.162312,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MTFP1",
+    "func":"Mitochondrial Dynamics",
+    "value":0.0696317,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MTIF2",
+    "func":"Translation",
+    "value":-0.222156,
+    "mutation":"chr2 55490819 G>T NON_SYNONYMOUS_CODING"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MTIF3",
+    "func":"Translation",
+    "value":-0.288652,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MTO1",
+    "func":"Replication & Transcription",
+    "value":0.0494296,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MTPAP",
+    "func":"Replication & Transcription",
+    "value":-0.208287,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MTRF1",
+    "func":"Translation",
+    "value":-0.241532,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MTRF1L",
+    "func":"Translation",
+    "value":-0.0737061,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"MUTYH",
+    "func":"Replication & Transcription",
+    "value":-0.0775144,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NARF",
+    "func":"Fe-S cluster biosynthesis",
+    "value":0.174105,
+    "mutation":"chr17 80442722 T>C SYNONYMOUS_CODING"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NARS2",
+    "func":"Translation",
+    "value":0.00215424,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NDUFA1",
+    "func":"Electron transport chain",
+    "value":-0.0518492,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NDUFA10",
+    "func":"Electron transport chain",
+    "value":-0.16876,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NDUFA11",
+    "func":"Electron transport chain",
+    "value":-0.0311271,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NDUFA12",
+    "func":"Electron transport chain",
+    "value":-0.0813086,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NDUFA13",
+    "func":"Electron transport chain",
+    "value":0.0698031,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NDUFA2",
+    "func":"Electron transport chain",
+    "value":-0.0951134,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NDUFA3",
+    "func":"Electron transport chain",
+    "value":-0.102117,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NDUFA4",
+    "func":"Electron transport chain",
+    "value":-0.0116346,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NDUFA5",
+    "func":"Electron transport chain",
+    "value":-0.222299,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NDUFA6",
+    "func":"Electron transport chain",
+    "value":-0.0113263,
+    "mutation":"chr22 42481849 G>A UTR_3_PRIME"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NDUFA7",
+    "func":"Electron transport chain",
+    "value":-0.039825,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NDUFA8",
+    "func":"Electron transport chain",
+    "value":-0.17275,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NDUFA9",
+    "func":"Electron transport chain",
+    "value":-0.0522517,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NDUFAB1",
+    "func":"Electron transport chain",
+    "value":-0.0309414,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NDUFAF1",
+    "func":"Electron transport chain",
+    "value":0.0635535,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NDUFAF2",
+    "func":"Electron transport chain",
+    "value":-0.272444,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NDUFAF3",
+    "func":"Electron transport chain",
+    "value":-0.0286892,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NDUFAF4",
+    "func":"Electron transport chain",
+    "value":-0.189938,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NDUFB1",
+    "func":"Electron transport chain",
+    "value":-0.0670061,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NDUFB10",
+    "func":"Electron transport chain",
+    "value":-0.216758,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NDUFB11",
+    "func":"Electron transport chain",
+    "value":-0.111037,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NDUFB2",
+    "func":"Electron transport chain",
+    "value":0.0218907,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NDUFB3",
+    "func":"Electron transport chain",
+    "value":-0.183452,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NDUFB4",
+    "func":"Electron transport chain",
+    "value":-0.00788605,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NDUFB5",
+    "func":"Electron transport chain",
+    "value":-0.164804,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NDUFB6",
+    "func":"Electron transport chain",
+    "value":-0.179392,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NDUFB7",
+    "func":"Electron transport chain",
+    "value":0.0560591,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NDUFB8",
+    "func":"Electron transport chain",
+    "value":0.0780155,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NDUFB9",
+    "func":"Electron transport chain",
+    "value":0.208012,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NDUFC1",
+    "func":"Electron transport chain",
+    "value":0.0627882,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NDUFC2",
+    "func":"Electron transport chain",
+    "value":-0.0360041,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NDUFS1",
+    "func":"Electron transport chain",
+    "value":0.0946534,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NDUFS2",
+    "func":"Electron transport chain",
+    "value":0.014964,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NDUFS3",
+    "func":"Electron transport chain",
+    "value":0.064568,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NDUFS4",
+    "func":"Electron transport chain",
+    "value":-0.172046,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NDUFS5",
+    "func":"Electron transport chain",
+    "value":-0.108635,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NDUFS6",
+    "func":"Electron transport chain",
+    "value":-0.129937,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NDUFS7",
+    "func":"Electron transport chain",
+    "value":-0.102473,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NDUFS8",
+    "func":"Electron transport chain",
+    "value":-0.00452068,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NDUFV1",
+    "func":"Electron transport chain",
+    "value":-0.227775,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NDUFV2",
+    "func":"Electron transport chain",
+    "value":0.0677188,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NDUFV3",
+    "func":"Electron transport chain",
+    "value":-0.153086,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NFE2L2",
+    "func":"Replication & Transcription",
+    "value":0.290595,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NFS1",
+    "func":"Fe-S cluster biosynthesis",
+    "value":0.109031,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NFU1",
+    "func":"Fe-S cluster biosynthesis",
+    "value":-0.0104562,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NME3",
+    "func":"Replication & Transcription",
+    "value":-0.0942106,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NME4",
+    "func":"Replication & Transcription",
+    "value":-0.0573637,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NME6",
+    "func":"Replication & Transcription",
+    "value":0.306534,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NRF1",
+    "func":"Replication & Transcription",
+    "value":0.0918905,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NSUN2",
+    "func":"Replication & Transcription",
+    "value":0.0663345,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NTHL1",
+    "func":"Replication & Transcription",
+    "value":-0.125796,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NUBP1",
+    "func":"Fe-S cluster biosynthesis",
+    "value":-0.0163779,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NUBP2",
+    "func":"Fe-S cluster biosynthesis",
+    "value":-0.146043,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"NUBPL",
+    "func":"Electron transport chain",
+    "value":-0.0568251,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"OGDH",
+    "func":"Tricarboxylic acid cycle",
+    "value":0.154224,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"OGG1",
+    "func":"Replication & Transcription",
+    "value":0.112684,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"OMA1",
+    "func":"Mitochondrial Dynamics",
+    "value":-0.0144951,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"OPA1",
+    "func":"Mitochondrial Dynamics",
+    "value":0.0365188,
+    "mutation":"chr3 193361168 T>A NON_SYNONYMOUS_CODING,chr3 193364872 A>C SYNONYMOUS_CODING,chr3 193412672 A>G UTR_3_PRIME"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"OPA3",
+    "func":"Mitochondrial Dynamics",
+    "value":-0.0638697,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"OSGEPL1",
+    "func":"Replication & Transcription",
+    "value":-0.503514,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"OXA1L",
+    "func":"Translation",
+    "value":-0.134244,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"PACS2",
+    "func":"Calcium trafficking",
+    "value":0.113135,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"PAM16",
+    "func":"Import & Sorting",
+    "value":-0.131405,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"PARL",
+    "func":"Mitochondrial Dynamics",
+    "value":0.082715,
+    "mutation":"chr3 183558402 C>G NON_SYNONYMOUS_CODING"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"PARS2",
+    "func":"Translation",
+    "value":-0.125143,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"PDHA1",
+    "func":"Formation of Acetyl CoA",
+    "value":0.00136967,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"PDHB",
+    "func":"Formation of Acetyl CoA",
+    "value":0.0223793,
+    "mutation":"chr3 58413669 G>T UTR_3_PRIME"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"PDHX",
+    "func":"Formation of Acetyl CoA",
+    "value":0.228277,
+    "mutation":"chr11 34969112 A>G NON_SYNONYMOUS_CODING,chr11 34991727 T>C SYNONYMOUS_CODING"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"PET112",
+    "func":"Translation",
+    "value":-0.127724,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"PFKL",
+    "func":"Glycolysis",
+    "value":0.0135901,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"PFKM",
+    "func":"Glycolysis",
+    "value":-0.198927,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"PFKP",
+    "func":"Glycolysis",
+    "value":0.0104338,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"PGAM1",
+    "func":"Glycolysis",
+    "value":0.0424583,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"PGAM2",
+    "func":"Glycolysis",
+    "value":-0.0225782,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"PGK1",
+    "func":"Glycolysis",
+    "value":0.0549616,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"PGS1",
+    "func":"Cardiolipin biosynthesis",
+    "value":-0.0522257,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"PHB",
+    "func":"Translation",
+    "value":-0.00715638,
+    "mutation":"chr17 47481514 T>C UTR_3_PRIME,chr17 47481530 G>A UTR_3_PRIME"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"PHB2",
+    "func":"Translation",
+    "value":-0.13708,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"PINK1",
+    "func":"Mitochondrial Dynamics",
+    "value":0.338557,
+    "mutation":"chr1 20977365 C>G UTR_3_PRIME,chr1 20977599 C>G UTR_3_PRIME,chr1 20977748 T>G UTR_3_PRIME"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"PKIA",
+    "func":"Mitochondrial Dynamics",
+    "value":1.1042,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"PKLR",
+    "func":"Glycolysis",
+    "value":-0.716111,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"PKM2",
+    "func":"Glycolysis",
+    "value":0.304897,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"PLD6",
+    "func":"Mitochondrial Dynamics",
+    "value":0.149109,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"PMAIP1",
+    "func":"Apoptosis",
+    "value":-0.00788535,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"PML",
+    "func":"Calcium trafficking",
+    "value":-0.0834846,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"PMPCA",
+    "func":"Import & Sorting",
+    "value":-0.112439,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"PMPCB",
+    "func":"Import & Sorting",
+    "value":-0.235511,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"POLG",
+    "func":"Replication & Transcription",
+    "value":-0.00517634,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"POLG2",
+    "func":"Replication & Transcription",
+    "value":-0.189279,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"POLRMT",
+    "func":"Replication & Transcription",
+    "value":-0.00520224,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"PPIA",
+    "func":"Apoptosis",
+    "value":0.0114526,
+    "mutation":"chr7 44841245 AAG>A UTR_3_PRIME,chr7 44842421 A>G UTR_3_PRIME,chr7 44842432 GAA>G UTR_3_PRIME"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"PPIF",
+    "func":"Apoptosis",
+    "value":-0.292659,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"PPOX",
+    "func":"Heme Biosynthesis",
+    "value":-0.0345333,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"PRDX3",
+    "func":"ROS defense",
+    "value":0.0208508,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"PTCD2",
+    "func":"Electron transport chain",
+    "value":-0.343951,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"PTCD3",
+    "func":"Translation",
+    "value":-0.121408,
+    "mutation":"chr2 86364706 TG>T UTR_3_PRIME"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"PTPMT1",
+    "func":"Cardiolipin biosynthesis",
+    "value":-0.0480542,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"PUS1",
+    "func":"Replication & Transcription",
+    "value":-0.276389,
+    "mutation":"chr12 132423796 C>A NON_SYNONYMOUS_CODING"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"PUS3",
+    "func":"Replication & Transcription",
+    "value":-0.382178,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"QRSL1",
+    "func":"Translation",
+    "value":-0.166866,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"QTRT1",
+    "func":"Replication & Transcription",
+    "value":0.0187297,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"QTRTD1",
+    "func":"Replication & Transcription",
+    "value":-0.104663,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"RARS2",
+    "func":"Translation",
+    "value":0.0121963,
+    "mutation":"chr6 88240570 C>T NON_SYNONYMOUS_CODING"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"RHOT1",
+    "func":"Mitochondrial Dynamics",
+    "value":-0.0951911,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"RHOT2",
+    "func":"Mitochondrial Dynamics",
+    "value":0.0516283,
+    "mutation":"chr16 723725 G>T UTR_3_PRIME,chr16 723838 C>A UTR_3_PRIME"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"RMRP",
+    "func":"Replication & Transcription",
+    "value":-1.91684,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"RNASEH1",
+    "func":"Replication & Transcription",
+    "value":-0.0301435,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"RNASEL",
+    "func":"Translation",
+    "value":-0.154813,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"RPUSD2",
+    "func":"Replication & Transcription",
+    "value":0.0360237,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"RPUSD4",
+    "func":"Replication & Transcription",
+    "value":-0.0758955,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"RRM2B",
+    "func":"Replication & Transcription",
+    "value":0.262337,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"SAMM50",
+    "func":"Import & Sorting",
+    "value":-0.140858,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"SARS2",
+    "func":"Translation",
+    "value":0.00904901,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"SCO1",
+    "func":"Electron transport chain",
+    "value":-0.18384,
+    "mutation":"chr17 10583834 GT>G UTR_3_PRIME"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"SCO2",
+    "func":"Electron transport chain",
+    "value":0.010943,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"SDHA",
+    "func":"Tricarboxylic acid cycle",
+    "value":0.0739668,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"SDHAF1",
+    "func":"Electron transport chain",
+    "value":-0.226228,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"SDHAF2",
+    "func":"Electron transport chain",
+    "value":0.182739,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"SDHB",
+    "func":"Tricarboxylic acid cycle",
+    "value":-0.0702167,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"SDHC",
+    "func":"Tricarboxylic acid cycle",
+    "value":0.0628977,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"SDHD",
+    "func":"Tricarboxylic acid cycle",
+    "value":-0.214241,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"SELRC1",
+    "func":"Electron transport chain",
+    "value":-0.15433,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"SH3GLB1",
+    "func":"Mitochondrial Dynamics",
+    "value":0.181577,
+    "mutation":"chr1 87200817 C>T NON_SYNONYMOUS_CODING"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"SHC1",
+    "func":"ROS defense",
+    "value":-0.0733401,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"SIGMAR1",
+    "func":"Calcium trafficking",
+    "value":-0.182379,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"SLC24A6",
+    "func":"Calcium trafficking",
+    "value":-0.0284989,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"SLC25A1",
+    "func":"ROS defense",
+    "value":0.0059436,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"SLC25A19",
+    "func":"Replication & Transcription",
+    "value":-0.154512,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"SLC25A20",
+    "func":"Fatty acid beta-oxidation",
+    "value":0.0245483,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"SLC25A28",
+    "func":"Fe-S cluster biosynthesis",
+    "value":-0.0321419,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"SLC25A3",
+    "func":"Replication & Transcription",
+    "value":-0.0566764,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"SLC25A33",
+    "func":"Replication & Transcription",
+    "value":-0.256158,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"SLC25A37",
+    "func":"Fe-S cluster biosynthesis",
+    "value":0.436516,
+    "mutation":"chr8 23423758 G>A SYNONYMOUS_CODING"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"SLC25A4",
+    "func":"Apoptosis",
+    "value":-0.0905935,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"SLC25A5",
+    "func":"Apoptosis",
+    "value":-0.161661,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"SLC25A6",
+    "func":"Apoptosis",
+    "value":-0.114948,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"SLC27A1",
+    "func":"Fatty acid beta-oxidation",
+    "value":0.150247,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"SLC27A2",
+    "func":"Fatty acid beta-oxidation",
+    "value":-0.474713,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"SLC27A3",
+    "func":"Fatty acid beta-oxidation",
+    "value":0.198843,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"SLC27A4",
+    "func":"Fatty acid beta-oxidation",
+    "value":0.238942,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"SLC27A5",
+    "func":"Fatty acid beta-oxidation",
+    "value":-0.0897503,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"SLC27A6",
+    "func":"Fatty acid beta-oxidation",
+    "value":0.142889,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"SLC29A1",
+    "func":"Replication & Transcription",
+    "value":-0.104857,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"SLC2A1",
+    "func":"Glycolysis",
+    "value":0.187436,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"SLC2A3",
+    "func":"Glycolysis",
+    "value":-0.594635,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"SLC2A4",
+    "func":"Glycolysis",
+    "value":-0.586638,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"SOD1",
+    "func":"ROS defense",
+    "value":0.00191902,
+    "mutation":"chr21 33032042 G>A UTR_5_PRIME"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"SOD2",
+    "func":"ROS defense",
+    "value":-0.0866853,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"SPG7",
+    "func":"Mitochondrial Dynamics",
+    "value":0.0101037,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"SQSTM1",
+    "func":"Mitochondrial Dynamics",
+    "value":0.2603,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"SSBP1",
+    "func":"Replication & Transcription",
+    "value":-0.215617,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"STOML2",
+    "func":"Mitochondrial Dynamics",
+    "value":-0.074696,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"SUCLA2",
+    "func":"Tricarboxylic acid cycle",
+    "value":0.0966849,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"SUCLG1",
+    "func":"Tricarboxylic acid cycle",
+    "value":-0.110769,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"SUCLG2",
+    "func":"Tricarboxylic acid cycle",
+    "value":-0.0971717,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"SURF1",
+    "func":"Electron transport chain",
+    "value":-0.136811,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"SYBU",
+    "func":"Mitochondrial Dynamics",
+    "value":-0.26632,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TACO1",
+    "func":"Translation",
+    "value":0.0441398,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TARS2",
+    "func":"Translation",
+    "value":-0.210968,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TAZ",
+    "func":"Cardiolipin biosynthesis",
+    "value":0.141373,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TCHP",
+    "func":"Calcium trafficking",
+    "value":0.0635917,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TERT",
+    "func":"Replication & Transcription",
+    "value":-0.341502,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TFAM",
+    "func":"Replication & Transcription",
+    "value":-0.319498,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TFB1M",
+    "func":"Replication & Transcription",
+    "value":-0.148921,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TFB2M",
+    "func":"Replication & Transcription",
+    "value":-0.19138,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TIMM10",
+    "func":"Import & Sorting",
+    "value":0.0531579,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TIMM13",
+    "func":"Import & Sorting",
+    "value":-0.114623,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TIMM17A",
+    "func":"Import & Sorting",
+    "value":-0.0609344,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TIMM17B",
+    "func":"Import & Sorting",
+    "value":0.0786787,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TIMM21",
+    "func":"Import & Sorting",
+    "value":-0.386906,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TIMM22",
+    "func":"Import & Sorting",
+    "value":0.00884717,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TIMM23",
+    "func":"Import & Sorting",
+    "value":-0.0783163,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TIMM44",
+    "func":"Import & Sorting",
+    "value":-0.106535,
+    "mutation":"chr19 7992159 C>T SYNONYMOUS_CODING"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TIMM50",
+    "func":"Import & Sorting",
+    "value":-0.109513,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TIMM8A",
+    "func":"Import & Sorting",
+    "value":-0.280168,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TIMM8B",
+    "func":"Import & Sorting",
+    "value":-0.110071,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TIMM9",
+    "func":"Import & Sorting",
+    "value":-0.286948,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TK2",
+    "func":"Replication & Transcription",
+    "value":-0.00711824,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TMEM126B",
+    "func":"Electron transport chain",
+    "value":-0.216066,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TMEM70",
+    "func":"Electron transport chain",
+    "value":0.279433,
+    "mutation":"chr8 74893821 A>G NON_SYNONYMOUS_CODING,chr8 74893850 C>G NON_SYNONYMOUS_CODING |chr8 74893880 C>T UTR_3_PRIME"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TOMM20",
+    "func":"Import & Sorting",
+    "value":-0.184214,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TOMM22",
+    "func":"Import & Sorting",
+    "value":-0.184113,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TOMM40",
+    "func":"Import & Sorting",
+    "value":0.0632564,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TOMM40L",
+    "func":"Import & Sorting",
+    "value":0.0787674,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TOMM5",
+    "func":"Import & Sorting",
+    "value":-0.300802,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TOMM6",
+    "func":"Import & Sorting",
+    "value":-0.00360644,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TOMM7",
+    "func":"Import & Sorting",
+    "value":-0.33279,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TOMM70A",
+    "func":"Import & Sorting",
+    "value":-0.0785746,
+    "mutation":"chr3 100082857 C>G UTR_3_PRIME"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TOP1MT",
+    "func":"Replication & Transcription",
+    "value":0.520883,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TOP3A",
+    "func":"Replication & Transcription",
+    "value":-0.0856871,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TP53",
+    "func":"Apoptosis",
+    "value":-0.0378891,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TPI1",
+    "func":"Glycolysis",
+    "value":0.0276004,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TRAK1",
+    "func":"Mitochondrial Dynamics",
+    "value":0.114977,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TRAK2",
+    "func":"Mitochondrial Dynamics",
+    "value":0.173173,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TRAP1",
+    "func":"Mitochondrial Dynamics",
+    "value":-0.256518,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TRIT1",
+    "func":"Replication & Transcription",
+    "value":-0.191458,
+    "mutation":"chr1 40306865 C>T UTR_3_PRIME,chr1 40306898 T>C UTR_3_PRIME"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TRMT1",
+    "func":"Replication & Transcription",
+    "value":-0.209288,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TRMT11",
+    "func":"Replication & Transcription",
+    "value":-0.342218,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TRMT112",
+    "func":"Replication & Transcription",
+    "value":-0.0661355,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TRMT2B",
+    "func":"Replication & Transcription",
+    "value":0.0414926,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TRMT5",
+    "func":"Replication & Transcription",
+    "value":-0.270431,
+    "mutation":"chr14 61445967 A>G NON_SYNONYMOUS_CODING"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TRMT6",
+    "func":"Replication & Transcription",
+    "value":-0.148657,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TRMT61B",
+    "func":"Replication & Transcription",
+    "value":-0.0310631,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TRMU",
+    "func":"Replication & Transcription",
+    "value":-0.11855,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TRNT1",
+    "func":"Replication & Transcription",
+    "value":-0.247176,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TRUB2",
+    "func":"Replication & Transcription",
+    "value":-0.0312846,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TSFM",
+    "func":"Translation",
+    "value":-0.117533,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TTC19",
+    "func":"Electron transport chain",
+    "value":-0.00673694,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TUFM",
+    "func":"Translation",
+    "value":-0.106582,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TXN2",
+    "func":"ROS defense",
+    "value":-0.154652,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"TXNRD2",
+    "func":"ROS defense",
+    "value":0.168535,
+    "mutation":"chr22 19863156 TG>T UTR_3_PRIME,chr22 19906511 G>A SYNONYMOUS_CODING"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"UNG",
+    "func":"Replication & Transcription",
+    "value":-0.148833,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"UQCC",
+    "func":"Electron transport chain",
+    "value":-0.111464,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"UQCR10",
+    "func":"Electron transport chain",
+    "value":-0.0152575,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"UQCR11",
+    "func":"Electron transport chain",
+    "value":-0.0746841,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"UQCRB",
+    "func":"Electron transport chain",
+    "value":0.114959,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"UQCRC1",
+    "func":"Electron transport chain",
+    "value":0.047457,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"UQCRC2",
+    "func":"Electron transport chain",
+    "value":-0.0879745,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"UQCRFS1",
+    "func":"Electron transport chain",
+    "value":-0.0847096,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"UQCRH",
+    "func":"Electron transport chain",
+    "value":-0.211082,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"UQCRQ",
+    "func":"Electron transport chain",
+    "value":-0.260963,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"UROD",
+    "func":"Heme Biosynthesis",
+    "value":-0.144646,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"UROS",
+    "func":"Heme Biosynthesis",
+    "value":-0.147541,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"VARS2",
+    "func":"Translation",
+    "value":0.052828,
+    "mutation":"chr6 30893941 G>A NON_SYNONYMOUS_CODING"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"VDAC1",
+    "func":"Apoptosis",
+    "value":-0.177543,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"VDAC2",
+    "func":"Apoptosis",
+    "value":-0.0157956,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"VDAC3",
+    "func":"Apoptosis",
+    "value":0.657912,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"WARS2",
+    "func":"Translation",
+    "value":-0.105353,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"XIAP",
+    "func":"Apoptosis",
+    "value":0.0571383,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"YARS2",
+    "func":"Translation",
+    "value":-0.163053,
+    "mutation":"chr12 32908518 G>A SYNONYMOUS_CODING"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"YME1L1",
+    "func":"Mitochondrial Dynamics",
+    "value":-0.303678,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 4",
+    "gene":"YRDC",
+    "func":"Replication & Transcription",
+    "value":0.111562,
+    "mutation":"chr1 38268918 T>C UTR_3_PRIME"
+  }
+]
