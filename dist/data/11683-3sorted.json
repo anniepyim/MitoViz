@@ -1234,6 +1234,13 @@
   {
     "sample":"8/3 clone 3",
     "gene":"GFER",
+    "func":"Fe-S cluster biosynthesis",
+    "value":0.247238,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 3",
+    "gene":"GFER",
     "func":"Import & Sorting",
     "value":0.247238,
     "mutation":"NULL"
@@ -2908,6 +2915,13 @@
     "sample":"8/3 clone 3",
     "gene":"PHB2",
     "func":"Translation",
+    "value":0.0269165,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"8/3 clone 3",
+    "gene":"PHB2",
+    "func":"Mitochondrial Dynamics",
     "value":0.0269165,
     "mutation":"NULL"
   },

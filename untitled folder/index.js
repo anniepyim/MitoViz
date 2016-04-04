@@ -8,7 +8,6 @@ var PC = require('./js/piechart.js');
 var heatmap = require('./js/heatmap.js');
 var parser = require('./js/parser.js');
 
-
 function hideLoading() {
     d3.select('#loading').remove();
     d3.select('#compareButton').remove();
@@ -27,6 +26,7 @@ function onSuccess(data) {
     heatmap.init(data);
 }
 
+
 d3.select('#compareButton').on('click', compareData);
 
 function compareData(){
@@ -40,6 +40,9 @@ function compareData(){
             }
         parser.parse(arr, onError, onSuccess);
 }
+
+
+
 
 
 //fetch('', function(data){console.log(data);});

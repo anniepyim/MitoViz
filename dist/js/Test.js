@@ -9,8 +9,11 @@ var PC = require('./js/piechart.js');
 var heatmap = require('./js/heatmap.js');
 var parser = require('./js/parser.js');
 
+
 function hideLoading() {
     d3.select('#loading').remove();
+    d3.select('#compareButton').remove();
+    d3.select('#cb').remove();
 }
 
 function onError(res) {
@@ -25,7 +28,19 @@ function onSuccess(data) {
     heatmap.init(data);
 }
 
-parser.parse(['./data/RPE-123sorted.json','./data/RPE-213sorted.json','./data/11683-3sorted.json','./data/11683-4sorted.json','./data/11654sorted.json'], onError, onSuccess);
+d3.select('#compareButton').on('click', compareData);
+
+function compareData(){
+         var arr = [];
+         var names = document.getElementsByName('Sample');
+            for(var x = 0; x < names.length; x++){
+                if(names[x].checked)
+                {
+                arr.push(names[x].value);
+                }
+            }
+        parser.parse(arr, onError, onSuccess);
+}
 
 
 //fetch('', function(data){console.log(data);});
@@ -406,6 +421,7 @@ var PIEmargin = {top: 20, right: 20, bottom: 30, left: 10},
 
 
 var PIEsvg = d3.select("#piechart").append("svg")
+    .attr("id", "piechartsvg")
     .attr("width", pieDim.w + pieDim.rpadding)
     .attr("height", 400)
     .append("g")
@@ -485,6 +501,7 @@ PC.draw = function (jsondata) {
         d3.select("#heatmapsvg").remove();
         heatmap.processData(jsondata, d.data.func);
     }
+    
 
 };
 
@@ -502,7 +519,7 @@ var SPmargin = {top: 20, right: 20, bottom: 30, left: 40},
     SPheight = 400 - SPmargin.top - SPmargin.bottom;
 
 var SPsvg = d3.select("#scatterplot").append("svg")
-    .attr("id", "imsp")
+    .attr("id", "scatterplotsvg")
     .attr("width", SPwidth + SPmargin.left + SPmargin.right)
     .attr("height", SPheight + SPmargin.top + SPmargin.bottom)
     .append("g")
@@ -791,7 +808,7 @@ SP.highlight = function(d, ingene){
 
 SP.init = function (jsondata) {
     SP.drawaxis();
-    SP.update(jsondata, "Apoptosis", "#fb8072");
+    SP.update(jsondata, "Apoptosis", "#b3de69");
 };
 
 if (typeof define === "function" && define.amd) {

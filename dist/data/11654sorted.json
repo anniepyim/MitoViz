@@ -1234,6 +1234,13 @@
   {
     "sample":"5/4",
     "gene":"GFER",
+    "func":"Fe-S cluster biosynthesis",
+    "value":0.142389,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"5/4",
+    "gene":"GFER",
     "func":"Import & Sorting",
     "value":0.142389,
     "mutation":"NULL"
@@ -2908,6 +2915,13 @@
     "sample":"5/4",
     "gene":"PHB2",
     "func":"Translation",
+    "value":-0.143948,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"5/4",
+    "gene":"PHB2",
+    "func":"Mitochondrial Dynamics",
     "value":-0.143948,
     "mutation":"NULL"
   },

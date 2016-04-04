@@ -6,7 +6,7 @@ var SPmargin = {top: 20, right: 20, bottom: 30, left: 40},
     SPheight = 400 - SPmargin.top - SPmargin.bottom;
 
 var SPsvg = d3.select("#scatterplot").append("svg")
-    .attr("id", "imsp")
+    .attr("id", "scatterplotsvg")
     .attr("width", SPwidth + SPmargin.left + SPmargin.right)
     .attr("height", SPheight + SPmargin.top + SPmargin.bottom)
     .append("g")
@@ -295,7 +295,7 @@ SP.highlight = function(d, ingene){
 
 SP.init = function (jsondata) {
     SP.drawaxis();
-    SP.update(jsondata, "Apoptosis", "#fb8072");
+    SP.update(jsondata, "Apoptosis", "#b3de69");
 };
 
 if (typeof define === "function" && define.amd) {

@@ -1233,6 +1233,20 @@
   },
   {
     "sample":"RPE1 5/3 12/3",
+    "gene":"GRPEL1",
+    "func":"Import & Sorting",
+    "value":0.238663,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"RPE1 5/3 12/3",
+    "gene":"GRPEL2",
+    "func":"Import & Sorting",
+    "value":0.373354,
+    "mutation":"NULL"
+  },
+  {
+    "sample":"RPE1 5/3 12/3",
     "gene":"GFER",
     "func":"Fe-S cluster biosynthesis",
     "value":0.308352,
@@ -1299,20 +1313,6 @@
     "gene":"GPX4",
     "func":"ROS defense",
     "value":0.144384,
-    "mutation":"NULL"
-  },
-  {
-    "sample":"RPE1 5/3 12/3",
-    "gene":"GRPE1 5/3 12/3L1",
-    "func":"Import & Sorting",
-    "value":0.238663,
-    "mutation":"NULL"
-  },
-  {
-    "sample":"RPE1 5/3 12/3",
-    "gene":"GRPE1 5/3 12/3L2",
-    "func":"Import & Sorting",
-    "value":0.373354,
     "mutation":"NULL"
   },
   {

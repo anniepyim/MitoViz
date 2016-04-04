@@ -1,0 +1,4167 @@
+[
+  {
+    "sample": "3neg-A18V",
+    "gene": "AARS2",
+    "func": "Translation",
+    "value": 0.4833,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ABCB7",
+    "func": "Fe-S cluster biosynthesis",
+    "value": -0.2358,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ACAA2",
+    "func": "Fatty acid beta-oxidation",
+    "value": -1.7701,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ACAD10",
+    "func": "Fatty acid beta-oxidation",
+    "value": -1.0492,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ACAD11",
+    "func": "Fatty acid beta-oxidation",
+    "value": -1.6294,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ACAD8",
+    "func": "Fatty acid beta-oxidation",
+    "value": -2.0462,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ACAD9",
+    "func": "Electron transport chain",
+    "value": 0.6987,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ACADL",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.4207,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ACADM",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.7079,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ACADSB",
+    "func": "Fatty acid beta-oxidation",
+    "value": -3.205,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ACADS",
+    "func": "Fatty acid beta-oxidation",
+    "value": -3.0608,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ACADVL",
+    "func": "Fatty acid beta-oxidation",
+    "value": -2.882,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ACO2",
+    "func": "Tricarboxylic acid cycle",
+    "value": -0.2036,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ACSBG1",
+    "func": "Fatty acid beta-oxidation",
+    "value": -3.9047,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ACSBG2",
+    "func": "Fatty acid beta-oxidation",
+    "value": -4.6705,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ACSL1",
+    "func": "Fatty acid beta-oxidation",
+    "value": 0.6419,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ACSL3",
+    "func": "Fatty acid beta-oxidation",
+    "value": 1.0563,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ACSL4",
+    "func": "Fatty acid beta-oxidation",
+    "value": 0.8622,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ACSL5",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.0997,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ACSL6",
+    "func": "Fatty acid beta-oxidation",
+    "value": 5.3179,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ACSM1",
+    "func": "Fatty acid beta-oxidation",
+    "value": -7.1975,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ACSM2A",
+    "func": "Fatty acid beta-oxidation",
+    "value": -2.1461,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ACSM2B",
+    "func": "Fatty acid beta-oxidation",
+    "value": -1.5642,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ACSM3",
+    "func": "Fatty acid beta-oxidation",
+    "value": -5.014,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ACSM4",
+    "func": "Fatty acid beta-oxidation",
+    "value": 0,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ACSM5",
+    "func": "Fatty acid beta-oxidation",
+    "value": -3.744,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ACSS1",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.6137,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ACSS2",
+    "func": "Fatty acid beta-oxidation",
+    "value": -2.4504,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ACSS3",
+    "func": "Fatty acid beta-oxidation",
+    "value": -1.5146,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "AFG3L2",
+    "func": "Mitochondrial Dynamics",
+    "value": -0.4048,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "AIFM1",
+    "func": "Apoptosis",
+    "value": 0.2185,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "AK3",
+    "func": "Replication & Transcription",
+    "value": -0.0992,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ALAD",
+    "func": "Heme Biosynthesis",
+    "value": -0.8594,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ALAS1",
+    "func": "Heme Biosynthesis",
+    "value": 0.8423,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ALAS2",
+    "func": "Heme Biosynthesis",
+    "value": -1.5642,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ALDOA",
+    "func": "Glycolysis",
+    "value": 0.1453,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ALDOB",
+    "func": "Glycolysis",
+    "value": -1.7002,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ALDOC",
+    "func": "Glycolysis",
+    "value": -2.9599,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "AMBRA1",
+    "func": "Mitochondrial Dynamics",
+    "value": 0.1301,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ANP32A",
+    "func": "Apoptosis",
+    "value": 0.0427,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "APAF1",
+    "func": "Apoptosis",
+    "value": 0.6856,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "APEX1",
+    "func": "Replication & Transcription",
+    "value": -0.9643,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "APEX2",
+    "func": "Replication & Transcription",
+    "value": -0.0221,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ARG1",
+    "func": "Urea Cycle",
+    "value": -1.1513,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ARG2",
+    "func": "Urea Cycle",
+    "value": -1.2041,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ASL",
+    "func": "Urea Cycle",
+    "value": -1.5898,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ASS1",
+    "func": "Urea Cycle",
+    "value": 2.021,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ATAD3A",
+    "func": "Translation",
+    "value": 1.5156,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ATAD3B",
+    "func": "Translation",
+    "value": 0.9193,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ATP5A1",
+    "func": "Electron transport chain",
+    "value": -1.0787,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ATP5B",
+    "func": "Electron transport chain",
+    "value": -0.0029,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ATP5C1",
+    "func": "Electron transport chain",
+    "value": 0.317,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ATP5D",
+    "func": "Electron transport chain",
+    "value": -2.9326,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ATP5E",
+    "func": "Electron transport chain",
+    "value": -1.5612,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ATP5F1",
+    "func": "Electron transport chain",
+    "value": -0.6766,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ATP5G1",
+    "func": "Electron transport chain",
+    "value": 0.049,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ATP5G2",
+    "func": "Electron transport chain",
+    "value": -2.3023,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ATP5G3",
+    "func": "Electron transport chain",
+    "value": 0.1749,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ATP5H",
+    "func": "Electron transport chain",
+    "value": -1.0306,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ATP5I",
+    "func": "Electron transport chain",
+    "value": -2.1256,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ATP5J2",
+    "func": "Electron transport chain",
+    "value": 0.3404,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ATP5J",
+    "func": "Electron transport chain",
+    "value": -1.6375,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ATP5L",
+    "func": "Electron transport chain",
+    "value": -1.5872,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ATP5O",
+    "func": "Electron transport chain",
+    "value": -1.8074,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ATPAF1",
+    "func": "Electron transport chain",
+    "value": -0.5262,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ATPAF2",
+    "func": "Electron transport chain",
+    "value": -1.0047,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ATPIF1",
+    "func": "Electron transport chain",
+    "value": -0.3117,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "BAD",
+    "func": "Apoptosis",
+    "value": -1.5392,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "BAK1",
+    "func": "Apoptosis",
+    "value": 2.1219,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "BAX",
+    "func": "Apoptosis",
+    "value": -1.0439,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "BBC3",
+    "func": "Apoptosis",
+    "value": -3.175,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "BCKDHA",
+    "func": "ROS defense",
+    "value": -0.9211,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "BCKDHB",
+    "func": "ROS defense",
+    "value": -1.0729,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "BCL2L11",
+    "func": "Apoptosis",
+    "value": 0.0182,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "BCL2L1",
+    "func": "Apoptosis",
+    "value": -0.3794,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "BCL2",
+    "func": "Apoptosis",
+    "value": -1.352,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "BCS1L",
+    "func": "Electron transport chain",
+    "value": 0.3103,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "BECN1",
+    "func": "Mitochondrial Dynamics",
+    "value": -0.6679,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "BID",
+    "func": "Apoptosis",
+    "value": 0.983,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "BIK",
+    "func": "Apoptosis",
+    "value": -1.0922,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "BNIP3L",
+    "func": "Mitochondrial Dynamics",
+    "value": -0.8071,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "BNIP3",
+    "func": "Mitochondrial Dynamics",
+    "value": -1.5655,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "BOLA3",
+    "func": "Fe-S cluster biosynthesis",
+    "value": 0.6316,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "BRP44L",
+    "func": "Pyruvate transfer",
+    "value": -1.6478,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "BRP44",
+    "func": "Pyruvate transfer",
+    "value": -0.5192,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "C10orf129",
+    "func": "Fatty acid beta-oxidation",
+    "value": -1.3033,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "C10orf2",
+    "func": "Replication & Transcription",
+    "value": 0.5557,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "C1orf31",
+    "func": "Electron transport chain",
+    "value": 0.2231,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "C20orf7",
+    "func": "Electron transport chain",
+    "value": -0.7867,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "C22orf32",
+    "func": "Calcium trafficking",
+    "value": -1.2288,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "C2orf56",
+    "func": "Electron transport chain",
+    "value": -0.5571,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "C7orf44",
+    "func": "Electron transport chain",
+    "value": 0.2054,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "C8orf38",
+    "func": "Electron transport chain",
+    "value": 0.931,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "CARS2",
+    "func": "Translation",
+    "value": 0.2291,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "CASP3",
+    "func": "Apoptosis",
+    "value": 0.8101,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "CASP7",
+    "func": "Apoptosis",
+    "value": -0.3924,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "CASP9",
+    "func": "Apoptosis",
+    "value": -2.1415,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "CCDC109B",
+    "func": "Calcium trafficking",
+    "value": 0.5145,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "CCDC56",
+    "func": "Electron transport chain",
+    "value": -1.8799,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "CCDC90A",
+    "func": "Calcium trafficking",
+    "value": -0.7763,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "CD36",
+    "func": "Fatty acid beta-oxidation",
+    "value": -3.7908,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "CDK1",
+    "func": "Apoptosis",
+    "value": 6.5388,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "CDK5RAP1",
+    "func": "Replication & Transcription",
+    "value": -1.3416,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "CDKAL1",
+    "func": "Replication & Transcription",
+    "value": 0.3257,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "CDS1",
+    "func": "Cardiolipin biosynthesis",
+    "value": -0.2615,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "CHCHD4",
+    "func": "Import & Sorting",
+    "value": -0.2828,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "CHCHD8",
+    "func": "Electron transport chain",
+    "value": -0.344,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "CIAO1",
+    "func": "Fe-S cluster biosynthesis",
+    "value": 0.262,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "CIAPIN1",
+    "func": "Fe-S cluster biosynthesis",
+    "value": 0.8348,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "CLPP",
+    "func": "Translation",
+    "value": -1.425,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "CLPX",
+    "func": "Translation",
+    "value": 0.6402,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "CMPK2",
+    "func": "Replication & Transcription",
+    "value": 2.7702,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "COX10",
+    "func": "Electron transport chain",
+    "value": -0.0045,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "COX11",
+    "func": "Electron transport chain",
+    "value": -1.0416,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "COX15",
+    "func": "Electron transport chain",
+    "value": -0.2175,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "COX17",
+    "func": "Electron transport chain",
+    "value": -1.0666,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "COX18",
+    "func": "Electron transport chain",
+    "value": -0.1261,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "COX19",
+    "func": "Electron transport chain",
+    "value": -1.416,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "COX4I1",
+    "func": "Electron transport chain",
+    "value": -1.2302,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "COX4I2",
+    "func": "Electron transport chain",
+    "value": -3.7791,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "COX5A",
+    "func": "Electron transport chain",
+    "value": -0.0148,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "COX5B",
+    "func": "Electron transport chain",
+    "value": -0.7851,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "COX6A1",
+    "func": "Electron transport chain",
+    "value": -1.2848,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "COX6A2",
+    "func": "Electron transport chain",
+    "value": -0.5746,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "COX6B1",
+    "func": "Electron transport chain",
+    "value": -1.0876,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "COX6B2",
+    "func": "Electron transport chain",
+    "value": -2.9899,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "COX6C",
+    "func": "Electron transport chain",
+    "value": -0.4031,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "COX7A1",
+    "func": "Electron transport chain",
+    "value": -4.9318,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "COX7A2",
+    "func": "Electron transport chain",
+    "value": -0.0436,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "COX7B2",
+    "func": "Electron transport chain",
+    "value": 0,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "COX7B",
+    "func": "Electron transport chain",
+    "value": -0.3226,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "COX7C",
+    "func": "Electron transport chain",
+    "value": -1.8035,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "COX8A",
+    "func": "Electron transport chain",
+    "value": -0.6448,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "CPOX",
+    "func": "Heme Biosynthesis",
+    "value": 1.4776,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "CPS1",
+    "func": "Urea Cycle",
+    "value": -1.2888,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "CPT1A",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.0724,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "CPT1B",
+    "func": "Fatty acid beta-oxidation",
+    "value": -1.7125,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "CPT1C",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.2679,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "CPT2",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.3873,
+    "mutation": "chr1 53675880 | Missense_Mutation | G>C"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "CRAT",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.8282,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "CREB1",
+    "func": "Replication & Transcription",
+    "value": 0.8239,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "CRLS1",
+    "func": "Cardiolipin biosynthesis",
+    "value": -0.6967,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "CS",
+    "func": "Tricarboxylic acid cycle",
+    "value": 0.1166,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "CYC1",
+    "func": "Electron transport chain",
+    "value": 0.7708,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "CYCS",
+    "func": "Apoptosis",
+    "value": 1.2357,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "DAP3",
+    "func": "Translation",
+    "value": 1.1047,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "DARS2",
+    "func": "Translation",
+    "value": 1.7604,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "DDX28",
+    "func": "Translation",
+    "value": -0.6774,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "DECR1",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.8047,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "DHX30",
+    "func": "Translation",
+    "value": -0.2252,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "DIABLO",
+    "func": "Apoptosis",
+    "value": -0.8562,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "DLAT",
+    "func": "Formation of Acetyl CoA",
+    "value": 0.8822,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "DLD",
+    "func": "Tricarboxylic acid cycle",
+    "value": 0.7541,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "DLST",
+    "func": "Tricarboxylic acid cycle",
+    "value": -0.5244,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "DNAJC19",
+    "func": "Import & Sorting",
+    "value": 0.2233,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "DNM1L",
+    "func": "Mitochondrial Dynamics",
+    "value": 2.1002,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "DNM1",
+    "func": "Apoptosis",
+    "value": -0.4124,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "DUS2L",
+    "func": "Replication & Transcription",
+    "value": -0.11,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "DYNLL1",
+    "func": "Mitochondrial Dynamics",
+    "value": -0.3327,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "EARS2",
+    "func": "Translation",
+    "value": 1.6834,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ECHS1",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.8973,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ECSIT",
+    "func": "Electron transport chain",
+    "value": -1.0108,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "EFHA1",
+    "func": "Calcium trafficking",
+    "value": -0.5532,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "EFHA2",
+    "func": "Calcium trafficking",
+    "value": -0.5907,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "EIF3M",
+    "func": "Apoptosis",
+    "value": -1.073,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ELAC2",
+    "func": "Replication & Transcription",
+    "value": -0.5077,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ENDOG",
+    "func": "Replication & Transcription",
+    "value": -1.1915,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ENO1",
+    "func": "Glycolysis",
+    "value": 0.4503,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ENO2",
+    "func": "Glycolysis",
+    "value": -1.112,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ENO3",
+    "func": "Glycolysis",
+    "value": 0.4763,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "FABP12",
+    "func": "Fatty acid beta-oxidation",
+    "value": 0,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "FABP1",
+    "func": "Fatty acid beta-oxidation",
+    "value": -1.1513,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "FABP2",
+    "func": "Fatty acid beta-oxidation",
+    "value": 0,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "FABP3",
+    "func": "Fatty acid beta-oxidation",
+    "value": -2.9425,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "FABP4",
+    "func": "Fatty acid beta-oxidation",
+    "value": -6.2963,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "FABP5",
+    "func": "Fatty acid beta-oxidation",
+    "value": 0.0896,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "FABP6",
+    "func": "Fatty acid beta-oxidation",
+    "value": 0.7337,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "FABP7",
+    "func": "Fatty acid beta-oxidation",
+    "value": -7.3133,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "FABP9",
+    "func": "Fatty acid beta-oxidation",
+    "value": 0,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "FAM96A",
+    "func": "Fe-S cluster biosynthesis",
+    "value": 1.4043,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "FAM96B",
+    "func": "Fe-S cluster biosynthesis",
+    "value": -0.5435,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "FARS2",
+    "func": "Translation",
+    "value": -0.9993,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "FDX1L",
+    "func": "Fe-S cluster biosynthesis",
+    "value": -1.1222,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "FDX1",
+    "func": "Fe-S cluster biosynthesis",
+    "value": -0.8593,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "FDXR",
+    "func": "Fe-S cluster biosynthesis",
+    "value": -2.6126,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "FECH",
+    "func": "Heme Biosynthesis",
+    "value": -0.2782,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "FH",
+    "func": "Tricarboxylic acid cycle",
+    "value": -0.0547,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "FIS1",
+    "func": "Mitochondrial Dynamics",
+    "value": -2.0869,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "FOXRED1",
+    "func": "Electron transport chain",
+    "value": -0.6033,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "FTMT",
+    "func": "Fe-S cluster biosynthesis",
+    "value": -3.2201,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "FXN",
+    "func": "Fe-S cluster biosynthesis",
+    "value": -0.943,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "GABARAP",
+    "func": "Mitochondrial Dynamics",
+    "value": -2.0549,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "GAPDHS",
+    "func": "Glycolysis",
+    "value": 1.6728,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "GAPDH",
+    "func": "Glycolysis",
+    "value": 0.5375,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "GARS",
+    "func": "Translation",
+    "value": 2.7307,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "GATC",
+    "func": "Translation",
+    "value": 2.4676,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "GCK",
+    "func": "Glycolysis",
+    "value": -1.9769,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "GCLC",
+    "func": "ROS defense",
+    "value": 1.0074,
+    "mutation": "chr6 | 53372344 | C>G"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "GCLM",
+    "func": "ROS defense",
+    "value": 1.7011,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "GDAP1",
+    "func": "Mitochondrial Dynamics",
+    "value": 0.2057,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "GFER",
+    "func": "Import & Sorting",
+    "value": -0.8204,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "GFM1",
+    "func": "Translation",
+    "value": 1.7892,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "GFM2",
+    "func": "Translation",
+    "value": -0.2726,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "GLRX2",
+    "func": "ROS defense",
+    "value": -0.0805,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "GLRX5",
+    "func": "Fe-S cluster biosynthesis",
+    "value": 0.0035,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "GOT2",
+    "func": "Fatty acid beta-oxidation",
+    "value": 0.2813,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "GPI",
+    "func": "Glycolysis",
+    "value": -0.0956,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "GPX1",
+    "func": "ROS defense",
+    "value": -1.3375,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "GPX4",
+    "func": "ROS defense",
+    "value": -3.478,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "GRPEL1",
+    "func": "Import & Sorting",
+    "value": 0.0977,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "GRPEL2",
+    "func": "Import & Sorting",
+    "value": 0.7796,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "GSR",
+    "func": "ROS defense",
+    "value": 1.1522,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "GSS",
+    "func": "ROS defense",
+    "value": -1.6997,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "GSTA1",
+    "func": "ROS defense",
+    "value": -1.3465,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "GSTA2",
+    "func": "ROS defense",
+    "value": 2.4083,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "GSTA4",
+    "func": "ROS defense",
+    "value": -1.466,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "GSTP1",
+    "func": "ROS defense",
+    "value": 0.0576,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "GTPBP3",
+    "func": "Replication & Transcription",
+    "value": -0.0578,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "HADHA",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.7632,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "HADHB",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.5038,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "HADH",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.4602,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "HARS2",
+    "func": "Translation",
+    "value": -0.921,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "HCCS",
+    "func": "Electron transport chain",
+    "value": 0.4729,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "HK1",
+    "func": "Glycolysis",
+    "value": 0.0499,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "HK2",
+    "func": "Glycolysis",
+    "value": 0.6322,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "HK3",
+    "func": "Glycolysis",
+    "value": 2.4145,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "HMBS",
+    "func": "Heme Biosynthesis",
+    "value": -0.0039,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "HSCB",
+    "func": "Fe-S cluster biosynthesis",
+    "value": -3.0402,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "HSD17B10",
+    "func": "Replication & Transcription",
+    "value": -0.8876,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "HSPA9",
+    "func": "Import & Sorting",
+    "value": 0.3751,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "HTRA2",
+    "func": "Apoptosis",
+    "value": -1.3072,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "IARS2",
+    "func": "Translation",
+    "value": 0.9217,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "IDH1",
+    "func": "Tricarboxylic acid cycle",
+    "value": -0.0051,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "IDH2",
+    "func": "Tricarboxylic acid cycle",
+    "value": 2.0126,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "IDH3A",
+    "func": "Tricarboxylic acid cycle",
+    "value": -0.3029,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "IDH3B",
+    "func": "Tricarboxylic acid cycle",
+    "value": -1.9791,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "IDH3G",
+    "func": "Tricarboxylic acid cycle",
+    "value": -1.0427,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "IMMP1L",
+    "func": "Import & Sorting",
+    "value": -0.2044,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "IMMP2L",
+    "func": "Import & Sorting",
+    "value": -2.5442,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ISCA1",
+    "func": "Fe-S cluster biosynthesis",
+    "value": -1.3177,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ISCA2",
+    "func": "Fe-S cluster biosynthesis",
+    "value": -0.7744,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ISCU",
+    "func": "Fe-S cluster biosynthesis",
+    "value": -2.2773,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ITPR1",
+    "func": "Calcium trafficking",
+    "value": -0.8245,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ITPR2",
+    "func": "Calcium trafficking",
+    "value": 3.1586,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "ITPR3",
+    "func": "Calcium trafficking",
+    "value": 3.4768,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "KARS",
+    "func": "Translation",
+    "value": 0.6031,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "KIAA0391",
+    "func": "Replication & Transcription",
+    "value": -0.485,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "KIF1B",
+    "func": "Mitochondrial Dynamics",
+    "value": 1.5509,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "KIF5B",
+    "func": "Mitochondrial Dynamics",
+    "value": 1.5123,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "LARS2",
+    "func": "Translation",
+    "value": 1.1786,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "LDHAL6B",
+    "func": "Glycolysis",
+    "value": 0.5652,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "LDHA",
+    "func": "Glycolysis",
+    "value": 0.3154,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "LDHB",
+    "func": "Glycolysis",
+    "value": 1.0308,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "LDHC",
+    "func": "Glycolysis",
+    "value": 0.2626,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "LETM1",
+    "func": "Calcium trafficking",
+    "value": 0.4209,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "LIG3",
+    "func": "Replication & Transcription",
+    "value": 0.3728,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "LONP1",
+    "func": "Translation",
+    "value": -0.9442,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "LRPPRC",
+    "func": "Translation",
+    "value": 0.4203,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "LYRM4",
+    "func": "Fe-S cluster biosynthesis",
+    "value": -1.4319,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MAP1LC3A",
+    "func": "Mitochondrial Dynamics",
+    "value": -3.1034,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MAPK1",
+    "func": "Apoptosis",
+    "value": 0.4118,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MAPK3",
+    "func": "Apoptosis",
+    "value": -0.1279,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MARCH5",
+    "func": "Mitochondrial Dynamics",
+    "value": -0.1206,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MARS2",
+    "func": "Translation",
+    "value": 2.6121,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MCL1",
+    "func": "Apoptosis",
+    "value": 1.2084,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MDH2",
+    "func": "Tricarboxylic acid cycle",
+    "value": 0.4485,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MFF",
+    "func": "Mitochondrial Dynamics",
+    "value": 0.2678,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MFN1",
+    "func": "Mitochondrial Dynamics",
+    "value": 2.1389,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MFN2",
+    "func": "Mitochondrial Dynamics",
+    "value": -0.8311,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MIPEP",
+    "func": "Import & Sorting",
+    "value": -0.8709,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MMS19",
+    "func": "Fe-S cluster biosynthesis",
+    "value": 0.0284,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MPV17L2",
+    "func": "Translation",
+    "value": -0.3722,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MPV17L",
+    "func": "ROS defense",
+    "value": -2.8482,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MPV17",
+    "func": "ROS defense",
+    "value": -0.6728,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL10",
+    "func": "Translation",
+    "value": -0.9167,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL11",
+    "func": "Translation",
+    "value": -0.2367,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL12",
+    "func": "Translation",
+    "value": -0.7891,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL13",
+    "func": "Translation",
+    "value": 1.2962,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL14",
+    "func": "Translation",
+    "value": 0.3557,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL15",
+    "func": "Translation",
+    "value": -0.1382,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL16",
+    "func": "Translation",
+    "value": -0.6972,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL17",
+    "func": "Translation",
+    "value": 1.3083,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL18",
+    "func": "Translation",
+    "value": -0.4386,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL19",
+    "func": "Translation",
+    "value": 2.048,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL1",
+    "func": "Translation",
+    "value": -0.9219,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL20",
+    "func": "Translation",
+    "value": -0.4232,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL21",
+    "func": "Translation",
+    "value": -1.082,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL22",
+    "func": "Translation",
+    "value": -0.7717,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL23",
+    "func": "Translation",
+    "value": -0.8045,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL24",
+    "func": "Translation",
+    "value": 0.0565,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL27",
+    "func": "Translation",
+    "value": -1.7822,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL28",
+    "func": "Translation",
+    "value": -0.9081,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL2",
+    "func": "Translation",
+    "value": -0.491,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL30",
+    "func": "Translation",
+    "value": -0.2693,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL32",
+    "func": "Translation",
+    "value": -0.6073,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL33",
+    "func": "Translation",
+    "value": -0.4032,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL35",
+    "func": "Translation",
+    "value": 0.3405,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL36",
+    "func": "Translation",
+    "value": 0.8108,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL37",
+    "func": "Translation",
+    "value": -0.0366,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL38",
+    "func": "Translation",
+    "value": -1.7217,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL39",
+    "func": "Translation",
+    "value": -0.6848,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL3",
+    "func": "Translation",
+    "value": 1.5751,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL40",
+    "func": "Translation",
+    "value": -1.9353,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL41",
+    "func": "Translation",
+    "value": -1.8119,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL42",
+    "func": "Translation",
+    "value": 0.3918,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL43",
+    "func": "Translation",
+    "value": -1.7713,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL44",
+    "func": "Translation",
+    "value": -0.0299,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL45",
+    "func": "Translation",
+    "value": -1.8881,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL46",
+    "func": "Translation",
+    "value": -0.996,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL47",
+    "func": "Translation",
+    "value": 0.9462,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL48",
+    "func": "Translation",
+    "value": -0.5424,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL49",
+    "func": "Translation",
+    "value": 0.4906,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL4",
+    "func": "Translation",
+    "value": -0.4454,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL50",
+    "func": "Translation",
+    "value": 0.4014,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL51",
+    "func": "Translation",
+    "value": -0.581,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL52",
+    "func": "Translation",
+    "value": -0.9786,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL53",
+    "func": "Translation",
+    "value": -0.8283,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL54",
+    "func": "Translation",
+    "value": -2.5656,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL55",
+    "func": "Translation",
+    "value": -1.6596,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPL9",
+    "func": "Translation",
+    "value": 0.6142,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPS10",
+    "func": "Translation",
+    "value": 0.8059,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPS11",
+    "func": "Translation",
+    "value": -0.2951,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPS12",
+    "func": "Translation",
+    "value": 0.1717,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPS14",
+    "func": "Translation",
+    "value": 0.4253,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPS15",
+    "func": "Translation",
+    "value": -0.6645,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPS16",
+    "func": "Translation",
+    "value": -0.4594,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPS17",
+    "func": "Translation",
+    "value": -0.0419,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPS18A",
+    "func": "Translation",
+    "value": -0.7277,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPS18B",
+    "func": "Translation",
+    "value": -0.7059,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPS18C",
+    "func": "Translation",
+    "value": -0.8076,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPS21",
+    "func": "Translation",
+    "value": 0.5845,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPS22",
+    "func": "Translation",
+    "value": -0.4844,
+    "mutation": "chr3 139074552 | Missense_Mutation | C>G"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPS23",
+    "func": "Translation",
+    "value": -0.2109,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPS24",
+    "func": "Translation",
+    "value": -1.1887,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPS25",
+    "func": "Translation",
+    "value": -0.5391,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPS26",
+    "func": "Translation",
+    "value": -2.2082,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPS27",
+    "func": "Translation",
+    "value": -0.8846,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPS28",
+    "func": "Translation",
+    "value": -0.91,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPS2",
+    "func": "Translation",
+    "value": -0.4359,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPS30",
+    "func": "Translation",
+    "value": -1.288,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPS31",
+    "func": "Translation",
+    "value": -1.2998,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPS33",
+    "func": "Translation",
+    "value": -0.5257,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPS34",
+    "func": "Translation",
+    "value": -0.9087,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPS35",
+    "func": "Translation",
+    "value": 1.3918,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPS36",
+    "func": "Translation",
+    "value": -1.7092,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPS5",
+    "func": "Translation",
+    "value": -0.5482,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPS6",
+    "func": "Translation",
+    "value": -0.7166,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPS7",
+    "func": "Translation",
+    "value": -0.4769,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRPS9",
+    "func": "Translation",
+    "value": -1.0426,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MRRF",
+    "func": "Translation",
+    "value": 0.391,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MSTO1",
+    "func": "Mitochondrial Dynamics",
+    "value": 0.6972,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MTFMT",
+    "func": "Translation",
+    "value": 0.0284,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MTIF2",
+    "func": "Translation",
+    "value": 0.1445,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MTIF3",
+    "func": "Translation",
+    "value": -1.5502,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MTO1",
+    "func": "Replication & Transcription",
+    "value": 0.0435,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MTPAP",
+    "func": "Replication & Transcription",
+    "value": 1.0995,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MTRF1L",
+    "func": "Translation",
+    "value": -0.437,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MTRF1",
+    "func": "Translation",
+    "value": 0.6405,
+    "mutation": "chr13 41834948 | Missense_Mutation | C>G"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "MUTYH",
+    "func": "Replication & Transcription",
+    "value": -0.6212,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NARF",
+    "func": "Fe-S cluster biosynthesis",
+    "value": -0.8087,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NARS2",
+    "func": "Translation",
+    "value": 0.3045,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NDUFA10",
+    "func": "Electron transport chain",
+    "value": -1.0701,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NDUFA11",
+    "func": "Electron transport chain",
+    "value": -1.7371,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NDUFA12",
+    "func": "Electron transport chain",
+    "value": -1.0602,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NDUFA13",
+    "func": "Electron transport chain",
+    "value": -1.2479,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NDUFA1",
+    "func": "Electron transport chain",
+    "value": -1.0559,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NDUFA2",
+    "func": "Electron transport chain",
+    "value": -1.942,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NDUFA3",
+    "func": "Electron transport chain",
+    "value": -2.2705,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NDUFA4",
+    "func": "Electron transport chain",
+    "value": -1.3984,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NDUFA5",
+    "func": "Electron transport chain",
+    "value": -0.51,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NDUFA6",
+    "func": "Electron transport chain",
+    "value": 0.5972,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NDUFA7",
+    "func": "Electron transport chain",
+    "value": -1.2503,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NDUFA8",
+    "func": "Electron transport chain",
+    "value": -0.4493,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NDUFA9",
+    "func": "Electron transport chain",
+    "value": 0.4329,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NDUFAB1",
+    "func": "Electron transport chain",
+    "value": 0.2158,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NDUFAF1",
+    "func": "Electron transport chain",
+    "value": -1.5436,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NDUFAF2",
+    "func": "Electron transport chain",
+    "value": -0.9182,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NDUFAF3",
+    "func": "Electron transport chain",
+    "value": -0.6557,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NDUFAF4",
+    "func": "Electron transport chain",
+    "value": -0.3771,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NDUFB10",
+    "func": "Electron transport chain",
+    "value": -1.524,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NDUFB11",
+    "func": "Electron transport chain",
+    "value": -0.7972,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NDUFB1",
+    "func": "Electron transport chain",
+    "value": -0.8794,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NDUFB2",
+    "func": "Electron transport chain",
+    "value": -0.5084,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NDUFB3",
+    "func": "Electron transport chain",
+    "value": 0.5089,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NDUFB4",
+    "func": "Electron transport chain",
+    "value": -1.45,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NDUFB5",
+    "func": "Electron transport chain",
+    "value": 0.1357,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NDUFB6",
+    "func": "Electron transport chain",
+    "value": -0.1432,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NDUFB7",
+    "func": "Electron transport chain",
+    "value": -1.6675,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NDUFB8",
+    "func": "Electron transport chain",
+    "value": -0.9576,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NDUFB9",
+    "func": "Electron transport chain",
+    "value": 0.364,
+    "mutation": "chr8 125551447 | Missense_Mutation | G>T"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NDUFC1",
+    "func": "Electron transport chain",
+    "value": -1.6765,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NDUFC2",
+    "func": "Electron transport chain",
+    "value": -1.4882,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NDUFS1",
+    "func": "Electron transport chain",
+    "value": 1.7142,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NDUFS2",
+    "func": "Electron transport chain",
+    "value": 0.5158,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NDUFS3",
+    "func": "Electron transport chain",
+    "value": -0.6701,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NDUFS4",
+    "func": "Electron transport chain",
+    "value": -1.5113,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NDUFS5",
+    "func": "Electron transport chain",
+    "value": -1.1346,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NDUFS6",
+    "func": "Electron transport chain",
+    "value": -0.1786,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NDUFS7",
+    "func": "Electron transport chain",
+    "value": -1.7636,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NDUFS8",
+    "func": "Electron transport chain",
+    "value": -0.9467,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NDUFV1",
+    "func": "Electron transport chain",
+    "value": -1.0963,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NDUFV2",
+    "func": "Electron transport chain",
+    "value": -1.517,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NDUFV3",
+    "func": "Electron transport chain",
+    "value": -0.9668,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NFE2L2",
+    "func": "Replication & Transcription",
+    "value": -0.0998,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NFS1",
+    "func": "Fe-S cluster biosynthesis",
+    "value": -0.7976,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NFU1",
+    "func": "Fe-S cluster biosynthesis",
+    "value": -0.6421,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NME3",
+    "func": "Replication & Transcription",
+    "value": -1.2628,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NME4",
+    "func": "Replication & Transcription",
+    "value": 0.0466,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NME6",
+    "func": "Replication & Transcription",
+    "value": 0.7259,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NRF1",
+    "func": "Replication & Transcription",
+    "value": -0.2674,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NSUN2",
+    "func": "Replication & Transcription",
+    "value": 1.6071,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NTHL1",
+    "func": "Replication & Transcription",
+    "value": -1.1417,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NUBP1",
+    "func": "Fe-S cluster biosynthesis",
+    "value": -1.0668,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NUBP2",
+    "func": "Fe-S cluster biosynthesis",
+    "value": -0.7882,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "NUBPL",
+    "func": "Electron transport chain",
+    "value": 0.0421,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "OGDH",
+    "func": "Tricarboxylic acid cycle",
+    "value": 1.5107,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "OGG1",
+    "func": "Replication & Transcription",
+    "value": -0.6905,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "OMA1",
+    "func": "Mitochondrial Dynamics",
+    "value": -0.1886,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "OPA1",
+    "func": "Mitochondrial Dynamics",
+    "value": 2.5414,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "OPA3",
+    "func": "Mitochondrial Dynamics",
+    "value": 0.3624,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "OSGEPL1",
+    "func": "Replication & Transcription",
+    "value": -0.2348,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "OTC",
+    "func": "Urea Cycle",
+    "value": -0.5746,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "OXA1L",
+    "func": "Translation",
+    "value": -1.2471,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "PACS2",
+    "func": "Calcium trafficking",
+    "value": -0.1484,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "PARK2",
+    "func": "Mitochondrial Dynamics",
+    "value": -2.8323,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "PARL",
+    "func": "Mitochondrial Dynamics",
+    "value": -0.0102,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "PARS2",
+    "func": "Translation",
+    "value": -0.0856,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "PDHA1",
+    "func": "Formation of Acetyl CoA",
+    "value": 0.3324,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "PDHA2",
+    "func": "Formation of Acetyl CoA",
+    "value": 0,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "PDHB",
+    "func": "Formation of Acetyl CoA",
+    "value": -0.2084,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "PDHX",
+    "func": "Formation of Acetyl CoA",
+    "value": 0.7578,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "PFKL",
+    "func": "Glycolysis",
+    "value": 0.0372,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "PFKM",
+    "func": "Glycolysis",
+    "value": -0.5986,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "PFKP",
+    "func": "Glycolysis",
+    "value": 1.9144,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "PGAM1",
+    "func": "Glycolysis",
+    "value": 0.7965,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "PGAM2",
+    "func": "Glycolysis",
+    "value": -1.0221,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "PGK1",
+    "func": "Glycolysis",
+    "value": 1.3907,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "PGK2",
+    "func": "Glycolysis",
+    "value": 0,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "PGS1",
+    "func": "Cardiolipin biosynthesis",
+    "value": -0.2942,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "PHB2",
+    "func": "Translation",
+    "value": -1.322,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "PHB",
+    "func": "Translation",
+    "value": -0.8391,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "PINK1",
+    "func": "Mitochondrial Dynamics",
+    "value": -3.0189,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "PKIA",
+    "func": "Mitochondrial Dynamics",
+    "value": -0.2111,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "PKLR",
+    "func": "Glycolysis",
+    "value": -0.4744,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "PKM2",
+    "func": "Glycolysis",
+    "value": 1.1823,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "PLD6",
+    "func": "Mitochondrial Dynamics",
+    "value": -2.0518,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "PMAIP1",
+    "func": "Apoptosis",
+    "value": 2.5969,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "PML",
+    "func": "Calcium trafficking",
+    "value": 0.7903,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "PMPCA",
+    "func": "Import & Sorting",
+    "value": -0.4509,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "PMPCB",
+    "func": "Import & Sorting",
+    "value": -1.1665,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "POLG2",
+    "func": "Replication & Transcription",
+    "value": -1.1926,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "POLG",
+    "func": "Replication & Transcription",
+    "value": 1.0588,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "POLRMT",
+    "func": "Replication & Transcription",
+    "value": -0.9238,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "PPARGC1A",
+    "func": "Replication & Transcription",
+    "value": -1.2206,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "PPIA",
+    "func": "Apoptosis",
+    "value": 0.6678,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "PPIF",
+    "func": "Apoptosis",
+    "value": 0.925,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "PPOX",
+    "func": "Heme Biosynthesis",
+    "value": -0.2199,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "PRDX3",
+    "func": "ROS defense",
+    "value": -0.1568,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "PTCD2",
+    "func": "Electron transport chain",
+    "value": 0.3623,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "PTCD3",
+    "func": "Translation",
+    "value": 0.7942,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "PTPMT1",
+    "func": "Cardiolipin biosynthesis",
+    "value": -0.2897,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "PUS1",
+    "func": "Replication & Transcription",
+    "value": -1.3755,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "PUS3",
+    "func": "Replication & Transcription",
+    "value": -0.9612,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "QRSL1",
+    "func": "Translation",
+    "value": 0.4809,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "QTRT1",
+    "func": "Replication & Transcription",
+    "value": -1.874,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "QTRTD1",
+    "func": "Replication & Transcription",
+    "value": 1.1702,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "RARS2",
+    "func": "Translation",
+    "value": 1.338,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "RHOT1",
+    "func": "Mitochondrial Dynamics",
+    "value": -0.0629,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "RHOT2",
+    "func": "Mitochondrial Dynamics",
+    "value": -0.6776,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "RMRP",
+    "func": "Replication & Transcription",
+    "value": -0.9722,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "RNASEH1",
+    "func": "Replication & Transcription",
+    "value": 1.8562,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "RNASEL",
+    "func": "Translation",
+    "value": -1.1089,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "RPUSD2",
+    "func": "Replication & Transcription",
+    "value": -0.2385,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "RPUSD4",
+    "func": "Replication & Transcription",
+    "value": -0.7445,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "RRM2B",
+    "func": "Replication & Transcription",
+    "value": 0.616,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SAMM50",
+    "func": "Import & Sorting",
+    "value": -0.8175,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SARS2",
+    "func": "Translation",
+    "value": -1.3099,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SCO1",
+    "func": "Electron transport chain",
+    "value": -0.0138,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SCO2",
+    "func": "Electron transport chain",
+    "value": 0.4031,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SDHAF1",
+    "func": "Electron transport chain",
+    "value": -1.4149,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SDHAF2",
+    "func": "Electron transport chain",
+    "value": -0.311,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SDHA",
+    "func": "Tricarboxylic acid cycle",
+    "value": -0.2731,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SDHB",
+    "func": "Tricarboxylic acid cycle",
+    "value": -0.6135,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SDHC",
+    "func": "Tricarboxylic acid cycle",
+    "value": 2.2775,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SDHD",
+    "func": "Tricarboxylic acid cycle",
+    "value": -0.3681,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SH3GLB1",
+    "func": "Mitochondrial Dynamics",
+    "value": -0.2474,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SHC1",
+    "func": "ROS defense",
+    "value": 0.3523,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SIGMAR1",
+    "func": "Calcium trafficking",
+    "value": 1.2569,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SLC24A6",
+    "func": "Calcium trafficking",
+    "value": -1.3777,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SLC25A19",
+    "func": "Replication & Transcription",
+    "value": 1.2316,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SLC25A1",
+    "func": "ROS defense",
+    "value": -1.1358,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SLC25A20",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.5899,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SLC25A28",
+    "func": "Fe-S cluster biosynthesis",
+    "value": -1.5825,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SLC25A33",
+    "func": "Replication & Transcription",
+    "value": -0.7229,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SLC25A37",
+    "func": "Fe-S cluster biosynthesis",
+    "value": 1.0355,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SLC25A3",
+    "func": "Replication & Transcription",
+    "value": -0.9199,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SLC25A4",
+    "func": "Apoptosis",
+    "value": -1.8395,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SLC25A5",
+    "func": "Apoptosis",
+    "value": 0.4357,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SLC25A6",
+    "func": "Apoptosis",
+    "value": -2.3126,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SLC27A1",
+    "func": "Fatty acid beta-oxidation",
+    "value": -3.4462,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SLC27A2",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.3187,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SLC27A3",
+    "func": "Fatty acid beta-oxidation",
+    "value": -1.7913,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SLC27A4",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.3278,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SLC27A5",
+    "func": "Fatty acid beta-oxidation",
+    "value": -2.932,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SLC27A6",
+    "func": "Fatty acid beta-oxidation",
+    "value": -2.0427,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SLC29A1",
+    "func": "Replication & Transcription",
+    "value": -1.1988,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SLC2A1",
+    "func": "Glycolysis",
+    "value": 0.6718,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SLC2A2",
+    "func": "Glycolysis",
+    "value": 0,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SLC2A3",
+    "func": "Glycolysis",
+    "value": -0.1393,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SLC2A4",
+    "func": "Glycolysis",
+    "value": -4.3142,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SLC2A5",
+    "func": "Glycolysis",
+    "value": 4.1029,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SOD1",
+    "func": "ROS defense",
+    "value": -1.0269,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SOD2",
+    "func": "ROS defense",
+    "value": 0.7087,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SPG7",
+    "func": "Mitochondrial Dynamics",
+    "value": -0.2774,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SQSTM1",
+    "func": "Mitochondrial Dynamics",
+    "value": -0.002,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SSBP1",
+    "func": "Replication & Transcription",
+    "value": 0.7095,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "STOML2",
+    "func": "Mitochondrial Dynamics",
+    "value": 0.2913,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SUCLA2",
+    "func": "Tricarboxylic acid cycle",
+    "value": 0.36,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SUCLG1",
+    "func": "Tricarboxylic acid cycle",
+    "value": -0.3016,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SUCLG2",
+    "func": "Tricarboxylic acid cycle",
+    "value": -0.1214,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SURF1",
+    "func": "Electron transport chain",
+    "value": -1.2947,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "SYBU",
+    "func": "Mitochondrial Dynamics",
+    "value": -2.1253,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TACO1",
+    "func": "Translation",
+    "value": -0.9002,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TARS2",
+    "func": "Translation",
+    "value": 1.0779,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TAZ",
+    "func": "Cardiolipin biosynthesis",
+    "value": -0.7762,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TCHP",
+    "func": "Calcium trafficking",
+    "value": -0.4278,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TERT",
+    "func": "Replication & Transcription",
+    "value": 2.4616,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TFAM",
+    "func": "Replication & Transcription",
+    "value": 1.6863,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TFB1M",
+    "func": "Replication & Transcription",
+    "value": -1.1471,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TFB2M",
+    "func": "Replication & Transcription",
+    "value": 1.0728,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TIMM10",
+    "func": "Import & Sorting",
+    "value": -0.3366,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TIMM13",
+    "func": "Import & Sorting",
+    "value": -1.9294,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TIMM17A",
+    "func": "Import & Sorting",
+    "value": 1.1174,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TIMM17B",
+    "func": "Import & Sorting",
+    "value": -0.3822,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TIMM22",
+    "func": "Import & Sorting",
+    "value": -1.2421,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TIMM44",
+    "func": "Import & Sorting",
+    "value": -0.3713,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TIMM50",
+    "func": "Import & Sorting",
+    "value": 0.2206,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TIMM8A",
+    "func": "Import & Sorting",
+    "value": 1.0959,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TIMM8B",
+    "func": "Import & Sorting",
+    "value": -1.2392,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TIMM9",
+    "func": "Import & Sorting",
+    "value": -2.0162,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TK2",
+    "func": "Replication & Transcription",
+    "value": -1.0181,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TMEM126B",
+    "func": "Electron transport chain",
+    "value": 0.0647,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TMEM70",
+    "func": "Electron transport chain",
+    "value": -0.0552,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TOMM20",
+    "func": "Import & Sorting",
+    "value": -0.0882,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TOMM22",
+    "func": "Import & Sorting",
+    "value": -0.0193,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TOMM40L",
+    "func": "Import & Sorting",
+    "value": 1.2848,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TOMM40",
+    "func": "Import & Sorting",
+    "value": 1.2482,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TOMM5",
+    "func": "Import & Sorting",
+    "value": 0.878,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TOMM6",
+    "func": "Import & Sorting",
+    "value": 0.281,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TOMM70A",
+    "func": "Import & Sorting",
+    "value": 0.0255,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TOMM7",
+    "func": "Import & Sorting",
+    "value": -2.9076,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TOP1MT",
+    "func": "Replication & Transcription",
+    "value": -0.5178,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TOP3A",
+    "func": "Replication & Transcription",
+    "value": 0.8849,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TP53",
+    "func": "Apoptosis",
+    "value": -1.7638,
+    "mutation": "chr17 7579521 | Nonsense_Mutation | C>A"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TPI1",
+    "func": "Glycolysis",
+    "value": 0.8178,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TRAK1",
+    "func": "Mitochondrial Dynamics",
+    "value": -0.499,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TRAK2",
+    "func": "Mitochondrial Dynamics",
+    "value": -0.0679,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TRAP1",
+    "func": "Mitochondrial Dynamics",
+    "value": -0.1359,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TRIT1",
+    "func": "Replication & Transcription",
+    "value": -0.3329,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TRMT112",
+    "func": "Replication & Transcription",
+    "value": -0.7191,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TRMT11",
+    "func": "Replication & Transcription",
+    "value": 0.7669,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TRMT1",
+    "func": "Replication & Transcription",
+    "value": -1.1688,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TRMT2B",
+    "func": "Replication & Transcription",
+    "value": 0.9737,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TRMT5",
+    "func": "Replication & Transcription",
+    "value": -0.8585,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TRMT61B",
+    "func": "Replication & Transcription",
+    "value": -0.0133,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TRMT6",
+    "func": "Replication & Transcription",
+    "value": -0.0343,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TRMU",
+    "func": "Replication & Transcription",
+    "value": -0.2114,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TRNT1",
+    "func": "Replication & Transcription",
+    "value": 1.1166,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TRUB2",
+    "func": "Replication & Transcription",
+    "value": -0.6993,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TSFM",
+    "func": "Translation",
+    "value": -0.8039,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TTC19",
+    "func": "Electron transport chain",
+    "value": -0.5757,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TUFM",
+    "func": "Translation",
+    "value": -1.1682,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TXN2",
+    "func": "ROS defense",
+    "value": -2.2655,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "TXNRD2",
+    "func": "ROS defense",
+    "value": -1.8935,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "UNG",
+    "func": "Replication & Transcription",
+    "value": 0.3037,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "UQCC",
+    "func": "Electron transport chain",
+    "value": -0.6351,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "UQCR10",
+    "func": "Electron transport chain",
+    "value": -1.3751,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "UQCR11",
+    "func": "Electron transport chain",
+    "value": -1.4808,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "UQCRB",
+    "func": "Electron transport chain",
+    "value": -1.2025,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "UQCRC1",
+    "func": "Electron transport chain",
+    "value": -0.6783,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "UQCRC2",
+    "func": "Electron transport chain",
+    "value": -0.0824,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "UQCRFS1",
+    "func": "Electron transport chain",
+    "value": 0.1641,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "UQCRH",
+    "func": "Electron transport chain",
+    "value": -0.3388,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "UQCRQ",
+    "func": "Electron transport chain",
+    "value": -1.3163,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "UROD",
+    "func": "Heme Biosynthesis",
+    "value": -1.4625,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "UROS",
+    "func": "Heme Biosynthesis",
+    "value": 0.5907,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "VARS2",
+    "func": "Translation",
+    "value": 0.2056,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "VDAC1",
+    "func": "Apoptosis",
+    "value": 0.4554,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "VDAC2",
+    "func": "Apoptosis",
+    "value": -0.8568,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "VDAC3",
+    "func": "Apoptosis",
+    "value": -0.504,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "WARS2",
+    "func": "Translation",
+    "value": -0.7617,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "XIAP",
+    "func": "Apoptosis",
+    "value": 0.5795,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "YARS2",
+    "func": "Translation",
+    "value": 0.9634,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "YME1L1",
+    "func": "Mitochondrial Dynamics",
+    "value": 1.565,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "3neg-A18V",
+    "gene": "YRDC",
+    "func": "Replication & Transcription",
+    "value": 0.5607,
+    "mutation": "NULL"
+  }
+]

@@ -11,6 +11,7 @@ var PIEmargin = {top: 20, right: 20, bottom: 30, left: 10},
 
 
 var PIEsvg = d3.select("#piechart").append("svg")
+    .attr("id", "piechartsvg")
     .attr("width", pieDim.w + pieDim.rpadding)
     .attr("height", 400)
     .append("g")
@@ -90,6 +91,7 @@ PC.draw = function (jsondata) {
         d3.select("#heatmapsvg").remove();
         heatmap.processData(jsondata, d.data.func);
     }
+    
 
 };
 

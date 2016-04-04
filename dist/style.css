@@ -62,3 +62,64 @@ text.text-hover {
 #piechart {
     display: inline-block;
 }
+
+h1 {
+    color: #2F4F4F;
+
+    left: 28%;
+
+    text-decoration: underline;
+}
+
+#cb {
+    top: 18%;
+    position: absolute;
+    left: 30%;
+    color:#008080;
+}
+
+#BRCA {
+    display: inline-block;
+    margin-right: 100px;
+}
+#aneuploidy {
+    display: inline-block;
+    margin-left: 100px;
+}
+
+input[type=checkbox] {
+
+    width: 40px;
+height: 10px;
+    width: 26px;
+height: 16px;
+}   
+
+.checkBoxes label {
+
+color: #5F9EA0;
+width: 55px;
+height: 55px;
+font-family: "Arial", serif;
+font-size: 20px;
+font-weight: bold;
+text-align: center;
+}
+
+#compareButton {
+background-color: #e7e7e7; /* Green */
+border: none;
+color: #008080;
+padding: 5px 10px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+position: absolute;
+left: 31%;
+border-radius: 12px;
+
+}
+#compareButton:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
