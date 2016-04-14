@@ -61,7 +61,7 @@ PC.draw = function (jsondata) {
         .style("fill", function (d) {
             return color(d.data.func);
         })
-        .on("mouseover", mouseover);
+        .on("click", click);
 
     var legend = PIEsvg.selectAll(".legend")
         .data(color.domain())
@@ -86,7 +86,7 @@ PC.draw = function (jsondata) {
             return d;
         });
 
-    function mouseover(d) {
+    function click(d) {
         SP.update(jsondata, d.data.func, color(d.data.func));
         d3.select("#heatmapsvg").remove();
         heatmap.processData(jsondata, d.data.func);
