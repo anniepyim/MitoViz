@@ -1,0 +1,4307 @@
+[
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "GCLC",
+    "func": "ROS defense",
+    "value": 0.31753,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "BAD",
+    "func": "Apoptosis",
+    "value": -0.211572,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NDUFAB1",
+    "func": "Electron transport chain",
+    "value": 0.0558932,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "HCCS",
+    "func": "Electron transport chain",
+    "value": 0.348882,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SLC25A5",
+    "func": "Apoptosis",
+    "value": -0.125372,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "CCDC109B",
+    "func": "Calcium trafficking",
+    "value": -0.0937059,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "LIG3",
+    "func": "Replication & Transcription",
+    "value": 0.0176579,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ACSM3",
+    "func": "Fatty acid beta-oxidation",
+    "value": -1.04202,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "CIAPIN1",
+    "func": "Fe-S cluster biosynthesis",
+    "value": 0.0800927,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "COX10",
+    "func": "Electron transport chain",
+    "value": -0.0220594,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ELAC2",
+    "func": "Replication & Transcription",
+    "value": 0.158177,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "UQCRC1",
+    "func": "Electron transport chain",
+    "value": 0.0171487,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TTC19",
+    "func": "Electron transport chain",
+    "value": -0.0102852,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "LARS2",
+    "func": "Translation",
+    "value": 0.332173,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "COX15",
+    "func": "Electron transport chain",
+    "value": -0.162075,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "BID",
+    "func": "Apoptosis",
+    "value": 0.166091,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "CPS1",
+    "func": "Urea Cycle",
+    "value": -0.234502,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NDUFS1",
+    "func": "Electron transport chain",
+    "value": 0.023043,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ALAS1",
+    "func": "Heme Biosynthesis",
+    "value": 0.180801,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "GLRX2",
+    "func": "ROS defense",
+    "value": -0.0249361,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "GCLM",
+    "func": "ROS defense",
+    "value": -0.105388,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MIPEP",
+    "func": "Import & Sorting",
+    "value": 0.259112,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TFB1M",
+    "func": "Replication & Transcription",
+    "value": -0.0892519,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "BAK1",
+    "func": "Apoptosis",
+    "value": 0.893401,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "OTC",
+    "func": "Urea Cycle",
+    "value": 0,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NSUN2",
+    "func": "Replication & Transcription",
+    "value": 0.186331,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TRIT1",
+    "func": "Replication & Transcription",
+    "value": 0.411959,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "RRM2B",
+    "func": "Replication & Transcription",
+    "value": -1.14639,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPS10",
+    "func": "Translation",
+    "value": -0.118355,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "PTCD2",
+    "func": "Electron transport chain",
+    "value": 0.442221,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "CCDC90A",
+    "func": "Calcium trafficking",
+    "value": 0.0693451,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "KIF1B",
+    "func": "Mitochondrial Dynamics",
+    "value": 0.063962,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL43",
+    "func": "Translation",
+    "value": -0.157943,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "PET112",
+    "func": "Translation",
+    "value": -0.240621,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SLC2A3",
+    "func": "Glycolysis",
+    "value": 0.240686,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPS35",
+    "func": "Translation",
+    "value": 0.450761,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "CS",
+    "func": "Tricarboxylic acid cycle",
+    "value": 0.0555111,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPS24",
+    "func": "Translation",
+    "value": -0.161441,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NTHL1",
+    "func": "Replication & Transcription",
+    "value": -0.256549,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "KARS",
+    "func": "Translation",
+    "value": 0.143993,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NDUFB4",
+    "func": "Electron transport chain",
+    "value": 0.104417,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TRMT11",
+    "func": "Replication & Transcription",
+    "value": -0.67815,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ACSM2B",
+    "func": "Fatty acid beta-oxidation",
+    "value": 0,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "FECH",
+    "func": "Heme Biosynthesis",
+    "value": -0.363752,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "PFKP",
+    "func": "Glycolysis",
+    "value": -0.590051,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "IARS2",
+    "func": "Translation",
+    "value": -0.148474,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "IDH3G",
+    "func": "Tricarboxylic acid cycle",
+    "value": 0.119506,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ACSL4",
+    "func": "Fatty acid beta-oxidation",
+    "value": 0.906139,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "HSD17B10",
+    "func": "Replication & Transcription",
+    "value": -0.0935882,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TRNT1",
+    "func": "Replication & Transcription",
+    "value": -0.376352,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ACADVL",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.16919,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SDHA",
+    "func": "Tricarboxylic acid cycle",
+    "value": -0.103931,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPS34",
+    "func": "Translation",
+    "value": -0.0908026,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "BCS1L",
+    "func": "Electron transport chain",
+    "value": 0.05856,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ENO1",
+    "func": "Glycolysis",
+    "value": 0.0621866,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TIMM21",
+    "func": "Import & Sorting",
+    "value": -0.522424,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SLC25A3",
+    "func": "Replication & Transcription",
+    "value": -0.247235,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "UNG",
+    "func": "Replication & Transcription",
+    "value": -0.141974,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "VDAC3",
+    "func": "Apoptosis",
+    "value": -0.146039,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "CPOX",
+    "func": "Heme Biosynthesis",
+    "value": -0.230108,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ARG2",
+    "func": "Urea Cycle",
+    "value": 0.122035,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL22",
+    "func": "Translation",
+    "value": 0.0707833,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "BCKDHB",
+    "func": "ROS defense",
+    "value": -0.395554,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SLC27A5",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.0448462,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "GSTP1",
+    "func": "ROS defense",
+    "value": 0,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "HADHA",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.16573,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MTIF2",
+    "func": "Translation",
+    "value": -0.0381164,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL28",
+    "func": "Translation",
+    "value": -0.131877,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "BAX",
+    "func": "Apoptosis",
+    "value": 0.00883823,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "PGS1",
+    "func": "Cardiolipin biosynthesis",
+    "value": 0.273576,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "DNM1L",
+    "func": "Mitochondrial Dynamics",
+    "value": 0.230976,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "CRLS1",
+    "func": "Cardiolipin biosynthesis",
+    "value": -0.0662373,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "DYNLL1",
+    "func": "Mitochondrial Dynamics",
+    "value": 0.167542,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SLC24A6",
+    "func": "Calcium trafficking",
+    "value": -0.055264,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TRMT6",
+    "func": "Replication & Transcription",
+    "value": 0.260221,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPS33",
+    "func": "Translation",
+    "value": -0.329546,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NDUFB2",
+    "func": "Electron transport chain",
+    "value": 0.0973869,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "DLD",
+    "func": "Tricarboxylic acid cycle",
+    "value": 0.0449433,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "FH",
+    "func": "Tricarboxylic acid cycle",
+    "value": -0.15006,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "CRAT",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.72656,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NUBP2",
+    "func": "Fe-S cluster biosynthesis",
+    "value": -0.21287,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPS18A",
+    "func": "Translation",
+    "value": -0.0713023,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ITPR3",
+    "func": "Calcium trafficking",
+    "value": -0.0151093,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SH3GLB1",
+    "func": "Mitochondrial Dynamics",
+    "value": 0.409304,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ATP5D",
+    "func": "Electron transport chain",
+    "value": -0.0887011,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NDUFB7",
+    "func": "Electron transport chain",
+    "value": -0.175375,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TIMM13",
+    "func": "Import & Sorting",
+    "value": 0.21655,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "POLRMT",
+    "func": "Replication & Transcription",
+    "value": 0.29523,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MAPK1",
+    "func": "Apoptosis",
+    "value": -0.114643,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SLC25A1",
+    "func": "ROS defense",
+    "value": -0.379721,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "HSCB",
+    "func": "Fe-S cluster biosynthesis",
+    "value": 0.576251,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TOMM22",
+    "func": "Import & Sorting",
+    "value": 0.0475175,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "BIK",
+    "func": "Apoptosis",
+    "value": -1.18077,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SAMM50",
+    "func": "Import & Sorting",
+    "value": -0.234097,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TXN2",
+    "func": "ROS defense",
+    "value": -0.130755,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ACO2",
+    "func": "Tricarboxylic acid cycle",
+    "value": -0.224484,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TRMU",
+    "func": "Replication & Transcription",
+    "value": 0.148563,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TIMM9",
+    "func": "Import & Sorting",
+    "value": 0.0552851,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "APEX1",
+    "func": "Replication & Transcription",
+    "value": -0.0711343,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "KIAA0391",
+    "func": "Replication & Transcription",
+    "value": 0.0139503,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "GSS",
+    "func": "ROS defense",
+    "value": -0.217729,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "UQCC",
+    "func": "Electron transport chain",
+    "value": 0.232757,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "IDH3B",
+    "func": "Tricarboxylic acid cycle",
+    "value": 0.286554,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "CDK5RAP1",
+    "func": "Replication & Transcription",
+    "value": 0.107202,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MAP1LC3A",
+    "func": "Mitochondrial Dynamics",
+    "value": 0.0960395,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "XIAP",
+    "func": "Apoptosis",
+    "value": -0.341297,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TAZ",
+    "func": "Cardiolipin biosynthesis",
+    "value": -0.0445208,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "PGK1",
+    "func": "Glycolysis",
+    "value": -0.121024,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPS31",
+    "func": "Translation",
+    "value": 0.469504,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MAPK3",
+    "func": "Apoptosis",
+    "value": -0.244236,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NME3",
+    "func": "Replication & Transcription",
+    "value": -0.261602,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NME4",
+    "func": "Replication & Transcription",
+    "value": -0.127685,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NUBP1",
+    "func": "Fe-S cluster biosynthesis",
+    "value": -0.060329,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "EARS2",
+    "func": "Translation",
+    "value": 0.544335,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MTFMT",
+    "func": "Translation",
+    "value": -0.476169,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ACSBG1",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.17328,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "DECR1",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.109328,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "GDAP1",
+    "func": "Mitochondrial Dynamics",
+    "value": 0.339503,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "GSR",
+    "func": "ROS defense",
+    "value": -0.174544,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "BNIP3L",
+    "func": "Mitochondrial Dynamics",
+    "value": -0.495295,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SARS2",
+    "func": "Translation",
+    "value": -0.0382655,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TRMT1",
+    "func": "Replication & Transcription",
+    "value": 0.269832,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TIMM44",
+    "func": "Import & Sorting",
+    "value": -0.073413,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TIMM50",
+    "func": "Import & Sorting",
+    "value": -0.0450023,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "GPI",
+    "func": "Glycolysis",
+    "value": -0.299179,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "BBC3",
+    "func": "Apoptosis",
+    "value": 1.35604,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL4",
+    "func": "Translation",
+    "value": 0.0445419,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "GAPDHS",
+    "func": "Glycolysis",
+    "value": 0.712709,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "PMPCB",
+    "func": "Import & Sorting",
+    "value": -0.176457,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "OGDH",
+    "func": "Tricarboxylic acid cycle",
+    "value": -0.229075,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SSBP1",
+    "func": "Replication & Transcription",
+    "value": 0.0704532,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "GARS",
+    "func": "Translation",
+    "value": -0.24551,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NRF1",
+    "func": "Replication & Transcription",
+    "value": 0.207681,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL32",
+    "func": "Translation",
+    "value": 0.275698,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "GCK",
+    "func": "Glycolysis",
+    "value": 0.087237,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "DNM1",
+    "func": "Apoptosis",
+    "value": -0.914394,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MICU1",
+    "func": "Calcium trafficking",
+    "value": -0.0164312,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "C10orf2",
+    "func": "Replication & Transcription",
+    "value": 0.35128,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MTPAP",
+    "func": "Replication & Transcription",
+    "value": -0.0397651,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TFAM",
+    "func": "Replication & Transcription",
+    "value": 0.253418,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "PPIF",
+    "func": "Apoptosis",
+    "value": 0.170123,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ENO3",
+    "func": "Glycolysis",
+    "value": -0.351595,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL27",
+    "func": "Translation",
+    "value": 0.048352,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ALDOC",
+    "func": "Glycolysis",
+    "value": -0.864089,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NDUFC1",
+    "func": "Electron transport chain",
+    "value": 0.153864,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "GRPEL1",
+    "func": "Import & Sorting",
+    "value": 0.0630978,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "PPARGC1A",
+    "func": "Replication & Transcription",
+    "value": 0.228793,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "PUS3",
+    "func": "Replication & Transcription",
+    "value": 0.16561,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "FOXRED1",
+    "func": "Electron transport chain",
+    "value": -0.197927,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "CPT1A",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.109291,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "PDHX",
+    "func": "Formation of Acetyl CoA",
+    "value": -0.0911235,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "AMBRA1",
+    "func": "Mitochondrial Dynamics",
+    "value": 0.19812,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "PTPMT1",
+    "func": "Cardiolipin biosynthesis",
+    "value": -0.212034,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NDUFS8",
+    "func": "Electron transport chain",
+    "value": -0.117589,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ATP5B",
+    "func": "Electron transport chain",
+    "value": -0.0442542,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ACSS3",
+    "func": "Fatty acid beta-oxidation",
+    "value": 0,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ACAD10",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.56991,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL51",
+    "func": "Translation",
+    "value": -0.031125,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "GAPDH",
+    "func": "Glycolysis",
+    "value": -0.272113,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TPI1",
+    "func": "Glycolysis",
+    "value": -0.18328,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ENO2",
+    "func": "Glycolysis",
+    "value": -0.452156,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "LDHB",
+    "func": "Glycolysis",
+    "value": -0.0693058,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "COX6A1",
+    "func": "Electron transport chain",
+    "value": -0.116174,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "GATC",
+    "func": "Translation",
+    "value": 0.235377,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MTRF1L",
+    "func": "Translation",
+    "value": 0.244803,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SOD2",
+    "func": "ROS defense",
+    "value": 1.57614,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL18",
+    "func": "Translation",
+    "value": 0.240219,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL2",
+    "func": "Translation",
+    "value": -0.0354894,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "COX7A2",
+    "func": "Electron transport chain",
+    "value": 0.120166,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SLC29A1",
+    "func": "Replication & Transcription",
+    "value": -0.112289,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "HARS2",
+    "func": "Translation",
+    "value": -0.0137012,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPS30",
+    "func": "Translation",
+    "value": 0.120321,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "HSPA9",
+    "func": "Import & Sorting",
+    "value": -0.0408929,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPS27",
+    "func": "Translation",
+    "value": 0.0851055,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SLC27A6",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.576499,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "OGG1",
+    "func": "Replication & Transcription",
+    "value": -0.457795,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL3",
+    "func": "Translation",
+    "value": 0.0575208,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MPV17",
+    "func": "ROS defense",
+    "value": -0.0608099,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NDUFS7",
+    "func": "Electron transport chain",
+    "value": -0.133017,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "HTRA2",
+    "func": "Apoptosis",
+    "value": -0.145644,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ACADL",
+    "func": "Fatty acid beta-oxidation",
+    "value": 0.67703,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL19",
+    "func": "Translation",
+    "value": -0.0234036,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TRAK2",
+    "func": "Mitochondrial Dynamics",
+    "value": -0.0112986,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NFE2L2",
+    "func": "Replication & Transcription",
+    "value": 0.263297,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL37",
+    "func": "Translation",
+    "value": -0.136896,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ATP5F1",
+    "func": "Electron transport chain",
+    "value": -0.0835347,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MFN2",
+    "func": "Mitochondrial Dynamics",
+    "value": 0.144936,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "WARS2",
+    "func": "Translation",
+    "value": -0.238214,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPS15",
+    "func": "Translation",
+    "value": -0.0304482,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ACADM",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.328384,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SDHB",
+    "func": "Tricarboxylic acid cycle",
+    "value": -0.0491926,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SLC2A1",
+    "func": "Glycolysis",
+    "value": -0.0173195,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "DARS2",
+    "func": "Translation",
+    "value": -0.139571,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "CREB1",
+    "func": "Replication & Transcription",
+    "value": 0.575171,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ARG1",
+    "func": "Urea Cycle",
+    "value": 0,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NDUFB3",
+    "func": "Electron transport chain",
+    "value": -0.0448847,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NDUFA8",
+    "func": "Electron transport chain",
+    "value": -0.124033,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "DLST",
+    "func": "Tricarboxylic acid cycle",
+    "value": 0.247386,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPS14",
+    "func": "Translation",
+    "value": -0.120674,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MTRF1",
+    "func": "Translation",
+    "value": 0.13932,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "APAF1",
+    "func": "Apoptosis",
+    "value": 0.432432,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "FABP3",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.865621,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MTIF3",
+    "func": "Translation",
+    "value": 0.161429,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPS2",
+    "func": "Translation",
+    "value": 0.180438,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ACADS",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.221989,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ITPR2",
+    "func": "Calcium trafficking",
+    "value": 0.460315,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TSFM",
+    "func": "Translation",
+    "value": 0.0632452,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ATPAF1",
+    "func": "Electron transport chain",
+    "value": -0.150765,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NDUFAF4",
+    "func": "Electron transport chain",
+    "value": 0.264399,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ACSL3",
+    "func": "Fatty acid beta-oxidation",
+    "value": 0.707856,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ATP5E",
+    "func": "Electron transport chain",
+    "value": 0.0370503,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "AARS2",
+    "func": "Translation",
+    "value": 0.0670034,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "GOT2",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.0264384,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NDUFA1",
+    "func": "Electron transport chain",
+    "value": -0.145139,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPS7",
+    "func": "Translation",
+    "value": 0.0223284,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SLC25A19",
+    "func": "Replication & Transcription",
+    "value": -0.0649841,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MSTO1",
+    "func": "Mitochondrial Dynamics",
+    "value": 0.289471,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "CLPP",
+    "func": "Translation",
+    "value": 0.0553231,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "OPA3",
+    "func": "Mitochondrial Dynamics",
+    "value": 0.140316,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPS26",
+    "func": "Translation",
+    "value": -0.151979,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "UROD",
+    "func": "Heme Biosynthesis",
+    "value": -0.246399,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "COX6B1",
+    "func": "Electron transport chain",
+    "value": -0.0392388,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ASL",
+    "func": "Urea Cycle",
+    "value": -0.352013,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "BECN1",
+    "func": "Mitochondrial Dynamics",
+    "value": 0.047498,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TRAP1",
+    "func": "Mitochondrial Dynamics",
+    "value": -0.00881606,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TIMM17B",
+    "func": "Import & Sorting",
+    "value": -0.0206796,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TRMT5",
+    "func": "Replication & Transcription",
+    "value": -0.00537003,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "RHOT1",
+    "func": "Mitochondrial Dynamics",
+    "value": 0.0185845,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TIMM8A",
+    "func": "Import & Sorting",
+    "value": -0.0691395,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "COX7C",
+    "func": "Electron transport chain",
+    "value": 0.0435859,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "UQCR11",
+    "func": "Electron transport chain",
+    "value": -0.0603663,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "GFER",
+    "func": "Import & Sorting",
+    "value": -0.126005,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ECHS1",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.136582,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NDUFA5",
+    "func": "Electron transport chain",
+    "value": -0.0385672,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPS12",
+    "func": "Translation",
+    "value": 0.0948429,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "OSGEPL1",
+    "func": "Replication & Transcription",
+    "value": 0.0624769,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ECSIT",
+    "func": "Electron transport chain",
+    "value": 0.0949455,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TOMM40",
+    "func": "Import & Sorting",
+    "value": 0.648237,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "GTPBP3",
+    "func": "Replication & Transcription",
+    "value": -0.224867,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SLC27A1",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.648443,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL34",
+    "func": "Translation",
+    "value": -0.217148,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "QRSL1",
+    "func": "Translation",
+    "value": 0.302332,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ACSBG2",
+    "func": "Fatty acid beta-oxidation",
+    "value": 0.29623,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NDUFA10",
+    "func": "Electron transport chain",
+    "value": -0.0901446,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SCO2",
+    "func": "Electron transport chain",
+    "value": 0.304784,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ASS1",
+    "func": "Urea Cycle",
+    "value": -0.230799,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ATPIF1",
+    "func": "Electron transport chain",
+    "value": -0.229361,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "COX4I2",
+    "func": "Electron transport chain",
+    "value": 0,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ACSS2",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.283704,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "COX4I1",
+    "func": "Electron transport chain",
+    "value": -0.0271107,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "COX7B",
+    "func": "Electron transport chain",
+    "value": 0.0246348,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ABCB7",
+    "func": "Fe-S cluster biosynthesis",
+    "value": -0.265809,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPS25",
+    "func": "Translation",
+    "value": -0.0237576,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NDUFA2",
+    "func": "Electron transport chain",
+    "value": -0.00184497,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "PDHA1",
+    "func": "Formation of Acetyl CoA",
+    "value": -0.193847,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "DHX30",
+    "func": "Translation",
+    "value": 0.150579,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "PTCD3",
+    "func": "Translation",
+    "value": -0.0140834,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL35",
+    "func": "Translation",
+    "value": -0.0478436,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "DAP3",
+    "func": "Translation",
+    "value": -0.150873,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MUTYH",
+    "func": "Replication & Transcription",
+    "value": -0.318278,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "CASP9",
+    "func": "Apoptosis",
+    "value": 0.14537,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SCO1",
+    "func": "Electron transport chain",
+    "value": 0.307243,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPS36",
+    "func": "Translation",
+    "value": 0.286895,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "CMPK2",
+    "func": "Replication & Transcription",
+    "value": 0,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "LDHA",
+    "func": "Glycolysis",
+    "value": 0.0465547,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TIMM17A",
+    "func": "Import & Sorting",
+    "value": -0.015235,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TIMM10",
+    "func": "Import & Sorting",
+    "value": 0.176416,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "CARS2",
+    "func": "Translation",
+    "value": -0.180534,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ISCA1",
+    "func": "Fe-S cluster biosynthesis",
+    "value": -0.0449394,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "CD36",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.465705,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MTO1",
+    "func": "Replication & Transcription",
+    "value": 0.235491,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ATP5G2",
+    "func": "Electron transport chain",
+    "value": -0.182878,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "RNASEL",
+    "func": "Translation",
+    "value": 0.548493,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL44",
+    "func": "Translation",
+    "value": 0.287253,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "COX5B",
+    "func": "Electron transport chain",
+    "value": -0.174582,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPS9",
+    "func": "Translation",
+    "value": -0.188347,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ISCU",
+    "func": "Fe-S cluster biosynthesis",
+    "value": 0.128835,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SUCLA2",
+    "func": "Tricarboxylic acid cycle",
+    "value": 0.0121249,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TACO1",
+    "func": "Translation",
+    "value": 0.126573,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NDUFB5",
+    "func": "Electron transport chain",
+    "value": 0.336728,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL47",
+    "func": "Translation",
+    "value": 0.23602,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "YME1L1",
+    "func": "Mitochondrial Dynamics",
+    "value": 0.179193,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ALDOB",
+    "func": "Glycolysis",
+    "value": 0,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL50",
+    "func": "Translation",
+    "value": 0.0820551,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MNF1",
+    "func": "Electron transport chain",
+    "value": -0.165741,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "VARS2",
+    "func": "Translation",
+    "value": 0.00425285,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NARS2",
+    "func": "Translation",
+    "value": -0.039262,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL15",
+    "func": "Translation",
+    "value": 0.0377676,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "FDX1",
+    "func": "Fe-S cluster biosynthesis",
+    "value": -0.223687,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NDUFAF1",
+    "func": "Electron transport chain",
+    "value": 0.119683,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "HADHB",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.0263789,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "LRPPRC",
+    "func": "Translation",
+    "value": -0.0480002,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TIMM23",
+    "func": "Import & Sorting",
+    "value": 0.255671,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "IDH1",
+    "func": "Tricarboxylic acid cycle",
+    "value": 0.0779444,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "COX17",
+    "func": "Electron transport chain",
+    "value": -0.0401398,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "HADH",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.358583,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "YARS2",
+    "func": "Translation",
+    "value": 0.19725,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NDUFA9",
+    "func": "Electron transport chain",
+    "value": 0.265507,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TCHP",
+    "func": "Calcium trafficking",
+    "value": -0.0897758,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SLC27A2",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.223695,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ANP32A",
+    "func": "Apoptosis",
+    "value": -0.0649975,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "PML",
+    "func": "Calcium trafficking",
+    "value": 2.49033,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "POLG",
+    "func": "Replication & Transcription",
+    "value": 0.640255,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "UQCRC2",
+    "func": "Electron transport chain",
+    "value": -0.174405,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "RHOT2",
+    "func": "Mitochondrial Dynamics",
+    "value": 0.0726591,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NDUFB10",
+    "func": "Electron transport chain",
+    "value": -0.166849,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "AFG3L2",
+    "func": "Mitochondrial Dynamics",
+    "value": -0.274272,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TP53",
+    "func": "Apoptosis",
+    "value": -0.344212,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NARF",
+    "func": "Fe-S cluster biosynthesis",
+    "value": 0.252344,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "PMAIP1",
+    "func": "Apoptosis",
+    "value": 2.20495,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "PFKL",
+    "func": "Glycolysis",
+    "value": -0.299321,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SOD1",
+    "func": "ROS defense",
+    "value": -0.0405571,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SLC2A5",
+    "func": "Glycolysis",
+    "value": 0.0915293,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "PPOX",
+    "func": "Heme Biosynthesis",
+    "value": -0.230898,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SDHC",
+    "func": "Tricarboxylic acid cycle",
+    "value": -0.104557,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL24",
+    "func": "Translation",
+    "value": 0.0646462,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TARS2",
+    "func": "Translation",
+    "value": -0.0320115,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MCL1",
+    "func": "Apoptosis",
+    "value": 0.887562,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL9",
+    "func": "Translation",
+    "value": 0.094842,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SLC27A3",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.304817,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "PKLR",
+    "func": "Glycolysis",
+    "value": 3.52296,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "CIAO1",
+    "func": "Fe-S cluster biosynthesis",
+    "value": -0.113654,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPS5",
+    "func": "Translation",
+    "value": -0.0653878,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "FABP2",
+    "func": "Fatty acid beta-oxidation",
+    "value": 0,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NDUFS6",
+    "func": "Electron transport chain",
+    "value": -0.162293,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "FARS2",
+    "func": "Translation",
+    "value": 0.136622,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "CDKAL1",
+    "func": "Replication & Transcription",
+    "value": 0.332909,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "RARS2",
+    "func": "Translation",
+    "value": 0.126502,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MDH2",
+    "func": "Tricarboxylic acid cycle",
+    "value": -0.179298,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NDUFB11",
+    "func": "Electron transport chain",
+    "value": -0.163713,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SLC25A37",
+    "func": "Fe-S cluster biosynthesis",
+    "value": 0.471758,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPS28",
+    "func": "Translation",
+    "value": -0.0790981,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SYBU",
+    "func": "Mitochondrial Dynamics",
+    "value": -0.345735,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NDUFB9",
+    "func": "Electron transport chain",
+    "value": -0.0706864,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "AK3",
+    "func": "Replication & Transcription",
+    "value": 0.112293,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SIGMAR1",
+    "func": "Calcium trafficking",
+    "value": -0.300281,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRRF",
+    "func": "Translation",
+    "value": 0.168636,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ALAD",
+    "func": "Heme Biosynthesis",
+    "value": -0.128353,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SURF1",
+    "func": "Electron transport chain",
+    "value": -0.134677,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "IMMP1L",
+    "func": "Import & Sorting",
+    "value": -2.12343,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "EIF3M",
+    "func": "Apoptosis",
+    "value": 0.0236891,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL49",
+    "func": "Translation",
+    "value": 0.0527524,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ALDOA",
+    "func": "Glycolysis",
+    "value": -0.199704,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "DLAT",
+    "func": "Formation of Acetyl CoA",
+    "value": -0.0954268,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TIMM8B",
+    "func": "Import & Sorting",
+    "value": -0.134654,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ITPR1",
+    "func": "Calcium trafficking",
+    "value": -0.390457,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NDUFC2",
+    "func": "Electron transport chain",
+    "value": -0.0185976,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NUBPL",
+    "func": "Electron transport chain",
+    "value": -0.304549,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ACAD8",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.294232,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "QTRTD1",
+    "func": "Replication & Transcription",
+    "value": 0.497788,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ACSL1",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.53997,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SLC25A4",
+    "func": "Apoptosis",
+    "value": -0.167857,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ATP5A1",
+    "func": "Electron transport chain",
+    "value": -0.0696718,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "PFKM",
+    "func": "Glycolysis",
+    "value": -0.284938,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "BCL2L11",
+    "func": "Apoptosis",
+    "value": 0.540143,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TOMM70A",
+    "func": "Import & Sorting",
+    "value": -0.107425,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ATP5G3",
+    "func": "Electron transport chain",
+    "value": -0.0271698,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL39",
+    "func": "Translation",
+    "value": 0.180159,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ATP5J",
+    "func": "Electron transport chain",
+    "value": -0.0502147,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ACSS1",
+    "func": "Fatty acid beta-oxidation",
+    "value": 0,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MMS19",
+    "func": "Fe-S cluster biosynthesis",
+    "value": 0.0571163,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SLC25A28",
+    "func": "Fe-S cluster biosynthesis",
+    "value": 1.73682,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "OXA1L",
+    "func": "Translation",
+    "value": -0.18874,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "EFHA2",
+    "func": "Calcium trafficking",
+    "value": 0,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MCU",
+    "func": "Calcium trafficking",
+    "value": -0.00586379,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "UQCRB",
+    "func": "Electron transport chain",
+    "value": -0.126758,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "HK1",
+    "func": "Glycolysis",
+    "value": -0.628233,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "AIFM1",
+    "func": "Apoptosis",
+    "value": 0.0682636,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "COX6A2",
+    "func": "Electron transport chain",
+    "value": 0,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MPV17L",
+    "func": "ROS defense",
+    "value": -0.231583,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "CPT2",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.326703,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL17",
+    "func": "Translation",
+    "value": 0.0934641,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ALAS2",
+    "func": "Heme Biosynthesis",
+    "value": 1.51609,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "PINK1",
+    "func": "Mitochondrial Dynamics",
+    "value": -0.471008,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NDUFS2",
+    "func": "Electron transport chain",
+    "value": -0.0505718,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TOMM40L",
+    "func": "Import & Sorting",
+    "value": 0.236007,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL10",
+    "func": "Translation",
+    "value": -0.0214179,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ATP5G1",
+    "func": "Electron transport chain",
+    "value": -0.0504506,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "HK2",
+    "func": "Glycolysis",
+    "value": 0.531318,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ATAD3B",
+    "func": "Translation",
+    "value": 0.454754,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NDUFV3",
+    "func": "Electron transport chain",
+    "value": -0.159189,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "COX6B2",
+    "func": "Electron transport chain",
+    "value": 0.274424,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SHC1",
+    "func": "ROS defense",
+    "value": 0.369225,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "HK3",
+    "func": "Glycolysis",
+    "value": 0,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SQSTM1",
+    "func": "Mitochondrial Dynamics",
+    "value": 0.482523,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "COX7A1",
+    "func": "Electron transport chain",
+    "value": 0.365649,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "FDXR",
+    "func": "Fe-S cluster biosynthesis",
+    "value": -0.275459,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SELRC1",
+    "func": "Electron transport chain",
+    "value": 0.31164,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "PARS2",
+    "func": "Translation",
+    "value": -0.369251,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "AK4",
+    "func": "Replication & Transcription",
+    "value": -0.222005,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "OMA1",
+    "func": "Mitochondrial Dynamics",
+    "value": -0.0980932,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TFB2M",
+    "func": "Replication & Transcription",
+    "value": 0.248077,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL55",
+    "func": "Translation",
+    "value": 0.363561,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "PDHA2",
+    "func": "Formation of Acetyl CoA",
+    "value": 0,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "BOLA3",
+    "func": "Fe-S cluster biosynthesis",
+    "value": 0.0735058,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPS18C",
+    "func": "Translation",
+    "value": 0.521229,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "CHCHD4",
+    "func": "Import & Sorting",
+    "value": -0.142992,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SUCLG1",
+    "func": "Tricarboxylic acid cycle",
+    "value": -0.124202,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SLC2A2",
+    "func": "Glycolysis",
+    "value": 1.35088,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "FABP1",
+    "func": "Fatty acid beta-oxidation",
+    "value": 0,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "CDS1",
+    "func": "Cardiolipin biosynthesis",
+    "value": -0.584522,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "COX18",
+    "func": "Electron transport chain",
+    "value": -0.0517689,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NDUFAF2",
+    "func": "Electron transport chain",
+    "value": 0.0445142,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NDUFS4",
+    "func": "Electron transport chain",
+    "value": 0.102562,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "GRPEL2",
+    "func": "Import & Sorting",
+    "value": -0.146874,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "CASP3",
+    "func": "Apoptosis",
+    "value": 0.621619,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "GFM2",
+    "func": "Translation",
+    "value": 0.195854,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TERT",
+    "func": "Replication & Transcription",
+    "value": 0.467287,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ACSL6",
+    "func": "Fatty acid beta-oxidation",
+    "value": 0.0825779,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "UQCRQ",
+    "func": "Electron transport chain",
+    "value": -0.11528,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "FABP7",
+    "func": "Fatty acid beta-oxidation",
+    "value": 0,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "FABP5",
+    "func": "Fatty acid beta-oxidation",
+    "value": 0.34862,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "PGAM2",
+    "func": "Glycolysis",
+    "value": 0.335477,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "COX6C",
+    "func": "Electron transport chain",
+    "value": -0.101666,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "FXN",
+    "func": "Fe-S cluster biosynthesis",
+    "value": 0.098813,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NDUFB6",
+    "func": "Electron transport chain",
+    "value": 0.0139014,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "STOML2",
+    "func": "Mitochondrial Dynamics",
+    "value": 0.0250911,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "EFHA1",
+    "func": "Calcium trafficking",
+    "value": -0.152056,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "RPUSD4",
+    "func": "Replication & Transcription",
+    "value": -0.0271377,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ATP5C1",
+    "func": "Electron transport chain",
+    "value": 0.0593756,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "VDAC2",
+    "func": "Apoptosis",
+    "value": 0.146303,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "PRDX3",
+    "func": "ROS defense",
+    "value": -0.100782,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "PMPCA",
+    "func": "Import & Sorting",
+    "value": -0.158807,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "CASP7",
+    "func": "Apoptosis",
+    "value": 0.567801,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ISCA2",
+    "func": "Fe-S cluster biosynthesis",
+    "value": -0.353101,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "RPUSD2",
+    "func": "Replication & Transcription",
+    "value": 0.176382,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NDUFB8",
+    "func": "Electron transport chain",
+    "value": -0.134749,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "COX11",
+    "func": "Electron transport chain",
+    "value": -0.0827002,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "IDH3A",
+    "func": "Tricarboxylic acid cycle",
+    "value": 0.0560133,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TK2",
+    "func": "Replication & Transcription",
+    "value": -0.158011,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "FAM96B",
+    "func": "Fe-S cluster biosynthesis",
+    "value": -0.00361079,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ACSM1",
+    "func": "Fatty acid beta-oxidation",
+    "value": 0,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "LDHC",
+    "func": "Glycolysis",
+    "value": 0,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "FAM96A",
+    "func": "Fe-S cluster biosynthesis",
+    "value": -0.0977994,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "CLPX",
+    "func": "Translation",
+    "value": 0.0312347,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL16",
+    "func": "Translation",
+    "value": 0.0616898,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "PHB",
+    "func": "Translation",
+    "value": 0.189176,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TRUB2",
+    "func": "Replication & Transcription",
+    "value": 0.0163612,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SLC27A4",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.047948,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ENDOG",
+    "func": "Replication & Transcription",
+    "value": -0.311876,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "DUS2L",
+    "func": "Replication & Transcription",
+    "value": -0.253614,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ATP5L",
+    "func": "Electron transport chain",
+    "value": -0.00566523,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ACAA2",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.193633,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "GPX4",
+    "func": "ROS defense",
+    "value": -0.262022,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NDUFA7",
+    "func": "Electron transport chain",
+    "value": -14.0462,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NDUFV1",
+    "func": "Electron transport chain",
+    "value": -0.100818,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "FDX1L",
+    "func": "Fe-S cluster biosynthesis",
+    "value": 0.533725,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ATP5H",
+    "func": "Electron transport chain",
+    "value": -0.0401998,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SDHAF2",
+    "func": "Electron transport chain",
+    "value": -0.082664,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "PDHB",
+    "func": "Formation of Acetyl CoA",
+    "value": -0.0444648,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NDUFS5",
+    "func": "Electron transport chain",
+    "value": -0.0352803,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "GFM1",
+    "func": "Translation",
+    "value": -0.175064,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "LETM1",
+    "func": "Calcium trafficking",
+    "value": 0.159406,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MFF",
+    "func": "Mitochondrial Dynamics",
+    "value": 0.136132,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ATP5I",
+    "func": "Electron transport chain",
+    "value": -0.0415418,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "UQCRFS1",
+    "func": "Electron transport chain",
+    "value": -0.114517,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SLC25A6",
+    "func": "Apoptosis",
+    "value": -0.43349,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "CPT1C",
+    "func": "Fatty acid beta-oxidation",
+    "value": 0.0701286,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "APEX2",
+    "func": "Replication & Transcription",
+    "value": -0.13473,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL1",
+    "func": "Translation",
+    "value": 0.209989,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NFU1",
+    "func": "Fe-S cluster biosynthesis",
+    "value": -0.018561,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "FABP6",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.513507,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "GABARAP",
+    "func": "Mitochondrial Dynamics",
+    "value": -0.186804,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "CDK1",
+    "func": "Apoptosis",
+    "value": -0.0401013,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "FABP4",
+    "func": "Fatty acid beta-oxidation",
+    "value": 0,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "COX7B2",
+    "func": "Electron transport chain",
+    "value": 0,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "KIF5B",
+    "func": "Mitochondrial Dynamics",
+    "value": 0.264547,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "GSTA4",
+    "func": "ROS defense",
+    "value": -1.46975,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NDUFA3",
+    "func": "Electron transport chain",
+    "value": 0.102461,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "PGK2",
+    "func": "Glycolysis",
+    "value": 0,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "PKIA",
+    "func": "Mitochondrial Dynamics",
+    "value": 0,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TRMT61B",
+    "func": "Replication & Transcription",
+    "value": -0.744206,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MFN1",
+    "func": "Mitochondrial Dynamics",
+    "value": 0.122898,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TMEM126B",
+    "func": "Electron transport chain",
+    "value": 0.471417,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "PGAM1",
+    "func": "Glycolysis",
+    "value": 0.0605501,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL36",
+    "func": "Translation",
+    "value": -0.12605,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "BCL2L1",
+    "func": "Apoptosis",
+    "value": 0.176024,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SLC25A33",
+    "func": "Replication & Transcription",
+    "value": 0.317641,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "BCL2",
+    "func": "Apoptosis",
+    "value": 0.0670272,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "RNASEH1",
+    "func": "Replication & Transcription",
+    "value": 0.093887,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ATPAF2",
+    "func": "Electron transport chain",
+    "value": -0.170509,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "LDHAL6B",
+    "func": "Glycolysis",
+    "value": 3.19641,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NME6",
+    "func": "Replication & Transcription",
+    "value": 0.0838761,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "CYCS",
+    "func": "Apoptosis",
+    "value": 0.102894,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL13",
+    "func": "Translation",
+    "value": 0.131798,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SUCLG2",
+    "func": "Tricarboxylic acid cycle",
+    "value": -0.248182,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL52",
+    "func": "Translation",
+    "value": -0.211048,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TRMT112",
+    "func": "Replication & Transcription",
+    "value": 0.0571611,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "C10orf129",
+    "func": "Fatty acid beta-oxidation",
+    "value": 0,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "UQCRH",
+    "func": "Electron transport chain",
+    "value": -0.135057,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TOMM20",
+    "func": "Import & Sorting",
+    "value": -0.0116191,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL45",
+    "func": "Translation",
+    "value": 0.0388921,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TRMT10C",
+    "func": "Replication & Transcription",
+    "value": 0.149037,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL11",
+    "func": "Translation",
+    "value": 0.0858538,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NDUFA11",
+    "func": "Electron transport chain",
+    "value": -0.101946,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPS22",
+    "func": "Translation",
+    "value": 0.112231,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "PARL",
+    "func": "Mitochondrial Dynamics",
+    "value": 0.165804,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL48",
+    "func": "Translation",
+    "value": -0.0727951,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TMEM70",
+    "func": "Electron transport chain",
+    "value": 0.221482,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TOMM5",
+    "func": "Import & Sorting",
+    "value": 0.14752,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "BNIP3",
+    "func": "Mitochondrial Dynamics",
+    "value": -0.847621,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "COX8A",
+    "func": "Electron transport chain",
+    "value": -0.0834852,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "PUS1",
+    "func": "Replication & Transcription",
+    "value": 0.00509777,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TOP3A",
+    "func": "Replication & Transcription",
+    "value": 0.0993644,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TIMM22",
+    "func": "Import & Sorting",
+    "value": 0.0815698,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ACAD9",
+    "func": "Electron transport chain",
+    "value": -0.12559,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NDUFAF3",
+    "func": "Electron transport chain",
+    "value": -0.301237,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NDUFV2",
+    "func": "Electron transport chain",
+    "value": -0.00132257,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "COX14",
+    "func": "Electron transport chain",
+    "value": -0.104319,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SLC25A20",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.381541,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "COX5A",
+    "func": "Electron transport chain",
+    "value": -0.0783369,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TUFM",
+    "func": "Translation",
+    "value": -0.0876968,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "CYC1",
+    "func": "Electron transport chain",
+    "value": -0.0788105,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "PACS2",
+    "func": "Calcium trafficking",
+    "value": -0.101908,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "PLD6",
+    "func": "Mitochondrial Dynamics",
+    "value": 0.583516,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL14",
+    "func": "Translation",
+    "value": 0.110367,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPS23",
+    "func": "Translation",
+    "value": 0.174886,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SLC2A4",
+    "func": "Glycolysis",
+    "value": -1.15663,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "FTMT",
+    "func": "Fe-S cluster biosynthesis",
+    "value": 0,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "IBA57",
+    "func": "Fe-S cluster biosynthesis",
+    "value": -0.296738,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPS11",
+    "func": "Translation",
+    "value": 0.0930307,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "IDH2",
+    "func": "Tricarboxylic acid cycle",
+    "value": -0.642038,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL41",
+    "func": "Translation",
+    "value": -0.125721,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPS16",
+    "func": "Translation",
+    "value": -0.225219,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "GLRX5",
+    "func": "Fe-S cluster biosynthesis",
+    "value": -0.12786,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TRAK1",
+    "func": "Mitochondrial Dynamics",
+    "value": -0.0671925,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "DDX28",
+    "func": "Translation",
+    "value": 0.0849443,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "C22orf32",
+    "func": "Calcium trafficking",
+    "value": -0.253831,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "COA5",
+    "func": "Electron transport chain",
+    "value": -0.157806,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ACSM5",
+    "func": "Fatty acid beta-oxidation",
+    "value": 0,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL54",
+    "func": "Translation",
+    "value": 0.0695102,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NDUFB1",
+    "func": "Electron transport chain",
+    "value": -0.196818,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ACSM2A",
+    "func": "Fatty acid beta-oxidation",
+    "value": 0,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "DIABLO",
+    "func": "Apoptosis",
+    "value": -0.0244229,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "UQCR10",
+    "func": "Electron transport chain",
+    "value": -0.0643061,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TOP1MT",
+    "func": "Replication & Transcription",
+    "value": -0.0487596,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TXNRD2",
+    "func": "ROS defense",
+    "value": -0.239608,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NDUFA12",
+    "func": "Electron transport chain",
+    "value": -0.0278619,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "IMMP2L",
+    "func": "Import & Sorting",
+    "value": -0.00777638,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NDUFA6",
+    "func": "Electron transport chain",
+    "value": -0.173918,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "PARK2",
+    "func": "Mitochondrial Dynamics",
+    "value": 0,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL30",
+    "func": "Translation",
+    "value": -0.083812,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL40",
+    "func": "Translation",
+    "value": 0.235137,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NDUFA13",
+    "func": "Electron transport chain",
+    "value": -0.22717,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPS21",
+    "func": "Translation",
+    "value": -0.0525727,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "UROS",
+    "func": "Heme Biosynthesis",
+    "value": -0.166743,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TRMT2B",
+    "func": "Replication & Transcription",
+    "value": -0.267275,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NDUFA4",
+    "func": "Electron transport chain",
+    "value": 0.00869374,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ACADSB",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.647967,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "PPIA",
+    "func": "Apoptosis",
+    "value": -0.107507,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "LONP1",
+    "func": "Translation",
+    "value": -0.338009,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "YRDC",
+    "func": "Replication & Transcription",
+    "value": 0.330086,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TOMM7",
+    "func": "Import & Sorting",
+    "value": -0.00198618,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ACSL5",
+    "func": "Fatty acid beta-oxidation",
+    "value": 0.865059,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL21",
+    "func": "Translation",
+    "value": -0.121925,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "FABP12",
+    "func": "Fatty acid beta-oxidation",
+    "value": 0,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ATAD3A",
+    "func": "Translation",
+    "value": 0.0208363,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SPG7",
+    "func": "Mitochondrial Dynamics",
+    "value": -0.0266111,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL42",
+    "func": "Translation",
+    "value": 0.0401727,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MARCH5",
+    "func": "Mitochondrial Dynamics",
+    "value": 0.609973,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MT-ND6",
+    "func": "Electron transport chain",
+    "value": 0.12634,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MT-CO2",
+    "func": "Electron transport chain",
+    "value": 0.175184,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MT-CYB",
+    "func": "Electron transport chain",
+    "value": 0.0898064,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MT-ND2",
+    "func": "Electron transport chain",
+    "value": 0.0775242,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MT-ND5",
+    "func": "Electron transport chain",
+    "value": 0.255509,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MT-CO1",
+    "func": "Electron transport chain",
+    "value": 0.17302,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "OPA1",
+    "func": "Mitochondrial Dynamics",
+    "value": -0.130451,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MT-ND3",
+    "func": "Electron transport chain",
+    "value": -0.0133869,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MT-ND4",
+    "func": "Electron transport chain",
+    "value": 0.204295,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MT-ND1",
+    "func": "Electron",
+    "value": 0.247764,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MT-ATP6",
+    "func": "Electron transport chain",
+    "value": 0.0700598,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MT-CO3",
+    "func": "Electron transport chain",
+    "value": 0.154718,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "RMRP",
+    "func": "Replication & Transcription",
+    "value": 0.805719,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "COX20",
+    "func": "Electron transport chain",
+    "value": -0.245333,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL38",
+    "func": "Translation",
+    "value": 0.0305654,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SDHD",
+    "func": "Tricarboxylic acid cycle",
+    "value": -0.0327669,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPS18B",
+    "func": "Translation",
+    "value": -0.0844103,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL53",
+    "func": "Translation",
+    "value": -0.0891422,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "SDHAF1",
+    "func": "Electron transport chain",
+    "value": -0.198724,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "FABP9",
+    "func": "Fatty acid beta-oxidation",
+    "value": 0,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "CPT1B",
+    "func": "Fatty acid beta-oxidation",
+    "value": 0.808353,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "DNAJC19",
+    "func": "Import & Sorting",
+    "value": 0.0214248,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MT-ND4L",
+    "func": "Electron transport chain",
+    "value": 0.198432,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "QTRT1",
+    "func": "Replication & Transcription",
+    "value": 0.0334984,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "VDAC1",
+    "func": "Apoptosis",
+    "value": -0.00854258,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NDUFS3",
+    "func": "Electron transport chain",
+    "value": -0.0177887,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL23",
+    "func": "Translation",
+    "value": 0.118864,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "LYRM4",
+    "func": "Fe-S cluster biosynthesis",
+    "value": -0.0729916,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "FIS1",
+    "func": "Mitochondrial Dynamics",
+    "value": -0.0325778,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "TOMM6",
+    "func": "Import & Sorting",
+    "value": 0.0553618,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ACSM4",
+    "func": "Fatty acid beta-oxidation",
+    "value": 0.948765,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "PHB2",
+    "func": "Translation",
+    "value": -0.0619623,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "PAM16",
+    "func": "Import & Sorting",
+    "value": -0.0734663,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MT-ATP8",
+    "func": "Electron transport chain",
+    "value": -0.219006,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "GPX1",
+    "func": "ROS defense",
+    "value": 0.0000978981,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPS17",
+    "func": "Translation",
+    "value": 0.254747,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "COX19",
+    "func": "Electron transport chain",
+    "value": -0.0590609,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ACAD11",
+    "func": "Fatty acid beta-oxidation",
+    "value": -0.3565,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ATP5J2",
+    "func": "Electron transport chain",
+    "value": 0.0396666,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "ATP5O",
+    "func": "Electron transport chain",
+    "value": -0.119133,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MTFP1",
+    "func": "Mitochondrial Dynamics",
+    "value": -0.020242,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL20",
+    "func": "Translation",
+    "value": -0.0182729,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL33",
+    "func": "Translation",
+    "value": -0.0117323,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPS6",
+    "func": "Translation",
+    "value": -0.0298501,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "GSTA1",
+    "func": "ROS defense",
+    "value": 0,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "NFS1",
+    "func": "Fe-S cluster biosynthesis",
+    "value": -0.0874465,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "GSTA2",
+    "func": "ROS defense",
+    "value": 0,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MARS2",
+    "func": "Translation",
+    "value": -0.131561,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "BCKDHA",
+    "func": "ROS defense",
+    "value": -0.308948,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MPV17L2",
+    "func": "Translation",
+    "value": 0.175732,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "APOPT1",
+    "func": "Apoptosis",
+    "value": -0.0596778,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "HMBS",
+    "func": "Heme Biosynthesis",
+    "value": -0.0917356,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "POLG2",
+    "func": "Replication & Transcription",
+    "value": 0.178862,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL46",
+    "func": "Translation",
+    "value": -0.0446302,
+    "mutation": "NULL"
+  },
+  {
+    "sample": "SC35M_dNS1_24",
+    "gene": "MRPL12",
+    "func": "Translation",
+    "value": -0.0705529,
+    "mutation": "NULL"
+  }
+]

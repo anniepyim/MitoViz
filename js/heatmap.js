@@ -13,7 +13,7 @@ var heatmap = function (obj) {
     this.heatmapwrapped = obj;
 };
 
-heatmap.processData = function (jsondata, nfunc) {
+heatmap.processData = function (jsondata, nfunc,colorrange) {
 
     var newdata = [];
 
@@ -68,11 +68,13 @@ heatmap.processData = function (jsondata, nfunc) {
         });
     });
 
-    heatmap.draw(outdata, samplelist, genelist);
+    heatmap.draw(outdata, samplelist, genelist,colorrange);
 };
 
-heatmap.draw = function (jsondata, samplelist, genelist) {
+heatmap.draw = function (jsondata, samplelist, genelist,colorrange) {
 
+    var mycolors = colorrange.split(',');
+    
     jsondata.forEach(function (d) {
         d.rowidx = +d.rowidx;
         d.colidx = +d.colidx;
@@ -85,8 +87,8 @@ heatmap.draw = function (jsondata, samplelist, genelist) {
         HMheight = 430 - HMmargin.top - HMmargin.bottom,
         gridheight = HMheight / samplelist.length, 
         gridwidth = HMwidth / genelist.length, 
-        legendElementWidth = HMwidth / 9, 
-        colors = colorbrewer.RdYlGn[9];
+        legendElementWidth = HMwidth / 9,
+        colors = colorrange.split(',');
 
     var svg = d3.select("#heatmap").append("svg")
         .attr("id", "heatmapsvg")
@@ -310,8 +312,8 @@ heatmap.mouseoverfunc = function (d, ingene) {
 
 
 
-heatmap.init = function (jsondata) {
-    heatmap.processData(jsondata, "Apoptosis");
+heatmap.init = function (jsondata,colorrange) {
+    heatmap.processData(jsondata, "Apoptosis",colorrange);
 };
 
 if (typeof define === "function" && define.amd) {

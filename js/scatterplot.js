@@ -30,9 +30,8 @@ var div = d3.select("#scatterplot").append("div")
     .attr("class", "tooltip")
     .style("opacity", 0);
 
-var color = d3.scale.linear()
-    .range(["#fb6a4a", "#74c476"])
-    .interpolate(d3.interpolateHsl);
+var color = d3.scale.linear();
+    //.interpolate(d3.interpolateHsl);
 
 var mutatedcolor = "#6baed6";
 var highlightcolor = "#f768a1";
@@ -78,8 +77,10 @@ SP.drawaxis = function () {
 
 };
 
-SP.update = function (jsondata, nfunc, ncolor) {
-
+SP.update = function (jsondata, nfunc, ncolor,colorrange) {
+    
+    var mycolors = colorrange.split(',');
+    
     var data = [];
 
     jsondata.forEach(function (d) {
@@ -117,7 +118,8 @@ SP.update = function (jsondata, nfunc, ncolor) {
     SPsvg.select(".x.axis")
         .call(xAxis);
 
-    color.domain([yabs * -1, yabs]);
+    color.domain([yabs * -1, 0,yabs])
+        .range([mycolors[0], mycolors[4],mycolors[8]]);
 
     var nodedata = data.map(function (d) {
         return {
@@ -293,9 +295,9 @@ SP.highlight = function(d, ingene){
     }*/
 };
 
-SP.init = function (jsondata) {
+SP.init = function (jsondata,colorrange) {
     SP.drawaxis();
-    SP.update(jsondata, "Apoptosis", "#b3de69");
+    SP.update(jsondata, "Apoptosis", "#b3de69",colorrange);
 };
 
 if (typeof define === "function" && define.amd) {

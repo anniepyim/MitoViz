@@ -2,6 +2,23 @@ body {
   font: 10px verdana;
 }
 
+.palette {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: bottom;
+  margin: 4px 0 4px 6px;
+  padding: 4px;
+  background: #fff;
+  border: solid 1px #aaa;
+}
+
+.swatch {
+  display: block;
+  vertical-align: middle;
+  width: 37px;
+  height: 22px;
+}
+
 .axis path,
 .axis line {
   fill: none;
@@ -71,20 +88,39 @@ h1 {
     text-decoration: underline;
 }
 
+h2 {
+    color: #2F4F4F;
+
+    text-align: center;
+
+}
+
+
 #cb {
     top: 18%;
     position: absolute;
-    left: 30%;
+    left: 10%;
     color:#008080;
 }
 
 #BRCA {
     display: inline-block;
-    margin-right: 100px;
+    margin-right: 80px;
 }
 #aneuploidy {
     display: inline-block;
-    margin-left: 100px;
+    margin-left: 80px;
+}
+#viral {
+    display: inline-block;
+    margin-left: 80px;
+}
+
+#color-picker {
+    display: inline-block;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: center;
 }
 
 input[type=checkbox] {
@@ -116,7 +152,7 @@ text-decoration: none;
 display: inline-block;
 font-size: 16px;
 position: absolute;
-left: 31%;
+left: 40%;
 border-radius: 12px;
 
 }

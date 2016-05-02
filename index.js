@@ -3,6 +3,7 @@
 var d3 = require('d3');
 
 //Modules
+var colorpicker = require('./js/colorpicker.js');
 var SP = require('./js/scatterplot.js');
 var PC = require('./js/piechart.js');
 var heatmap = require('./js/heatmap.js');
@@ -19,12 +20,12 @@ function onError(res) {
     hideLoading();
 }
 
-function onSuccess(data) {
+function onSuccess(data,colorrange) {
     //console.log(data);
     hideLoading();
-    SP.init(data);
-    PC.init(data);
-    heatmap.init(data);
+    SP.init(data,colorrange);
+    PC.init(data,colorrange);
+    heatmap.init(data,colorrange);
 }
 
 d3.select('#compareButton').on('click', compareData);
@@ -32,15 +33,17 @@ d3.select('#compareButton').on('click', compareData);
 function compareData(){
          var arr = [];
          var names = document.getElementsByName('Sample');
+        var colorrange = d3.select('#colorinput').property("value");
             for(var x = 0; x < names.length; x++){
                 if(names[x].checked)
                 {
                 arr.push(names[x].value);
                 }
             }
-        parser.parse(arr, onError, onSuccess);
+        parser.parse(arr, onError, onSuccess,colorrange);
 }
 
+colorpicker();
 
 //fetch('', function(data){console.log(data);});
 //SP.init();

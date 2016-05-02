@@ -5,7 +5,7 @@ function parser(){}
 
    
    
-function parse(urls, errorcb, datacb){
+function parse(urls, errorcb, datacb,colorrange){
     
     var funcs = _.map(urls, axios.get);
     
@@ -19,7 +19,7 @@ function parse(urls, errorcb, datacb){
                 if(! _.isArray(res.data)) errorcb(new Error('response is not an array'));
                 data = data.concat(res.data);
             });
-            datacb(data);
+            datacb(data,colorrange);
         }))
         .catch(function (res) {
             errorcb(res);

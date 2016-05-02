@@ -28,7 +28,7 @@ var PC = function (obj) {
     this.PCwrapped = obj;
 };
 
-PC.draw = function (jsondata) {
+PC.draw = function (jsondata,colorrange) {
 
     // create function to draw the arcs of the pie slices.
     var arc = d3.svg.arc().outerRadius(pieDimr - 10).innerRadius(0);
@@ -87,16 +87,16 @@ PC.draw = function (jsondata) {
         });
 
     function click(d) {
-        SP.update(jsondata, d.data.func, color(d.data.func));
+        SP.update(jsondata, d.data.func, color(d.data.func),colorrange);
         d3.select("#heatmapsvg").remove();
-        heatmap.processData(jsondata, d.data.func);
+        heatmap.processData(jsondata, d.data.func,colorrange);
     }
     
 
 };
 
-PC.init = function (jsondata) {
-    PC.draw(jsondata);
+PC.init = function (jsondata,colorrange) {
+    PC.draw(jsondata,colorrange);
 };
 
 module.exports = PC;
