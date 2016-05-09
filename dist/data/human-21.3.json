@@ -2,3655 +2,3655 @@
   {
     "gene": "AARS2",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.509629,
+    "sample": "human-21.3",
+    "value": -0.39943551691461,
     "mutation": "NULL"
   },
   {
     "gene": "ABCB7",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "5/4",
-    "value": -0.148793,
+    "sample": "human-21.3",
+    "value": 0.0747220149081643,
     "mutation": "NULL"
   },
   {
     "gene": "ACAA2",
     "func": "Fatty acid beta-oxidation",
-    "sample": "5/4",
-    "value": -0.755026,
+    "sample": "human-21.3",
+    "value": -0.268199817226637,
     "mutation": "NULL"
   },
   {
     "gene": "ACAD10",
     "func": "Fatty acid beta-oxidation",
-    "sample": "5/4",
-    "value": -0.37438,
+    "sample": "human-21.3",
+    "value": -0.534140849323895,
     "mutation": "NULL"
   },
   {
     "gene": "ACAD11",
     "func": "Fatty acid beta-oxidation",
-    "sample": "5/4",
-    "value": 0,
+    "sample": "human-21.3",
+    "value": 1.17220902053525,
     "mutation": "NULL"
   },
   {
     "gene": "ACAD8",
     "func": "Fatty acid beta-oxidation",
-    "sample": "5/4",
-    "value": 0.278963,
+    "sample": "human-21.3",
+    "value": -0.504299054700086,
     "mutation": "NULL"
   },
   {
     "gene": "ACAD9",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0.0404127,
+    "sample": "human-21.3",
+    "value": -0.387023023038556,
     "mutation": "NULL"
   },
   {
     "gene": "ACADM",
     "func": "Fatty acid beta-oxidation",
-    "sample": "5/4",
-    "value": -0.0888987,
+    "sample": "human-21.3",
+    "value": 0.430758546192852,
     "mutation": "NULL"
   },
   {
     "gene": "ACADS",
     "func": "Fatty acid beta-oxidation",
-    "sample": "5/4",
-    "value": -0.091523,
+    "sample": "human-21.3",
+    "value": -1.01607882972716,
     "mutation": "NULL"
   },
   {
     "gene": "ACADSB",
     "func": "Fatty acid beta-oxidation",
-    "sample": "5/4",
-    "value": 0.139432,
-    "mutation": "chr10 124800853 C>T synonymous_variant"
+    "sample": "human-21.3",
+    "value": 0.642482053046313,
+    "mutation": "NULL"
   },
   {
     "gene": "ACADVL",
     "func": "Fatty acid beta-oxidation",
-    "sample": "5/4",
-    "value": 0.839364,
+    "sample": "human-21.3",
+    "value": 0.438297577057798,
     "mutation": "NULL"
   },
   {
     "gene": "ACO2",
     "func": "Tricarboxylic acid cycle",
-    "sample": "5/4",
-    "value": 0.711058,
+    "sample": "human-21.3",
+    "value": -0.541867480030719,
     "mutation": "NULL"
   },
   {
     "gene": "ACSL1",
     "func": "Fatty acid beta-oxidation",
-    "sample": "5/4",
-    "value": 0.698046,
+    "sample": "human-21.3",
+    "value": -0.0692115141543521,
     "mutation": "NULL"
   },
   {
     "gene": "ACSL3",
     "func": "Fatty acid beta-oxidation",
-    "sample": "5/4",
-    "value": 0.309529,
-    "mutation": "chr2 223808401 A>C downstream_gene_variant"
+    "sample": "human-21.3",
+    "value": 0.79226644033408,
+    "mutation": "NULL"
   },
   {
     "gene": "ACSL4",
     "func": "Fatty acid beta-oxidation",
-    "sample": "5/4",
-    "value": 0.545756,
+    "sample": "human-21.3",
+    "value": 1.07749155467733,
     "mutation": "NULL"
   },
   {
     "gene": "ACSL5",
     "func": "Fatty acid beta-oxidation",
-    "sample": "5/4",
-    "value": -4.37085,
+    "sample": "human-21.3",
+    "value": 0.277142959460326,
     "mutation": "NULL"
   },
   {
     "gene": "ACSM3",
     "func": "Fatty acid beta-oxidation",
-    "sample": "5/4",
-    "value": -2.47286,
+    "sample": "human-21.3",
+    "value": 0.903659888058226,
     "mutation": "NULL"
   },
   {
     "gene": "ACSS2",
     "func": "Fatty acid beta-oxidation",
-    "sample": "5/4",
-    "value": 0.118759,
+    "sample": "human-21.3",
+    "value": -0.668696490959023,
     "mutation": "NULL"
   },
   {
     "gene": "AFG3L2",
     "func": "Mitochondrial Dynamics",
-    "sample": "5/4",
-    "value": -0.322272,
+    "sample": "human-21.3",
+    "value": -0.0359906360996776,
     "mutation": "NULL"
   },
   {
     "gene": "AIFM1",
     "func": "Apoptosis",
-    "sample": "5/4",
-    "value": 0.0794751,
+    "sample": "human-21.3",
+    "value": -0.129432422358974,
     "mutation": "NULL"
   },
   {
     "gene": "AK3",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": -0.425085,
+    "sample": "human-21.3",
+    "value": 0.771543076668207,
     "mutation": "NULL"
   },
   {
     "gene": "AK4",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": 0.361404,
-    "mutation": "chr1 65695930 G>A 3_prime_UTR_variant"
+    "sample": "human-21.3",
+    "value": 0.459294161104109,
+    "mutation": "NULL"
   },
   {
     "gene": "ALAD",
     "func": "Heme Biosynthesis",
-    "sample": "5/4",
-    "value": -0.259781,
+    "sample": "human-21.3",
+    "value": 0.290506850730993,
     "mutation": "NULL"
   },
   {
     "gene": "ALAS1",
     "func": "Heme Biosynthesis",
-    "sample": "5/4",
-    "value": 0.519619,
+    "sample": "human-21.3",
+    "value": -0.598581287330389,
     "mutation": "NULL"
   },
   {
     "gene": "ALDOA",
     "func": "Glycolysis",
-    "sample": "5/4",
-    "value": 0.694506,
+    "sample": "human-21.3",
+    "value": -0.723703459370275,
     "mutation": "NULL"
   },
   {
     "gene": "ALDOC",
     "func": "Glycolysis",
-    "sample": "5/4",
-    "value": -0.308736,
+    "sample": "human-21.3",
+    "value": 0.045063382678343,
     "mutation": "NULL"
   },
   {
     "gene": "AMBRA1",
     "func": "Mitochondrial Dynamics",
-    "sample": "5/4",
-    "value": -0.292259,
+    "sample": "human-21.3",
+    "value": -0.576469161401521,
     "mutation": "NULL"
   },
   {
     "gene": "ANP32A",
     "func": "Apoptosis",
-    "sample": "5/4",
-    "value": -0.509277,
+    "sample": "human-21.3",
+    "value": 0.59013405769878,
     "mutation": "NULL"
   },
   {
     "gene": "APAF1",
     "func": "Apoptosis",
-    "sample": "5/4",
-    "value": 0.654363,
+    "sample": "human-21.3",
+    "value": 0.686491518938638,
     "mutation": "NULL"
   },
   {
     "gene": "APEX1",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": -0.692803,
+    "sample": "human-21.3",
+    "value": 0.112191961383069,
     "mutation": "NULL"
   },
   {
     "gene": "APEX2",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": -0.309783,
+    "sample": "human-21.3",
+    "value": -0.564687300000018,
     "mutation": "NULL"
   },
   {
     "gene": "ARG2",
     "func": "Urea Cycle",
-    "sample": "5/4",
-    "value": 0.378204,
+    "sample": "human-21.3",
+    "value": 0.610467206418143,
     "mutation": "NULL"
   },
   {
     "gene": "ASL",
     "func": "Urea Cycle",
-    "sample": "5/4",
-    "value": 0.134628,
+    "sample": "human-21.3",
+    "value": -0.34194161941175,
     "mutation": "NULL"
   },
   {
     "gene": "ASS1",
     "func": "Urea Cycle",
-    "sample": "5/4",
-    "value": -0.694237,
+    "sample": "human-21.3",
+    "value": 0.581829981427178,
     "mutation": "NULL"
   },
   {
     "gene": "ATAD3A",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.237153,
+    "sample": "human-21.3",
+    "value": -0.566876996352519,
     "mutation": "NULL"
   },
   {
     "gene": "ATP5A1",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.048915,
+    "sample": "human-21.3",
+    "value": 0.506047800888817,
     "mutation": "NULL"
   },
   {
     "gene": "ATP5B",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.0078071,
+    "sample": "human-21.3",
+    "value": -0.124138545185271,
     "mutation": "NULL"
   },
   {
     "gene": "ATP5C1",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0.139889,
+    "sample": "human-21.3",
+    "value": 1.3127701858993,
     "mutation": "NULL"
   },
   {
     "gene": "ATP5D",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.367231,
+    "sample": "human-21.3",
+    "value": -0.459391209988186,
     "mutation": "NULL"
   },
   {
     "gene": "ATP5E",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0,
+    "sample": "human-21.3",
+    "value": 1.26105214664421,
     "mutation": "NULL"
   },
   {
     "gene": "ATP5F1",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.171626,
+    "sample": "human-21.3",
+    "value": 1.0172027398237,
     "mutation": "NULL"
   },
   {
     "gene": "ATP5G1",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.776189,
+    "sample": "human-21.3",
+    "value": -0.236966356396032,
     "mutation": "NULL"
   },
   {
     "gene": "ATP5G2",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0.115551,
+    "sample": "human-21.3",
+    "value": -0.300079691858169,
     "mutation": "NULL"
   },
   {
     "gene": "ATP5G3",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.085599,
+    "sample": "human-21.3",
+    "value": 0.333019400746321,
     "mutation": "NULL"
   },
   {
     "gene": "ATP5H",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.135113,
+    "sample": "human-21.3",
+    "value": 1.19807940582089,
     "mutation": "NULL"
   },
   {
     "gene": "ATP5J",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.0177089,
+    "sample": "human-21.3",
+    "value": 1.15725006577755,
     "mutation": "NULL"
   },
   {
     "gene": "ATP5J2",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0,
+    "sample": "human-21.3",
+    "value": 0.0710083786567449,
     "mutation": "NULL"
   },
   {
     "gene": "ATP5L",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.0112388,
+    "sample": "human-21.3",
+    "value": -0.000679925659576649,
     "mutation": "NULL"
   },
   {
     "gene": "ATP5O",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0.0511595,
+    "sample": "human-21.3",
+    "value": 1.65745332223588,
     "mutation": "NULL"
   },
   {
     "gene": "ATPAF1",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.267055,
+    "sample": "human-21.3",
+    "value": 0.167717996594965,
     "mutation": "NULL"
   },
   {
     "gene": "ATPAF2",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0.0830032,
+    "sample": "human-21.3",
+    "value": -0.85992648069808,
     "mutation": "NULL"
   },
   {
     "gene": "ATPIF1",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.598401,
+    "sample": "human-21.3",
+    "value": 0.647841591847527,
     "mutation": "NULL"
   },
   {
     "gene": "BAD",
     "func": "Apoptosis",
-    "sample": "5/4",
-    "value": 0.0434465,
+    "sample": "human-21.3",
+    "value": -0.432503078846147,
     "mutation": "NULL"
   },
   {
     "gene": "BAK1",
     "func": "Apoptosis",
-    "sample": "5/4",
-    "value": -0.0850247,
+    "sample": "human-21.3",
+    "value": -0.820263699060912,
     "mutation": "NULL"
   },
   {
     "gene": "BAX",
     "func": "Apoptosis",
-    "sample": "5/4",
-    "value": -0.385278,
+    "sample": "human-21.3",
+    "value": -0.266798970729098,
     "mutation": "NULL"
   },
   {
     "gene": "BBC3",
     "func": "Apoptosis",
-    "sample": "5/4",
-    "value": -0.108026,
+    "sample": "human-21.3",
+    "value": -0.329849268809326,
     "mutation": "NULL"
   },
   {
     "gene": "BCKDHB",
     "func": "ROS defense",
-    "sample": "5/4",
-    "value": -0.279928,
+    "sample": "human-21.3",
+    "value": 0.23888007022617,
     "mutation": "NULL"
   },
   {
     "gene": "BCL2",
     "func": "Apoptosis",
-    "sample": "5/4",
-    "value": 0.710043,
+    "sample": "human-21.3",
+    "value": -0.753628563758971,
     "mutation": "NULL"
   },
   {
     "gene": "BCL2L1",
     "func": "Apoptosis",
-    "sample": "5/4",
-    "value": 0.762541,
+    "sample": "human-21.3",
+    "value": -1.10324311366499,
     "mutation": "NULL"
   },
   {
     "gene": "BCL2L11",
     "func": "Apoptosis",
-    "sample": "5/4",
-    "value": 0.32136,
+    "sample": "human-21.3",
+    "value": -0.864084326026129,
     "mutation": "NULL"
   },
   {
     "gene": "BCS1L",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.127617,
+    "sample": "human-21.3",
+    "value": -0.4958671976789,
     "mutation": "NULL"
   },
   {
     "gene": "BECN1",
     "func": "Mitochondrial Dynamics",
-    "sample": "5/4",
-    "value": -0.0762926,
+    "sample": "human-21.3",
+    "value": 0.663970698180498,
     "mutation": "NULL"
   },
   {
     "gene": "BID",
     "func": "Apoptosis",
-    "sample": "5/4",
-    "value": -0.397959,
+    "sample": "human-21.3",
+    "value": -0.226662083960981,
     "mutation": "NULL"
   },
   {
     "gene": "BIK",
     "func": "Apoptosis",
-    "sample": "5/4",
-    "value": -1.10509,
+    "sample": "human-21.3",
+    "value": -0.75149636203508,
     "mutation": "NULL"
   },
   {
     "gene": "BNIP3",
     "func": "Mitochondrial Dynamics",
-    "sample": "5/4",
-    "value": 0.0561793,
+    "sample": "human-21.3",
+    "value": 0.8078409949199,
     "mutation": "NULL"
   },
   {
     "gene": "BNIP3L",
     "func": "Mitochondrial Dynamics",
-    "sample": "5/4",
-    "value": 0.718376,
+    "sample": "human-21.3",
+    "value": 0.794854000228866,
     "mutation": "NULL"
   },
   {
     "gene": "BOLA3",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "5/4",
-    "value": -0.350108,
+    "sample": "human-21.3",
+    "value": 0.238560265804337,
     "mutation": "NULL"
   },
   {
     "gene": "CARS2",
     "func": "Translation",
-    "sample": "5/4",
-    "value": 0.333145,
-    "mutation": "chr13 111293915 T>G missense_variant,chr13 111319754 T>C synonymous_variant,chr13 111340101 T>A missense_variant"
+    "sample": "human-21.3",
+    "value": -0.440210092022064,
+    "mutation": "NULL"
   },
   {
     "gene": "CASP3",
     "func": "Apoptosis",
-    "sample": "5/4",
-    "value": 0.0695481,
+    "sample": "human-21.3",
+    "value": 1.36441897756712,
     "mutation": "NULL"
   },
   {
     "gene": "CASP7",
     "func": "Apoptosis",
-    "sample": "5/4",
-    "value": 0.384357,
+    "sample": "human-21.3",
+    "value": 0.226623647028357,
     "mutation": "NULL"
   },
   {
     "gene": "CASP9",
     "func": "Apoptosis",
-    "sample": "5/4",
-    "value": 0.248531,
+    "sample": "human-21.3",
+    "value": -0.678655770110709,
     "mutation": "NULL"
   },
   {
     "gene": "CCDC109B",
     "func": "Calcium trafficking",
-    "sample": "5/4",
-    "value": 0.672219,
+    "sample": "human-21.3",
+    "value": -0.577145102157152,
     "mutation": "NULL"
   },
   {
     "gene": "CDK1",
     "func": "Apoptosis",
-    "sample": "5/4",
-    "value": -0.114041,
+    "sample": "human-21.3",
+    "value": 0.63945708367112,
     "mutation": "NULL"
   },
   {
     "gene": "CDK5RAP1",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": 0.148834,
+    "sample": "human-21.3",
+    "value": -0.663110895041892,
     "mutation": "NULL"
   },
   {
     "gene": "CDKAL1",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": -0.160582,
+    "sample": "human-21.3",
+    "value": -0.322165361518077,
     "mutation": "NULL"
   },
   {
     "gene": "CDS1",
     "func": "Cardiolipin biosynthesis",
-    "sample": "5/4",
-    "value": -2.01287,
+    "sample": "human-21.3",
+    "value": 0.933352529263001,
     "mutation": "NULL"
   },
   {
     "gene": "CHCHD4",
     "func": "Import & Sorting",
-    "sample": "5/4",
-    "value": -0.286589,
+    "sample": "human-21.3",
+    "value": -0.216337037632356,
     "mutation": "NULL"
   },
   {
     "gene": "CIAO1",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "5/4",
-    "value": -0.354248,
+    "sample": "human-21.3",
+    "value": 0.080999625931978,
     "mutation": "NULL"
   },
   {
     "gene": "CIAPIN1",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "5/4",
-    "value": -0.563682,
+    "sample": "human-21.3",
+    "value": -0.602106656946676,
     "mutation": "NULL"
   },
   {
     "gene": "CLPP",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.688411,
+    "sample": "human-21.3",
+    "value": -0.591042329127602,
     "mutation": "NULL"
   },
   {
     "gene": "CLPX",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.271914,
+    "sample": "human-21.3",
+    "value": 0.711253617080222,
     "mutation": "NULL"
   },
   {
     "gene": "CMPK2",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": 1.83451,
+    "sample": "human-21.3",
+    "value": 1.03119713703058,
     "mutation": "NULL"
   },
   {
     "gene": "COA5",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0.185096,
+    "sample": "human-21.3",
+    "value": 1.01227685995692,
     "mutation": "NULL"
   },
   {
     "gene": "COX10",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0.203264,
+    "sample": "human-21.3",
+    "value": -0.521275699748561,
     "mutation": "NULL"
   },
   {
     "gene": "COX11",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.75564,
+    "sample": "human-21.3",
+    "value": 0.819898389405752,
     "mutation": "NULL"
   },
   {
     "gene": "COX14",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.359788,
+    "sample": "human-21.3",
+    "value": -0.135567792853095,
     "mutation": "NULL"
   },
   {
     "gene": "COX15",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.199316,
+    "sample": "human-21.3",
+    "value": 0.105055017390943,
     "mutation": "NULL"
   },
   {
     "gene": "COX17",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.198717,
+    "sample": "human-21.3",
+    "value": 0.190413557903208,
     "mutation": "NULL"
   },
   {
     "gene": "COX18",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.322207,
+    "sample": "human-21.3",
+    "value": 0.288050358319217,
     "mutation": "NULL"
   },
   {
     "gene": "COX19",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.199387,
+    "sample": "human-21.3",
+    "value": -0.746447758702922,
     "mutation": "NULL"
   },
   {
     "gene": "COX20",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 1.09111,
+    "sample": "human-21.3",
+    "value": 1.60129247715412,
     "mutation": "NULL"
   },
   {
     "gene": "COX4I1",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0.12014,
+    "sample": "human-21.3",
+    "value": 0.110197127997835,
     "mutation": "NULL"
   },
   {
     "gene": "COX5A",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.258858,
+    "sample": "human-21.3",
+    "value": -0.267430027464449,
     "mutation": "NULL"
   },
   {
     "gene": "COX5B",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0.0459029,
+    "sample": "human-21.3",
+    "value": 0.166459208101781,
     "mutation": "NULL"
   },
   {
     "gene": "COX6A1",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.212867,
+    "sample": "human-21.3",
+    "value": 0.287077193885757,
     "mutation": "NULL"
   },
   {
     "gene": "COX6B1",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0.0845937,
+    "sample": "human-21.3",
+    "value": 0.223336181730196,
     "mutation": "NULL"
   },
   {
     "gene": "COX6B2",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.470369,
+    "sample": "human-21.3",
+    "value": 0.75257363180663,
     "mutation": "NULL"
   },
   {
     "gene": "COX6C",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0.257416,
+    "sample": "human-21.3",
+    "value": 1.29890979416487,
     "mutation": "NULL"
   },
   {
     "gene": "COX7A2",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0.00585078,
+    "sample": "human-21.3",
+    "value": 0.481431382610671,
     "mutation": "NULL"
   },
   {
     "gene": "COX7B",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0.196053,
+    "sample": "human-21.3",
+    "value": 1.10901049266646,
     "mutation": "NULL"
   },
   {
     "gene": "COX7C",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0.668317,
+    "sample": "human-21.3",
+    "value": 1.00825408996863,
     "mutation": "NULL"
   },
   {
     "gene": "COX8A",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0.123804,
+    "sample": "human-21.3",
+    "value": -0.402271978907354,
     "mutation": "NULL"
   },
   {
     "gene": "CPOX",
     "func": "Heme Biosynthesis",
-    "sample": "5/4",
-    "value": -0.44759,
+    "sample": "human-21.3",
+    "value": 0.101046628786313,
     "mutation": "NULL"
   },
   {
     "gene": "CPT1A",
     "func": "Fatty acid beta-oxidation",
-    "sample": "5/4",
-    "value": -0.175546,
-    "mutation": "chr11 68523910 T>C 3_prime_UTR_variant"
+    "sample": "human-21.3",
+    "value": -1.11845033339487,
+    "mutation": "NULL"
   },
   {
     "gene": "CPT1B",
     "func": "Fatty acid beta-oxidation",
-    "sample": "5/4",
-    "value": 0,
+    "sample": "human-21.3",
+    "value": 0.26177653947333,
     "mutation": "NULL"
   },
   {
     "gene": "CPT1C",
     "func": "Fatty acid beta-oxidation",
-    "sample": "5/4",
-    "value": -3.3842,
+    "sample": "human-21.3",
+    "value": -0.293966234087362,
     "mutation": "NULL"
   },
   {
     "gene": "CPT2",
     "func": "Fatty acid beta-oxidation",
-    "sample": "5/4",
-    "value": -0.193169,
+    "sample": "human-21.3",
+    "value": -0.167957110781046,
     "mutation": "NULL"
   },
   {
     "gene": "CRAT",
     "func": "Fatty acid beta-oxidation",
-    "sample": "5/4",
-    "value": 1.9068,
-    "mutation": "chr9 131857630 C>T 3_prime_UTR_variant,chr9 131860901 G>T missense_variant"
+    "sample": "human-21.3",
+    "value": -0.311376950218958,
+    "mutation": "NULL"
   },
   {
     "gene": "CREB1",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": -0.0134494,
+    "sample": "human-21.3",
+    "value": 0.625980879839908,
     "mutation": "NULL"
   },
   {
     "gene": "CRLS1",
     "func": "Cardiolipin biosynthesis",
-    "sample": "5/4",
-    "value": 0.0476958,
+    "sample": "human-21.3",
+    "value": 0.615787704867433,
     "mutation": "NULL"
   },
   {
     "gene": "CS",
     "func": "Tricarboxylic acid cycle",
-    "sample": "5/4",
-    "value": 0.0554046,
+    "sample": "human-21.3",
+    "value": -0.586327431675396,
     "mutation": "NULL"
   },
   {
     "gene": "CYC1",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0.0755787,
-    "mutation": "chr8 145151091 G>A missense_variant"
+    "sample": "human-21.3",
+    "value": -0.599686541022226,
+    "mutation": "NULL"
   },
   {
     "gene": "CYCS",
     "func": "Apoptosis",
-    "sample": "5/4",
-    "value": -0.166176,
+    "sample": "human-21.3",
+    "value": 1.7080811717663,
     "mutation": "NULL"
   },
   {
     "gene": "DAP3",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.200336,
+    "sample": "human-21.3",
+    "value": 0.0197998712691071,
     "mutation": "NULL"
   },
   {
     "gene": "DARS2",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.406307,
+    "sample": "human-21.3",
+    "value": -0.527947429210138,
     "mutation": "NULL"
   },
   {
     "gene": "DDX28",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.678136,
+    "sample": "human-21.3",
+    "value": -1.0931235574423,
     "mutation": "NULL"
   },
   {
     "gene": "DECR1",
     "func": "Fatty acid beta-oxidation",
-    "sample": "5/4",
-    "value": 0.2639,
+    "sample": "human-21.3",
+    "value": 0.760620717370772,
     "mutation": "NULL"
   },
   {
     "gene": "DHX30",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.28741,
+    "sample": "human-21.3",
+    "value": -0.854620859482343,
     "mutation": "NULL"
   },
   {
     "gene": "DIABLO",
     "func": "Apoptosis",
-    "sample": "5/4",
-    "value": -0.0464246,
-    "mutation": "chr12 122692820 T>C 3_prime_UTR_variant"
+    "sample": "human-21.3",
+    "value": -0.0159266763192589,
+    "mutation": "NULL"
   },
   {
     "gene": "DLAT",
     "func": "Formation of Acetyl CoA",
-    "sample": "5/4",
-    "value": -0.333671,
+    "sample": "human-21.3",
+    "value": 0.0266877578082322,
     "mutation": "NULL"
   },
   {
     "gene": "DLD",
     "func": "Tricarboxylic acid cycle",
-    "sample": "5/4",
-    "value": 0.174983,
-    "mutation": "chr7 107560191 C>T 3_prime_UTR_variant"
+    "sample": "human-21.3",
+    "value": 1.02444877094574,
+    "mutation": "NULL"
   },
   {
     "gene": "DLST",
     "func": "Tricarboxylic acid cycle",
-    "sample": "5/4",
-    "value": -0.0709851,
+    "sample": "human-21.3",
+    "value": -0.326582061345271,
     "mutation": "NULL"
   },
   {
     "gene": "DNAJC19",
     "func": "Import & Sorting",
-    "sample": "5/4",
-    "value": -0.0395991,
+    "sample": "human-21.3",
+    "value": 0.643093882767633,
     "mutation": "NULL"
   },
   {
     "gene": "DNM1",
     "func": "Apoptosis",
-    "sample": "5/4",
-    "value": 0.394088,
+    "sample": "human-21.3",
+    "value": -0.659421364820851,
     "mutation": "NULL"
   },
   {
     "gene": "DNM1L",
     "func": "Mitochondrial Dynamics",
-    "sample": "5/4",
-    "value": 0.153299,
-    "mutation": "chr12 32854366 A>C synonymous_variant"
+    "sample": "human-21.3",
+    "value": 1.02510623796323,
+    "mutation": "NULL"
   },
   {
     "gene": "DYNLL1",
     "func": "Mitochondrial Dynamics",
-    "sample": "5/4",
-    "value": 0.361159,
+    "sample": "human-21.3",
+    "value": 0.753066603019127,
     "mutation": "NULL"
   },
   {
     "gene": "EARS2",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.277853,
+    "sample": "human-21.3",
+    "value": -0.448732473351831,
     "mutation": "NULL"
   },
   {
     "gene": "ECHS1",
     "func": "Fatty acid beta-oxidation",
-    "sample": "5/4",
-    "value": -0.113546,
+    "sample": "human-21.3",
+    "value": -0.105896832016364,
     "mutation": "NULL"
   },
   {
     "gene": "ECSIT",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0,
+    "sample": "human-21.3",
+    "value": -0.767921355170671,
     "mutation": "NULL"
   },
   {
     "gene": "EIF3M",
     "func": "Apoptosis",
-    "sample": "5/4",
-    "value": -0.322861,
+    "sample": "human-21.3",
+    "value": 1.0055797730785,
     "mutation": "NULL"
   },
   {
     "gene": "ELAC2",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": -0.329598,
+    "sample": "human-21.3",
+    "value": -0.386457152763992,
     "mutation": "NULL"
   },
   {
     "gene": "ENDOG",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": 0.183053,
+    "sample": "human-21.3",
+    "value": -0.619246808471618,
     "mutation": "NULL"
   },
   {
     "gene": "ENO2",
     "func": "Glycolysis",
-    "sample": "5/4",
-    "value": 0.321742,
+    "sample": "human-21.3",
+    "value": -0.523885451477127,
     "mutation": "NULL"
   },
   {
     "gene": "ENO3",
     "func": "Glycolysis",
-    "sample": "5/4",
-    "value": -0.510749,
+    "sample": "human-21.3",
+    "value": -0.561225582471554,
     "mutation": "NULL"
   },
   {
     "gene": "FABP5",
     "func": "Fatty acid beta-oxidation",
-    "sample": "5/4",
-    "value": -1.77518,
+    "sample": "human-21.3",
+    "value": -0.21148651050606,
     "mutation": "NULL"
   },
   {
     "gene": "FABP6",
     "func": "Fatty acid beta-oxidation",
-    "sample": "5/4",
-    "value": -0.547603,
+    "sample": "human-21.3",
+    "value": -1.91969864827269,
     "mutation": "NULL"
   },
   {
     "gene": "FAM96A",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "5/4",
-    "value": -0.75034,
+    "sample": "human-21.3",
+    "value": 0.870083908812961,
     "mutation": "NULL"
   },
   {
     "gene": "FAM96B",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "5/4",
-    "value": 0.011364,
+    "sample": "human-21.3",
+    "value": -0.177536073684616,
     "mutation": "NULL"
   },
   {
     "gene": "FARS2",
     "func": "Translation",
-    "sample": "5/4",
-    "value": 0.819286,
+    "sample": "human-21.3",
+    "value": -0.490529794756975,
     "mutation": "NULL"
   },
   {
     "gene": "FDX1",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "5/4",
-    "value": -0.305228,
+    "sample": "human-21.3",
+    "value": -0.0656878010007145,
     "mutation": "NULL"
   },
   {
     "gene": "FDXR",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "5/4",
-    "value": -1.10918,
+    "sample": "human-21.3",
+    "value": -0.168031322091655,
     "mutation": "NULL"
   },
   {
     "gene": "FECH",
     "func": "Heme Biosynthesis",
-    "sample": "5/4",
-    "value": 0.281006,
-    "mutation": "chr18 55217696 G>A 3_prime_UTR_variant,chr18 55221648 T>C synonymous_variant"
+    "sample": "human-21.3",
+    "value": -0.3394596770871,
+    "mutation": "NULL"
   },
   {
     "gene": "FIS1",
     "func": "Mitochondrial Dynamics",
-    "sample": "5/4",
-    "value": -0.422012,
+    "sample": "human-21.3",
+    "value": -0.134499591662287,
     "mutation": "NULL"
   },
   {
     "gene": "FOXRED1",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0.0823009,
+    "sample": "human-21.3",
+    "value": -0.39603526356594,
     "mutation": "NULL"
   },
   {
     "gene": "FXN",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "5/4",
-    "value": 0.446262,
+    "sample": "human-21.3",
+    "value": -0.58922989321837,
     "mutation": "NULL"
   },
   {
     "gene": "GABARAP",
     "func": "Mitochondrial Dynamics",
-    "sample": "5/4",
-    "value": 0.0987915,
+    "sample": "human-21.3",
+    "value": 0.0679363397426872,
     "mutation": "NULL"
   },
   {
     "gene": "GAPDH",
     "func": "Glycolysis",
-    "sample": "5/4",
-    "value": 0.440829,
+    "sample": "human-21.3",
+    "value": -0.559781670039249,
     "mutation": "NULL"
   },
   {
     "gene": "GAPDHS",
     "func": "Glycolysis",
-    "sample": "5/4",
-    "value": -0.00906559,
+    "sample": "human-21.3",
+    "value": -0.604085394871746,
     "mutation": "NULL"
   },
   {
     "gene": "GARS",
     "func": "Translation",
-    "sample": "5/4",
-    "value": 0.342866,
+    "sample": "human-21.3",
+    "value": 0.615243783485887,
     "mutation": "NULL"
   },
   {
     "gene": "GCLC",
     "func": "ROS defense",
-    "sample": "5/4",
-    "value": 0.277478,
+    "sample": "human-21.3",
+    "value": 1.00676763556688,
     "mutation": "NULL"
   },
   {
     "gene": "GCLM",
     "func": "ROS defense",
-    "sample": "5/4",
-    "value": 1.15434,
+    "sample": "human-21.3",
+    "value": -0.138436737687053,
     "mutation": "NULL"
   },
   {
     "gene": "GDAP1",
     "func": "Mitochondrial Dynamics",
-    "sample": "5/4",
-    "value": -0.393757,
+    "sample": "human-21.3",
+    "value": 1.12161751812737,
     "mutation": "NULL"
   },
   {
     "gene": "GFER",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "5/4",
-    "value": 0.142389,
+    "sample": "human-21.3",
+    "value": -0.49001268327793,
     "mutation": "NULL"
   },
   {
     "gene": "GFM1",
     "func": "Translation",
-    "sample": "5/4",
-    "value": 0.0614286,
+    "sample": "human-21.3",
+    "value": 1.50760471003578,
     "mutation": "NULL"
   },
   {
     "gene": "GFM2",
     "func": "Translation",
-    "sample": "5/4",
-    "value": 1.05133,
-    "mutation": "chr5 74021846 TACTCAA>T disruptive_inframe_deletion"
+    "sample": "human-21.3",
+    "value": 0.842218519317788,
+    "mutation": "NULL"
   },
   {
     "gene": "GLRX2",
     "func": "ROS defense",
-    "sample": "5/4",
-    "value": -1.43993,
+    "sample": "human-21.3",
+    "value": 0.644137659146758,
     "mutation": "NULL"
   },
   {
     "gene": "GLRX5",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "5/4",
-    "value": -0.491317,
+    "sample": "human-21.3",
+    "value": 0,
     "mutation": "NULL"
   },
   {
     "gene": "GOT2",
     "func": "Fatty acid beta-oxidation",
-    "sample": "5/4",
-    "value": -0.228417,
+    "sample": "human-21.3",
+    "value": -0.325012320247085,
     "mutation": "NULL"
   },
   {
     "gene": "GPX1",
     "func": "ROS defense",
-    "sample": "5/4",
-    "value": 0.27404,
+    "sample": "human-21.3",
+    "value": -1.02911484985639,
     "mutation": "NULL"
   },
   {
     "gene": "GPX4",
     "func": "ROS defense",
-    "sample": "5/4",
-    "value": -0.191125,
+    "sample": "human-21.3",
+    "value": -0.167193758728834,
     "mutation": "NULL"
   },
   {
     "gene": "GRPEL1",
     "func": "Import & Sorting",
-    "sample": "5/4",
-    "value": -0.559974,
+    "sample": "human-21.3",
+    "value": 0.0730570715763488,
     "mutation": "NULL"
   },
   {
     "gene": "GRPEL2",
     "func": "Import & Sorting",
-    "sample": "5/4",
-    "value": 0.654656,
-    "mutation": "chr5 148733364 C>T 3_prime_UTR_variant"
+    "sample": "human-21.3",
+    "value": 1.00689682529322,
+    "mutation": "NULL"
   },
   {
     "gene": "GSR",
     "func": "ROS defense",
-    "sample": "5/4",
-    "value": -0.504019,
+    "sample": "human-21.3",
+    "value": -0.746645168717791,
     "mutation": "NULL"
   },
   {
     "gene": "GSS",
     "func": "ROS defense",
-    "sample": "5/4",
-    "value": -0.118735,
+    "sample": "human-21.3",
+    "value": -0.358935530149601,
     "mutation": "NULL"
   },
   {
     "gene": "GSTA1",
     "func": "ROS defense",
-    "sample": "5/4",
-    "value": -2.89425,
+    "sample": "human-21.3",
+    "value": -1.38111113952811,
     "mutation": "NULL"
   },
   {
     "gene": "GSTA2",
     "func": "ROS defense",
-    "sample": "5/4",
-    "value": -2.34913,
+    "sample": "human-21.3",
+    "value": -2.33766678488049,
     "mutation": "NULL"
   },
   {
     "gene": "GSTA4",
     "func": "ROS defense",
-    "sample": "5/4",
-    "value": 0.589549,
+    "sample": "human-21.3",
+    "value": 1.01429733118297,
     "mutation": "NULL"
   },
   {
     "gene": "GSTP1",
     "func": "ROS defense",
-    "sample": "5/4",
-    "value": 0.136039,
+    "sample": "human-21.3",
+    "value": -0.445022182091555,
     "mutation": "NULL"
   },
   {
     "gene": "GTPBP3",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": -0.388827,
+    "sample": "human-21.3",
+    "value": -0.698742603809257,
     "mutation": "NULL"
   },
   {
     "gene": "HADH",
     "func": "Fatty acid beta-oxidation",
-    "sample": "5/4",
-    "value": -0.162819,
+    "sample": "human-21.3",
+    "value": -0.453103545909613,
     "mutation": "NULL"
   },
   {
     "gene": "HADHA",
     "func": "Fatty acid beta-oxidation",
-    "sample": "5/4",
-    "value": 0.0518495,
+    "sample": "human-21.3",
+    "value": 0.193888487878194,
     "mutation": "NULL"
   },
   {
     "gene": "HADHB",
     "func": "Fatty acid beta-oxidation",
-    "sample": "5/4",
-    "value": 0.307165,
+    "sample": "human-21.3",
+    "value": -0.0549820446419751,
     "mutation": "NULL"
   },
   {
     "gene": "HARS2",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.269555,
+    "sample": "human-21.3",
+    "value": 0.458146447907279,
     "mutation": "NULL"
   },
   {
     "gene": "HCCS",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0.360242,
+    "sample": "human-21.3",
+    "value": 0.104909746315688,
     "mutation": "NULL"
   },
   {
     "gene": "HK1",
     "func": "Glycolysis",
-    "sample": "5/4",
-    "value": 0.194493,
-    "mutation": "chr10 71161494 TG>T 3_prime_UTR_variant"
+    "sample": "human-21.3",
+    "value": -0.864657299080445,
+    "mutation": "NULL"
   },
   {
     "gene": "HK2",
     "func": "Glycolysis",
-    "sample": "5/4",
-    "value": -0.348445,
+    "sample": "human-21.3",
+    "value": -0.035546367013152,
     "mutation": "NULL"
   },
   {
     "gene": "HSCB",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "5/4",
-    "value": 0.35855,
+    "sample": "human-21.3",
+    "value": 0.488198994892518,
     "mutation": "NULL"
   },
   {
     "gene": "HSD17B10",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": -0.135832,
+    "sample": "human-21.3",
+    "value": -0.328467961079668,
     "mutation": "NULL"
   },
   {
     "gene": "HSPA9",
     "func": "Import & Sorting",
-    "sample": "5/4",
-    "value": 1.07547,
+    "sample": "human-21.3",
+    "value": 0.736254711403422,
     "mutation": "NULL"
   },
   {
     "gene": "HTRA2",
     "func": "Apoptosis",
-    "sample": "5/4",
-    "value": -0.419948,
+    "sample": "human-21.3",
+    "value": -0.10860087409813,
     "mutation": "NULL"
   },
   {
     "gene": "IARS2",
     "func": "Translation",
-    "sample": "5/4",
-    "value": 0.0896157,
+    "sample": "human-21.3",
+    "value": 0.492398306831438,
     "mutation": "NULL"
   },
   {
     "gene": "IBA57",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "5/4",
-    "value": 0.150261,
+    "sample": "human-21.3",
+    "value": -0.686628011309027,
     "mutation": "NULL"
   },
   {
     "gene": "IDH1",
     "func": "Tricarboxylic acid cycle",
-    "sample": "5/4",
-    "value": -0.133878,
-    "mutation": "chr2 209101623 A>C 3_prime_UTR_variant"
+    "sample": "human-21.3",
+    "value": 0.708821942262627,
+    "mutation": "NULL"
   },
   {
     "gene": "IDH2",
     "func": "Tricarboxylic acid cycle",
-    "sample": "5/4",
-    "value": -0.0451564,
+    "sample": "human-21.3",
+    "value": -0.585780851665414,
     "mutation": "NULL"
   },
   {
     "gene": "IDH3A",
     "func": "Tricarboxylic acid cycle",
-    "sample": "5/4",
-    "value": 0.258459,
+    "sample": "human-21.3",
+    "value": 0.616869794871899,
     "mutation": "NULL"
   },
   {
     "gene": "IDH3B",
     "func": "Tricarboxylic acid cycle",
-    "sample": "5/4",
-    "value": 0.283195,
-    "mutation": "chr20 2640188 CCTT>C inframe_deletion"
+    "sample": "human-21.3",
+    "value": -0.132281726169835,
+    "mutation": "NULL"
   },
   {
     "gene": "IDH3G",
     "func": "Tricarboxylic acid cycle",
-    "sample": "5/4",
-    "value": -0.121423,
+    "sample": "human-21.3",
+    "value": -0.422146281010128,
     "mutation": "NULL"
   },
   {
     "gene": "IMMP1L",
     "func": "Import & Sorting",
-    "sample": "5/4",
-    "value": -0.445446,
+    "sample": "human-21.3",
+    "value": 0.261068834103398,
     "mutation": "NULL"
   },
   {
     "gene": "IMMP2L",
     "func": "Import & Sorting",
-    "sample": "5/4",
-    "value": -0.817128,
+    "sample": "human-21.3",
+    "value": 0.749859548977949,
     "mutation": "NULL"
   },
   {
     "gene": "ISCA1",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "5/4",
-    "value": -0.102388,
+    "sample": "human-21.3",
+    "value": 0.55440739715099,
     "mutation": "NULL"
   },
   {
     "gene": "ISCA2",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "5/4",
-    "value": -0.037241,
+    "sample": "human-21.3",
+    "value": 0.109117073055862,
     "mutation": "NULL"
   },
   {
     "gene": "ISCU",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "5/4",
-    "value": -0.194563,
+    "sample": "human-21.3",
+    "value": 1.14939131198492,
     "mutation": "NULL"
   },
   {
     "gene": "ITPR1",
     "func": "Calcium trafficking",
-    "sample": "5/4",
-    "value": 0.641122,
+    "sample": "human-21.3",
+    "value": -0.222313948120319,
     "mutation": "NULL"
   },
   {
     "gene": "ITPR2",
     "func": "Calcium trafficking",
-    "sample": "5/4",
-    "value": 0.053945,
+    "sample": "human-21.3",
+    "value": 0.354401643191435,
     "mutation": "NULL"
   },
   {
     "gene": "ITPR3",
     "func": "Calcium trafficking",
-    "sample": "5/4",
-    "value": -0.317013,
+    "sample": "human-21.3",
+    "value": -0.355719683626918,
     "mutation": "NULL"
   },
   {
     "gene": "KARS",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.283245,
+    "sample": "human-21.3",
+    "value": 0.704999284701962,
     "mutation": "NULL"
   },
   {
     "gene": "KIF1B",
     "func": "Mitochondrial Dynamics",
-    "sample": "5/4",
-    "value": 0.041374,
+    "sample": "human-21.3",
+    "value": -0.0220745911344524,
     "mutation": "NULL"
   },
   {
     "gene": "KIF5B",
     "func": "Mitochondrial Dynamics",
-    "sample": "5/4",
-    "value": 0.331531,
-    "mutation": "chr10 32300337 AT>A 3_prime_UTR_variant"
+    "sample": "human-21.3",
+    "value": 1.39273576313389,
+    "mutation": "NULL"
   },
   {
     "gene": "LARS2",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.0129305,
+    "sample": "human-21.3",
+    "value": -0.824157688974349,
     "mutation": "NULL"
   },
   {
     "gene": "LDHA",
     "func": "Glycolysis",
-    "sample": "5/4",
-    "value": 0.906536,
+    "sample": "human-21.3",
+    "value": 0.788546510780229,
     "mutation": "NULL"
   },
   {
     "gene": "LDHB",
     "func": "Glycolysis",
-    "sample": "5/4",
-    "value": -0.502223,
+    "sample": "human-21.3",
+    "value": 0.594859835558585,
     "mutation": "NULL"
   },
   {
     "gene": "LETM1",
     "func": "Calcium trafficking",
-    "sample": "5/4",
-    "value": -0.116475,
+    "sample": "human-21.3",
+    "value": -0.708619814352493,
     "mutation": "NULL"
   },
   {
     "gene": "LIG3",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": -0.250298,
+    "sample": "human-21.3",
+    "value": -0.354490822653316,
     "mutation": "NULL"
   },
   {
     "gene": "LONP1",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.26629,
+    "sample": "human-21.3",
+    "value": -0.682958555408044,
     "mutation": "NULL"
   },
   {
     "gene": "LRPPRC",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.311467,
-    "mutation": "chr2 44145196 A>G missense_variant"
+    "sample": "human-21.3",
+    "value": 0.843446368687004,
+    "mutation": "NULL"
   },
   {
     "gene": "LYRM4",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "5/4",
-    "value": 0.620275,
+    "sample": "human-21.3",
+    "value": -0.414151152123553,
     "mutation": "NULL"
   },
   {
     "gene": "MAPK1",
     "func": "Apoptosis",
-    "sample": "5/4",
-    "value": 0.166905,
-    "mutation": "chr22 22115004 C>G 3_prime_UTR_variant,chr22 22115498 T>C 3_prime_UTR_variant,chr22 22117726 CT>C 3_prime_UTR_variant"
+    "sample": "human-21.3",
+    "value": 0.113258555903871,
+    "mutation": "NULL"
   },
   {
     "gene": "MAPK3",
     "func": "Apoptosis",
-    "sample": "5/4",
-    "value": -0.161506,
+    "sample": "human-21.3",
+    "value": -0.120129111509579,
     "mutation": "NULL"
   },
   {
     "gene": "MARCH5",
     "func": "Mitochondrial Dynamics",
-    "sample": "5/4",
-    "value": -0.287089,
+    "sample": "human-21.3",
+    "value": 0.112755270420085,
     "mutation": "NULL"
   },
   {
     "gene": "MCL1",
     "func": "Apoptosis",
-    "sample": "5/4",
-    "value": -0.0976532,
+    "sample": "human-21.3",
+    "value": 0.915247825664222,
     "mutation": "NULL"
   },
   {
     "gene": "MCU",
     "func": "Calcium trafficking",
-    "sample": "5/4",
-    "value": -0.234342,
+    "sample": "human-21.3",
+    "value": 0.889304922795528,
     "mutation": "NULL"
   },
   {
     "gene": "MDH2",
     "func": "Tricarboxylic acid cycle",
-    "sample": "5/4",
-    "value": -0.312711,
+    "sample": "human-21.3",
+    "value": -0.387669002781666,
     "mutation": "NULL"
   },
   {
     "gene": "MFF",
     "func": "Mitochondrial Dynamics",
-    "sample": "5/4",
-    "value": -0.0524473,
+    "sample": "human-21.3",
+    "value": -0.0856199838999892,
     "mutation": "NULL"
   },
   {
     "gene": "MFN1",
     "func": "Mitochondrial Dynamics",
-    "sample": "5/4",
-    "value": 0.328798,
+    "sample": "human-21.3",
+    "value": 1.15958945405894,
     "mutation": "NULL"
   },
   {
     "gene": "MFN2",
     "func": "Mitochondrial Dynamics",
-    "sample": "5/4",
-    "value": 0.224459,
+    "sample": "human-21.3",
+    "value": -0.413007598865136,
     "mutation": "NULL"
   },
   {
     "gene": "MICU1",
     "func": "Calcium trafficking",
-    "sample": "5/4",
-    "value": -0.135485,
+    "sample": "human-21.3",
+    "value": -0.355139810727725,
     "mutation": "NULL"
   },
   {
     "gene": "MIPEP",
     "func": "Import & Sorting",
-    "sample": "5/4",
-    "value": 0.0462567,
+    "sample": "human-21.3",
+    "value": -0.153458506044853,
     "mutation": "NULL"
   },
   {
     "gene": "MMS19",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "5/4",
-    "value": -0.494624,
-    "mutation": "chr10 99240758 G>C missense_variant"
+    "sample": "human-21.3",
+    "value": -0.199057807171672,
+    "mutation": "NULL"
   },
   {
     "gene": "MPV17",
     "func": "ROS defense",
-    "sample": "5/4",
-    "value": -0.28843,
+    "sample": "human-21.3",
+    "value": -0.235785729184628,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL1",
     "func": "Translation",
-    "sample": "5/4",
-    "value": 0.0800937,
+    "sample": "human-21.3",
+    "value": 1.65423954529687,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL10",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.45632,
+    "sample": "human-21.3",
+    "value": -0.388435210814829,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL11",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.542947,
+    "sample": "human-21.3",
+    "value": -0.362002821119232,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL13",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.0182322,
+    "sample": "human-21.3",
+    "value": 0.931829724084542,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL14",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.369809,
+    "sample": "human-21.3",
+    "value": -0.259848913286526,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL15",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.235546,
+    "sample": "human-21.3",
+    "value": 0.335207682631616,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL16",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.119503,
+    "sample": "human-21.3",
+    "value": 0.356214237948357,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL17",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.095203,
+    "sample": "human-21.3",
+    "value": 0.111117061514069,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL18",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.144902,
+    "sample": "human-21.3",
+    "value": 0.859344534087141,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL19",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.39658,
+    "sample": "human-21.3",
+    "value": 0.911656736410769,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL2",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.354576,
+    "sample": "human-21.3",
+    "value": -0.28554962447208,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL20",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.333236,
+    "sample": "human-21.3",
+    "value": 0.176996844965798,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL21",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.37786,
+    "sample": "human-21.3",
+    "value": 0.107046839215672,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL22",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.155106,
+    "sample": "human-21.3",
+    "value": -0.0392596365906021,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL23",
     "func": "Translation",
-    "sample": "5/4",
-    "value": 0.0280372,
+    "sample": "human-21.3",
+    "value": -0.713864312406804,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL24",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.188293,
+    "sample": "human-21.3",
+    "value": -0.116215950673635,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL27",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.0832069,
+    "sample": "human-21.3",
+    "value": 0.170357075481079,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL28",
     "func": "Translation",
-    "sample": "5/4",
-    "value": 0.197829,
+    "sample": "human-21.3",
+    "value": -0.423967498347722,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL3",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.456574,
+    "sample": "human-21.3",
+    "value": 0.951230102267898,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL30",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.517519,
+    "sample": "human-21.3",
+    "value": 0.471455043694562,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL32",
     "func": "Translation",
-    "sample": "5/4",
-    "value": 0.0724887,
+    "sample": "human-21.3",
+    "value": 0.693336195624716,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL33",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.248795,
+    "sample": "human-21.3",
+    "value": -0.318192546741847,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL34",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.207749,
+    "sample": "human-21.3",
+    "value": -0.595492279973761,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL35",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.199897,
+    "sample": "human-21.3",
+    "value": 0.967562049159729,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL36",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.603458,
+    "sample": "human-21.3",
+    "value": 0.887249178956812,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL37",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.0974982,
+    "sample": "human-21.3",
+    "value": -0.523715172564433,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL38",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.783028,
+    "sample": "human-21.3",
+    "value": -0.490505591101509,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL39",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.232663,
+    "sample": "human-21.3",
+    "value": 1.21645140070507,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL4",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.466443,
+    "sample": "human-21.3",
+    "value": -0.395321792053574,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL40",
     "func": "Translation",
-    "sample": "5/4",
-    "value": 0.033994,
+    "sample": "human-21.3",
+    "value": 0.296322966622769,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL41",
     "func": "Translation",
-    "sample": "5/4",
-    "value": 0.363924,
+    "sample": "human-21.3",
+    "value": -0.275605643482432,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL42",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.174076,
+    "sample": "human-21.3",
+    "value": 1.17081448415182,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL43",
     "func": "Translation",
-    "sample": "5/4",
-    "value": 0.175264,
+    "sample": "human-21.3",
+    "value": -0.152018571234907,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL44",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.136251,
+    "sample": "human-21.3",
+    "value": -0.0270813607083988,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL47",
     "func": "Translation",
-    "sample": "5/4",
-    "value": 0.255678,
+    "sample": "human-21.3",
+    "value": 0.953264815668957,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL48",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.287754,
+    "sample": "human-21.3",
+    "value": -0.174257527231917,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL49",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.347457,
+    "sample": "human-21.3",
+    "value": -0.281795783242509,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL50",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.691954,
+    "sample": "human-21.3",
+    "value": 1.08101167349668,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL51",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.142735,
+    "sample": "human-21.3",
+    "value": 0.910407199607929,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL52",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.125702,
+    "sample": "human-21.3",
+    "value": -0.0407718188845869,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL53",
     "func": "Translation",
-    "sample": "5/4",
-    "value": 0,
+    "sample": "human-21.3",
+    "value": 0.0777209843459631,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL54",
     "func": "Translation",
-    "sample": "5/4",
-    "value": 0.00890636,
-    "mutation": "chr19 3765222 C>T synonymous_variant"
+    "sample": "human-21.3",
+    "value": -0.336987245662457,
+    "mutation": "NULL"
   },
   {
     "gene": "MRPL55",
     "func": "Translation",
-    "sample": "5/4",
-    "value": 0.107307,
+    "sample": "human-21.3",
+    "value": -0.367110877314896,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL9",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.132006,
+    "sample": "human-21.3",
+    "value": 0.490876901530737,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS10",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.0671697,
+    "sample": "human-21.3",
+    "value": 0.972426363461856,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS11",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.0262856,
+    "sample": "human-21.3",
+    "value": -0.202875115423187,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS12",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.316497,
+    "sample": "human-21.3",
+    "value": -0.58801687221818,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS14",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.578458,
+    "sample": "human-21.3",
+    "value": 0.465602569533309,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS15",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.416237,
+    "sample": "human-21.3",
+    "value": 0.498319806359397,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS16",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.056894,
+    "sample": "human-21.3",
+    "value": -0.046051890853358,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS17",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.47862,
+    "sample": "human-21.3",
+    "value": 0.137667973556023,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS18A",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.100983,
+    "sample": "human-21.3",
+    "value": -0.729455283822111,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS18B",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.381176,
+    "sample": "human-21.3",
+    "value": 0.0505413643447403,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS18C",
     "func": "Translation",
-    "sample": "5/4",
-    "value": 0.0873543,
+    "sample": "human-21.3",
+    "value": 0.728815891976677,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS2",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.357249,
+    "sample": "human-21.3",
+    "value": -0.919206904775964,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS22",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.0851847,
+    "sample": "human-21.3",
+    "value": 0.867437258205686,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS23",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.359414,
+    "sample": "human-21.3",
+    "value": 0.682101423636679,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS24",
     "func": "Translation",
-    "sample": "5/4",
-    "value": 0,
+    "sample": "human-21.3",
+    "value": 0.141350611463121,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS25",
     "func": "Translation",
-    "sample": "5/4",
-    "value": 0.0025793,
+    "sample": "human-21.3",
+    "value": 0.267041564774953,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS26",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.688225,
+    "sample": "human-21.3",
+    "value": -0.259581351201117,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS27",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.401445,
+    "sample": "human-21.3",
+    "value": -0.47756954203822,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS28",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.114515,
+    "sample": "human-21.3",
+    "value": 0.229841293596908,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS30",
     "func": "Translation",
-    "sample": "5/4",
-    "value": 0.834859,
-    "mutation": "chr5 44809162 G>C missense_variant,chr5 44818181 A>G downstream_gene_variant"
+    "sample": "human-21.3",
+    "value": 0.475750110976149,
+    "mutation": "NULL"
   },
   {
     "gene": "MRPS31",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.292864,
+    "sample": "human-21.3",
+    "value": 0.948057308495745,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS33",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.540767,
+    "sample": "human-21.3",
+    "value": 0.912193062283296,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS34",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.327506,
+    "sample": "human-21.3",
+    "value": -0.365182957936029,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS35",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.183574,
+    "sample": "human-21.3",
+    "value": 0.689883113980335,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS36",
     "func": "Translation",
-    "sample": "5/4",
-    "value": 0.106653,
+    "sample": "human-21.3",
+    "value": 0.686858690091782,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS5",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.119986,
+    "sample": "human-21.3",
+    "value": 0.0198229790033978,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS6",
     "func": "Translation",
-    "sample": "5/4",
-    "value": 0,
+    "sample": "human-21.3",
+    "value": 1.20145519333854,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS7",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.916785,
+    "sample": "human-21.3",
+    "value": 0.024498392534699,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS9",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.219885,
+    "sample": "human-21.3",
+    "value": 0.371428008634974,
     "mutation": "NULL"
   },
   {
     "gene": "MRRF",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.694552,
+    "sample": "human-21.3",
+    "value": -0.0174830593183855,
     "mutation": "NULL"
   },
   {
     "gene": "MSTO1",
     "func": "Mitochondrial Dynamics",
-    "sample": "5/4",
-    "value": -0.220379,
+    "sample": "human-21.3",
+    "value": -0.276459898752789,
     "mutation": "NULL"
   },
   {
     "gene": "MTFMT",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.165816,
+    "sample": "human-21.3",
+    "value": -0.163029728871656,
     "mutation": "NULL"
   },
   {
     "gene": "MTFP1",
     "func": "Mitochondrial Dynamics",
-    "sample": "5/4",
-    "value": -0.394254,
+    "sample": "human-21.3",
+    "value": -1.50981406730741,
     "mutation": "NULL"
   },
   {
     "gene": "MTIF2",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.377584,
+    "sample": "human-21.3",
+    "value": 1.21095044420014,
     "mutation": "NULL"
   },
   {
     "gene": "MTIF3",
     "func": "Translation",
-    "sample": "5/4",
-    "value": 0.0128224,
+    "sample": "human-21.3",
+    "value": 1.28847956873024,
     "mutation": "NULL"
   },
   {
     "gene": "MTO1",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": 0.387255,
-    "mutation": "chr6 74190448 T>C synonymous_variant"
+    "sample": "human-21.3",
+    "value": 0.254373844489008,
+    "mutation": "NULL"
   },
   {
     "gene": "MTPAP",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": -0.310235,
+    "sample": "human-21.3",
+    "value": 0.219544412561962,
     "mutation": "NULL"
   },
   {
     "gene": "MTRF1",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.241338,
+    "sample": "human-21.3",
+    "value": 1.35990880038582,
     "mutation": "NULL"
   },
   {
     "gene": "MTRF1L",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.0400514,
+    "sample": "human-21.3",
+    "value": 0.789514706154876,
     "mutation": "NULL"
   },
   {
     "gene": "MUTYH",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": -0.66436,
+    "sample": "human-21.3",
+    "value": -0.576049174674362,
     "mutation": "NULL"
   },
   {
     "gene": "NARF",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "5/4",
-    "value": -0.339566,
+    "sample": "human-21.3",
+    "value": -0.383703433985501,
     "mutation": "NULL"
   },
   {
     "gene": "NARS2",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.679407,
+    "sample": "human-21.3",
+    "value": 0.203953436861122,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFA1",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.149786,
+    "sample": "human-21.3",
+    "value": 1.0661607137174,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFA10",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0.0569846,
+    "sample": "human-21.3",
+    "value": -0.410428521524475,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFA11",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0.0801904,
+    "sample": "human-21.3",
+    "value": -0.223264100454708,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFA12",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.134877,
+    "sample": "human-21.3",
+    "value": -0.0558447433923976,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFA13",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0.0365925,
+    "sample": "human-21.3",
+    "value": -0.0304339965751515,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFA2",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0.850331,
+    "sample": "human-21.3",
+    "value": 0.344872195241581,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFA3",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.126231,
+    "sample": "human-21.3",
+    "value": -0.00102926566327548,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFA4",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.204182,
+    "sample": "human-21.3",
+    "value": 1.20579410235995,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFA5",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.46989,
+    "sample": "human-21.3",
+    "value": 1.59395306529307,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFA6",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.0361389,
+    "sample": "human-21.3",
+    "value": 1.07156099538495,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFA8",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0.264211,
+    "sample": "human-21.3",
+    "value": 0.135538488763152,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFA9",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.153172,
+    "sample": "human-21.3",
+    "value": -0.280043147058922,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFAB1",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0.0308508,
+    "sample": "human-21.3",
+    "value": 0.424709468813907,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFAF1",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.0397753,
+    "sample": "human-21.3",
+    "value": -0.0380787364221037,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFAF2",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.499981,
+    "sample": "human-21.3",
+    "value": 0.798999773874397,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFAF3",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0.0207136,
+    "sample": "human-21.3",
+    "value": -0.295508952780976,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFAF4",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.780722,
+    "sample": "human-21.3",
+    "value": 1.04671201465407,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFB10",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.140932,
+    "sample": "human-21.3",
+    "value": 0.0453712349205971,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFB11",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.143698,
+    "sample": "human-21.3",
+    "value": -0.210745639574592,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFB2",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.0227546,
+    "sample": "human-21.3",
+    "value": 0.229472768318768,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFB3",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.0428204,
+    "sample": "human-21.3",
+    "value": 0.97344159311414,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFB4",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.0838731,
+    "sample": "human-21.3",
+    "value": 0.371500639963451,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFB5",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0.0608579,
+    "sample": "human-21.3",
+    "value": 0.586032878656262,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFB6",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0.101983,
+    "sample": "human-21.3",
+    "value": 0.384918177399852,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFB7",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0.0794301,
+    "sample": "human-21.3",
+    "value": -0.309448800135833,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFB8",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.330415,
+    "sample": "human-21.3",
+    "value": 0.176595681464731,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFB9",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.461298,
+    "sample": "human-21.3",
+    "value": -0.235506252114894,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFC1",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0.0525337,
+    "sample": "human-21.3",
+    "value": 0.213502705886528,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFC2",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0,
+    "sample": "human-21.3",
+    "value": 0.456166538426334,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFS1",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0.162721,
+    "sample": "human-21.3",
+    "value": 0.53044272100139,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFS2",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.117694,
+    "sample": "human-21.3",
+    "value": -0.10806694116892,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFS3",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0.0590745,
+    "sample": "human-21.3",
+    "value": 0.0647468885441161,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFS4",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0.961887,
+    "sample": "human-21.3",
+    "value": 0.717000879296163,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFS5",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.523087,
+    "sample": "human-21.3",
+    "value": 0.519515986298901,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFS6",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.0745335,
+    "sample": "human-21.3",
+    "value": 0.340246289774253,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFS7",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0.209844,
+    "sample": "human-21.3",
+    "value": -0.571918847423309,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFS8",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0.424532,
+    "sample": "human-21.3",
+    "value": -0.448564104804296,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFV1",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0.122595,
+    "sample": "human-21.3",
+    "value": -0.39633858035017,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFV2",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.0261398,
+    "sample": "human-21.3",
+    "value": 0.346761414156074,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFV3",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.229234,
+    "sample": "human-21.3",
+    "value": 0.415020714572581,
     "mutation": "NULL"
   },
   {
     "gene": "NFE2L2",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": -0.0988016,
+    "sample": "human-21.3",
+    "value": 0.91358856564998,
     "mutation": "NULL"
   },
   {
     "gene": "NFS1",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "5/4",
-    "value": 0.0651629,
+    "sample": "human-21.3",
+    "value": -0.023036491200657,
     "mutation": "NULL"
   },
   {
     "gene": "NFU1",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "5/4",
-    "value": 0.126803,
+    "sample": "human-21.3",
+    "value": 0.48187212464582,
     "mutation": "NULL"
   },
   {
     "gene": "NME3",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": 0.11598,
-    "mutation": "chr16 1820992 T>A splice_region_variant&synonymous_variant"
+    "sample": "human-21.3",
+    "value": -0.495547852071802,
+    "mutation": "NULL"
   },
   {
     "gene": "NME4",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": -0.226675,
+    "sample": "human-21.3",
+    "value": -0.0426178270521315,
     "mutation": "NULL"
   },
   {
     "gene": "NME6",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": -0.0369696,
+    "sample": "human-21.3",
+    "value": -0.157889601945891,
     "mutation": "NULL"
   },
   {
     "gene": "NRF1",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": 0.00266699,
+    "sample": "human-21.3",
+    "value": -1.00389213959596,
     "mutation": "NULL"
   },
   {
     "gene": "NSUN2",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": -0.0952705,
+    "sample": "human-21.3",
+    "value": 0.0458307394566049,
     "mutation": "NULL"
   },
   {
     "gene": "NTHL1",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": -0.395736,
+    "sample": "human-21.3",
+    "value": -0.488345757389,
     "mutation": "NULL"
   },
   {
     "gene": "NUBP1",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "5/4",
-    "value": 0.328464,
+    "sample": "human-21.3",
+    "value": -0.379218458131588,
     "mutation": "NULL"
   },
   {
     "gene": "NUBP2",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "5/4",
-    "value": -0.403011,
-    "mutation": "chr16 1838836 C>T missense_variant"
+    "sample": "human-21.3",
+    "value": -0.601067994793018,
+    "mutation": "NULL"
   },
   {
     "gene": "NUBPL",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.132369,
+    "sample": "human-21.3",
+    "value": 0.581073681467179,
     "mutation": "NULL"
   },
   {
     "gene": "OGDH",
     "func": "Tricarboxylic acid cycle",
-    "sample": "5/4",
-    "value": 0.318402,
-    "mutation": "chr7 44748330 A>G 3_prime_UTR_variant"
+    "sample": "human-21.3",
+    "value": -0.618119307852393,
+    "mutation": "NULL"
   },
   {
     "gene": "OGG1",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": 0.509902,
+    "sample": "human-21.3",
+    "value": -0.276406317809843,
     "mutation": "NULL"
   },
   {
     "gene": "OMA1",
     "func": "Mitochondrial Dynamics",
-    "sample": "5/4",
-    "value": 0.254963,
+    "sample": "human-21.3",
+    "value": 1.06408916361667,
     "mutation": "NULL"
   },
   {
     "gene": "OPA1",
     "func": "Mitochondrial Dynamics",
-    "sample": "5/4",
-    "value": 0.00414374,
-    "mutation": "chr3 193334991 G>A missense_variant,chr3 193414675 T>C 3_prime_UTR_variant"
+    "sample": "human-21.3",
+    "value": 0.807596483424781,
+    "mutation": "NULL"
   },
   {
     "gene": "OPA3",
     "func": "Mitochondrial Dynamics",
-    "sample": "5/4",
-    "value": 0.289801,
+    "sample": "human-21.3",
+    "value": -1.04775269261942,
     "mutation": "NULL"
   },
   {
     "gene": "OSGEPL1",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": 0.226195,
+    "sample": "human-21.3",
+    "value": 0.0594188449861156,
     "mutation": "NULL"
   },
   {
     "gene": "OXA1L",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.135429,
+    "sample": "human-21.3",
+    "value": 0.0621932213880524,
     "mutation": "NULL"
   },
   {
     "gene": "PACS2",
     "func": "Calcium trafficking",
-    "sample": "5/4",
-    "value": -0.0529677,
+    "sample": "human-21.3",
+    "value": -0.883263879309003,
     "mutation": "NULL"
   },
   {
     "gene": "PAM16",
     "func": "Import & Sorting",
-    "sample": "5/4",
-    "value": 0,
+    "sample": "human-21.3",
+    "value": -0.336535176838448,
     "mutation": "NULL"
   },
   {
     "gene": "PARL",
     "func": "Mitochondrial Dynamics",
-    "sample": "5/4",
-    "value": -0.00106144,
+    "sample": "human-21.3",
+    "value": -0.206414179360831,
     "mutation": "NULL"
   },
   {
     "gene": "PARS2",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.512162,
+    "sample": "human-21.3",
+    "value": -0.991789893037569,
     "mutation": "NULL"
   },
   {
     "gene": "PDHA1",
     "func": "Formation of Acetyl CoA",
-    "sample": "5/4",
-    "value": 0.313896,
+    "sample": "human-21.3",
+    "value": 0.210741366826602,
     "mutation": "NULL"
   },
   {
     "gene": "PDHB",
     "func": "Formation of Acetyl CoA",
-    "sample": "5/4",
-    "value": 0.173019,
+    "sample": "human-21.3",
+    "value": 1.25070147935746,
     "mutation": "NULL"
   },
   {
     "gene": "PDHX",
     "func": "Formation of Acetyl CoA",
-    "sample": "5/4",
-    "value": 0.126885,
-    "mutation": "chr11 34991727 T>C synonymous_variant"
+    "sample": "human-21.3",
+    "value": 0.260525488374834,
+    "mutation": "NULL"
   },
   {
     "gene": "PFKL",
     "func": "Glycolysis",
-    "sample": "5/4",
-    "value": 0.110064,
-    "mutation": "chr21 45746913 G>C 3_prime_UTR_variant"
+    "sample": "human-21.3",
+    "value": 0.131563943185463,
+    "mutation": "NULL"
   },
   {
     "gene": "PFKM",
     "func": "Glycolysis",
-    "sample": "5/4",
-    "value": -0.637924,
-    "mutation": "chr12 48526758 C>T synonymous_variant"
+    "sample": "human-21.3",
+    "value": -0.267834664415236,
+    "mutation": "NULL"
   },
   {
     "gene": "PFKP",
     "func": "Glycolysis",
-    "sample": "5/4",
-    "value": 0.582218,
+    "sample": "human-21.3",
+    "value": -1.05313896690268,
     "mutation": "NULL"
   },
   {
     "gene": "PGAM1",
     "func": "Glycolysis",
-    "sample": "5/4",
-    "value": 0.306532,
+    "sample": "human-21.3",
+    "value": -0.0238180081507108,
     "mutation": "NULL"
   },
   {
     "gene": "PGAM2",
     "func": "Glycolysis",
-    "sample": "5/4",
-    "value": 0.0790554,
+    "sample": "human-21.3",
+    "value": 0.855763146743574,
     "mutation": "NULL"
   },
   {
     "gene": "PGK1",
     "func": "Glycolysis",
-    "sample": "5/4",
-    "value": 0.0344756,
+    "sample": "human-21.3",
+    "value": -0.0231727840399582,
     "mutation": "NULL"
   },
   {
     "gene": "PGS1",
     "func": "Cardiolipin biosynthesis",
-    "sample": "5/4",
-    "value": -0.529839,
+    "sample": "human-21.3",
+    "value": -0.608357426304096,
     "mutation": "NULL"
   },
   {
     "gene": "PHB",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.36865,
+    "sample": "human-21.3",
+    "value": -0.0325692065059516,
     "mutation": "NULL"
   },
   {
     "gene": "PHB2",
     "func": "Mitochondrial Dynamics",
-    "sample": "5/4",
-    "value": -0.143948,
+    "sample": "human-21.3",
+    "value": -0.414241285121565,
     "mutation": "NULL"
   },
   {
     "gene": "PINK1",
     "func": "Mitochondrial Dynamics",
-    "sample": "5/4",
-    "value": 0.483554,
-    "mutation": "chr1 20977000 A>C missense_variant,chr1 20977449 G>T 3_prime_UTR_variant"
+    "sample": "human-21.3",
+    "value": 0.199381054089315,
+    "mutation": "NULL"
   },
   {
     "gene": "PKIA",
     "func": "Mitochondrial Dynamics",
-    "sample": "5/4",
-    "value": -1.03206,
+    "sample": "human-21.3",
+    "value": 0.653450666165211,
     "mutation": "NULL"
   },
   {
     "gene": "PKLR",
     "func": "Glycolysis",
-    "sample": "5/4",
-    "value": 0.364884,
+    "sample": "human-21.3",
+    "value": 0.223598448040432,
     "mutation": "NULL"
   },
   {
     "gene": "PLD6",
     "func": "Mitochondrial Dynamics",
-    "sample": "5/4",
-    "value": -0.59024,
+    "sample": "human-21.3",
+    "value": -1.06115525646938,
     "mutation": "NULL"
   },
   {
     "gene": "PMAIP1",
     "func": "Apoptosis",
-    "sample": "5/4",
-    "value": 0.761637,
+    "sample": "human-21.3",
+    "value": 0.696651858072722,
     "mutation": "NULL"
   },
   {
     "gene": "PML",
     "func": "Calcium trafficking",
-    "sample": "5/4",
-    "value": 0.658306,
+    "sample": "human-21.3",
+    "value": -0.781424760047851,
     "mutation": "NULL"
   },
   {
     "gene": "PMPCA",
     "func": "Import & Sorting",
-    "sample": "5/4",
-    "value": -0.252062,
+    "sample": "human-21.3",
+    "value": -0.379614015692692,
     "mutation": "NULL"
   },
   {
     "gene": "PMPCB",
     "func": "Import & Sorting",
-    "sample": "5/4",
-    "value": -0.335355,
+    "sample": "human-21.3",
+    "value": 0.550002003645288,
     "mutation": "NULL"
   },
   {
     "gene": "POLG",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": 0.0980964,
+    "sample": "human-21.3",
+    "value": -0.193630129404006,
     "mutation": "NULL"
   },
   {
     "gene": "POLRMT",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": 0.0830875,
+    "sample": "human-21.3",
+    "value": -0.770699740770992,
     "mutation": "NULL"
   },
   {
     "gene": "PPIA",
     "func": "Apoptosis",
-    "sample": "5/4",
-    "value": -0.210224,
+    "sample": "human-21.3",
+    "value": 0.979158144313218,
     "mutation": "NULL"
   },
   {
     "gene": "PPIF",
     "func": "Apoptosis",
-    "sample": "5/4",
-    "value": -0.782612,
+    "sample": "human-21.3",
+    "value": -0.667678852770986,
     "mutation": "NULL"
   },
   {
     "gene": "PPOX",
     "func": "Heme Biosynthesis",
-    "sample": "5/4",
-    "value": 0.02017,
+    "sample": "human-21.3",
+    "value": -0.110395761873955,
     "mutation": "NULL"
   },
   {
     "gene": "PRDX3",
     "func": "ROS defense",
-    "sample": "5/4",
-    "value": -0.158463,
+    "sample": "human-21.3",
+    "value": 1.13251518859289,
     "mutation": "NULL"
   },
   {
     "gene": "PTCD2",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.463894,
+    "sample": "human-21.3",
+    "value": 0.804982015747122,
     "mutation": "NULL"
   },
   {
     "gene": "PTCD3",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.379742,
+    "sample": "human-21.3",
+    "value": 0.896450447320281,
     "mutation": "NULL"
   },
   {
     "gene": "PTPMT1",
     "func": "Cardiolipin biosynthesis",
-    "sample": "5/4",
-    "value": -0.144993,
+    "sample": "human-21.3",
+    "value": 0.105431029434424,
     "mutation": "NULL"
   },
   {
     "gene": "PUS1",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": -0.824706,
+    "sample": "human-21.3",
+    "value": -0.557154015240065,
     "mutation": "NULL"
   },
   {
     "gene": "PUS3",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": -0.310828,
+    "sample": "human-21.3",
+    "value": 0.481711384201229,
     "mutation": "NULL"
   },
   {
     "gene": "QRSL1",
     "func": "Translation",
-    "sample": "5/4",
-    "value": 0.0432527,
+    "sample": "human-21.3",
+    "value": 0.635365460149395,
     "mutation": "NULL"
   },
   {
     "gene": "QTRT1",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": -0.432503,
+    "sample": "human-21.3",
+    "value": -0.296670644825928,
     "mutation": "NULL"
   },
   {
     "gene": "QTRTD1",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": -0.472775,
+    "sample": "human-21.3",
+    "value": 0.16443594568305,
     "mutation": "NULL"
   },
   {
     "gene": "RARS2",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.071983,
+    "sample": "human-21.3",
+    "value": 0.742628775275615,
     "mutation": "NULL"
   },
   {
     "gene": "RHOT1",
     "func": "Mitochondrial Dynamics",
-    "sample": "5/4",
-    "value": -0.173842,
+    "sample": "human-21.3",
+    "value": 0.524039465172351,
     "mutation": "NULL"
   },
   {
     "gene": "RHOT2",
     "func": "Mitochondrial Dynamics",
-    "sample": "5/4",
-    "value": 0.0656722,
+    "sample": "human-21.3",
+    "value": -0.206945251068971,
     "mutation": "NULL"
   },
   {
     "gene": "RNASEH1",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": 0.138696,
+    "sample": "human-21.3",
+    "value": 0.0863620941503598,
     "mutation": "NULL"
   },
   {
     "gene": "RNASEL",
     "func": "Translation",
-    "sample": "5/4",
-    "value": 0.191194,
+    "sample": "human-21.3",
+    "value": 0.763961537162414,
     "mutation": "NULL"
   },
   {
     "gene": "RPUSD2",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": -0.365175,
+    "sample": "human-21.3",
+    "value": -0.556370918271408,
     "mutation": "NULL"
   },
   {
     "gene": "RPUSD4",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": -0.614644,
+    "sample": "human-21.3",
+    "value": -0.345331638520998,
     "mutation": "NULL"
   },
   {
     "gene": "RRM2B",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": -0.0180886,
-    "mutation": "chr8 103237225 C>G missense_variant"
+    "sample": "human-21.3",
+    "value": 1.23938223590363,
+    "mutation": "NULL"
   },
   {
     "gene": "SAMM50",
     "func": "Import & Sorting",
-    "sample": "5/4",
-    "value": -0.0265203,
+    "sample": "human-21.3",
+    "value": -0.086534702419808,
     "mutation": "NULL"
   },
   {
     "gene": "SARS2",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.0838621,
+    "sample": "human-21.3",
+    "value": -0.435904048340749,
     "mutation": "NULL"
   },
   {
     "gene": "SCO1",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.0886052,
+    "sample": "human-21.3",
+    "value": 0.381498991826177,
     "mutation": "NULL"
   },
   {
     "gene": "SCO2",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0,
+    "sample": "human-21.3",
+    "value": -0.667158326176915,
     "mutation": "NULL"
   },
   {
     "gene": "SDHA",
     "func": "Tricarboxylic acid cycle",
-    "sample": "5/4",
-    "value": 0.864782,
+    "sample": "human-21.3",
+    "value": -0.342146956892104,
     "mutation": "NULL"
   },
   {
     "gene": "SDHAF1",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.69955,
+    "sample": "human-21.3",
+    "value": -0.148898755143163,
     "mutation": "NULL"
   },
   {
     "gene": "SDHAF2",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.208039,
+    "sample": "human-21.3",
+    "value": -0.0488066111721814,
     "mutation": "NULL"
   },
   {
     "gene": "SDHB",
     "func": "Tricarboxylic acid cycle",
-    "sample": "5/4",
-    "value": 0.0233321,
+    "sample": "human-21.3",
+    "value": 0.232311938997128,
     "mutation": "NULL"
   },
   {
     "gene": "SDHC",
     "func": "Tricarboxylic acid cycle",
-    "sample": "5/4",
-    "value": 0.189022,
+    "sample": "human-21.3",
+    "value": -0.151621011293745,
     "mutation": "NULL"
   },
   {
     "gene": "SDHD",
     "func": "Tricarboxylic acid cycle",
-    "sample": "5/4",
-    "value": -0.329465,
+    "sample": "human-21.3",
+    "value": 0.837582769854894,
     "mutation": "NULL"
   },
   {
     "gene": "SH3GLB1",
     "func": "Mitochondrial Dynamics",
-    "sample": "5/4",
-    "value": 0.194996,
+    "sample": "human-21.3",
+    "value": 1.07137475950305,
     "mutation": "NULL"
   },
   {
     "gene": "SHC1",
     "func": "ROS defense",
-    "sample": "5/4",
-    "value": 0.931169,
+    "sample": "human-21.3",
+    "value": -0.132502733965602,
     "mutation": "NULL"
   },
   {
     "gene": "SIGMAR1",
     "func": "Calcium trafficking",
-    "sample": "5/4",
-    "value": -0.757161,
+    "sample": "human-21.3",
+    "value": -0.317749858453282,
     "mutation": "NULL"
   },
   {
     "gene": "SLC25A1",
     "func": "ROS defense",
-    "sample": "5/4",
-    "value": -0.244209,
+    "sample": "human-21.3",
+    "value": -0.477675057356245,
     "mutation": "NULL"
   },
   {
     "gene": "SLC25A19",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": -1.45292,
+    "sample": "human-21.3",
+    "value": -0.9032654025742,
     "mutation": "NULL"
   },
   {
     "gene": "SLC25A20",
     "func": "Fatty acid beta-oxidation",
-    "sample": "5/4",
-    "value": 0.498288,
+    "sample": "human-21.3",
+    "value": -0.504433554682953,
     "mutation": "NULL"
   },
   {
     "gene": "SLC25A28",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "5/4",
-    "value": 0.495234,
+    "sample": "human-21.3",
+    "value": -0.157249660474516,
     "mutation": "NULL"
   },
   {
     "gene": "SLC25A3",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": -0.161299,
+    "sample": "human-21.3",
+    "value": 0.0884541656268728,
     "mutation": "NULL"
   },
   {
     "gene": "SLC25A33",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": -0.0219958,
+    "sample": "human-21.3",
+    "value": -0.640672087699513,
     "mutation": "NULL"
   },
   {
     "gene": "SLC25A37",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "5/4",
-    "value": 0.325321,
+    "sample": "human-21.3",
+    "value": -0.00939751114492505,
     "mutation": "NULL"
   },
   {
     "gene": "SLC25A4",
     "func": "Apoptosis",
-    "sample": "5/4",
-    "value": 0.0630546,
+    "sample": "human-21.3",
+    "value": -0.292980505999146,
     "mutation": "NULL"
   },
   {
     "gene": "SLC25A5",
     "func": "Apoptosis",
-    "sample": "5/4",
-    "value": -0.417006,
+    "sample": "human-21.3",
+    "value": -0.201412190622534,
     "mutation": "NULL"
   },
   {
     "gene": "SLC27A1",
     "func": "Fatty acid beta-oxidation",
-    "sample": "5/4",
-    "value": 0.345878,
+    "sample": "human-21.3",
+    "value": -0.633445645550182,
     "mutation": "NULL"
   },
   {
     "gene": "SLC27A3",
     "func": "Fatty acid beta-oxidation",
-    "sample": "5/4",
-    "value": -0.124218,
+    "sample": "human-21.3",
+    "value": -0.230624367302144,
     "mutation": "NULL"
   },
   {
     "gene": "SLC27A4",
     "func": "Fatty acid beta-oxidation",
-    "sample": "5/4",
-    "value": -0.0693597,
+    "sample": "human-21.3",
+    "value": -0.968777914055151,
     "mutation": "NULL"
   },
   {
     "gene": "SLC27A5",
     "func": "Fatty acid beta-oxidation",
-    "sample": "5/4",
-    "value": -1.37114,
+    "sample": "human-21.3",
+    "value": -0.981974861498779,
     "mutation": "NULL"
   },
   {
     "gene": "SLC27A6",
     "func": "Fatty acid beta-oxidation",
-    "sample": "5/4",
-    "value": 1.24661,
+    "sample": "human-21.3",
+    "value": 0.475315222548474,
     "mutation": "NULL"
   },
   {
     "gene": "SLC29A1",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": -0.466474,
+    "sample": "human-21.3",
+    "value": -0.974223193624917,
     "mutation": "NULL"
   },
   {
     "gene": "SLC2A1",
     "func": "Glycolysis",
-    "sample": "5/4",
-    "value": 0.432796,
+    "sample": "human-21.3",
+    "value": -0.730620584723282,
     "mutation": "NULL"
   },
   {
     "gene": "SLC2A3",
     "func": "Glycolysis",
-    "sample": "5/4",
-    "value": 2.87322,
+    "sample": "human-21.3",
+    "value": 0.2032403273401,
     "mutation": "NULL"
   },
   {
     "gene": "SLC2A4",
     "func": "Glycolysis",
-    "sample": "5/4",
-    "value": 0.301071,
+    "sample": "human-21.3",
+    "value": -1.3035237228594,
     "mutation": "NULL"
   },
   {
     "gene": "SOD1",
     "func": "ROS defense",
-    "sample": "5/4",
-    "value": 0.106663,
+    "sample": "human-21.3",
+    "value": 1.63972718539102,
     "mutation": "NULL"
   },
   {
     "gene": "SOD2",
     "func": "ROS defense",
-    "sample": "5/4",
-    "value": -0.0913631,
+    "sample": "human-21.3",
+    "value": 0.229830058574582,
     "mutation": "NULL"
   },
   {
     "gene": "SPG7",
     "func": "Mitochondrial Dynamics",
-    "sample": "5/4",
-    "value": 0.221754,
+    "sample": "human-21.3",
+    "value": -0.220842012579939,
     "mutation": "NULL"
   },
   {
     "gene": "SQSTM1",
     "func": "Mitochondrial Dynamics",
-    "sample": "5/4",
-    "value": 1.77694,
-    "mutation": "chr5 179264915 G>T 3_prime_UTR_variant"
+    "sample": "human-21.3",
+    "value": -0.582100713405756,
+    "mutation": "NULL"
   },
   {
     "gene": "SSBP1",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": -0.271446,
+    "sample": "human-21.3",
+    "value": 0.364647028707348,
     "mutation": "NULL"
   },
   {
     "gene": "STOML2",
     "func": "Mitochondrial Dynamics",
-    "sample": "5/4",
-    "value": -0.472715,
+    "sample": "human-21.3",
+    "value": -0.21074202918472,
     "mutation": "NULL"
   },
   {
     "gene": "SUCLA2",
     "func": "Tricarboxylic acid cycle",
-    "sample": "5/4",
-    "value": 0.265962,
+    "sample": "human-21.3",
+    "value": 0.796473036782401,
     "mutation": "NULL"
   },
   {
     "gene": "SUCLG1",
     "func": "Tricarboxylic acid cycle",
-    "sample": "5/4",
-    "value": -0.151931,
+    "sample": "human-21.3",
+    "value": 0.23156375945979,
     "mutation": "NULL"
   },
   {
     "gene": "SUCLG2",
     "func": "Tricarboxylic acid cycle",
-    "sample": "5/4",
-    "value": -0.270807,
+    "sample": "human-21.3",
+    "value": 0.606724772246511,
     "mutation": "NULL"
   },
   {
     "gene": "SURF1",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0.0322107,
+    "sample": "human-21.3",
+    "value": -0.190110432848357,
     "mutation": "NULL"
   },
   {
     "gene": "SYBU",
     "func": "Mitochondrial Dynamics",
-    "sample": "5/4",
-    "value": -1.5281,
+    "sample": "human-21.3",
+    "value": -1.4821046905323,
     "mutation": "NULL"
   },
   {
     "gene": "TACO1",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.65952,
+    "sample": "human-21.3",
+    "value": -0.385500584947965,
     "mutation": "NULL"
   },
   {
     "gene": "TARS2",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.353184,
+    "sample": "human-21.3",
+    "value": -0.20697563580606,
     "mutation": "NULL"
   },
   {
     "gene": "TAZ",
     "func": "Cardiolipin biosynthesis",
-    "sample": "5/4",
-    "value": 0.396034,
+    "sample": "human-21.3",
+    "value": -0.368286767956028,
     "mutation": "NULL"
   },
   {
     "gene": "TCHP",
     "func": "Calcium trafficking",
-    "sample": "5/4",
-    "value": -0.0897375,
+    "sample": "human-21.3",
+    "value": 0.172814424299516,
     "mutation": "NULL"
   },
   {
     "gene": "TERT",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": -1.74289,
+    "sample": "human-21.3",
+    "value": -1.82021282975714,
     "mutation": "NULL"
   },
   {
     "gene": "TFAM",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": -0.667959,
+    "sample": "human-21.3",
+    "value": 0.800238333875462,
     "mutation": "NULL"
   },
   {
     "gene": "TFB1M",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": 0.182119,
+    "sample": "human-21.3",
+    "value": 0.269762450398791,
     "mutation": "NULL"
   },
   {
     "gene": "TFB2M",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": -0.401949,
+    "sample": "human-21.3",
+    "value": 0.599067572213948,
     "mutation": "NULL"
   },
   {
     "gene": "TIMM10",
     "func": "Import & Sorting",
-    "sample": "5/4",
-    "value": -0.125715,
+    "sample": "human-21.3",
+    "value": -0.311976785956977,
     "mutation": "NULL"
   },
   {
     "gene": "TIMM13",
     "func": "Import & Sorting",
-    "sample": "5/4",
-    "value": -0.557188,
+    "sample": "human-21.3",
+    "value": -0.101078764559749,
     "mutation": "NULL"
   },
   {
     "gene": "TIMM17A",
     "func": "Import & Sorting",
-    "sample": "5/4",
-    "value": 0.0205918,
+    "sample": "human-21.3",
+    "value": 1.26626341749466,
     "mutation": "NULL"
   },
   {
     "gene": "TIMM17B",
     "func": "Import & Sorting",
-    "sample": "5/4",
-    "value": 2.09787,
+    "sample": "human-21.3",
+    "value": -0.241190616264844,
     "mutation": "NULL"
   },
   {
     "gene": "TIMM21",
     "func": "Import & Sorting",
-    "sample": "5/4",
-    "value": 0.11484,
+    "sample": "human-21.3",
+    "value": 0.742704719360939,
     "mutation": "NULL"
   },
   {
     "gene": "TIMM22",
     "func": "Import & Sorting",
-    "sample": "5/4",
-    "value": -0.351792,
+    "sample": "human-21.3",
+    "value": -0.236271870632346,
     "mutation": "NULL"
   },
   {
     "gene": "TIMM44",
     "func": "Import & Sorting",
-    "sample": "5/4",
-    "value": -0.160132,
+    "sample": "human-21.3",
+    "value": -0.0340630333181954,
     "mutation": "NULL"
   },
   {
     "gene": "TIMM50",
     "func": "Import & Sorting",
-    "sample": "5/4",
-    "value": -0.00034965,
+    "sample": "human-21.3",
+    "value": -0.598701403452434,
     "mutation": "NULL"
   },
   {
     "gene": "TIMM8B",
     "func": "Import & Sorting",
-    "sample": "5/4",
-    "value": -0.513672,
+    "sample": "human-21.3",
+    "value": 0.225360322586672,
     "mutation": "NULL"
   },
   {
     "gene": "TIMM9",
     "func": "Import & Sorting",
-    "sample": "5/4",
-    "value": -0.661716,
+    "sample": "human-21.3",
+    "value": 0.328348216387641,
     "mutation": "NULL"
   },
   {
     "gene": "TK2",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": 0.558719,
+    "sample": "human-21.3",
+    "value": -0.511576046041889,
     "mutation": "NULL"
   },
   {
     "gene": "TMEM126B",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.337147,
+    "sample": "human-21.3",
+    "value": 1.14746165005567,
     "mutation": "NULL"
   },
   {
     "gene": "TMEM70",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.157622,
+    "sample": "human-21.3",
+    "value": 0.856196794369369,
     "mutation": "NULL"
   },
   {
     "gene": "TOMM20",
     "func": "Import & Sorting",
-    "sample": "5/4",
-    "value": -0.414885,
+    "sample": "human-21.3",
+    "value": 0.953895634220045,
     "mutation": "NULL"
   },
   {
     "gene": "TOMM22",
     "func": "Import & Sorting",
-    "sample": "5/4",
-    "value": -0.171332,
+    "sample": "human-21.3",
+    "value": 0.32011026132895,
     "mutation": "NULL"
   },
   {
     "gene": "TOMM40",
     "func": "Import & Sorting",
-    "sample": "5/4",
-    "value": -0.0751145,
+    "sample": "human-21.3",
+    "value": -0.483559753038459,
     "mutation": "NULL"
   },
   {
     "gene": "TOMM40L",
     "func": "Import & Sorting",
-    "sample": "5/4",
-    "value": -0.686537,
+    "sample": "human-21.3",
+    "value": -0.383967798856226,
     "mutation": "NULL"
   },
   {
     "gene": "TOMM5",
     "func": "Import & Sorting",
-    "sample": "5/4",
-    "value": -0.95617,
+    "sample": "human-21.3",
+    "value": 1.23891902457071,
     "mutation": "NULL"
   },
   {
     "gene": "TOMM6",
     "func": "Import & Sorting",
-    "sample": "5/4",
-    "value": -0.366469,
+    "sample": "human-21.3",
+    "value": 0.611117256339986,
     "mutation": "NULL"
   },
   {
     "gene": "TOMM7",
     "func": "Import & Sorting",
-    "sample": "5/4",
-    "value": -0.0695045,
+    "sample": "human-21.3",
+    "value": 0.785994228480284,
     "mutation": "NULL"
   },
   {
     "gene": "TOMM70A",
     "func": "Import & Sorting",
-    "sample": "5/4",
-    "value": -0.255388,
+    "sample": "human-21.3",
+    "value": 0.951948210350503,
     "mutation": "NULL"
   },
   {
     "gene": "TOP1MT",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": -0.273503,
-    "mutation": "chr8 144392368 G>A missense_variant"
+    "sample": "human-21.3",
+    "value": -0.299709449212466,
+    "mutation": "NULL"
   },
   {
     "gene": "TOP3A",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": -0.081567,
+    "sample": "human-21.3",
+    "value": -0.959910647740248,
     "mutation": "NULL"
   },
   {
     "gene": "TPI1",
     "func": "Glycolysis",
-    "sample": "5/4",
-    "value": -0.0341368,
+    "sample": "human-21.3",
+    "value": -0.426663501669559,
     "mutation": "NULL"
   },
   {
     "gene": "TRAK1",
     "func": "Mitochondrial Dynamics",
-    "sample": "5/4",
-    "value": -0.521443,
+    "sample": "human-21.3",
+    "value": -0.193587530779849,
     "mutation": "NULL"
   },
   {
     "gene": "TRAK2",
     "func": "Mitochondrial Dynamics",
-    "sample": "5/4",
-    "value": 0.28942,
+    "sample": "human-21.3",
+    "value": 0.624986658612152,
     "mutation": "NULL"
   },
   {
     "gene": "TRAP1",
     "func": "Mitochondrial Dynamics",
-    "sample": "5/4",
-    "value": -0.769066,
+    "sample": "human-21.3",
+    "value": -0.695531992499397,
     "mutation": "NULL"
   },
   {
     "gene": "TRIT1",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": -0.563625,
+    "sample": "human-21.3",
+    "value": 0.971950436086549,
     "mutation": "NULL"
   },
   {
     "gene": "TRMT1",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": -0.460001,
+    "sample": "human-21.3",
+    "value": -0.301038439221431,
     "mutation": "NULL"
   },
   {
     "gene": "TRMT11",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": -0.546232,
+    "sample": "human-21.3",
+    "value": 1.33874669619408,
     "mutation": "NULL"
   },
   {
     "gene": "TRMT112",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": 0.160184,
+    "sample": "human-21.3",
+    "value": 0.110913839790294,
     "mutation": "NULL"
   },
   {
     "gene": "TRMT2B",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": 0.522388,
+    "sample": "human-21.3",
+    "value": -0.899195081056932,
     "mutation": "NULL"
   },
   {
     "gene": "TRMT5",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": -0.165846,
+    "sample": "human-21.3",
+    "value": 0.608191297827603,
     "mutation": "NULL"
   },
   {
     "gene": "TRMT6",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": 0.0141549,
+    "sample": "human-21.3",
+    "value": 0.456892859543049,
     "mutation": "NULL"
   },
   {
     "gene": "TRMT61B",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": -0.118783,
+    "sample": "human-21.3",
+    "value": 0.270897249405939,
     "mutation": "NULL"
   },
   {
     "gene": "TRMU",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": -0.200499,
+    "sample": "human-21.3",
+    "value": -0.430136115400139,
     "mutation": "NULL"
   },
   {
     "gene": "TRNT1",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": 0.0671684,
+    "sample": "human-21.3",
+    "value": 1.55648737518449,
     "mutation": "NULL"
   },
   {
     "gene": "TRUB2",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": -0.381412,
+    "sample": "human-21.3",
+    "value": -0.30409673296626,
     "mutation": "NULL"
   },
   {
     "gene": "TSFM",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.194598,
+    "sample": "human-21.3",
+    "value": -0.279342871913776,
     "mutation": "NULL"
   },
   {
     "gene": "TTC19",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0.230819,
+    "sample": "human-21.3",
+    "value": 0.360707108234692,
     "mutation": "NULL"
   },
   {
     "gene": "TUFM",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.403638,
+    "sample": "human-21.3",
+    "value": -0.451826617378624,
     "mutation": "NULL"
   },
   {
     "gene": "TXN2",
     "func": "ROS defense",
-    "sample": "5/4",
-    "value": -0.112219,
+    "sample": "human-21.3",
+    "value": 0.061963396022209,
     "mutation": "NULL"
   },
   {
     "gene": "TXNRD2",
     "func": "ROS defense",
-    "sample": "5/4",
-    "value": 0.168682,
+    "sample": "human-21.3",
+    "value": -0.9130811467677,
     "mutation": "NULL"
   },
   {
     "gene": "UNG",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": -0.335202,
+    "sample": "human-21.3",
+    "value": -0.482579415486885,
     "mutation": "NULL"
   },
   {
     "gene": "UQCR10",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.495375,
+    "sample": "human-21.3",
+    "value": 0.538548131823874,
     "mutation": "NULL"
   },
   {
     "gene": "UQCR11",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.306777,
+    "sample": "human-21.3",
+    "value": 0.332471368073166,
     "mutation": "NULL"
   },
   {
     "gene": "UQCRB",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0.00795701,
+    "sample": "human-21.3",
+    "value": 1.96423001228624,
     "mutation": "NULL"
   },
   {
     "gene": "UQCRC1",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0.0593877,
+    "sample": "human-21.3",
+    "value": -0.431275774776914,
     "mutation": "NULL"
   },
   {
     "gene": "UQCRC2",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0.376153,
+    "sample": "human-21.3",
+    "value": 0.827087979387359,
     "mutation": "NULL"
   },
   {
     "gene": "UQCRFS1",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 0.0503358,
+    "sample": "human-21.3",
+    "value": 0.188862136396901,
     "mutation": "NULL"
   },
   {
     "gene": "UQCRH",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": -0.241309,
+    "sample": "human-21.3",
+    "value": 0.709605770070197,
     "mutation": "NULL"
   },
   {
     "gene": "UQCRQ",
     "func": "Electron transport chain",
-    "sample": "5/4",
-    "value": 1.00534,
+    "sample": "human-21.3",
+    "value": 0.286955893697658,
     "mutation": "NULL"
   },
   {
     "gene": "UROD",
     "func": "Heme Biosynthesis",
-    "sample": "5/4",
-    "value": -0.458474,
+    "sample": "human-21.3",
+    "value": -0.254166881558489,
     "mutation": "NULL"
   },
   {
     "gene": "UROS",
     "func": "Heme Biosynthesis",
-    "sample": "5/4",
-    "value": -0.190786,
-    "mutation": "chr10 127477557 G>A synonymous_variant"
+    "sample": "human-21.3",
+    "value": -0.145206918347952,
+    "mutation": "NULL"
   },
   {
     "gene": "VARS2",
     "func": "Translation",
-    "sample": "5/4",
-    "value": 0.221235,
+    "sample": "human-21.3",
+    "value": -0.167608348251712,
     "mutation": "NULL"
   },
   {
     "gene": "VDAC1",
     "func": "Apoptosis",
-    "sample": "5/4",
-    "value": 1.02475,
+    "sample": "human-21.3",
+    "value": 0.411998186197379,
     "mutation": "NULL"
   },
   {
     "gene": "VDAC2",
     "func": "Apoptosis",
-    "sample": "5/4",
-    "value": 0.0746252,
+    "sample": "human-21.3",
+    "value": -0.137614040146036,
     "mutation": "NULL"
   },
   {
     "gene": "VDAC3",
     "func": "Apoptosis",
-    "sample": "5/4",
-    "value": 0.0394704,
+    "sample": "human-21.3",
+    "value": 0.677390640419669,
     "mutation": "NULL"
   },
   {
     "gene": "WARS2",
     "func": "Translation",
-    "sample": "5/4",
-    "value": 0.162982,
+    "sample": "human-21.3",
+    "value": -0.550461247539048,
     "mutation": "NULL"
   },
   {
     "gene": "XIAP",
     "func": "Apoptosis",
-    "sample": "5/4",
-    "value": 0.319264,
+    "sample": "human-21.3",
+    "value": 1.04007492186087,
     "mutation": "NULL"
   },
   {
     "gene": "YARS2",
     "func": "Translation",
-    "sample": "5/4",
-    "value": -0.268674,
+    "sample": "human-21.3",
+    "value": 1.1062243882477,
     "mutation": "NULL"
   },
   {
     "gene": "YME1L1",
     "func": "Mitochondrial Dynamics",
-    "sample": "5/4",
-    "value": -0.0707534,
+    "sample": "human-21.3",
+    "value": 1.17329416754053,
     "mutation": "NULL"
   },
   {
     "gene": "YRDC",
     "func": "Replication & Transcription",
-    "sample": "5/4",
-    "value": -0.307633,
-    "mutation": "chr1 38268918 T>C 3_prime_UTR_variant"
+    "sample": "human-21.3",
+    "value": -0.357542108896613,
+    "mutation": "NULL"
   }
 ]
