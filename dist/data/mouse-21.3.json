@@ -2,3654 +2,3808 @@
   {
     "gene": "AARS2",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.147392,
     "mutation": "NULL"
   },
   {
     "gene": "ABCB7",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0182665,
     "mutation": "NULL"
   },
   {
     "gene": "ACAA2",
     "func": "Fatty acid beta-oxidation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.000577557,
     "mutation": "NULL"
   },
   {
     "gene": "ACAD10",
     "func": "Fatty acid beta-oxidation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.060068,
     "mutation": "NULL"
   },
   {
     "gene": "ACAD11",
     "func": "Fatty acid beta-oxidation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0329508,
     "mutation": "NULL"
   },
   {
     "gene": "ACAD8",
     "func": "Fatty acid beta-oxidation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0555281,
     "mutation": "NULL"
   },
   {
     "gene": "ACAD9",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.123157,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ACADL",
+    "func": "Fatty acid beta-oxidation",
+    "sample": "mouse 21.3",
+    "value": 0.0504635,
     "mutation": "NULL"
   },
   {
     "gene": "ACADM",
     "func": "Fatty acid beta-oxidation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.00720689,
     "mutation": "NULL"
   },
   {
     "gene": "ACADS",
     "func": "Fatty acid beta-oxidation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0111581,
     "mutation": "NULL"
   },
   {
     "gene": "ACADSB",
     "func": "Fatty acid beta-oxidation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0158773,
     "mutation": "NULL"
   },
   {
     "gene": "ACADVL",
     "func": "Fatty acid beta-oxidation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0439038,
     "mutation": "NULL"
   },
   {
     "gene": "ACO2",
     "func": "Tricarboxylic acid cycle",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0877466,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ACSBG1",
+    "func": "Fatty acid beta-oxidation",
+    "sample": "mouse 21.3",
+    "value": 1.15672,
     "mutation": "NULL"
   },
   {
     "gene": "ACSL1",
     "func": "Fatty acid beta-oxidation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.263614,
     "mutation": "NULL"
   },
   {
     "gene": "ACSL3",
     "func": "Fatty acid beta-oxidation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.114158,
     "mutation": "NULL"
   },
   {
     "gene": "ACSL4",
     "func": "Fatty acid beta-oxidation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.12459,
     "mutation": "NULL"
   },
   {
     "gene": "ACSL5",
     "func": "Fatty acid beta-oxidation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0046388,
-    "mutation": "NULL"
-  },
-  {
-    "gene": "ACSM3",
-    "func": "Fatty acid beta-oxidation",
-    "sample": "mouse-21.3",
-    "value": -0.177751,
     "mutation": "NULL"
   },
   {
     "gene": "ACSS2",
     "func": "Fatty acid beta-oxidation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.355337,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ACSS3",
+    "func": "Fatty acid beta-oxidation",
+    "sample": "mouse 21.3",
+    "value": 0.905698,
     "mutation": "NULL"
   },
   {
     "gene": "AFG3L2",
     "func": "Mitochondrial Dynamics",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0625204,
     "mutation": "NULL"
   },
   {
     "gene": "AIFM1",
     "func": "Apoptosis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0772292,
     "mutation": "NULL"
   },
   {
     "gene": "AK3",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0242723,
     "mutation": "NULL"
   },
   {
     "gene": "AK4",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.668208,
     "mutation": "NULL"
   },
   {
     "gene": "ALAD",
     "func": "Heme Biosynthesis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.488389,
     "mutation": "NULL"
   },
   {
     "gene": "ALAS1",
     "func": "Heme Biosynthesis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.00829442,
     "mutation": "NULL"
   },
   {
     "gene": "ALDOA",
     "func": "Glycolysis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.205154,
     "mutation": "NULL"
   },
   {
     "gene": "ALDOC",
     "func": "Glycolysis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.408408,
     "mutation": "NULL"
   },
   {
     "gene": "AMBRA1",
     "func": "Mitochondrial Dynamics",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0307467,
     "mutation": "NULL"
   },
   {
     "gene": "ANP32A",
     "func": "Apoptosis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.275644,
     "mutation": "NULL"
   },
   {
     "gene": "APAF1",
     "func": "Apoptosis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.123538,
     "mutation": "NULL"
   },
   {
     "gene": "APEX1",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0941757,
     "mutation": "NULL"
   },
   {
     "gene": "APEX2",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.188364,
     "mutation": "NULL"
   },
   {
-    "gene": "ARG2",
-    "func": "Urea Cycle",
-    "sample": "mouse-21.3",
-    "value": 0.166957,
+    "gene": "APOPT1",
+    "func": "Apoptosis",
+    "sample": "mouse 21.3",
+    "value": -0.0662825,
     "mutation": "NULL"
   },
   {
     "gene": "ASL",
     "func": "Urea Cycle",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.271989,
     "mutation": "NULL"
   },
   {
     "gene": "ASS1",
     "func": "Urea Cycle",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0939863,
     "mutation": "NULL"
   },
   {
     "gene": "ATAD3A",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.235554,
     "mutation": "NULL"
   },
   {
     "gene": "ATP5A1",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.117282,
     "mutation": "NULL"
   },
   {
     "gene": "ATP5B",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0345936,
     "mutation": "NULL"
   },
   {
     "gene": "ATP5C1",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0408422,
     "mutation": "NULL"
   },
   {
     "gene": "ATP5D",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0799808,
     "mutation": "NULL"
   },
   {
     "gene": "ATP5E",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0774345,
     "mutation": "NULL"
   },
   {
     "gene": "ATP5F1",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0745965,
     "mutation": "NULL"
   },
   {
     "gene": "ATP5G1",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0909302,
     "mutation": "NULL"
   },
   {
     "gene": "ATP5G2",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0890511,
     "mutation": "NULL"
   },
   {
     "gene": "ATP5G3",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0732198,
     "mutation": "NULL"
   },
   {
     "gene": "ATP5H",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0317665,
     "mutation": "NULL"
   },
   {
     "gene": "ATP5J",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.683039,
     "mutation": "NULL"
   },
   {
     "gene": "ATP5J2",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0309003,
     "mutation": "NULL"
   },
   {
     "gene": "ATP5L",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0557605,
     "mutation": "NULL"
   },
   {
     "gene": "ATP5O",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.644098,
     "mutation": "NULL"
   },
   {
     "gene": "ATPAF1",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.174114,
     "mutation": "NULL"
   },
   {
     "gene": "ATPAF2",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.107978,
     "mutation": "NULL"
   },
   {
     "gene": "ATPIF1",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.139513,
     "mutation": "NULL"
   },
   {
     "gene": "BAD",
     "func": "Apoptosis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.123573,
     "mutation": "NULL"
   },
   {
     "gene": "BAK1",
     "func": "Apoptosis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.129156,
     "mutation": "NULL"
   },
   {
     "gene": "BAX",
     "func": "Apoptosis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.00958902,
     "mutation": "NULL"
   },
   {
     "gene": "BBC3",
     "func": "Apoptosis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.160969,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "BCKDHA",
+    "func": "ROS defense",
+    "sample": "mouse 21.3",
+    "value": -0.013303,
     "mutation": "NULL"
   },
   {
     "gene": "BCKDHB",
     "func": "ROS defense",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 1.28217,
     "mutation": "NULL"
   },
   {
     "gene": "BCL2",
     "func": "Apoptosis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0664212,
     "mutation": "NULL"
   },
   {
     "gene": "BCL2L1",
     "func": "Apoptosis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.00163197,
     "mutation": "NULL"
   },
   {
     "gene": "BCL2L11",
     "func": "Apoptosis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0197583,
     "mutation": "NULL"
   },
   {
     "gene": "BCS1L",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0285461,
     "mutation": "NULL"
   },
   {
     "gene": "BECN1",
     "func": "Mitochondrial Dynamics",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0230642,
     "mutation": "NULL"
   },
   {
     "gene": "BID",
     "func": "Apoptosis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.178892,
-    "mutation": "NULL"
-  },
-  {
-    "gene": "BIK",
-    "func": "Apoptosis",
-    "sample": "mouse-21.3",
-    "value": 0,
     "mutation": "NULL"
   },
   {
     "gene": "BNIP3",
     "func": "Mitochondrial Dynamics",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.19161,
     "mutation": "NULL"
   },
   {
     "gene": "BNIP3L",
     "func": "Mitochondrial Dynamics",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0989169,
     "mutation": "NULL"
   },
   {
     "gene": "BOLA3",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.313194,
     "mutation": "NULL"
   },
   {
     "gene": "CARS2",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.066441,
     "mutation": "NULL"
   },
   {
     "gene": "CASP3",
     "func": "Apoptosis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.168201,
     "mutation": "NULL"
   },
   {
     "gene": "CASP7",
     "func": "Apoptosis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0910581,
     "mutation": "NULL"
   },
   {
     "gene": "CASP9",
     "func": "Apoptosis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.080645,
     "mutation": "NULL"
   },
   {
     "gene": "CCDC109B",
     "func": "Calcium trafficking",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.498079,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "CCDC90A",
+    "func": "Calcium trafficking",
+    "sample": "mouse 21.3",
+    "value": -0.707583,
     "mutation": "NULL"
   },
   {
     "gene": "CDK1",
     "func": "Apoptosis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.237449,
     "mutation": "NULL"
   },
   {
     "gene": "CDK5RAP1",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.296385,
     "mutation": "NULL"
   },
   {
     "gene": "CDKAL1",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0714413,
     "mutation": "NULL"
   },
   {
     "gene": "CDS1",
     "func": "Cardiolipin biosynthesis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.957114,
     "mutation": "NULL"
   },
   {
     "gene": "CHCHD4",
     "func": "Import & Sorting",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.209429,
     "mutation": "NULL"
   },
   {
     "gene": "CIAO1",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.103519,
     "mutation": "NULL"
   },
   {
     "gene": "CIAPIN1",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.363979,
     "mutation": "NULL"
   },
   {
     "gene": "CLPP",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.037932,
     "mutation": "NULL"
   },
   {
     "gene": "CLPX",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0984634,
     "mutation": "NULL"
   },
   {
     "gene": "CMPK2",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.127155,
     "mutation": "NULL"
   },
   {
     "gene": "COA5",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0350392,
     "mutation": "NULL"
   },
   {
     "gene": "COX10",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.138723,
     "mutation": "NULL"
   },
   {
     "gene": "COX11",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0633569,
     "mutation": "NULL"
   },
   {
     "gene": "COX14",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.177375,
     "mutation": "NULL"
   },
   {
     "gene": "COX15",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0725022,
     "mutation": "NULL"
   },
   {
     "gene": "COX17",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.195942,
     "mutation": "NULL"
   },
   {
     "gene": "COX18",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0257029,
     "mutation": "NULL"
   },
   {
     "gene": "COX19",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0099348,
     "mutation": "NULL"
   },
   {
     "gene": "COX20",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.384969,
     "mutation": "NULL"
   },
   {
     "gene": "COX4I1",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0359199,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "COX4I2",
+    "func": "Electron transport chain",
+    "sample": "mouse 21.3",
+    "value": -1.02179,
     "mutation": "NULL"
   },
   {
     "gene": "COX5A",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.130344,
     "mutation": "NULL"
   },
   {
     "gene": "COX5B",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0856763,
     "mutation": "NULL"
   },
   {
     "gene": "COX6A1",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0141174,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "COX6A2",
+    "func": "Electron transport chain",
+    "sample": "mouse 21.3",
+    "value": 0.306108,
     "mutation": "NULL"
   },
   {
     "gene": "COX6B1",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.00116649,
     "mutation": "NULL"
   },
   {
     "gene": "COX6B2",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.402229,
     "mutation": "NULL"
   },
   {
     "gene": "COX6C",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0223816,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "COX7A1",
+    "func": "Electron transport chain",
+    "sample": "mouse 21.3",
+    "value": -0.0709901,
     "mutation": "NULL"
   },
   {
     "gene": "COX7A2",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0505163,
     "mutation": "NULL"
   },
   {
     "gene": "COX7B",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0198172,
     "mutation": "NULL"
   },
   {
     "gene": "COX7C",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0244764,
     "mutation": "NULL"
   },
   {
     "gene": "COX8A",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0816291,
     "mutation": "NULL"
   },
   {
     "gene": "CPOX",
     "func": "Heme Biosynthesis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.210934,
     "mutation": "NULL"
   },
   {
     "gene": "CPT1A",
     "func": "Fatty acid beta-oxidation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.261719,
-    "mutation": "NULL"
-  },
-  {
-    "gene": "CPT1B",
-    "func": "Fatty acid beta-oxidation",
-    "sample": "mouse-21.3",
-    "value": -0.570711,
     "mutation": "NULL"
   },
   {
     "gene": "CPT1C",
     "func": "Fatty acid beta-oxidation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.00960762,
     "mutation": "NULL"
   },
   {
     "gene": "CPT2",
     "func": "Fatty acid beta-oxidation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0775578,
     "mutation": "NULL"
   },
   {
     "gene": "CRAT",
     "func": "Fatty acid beta-oxidation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0454463,
     "mutation": "NULL"
   },
   {
     "gene": "CREB1",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.143394,
     "mutation": "NULL"
   },
   {
     "gene": "CRLS1",
     "func": "Cardiolipin biosynthesis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0405037,
     "mutation": "NULL"
   },
   {
     "gene": "CS",
     "func": "Tricarboxylic acid cycle",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0556271,
     "mutation": "NULL"
   },
   {
     "gene": "CYC1",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.081608,
     "mutation": "NULL"
   },
   {
     "gene": "CYCS",
     "func": "Apoptosis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0961794,
     "mutation": "NULL"
   },
   {
     "gene": "DAP3",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0795002,
     "mutation": "NULL"
   },
   {
     "gene": "DARS2",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.240849,
     "mutation": "NULL"
   },
   {
     "gene": "DDX28",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0788726,
     "mutation": "NULL"
   },
   {
     "gene": "DECR1",
     "func": "Fatty acid beta-oxidation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.159771,
     "mutation": "NULL"
   },
   {
     "gene": "DHX30",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0640444,
     "mutation": "NULL"
   },
   {
     "gene": "DIABLO",
     "func": "Apoptosis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0282061,
     "mutation": "NULL"
   },
   {
     "gene": "DLAT",
     "func": "Formation of Acetyl CoA",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0634407,
     "mutation": "NULL"
   },
   {
     "gene": "DLD",
     "func": "Tricarboxylic acid cycle",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0805287,
     "mutation": "NULL"
   },
   {
     "gene": "DLST",
     "func": "Tricarboxylic acid cycle",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0678934,
     "mutation": "NULL"
   },
   {
     "gene": "DNAJC19",
     "func": "Import & Sorting",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0729387,
     "mutation": "NULL"
   },
   {
     "gene": "DNM1",
     "func": "Apoptosis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.50108,
     "mutation": "NULL"
   },
   {
     "gene": "DNM1L",
     "func": "Mitochondrial Dynamics",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0911565,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "DUS2L",
+    "func": "Replication & Transcription",
+    "sample": "mouse 21.3",
+    "value": 0.013579,
     "mutation": "NULL"
   },
   {
     "gene": "DYNLL1",
     "func": "Mitochondrial Dynamics",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0367988,
     "mutation": "NULL"
   },
   {
     "gene": "EARS2",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0405642,
     "mutation": "NULL"
   },
   {
     "gene": "ECHS1",
     "func": "Fatty acid beta-oxidation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0262787,
     "mutation": "NULL"
   },
   {
     "gene": "ECSIT",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.085384,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "EFHA1",
+    "func": "Calcium trafficking",
+    "sample": "mouse 21.3",
+    "value": -0.00695064,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "EFHA2",
+    "func": "Calcium trafficking",
+    "sample": "mouse 21.3",
+    "value": -0.249831,
     "mutation": "NULL"
   },
   {
     "gene": "EIF3M",
     "func": "Apoptosis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0682212,
     "mutation": "NULL"
   },
   {
     "gene": "ELAC2",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0329826,
     "mutation": "NULL"
   },
   {
     "gene": "ENDOG",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.119246,
     "mutation": "NULL"
   },
   {
     "gene": "ENO2",
     "func": "Glycolysis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.272705,
     "mutation": "NULL"
   },
   {
     "gene": "ENO3",
     "func": "Glycolysis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.911801,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "FABP3",
+    "func": "Fatty acid beta-oxidation",
+    "sample": "mouse 21.3",
+    "value": 0.237172,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "FABP4",
+    "func": "Fatty acid beta-oxidation",
+    "sample": "mouse 21.3",
+    "value": 0.110738,
     "mutation": "NULL"
   },
   {
     "gene": "FABP5",
     "func": "Fatty acid beta-oxidation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.125024,
-    "mutation": "NULL"
-  },
-  {
-    "gene": "FABP6",
-    "func": "Fatty acid beta-oxidation",
-    "sample": "mouse-21.3",
-    "value": 0,
     "mutation": "NULL"
   },
   {
     "gene": "FAM96A",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0271591,
     "mutation": "NULL"
   },
   {
     "gene": "FAM96B",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0744212,
     "mutation": "NULL"
   },
   {
     "gene": "FARS2",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0416544,
     "mutation": "NULL"
   },
   {
     "gene": "FDX1",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.182203,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "FDX1L",
+    "func": "Fe-S cluster biosynthesis",
+    "sample": "mouse 21.3",
+    "value": -0.160973,
     "mutation": "NULL"
   },
   {
     "gene": "FDXR",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0682037,
     "mutation": "NULL"
   },
   {
     "gene": "FECH",
     "func": "Heme Biosynthesis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.037848,
     "mutation": "NULL"
   },
   {
     "gene": "FIS1",
     "func": "Mitochondrial Dynamics",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0291425,
     "mutation": "NULL"
   },
   {
     "gene": "FOXRED1",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0469099,
     "mutation": "NULL"
   },
   {
     "gene": "FXN",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.286835,
     "mutation": "NULL"
   },
   {
     "gene": "GABARAP",
     "func": "Mitochondrial Dynamics",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.013166,
     "mutation": "NULL"
   },
   {
     "gene": "GAPDH",
     "func": "Glycolysis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.147113,
-    "mutation": "NULL"
-  },
-  {
-    "gene": "GAPDHS",
-    "func": "Glycolysis",
-    "sample": "mouse-21.3",
-    "value": 0.167872,
     "mutation": "NULL"
   },
   {
     "gene": "GARS",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0477185,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "GATC",
+    "func": "Translation",
+    "sample": "mouse 21.3",
+    "value": -0.105209,
     "mutation": "NULL"
   },
   {
     "gene": "GCLC",
     "func": "ROS defense",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.171466,
     "mutation": "NULL"
   },
   {
     "gene": "GCLM",
     "func": "ROS defense",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0670681,
-    "mutation": "NULL"
-  },
-  {
-    "gene": "GDAP1",
-    "func": "Mitochondrial Dynamics",
-    "sample": "mouse-21.3",
-    "value": -0.480751,
     "mutation": "NULL"
   },
   {
     "gene": "GFER",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0830046,
     "mutation": "NULL"
   },
   {
     "gene": "GFM1",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0107092,
     "mutation": "NULL"
   },
   {
     "gene": "GFM2",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.144607,
     "mutation": "NULL"
   },
   {
     "gene": "GLRX2",
     "func": "ROS defense",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.116315,
     "mutation": "NULL"
   },
   {
     "gene": "GLRX5",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.11034,
     "mutation": "NULL"
   },
   {
     "gene": "GOT2",
     "func": "Fatty acid beta-oxidation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.162615,
     "mutation": "NULL"
   },
   {
     "gene": "GPX1",
     "func": "ROS defense",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.134557,
     "mutation": "NULL"
   },
   {
     "gene": "GPX4",
     "func": "ROS defense",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0237914,
     "mutation": "NULL"
   },
   {
     "gene": "GRPEL1",
-    "func": "Import & Sorting",
-    "sample": "mouse-21.3",
+    "func": "Fe-S cluster biosynthesis",
+    "sample": "mouse 21.3",
     "value": -0.0128545,
     "mutation": "NULL"
   },
   {
     "gene": "GRPEL2",
-    "func": "Import & Sorting",
-    "sample": "mouse-21.3",
+    "func": "Fe-S cluster biosynthesis",
+    "sample": "mouse 21.3",
     "value": 0.236974,
     "mutation": "NULL"
   },
   {
     "gene": "GSR",
     "func": "ROS defense",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.165766,
     "mutation": "NULL"
   },
   {
     "gene": "GSS",
     "func": "ROS defense",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.229208,
-    "mutation": "NULL"
-  },
-  {
-    "gene": "GSTA1",
-    "func": "ROS defense",
-    "sample": "mouse-21.3",
-    "value": 1.17545,
-    "mutation": "NULL"
-  },
-  {
-    "gene": "GSTA2",
-    "func": "ROS defense",
-    "sample": "mouse-21.3",
-    "value": 2.13366,
     "mutation": "NULL"
   },
   {
     "gene": "GSTA4",
     "func": "ROS defense",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 1.45105,
     "mutation": "NULL"
   },
   {
     "gene": "GSTP1",
     "func": "ROS defense",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.220576,
     "mutation": "NULL"
   },
   {
     "gene": "GTPBP3",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0312474,
     "mutation": "NULL"
   },
   {
     "gene": "HADH",
     "func": "Fatty acid beta-oxidation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.094246,
     "mutation": "NULL"
   },
   {
     "gene": "HADHA",
     "func": "Fatty acid beta-oxidation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0267471,
     "mutation": "NULL"
   },
   {
     "gene": "HADHB",
     "func": "Fatty acid beta-oxidation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0838225,
     "mutation": "NULL"
   },
   {
     "gene": "HARS2",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.00894628,
     "mutation": "NULL"
   },
   {
     "gene": "HCCS",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.17244,
     "mutation": "NULL"
   },
   {
     "gene": "HK1",
     "func": "Glycolysis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.234832,
     "mutation": "NULL"
   },
   {
     "gene": "HK2",
     "func": "Glycolysis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.48458,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "HMBS",
+    "func": "Heme Biosynthesis",
+    "sample": "mouse 21.3",
+    "value": 0.0258083,
     "mutation": "NULL"
   },
   {
     "gene": "HSCB",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.297235,
     "mutation": "NULL"
   },
   {
     "gene": "HSD17B10",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0517374,
     "mutation": "NULL"
   },
   {
     "gene": "HSPA9",
     "func": "Import & Sorting",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0569465,
     "mutation": "NULL"
   },
   {
     "gene": "HTRA2",
     "func": "Apoptosis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.114609,
     "mutation": "NULL"
   },
   {
     "gene": "IARS2",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0767746,
     "mutation": "NULL"
   },
   {
     "gene": "IBA57",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.226128,
     "mutation": "NULL"
   },
   {
     "gene": "IDH1",
     "func": "Tricarboxylic acid cycle",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.000717561,
     "mutation": "NULL"
   },
   {
     "gene": "IDH2",
     "func": "Tricarboxylic acid cycle",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0201956,
     "mutation": "NULL"
   },
   {
     "gene": "IDH3A",
     "func": "Tricarboxylic acid cycle",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0810642,
     "mutation": "NULL"
   },
   {
     "gene": "IDH3B",
     "func": "Tricarboxylic acid cycle",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0296061,
     "mutation": "NULL"
   },
   {
     "gene": "IDH3G",
     "func": "Tricarboxylic acid cycle",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0468129,
     "mutation": "NULL"
   },
   {
     "gene": "IMMP1L",
     "func": "Import & Sorting",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0653385,
     "mutation": "NULL"
   },
   {
     "gene": "IMMP2L",
     "func": "Import & Sorting",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.184578,
     "mutation": "NULL"
   },
   {
     "gene": "ISCA1",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0634687,
     "mutation": "NULL"
   },
   {
     "gene": "ISCA2",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.232179,
     "mutation": "NULL"
   },
   {
     "gene": "ISCU",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.106646,
     "mutation": "NULL"
   },
   {
     "gene": "ITPR1",
     "func": "Calcium trafficking",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.112282,
     "mutation": "NULL"
   },
   {
     "gene": "ITPR2",
     "func": "Calcium trafficking",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.506731,
     "mutation": "NULL"
   },
   {
     "gene": "ITPR3",
     "func": "Calcium trafficking",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.477139,
     "mutation": "NULL"
   },
   {
     "gene": "KARS",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.00151731,
     "mutation": "NULL"
   },
   {
     "gene": "KIF1B",
     "func": "Mitochondrial Dynamics",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0286789,
     "mutation": "NULL"
   },
   {
     "gene": "KIF5B",
     "func": "Mitochondrial Dynamics",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.214549,
     "mutation": "NULL"
   },
   {
     "gene": "LARS2",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0830687,
     "mutation": "NULL"
   },
   {
     "gene": "LDHA",
     "func": "Glycolysis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.174593,
     "mutation": "NULL"
   },
   {
     "gene": "LDHB",
     "func": "Glycolysis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.00748183,
     "mutation": "NULL"
   },
   {
     "gene": "LETM1",
     "func": "Calcium trafficking",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.117499,
     "mutation": "NULL"
   },
   {
     "gene": "LIG3",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0160373,
     "mutation": "NULL"
   },
   {
     "gene": "LONP1",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.26867,
     "mutation": "NULL"
   },
   {
     "gene": "LRPPRC",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0637436,
     "mutation": "NULL"
   },
   {
     "gene": "LYRM4",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.377701,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MAP1LC3A",
+    "func": "Mitochondrial Dynamics",
+    "sample": "mouse 21.3",
+    "value": -0.0450058,
     "mutation": "NULL"
   },
   {
     "gene": "MAPK1",
     "func": "Apoptosis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0152626,
     "mutation": "NULL"
   },
   {
     "gene": "MAPK3",
     "func": "Apoptosis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.140104,
     "mutation": "NULL"
   },
   {
     "gene": "MARCH5",
     "func": "Mitochondrial Dynamics",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0273253,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MARS2",
+    "func": "Translation",
+    "sample": "mouse 21.3",
+    "value": -0.187509,
     "mutation": "NULL"
   },
   {
     "gene": "MCL1",
     "func": "Apoptosis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0357327,
     "mutation": "NULL"
   },
   {
     "gene": "MCU",
     "func": "Calcium trafficking",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.172194,
     "mutation": "NULL"
   },
   {
     "gene": "MDH2",
     "func": "Tricarboxylic acid cycle",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.112011,
     "mutation": "NULL"
   },
   {
     "gene": "MFF",
     "func": "Mitochondrial Dynamics",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0373431,
     "mutation": "NULL"
   },
   {
     "gene": "MFN1",
     "func": "Mitochondrial Dynamics",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.103207,
     "mutation": "NULL"
   },
   {
     "gene": "MFN2",
     "func": "Mitochondrial Dynamics",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.158748,
     "mutation": "NULL"
   },
   {
     "gene": "MICU1",
     "func": "Calcium trafficking",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0876008,
     "mutation": "NULL"
   },
   {
     "gene": "MIPEP",
     "func": "Import & Sorting",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0825852,
     "mutation": "NULL"
   },
   {
     "gene": "MMS19",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0535412,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MNF1",
+    "func": "Electron transport chain",
+    "sample": "mouse 21.3",
+    "value": -0.010529,
     "mutation": "NULL"
   },
   {
     "gene": "MPV17",
     "func": "ROS defense",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.156739,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MPV17L",
+    "func": "ROS defense",
+    "sample": "mouse 21.3",
+    "value": -0.0219344,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MPV17L2",
+    "func": "Translation",
+    "sample": "mouse 21.3",
+    "value": 0.122028,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL1",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0349285,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL10",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.00279477,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL11",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0419265,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL12",
+    "func": "Translation",
+    "sample": "mouse 21.3",
+    "value": -0.0111408,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL13",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0312025,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL14",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0045772,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL15",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.206463,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL16",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.033687,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL17",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.020294,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL18",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0400128,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL19",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0749572,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL2",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0182559,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL20",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.189673,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL21",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0463929,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL22",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0175952,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL23",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0145452,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL24",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0624878,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL27",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0947487,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL28",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0175007,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL3",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.113223,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL30",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0992286,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL32",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.119174,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL33",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0108623,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL34",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.115993,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL35",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.110528,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL36",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0652358,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL37",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.044059,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL38",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.180762,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL39",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.615757,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL4",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0429078,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL40",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0771903,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL41",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0698978,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL42",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0881724,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL43",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.077148,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL44",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0563936,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL45",
+    "func": "Translation",
+    "sample": "mouse 21.3",
+    "value": 0.0071364,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL46",
+    "func": "Translation",
+    "sample": "mouse 21.3",
+    "value": -0.0157904,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL47",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.064944,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL48",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0171596,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL49",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0604248,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL50",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0375883,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL51",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0371858,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL52",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.116363,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL53",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0430923,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL54",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0381282,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL55",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0823298,
     "mutation": "NULL"
   },
   {
     "gene": "MRPL9",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.199334,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS10",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0827443,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS11",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0603632,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS12",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.016442,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS14",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0258373,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS15",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0883139,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS16",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0753121,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS17",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0167632,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS18A",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.145618,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS18B",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.177423,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS18C",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.122547,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS2",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0731807,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPS21",
+    "func": "Translation",
+    "sample": "mouse 21.3",
+    "value": -0.0974863,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS22",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0633881,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS23",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.064818,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS24",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.130943,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS25",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.042766,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS26",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.235629,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS27",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.12164,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS28",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0250902,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS30",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0151924,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS31",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.145642,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS33",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0300533,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS34",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.244199,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS35",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0645037,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS36",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.130261,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS5",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0916108,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS6",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 1.01179,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS7",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.00426521,
     "mutation": "NULL"
   },
   {
     "gene": "MRPS9",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.018336,
     "mutation": "NULL"
   },
   {
     "gene": "MRRF",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.110986,
     "mutation": "NULL"
   },
   {
     "gene": "MSTO1",
     "func": "Mitochondrial Dynamics",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0643719,
     "mutation": "NULL"
   },
   {
     "gene": "MTFMT",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.176327,
     "mutation": "NULL"
   },
   {
     "gene": "MTFP1",
     "func": "Mitochondrial Dynamics",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0854646,
     "mutation": "NULL"
   },
   {
     "gene": "MTIF2",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.105803,
     "mutation": "NULL"
   },
   {
     "gene": "MTIF3",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.101627,
     "mutation": "NULL"
   },
   {
     "gene": "MTO1",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.1158,
     "mutation": "NULL"
   },
   {
     "gene": "MTPAP",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.00372982,
     "mutation": "NULL"
   },
   {
     "gene": "MTRF1",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.1052,
     "mutation": "NULL"
   },
   {
     "gene": "MTRF1L",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0402381,
     "mutation": "NULL"
   },
   {
     "gene": "MUTYH",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.117712,
     "mutation": "NULL"
   },
   {
     "gene": "NARF",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0641107,
     "mutation": "NULL"
   },
   {
     "gene": "NARS2",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0725193,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFA1",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.18865,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFA10",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.00297292,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFA11",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0437245,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFA12",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.140309,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFA13",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0431648,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFA2",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0296582,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFA3",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.267984,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFA4",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0738271,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFA5",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0453756,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFA6",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.201329,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NDUFA7",
+    "func": "Electron transport chain",
+    "sample": "mouse 21.3",
+    "value": -0.157647,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFA8",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.052549,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFA9",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.112052,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFAB1",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.236045,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFAF1",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0517993,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFAF2",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.23981,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFAF3",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.209731,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFAF4",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0425056,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFB10",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.221562,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFB11",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0640252,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFB2",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0674232,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFB3",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.2499,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFB4",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0846585,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFB5",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.100997,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFB6",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.00435464,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFB7",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0226712,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFB8",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0537784,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFB9",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0152968,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFC1",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0212001,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFC2",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.095545,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFS1",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0278617,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFS2",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0684942,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFS3",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0243059,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFS4",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0579522,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFS5",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.252775,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFS6",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0879028,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFS7",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.00170204,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFS8",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0841241,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFV1",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0868629,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFV2",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.195742,
     "mutation": "NULL"
   },
   {
     "gene": "NDUFV3",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.224859,
     "mutation": "NULL"
   },
   {
     "gene": "NFE2L2",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.277644,
     "mutation": "NULL"
   },
   {
     "gene": "NFS1",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0064845,
     "mutation": "NULL"
   },
   {
     "gene": "NFU1",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.166514,
     "mutation": "NULL"
   },
   {
     "gene": "NME3",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0681533,
     "mutation": "NULL"
   },
   {
     "gene": "NME4",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0429022,
     "mutation": "NULL"
   },
   {
     "gene": "NME6",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.113368,
     "mutation": "NULL"
   },
   {
     "gene": "NRF1",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0477087,
     "mutation": "NULL"
   },
   {
     "gene": "NSUN2",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.304488,
     "mutation": "NULL"
   },
   {
     "gene": "NTHL1",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0347192,
     "mutation": "NULL"
   },
   {
     "gene": "NUBP1",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.00437921,
     "mutation": "NULL"
   },
   {
     "gene": "NUBP2",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.029199,
     "mutation": "NULL"
   },
   {
     "gene": "NUBPL",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0348107,
     "mutation": "NULL"
   },
   {
     "gene": "OGDH",
     "func": "Tricarboxylic acid cycle",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.00917347,
     "mutation": "NULL"
   },
   {
     "gene": "OGG1",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0488121,
     "mutation": "NULL"
   },
   {
     "gene": "OMA1",
     "func": "Mitochondrial Dynamics",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0781553,
     "mutation": "NULL"
   },
   {
     "gene": "OPA1",
     "func": "Mitochondrial Dynamics",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0392154,
     "mutation": "NULL"
   },
   {
     "gene": "OPA3",
     "func": "Mitochondrial Dynamics",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0172114,
     "mutation": "NULL"
   },
   {
     "gene": "OSGEPL1",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.00236194,
     "mutation": "NULL"
   },
   {
     "gene": "OXA1L",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.121274,
     "mutation": "NULL"
   },
   {
     "gene": "PACS2",
     "func": "Calcium trafficking",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.000579163,
     "mutation": "NULL"
   },
   {
     "gene": "PAM16",
     "func": "Import & Sorting",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.134142,
     "mutation": "NULL"
   },
   {
     "gene": "PARL",
     "func": "Mitochondrial Dynamics",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0807951,
     "mutation": "NULL"
   },
   {
     "gene": "PARS2",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0434948,
     "mutation": "NULL"
   },
   {
     "gene": "PDHA1",
     "func": "Formation of Acetyl CoA",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0702736,
     "mutation": "NULL"
   },
   {
     "gene": "PDHB",
     "func": "Formation of Acetyl CoA",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.00524479,
     "mutation": "NULL"
   },
   {
     "gene": "PDHX",
     "func": "Formation of Acetyl CoA",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.145347,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "PET112",
+    "func": "Translation",
+    "sample": "mouse 21.3",
+    "value": 0.0362272,
     "mutation": "NULL"
   },
   {
     "gene": "PFKL",
     "func": "Glycolysis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.185192,
     "mutation": "NULL"
   },
   {
     "gene": "PFKM",
     "func": "Glycolysis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.163471,
     "mutation": "NULL"
   },
   {
     "gene": "PFKP",
     "func": "Glycolysis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.10845,
     "mutation": "NULL"
   },
   {
     "gene": "PGAM1",
     "func": "Glycolysis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.163855,
     "mutation": "NULL"
   },
   {
     "gene": "PGAM2",
     "func": "Glycolysis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0869992,
     "mutation": "NULL"
   },
   {
     "gene": "PGK1",
     "func": "Glycolysis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.24347,
     "mutation": "NULL"
   },
   {
     "gene": "PGS1",
     "func": "Cardiolipin biosynthesis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.142325,
     "mutation": "NULL"
   },
   {
     "gene": "PHB",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.128387,
     "mutation": "NULL"
   },
   {
     "gene": "PHB2",
     "func": "Mitochondrial Dynamics",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0396483,
     "mutation": "NULL"
   },
   {
     "gene": "PINK1",
     "func": "Mitochondrial Dynamics",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.182221,
     "mutation": "NULL"
   },
   {
     "gene": "PKIA",
     "func": "Mitochondrial Dynamics",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0922768,
-    "mutation": "NULL"
-  },
-  {
-    "gene": "PKLR",
-    "func": "Glycolysis",
-    "sample": "mouse-21.3",
-    "value": 0,
-    "mutation": "NULL"
-  },
-  {
-    "gene": "PLD6",
-    "func": "Mitochondrial Dynamics",
-    "sample": "mouse-21.3",
-    "value": -1.19368,
     "mutation": "NULL"
   },
   {
     "gene": "PMAIP1",
     "func": "Apoptosis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.872679,
     "mutation": "NULL"
   },
   {
     "gene": "PML",
     "func": "Calcium trafficking",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0491052,
     "mutation": "NULL"
   },
   {
     "gene": "PMPCA",
     "func": "Import & Sorting",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0168443,
     "mutation": "NULL"
   },
   {
     "gene": "PMPCB",
     "func": "Import & Sorting",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0349639,
     "mutation": "NULL"
   },
   {
     "gene": "POLG",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0541696,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "POLG2",
+    "func": "Replication & Transcription",
+    "sample": "mouse 21.3",
+    "value": 0.0965601,
     "mutation": "NULL"
   },
   {
     "gene": "POLRMT",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0451416,
     "mutation": "NULL"
   },
   {
     "gene": "PPIA",
     "func": "Apoptosis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0553122,
     "mutation": "NULL"
   },
   {
     "gene": "PPIF",
     "func": "Apoptosis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.301159,
     "mutation": "NULL"
   },
   {
     "gene": "PPOX",
     "func": "Heme Biosynthesis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.196753,
     "mutation": "NULL"
   },
   {
     "gene": "PRDX3",
     "func": "ROS defense",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0703417,
     "mutation": "NULL"
   },
   {
     "gene": "PTCD2",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.00574371,
     "mutation": "NULL"
   },
   {
     "gene": "PTCD3",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0895452,
     "mutation": "NULL"
   },
   {
     "gene": "PTPMT1",
     "func": "Cardiolipin biosynthesis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.00111844,
     "mutation": "NULL"
   },
   {
     "gene": "PUS1",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.143432,
     "mutation": "NULL"
   },
   {
     "gene": "PUS3",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.00425756,
     "mutation": "NULL"
   },
   {
     "gene": "QRSL1",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0212048,
     "mutation": "NULL"
   },
   {
     "gene": "QTRT1",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.20861,
     "mutation": "NULL"
   },
   {
     "gene": "QTRTD1",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.00264325,
     "mutation": "NULL"
   },
   {
     "gene": "RARS2",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.00221195,
     "mutation": "NULL"
   },
   {
     "gene": "RHOT1",
     "func": "Mitochondrial Dynamics",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.147765,
     "mutation": "NULL"
   },
   {
     "gene": "RHOT2",
     "func": "Mitochondrial Dynamics",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0865109,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "RMRP",
+    "func": "Replication & Transcription",
+    "sample": "mouse 21.3",
+    "value": -0.100715,
     "mutation": "NULL"
   },
   {
     "gene": "RNASEH1",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0926966,
     "mutation": "NULL"
   },
   {
     "gene": "RNASEL",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0612492,
     "mutation": "NULL"
   },
   {
     "gene": "RPUSD2",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0438627,
     "mutation": "NULL"
   },
   {
     "gene": "RPUSD4",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0972024,
     "mutation": "NULL"
   },
   {
     "gene": "RRM2B",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0442046,
     "mutation": "NULL"
   },
   {
     "gene": "SAMM50",
     "func": "Import & Sorting",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0285836,
     "mutation": "NULL"
   },
   {
     "gene": "SARS2",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0620939,
     "mutation": "NULL"
   },
   {
     "gene": "SCO1",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.00333256,
     "mutation": "NULL"
   },
   {
     "gene": "SCO2",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.074448,
     "mutation": "NULL"
   },
   {
     "gene": "SDHA",
     "func": "Tricarboxylic acid cycle",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.144922,
     "mutation": "NULL"
   },
   {
     "gene": "SDHAF1",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.128765,
     "mutation": "NULL"
   },
   {
     "gene": "SDHAF2",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0359719,
     "mutation": "NULL"
   },
   {
     "gene": "SDHB",
     "func": "Tricarboxylic acid cycle",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0181184,
     "mutation": "NULL"
   },
   {
     "gene": "SDHC",
     "func": "Tricarboxylic acid cycle",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0222373,
     "mutation": "NULL"
   },
   {
     "gene": "SDHD",
     "func": "Tricarboxylic acid cycle",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0688322,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "SELRC1",
+    "func": "Electron transport chain",
+    "sample": "mouse 21.3",
+    "value": 0.035953,
     "mutation": "NULL"
   },
   {
     "gene": "SH3GLB1",
     "func": "Mitochondrial Dynamics",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0461614,
     "mutation": "NULL"
   },
   {
     "gene": "SHC1",
     "func": "ROS defense",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0589388,
     "mutation": "NULL"
   },
   {
     "gene": "SIGMAR1",
     "func": "Calcium trafficking",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.206626,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "SLC24A6",
+    "func": "Calcium trafficking",
+    "sample": "mouse 21.3",
+    "value": 0.253723,
     "mutation": "NULL"
   },
   {
     "gene": "SLC25A1",
     "func": "ROS defense",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.023031,
     "mutation": "NULL"
   },
   {
     "gene": "SLC25A19",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0911299,
     "mutation": "NULL"
   },
   {
     "gene": "SLC25A20",
     "func": "Fatty acid beta-oxidation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.139438,
     "mutation": "NULL"
   },
   {
     "gene": "SLC25A28",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0171387,
     "mutation": "NULL"
   },
   {
     "gene": "SLC25A3",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.00459298,
     "mutation": "NULL"
   },
   {
     "gene": "SLC25A33",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0736925,
     "mutation": "NULL"
   },
   {
     "gene": "SLC25A37",
     "func": "Fe-S cluster biosynthesis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.460618,
     "mutation": "NULL"
   },
   {
     "gene": "SLC25A4",
     "func": "Apoptosis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.028958,
     "mutation": "NULL"
   },
   {
     "gene": "SLC25A5",
     "func": "Apoptosis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0420992,
     "mutation": "NULL"
   },
   {
     "gene": "SLC27A1",
     "func": "Fatty acid beta-oxidation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.553825,
     "mutation": "NULL"
   },
   {
     "gene": "SLC27A3",
     "func": "Fatty acid beta-oxidation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0914146,
     "mutation": "NULL"
   },
   {
     "gene": "SLC27A4",
     "func": "Fatty acid beta-oxidation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.121718,
-    "mutation": "NULL"
-  },
-  {
-    "gene": "SLC27A5",
-    "func": "Fatty acid beta-oxidation",
-    "sample": "mouse-21.3",
-    "value": 2.71969,
     "mutation": "NULL"
   },
   {
     "gene": "SLC27A6",
     "func": "Fatty acid beta-oxidation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.372751,
     "mutation": "NULL"
   },
   {
     "gene": "SLC29A1",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.245121,
     "mutation": "NULL"
   },
   {
     "gene": "SLC2A1",
     "func": "Glycolysis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.285448,
     "mutation": "NULL"
   },
   {
     "gene": "SLC2A3",
     "func": "Glycolysis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.582307,
-    "mutation": "NULL"
-  },
-  {
-    "gene": "SLC2A4",
-    "func": "Glycolysis",
-    "sample": "mouse-21.3",
-    "value": -0.805889,
     "mutation": "NULL"
   },
   {
     "gene": "SOD1",
     "func": "ROS defense",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.506209,
     "mutation": "NULL"
   },
   {
     "gene": "SOD2",
     "func": "ROS defense",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.036687,
     "mutation": "NULL"
   },
   {
     "gene": "SPG7",
     "func": "Mitochondrial Dynamics",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0373173,
     "mutation": "NULL"
   },
   {
     "gene": "SQSTM1",
     "func": "Mitochondrial Dynamics",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.265762,
     "mutation": "NULL"
   },
   {
     "gene": "SSBP1",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0152805,
     "mutation": "NULL"
   },
   {
     "gene": "STOML2",
     "func": "Mitochondrial Dynamics",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0350229,
     "mutation": "NULL"
   },
   {
     "gene": "SUCLA2",
     "func": "Tricarboxylic acid cycle",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.128544,
     "mutation": "NULL"
   },
   {
     "gene": "SUCLG1",
     "func": "Tricarboxylic acid cycle",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0657129,
     "mutation": "NULL"
   },
   {
     "gene": "SUCLG2",
     "func": "Tricarboxylic acid cycle",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.139762,
     "mutation": "NULL"
   },
   {
     "gene": "SURF1",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.00536607,
     "mutation": "NULL"
   },
   {
     "gene": "SYBU",
     "func": "Mitochondrial Dynamics",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.240904,
     "mutation": "NULL"
   },
   {
     "gene": "TACO1",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0177253,
     "mutation": "NULL"
   },
   {
     "gene": "TARS2",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0700267,
     "mutation": "NULL"
   },
   {
     "gene": "TAZ",
     "func": "Cardiolipin biosynthesis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.140554,
     "mutation": "NULL"
   },
   {
     "gene": "TCHP",
     "func": "Calcium trafficking",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0604049,
     "mutation": "NULL"
   },
   {
     "gene": "TERT",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.00271034,
     "mutation": "NULL"
   },
   {
     "gene": "TFAM",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.000571692,
     "mutation": "NULL"
   },
   {
     "gene": "TFB1M",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.603101,
     "mutation": "NULL"
   },
   {
     "gene": "TFB2M",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0327281,
     "mutation": "NULL"
   },
   {
     "gene": "TIMM10",
     "func": "Import & Sorting",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.214789,
     "mutation": "NULL"
   },
   {
     "gene": "TIMM13",
     "func": "Import & Sorting",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0816758,
     "mutation": "NULL"
   },
   {
     "gene": "TIMM17A",
     "func": "Import & Sorting",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.097662,
     "mutation": "NULL"
   },
   {
     "gene": "TIMM17B",
     "func": "Import & Sorting",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.00299613,
     "mutation": "NULL"
   },
   {
     "gene": "TIMM21",
     "func": "Import & Sorting",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.150535,
     "mutation": "NULL"
   },
   {
     "gene": "TIMM22",
     "func": "Import & Sorting",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.194265,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TIMM23",
+    "func": "Import & Sorting",
+    "sample": "mouse 21.3",
+    "value": 0.0535661,
     "mutation": "NULL"
   },
   {
     "gene": "TIMM44",
     "func": "Import & Sorting",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0741247,
     "mutation": "NULL"
   },
   {
     "gene": "TIMM50",
     "func": "Import & Sorting",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0386539,
     "mutation": "NULL"
   },
   {
     "gene": "TIMM8B",
     "func": "Import & Sorting",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.134083,
     "mutation": "NULL"
   },
   {
     "gene": "TIMM9",
     "func": "Import & Sorting",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0960417,
     "mutation": "NULL"
   },
   {
     "gene": "TK2",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.156282,
     "mutation": "NULL"
   },
   {
     "gene": "TMEM126B",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0995127,
     "mutation": "NULL"
   },
   {
     "gene": "TMEM70",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.286365,
     "mutation": "NULL"
   },
   {
     "gene": "TOMM20",
     "func": "Import & Sorting",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0772921,
     "mutation": "NULL"
   },
   {
     "gene": "TOMM22",
     "func": "Import & Sorting",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.426427,
     "mutation": "NULL"
   },
   {
     "gene": "TOMM40",
     "func": "Import & Sorting",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.14944,
     "mutation": "NULL"
   },
   {
     "gene": "TOMM40L",
     "func": "Import & Sorting",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.046024,
     "mutation": "NULL"
   },
   {
     "gene": "TOMM5",
     "func": "Import & Sorting",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.208885,
     "mutation": "NULL"
   },
   {
     "gene": "TOMM6",
     "func": "Import & Sorting",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.134756,
     "mutation": "NULL"
   },
   {
     "gene": "TOMM7",
     "func": "Import & Sorting",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.1052,
     "mutation": "NULL"
   },
   {
     "gene": "TOMM70A",
     "func": "Import & Sorting",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.00133884,
     "mutation": "NULL"
   },
   {
     "gene": "TOP1MT",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.281191,
     "mutation": "NULL"
   },
   {
     "gene": "TOP3A",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0592838,
     "mutation": "NULL"
   },
   {
     "gene": "TPI1",
     "func": "Glycolysis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.14944,
     "mutation": "NULL"
   },
   {
     "gene": "TRAK1",
     "func": "Mitochondrial Dynamics",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0629603,
     "mutation": "NULL"
   },
   {
     "gene": "TRAK2",
     "func": "Mitochondrial Dynamics",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0818923,
     "mutation": "NULL"
   },
   {
     "gene": "TRAP1",
     "func": "Mitochondrial Dynamics",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0413144,
     "mutation": "NULL"
   },
   {
     "gene": "TRIT1",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0632842,
     "mutation": "NULL"
   },
   {
     "gene": "TRMT1",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.11977,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TRMT10C",
+    "func": "Replication & Transcription",
+    "sample": "mouse 21.3",
+    "value": 0.0295061,
     "mutation": "NULL"
   },
   {
     "gene": "TRMT11",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0171916,
     "mutation": "NULL"
   },
   {
     "gene": "TRMT112",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0308046,
     "mutation": "NULL"
   },
   {
     "gene": "TRMT2B",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0869253,
     "mutation": "NULL"
   },
   {
     "gene": "TRMT5",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0361115,
     "mutation": "NULL"
   },
   {
     "gene": "TRMT6",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.000459403,
     "mutation": "NULL"
   },
   {
     "gene": "TRMT61B",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.13828,
     "mutation": "NULL"
   },
   {
     "gene": "TRMU",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.404998,
     "mutation": "NULL"
   },
   {
     "gene": "TRNT1",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0580923,
     "mutation": "NULL"
   },
   {
     "gene": "TRUB2",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0345155,
     "mutation": "NULL"
   },
   {
     "gene": "TSFM",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.206732,
     "mutation": "NULL"
   },
   {
     "gene": "TTC19",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.00619818,
     "mutation": "NULL"
   },
   {
     "gene": "TUFM",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.178504,
     "mutation": "NULL"
   },
   {
     "gene": "TXN2",
     "func": "ROS defense",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.257284,
     "mutation": "NULL"
   },
   {
     "gene": "TXNRD2",
     "func": "ROS defense",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.104293,
     "mutation": "NULL"
   },
   {
     "gene": "UNG",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.239497,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "UQCC",
+    "func": "Electron transport chain",
+    "sample": "mouse 21.3",
+    "value": -0.141744,
     "mutation": "NULL"
   },
   {
     "gene": "UQCR10",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.188759,
     "mutation": "NULL"
   },
   {
     "gene": "UQCR11",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.088336,
     "mutation": "NULL"
   },
   {
     "gene": "UQCRB",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.083947,
     "mutation": "NULL"
   },
   {
     "gene": "UQCRC1",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0464648,
     "mutation": "NULL"
   },
   {
     "gene": "UQCRC2",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0156998,
     "mutation": "NULL"
   },
   {
     "gene": "UQCRFS1",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0315686,
     "mutation": "NULL"
   },
   {
     "gene": "UQCRH",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.131849,
     "mutation": "NULL"
   },
   {
     "gene": "UQCRQ",
     "func": "Electron transport chain",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0729525,
     "mutation": "NULL"
   },
   {
     "gene": "UROD",
     "func": "Heme Biosynthesis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0834858,
     "mutation": "NULL"
   },
   {
     "gene": "UROS",
     "func": "Heme Biosynthesis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0763966,
     "mutation": "NULL"
   },
   {
     "gene": "VARS2",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0736699,
     "mutation": "NULL"
   },
   {
     "gene": "VDAC1",
     "func": "Apoptosis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.028052,
     "mutation": "NULL"
   },
   {
     "gene": "VDAC2",
     "func": "Apoptosis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.151923,
     "mutation": "NULL"
   },
   {
     "gene": "VDAC3",
     "func": "Apoptosis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0799773,
     "mutation": "NULL"
   },
   {
     "gene": "WARS2",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.0304752,
     "mutation": "NULL"
   },
   {
     "gene": "XIAP",
     "func": "Apoptosis",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.127788,
     "mutation": "NULL"
   },
   {
     "gene": "YARS2",
     "func": "Translation",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.042518,
     "mutation": "NULL"
   },
   {
     "gene": "YME1L1",
     "func": "Mitochondrial Dynamics",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": -0.0424094,
     "mutation": "NULL"
   },
   {
     "gene": "YRDC",
     "func": "Replication & Transcription",
-    "sample": "mouse-21.3",
+    "sample": "mouse 21.3",
     "value": 0.122712,
     "mutation": "NULL"
   }

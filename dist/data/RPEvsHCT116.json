@@ -1,4167 +1,3936 @@
 [
   {
-    "sample": "A0DV",
     "gene": "AARS2",
     "func": "Translation",
-    "value": -0.0991,
+    "sample": "HCT116WT",
+    "value": -0.399701,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "ABCB7",
     "func": "Fe-S cluster biosynthesis",
-    "value": -0.2706,
+    "sample": "HCT116WT",
+    "value": 0.03123,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "ACAA2",
     "func": "Fatty acid beta-oxidation",
-    "value": -0.0086,
+    "sample": "HCT116WT",
+    "value": -0.622444,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "ACAD10",
     "func": "Fatty acid beta-oxidation",
-    "value": -0.2869,
+    "sample": "HCT116WT",
+    "value": 0.41964,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "ACAD11",
-    "func": "Fatty acid beta-oxidation",
-    "value": -0.9249,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "ACAD8",
     "func": "Fatty acid beta-oxidation",
-    "value": -0.4976,
+    "sample": "HCT116WT",
+    "value": 0.1477,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "ACAD9",
     "func": "Electron transport chain",
-    "value": 0.0894,
+    "sample": "HCT116WT",
+    "value": -0.102188,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "ACADL",
-    "func": "Fatty acid beta-oxidation",
-    "value": -2.7246,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "ACADM",
     "func": "Fatty acid beta-oxidation",
-    "value": -0.7214,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 0.472611,
+    "mutation": "acid"
   },
   {
-    "sample": "A0DV",
-    "gene": "ACADSB",
-    "func": "Fatty acid beta-oxidation",
-    "value": -1.6598,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "ACADS",
     "func": "Fatty acid beta-oxidation",
-    "value": -0.0786,
+    "sample": "HCT116WT",
+    "value": 2.28166,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
+    "gene": "ACADSB",
+    "func": "Fatty acid beta-oxidation",
+    "sample": "HCT116WT",
+    "value": 0.051563,
+    "mutation": "NULL"
+  },
+  {
     "gene": "ACADVL",
     "func": "Fatty acid beta-oxidation",
-    "value": -0.5749,
+    "sample": "HCT116WT",
+    "value": -0.343844,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "ACO2",
     "func": "Tricarboxylic acid cycle",
-    "value": 0.399,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 0.152886,
+    "mutation": "chr22 41904044 C>T synonymous_variant,chr22 41924493 G>A missense_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "ACSBG1",
     "func": "Fatty acid beta-oxidation",
-    "value": -0.928,
+    "sample": "HCT116WT",
+    "value": 2.10577,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "ACSBG2",
-    "func": "Fatty acid beta-oxidation",
-    "value": 0.5421,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "ACSL1",
     "func": "Fatty acid beta-oxidation",
-    "value": -0.8588,
+    "sample": "HCT116WT",
+    "value": -0.664386,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "ACSL3",
     "func": "Fatty acid beta-oxidation",
-    "value": -1.2053,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 0.518555,
+    "mutation": "chr2 223806439 T>C 3_prime_UTR_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "ACSL4",
     "func": "Fatty acid beta-oxidation",
-    "value": -0.9376,
+    "sample": "HCT116WT",
+    "value": -0.933553,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "ACSL5",
     "func": "Fatty acid beta-oxidation",
-    "value": -0.6676,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 7.00074,
+    "mutation": "chr10 114154815 C>T synonymous_variant,chr10 114169276 A>G missense_variant,chr10 114176722 A>G missense_variant,chr10 114185182 T>C synonymous_variant,chr10 114187827 T>A 3_prime_UTR_variant"
   },
   {
-    "sample": "A0DV",
-    "gene": "ACSL6",
-    "func": "Fatty acid beta-oxidation",
-    "value": -0.7946,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
-    "gene": "ACSM1",
-    "func": "Fatty acid beta-oxidation",
-    "value": -7.1668,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
-    "gene": "ACSM2A",
-    "func": "Fatty acid beta-oxidation",
-    "value": 0.9205,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
-    "gene": "ACSM2B",
-    "func": "Fatty acid beta-oxidation",
-    "value": 0,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "ACSM3",
     "func": "Fatty acid beta-oxidation",
-    "value": -2.8093,
+    "sample": "HCT116WT",
+    "value": 3.92958,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "ACSM4",
-    "func": "Fatty acid beta-oxidation",
-    "value": 0,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "ACSM5",
     "func": "Fatty acid beta-oxidation",
-    "value": -0.0092,
+    "sample": "HCT116WT",
+    "value": -7.28222,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "ACSS1",
-    "func": "Fatty acid beta-oxidation",
-    "value": 0.5377,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "ACSS2",
     "func": "Fatty acid beta-oxidation",
-    "value": -0.5532,
+    "sample": "HCT116WT",
+    "value": 0.104549,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "ACSS3",
-    "func": "Fatty acid beta-oxidation",
-    "value": -1.1769,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "AFG3L2",
     "func": "Mitochondrial Dynamics",
-    "value": -0.688,
+    "sample": "HCT116WT",
+    "value": 0.0452142,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "AIFM1",
     "func": "Apoptosis",
-    "value": 0.0919,
+    "sample": "HCT116WT",
+    "value": 0.206898,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "AK3",
     "func": "Replication & Transcription",
-    "value": -0.331,
+    "sample": "HCT116WT",
+    "value": -0.77464,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
+    "gene": "AK4",
+    "func": "Replication & Transcription",
+    "sample": "HCT116WT",
+    "value": 0.467488,
+    "mutation": "chr1 65695853 A>G 3_prime_UTR_variant"
+  },
+  {
     "gene": "ALAD",
     "func": "Heme Biosynthesis",
-    "value": -0.1515,
+    "sample": "HCT116WT",
+    "value": -1.59658,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "ALAS1",
     "func": "Heme Biosynthesis",
-    "value": 0.575,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 1.19724,
+    "mutation": "chr3 52238726 T>C missense_variant"
   },
   {
-    "sample": "A0DV",
-    "gene": "ALAS2",
-    "func": "Heme Biosynthesis",
-    "value": 1.3691,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "ALDOA",
     "func": "Glycolysis",
-    "value": 0.9316,
+    "sample": "HCT116WT",
+    "value": -1.00327,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "ALDOB",
-    "func": "Glycolysis",
-    "value": -0.279,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "ALDOC",
     "func": "Glycolysis",
-    "value": -1.2896,
+    "sample": "HCT116WT",
+    "value": 6.99847,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "AMBRA1",
     "func": "Mitochondrial Dynamics",
-    "value": -0.1745,
+    "sample": "HCT116WT",
+    "value": -0.172246,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "ANP32A",
     "func": "Apoptosis",
-    "value": 0.0473,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 0.701529,
+    "mutation": "chr15 69071514 GA>G 3_prime_UTR_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "APAF1",
     "func": "Apoptosis",
-    "value": -0.2575,
+    "sample": "HCT116WT",
+    "value": 0.0681245,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "APEX1",
     "func": "Replication & Transcription",
-    "value": 0.1065,
+    "sample": "HCT116WT",
+    "value": 0.510724,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "APEX2",
     "func": "Replication & Transcription",
-    "value": 0.6215,
+    "sample": "HCT116WT",
+    "value": 0.667787,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "ARG1",
-    "func": "Urea Cycle",
-    "value": -0.6203,
+    "gene": "APOPT1",
+    "func": "Apoptosis",
+    "sample": "HCT116WT",
+    "value": -0.469295,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "ARG2",
     "func": "Urea Cycle",
-    "value": -1.1965,
+    "sample": "HCT116WT",
+    "value": 0.279414,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "ASL",
     "func": "Urea Cycle",
-    "value": 0.3669,
+    "sample": "HCT116WT",
+    "value": 0.0986913,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "ASS1",
     "func": "Urea Cycle",
-    "value": 0.4564,
+    "sample": "HCT116WT",
+    "value": 8.96249,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "ATAD3A",
     "func": "Translation",
-    "value": 0.018,
+    "sample": "HCT116WT",
+    "value": 0.577007,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "ATAD3B",
     "func": "Translation",
-    "value": -1.9472,
+    "sample": "HCT116WT",
+    "value": 0.42743,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "ATP5A1",
     "func": "Electron transport chain",
-    "value": -0.0292,
+    "sample": "HCT116WT",
+    "value": 0.139638,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "ATP5B",
     "func": "Electron transport chain",
-    "value": 0.0421,
+    "sample": "HCT116WT",
+    "value": 0.219903,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "ATP5C1",
     "func": "Electron transport chain",
-    "value": 0.2253,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": -0.337873,
+    "mutation": "chr10 7849688 T>C 3_prime_UTR_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "ATP5D",
     "func": "Electron transport chain",
-    "value": 0.996,
+    "sample": "HCT116WT",
+    "value": 0.783938,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "ATP5E",
-    "func": "Electron transport chain",
-    "value": 0.736,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "ATP5F1",
     "func": "Electron transport chain",
-    "value": 0.3377,
+    "sample": "HCT116WT",
+    "value": 0.167342,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "ATP5G1",
     "func": "Electron transport chain",
-    "value": 0.5001,
+    "sample": "HCT116WT",
+    "value": 0.472144,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "ATP5G2",
     "func": "Electron transport chain",
-    "value": 0.3371,
+    "sample": "HCT116WT",
+    "value": -0.745276,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "ATP5G3",
     "func": "Electron transport chain",
-    "value": 0.0685,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 0.179463,
+    "mutation": "chr2 176043097 A>G synonymous_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "ATP5H",
     "func": "Electron transport chain",
-    "value": 0.5965,
+    "sample": "HCT116WT",
+    "value": 0.342029,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "ATP5I",
     "func": "Electron transport chain",
-    "value": 0.424,
+    "sample": "HCT116WT",
+    "value": -0.408373,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "ATP5J2",
-    "func": "Electron transport chain",
-    "value": -0.0753,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "ATP5J",
     "func": "Electron transport chain",
-    "value": 0.4304,
+    "sample": "HCT116WT",
+    "value": -0.314451,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "ATP5L",
     "func": "Electron transport chain",
-    "value": 0.3982,
+    "sample": "HCT116WT",
+    "value": -0.281716,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "ATP5O",
     "func": "Electron transport chain",
-    "value": 0.2841,
+    "sample": "HCT116WT",
+    "value": -0.394027,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "ATPAF1",
     "func": "Electron transport chain",
-    "value": 0.2446,
+    "sample": "HCT116WT",
+    "value": -0.0702617,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "ATPAF2",
     "func": "Electron transport chain",
-    "value": 0.4247,
+    "sample": "HCT116WT",
+    "value": 0.323764,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "ATPIF1",
     "func": "Electron transport chain",
-    "value": 0.5113,
+    "sample": "HCT116WT",
+    "value": -0.037813,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "BAD",
     "func": "Apoptosis",
-    "value": 0.9678,
+    "sample": "HCT116WT",
+    "value": -0.89691,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "BAK1",
     "func": "Apoptosis",
-    "value": 0.5404,
+    "sample": "HCT116WT",
+    "value": -0.603457,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "BAX",
     "func": "Apoptosis",
-    "value": 0.957,
+    "sample": "HCT116WT",
+    "value": -0.72577,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "BBC3",
     "func": "Apoptosis",
-    "value": 1.0415,
+    "sample": "HCT116WT",
+    "value": 2.13613,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "BCKDHA",
     "func": "ROS defense",
-    "value": 0.3836,
+    "sample": "HCT116WT",
+    "value": -0.359157,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "BCKDHB",
     "func": "ROS defense",
-    "value": -0.8531,
+    "sample": "HCT116WT",
+    "value": -0.978084,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "BCL2L11",
-    "func": "Apoptosis",
-    "value": -0.1098,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
-    "gene": "BCL2L1",
-    "func": "Apoptosis",
-    "value": 0.109,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "BCL2",
     "func": "Apoptosis",
-    "value": -0.7129,
+    "sample": "HCT116WT",
+    "value": -0.614138,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
+    "gene": "BCL2L1",
+    "func": "Apoptosis",
+    "sample": "HCT116WT",
+    "value": 0.353098,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "BCL2L11",
+    "func": "Apoptosis",
+    "sample": "HCT116WT",
+    "value": 0.948392,
+    "mutation": "NULL"
+  },
+  {
     "gene": "BCS1L",
     "func": "Electron transport chain",
-    "value": -0.2644,
+    "sample": "HCT116WT",
+    "value": 0.0321184,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "BECN1",
     "func": "Mitochondrial Dynamics",
-    "value": -0.022,
+    "sample": "HCT116WT",
+    "value": -0.385148,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "BID",
     "func": "Apoptosis",
-    "value": 0.2209,
+    "sample": "HCT116WT",
+    "value": 0.017851,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "BIK",
     "func": "Apoptosis",
-    "value": 0.5614,
+    "sample": "HCT116WT",
+    "value": 6.89235,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "BNIP3L",
-    "func": "Mitochondrial Dynamics",
-    "value": -0.2904,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "BNIP3",
     "func": "Mitochondrial Dynamics",
-    "value": -0.4602,
+    "sample": "HCT116WT",
+    "value": -2.80611,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
+    "gene": "BNIP3L",
+    "func": "Mitochondrial Dynamics",
+    "sample": "HCT116WT",
+    "value": -1.78574,
+    "mutation": "NULL"
+  },
+  {
     "gene": "BOLA3",
     "func": "Fe-S cluster biosynthesis",
-    "value": -0.1481,
+    "sample": "HCT116WT",
+    "value": 0.329073,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "BRP44L",
-    "func": "Pyruvate transfer",
-    "value": -0.3329,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "BRP44",
     "func": "Pyruvate transfer",
-    "value": 0.0113,
+    "sample": "HCT116WT",
+    "value": -0.678903,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "C10orf129",
-    "func": "Fatty acid beta-oxidation",
-    "value": -0.7946,
+    "gene": "BRP44L",
+    "func": "Pyruvate transfer",
+    "sample": "HCT116WT",
+    "value": -0.125149,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "C10orf2",
     "func": "Replication & Transcription",
-    "value": -1.4022,
+    "sample": "HCT116WT",
+    "value": 1.31619,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "C1orf31",
     "func": "Electron transport chain",
-    "value": 0.5449,
+    "sample": "HCT116WT",
+    "value": 0.0512194,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "C20orf7",
     "func": "Electron transport chain",
-    "value": -0.6344,
+    "sample": "HCT116WT",
+    "value": 0.489749,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "C22orf32",
     "func": "Calcium trafficking",
-    "value": -0.0358,
+    "sample": "HCT116WT",
+    "value": -0.370786,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "C2orf56",
     "func": "Electron transport chain",
-    "value": -0.5677,
+    "sample": "HCT116WT",
+    "value": -0.0684941,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "C7orf44",
     "func": "Electron transport chain",
-    "value": -0.6255,
+    "sample": "HCT116WT",
+    "value": -0.161919,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "C8orf38",
     "func": "Electron transport chain",
-    "value": -0.0645,
+    "sample": "HCT116WT",
+    "value": 0.388314,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "CARS2",
     "func": "Translation",
-    "value": 0.2249,
+    "sample": "HCT116WT",
+    "value": -0.928669,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "CASP3",
     "func": "Apoptosis",
-    "value": 0.8564,
+    "sample": "HCT116WT",
+    "value": -1.43949,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "CASP7",
     "func": "Apoptosis",
-    "value": 0.4679,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 0.658366,
+    "mutation": "chr10 115489152 C>G missense_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "CASP9",
     "func": "Apoptosis",
-    "value": 0.2032,
+    "sample": "HCT116WT",
+    "value": 0.278183,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "CCDC109B",
     "func": "Calcium trafficking",
-    "value": 1.5588,
+    "sample": "HCT116WT",
+    "value": -0.929747,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "CCDC56",
     "func": "Electron transport chain",
-    "value": 0.6131,
+    "sample": "HCT116WT",
+    "value": -0.598803,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "CCDC90A",
     "func": "Calcium trafficking",
-    "value": 0.0348,
+    "sample": "HCT116WT",
+    "value": 0.450096,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "CD36",
     "func": "Fatty acid beta-oxidation",
-    "value": -0.3841,
+    "sample": "HCT116WT",
+    "value": -4.24608,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "CDK1",
     "func": "Apoptosis",
-    "value": 2.0904,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 0.882961,
+    "mutation": "chr10 62553763 A>G 3_prime_UTR_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "CDK5RAP1",
     "func": "Replication & Transcription",
-    "value": -0.3075,
+    "sample": "HCT116WT",
+    "value": 0.904711,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "CDKAL1",
     "func": "Replication & Transcription",
-    "value": -0.3166,
+    "sample": "HCT116WT",
+    "value": 0.353997,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "CDS1",
     "func": "Cardiolipin biosynthesis",
-    "value": -0.5099,
+    "sample": "HCT116WT",
+    "value": 3.87095,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "CHCHD4",
     "func": "Import & Sorting",
-    "value": -0.2059,
+    "sample": "HCT116WT",
+    "value": 0.600029,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "CHCHD8",
     "func": "Electron transport chain",
-    "value": 0.2555,
+    "sample": "HCT116WT",
+    "value": -0.0706818,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "CIAO1",
     "func": "Fe-S cluster biosynthesis",
-    "value": -0.0538,
+    "sample": "HCT116WT",
+    "value": 0.0700727,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "CIAPIN1",
     "func": "Fe-S cluster biosynthesis",
-    "value": -0.095,
+    "sample": "HCT116WT",
+    "value": 0.204496,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "CLPP",
     "func": "Translation",
-    "value": 0.6037,
+    "sample": "HCT116WT",
+    "value": 0.0581639,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "CLPX",
     "func": "Translation",
-    "value": -0.6914,
+    "sample": "HCT116WT",
+    "value": 0.261322,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "CMPK2",
     "func": "Replication & Transcription",
-    "value": 0.9851,
+    "sample": "HCT116WT",
+    "value": 5.80993,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
+    "gene": "COA5",
+    "func": "Electron transport chain",
+    "sample": "HCT116WT",
+    "value": 0.0382366,
+    "mutation": "NULL"
+  },
+  {
     "gene": "COX10",
     "func": "Electron transport chain",
-    "value": -0.2122,
+    "sample": "HCT116WT",
+    "value": 0.888705,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "COX11",
     "func": "Electron transport chain",
-    "value": -0.5303,
+    "sample": "HCT116WT",
+    "value": 0.147857,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
+    "gene": "COX14",
+    "func": "Electron transport chain",
+    "sample": "HCT116WT",
+    "value": -0.487287,
+    "mutation": "NULL"
+  },
+  {
     "gene": "COX15",
     "func": "Electron transport chain",
-    "value": -0.1288,
+    "sample": "HCT116WT",
+    "value": 0.374314,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "COX17",
     "func": "Electron transport chain",
-    "value": 0.131,
+    "sample": "HCT116WT",
+    "value": 0.932892,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "COX18",
     "func": "Electron transport chain",
-    "value": -0.6353,
+    "sample": "HCT116WT",
+    "value": -0.349661,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "COX19",
     "func": "Electron transport chain",
-    "value": -0.6334,
+    "sample": "HCT116WT",
+    "value": 0.232149,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
+    "gene": "COX20",
+    "func": "Electron transport chain",
+    "sample": "HCT116WT",
+    "value": -0.282595,
+    "mutation": "NULL"
+  },
+  {
     "gene": "COX4I1",
     "func": "Electron transport chain",
-    "value": 0.4669,
+    "sample": "HCT116WT",
+    "value": 0.360628,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "COX4I2",
-    "func": "Electron transport chain",
-    "value": 2.407,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "COX5A",
     "func": "Electron transport chain",
-    "value": 0.4795,
+    "sample": "HCT116WT",
+    "value": 0.4395,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "COX5B",
     "func": "Electron transport chain",
-    "value": 0.4184,
+    "sample": "HCT116WT",
+    "value": 0.160449,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "COX6A1",
     "func": "Electron transport chain",
-    "value": 0.6516,
+    "sample": "HCT116WT",
+    "value": 0.0245028,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "COX6A2",
-    "func": "Electron transport chain",
-    "value": 5.0505,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "COX6B1",
     "func": "Electron transport chain",
-    "value": 0.8234,
+    "sample": "HCT116WT",
+    "value": 0.0647602,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "COX6B2",
     "func": "Electron transport chain",
-    "value": -2.6341,
+    "sample": "HCT116WT",
+    "value": 1.57497,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "COX6C",
     "func": "Electron transport chain",
-    "value": 0.3954,
+    "sample": "HCT116WT",
+    "value": 0.46539,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "COX7A1",
-    "func": "Electron transport chain",
-    "value": 1.4065,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "COX7A2",
     "func": "Electron transport chain",
-    "value": 0.571,
+    "sample": "HCT116WT",
+    "value": -0.0451381,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "COX7B2",
-    "func": "Electron transport chain",
-    "value": 0,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "COX7B",
     "func": "Electron transport chain",
-    "value": 0.4448,
+    "sample": "HCT116WT",
+    "value": -0.103011,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "COX7C",
     "func": "Electron transport chain",
-    "value": 0.2972,
+    "sample": "HCT116WT",
+    "value": -0.0200248,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "COX8A",
     "func": "Electron transport chain",
-    "value": 0.6642,
+    "sample": "HCT116WT",
+    "value": -0.0862329,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "CPOX",
     "func": "Heme Biosynthesis",
-    "value": -0.4605,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 3.33066,
+    "mutation": "chr3 98298600 C>T 3_prime_UTR_variant,chr3 98299365 T>G 3_prime_UTR_variant,chr3 98304467 T>C synonymous_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "CPS1",
     "func": "Urea Cycle",
-    "value": -1.5689,
+    "sample": "HCT116WT",
+    "value": 0.457439,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "CPT1A",
     "func": "Fatty acid beta-oxidation",
-    "value": -0.792,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 1.04597,
+    "mutation": "chr11 68524053 G>A 3_prime_UTR_variant,chr11 68524076 C>T 3_prime_UTR_variant,chr11 68524315 AG>A 3_prime_UTR_variant,chr11 68549340 A>G synonymous_variant"
   },
   {
-    "sample": "A0DV",
-    "gene": "CPT1B",
-    "func": "Fatty acid beta-oxidation",
-    "value": -1.7076,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "CPT1C",
     "func": "Fatty acid beta-oxidation",
-    "value": 1.3097,
+    "sample": "HCT116WT",
+    "value": -0.129766,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "CPT2",
     "func": "Fatty acid beta-oxidation",
-    "value": 0.1368,
+    "sample": "HCT116WT",
+    "value": -0.0470266,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "CRAT",
     "func": "Fatty acid beta-oxidation",
-    "value": 1.6777,
+    "sample": "HCT116WT",
+    "value": -2.03025,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "CREB1",
     "func": "Replication & Transcription",
-    "value": -0.5811,
+    "sample": "HCT116WT",
+    "value": -0.644737,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "CRLS1",
     "func": "Cardiolipin biosynthesis",
-    "value": -0.1356,
+    "sample": "HCT116WT",
+    "value": -0.139896,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "CS",
     "func": "Tricarboxylic acid cycle",
-    "value": 0.1087,
+    "sample": "HCT116WT",
+    "value": -0.131748,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "CYC1",
     "func": "Electron transport chain",
-    "value": 0.4248,
+    "sample": "HCT116WT",
+    "value": 1.32847,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "CYCS",
     "func": "Apoptosis",
-    "value": -0.8859,
+    "sample": "HCT116WT",
+    "value": 0.791707,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "DAP3",
     "func": "Translation",
-    "value": 0.9165,
+    "sample": "HCT116WT",
+    "value": 0.384083,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "DARS2",
     "func": "Translation",
-    "value": 0.7006,
+    "sample": "HCT116WT",
+    "value": 0.115248,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "DDX28",
     "func": "Translation",
-    "value": -0.4363,
+    "sample": "HCT116WT",
+    "value": 0.503955,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "DECR1",
     "func": "Fatty acid beta-oxidation",
-    "value": 0.0637,
+    "sample": "HCT116WT",
+    "value": -0.755066,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "DHX30",
     "func": "Translation",
-    "value": -0.0855,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 0.714518,
+    "mutation": "chr3 47866717 G>A intron_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "DIABLO",
     "func": "Apoptosis",
-    "value": 0.0861,
+    "sample": "HCT116WT",
+    "value": -0.210861,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "DLAT",
     "func": "Formation of Acetyl CoA",
-    "value": -0.3432,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 1.00276,
+    "mutation": "chr11 111899615 G>A synonymous_variant,chr11 111916647 G>A missense_variant,chr11 111933678 A>G 3_prime_UTR_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "DLD",
     "func": "Tricarboxylic acid cycle",
-    "value": -0.3199,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 0.0189444,
+    "mutation": "chr7 107559911 G>A 3_prime_UTR_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "DLST",
     "func": "Tricarboxylic acid cycle",
-    "value": -0.0992,
+    "sample": "HCT116WT",
+    "value": -0.36629,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "DNAJC19",
     "func": "Import & Sorting",
-    "value": -0.2444,
+    "sample": "HCT116WT",
+    "value": 0.0113182,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "DNM1L",
-    "func": "Mitochondrial Dynamics",
-    "value": -0.5487,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "DNM1",
     "func": "Apoptosis",
-    "value": 1.9684,
+    "sample": "HCT116WT",
+    "value": -2.14489,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
+    "gene": "DNM1L",
+    "func": "Mitochondrial Dynamics",
+    "sample": "HCT116WT",
+    "value": -0.13778,
+    "mutation": "NULL"
+  },
+  {
     "gene": "DUS2L",
     "func": "Replication & Transcription",
-    "value": 0.0435,
+    "sample": "HCT116WT",
+    "value": 0.021814,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "DYNLL1",
     "func": "Mitochondrial Dynamics",
-    "value": 0.6509,
+    "sample": "HCT116WT",
+    "value": -0.837677,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "EARS2",
     "func": "Translation",
-    "value": 0.3784,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 0.586562,
+    "mutation": "chr16 23535680 A>C 3_prime_UTR_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "ECHS1",
     "func": "Fatty acid beta-oxidation",
-    "value": 0.6424,
+    "sample": "HCT116WT",
+    "value": -1.31191,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "ECSIT",
-    "func": "Electron transport chain",
-    "value": 0.2153,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "EFHA1",
     "func": "Calcium trafficking",
-    "value": -0.4793,
+    "sample": "HCT116WT",
+    "value": 0.192499,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "EFHA2",
     "func": "Calcium trafficking",
-    "value": -1.667,
+    "sample": "HCT116WT",
+    "value": -9.57398,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "EIF3M",
     "func": "Apoptosis",
-    "value": -0.1885,
+    "sample": "HCT116WT",
+    "value": 0.252508,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "ELAC2",
     "func": "Replication & Transcription",
-    "value": 0.1057,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 0.634651,
+    "mutation": "chr17 12895815 C>T 3_prime_UTR_variant,chr17 12895929 G>A 3_prime_UTR_variant,chr17 12895984 G>C 3_prime_UTR_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "ENDOG",
     "func": "Replication & Transcription",
-    "value": 0.6759,
+    "sample": "HCT116WT",
+    "value": -0.190722,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "ENO1",
     "func": "Glycolysis",
-    "value": -0.1552,
+    "sample": "HCT116WT",
+    "value": -0.394657,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "ENO2",
     "func": "Glycolysis",
-    "value": -0.2537,
+    "sample": "HCT116WT",
+    "value": -1.10828,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "ENO3",
     "func": "Glycolysis",
-    "value": 2.7694,
+    "sample": "HCT116WT",
+    "value": 1.82482,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "FABP12",
-    "func": "Fatty acid beta-oxidation",
-    "value": 0,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
-    "gene": "FABP1",
-    "func": "Fatty acid beta-oxidation",
-    "value": -0.4132,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
-    "gene": "FABP2",
-    "func": "Fatty acid beta-oxidation",
-    "value": 0.3758,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "FABP3",
     "func": "Fatty acid beta-oxidation",
-    "value": -0.1523,
+    "sample": "HCT116WT",
+    "value": -1.12837,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "FABP4",
-    "func": "Fatty acid beta-oxidation",
-    "value": 0.3553,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "FABP5",
     "func": "Fatty acid beta-oxidation",
-    "value": 1.4275,
+    "sample": "HCT116WT",
+    "value": 1.64848,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "FABP6",
     "func": "Fatty acid beta-oxidation",
-    "value": 0,
+    "sample": "HCT116WT",
+    "value": 3.97437,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "FABP7",
-    "func": "Fatty acid beta-oxidation",
-    "value": -3.857,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
-    "gene": "FABP9",
-    "func": "Fatty acid beta-oxidation",
-    "value": 0.6737,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "FAM96A",
     "func": "Fe-S cluster biosynthesis",
-    "value": 0.3121,
+    "sample": "HCT116WT",
+    "value": 0.54148,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "FAM96B",
     "func": "Fe-S cluster biosynthesis",
-    "value": 0.3774,
+    "sample": "HCT116WT",
+    "value": 0.118065,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "FARS2",
     "func": "Translation",
-    "value": 0.1055,
+    "sample": "HCT116WT",
+    "value": -1.04512,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "FDX1L",
-    "func": "Fe-S cluster biosynthesis",
-    "value": 0.4043,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "FDX1",
     "func": "Fe-S cluster biosynthesis",
-    "value": -0.7588,
+    "sample": "HCT116WT",
+    "value": 0.0921946,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
+    "gene": "FDX1L",
+    "func": "Fe-S cluster biosynthesis",
+    "sample": "HCT116WT",
+    "value": -0.433441,
+    "mutation": "NULL"
+  },
+  {
     "gene": "FDXR",
     "func": "Fe-S cluster biosynthesis",
-    "value": 0.7741,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 2.08788,
+    "mutation": "chr17 72862650 C>T missense_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "FECH",
     "func": "Heme Biosynthesis",
-    "value": -0.1214,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 0.0764394,
+    "mutation": "chr18 55226383 G>C synonymous_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "FH",
     "func": "Tricarboxylic acid cycle",
-    "value": 0.5229,
+    "sample": "HCT116WT",
+    "value": -0.581334,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "FIS1",
     "func": "Mitochondrial Dynamics",
-    "value": 0.8112,
+    "sample": "HCT116WT",
+    "value": -0.872662,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "FOXRED1",
     "func": "Electron transport chain",
-    "value": 0.1155,
+    "sample": "HCT116WT",
+    "value": 0.693145,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "FTMT",
-    "func": "Fe-S cluster biosynthesis",
-    "value": 0,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "FXN",
     "func": "Fe-S cluster biosynthesis",
-    "value": -0.5557,
+    "sample": "HCT116WT",
+    "value": 0.821094,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "GABARAP",
     "func": "Mitochondrial Dynamics",
-    "value": 0.5557,
+    "sample": "HCT116WT",
+    "value": -0.864412,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "GAPDHS",
-    "func": "Glycolysis",
-    "value": -1.8155,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "GAPDH",
     "func": "Glycolysis",
-    "value": 0.7986,
+    "sample": "HCT116WT",
+    "value": -0.895573,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
+    "gene": "GAPDHS",
+    "func": "Glycolysis",
+    "sample": "HCT116WT",
+    "value": 1.48553,
+    "mutation": "NULL"
+  },
+  {
     "gene": "GARS",
     "func": "Translation",
-    "value": 0.284,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": -0.647748,
+    "mutation": "chr7 30634630 G>C synonymous_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "GATC",
     "func": "Translation",
-    "value": -0.4301,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 0.0304398,
+    "mutation": "chr12 120901045 G>A 3_prime_UTR_variant"
   },
   {
-    "sample": "A0DV",
-    "gene": "GCK",
-    "func": "Glycolysis",
-    "value": 0.2726,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "GCLC",
     "func": "ROS defense",
-    "value": -0.5714,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 1.40959,
+    "mutation": "chr6 53363452 A>G 3_prime_UTR_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "GCLM",
     "func": "ROS defense",
-    "value": -1.373,
+    "sample": "HCT116WT",
+    "value": -0.286939,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "GDAP1",
     "func": "Mitochondrial Dynamics",
-    "value": -1.3712,
+    "sample": "HCT116WT",
+    "value": 1.30452,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "GFER",
     "func": "Fe-S cluster biosynthesis",
-    "value": 0.9932,
+    "sample": "HCT116WT",
+    "value": 0.259082,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "GFM1",
     "func": "Translation",
-    "value": -0.2168,
+    "sample": "HCT116WT",
+    "value": -0.0351528,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "GFM2",
     "func": "Translation",
-    "value": -0.3496,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": -0.0286938,
+    "mutation": "chr5 74037386 T>A missense_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "GLRX2",
     "func": "ROS defense",
-    "value": 0.3201,
+    "sample": "HCT116WT",
+    "value": 0.3723,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "GLRX5",
     "func": "Fe-S cluster biosynthesis",
-    "value": 0.2972,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 0.58736,
+    "mutation": "chr14 96001572 TGAA>T inframe_deletion,chr14 96010866 A>G 3_prime_UTR_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "GOT2",
     "func": "Fatty acid beta-oxidation",
-    "value": -0.2392,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": -0.179894,
+    "mutation": "chr16 58741367 A>G 3_prime_UTR_variant,chr16 58743454 A>C missense_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "GPI",
     "func": "Glycolysis",
-    "value": 1.2343,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 0.684264,
+    "mutation": "chr19 34884184 C>A missense_variant,chr19 34891482 C>G 3_prime_UTR_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "GPX1",
     "func": "ROS defense",
-    "value": 1.2813,
+    "sample": "HCT116WT",
+    "value": -0.194439,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "GPX4",
     "func": "ROS defense",
-    "value": 0.9563,
+    "sample": "HCT116WT",
+    "value": -0.373168,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "GRPEL1",
     "func": "Fe-S cluster biosynthesis",
-    "value": -0.3026,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 1.03219,
+    "mutation": "chr4 7062839 G>T missense_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "GRPEL2",
     "func": "Fe-S cluster biosynthesis",
-    "value": 0.0893,
+    "sample": "HCT116WT",
+    "value": 1.13199,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "GSR",
     "func": "ROS defense",
-    "value": 1.4126,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 1.68781,
+    "mutation": "chr8 30535660 C>A 3_prime_UTR_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "GSS",
     "func": "ROS defense",
-    "value": 0.2791,
+    "sample": "HCT116WT",
+    "value": 0.540958,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "GSTA1",
     "func": "ROS defense",
-    "value": -6.3044,
+    "sample": "HCT116WT",
+    "value": 4.42031,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "GSTA2",
-    "func": "ROS defense",
-    "value": -0.0756,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "GSTA4",
     "func": "ROS defense",
-    "value": -0.0259,
+    "sample": "HCT116WT",
+    "value": -3.18736,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "GSTP1",
     "func": "ROS defense",
-    "value": 0.3031,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 0.169681,
+    "mutation": "chr11 67354038 G>T missense_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "GTPBP3",
     "func": "Replication & Transcription",
-    "value": 0.2515,
+    "sample": "HCT116WT",
+    "value": 1.59893,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "HADHA",
-    "func": "Fatty acid beta-oxidation",
-    "value": 0.0265,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
-    "gene": "HADHB",
-    "func": "Fatty acid beta-oxidation",
-    "value": 0.1415,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "HADH",
     "func": "Fatty acid beta-oxidation",
-    "value": -0.6093,
+    "sample": "HCT116WT",
+    "value": -0.244802,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
+    "gene": "HADHA",
+    "func": "Fatty acid beta-oxidation",
+    "sample": "HCT116WT",
+    "value": -0.425307,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "HADHB",
+    "func": "Fatty acid beta-oxidation",
+    "sample": "HCT116WT",
+    "value": -0.611406,
+    "mutation": "chr2 26508387 G>A missense_variant"
+  },
+  {
     "gene": "HARS2",
     "func": "Translation",
-    "value": -0.0203,
+    "sample": "HCT116WT",
+    "value": 1.2093,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "HCCS",
     "func": "Electron transport chain",
-    "value": -0.4065,
+    "sample": "HCT116WT",
+    "value": -0.714876,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "HK1",
     "func": "Glycolysis",
-    "value": 0.2771,
+    "sample": "HCT116WT",
+    "value": -1.85348,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "HK2",
     "func": "Glycolysis",
-    "value": 1.0343,
+    "sample": "HCT116WT",
+    "value": -0.813155,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "HK3",
-    "func": "Glycolysis",
-    "value": 2.3635,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "HMBS",
     "func": "Heme Biosynthesis",
-    "value": 0.4314,
+    "sample": "HCT116WT",
+    "value": 0.946172,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "HSCB",
     "func": "Fe-S cluster biosynthesis",
-    "value": -0.0513,
+    "sample": "HCT116WT",
+    "value": -0.271024,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "HSD17B10",
     "func": "Replication & Transcription",
-    "value": 0.5762,
+    "sample": "HCT116WT",
+    "value": 0.398692,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "HSPA9",
     "func": "Import & Sorting",
-    "value": -0.5548,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 0.645618,
+    "mutation": "chr5 137892170 G>A synonymous_variant,chr5 137902339 T>C synonymous_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "HTRA2",
     "func": "Apoptosis",
-    "value": 0.437,
+    "sample": "HCT116WT",
+    "value": -0.571125,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "IARS2",
     "func": "Translation",
-    "value": 0.4001,
+    "sample": "HCT116WT",
+    "value": 0.0281494,
+    "mutation": "chr1 220315222 T>C missense_variant"
+  },
+  {
+    "gene": "IBA57",
+    "func": "Fe-S cluster biosynthesis",
+    "sample": "HCT116WT",
+    "value": 0.85258,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "IDH1",
     "func": "Tricarboxylic acid cycle",
-    "value": 0.0713,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 0.993065,
+    "mutation": "chr2 209106786 G>A missense_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "IDH2",
     "func": "Tricarboxylic acid cycle",
-    "value": 0.3058,
+    "sample": "HCT116WT",
+    "value": -1.02011,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "IDH3A",
     "func": "Tricarboxylic acid cycle",
-    "value": -0.4523,
+    "sample": "HCT116WT",
+    "value": 0.743145,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "IDH3B",
     "func": "Tricarboxylic acid cycle",
-    "value": -0.0744,
+    "sample": "HCT116WT",
+    "value": 0.204774,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "IDH3G",
     "func": "Tricarboxylic acid cycle",
-    "value": 0.3689,
+    "sample": "HCT116WT",
+    "value": -0.0683557,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "IMMP1L",
     "func": "Import & Sorting",
-    "value": -0.6213,
+    "sample": "HCT116WT",
+    "value": 0.450255,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "IMMP2L",
     "func": "Import & Sorting",
-    "value": -0.6013,
+    "sample": "HCT116WT",
+    "value": -0.161658,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "ISCA1",
     "func": "Fe-S cluster biosynthesis",
-    "value": -0.3668,
+    "sample": "HCT116WT",
+    "value": -0.132928,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "ISCA2",
     "func": "Fe-S cluster biosynthesis",
-    "value": -0.1699,
+    "sample": "HCT116WT",
+    "value": 0.018446,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "ISCU",
     "func": "Fe-S cluster biosynthesis",
-    "value": -0.0183,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": -0.250415,
+    "mutation": "chr12 108962803 A>G 3_prime_UTR_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "ITPR1",
     "func": "Calcium trafficking",
-    "value": -2.2614,
+    "sample": "HCT116WT",
+    "value": -1.69487,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "ITPR2",
     "func": "Calcium trafficking",
-    "value": -0.8607,
+    "sample": "HCT116WT",
+    "value": -0.548483,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "ITPR3",
     "func": "Calcium trafficking",
-    "value": -0.4624,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": -0.283362,
+    "mutation": "chr6 33651129 C>T synonymous_variant,chr6 33653448 C>T synonymous_variant,chr6 33659472 C>G missense_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "KARS",
     "func": "Translation",
-    "value": -0.1878,
+    "sample": "HCT116WT",
+    "value": 0.245595,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "KIAA0391",
     "func": "Replication & Transcription",
-    "value": 0.3476,
+    "sample": "HCT116WT",
+    "value": -0.305906,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "KIF1B",
     "func": "Mitochondrial Dynamics",
-    "value": -0.8248,
+    "sample": "HCT116WT",
+    "value": -0.404106,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "KIF5B",
     "func": "Mitochondrial Dynamics",
-    "value": -0.9042,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": -0.298123,
+    "mutation": "chr10 32299530 G>A 3_prime_UTR_variant,chr10 32300108 A>G 3_prime_UTR_variant,chr10 32323708 T>C missense_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "LARS2",
     "func": "Translation",
-    "value": -0.2107,
+    "sample": "HCT116WT",
+    "value": 0.0128676,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "LDHAL6B",
-    "func": "Glycolysis",
-    "value": -1.0579,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "LDHA",
     "func": "Glycolysis",
-    "value": 0.3475,
+    "sample": "HCT116WT",
+    "value": -1.77824,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "LDHB",
     "func": "Glycolysis",
-    "value": -0.1118,
+    "sample": "HCT116WT",
+    "value": 0.553326,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "LDHC",
-    "func": "Glycolysis",
-    "value": -1.4102,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "LETM1",
     "func": "Calcium trafficking",
-    "value": -0.0804,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 0.382531,
+    "mutation": "chr4 1815990 G>A 3_prime_UTR_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "LIG3",
     "func": "Replication & Transcription",
-    "value": 0.0437,
+    "sample": "HCT116WT",
+    "value": 0.72742,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "LONP1",
     "func": "Translation",
-    "value": 0.1478,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 0.223672,
+    "mutation": "chr19 5692062 G>A missense_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "LRPPRC",
     "func": "Translation",
-    "value": -0.2066,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 1.08123,
+    "mutation": "chr2 44209477 C>T synonymous_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "LYRM4",
     "func": "Fe-S cluster biosynthesis",
-    "value": 0.4411,
+    "sample": "HCT116WT",
+    "value": -1.26809,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "MAP1LC3A",
     "func": "Mitochondrial Dynamics",
-    "value": 0.7827,
+    "sample": "HCT116WT",
+    "value": -3.82619,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "MAPK1",
     "func": "Apoptosis",
-    "value": -0.3022,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": -0.181095,
+    "mutation": "chr22 22115353 G>A 3_prime_UTR_variant,chr22 22115886 C>T 3_prime_UTR_variant,chr22 22116128 AG>A 3_prime_UTR_variant,chr22 22116202 C>G 3_prime_UTR_variant,chr22 22116467 C>T 3_prime_UTR_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "MAPK3",
     "func": "Apoptosis",
-    "value": 0.893,
+    "sample": "HCT116WT",
+    "value": -0.475574,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "MARCH5",
     "func": "Mitochondrial Dynamics",
-    "value": -0.5657,
+    "sample": "HCT116WT",
+    "value": -0.51565,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "MARS2",
     "func": "Translation",
-    "value": -0.971,
+    "sample": "HCT116WT",
+    "value": 1.59439,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "MCL1",
     "func": "Apoptosis",
-    "value": -0.0643,
+    "sample": "HCT116WT",
+    "value": -0.604648,
+    "mutation": "chr1 150547747 G>A 3_prime_UTR_variant"
+  },
+  {
+    "gene": "MCU",
+    "func": "Calcium trafficking",
+    "sample": "HCT116WT",
+    "value": -1.03253,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "MDH2",
     "func": "Tricarboxylic acid cycle",
-    "value": 0.5507,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 0.340847,
+    "mutation": "chr7 75677504 C>T missense_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "MFF",
     "func": "Mitochondrial Dynamics",
-    "value": -0.2063,
+    "sample": "HCT116WT",
+    "value": -0.63102,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "MFN1",
     "func": "Mitochondrial Dynamics",
-    "value": -0.904,
+    "sample": "HCT116WT",
+    "value": -0.229752,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "MFN2",
     "func": "Mitochondrial Dynamics",
-    "value": -0.1769,
+    "sample": "HCT116WT",
+    "value": -0.124989,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
+    "gene": "MICU1",
+    "func": "Calcium trafficking",
+    "sample": "HCT116WT",
+    "value": -1.52058,
+    "mutation": "NULL"
+  },
+  {
     "gene": "MIPEP",
     "func": "Import & Sorting",
-    "value": 0.3385,
+    "sample": "HCT116WT",
+    "value": 0.324289,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "MMS19",
     "func": "Fe-S cluster biosynthesis",
-    "value": 0.126,
+    "sample": "HCT116WT",
+    "value": -0.462947,
+    "mutation": "chr10 99226629 G>T missense_variant,chr10 99237620 G>A missense_variant"
+  },
+  {
+    "gene": "MNF1",
+    "func": "Electron transport chain",
+    "sample": "HCT116WT",
+    "value": -0.514768,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "MPV17L2",
-    "func": "Translation",
-    "value": 0.3259,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
-    "gene": "MPV17L",
-    "func": "ROS defense",
-    "value": -2.0528,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "MPV17",
     "func": "ROS defense",
-    "value": 0.6871,
+    "sample": "HCT116WT",
+    "value": -1.70579,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "MRPL10",
+    "gene": "MPV17L2",
     "func": "Translation",
-    "value": 0.2973,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 0.672631,
+    "mutation": "chr19 18305824 C>T synonymous_variant"
   },
   {
-    "sample": "A0DV",
-    "gene": "MRPL11",
-    "func": "Translation",
-    "value": 0.2472,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
-    "gene": "MRPL12",
-    "func": "Translation",
-    "value": 0.3222,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
-    "gene": "MRPL13",
-    "func": "Translation",
-    "value": 0.4245,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
-    "gene": "MRPL14",
-    "func": "Translation",
-    "value": 0.3655,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
-    "gene": "MRPL15",
-    "func": "Translation",
-    "value": 0.0682,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
-    "gene": "MRPL16",
-    "func": "Translation",
-    "value": 0.1639,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
-    "gene": "MRPL17",
-    "func": "Translation",
-    "value": 0.6904,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
-    "gene": "MRPL18",
-    "func": "Translation",
-    "value": 0.2791,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
-    "gene": "MRPL19",
-    "func": "Translation",
-    "value": -0.3366,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "MRPL1",
     "func": "Translation",
-    "value": -0.2607,
+    "sample": "HCT116WT",
+    "value": 0.577693,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "MRPL20",
+    "gene": "MRPL10",
     "func": "Translation",
-    "value": 0.1213,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 1.28534,
+    "mutation": "chr17 45901480 C>T 3_prime_UTR_variant"
   },
   {
-    "sample": "A0DV",
-    "gene": "MRPL21",
+    "gene": "MRPL11",
     "func": "Translation",
-    "value": -0.2437,
+    "sample": "HCT116WT",
+    "value": 0.800834,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "MRPL22",
+    "gene": "MRPL12",
     "func": "Translation",
-    "value": 0.1707,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 1.05008,
+    "mutation": "chr17 79671332 T>C missense_variant"
   },
   {
-    "sample": "A0DV",
-    "gene": "MRPL23",
+    "gene": "MRPL13",
     "func": "Translation",
-    "value": 0.6956,
+    "sample": "HCT116WT",
+    "value": 0.831452,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "MRPL24",
+    "gene": "MRPL14",
     "func": "Translation",
-    "value": 1.0644,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": -0.31234,
+    "mutation": "chr6 44081571 G>A 3_prime_UTR_variant"
   },
   {
-    "sample": "A0DV",
-    "gene": "MRPL27",
+    "gene": "MRPL15",
     "func": "Translation",
-    "value": 0.5222,
+    "sample": "HCT116WT",
+    "value": -0.255228,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "MRPL28",
+    "gene": "MRPL16",
     "func": "Translation",
-    "value": 0.7811,
+    "sample": "HCT116WT",
+    "value": 0.396438,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
+    "gene": "MRPL17",
+    "func": "Translation",
+    "sample": "HCT116WT",
+    "value": -0.491808,
+    "mutation": "chr11 6703588 A>G missense_variant"
+  },
+  {
+    "gene": "MRPL18",
+    "func": "Translation",
+    "sample": "HCT116WT",
+    "value": 0.507296,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL19",
+    "func": "Translation",
+    "sample": "HCT116WT",
+    "value": 0.154099,
+    "mutation": "NULL"
+  },
+  {
     "gene": "MRPL2",
     "func": "Translation",
-    "value": 0.1955,
+    "sample": "HCT116WT",
+    "value": 0.994545,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "MRPL30",
+    "gene": "MRPL20",
     "func": "Translation",
-    "value": -0.5556,
+    "sample": "HCT116WT",
+    "value": -0.223532,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "MRPL32",
+    "gene": "MRPL21",
     "func": "Translation",
-    "value": -0.4973,
+    "sample": "HCT116WT",
+    "value": 0.515542,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "MRPL33",
+    "gene": "MRPL22",
     "func": "Translation",
-    "value": -0.349,
+    "sample": "HCT116WT",
+    "value": 0.304849,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "MRPL35",
+    "gene": "MRPL23",
     "func": "Translation",
-    "value": 0.0087,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": -0.307957,
+    "mutation": "chr11 1977651 C>A 3_prime_UTR_variant"
   },
   {
-    "sample": "A0DV",
-    "gene": "MRPL36",
+    "gene": "MRPL24",
     "func": "Translation",
-    "value": 0.0887,
+    "sample": "HCT116WT",
+    "value": 0.0644803,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "MRPL37",
+    "gene": "MRPL27",
     "func": "Translation",
-    "value": 0.5988,
+    "sample": "HCT116WT",
+    "value": 0.461234,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "MRPL38",
+    "gene": "MRPL28",
     "func": "Translation",
-    "value": 0.5191,
+    "sample": "HCT116WT",
+    "value": -1.01905,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "MRPL39",
-    "func": "Translation",
-    "value": -0.4333,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "MRPL3",
     "func": "Translation",
-    "value": -0.045,
+    "sample": "HCT116WT",
+    "value": 0.555551,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "MRPL40",
+    "gene": "MRPL30",
     "func": "Translation",
-    "value": 0.3084,
+    "sample": "HCT116WT",
+    "value": 0.440323,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "MRPL41",
+    "gene": "MRPL32",
     "func": "Translation",
-    "value": 0.8886,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 0.579397,
+    "mutation": "chr7 42977091 G>A synonymous_variant"
   },
   {
-    "sample": "A0DV",
-    "gene": "MRPL42",
+    "gene": "MRPL33",
     "func": "Translation",
-    "value": -0.4547,
+    "sample": "HCT116WT",
+    "value": -1.09066,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "MRPL43",
+    "gene": "MRPL34",
     "func": "Translation",
-    "value": 0.417,
+    "sample": "HCT116WT",
+    "value": 0.847116,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "MRPL44",
+    "gene": "MRPL35",
     "func": "Translation",
-    "value": 0.2869,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 0.498771,
+    "mutation": "chr2 86434316 G>A missense_variant"
   },
   {
-    "sample": "A0DV",
-    "gene": "MRPL45",
+    "gene": "MRPL36",
     "func": "Translation",
-    "value": 0.0589,
+    "sample": "HCT116WT",
+    "value": 0.0702939,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "MRPL46",
+    "gene": "MRPL37",
     "func": "Translation",
-    "value": -0.0837,
+    "sample": "HCT116WT",
+    "value": -0.234111,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "MRPL47",
+    "gene": "MRPL38",
     "func": "Translation",
-    "value": -0.0169,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 1.32933,
+    "mutation": "chr17 73894804 G>A 3_prime_UTR_variant,chr17 73900688 T>C synonymous_variant"
   },
   {
-    "sample": "A0DV",
-    "gene": "MRPL48",
+    "gene": "MRPL39",
     "func": "Translation",
-    "value": 0.0362,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 0.153043,
+    "mutation": "chr21 26965148 G>A synonymous_variant,chr21 26965205 T>C synonymous_variant"
   },
   {
-    "sample": "A0DV",
-    "gene": "MRPL49",
-    "func": "Translation",
-    "value": -0.0459,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "MRPL4",
     "func": "Translation",
-    "value": 0.1983,
+    "sample": "HCT116WT",
+    "value": 0.84233,
+    "mutation": "chr19 10370490 T>A 3_prime_UTR_variant,chr19 10370542 C>T 3_prime_UTR_variant,chr19 10370654 A>G 3_prime_UTR_variant"
+  },
+  {
+    "gene": "MRPL40",
+    "func": "Translation",
+    "sample": "HCT116WT",
+    "value": -0.0863872,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
+    "gene": "MRPL41",
+    "func": "Translation",
+    "sample": "HCT116WT",
+    "value": -0.00243164,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL42",
+    "func": "Translation",
+    "sample": "HCT116WT",
+    "value": 0.525814,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL43",
+    "func": "Translation",
+    "sample": "HCT116WT",
+    "value": -0.249224,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL44",
+    "func": "Translation",
+    "sample": "HCT116WT",
+    "value": 0.505706,
+    "mutation": "chr2 224824617 A>G synonymous_variant"
+  },
+  {
+    "gene": "MRPL45",
+    "func": "Translation",
+    "sample": "HCT116WT",
+    "value": 0.970526,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL46",
+    "func": "Translation",
+    "sample": "HCT116WT",
+    "value": 0.221758,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL47",
+    "func": "Translation",
+    "sample": "HCT116WT",
+    "value": 0.0533384,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL48",
+    "func": "Translation",
+    "sample": "HCT116WT",
+    "value": 0.825033,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL49",
+    "func": "Translation",
+    "sample": "HCT116WT",
+    "value": 0.558484,
+    "mutation": "chr11 64893568 TG>T 3_prime_UTR_variant"
+  },
+  {
     "gene": "MRPL50",
     "func": "Translation",
-    "value": -0.2449,
+    "sample": "HCT116WT",
+    "value": 0.845193,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "MRPL51",
     "func": "Translation",
-    "value": 0.4891,
+    "sample": "HCT116WT",
+    "value": -0.393605,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "MRPL52",
     "func": "Translation",
-    "value": 0.385,
+    "sample": "HCT116WT",
+    "value": -0.470848,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "MRPL53",
-    "func": "Translation",
-    "value": 0.8002,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "MRPL54",
     "func": "Translation",
-    "value": 0.5227,
+    "sample": "HCT116WT",
+    "value": 0.142567,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "MRPL55",
     "func": "Translation",
-    "value": 0.9873,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": -0.158,
+    "mutation": "chr1 228295502 C>T missense_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "MRPL9",
     "func": "Translation",
-    "value": 0.5772,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": -0.0606608,
+    "mutation": "chr1 151733327 T>C missense_variant,chr1 151733335 T>G missense_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "MRPS10",
     "func": "Translation",
-    "value": 0.0383,
+    "sample": "HCT116WT",
+    "value": 0.0922264,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "MRPS11",
     "func": "Translation",
-    "value": 0.3509,
+    "sample": "HCT116WT",
+    "value": -0.410877,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "MRPS12",
     "func": "Translation",
-    "value": 0.4477,
+    "sample": "HCT116WT",
+    "value": 0.739869,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "MRPS14",
     "func": "Translation",
-    "value": 0.8388,
+    "sample": "HCT116WT",
+    "value": -0.496263,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "MRPS15",
     "func": "Translation",
-    "value": 0.4805,
+    "sample": "HCT116WT",
+    "value": 0.131805,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "MRPS16",
     "func": "Translation",
-    "value": 0.1335,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": -0.55085,
+    "mutation": "chr10 75009107 T>A 3_prime_UTR_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "MRPS17",
     "func": "Translation",
-    "value": -0.1568,
+    "sample": "HCT116WT",
+    "value": 0.311237,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "MRPS18A",
     "func": "Translation",
-    "value": 0.2575,
+    "sample": "HCT116WT",
+    "value": 0.370013,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "MRPS18B",
     "func": "Translation",
-    "value": 0.2242,
+    "sample": "HCT116WT",
+    "value": 0.72506,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "MRPS18C",
     "func": "Translation",
-    "value": -0.2174,
+    "sample": "HCT116WT",
+    "value": 0.229639,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "MRPS21",
-    "func": "Translation",
-    "value": 0.254,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
-    "gene": "MRPS22",
-    "func": "Translation",
-    "value": -0.2869,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
-    "gene": "MRPS23",
-    "func": "Translation",
-    "value": 0.026,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
-    "gene": "MRPS24",
-    "func": "Translation",
-    "value": 0.1704,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
-    "gene": "MRPS25",
-    "func": "Translation",
-    "value": -0.8168,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
-    "gene": "MRPS26",
-    "func": "Translation",
-    "value": 0.3258,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
-    "gene": "MRPS27",
-    "func": "Translation",
-    "value": -0.0206,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
-    "gene": "MRPS28",
-    "func": "Translation",
-    "value": 0.3219,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "MRPS2",
     "func": "Translation",
-    "value": 0.3012,
+    "sample": "HCT116WT",
+    "value": 0.777236,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
+    "gene": "MRPS21",
+    "func": "Translation",
+    "sample": "HCT116WT",
+    "value": 3.11805,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPS22",
+    "func": "Translation",
+    "sample": "HCT116WT",
+    "value": 0.807621,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPS23",
+    "func": "Translation",
+    "sample": "HCT116WT",
+    "value": 1.13445,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPS25",
+    "func": "Translation",
+    "sample": "HCT116WT",
+    "value": 0.0994668,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPS26",
+    "func": "Translation",
+    "sample": "HCT116WT",
+    "value": 1.05509,
+    "mutation": "chr20 3028714 C>A 3_prime_UTR_variant"
+  },
+  {
+    "gene": "MRPS27",
+    "func": "Translation",
+    "sample": "HCT116WT",
+    "value": 0.414242,
+    "mutation": "chr5 71515691 GA>G 3_prime_UTR_variant"
+  },
+  {
+    "gene": "MRPS28",
+    "func": "Translation",
+    "sample": "HCT116WT",
+    "value": 1.10294,
+    "mutation": "NULL"
+  },
+  {
     "gene": "MRPS30",
     "func": "Translation",
-    "value": 0.2476,
+    "sample": "HCT116WT",
+    "value": 1.6201,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "MRPS31",
     "func": "Translation",
-    "value": -0.5766,
+    "sample": "HCT116WT",
+    "value": 0.808534,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "MRPS33",
     "func": "Translation",
-    "value": 0.0458,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 0.471552,
+    "mutation": "chr7 140706031 G>A 3_prime_UTR_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "MRPS34",
     "func": "Translation",
-    "value": 1.0849,
+    "sample": "HCT116WT",
+    "value": 0.504258,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "MRPS35",
     "func": "Translation",
-    "value": -0.2081,
+    "sample": "HCT116WT",
+    "value": 0.299971,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "MRPS36",
     "func": "Translation",
-    "value": 0.0015,
+    "sample": "HCT116WT",
+    "value": 0.50781,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "MRPS5",
     "func": "Translation",
-    "value": -0.2048,
+    "sample": "HCT116WT",
+    "value": 0.177267,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "MRPS6",
-    "func": "Translation",
-    "value": 0.111,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "MRPS7",
     "func": "Translation",
-    "value": 0.2217,
+    "sample": "HCT116WT",
+    "value": 0.368942,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "MRPS9",
     "func": "Translation",
-    "value": -0.2629,
+    "sample": "HCT116WT",
+    "value": 0.936854,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "MRRF",
     "func": "Translation",
-    "value": -0.6298,
+    "sample": "HCT116WT",
+    "value": 1.05677,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "MSTO1",
     "func": "Mitochondrial Dynamics",
-    "value": 0.1091,
+    "sample": "HCT116WT",
+    "value": 0.0265886,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "MTFMT",
     "func": "Translation",
-    "value": -0.4881,
+    "sample": "HCT116WT",
+    "value": 0.927565,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
+    "gene": "MTFP1",
+    "func": "Mitochondrial Dynamics",
+    "sample": "HCT116WT",
+    "value": 0.585231,
+    "mutation": "NULL"
+  },
+  {
     "gene": "MTIF2",
     "func": "Translation",
-    "value": -0.3146,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 0.57064,
+    "mutation": "chr2 55490819 G>T missense_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "MTIF3",
     "func": "Translation",
-    "value": 0.1284,
+    "sample": "HCT116WT",
+    "value": -0.593552,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "MTO1",
     "func": "Replication & Transcription",
-    "value": -0.6408,
+    "sample": "HCT116WT",
+    "value": 0.439966,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "MTPAP",
     "func": "Replication & Transcription",
-    "value": -0.7492,
+    "sample": "HCT116WT",
+    "value": 1.03389,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "MTRF1L",
-    "func": "Translation",
-    "value": -0.7169,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "MTRF1",
     "func": "Translation",
-    "value": -0.7054,
+    "sample": "HCT116WT",
+    "value": 0.491992,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
+    "gene": "MTRF1L",
+    "func": "Translation",
+    "sample": "HCT116WT",
+    "value": 0.452197,
+    "mutation": "NULL"
+  },
+  {
     "gene": "MUTYH",
     "func": "Replication & Transcription",
-    "value": -0.0623,
+    "sample": "HCT116WT",
+    "value": 1.77822,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "NARF",
     "func": "Fe-S cluster biosynthesis",
-    "value": -0.0757,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 0.437537,
+    "mutation": "chr17 80442722 T>C synonymous_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "NARS2",
     "func": "Translation",
-    "value": -0.6105,
+    "sample": "HCT116WT",
+    "value": 0.456149,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "NDUFA10",
-    "func": "Electron transport chain",
-    "value": 0.0232,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
-    "gene": "NDUFA11",
-    "func": "Electron transport chain",
-    "value": 0.866,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
-    "gene": "NDUFA12",
-    "func": "Electron transport chain",
-    "value": 0.4837,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
-    "gene": "NDUFA13",
-    "func": "Electron transport chain",
-    "value": 0.9278,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "NDUFA1",
     "func": "Electron transport chain",
-    "value": 0.2589,
+    "sample": "HCT116WT",
+    "value": -0.220514,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
+    "gene": "NDUFA10",
+    "func": "Electron transport chain",
+    "sample": "HCT116WT",
+    "value": 0.0348709,
+    "mutation": "chr2 240946766 T>C synonymous_variant,chr2 240961728 T>C synonymous_variant"
+  },
+  {
+    "gene": "NDUFA11",
+    "func": "Electron transport chain",
+    "sample": "HCT116WT",
+    "value": -0.0418765,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NDUFA12",
+    "func": "Electron transport chain",
+    "sample": "HCT116WT",
+    "value": -1.10681,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NDUFA13",
+    "func": "Electron transport chain",
+    "sample": "HCT116WT",
+    "value": -0.272506,
+    "mutation": "NULL"
+  },
+  {
     "gene": "NDUFA2",
     "func": "Electron transport chain",
-    "value": 0.7959,
+    "sample": "HCT116WT",
+    "value": -0.0380598,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "NDUFA3",
     "func": "Electron transport chain",
-    "value": 1.213,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": -0.159965,
+    "mutation": "chr19 54610170 C>T synonymous_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "NDUFA4",
     "func": "Electron transport chain",
-    "value": 0.3093,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": -1.03175,
+    "mutation": "chr7 10979706 C>T 5_prime_UTR_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "NDUFA5",
     "func": "Electron transport chain",
-    "value": -0.4148,
+    "sample": "HCT116WT",
+    "value": -0.194597,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "NDUFA6",
     "func": "Electron transport chain",
-    "value": 0.5447,
+    "sample": "HCT116WT",
+    "value": 0.396728,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "NDUFA7",
     "func": "Electron transport chain",
-    "value": 0.4672,
+    "sample": "HCT116WT",
+    "value": -0.305224,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "NDUFA8",
     "func": "Electron transport chain",
-    "value": 0.685,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 0.196164,
+    "mutation": "chr9 124906456 C>T 3_prime_UTR_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "NDUFA9",
     "func": "Electron transport chain",
-    "value": 0.4317,
+    "sample": "HCT116WT",
+    "value": -0.0354907,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "NDUFAB1",
     "func": "Electron transport chain",
-    "value": 0.6666,
+    "sample": "HCT116WT",
+    "value": 0.437502,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "NDUFAF1",
     "func": "Electron transport chain",
-    "value": 0.0295,
+    "sample": "HCT116WT",
+    "value": -0.487674,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "NDUFAF2",
     "func": "Electron transport chain",
-    "value": -0.3515,
+    "sample": "HCT116WT",
+    "value": -0.335123,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "NDUFAF3",
     "func": "Electron transport chain",
-    "value": 0.4452,
+    "sample": "HCT116WT",
+    "value": -0.992236,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "NDUFAF4",
     "func": "Electron transport chain",
-    "value": -0.7809,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 1.05549,
+    "mutation": "chr6 97339078 A>G synonymous_variant,chr6 97339088 C>T synonymous_variant"
   },
   {
-    "sample": "A0DV",
-    "gene": "NDUFB10",
-    "func": "Electron transport chain",
-    "value": 0.8734,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
-    "gene": "NDUFB11",
-    "func": "Electron transport chain",
-    "value": 0.75,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "NDUFB1",
     "func": "Electron transport chain",
-    "value": 0.4532,
+    "sample": "HCT116WT",
+    "value": -0.880181,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
+    "gene": "NDUFB10",
+    "func": "Electron transport chain",
+    "sample": "HCT116WT",
+    "value": 0.351206,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NDUFB11",
+    "func": "Electron transport chain",
+    "sample": "HCT116WT",
+    "value": -0.0179966,
+    "mutation": "NULL"
+  },
+  {
     "gene": "NDUFB2",
     "func": "Electron transport chain",
-    "value": 0.9679,
+    "sample": "HCT116WT",
+    "value": -0.743087,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "NDUFB3",
     "func": "Electron transport chain",
-    "value": 0.2264,
+    "sample": "HCT116WT",
+    "value": -0.785022,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "NDUFB4",
     "func": "Electron transport chain",
-    "value": 0.4683,
+    "sample": "HCT116WT",
+    "value": 0.296946,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "NDUFB5",
     "func": "Electron transport chain",
-    "value": 0.4199,
+    "sample": "HCT116WT",
+    "value": 0.0226965,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "NDUFB6",
     "func": "Electron transport chain",
-    "value": 0.0861,
+    "sample": "HCT116WT",
+    "value": -0.253058,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "NDUFB7",
     "func": "Electron transport chain",
-    "value": 0.78,
+    "sample": "HCT116WT",
+    "value": -0.181071,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "NDUFB8",
     "func": "Electron transport chain",
-    "value": 0.5798,
+    "sample": "HCT116WT",
+    "value": -0.314495,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "NDUFB9",
     "func": "Electron transport chain",
-    "value": 0.4309,
+    "sample": "HCT116WT",
+    "value": 1.39885,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "NDUFC1",
     "func": "Electron transport chain",
-    "value": 0.1244,
+    "sample": "HCT116WT",
+    "value": 0.0739886,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "NDUFC2",
-    "func": "Electron transport chain",
-    "value": -0.018,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "NDUFS1",
     "func": "Electron transport chain",
-    "value": -0.5301,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": -0.37309,
+    "mutation": "chr2 207006676 T>C synonymous_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "NDUFS2",
     "func": "Electron transport chain",
-    "value": 1.0599,
+    "sample": "HCT116WT",
+    "value": -0.164533,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "NDUFS3",
     "func": "Electron transport chain",
-    "value": 0.5948,
+    "sample": "HCT116WT",
+    "value": 0.398792,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "NDUFS4",
     "func": "Electron transport chain",
-    "value": -0.0524,
+    "sample": "HCT116WT",
+    "value": -0.0388472,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "NDUFS5",
     "func": "Electron transport chain",
-    "value": 0.1411,
+    "sample": "HCT116WT",
+    "value": 0.378753,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "NDUFS6",
     "func": "Electron transport chain",
-    "value": 0.5504,
+    "sample": "HCT116WT",
+    "value": -0.134067,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "NDUFS7",
     "func": "Electron transport chain",
-    "value": 0.8832,
+    "sample": "HCT116WT",
+    "value": -0.236049,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "NDUFS8",
     "func": "Electron transport chain",
-    "value": 1.0878,
+    "sample": "HCT116WT",
+    "value": -0.318984,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "NDUFV1",
     "func": "Electron transport chain",
-    "value": 0.2735,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": -0.0687381,
+    "mutation": "chr11 67379919 C>T missense_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "NDUFV2",
     "func": "Electron transport chain",
-    "value": 0.3127,
+    "sample": "HCT116WT",
+    "value": 0.0868377,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "NDUFV3",
     "func": "Electron transport chain",
-    "value": 0.0502,
+    "sample": "HCT116WT",
+    "value": -0.142051,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "NFE2L2",
     "func": "Replication & Transcription",
-    "value": -0.5347,
+    "sample": "HCT116WT",
+    "value": -0.181448,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "NFS1",
     "func": "Fe-S cluster biosynthesis",
-    "value": 0.0803,
+    "sample": "HCT116WT",
+    "value": -0.114122,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "NFU1",
     "func": "Fe-S cluster biosynthesis",
-    "value": 0.2588,
+    "sample": "HCT116WT",
+    "value": -0.151779,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "NME3",
     "func": "Replication & Transcription",
-    "value": 1.3926,
+    "sample": "HCT116WT",
+    "value": 0.874418,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "NME4",
     "func": "Replication & Transcription",
-    "value": 1.2864,
+    "sample": "HCT116WT",
+    "value": -1.92743,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "NME6",
     "func": "Replication & Transcription",
-    "value": -0.1658,
+    "sample": "HCT116WT",
+    "value": -0.598766,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "NRF1",
     "func": "Replication & Transcription",
-    "value": -0.7693,
+    "sample": "HCT116WT",
+    "value": 0.727905,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "NSUN2",
     "func": "Replication & Transcription",
-    "value": -1.0045,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 0.708138,
+    "mutation": "chr5 6600150 G>A synonymous_variant,chr5 6625708 A>G missense_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "NTHL1",
     "func": "Replication & Transcription",
-    "value": 1.3667,
+    "sample": "HCT116WT",
+    "value": 0.514857,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "NUBP1",
     "func": "Fe-S cluster biosynthesis",
-    "value": 0.3297,
+    "sample": "HCT116WT",
+    "value": 0.0426491,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "NUBP2",
     "func": "Fe-S cluster biosynthesis",
-    "value": 1.0705,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 0.7755,
+    "mutation": "chr16 1838781 A>G missense_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "NUBPL",
     "func": "Electron transport chain",
-    "value": -0.3535,
+    "sample": "HCT116WT",
+    "value": -0.54013,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "OGDH",
     "func": "Tricarboxylic acid cycle",
-    "value": 0.23,
+    "sample": "HCT116WT",
+    "value": -0.224833,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "OGG1",
     "func": "Replication & Transcription",
-    "value": 0.1138,
+    "sample": "HCT116WT",
+    "value": -0.993194,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "OMA1",
     "func": "Mitochondrial Dynamics",
-    "value": -0.2042,
+    "sample": "HCT116WT",
+    "value": 0.446846,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "OPA1",
     "func": "Mitochondrial Dynamics",
-    "value": -0.5865,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": -0.136903,
+    "mutation": "chr3 193361168 T>A missense_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "OPA3",
     "func": "Mitochondrial Dynamics",
-    "value": -0.6313,
+    "sample": "HCT116WT",
+    "value": -0.630681,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "OSGEPL1",
     "func": "Replication & Transcription",
-    "value": -0.0668,
+    "sample": "HCT116WT",
+    "value": 0.483028,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "OTC",
-    "func": "Urea Cycle",
-    "value": -2.2164,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "OXA1L",
     "func": "Translation",
-    "value": 0.3181,
+    "sample": "HCT116WT",
+    "value": 0.274708,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "PACS2",
     "func": "Calcium trafficking",
-    "value": 0.3782,
+    "sample": "HCT116WT",
+    "value": 0.121678,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "PARK2",
-    "func": "Mitochondrial Dynamics",
-    "value": -1.1137,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "PARL",
     "func": "Mitochondrial Dynamics",
-    "value": 0.0146,
+    "sample": "HCT116WT",
+    "value": -0.24273,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "PARS2",
     "func": "Translation",
-    "value": 0.31,
+    "sample": "HCT116WT",
+    "value": 1.22403,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "PDHA1",
     "func": "Formation of Acetyl CoA",
-    "value": -0.3458,
+    "sample": "HCT116WT",
+    "value": 0.376716,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "PDHA2",
-    "func": "Formation of Acetyl CoA",
-    "value": 0,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "PDHB",
     "func": "Formation of Acetyl CoA",
-    "value": 0.4623,
+    "sample": "HCT116WT",
+    "value": -1.05459,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "PDHX",
     "func": "Formation of Acetyl CoA",
-    "value": -0.3927,
+    "sample": "HCT116WT",
+    "value": 0.323293,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
+    "gene": "PET112",
+    "func": "Translation",
+    "sample": "HCT116WT",
+    "value": 0.121723,
+    "mutation": "NULL"
+  },
+  {
     "gene": "PFKL",
     "func": "Glycolysis",
-    "value": 0.5587,
+    "sample": "HCT116WT",
+    "value": -0.666966,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "PFKM",
     "func": "Glycolysis",
-    "value": -0.1411,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 0.700257,
+    "mutation": "chr12 48539482 T>G synonymous_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "PFKP",
     "func": "Glycolysis",
-    "value": -0.3851,
+    "sample": "HCT116WT",
+    "value": -0.915226,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "PGAM1",
     "func": "Glycolysis",
-    "value": 0.7349,
+    "sample": "HCT116WT",
+    "value": -1.43767,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "PGAM2",
     "func": "Glycolysis",
-    "value": 2.0427,
+    "sample": "HCT116WT",
+    "value": -0.00265226,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "PGK1",
     "func": "Glycolysis",
-    "value": 0.2983,
+    "sample": "HCT116WT",
+    "value": -0.594673,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "PGK2",
-    "func": "Glycolysis",
-    "value": 0,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "PGS1",
     "func": "Cardiolipin biosynthesis",
-    "value": -0.7818,
+    "sample": "HCT116WT",
+    "value": 0.500753,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "PHB2",
-    "func": "Mitochondrial Dynamics",
-    "value": 0.0803,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "PHB",
     "func": "Translation",
-    "value": -0.0255,
+    "sample": "HCT116WT",
+    "value": 1.25259,
+    "mutation": "chr17 47481514 T>C 3_prime_UTR_variant,chr17 47481530 G>A 3_prime_UTR_variant"
+  },
+  {
+    "gene": "PHB2",
+    "func": "Mitochondrial Dynamics",
+    "sample": "HCT116WT",
+    "value": 0.632105,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "PINK1",
     "func": "Mitochondrial Dynamics",
-    "value": 0.398,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": -1.4003,
+    "mutation": "chr1 20977047 G>A missense_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "PKIA",
     "func": "Mitochondrial Dynamics",
-    "value": -0.9868,
+    "sample": "HCT116WT",
+    "value": -2.54072,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "PKLR",
-    "func": "Glycolysis",
-    "value": -0.4901,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "PKM2",
     "func": "Glycolysis",
-    "value": 0.6883,
+    "sample": "HCT116WT",
+    "value": -1.28673,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "PLD6",
     "func": "Mitochondrial Dynamics",
-    "value": 0.3544,
+    "sample": "HCT116WT",
+    "value": 1.27711,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "PMAIP1",
     "func": "Apoptosis",
-    "value": 1.0707,
+    "sample": "HCT116WT",
+    "value": 0.813258,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "PML",
     "func": "Calcium trafficking",
-    "value": 0.758,
+    "sample": "HCT116WT",
+    "value": -1.22009,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "PMPCA",
     "func": "Import & Sorting",
-    "value": 0.0423,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 0.519327,
+    "mutation": "chr9 139311471 C>T synonymous_variant,chr9 139317869 T>C 3_prime_UTR_variant,chr9 139318071 A>G 3_prime_UTR_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "PMPCB",
     "func": "Import & Sorting",
-    "value": -0.3755,
+    "sample": "HCT116WT",
+    "value": 0.219658,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "POLG2",
-    "func": "Replication & Transcription",
-    "value": -0.3872,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "POLG",
     "func": "Replication & Transcription",
-    "value": -0.1372,
+    "sample": "HCT116WT",
+    "value": -0.0437471,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
+    "gene": "POLG2",
+    "func": "Replication & Transcription",
+    "sample": "HCT116WT",
+    "value": 1.25373,
+    "mutation": "NULL"
+  },
+  {
     "gene": "POLRMT",
     "func": "Replication & Transcription",
-    "value": 0.1493,
+    "sample": "HCT116WT",
+    "value": 1.29505,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "PPARGC1A",
-    "func": "Replication & Transcription",
-    "value": -1.0902,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "PPIA",
     "func": "Apoptosis",
-    "value": 0.2527,
+    "sample": "HCT116WT",
+    "value": 0.189905,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "PPIF",
     "func": "Apoptosis",
-    "value": -1.84,
+    "sample": "HCT116WT",
+    "value": -0.317312,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "PPOX",
     "func": "Heme Biosynthesis",
-    "value": 0.8607,
+    "sample": "HCT116WT",
+    "value": -0.0807152,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "PRDX3",
     "func": "ROS defense",
-    "value": 0.126,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 0.508984,
+    "mutation": "chr10 120927793 G>C 3_prime_UTR_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "PTCD2",
     "func": "Electron transport chain",
-    "value": -0.1165,
+    "sample": "HCT116WT",
+    "value": 0.193112,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "PTCD3",
     "func": "Translation",
-    "value": -0.7316,
+    "sample": "HCT116WT",
+    "value": 0.829398,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "PTPMT1",
     "func": "Cardiolipin biosynthesis",
-    "value": -0.1793,
+    "sample": "HCT116WT",
+    "value": -0.0207232,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "PUS1",
     "func": "Replication & Transcription",
-    "value": -0.2226,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 1.40573,
+    "mutation": "chr12 132423796 C>A missense_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "PUS3",
     "func": "Replication & Transcription",
-    "value": -0.131,
+    "sample": "HCT116WT",
+    "value": 0.0122132,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "QRSL1",
     "func": "Translation",
-    "value": -0.2201,
+    "sample": "HCT116WT",
+    "value": 0.520857,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "QTRT1",
     "func": "Replication & Transcription",
-    "value": 0.2026,
+    "sample": "HCT116WT",
+    "value": -0.420251,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "QTRTD1",
     "func": "Replication & Transcription",
-    "value": -0.7895,
+    "sample": "HCT116WT",
+    "value": 1.42731,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "RARS2",
     "func": "Translation",
-    "value": 0.2064,
+    "sample": "HCT116WT",
+    "value": -0.557332,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "RHOT1",
     "func": "Mitochondrial Dynamics",
-    "value": -0.4661,
+    "sample": "HCT116WT",
+    "value": -0.0686043,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "RHOT2",
     "func": "Mitochondrial Dynamics",
-    "value": 0.4721,
+    "sample": "HCT116WT",
+    "value": -0.83815,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "RMRP",
     "func": "Replication & Transcription",
-    "value": -0.5227,
+    "sample": "HCT116WT",
+    "value": -0.943672,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "RNASEH1",
     "func": "Replication & Transcription",
-    "value": -0.7864,
+    "sample": "HCT116WT",
+    "value": -0.126138,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "RNASEL",
     "func": "Translation",
-    "value": 0.812,
+    "sample": "HCT116WT",
+    "value": 0.466117,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "RPUSD2",
     "func": "Replication & Transcription",
-    "value": -0.3757,
+    "sample": "HCT116WT",
+    "value": 1.22367,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "RPUSD4",
     "func": "Replication & Transcription",
-    "value": -0.1418,
+    "sample": "HCT116WT",
+    "value": 0.833788,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "RRM2B",
     "func": "Replication & Transcription",
-    "value": -0.2827,
+    "sample": "HCT116WT",
+    "value": 0.836135,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "SAMM50",
     "func": "Import & Sorting",
-    "value": 0.136,
+    "sample": "HCT116WT",
+    "value": -0.199601,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "SARS2",
     "func": "Translation",
-    "value": 0.4481,
+    "sample": "HCT116WT",
+    "value": 1.10082,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "SCO1",
     "func": "Electron transport chain",
-    "value": 0.0001,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 0.283035,
+    "mutation": "chr17 10583834 GT>G 3_prime_UTR_variant,chr17 10584116 C>T 3_prime_UTR_variant"
   },
   {
-    "sample": "A0DV",
-    "gene": "SCO2",
-    "func": "Electron transport chain",
-    "value": 1.1545,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
-    "gene": "SDHAF1",
-    "func": "Electron transport chain",
-    "value": 0.0586,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
-    "gene": "SDHAF2",
-    "func": "Electron transport chain",
-    "value": 0.0186,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "SDHA",
     "func": "Tricarboxylic acid cycle",
-    "value": 0.3108,
+    "sample": "HCT116WT",
+    "value": -0.136834,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
+    "gene": "SDHAF1",
+    "func": "Electron transport chain",
+    "sample": "HCT116WT",
+    "value": 0.658774,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "SDHAF2",
+    "func": "Electron transport chain",
+    "sample": "HCT116WT",
+    "value": 0.164362,
+    "mutation": "NULL"
+  },
+  {
     "gene": "SDHB",
     "func": "Tricarboxylic acid cycle",
-    "value": 0.0642,
+    "sample": "HCT116WT",
+    "value": 0.329046,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "SDHC",
     "func": "Tricarboxylic acid cycle",
-    "value": 0.7376,
+    "sample": "HCT116WT",
+    "value": -0.186697,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "SDHD",
     "func": "Tricarboxylic acid cycle",
-    "value": 0.0581,
+    "sample": "HCT116WT",
+    "value": 0.468775,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
+    "gene": "SELRC1",
+    "func": "Electron transport chain",
+    "sample": "HCT116WT",
+    "value": 0.637167,
+    "mutation": "NULL"
+  },
+  {
     "gene": "SH3GLB1",
     "func": "Mitochondrial Dynamics",
-    "value": -0.0323,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": -1.71537,
+    "mutation": "chr1 87200817 C>T missense_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "SHC1",
     "func": "ROS defense",
-    "value": 0.7556,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": -1.81981,
+    "mutation": "chr1 154935862 TG>T 3_prime_UTR_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "SIGMAR1",
     "func": "Calcium trafficking",
-    "value": 0.2933,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": -0.0361597,
+    "mutation": "chr9 34635134 G>A 3_prime_UTR_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "SLC24A6",
     "func": "Calcium trafficking",
-    "value": 0.8079,
+    "sample": "HCT116WT",
+    "value": 1.15403,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "SLC25A19",
-    "func": "Replication & Transcription",
-    "value": 0.3329,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "SLC25A1",
     "func": "ROS defense",
-    "value": 0.7049,
+    "sample": "HCT116WT",
+    "value": 0.168232,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
+    "gene": "SLC25A19",
+    "func": "Replication & Transcription",
+    "sample": "HCT116WT",
+    "value": 2.00178,
+    "mutation": "chr17 73269258 G>C 3_prime_UTR_variant"
+  },
+  {
     "gene": "SLC25A20",
     "func": "Fatty acid beta-oxidation",
-    "value": -0.3563,
+    "sample": "HCT116WT",
+    "value": -0.0955475,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "SLC25A28",
     "func": "Fe-S cluster biosynthesis",
-    "value": -0.182,
+    "sample": "HCT116WT",
+    "value": -0.199528,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "SLC25A33",
-    "func": "Replication & Transcription",
-    "value": -0.5631,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
-    "gene": "SLC25A37",
-    "func": "Fe-S cluster biosynthesis",
-    "value": -2.0016,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "SLC25A3",
     "func": "Replication & Transcription",
-    "value": -0.1992,
+    "sample": "HCT116WT",
+    "value": -0.147509,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
+    "gene": "SLC25A33",
+    "func": "Replication & Transcription",
+    "sample": "HCT116WT",
+    "value": 1.19869,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "SLC25A37",
+    "func": "Fe-S cluster biosynthesis",
+    "sample": "HCT116WT",
+    "value": -0.228375,
+    "mutation": "chr8 23423669 A>G missense_variant"
+  },
+  {
     "gene": "SLC25A4",
     "func": "Apoptosis",
-    "value": -1.0246,
+    "sample": "HCT116WT",
+    "value": -1.16732,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "SLC25A5",
     "func": "Apoptosis",
-    "value": 0.2283,
+    "sample": "HCT116WT",
+    "value": 0.782119,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "SLC25A6",
-    "func": "Apoptosis",
-    "value": 0.2257,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "SLC27A1",
     "func": "Fatty acid beta-oxidation",
-    "value": 0.0407,
+    "sample": "HCT116WT",
+    "value": 0.00326611,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "SLC27A2",
     "func": "Fatty acid beta-oxidation",
-    "value": -3.3736,
+    "sample": "HCT116WT",
+    "value": 7.21812,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "SLC27A3",
     "func": "Fatty acid beta-oxidation",
-    "value": 0.5903,
+    "sample": "HCT116WT",
+    "value": 2.74074,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "SLC27A4",
     "func": "Fatty acid beta-oxidation",
-    "value": 0.4376,
+    "sample": "HCT116WT",
+    "value": 0.0840746,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "SLC27A5",
     "func": "Fatty acid beta-oxidation",
-    "value": -0.5044,
+    "sample": "HCT116WT",
+    "value": 0.370448,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "SLC27A6",
     "func": "Fatty acid beta-oxidation",
-    "value": -3.9318,
+    "sample": "HCT116WT",
+    "value": 5.58762,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "SLC29A1",
     "func": "Replication & Transcription",
-    "value": 0.1174,
+    "sample": "HCT116WT",
+    "value": -1.10832,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "SLC2A1",
     "func": "Glycolysis",
-    "value": -0.2421,
+    "sample": "HCT116WT",
+    "value": -1.64413,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "SLC2A2",
-    "func": "Glycolysis",
-    "value": 0,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "SLC2A3",
     "func": "Glycolysis",
-    "value": 1.8925,
+    "sample": "HCT116WT",
+    "value": -2.35325,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "SLC2A4",
     "func": "Glycolysis",
-    "value": 0.0694,
+    "sample": "HCT116WT",
+    "value": 2.26346,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "SLC2A5",
     "func": "Glycolysis",
-    "value": 1.0126,
+    "sample": "HCT116WT",
+    "value": -5.2488,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "SOD1",
     "func": "ROS defense",
-    "value": -0.2589,
+    "sample": "HCT116WT",
+    "value": 0.648418,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "SOD2",
     "func": "ROS defense",
-    "value": -1.5958,
+    "sample": "HCT116WT",
+    "value": -0.157629,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "SPG7",
     "func": "Mitochondrial Dynamics",
-    "value": -0.0952,
+    "sample": "HCT116WT",
+    "value": -0.324784,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "SQSTM1",
     "func": "Mitochondrial Dynamics",
-    "value": 0.5337,
+    "sample": "HCT116WT",
+    "value": -0.96713,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "SSBP1",
     "func": "Replication & Transcription",
-    "value": -0.0515,
+    "sample": "HCT116WT",
+    "value": -0.032067,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "STOML2",
     "func": "Mitochondrial Dynamics",
-    "value": 0.1712,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 0.788475,
+    "mutation": "chr9 35100002 T>C 3_prime_UTR_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "SUCLA2",
     "func": "Tricarboxylic acid cycle",
-    "value": -0.6074,
+    "sample": "HCT116WT",
+    "value": -0.579819,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "SUCLG1",
     "func": "Tricarboxylic acid cycle",
-    "value": -0.1739,
+    "sample": "HCT116WT",
+    "value": -0.241481,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "SUCLG2",
     "func": "Tricarboxylic acid cycle",
-    "value": 0.0614,
+    "sample": "HCT116WT",
+    "value": -0.563523,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "SURF1",
     "func": "Electron transport chain",
-    "value": 0.3293,
+    "sample": "HCT116WT",
+    "value": 0.792391,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "SYBU",
     "func": "Mitochondrial Dynamics",
-    "value": -0.8948,
+    "sample": "HCT116WT",
+    "value": 3.27509,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "TACO1",
     "func": "Translation",
-    "value": 0.5191,
+    "sample": "HCT116WT",
+    "value": 0.44211,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "TARS2",
     "func": "Translation",
-    "value": 0.8379,
+    "sample": "HCT116WT",
+    "value": -0.354156,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "TAZ",
     "func": "Cardiolipin biosynthesis",
-    "value": -0.0139,
+    "sample": "HCT116WT",
+    "value": -0.566082,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "TCHP",
     "func": "Calcium trafficking",
-    "value": -0.3881,
+    "sample": "HCT116WT",
+    "value": -0.303962,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "TERT",
     "func": "Replication & Transcription",
-    "value": 0,
+    "sample": "HCT116WT",
+    "value": -1.17306,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "TFAM",
     "func": "Replication & Transcription",
-    "value": -0.8942,
+    "sample": "HCT116WT",
+    "value": 0.589494,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "TFB1M",
     "func": "Replication & Transcription",
-    "value": -0.2271,
+    "sample": "HCT116WT",
+    "value": 0.404922,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "TFB2M",
     "func": "Replication & Transcription",
-    "value": 0.4632,
+    "sample": "HCT116WT",
+    "value": 0.679151,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "TIMM10",
     "func": "Import & Sorting",
-    "value": 0.2556,
+    "sample": "HCT116WT",
+    "value": -0.163654,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "TIMM13",
     "func": "Import & Sorting",
-    "value": 0.5417,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": -0.240749,
+    "mutation": "chr19 2426828 G>C 3_prime_UTR_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "TIMM17A",
     "func": "Import & Sorting",
-    "value": 0.6243,
+    "sample": "HCT116WT",
+    "value": -0.168439,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "TIMM17B",
     "func": "Import & Sorting",
-    "value": 0.5029,
+    "sample": "HCT116WT",
+    "value": -1.89775,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
+    "gene": "TIMM21",
+    "func": "Import & Sorting",
+    "sample": "HCT116WT",
+    "value": 0.00153155,
+    "mutation": "chr18 71825719 A>G 3_prime_UTR_variant,chr18 71825762 T>C 3_prime_UTR_variant"
+  },
+  {
     "gene": "TIMM22",
     "func": "Import & Sorting",
-    "value": 0.3312,
+    "sample": "HCT116WT",
+    "value": -0.0768942,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
+    "gene": "TIMM23",
+    "func": "Import & Sorting",
+    "sample": "HCT116WT",
+    "value": -0.228996,
+    "mutation": "NULL"
+  },
+  {
     "gene": "TIMM44",
     "func": "Import & Sorting",
-    "value": -0.1646,
+    "sample": "HCT116WT",
+    "value": 0.544254,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "TIMM50",
     "func": "Import & Sorting",
-    "value": 0.1631,
+    "sample": "HCT116WT",
+    "value": 0.00751221,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "TIMM8A",
     "func": "Import & Sorting",
-    "value": -0.8458,
+    "sample": "HCT116WT",
+    "value": 0.36802,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "TIMM8B",
     "func": "Import & Sorting",
-    "value": 0.8664,
+    "sample": "HCT116WT",
+    "value": -0.432057,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "TIMM9",
     "func": "Import & Sorting",
-    "value": 0.0599,
+    "sample": "HCT116WT",
+    "value": -0.402423,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "TK2",
     "func": "Replication & Transcription",
-    "value": 0.3219,
+    "sample": "HCT116WT",
+    "value": -1.53086,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "TMEM126B",
     "func": "Electron transport chain",
-    "value": 0.0979,
+    "sample": "HCT116WT",
+    "value": 0.0589447,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "TMEM70",
     "func": "Electron transport chain",
-    "value": 0.3241,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 1.169,
+    "mutation": "chr8 74888616 G>C missense_variant,chr8 74893850 C>G missense_variant,chr8 74893880 C>T 3_prime_UTR_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "TOMM20",
     "func": "Import & Sorting",
-    "value": -0.4282,
+    "sample": "HCT116WT",
+    "value": 0.305273,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "TOMM22",
     "func": "Import & Sorting",
-    "value": 0.1014,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 0.276485,
+    "mutation": "chr22 39079920 ATTTT>A 3_prime_UTR_variant,chr22 39079964 T>C 3_prime_UTR_variant,chr22 39080078 T>C 3_prime_UTR_variant,chr22 39080245 A>G 3_prime_UTR_variant"
   },
   {
-    "sample": "A0DV",
-    "gene": "TOMM40L",
-    "func": "Import & Sorting",
-    "value": 0.5451,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "TOMM40",
     "func": "Import & Sorting",
-    "value": -0.005,
+    "sample": "HCT116WT",
+    "value": 0.7905,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
+    "gene": "TOMM40L",
+    "func": "Import & Sorting",
+    "sample": "HCT116WT",
+    "value": -0.554749,
+    "mutation": "NULL"
+  },
+  {
     "gene": "TOMM5",
     "func": "Import & Sorting",
-    "value": 0.1677,
+    "sample": "HCT116WT",
+    "value": 0.541358,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "TOMM6",
     "func": "Import & Sorting",
-    "value": 0.185,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 0.498008,
+    "mutation": "chr6 41757380 CT>C 3_prime_UTR_variant"
   },
   {
-    "sample": "A0DV",
-    "gene": "TOMM70A",
-    "func": "Import & Sorting",
-    "value": -0.4347,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "TOMM7",
     "func": "Import & Sorting",
-    "value": 0.0237,
+    "sample": "HCT116WT",
+    "value": -0.726581,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
+    "gene": "TOMM70A",
+    "func": "Import & Sorting",
+    "sample": "HCT116WT",
+    "value": 0.243299,
+    "mutation": "chr3 100082857 C>G 3_prime_UTR_variant"
+  },
+  {
     "gene": "TOP1MT",
     "func": "Replication & Transcription",
-    "value": -0.0315,
+    "sample": "HCT116WT",
+    "value": 2.07384,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "TOP3A",
     "func": "Replication & Transcription",
-    "value": -0.1734,
+    "sample": "HCT116WT",
+    "value": 0.689948,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "TP53",
     "func": "Apoptosis",
-    "value": 0.1006,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 0.272149,
+    "mutation": "chr17 7572685 C>A 3_prime_UTR_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "TPI1",
     "func": "Glycolysis",
-    "value": 0.5076,
+    "sample": "HCT116WT",
+    "value": -0.71021,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "TRAK1",
     "func": "Mitochondrial Dynamics",
-    "value": -0.3165,
+    "sample": "HCT116WT",
+    "value": -0.70375,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "TRAK2",
     "func": "Mitochondrial Dynamics",
-    "value": 0.1939,
+    "sample": "HCT116WT",
+    "value": -1.10661,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "TRAP1",
     "func": "Mitochondrial Dynamics",
-    "value": 0.5426,
+    "sample": "HCT116WT",
+    "value": 1.546,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "TRIT1",
     "func": "Replication & Transcription",
-    "value": -1.0815,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 0.135164,
+    "mutation": "chr1 40306865 C>T 3_prime_UTR_variant"
   },
   {
-    "sample": "A0DV",
-    "gene": "TRMT112",
-    "func": "Replication & Transcription",
-    "value": 0.4684,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
-    "gene": "TRMT11",
-    "func": "Replication & Transcription",
-    "value": -1.0459,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "TRMT1",
     "func": "Replication & Transcription",
-    "value": -0.2271,
+    "sample": "HCT116WT",
+    "value": 1.00985,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
+    "gene": "TRMT11",
+    "func": "Replication & Transcription",
+    "sample": "HCT116WT",
+    "value": -0.0533681,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TRMT112",
+    "func": "Replication & Transcription",
+    "sample": "HCT116WT",
+    "value": 0.360626,
+    "mutation": "NULL"
+  },
+  {
     "gene": "TRMT2B",
     "func": "Replication & Transcription",
-    "value": -0.4066,
+    "sample": "HCT116WT",
+    "value": -0.880101,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "TRMT5",
     "func": "Replication & Transcription",
-    "value": -0.5023,
+    "sample": "HCT116WT",
+    "value": 0.261842,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
-    "gene": "TRMT61B",
-    "func": "Replication & Transcription",
-    "value": -0.8485,
-    "mutation": "NULL"
-  },
-  {
-    "sample": "A0DV",
     "gene": "TRMT6",
     "func": "Replication & Transcription",
-    "value": -1.1737,
+    "sample": "HCT116WT",
+    "value": 0.109245,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
+    "gene": "TRMT61B",
+    "func": "Replication & Transcription",
+    "sample": "HCT116WT",
+    "value": 0.073712,
+    "mutation": "NULL"
+  },
+  {
     "gene": "TRMU",
     "func": "Replication & Transcription",
-    "value": -0.3279,
+    "sample": "HCT116WT",
+    "value": 0.380625,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "TRNT1",
     "func": "Replication & Transcription",
-    "value": -0.5113,
+    "sample": "HCT116WT",
+    "value": 0.200743,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "TRUB2",
     "func": "Replication & Transcription",
-    "value": 0.3301,
+    "sample": "HCT116WT",
+    "value": 0.330936,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "TSFM",
     "func": "Translation",
-    "value": -0.123,
+    "sample": "HCT116WT",
+    "value": 0.183303,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "TTC19",
     "func": "Electron transport chain",
-    "value": -0.7319,
+    "sample": "HCT116WT",
+    "value": 0.548483,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "TUFM",
     "func": "Translation",
-    "value": 0.6937,
+    "sample": "HCT116WT",
+    "value": 0.618824,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "TXN2",
     "func": "ROS defense",
-    "value": 0.3525,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": -0.157347,
+    "mutation": "chr22 36863896 C>A missense_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "TXNRD2",
     "func": "ROS defense",
-    "value": 0.4764,
+    "sample": "HCT116WT",
+    "value": -0.941063,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "UNG",
     "func": "Replication & Transcription",
-    "value": 0.2364,
+    "sample": "HCT116WT",
+    "value": 1.17765,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "UQCC",
     "func": "Electron transport chain",
-    "value": -0.0687,
+    "sample": "HCT116WT",
+    "value": -0.697318,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "UQCR10",
     "func": "Electron transport chain",
-    "value": 0.7765,
+    "sample": "HCT116WT",
+    "value": -0.176365,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "UQCR11",
     "func": "Electron transport chain",
-    "value": 0.7587,
+    "sample": "HCT116WT",
+    "value": -0.138965,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "UQCRB",
     "func": "Electron transport chain",
-    "value": 0.1349,
+    "sample": "HCT116WT",
+    "value": -0.0351746,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "UQCRC1",
     "func": "Electron transport chain",
-    "value": 0.4504,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": -0.0908289,
+    "mutation": "chr3 48636506 TG>T 3_prime_UTR_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "UQCRC2",
     "func": "Electron transport chain",
-    "value": 0.1508,
+    "sample": "HCT116WT",
+    "value": 0.0276454,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "UQCRFS1",
     "func": "Electron transport chain",
-    "value": -0.0533,
+    "sample": "HCT116WT",
+    "value": 0.111111,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "UQCRH",
     "func": "Electron transport chain",
-    "value": 0.4469,
+    "sample": "HCT116WT",
+    "value": 0.493965,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "UQCRQ",
     "func": "Electron transport chain",
-    "value": 1.1657,
+    "sample": "HCT116WT",
+    "value": -0.271426,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "UROD",
     "func": "Heme Biosynthesis",
-    "value": 0.5937,
+    "sample": "HCT116WT",
+    "value": -1.0647,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "UROS",
     "func": "Heme Biosynthesis",
-    "value": 0.8331,
+    "sample": "HCT116WT",
+    "value": -0.841219,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "VARS2",
     "func": "Translation",
-    "value": 0.4484,
+    "sample": "HCT116WT",
+    "value": 0.274349,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "VDAC1",
     "func": "Apoptosis",
-    "value": -0.0248,
+    "sample": "HCT116WT",
+    "value": -0.269984,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "VDAC2",
     "func": "Apoptosis",
-    "value": -0.0477,
+    "sample": "HCT116WT",
+    "value": -0.67115,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "VDAC3",
     "func": "Apoptosis",
-    "value": 0.1949,
-    "mutation": "NULL"
+    "sample": "HCT116WT",
+    "value": 0.0636101,
+    "mutation": "chr8 42263157 T>C 3_prime_UTR_variant"
   },
   {
-    "sample": "A0DV",
     "gene": "WARS2",
     "func": "Translation",
-    "value": -0.0436,
+    "sample": "HCT116WT",
+    "value": -0.56406,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "XIAP",
     "func": "Apoptosis",
-    "value": -0.8033,
+    "sample": "HCT116WT",
+    "value": -0.168681,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "YARS2",
     "func": "Translation",
-    "value": -0.4907,
+    "sample": "HCT116WT",
+    "value": 0.110558,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "YME1L1",
     "func": "Mitochondrial Dynamics",
-    "value": -0.2288,
+    "sample": "HCT116WT",
+    "value": -0.0748895,
     "mutation": "NULL"
   },
   {
-    "sample": "A0DV",
     "gene": "YRDC",
     "func": "Replication & Transcription",
-    "value": -0.218,
+    "sample": "HCT116WT",
+    "value": 0.44159,
     "mutation": "NULL"
   }
 ]

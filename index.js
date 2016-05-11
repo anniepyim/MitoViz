@@ -21,7 +21,6 @@ function onError(res) {
 }
 
 function onSuccess(data,colorrange) {
-    //console.log(data);
     hideLoading();
     SP.init(data,colorrange);
     PC.init(data,colorrange);

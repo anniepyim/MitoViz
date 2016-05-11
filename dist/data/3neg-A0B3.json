@@ -1402,7 +1402,7 @@
   {
     "sample": "3neg-A0B3",
     "gene": "GFER",
-    "func": "Import & Sorting",
+    "func": "Fe-S cluster biosynthesis",
     "value": 0.9217,
     "mutation": "NULL"
   },
@@ -1465,14 +1465,14 @@
   {
     "sample": "3neg-A0B3",
     "gene": "GRPEL1",
-    "func": "Import & Sorting",
+    "func": "Fe-S cluster biosynthesis",
     "value": 0.2814,
     "mutation": "NULL"
   },
   {
     "sample": "3neg-A0B3",
     "gene": "GRPEL2",
-    "func": "Import & Sorting",
+    "func": "Fe-S cluster biosynthesis",
     "value": -0.6331,
     "mutation": "NULL"
   },
@@ -3075,7 +3075,7 @@
   {
     "sample": "3neg-A0B3",
     "gene": "PHB2",
-    "func": "Translation",
+    "func": "Mitochondrial Dynamics",
     "value": 0.1278,
     "mutation": "NULL"
   },
