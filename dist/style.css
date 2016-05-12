@@ -106,10 +106,12 @@ h2 {
 #BRCA {
     display: inline-block;
     margin-right: 80px;
+    vertical-align: top
 }
 #aneuploidy {
     display: inline-block;
     margin-left: 80px;
+    vertical-align: top
 }
 #viral {
     display: inline-block;
@@ -121,6 +123,7 @@ h2 {
     margin-left: 80px;
     margin-right: 80px;
     text-align: center;
+    vertical-align: top
 }
 
 input[type=checkbox] {
