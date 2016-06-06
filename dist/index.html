@@ -1,16 +1,21 @@
 <html>
     <head>
         <meta charset=utf-8>
-        <link rel="stylesheet" href="style.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <!--<img id="loading" src="./image/loading.gif">-->
         
         
-        <div id="cb" class="checkBoxes">
-            
-        <div id ="BRCA">
-        <h1> TCGA BRCA Samples </h1>
+        <div id="cb" class="col-md-12">
+        
+        <div class = "row">
+        
+        <div id ="BRCA" class="col-md-2">
+        <h2> TCGA BRCA </h2>
         <br><br>
         <input type="checkbox" id="cb1" name="Sample" value="./data/3neg-A0B3.json" />
         <label for="cb1">3neg-A0B3</label> <br>
@@ -31,8 +36,8 @@
         <label for="cb7">others-A0DV</label> <br>
         </div>
             
-        <div id ="aneuploidy">
-        <h1> ANEUPLOIDY CELL LINES </h1>
+        <div id ="aneuploidy" class="col-md-2">
+        <h2> ANEUPLOIDY CELLS </h2>
         <br><br>
         <input type="checkbox" id="cb11" name="Sample" value="./data/11654sorted.json" />
         <label for="cb1">HCT11654</label> <br>
@@ -51,19 +56,10 @@
         <br><br>
         <input type="checkbox" id="cb22" name="Sample" value="./data/RPEvsHCT116.json" />
         <label for="cb6">RPEvsHCT116</label> <br>
-        <br><br>
-        <br><br>
-        <h1> Human and mouse trisomy cells </h1>
-        <br><br>
-        <input type="checkbox" id="cb23" name="Sample" value="./data/human-21.3.json" />
-        <label for="cb7">Human 21.3</label> <br>
-        <br><br>
-        <input type="checkbox" id="cb24" name="Sample" value="./data/mouse-21.3.json" />
-        <label for="cb8">Mouse 21.3</label> <br>
         </div>
             
-        <div id ="aneuploidy">
-        <h1> VIRAL DATA </h1>
+        <div id ="viral"  class="col-md-2">
+        <h2> VIRAL DATA </h2>
         <br><br>
         <input type="checkbox" id="cb16" name="Sample" value="./data/SC35M_dNS1_12.json" />
         <label for="cb1">SC35M_dNS1_12</label> <br>
@@ -83,17 +79,29 @@
         <input type="checkbox" id="cb21" name="Sample" value="./data/SC35M_wt_48.json" />
         <label for="cb5">SC35M_wt_48</label> <br>
         </div>
+            
+        <div id ="trisomy" class="col-md-2">
+        <h2> Human and mouse trisomy cells </h2>
+        <br><br>
+        <input type="checkbox" id="cb23" name="Sample" value="./data/human-21.3.json" />
+        <label for="cb7">Human 21.3</label> <br>
+        <br><br>
+        <input type="checkbox" id="cb24" name="Sample" value="./data/mouse-21.3.json" />
+        <label for="cb8">Mouse 21.3</label> <br>
+        </div>
         
-        <div id="color-picker">
+        <div id="color-picker"  class="col-md-2">
         <h2> Pick color range :) </h2>
         <input type ="text" id="colorinput" > <br>
-        <br>
+        <br>    
+        </div>
             
         </div>
         
         <br><br>
     
         <button id = "compareButton"/>compare</button><br>
+        <button type="button" class="btn btn-sm btn-danger">Danger</button>
         <!-- the button calls a function in index.js file -->
         
         <br><br>
@@ -105,5 +113,7 @@
         <div id="heatmap"></div> 
         
         <script src="js/Test.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
     </body>
 </html>

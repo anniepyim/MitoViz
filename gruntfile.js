@@ -33,7 +33,10 @@ module.exports = function(grunt) {
               spawn: false,
             },
           },
-        }
+        },
+        'serve': {
+		      'path': '/dist/index.html'
+	       }
     });
     
     //Tasks
@@ -43,6 +46,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-browserify');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-serve');
     
     //Watchify
     grunt.loadNpmTasks('grunt-contrib-watch');
