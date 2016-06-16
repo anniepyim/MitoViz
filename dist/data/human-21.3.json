@@ -2234,7 +2234,7 @@
   },
   {
     "gene": "MT-ND1",
-    "func": "Electron",
+    "func": "Electron transport chain",
     "sample": "human-21.3",
     "value": -0.222878944129069,
     "mutation": "NULL"

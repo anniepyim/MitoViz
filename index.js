@@ -5,7 +5,7 @@ var d3 = require('d3');
 //Modules
 var colorpicker = require('./js/colorpicker.js');
 var SP = require('./js/scatterplot.js');
-var PC = require('./js/piechart.js');
+var BC = require('./js/barchart.js');
 var heatmap = require('./js/heatmap.js');
 var parser = require('./js/parser.js');
 
@@ -23,7 +23,7 @@ function onError(res) {
 function onSuccess(data,colorrange) {
     hideLoading();
     SP.init(data,colorrange);
-    PC.init(data,colorrange);
+    BC.init(data,colorrange);
     heatmap.init(data,colorrange);
 }
 
