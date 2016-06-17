@@ -46,6 +46,7 @@ var SP = function (obj) {
 SP.drawaxis = function () {
 
     SPsvg.append("g")
+        .attr("id","x-axis")
         .attr("class", "x axis")
         .attr("transform", "translate(0," + SPheight / 2 + ")")
         .append("text")

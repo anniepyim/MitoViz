@@ -9,11 +9,10 @@ var SP = require('./js/scatterplot.js');
 var BC = require('./js/barchart.js');
 var heatmap = require('./js/heatmap.js');
 var parser = require('./js/parser.js');
-
+var exist = false;
 
 function hideLoading() {
     d3.select('#loading').remove();
-    d3.select('#compareButton').remove();
     d3.select('#cb').remove();
 }
 
@@ -23,9 +22,18 @@ function onError(res) {
 
 function onSuccess(data,colorrange) {
     hideLoading();
-    SP.init(data,colorrange);
-    BC.init(data,colorrange);
-    heatmap.init(data,colorrange);
+    if (exist === false){
+        SP.init(data,colorrange);
+        BC.init(data,colorrange);
+        heatmap.init(data,colorrange);
+    }
+    else{
+        SP.update(data, "Apoptosis", "#b3de69",colorrange);
+        d3.select("#barchartsvg").remove();
+        BC.init(data,colorrange);
+        d3.select("#heatmapsvg").remove();
+        heatmap.processData(data, "Apoptosis",colorrange);
+    }
 }
 
 d3.select('#compareButton').on('click', compareData);
@@ -33,6 +41,7 @@ d3.select('#compareButton').on('click', compareData);
 function compareData(){
          var arr = [];
          var names = document.getElementsByName('Sample');
+        exist = !!document.getElementById("x-axis");
         var colorrange = d3.select('#colorinput').property("value");
             for(var x = 0; x < names.length; x++){
                 if(names[x].checked)
@@ -54,20 +63,7 @@ var colorbrewer = require('colorbrewer');
 var SP = require('./scatterplot.js');
 var heatmap = require('./heatmap.js');
 
-var BARmargin = {top: 20, right: 20, bottom: 30, left: 10}, 
-    BARwidth = 400,
-    BARheight = 400;
 
-// create svg for bar chart.
-
-
-var BARsvg = d3.select("#barchart").append("svg")
-    .attr("id", "barchartsvg")
-    .attr("width", BARwidth + BARmargin.left + BARmargin.right)
-    .attr("height", BARheight + BARmargin.top + BARmargin.bottom)
-    .append("g")
-    .attr("transform", "translate(" + BARmargin.left + "," + BARmargin.top + ")"),
-    barH = 20;
 
 //var color = d3.scale.category20();
 
@@ -81,6 +77,21 @@ var BC = function (obj) {
 };
 
 BC.draw = function (jsondata,colorrange) {
+    
+    var BARmargin = {top: 20, right: 20, bottom: 30, left: 10}, 
+    BARwidth = 350,
+    BARheight = 400;
+
+    // create svg for bar chart.
+
+
+    var BARsvg = d3.select("#barchart").append("svg")
+        .attr("id", "barchartsvg")
+        .attr("width", BARwidth + BARmargin.left + BARmargin.right)
+        .attr("height", BARheight + BARmargin.top + BARmargin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + BARmargin.left + "," + BARmargin.top + ")"),
+        barH = 20;
     
     var data = d3.nest()
         .key(function (d) {
@@ -607,6 +618,7 @@ var SP = function (obj) {
 SP.drawaxis = function () {
 
     SPsvg.append("g")
+        .attr("id","x-axis")
         .attr("class", "x axis")
         .attr("transform", "translate(0," + SPheight / 2 + ")")
         .append("text")

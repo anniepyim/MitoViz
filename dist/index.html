@@ -10,107 +10,78 @@
         <!--<img id="loading" src="./image/loading.gif">-->
         
         
-        <div id="cb" class="col-md-12">
+        <div class="col-md-10">
+        <div id="scatterplot"></div>
+        <div id="barchart"></div>
+        <div id="heatmap"></div> 
+        </div>
         
-        <div class = "row">
-        
-        <div id ="BRCA" class="col-md-2">
+        <div class = "col-md-2">
+        <br>
+        <button id = "compareButton" class="btn btn-default">compare</button><br><br>
+        <!-- the button calls a function in index.js file -->
+        <div>
         <h2> TCGA BRCA </h2>
-        <br><br>
         <input type="checkbox" id="cb1" name="Sample" value="./data/3neg-A0B3.json" />
         <label for="cb1">3neg-A0B3</label> <br>
-        <br><br>
         <input type="checkbox" id="cb2" name="Sample" value="./data/3neg-A0E0.json" />
         <label for="cb2">3neg-A0E0</label> <br>
-        <br><br>
         <input type="checkbox" id="cb3" name="Sample" value="./data/3neg-A18V.json" />
         <label for="cb3">3neg-A18V</label> <br>
-        <br><br>
         <input type="checkbox" id="cb5" name="Sample" value="./data/others-A0BM.json" />
         <label for="cb5">others-A0BM</label> <br>
-        <br><br>
         <input type="checkbox" id="cb6" name="Sample" value="./data/others-A0HK.json" />
         <label for="cb6">others-A0HK</label> <br>
-        <br><br>
         <input type="checkbox" id="cb7" name="Sample" value="./data/others-A0DV.json" />
-        <label for="cb7">others-A0DV</label> <br>
+        <label for="cb7">others-A0DV</label>
         </div>
             
-        <div id ="aneuploidy" class="col-md-2">
+        <div>
         <h2> ANEUPLOIDY CELLS </h2>
-        <br><br>
         <input type="checkbox" id="cb11" name="Sample" value="./data/11654sorted.json" />
         <label for="cb1">HCT11654</label> <br>
-        <br><br>
         <input type="checkbox" id="cb12" name="Sample" value="./data/11683-3sorted.json" />
         <label for="cb2">HCT11683-3</label> <br>
-        <br><br>
         <input type="checkbox" id="cb13" name="Sample" value="./data/11683-4sorted.json" />
         <label for="cb3">HCT11683-4</label> <br>
-        <br><br>
         <input type="checkbox" id="cb14" name="Sample" value="./data/RPE-213sorted.json" />
         <label for="cb4">RPE1H2B-213</label> <br>
-        <br><br>
         <input type="checkbox" id="cb15" name="Sample" value="./data/RPE-123sorted.json" />
         <label for="cb5">RPE1H2B-123</label> <br>
-        <br><br>
         <input type="checkbox" id="cb22" name="Sample" value="./data/RPEvsHCT116.json" />
-        <label for="cb6">RPEvsHCT116</label> <br>
+        <label for="cb6">RPEvsHCT116</label>
         </div>
             
-        <div id ="viral"  class="col-md-2">
+        <div>
         <h2> VIRAL DATA </h2>
-        <br><br>
         <input type="checkbox" id="cb16" name="Sample" value="./data/SC35M_dNS1_12.json" />
         <label for="cb1">SC35M_dNS1_12</label> <br>
-        <br><br>
         <input type="checkbox" id="cb17" name="Sample" value="./data/SC35M_dNS1_24.json" />
         <label for="cb2">SC35M_dNS1_24</label> <br>
-        <br><br>
         <input type="checkbox" id="cb18" name="Sample" value="./data/SC35M_dNS1_48.json" />
         <label for="cb3">SC35M_dNS1_48</label> <br>
-        <br><br>
         <input type="checkbox" id="cb19" name="Sample" value="./data/SC35M_wt_12.json" />
         <label for="cb4">SC35M_wt_12</label> <br>
-        <br><br>
         <input type="checkbox" id="cb20" name="Sample" value="./data/SC35M_wt_24.json" />
         <label for="cb5">SC35M_wt_24</label> <br>
-        <br><br>
         <input type="checkbox" id="cb21" name="Sample" value="./data/SC35M_wt_48.json" />
-        <label for="cb5">SC35M_wt_48</label> <br>
+        <label for="cb5">SC35M_wt_48</label>
         </div>
             
-        <div id ="trisomy" class="col-md-2">
+        <div>
         <h2> Human and mouse trisomy cells </h2>
-        <br><br>
         <input type="checkbox" id="cb23" name="Sample" value="./data/human-21.3.json" />
         <label for="cb7">Human 21.3</label> <br>
-        <br><br>
         <input type="checkbox" id="cb24" name="Sample" value="./data/mouse-21.3.json" />
         <label for="cb8">Mouse 21.3</label> <br>
         </div>
         
-        <div id="color-picker"  class="col-md-2">
+        <div id="color-picker">
         <h2> Pick color range :) </h2>
         <input type ="text" id="colorinput" > <br>
         <br>    
+        </div> 
         </div>
-            
-        </div>
-        
-        <br><br>
-    
-        <button id = "compareButton"/>compare</button><br>
-        <button type="button" class="btn btn-sm btn-danger">Danger</button>
-        <!-- the button calls a function in index.js file -->
-        
-        <br><br>
-        
-        </div>
-        
-        <div id="scatterplot"></div>
-        <div id="barchart"></div>
-        <div id="heatmap"></div> 
         
         <script src="js/Test.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

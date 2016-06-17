@@ -3,20 +3,7 @@ var colorbrewer = require('colorbrewer');
 var SP = require('./scatterplot.js');
 var heatmap = require('./heatmap.js');
 
-var BARmargin = {top: 20, right: 20, bottom: 30, left: 10}, 
-    BARwidth = 400,
-    BARheight = 400;
 
-// create svg for bar chart.
-
-
-var BARsvg = d3.select("#barchart").append("svg")
-    .attr("id", "barchartsvg")
-    .attr("width", BARwidth + BARmargin.left + BARmargin.right)
-    .attr("height", BARheight + BARmargin.top + BARmargin.bottom)
-    .append("g")
-    .attr("transform", "translate(" + BARmargin.left + "," + BARmargin.top + ")"),
-    barH = 20;
 
 //var color = d3.scale.category20();
 
@@ -30,6 +17,21 @@ var BC = function (obj) {
 };
 
 BC.draw = function (jsondata,colorrange) {
+    
+    var BARmargin = {top: 20, right: 20, bottom: 30, left: 10}, 
+    BARwidth = 350,
+    BARheight = 400;
+
+    // create svg for bar chart.
+
+
+    var BARsvg = d3.select("#barchart").append("svg")
+        .attr("id", "barchartsvg")
+        .attr("width", BARwidth + BARmargin.left + BARmargin.right)
+        .attr("height", BARheight + BARmargin.top + BARmargin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + BARmargin.left + "," + BARmargin.top + ")"),
+        barH = 20;
     
     var data = d3.nest()
         .key(function (d) {
