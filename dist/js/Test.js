@@ -98,11 +98,19 @@ BC.draw = function (jsondata,colorrange) {
             return d.func;
         })
         .entries(jsondata);
+    
+    var sampledata = d3.nest()
+        .key(function (d) {
+            return d.sample;
+        })
+        .entries(jsondata);
 
     data.forEach(function (d) {
         d.func = d.key;
-        d.count = d.values.length;
+        d.count = d.values.length/sampledata.length;
     });
+    
+    data.sort(function(a,b) { return +b.count - +a.count; });
     
     var xmax = Math.abs(d3.max(data, function (d) {
         return d.count;
@@ -490,7 +498,7 @@ heatmap.mouseoverfunc = function (d, ingene) {
 
 
 heatmap.init = function (jsondata,colorrange) {
-    heatmap.processData(jsondata, "Apoptosis",colorrange);
+    heatmap.processData(jsondata, "Translation",colorrange);
 };
 
 if (typeof define === "function" && define.amd) {
@@ -870,7 +878,7 @@ SP.highlight = function(d, ingene){
 
 SP.init = function (jsondata,colorrange) {
     SP.drawaxis();
-    SP.update(jsondata, "Apoptosis", "#b3de69",colorrange);
+    SP.update(jsondata, "Translation", "#8dd3c7",colorrange);
 };
 
 if (typeof define === "function" && define.amd) {

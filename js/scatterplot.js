@@ -298,7 +298,7 @@ SP.highlight = function(d, ingene){
 
 SP.init = function (jsondata,colorrange) {
     SP.drawaxis();
-    SP.update(jsondata, "Apoptosis", "#b3de69",colorrange);
+    SP.update(jsondata, "Translation", "#8dd3c7",colorrange);
 };
 
 if (typeof define === "function" && define.amd) {

@@ -313,7 +313,7 @@ heatmap.mouseoverfunc = function (d, ingene) {
 
 
 heatmap.init = function (jsondata,colorrange) {
-    heatmap.processData(jsondata, "Apoptosis",colorrange);
+    heatmap.processData(jsondata, "Translation",colorrange);
 };
 
 if (typeof define === "function" && define.amd) {

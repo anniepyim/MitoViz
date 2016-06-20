@@ -38,11 +38,19 @@ BC.draw = function (jsondata,colorrange) {
             return d.func;
         })
         .entries(jsondata);
+    
+    var sampledata = d3.nest()
+        .key(function (d) {
+            return d.sample;
+        })
+        .entries(jsondata);
 
     data.forEach(function (d) {
         d.func = d.key;
-        d.count = d.values.length;
+        d.count = d.values.length/sampledata.length;
     });
+    
+    data.sort(function(a,b) { return +b.count - +a.count; });
     
     var xmax = Math.abs(d3.max(data, function (d) {
         return d.count;
