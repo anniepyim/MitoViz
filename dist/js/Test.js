@@ -78,9 +78,9 @@ var BC = function (obj) {
 
 BC.draw = function (jsondata,colorrange) {
     
-    var BARmargin = {top: 20, right: 20, bottom: 30, left: 10}, 
-    BARwidth = 350,
-    BARheight = 400;
+    var BARmargin = {top: 20, right: 20, bottom: 30, left: 20}, 
+    BARwidth = 200 - BARmargin.left - BARmargin.right,
+    BARheight = 400 - BARmargin.top - BARmargin.bottom;
 
     // create svg for bar chart.
 
@@ -628,7 +628,7 @@ SP.drawaxis = function () {
     SPsvg.append("g")
         .attr("id","x-axis")
         .attr("class", "x axis")
-        .attr("transform", "translate(0," + SPheight / 2 + ")")
+        .attr("transform", "translate(0," + SPheight + ")")
         .append("text")
         .attr("class", "label")
         .attr("x", SPwidth)
@@ -806,7 +806,7 @@ SP.mouseoverfunc = function (d, ingene) {
         for (i = 0; i < muts.length; i++) {
             muttext += muts[i] + "<br>";
         }
-        tooltipheight = (53 + muts.length * 13).toString() + "px";
+        tooltipheight = (53 + muts.length * 18).toString() + "px";
         div.transition()
             .duration(200)
             .style("opacity", 0.9)

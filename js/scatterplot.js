@@ -48,7 +48,7 @@ SP.drawaxis = function () {
     SPsvg.append("g")
         .attr("id","x-axis")
         .attr("class", "x axis")
-        .attr("transform", "translate(0," + SPheight / 2 + ")")
+        .attr("transform", "translate(0," + SPheight + ")")
         .append("text")
         .attr("class", "label")
         .attr("x", SPwidth)
@@ -226,7 +226,7 @@ SP.mouseoverfunc = function (d, ingene) {
         for (i = 0; i < muts.length; i++) {
             muttext += muts[i] + "<br>";
         }
-        tooltipheight = (53 + muts.length * 13).toString() + "px";
+        tooltipheight = (53 + muts.length * 18).toString() + "px";
         div.transition()
             .duration(200)
             .style("opacity", 0.9)

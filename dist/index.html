@@ -4,6 +4,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-select.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -17,6 +18,29 @@
         </div>
         
         <div class = "col-md-2">
+            
+         <select class="selectpicker" data-live-search="true" data-style="btn-success">
+             <option><a href = "hfdkslajfldsjl">Hot Dog, Fries and a Soda</a></option>
+  <option>Burger, Shake and a Smile</option>
+  <option>Sugar, Spice and all things nice</option>
+</select>
+            
+        <br>
+          <div class="btn-group">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Action <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="http://www.google.com">Separated link</a></li>
+  </ul>
+</div>
+
+
+
         <br>
         <button id = "compareButton" class="btn btn-default">compare</button><br><br>
         <!-- the button calls a function in index.js file -->
@@ -86,5 +110,6 @@
         <script src="js/Test.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap-select.min.js"></script>
     </body>
 </html>
