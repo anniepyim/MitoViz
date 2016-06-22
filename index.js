@@ -16,7 +16,8 @@ function hideLoading() {
 }
 
 function onError(res) {
-    hideLoading();
+    alert(res);
+    throw new Error("Something went badly wrong!");
 }
 
 function onSuccess(data,colorrange) {
@@ -38,16 +39,14 @@ function onSuccess(data,colorrange) {
 d3.select('#compareButton').on('click', compareData);
 
 function compareData(){
-         var arr = [];
-         var names = document.getElementsByName('Sample');
+        var select = document.getElementById('selected-sample');
+
+        var arr = [];
+        for (i = 0; i < select.options.length; i++) {
+           arr[i] = select.options[i].value;
+        }
         exist = !!document.getElementById("x-axis");
         var colorrange = d3.select('#colorinput').property("value");
-            for(var x = 0; x < names.length; x++){
-                if(names[x].checked)
-                {
-                arr.push(names[x].value);
-                }
-            }
         parser.parse(arr, onError, onSuccess,colorrange);
 }
 

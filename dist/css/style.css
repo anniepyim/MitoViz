@@ -2,23 +2,6 @@ body {
   font: 10px verdana;
 }
 
-.palette {
-  cursor: pointer;
-  display: inline-block;
-  vertical-align: bottom;
-  margin: 2px 0 2px 2px;
-  padding: 2px;
-  background: #fff;
-  border: solid 1px #aaa;
-}
-
-.swatch {
-  display: block;
-  vertical-align: middle;
-  width: 20px;
-  height: 15px;
-}
-
 .axis path,
 .axis line {
   fill: none;
@@ -73,6 +56,11 @@ text.text-hover {
         fill: red;
       }
 
+label {
+font: 12px verdana; 
+text-align: center;
+}
+
 #scatterplot {
     display: inline-block;
 }
@@ -81,31 +69,30 @@ text.text-hover {
 }
 
 
-h2 {
-    color: #2F4F4F;
+
+
+#selected-sample{
     font: 14px verdana; 
-    text-align: center;
-
 }
 
-#color-picker {
-    text-align: center;
+.palette {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: bottom;
+  margin: 2px 0 2px 2px;
+  padding: 2px;
+  background: #fff;
+  border: solid 1px #aaa;
 }
 
-input[type=checkbox] {
-
-    width: 40px;
-height: 10px;
-    width: 26px;
-height: 16px;
-}   
-
-label {
-font: 12px verdana; 
-text-align: center;
+.swatch {
+  display: block;
+  vertical-align: middle;
+  width: 20px;
+  height: 15px;
 }
 
-#compareButton {
-position: absolute;
-left: 40%;
+#compare {
+    text-align: center
 }
+

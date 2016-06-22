@@ -9,6 +9,11 @@ function parse(urls, errorcb, datacb,colorrange){
     
     var funcs = _.map(urls, axios.get);
     
+    
+    if (urls[0] === "Add samples...") errorcb(new Error('Add samples!'));
+    if (urls.length > 6) errorcb(new Error('No more than 6 samples!'));
+    if (colorrange === "") errorcb(new Error('Pick color!'));
+    
     axios.get('./data/mito-genes.txt')
     .then(function(response){
         var mito = [];
