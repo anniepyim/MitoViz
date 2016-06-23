@@ -19,7 +19,7 @@ var BC = function (obj) {
 BC.draw = function (jsondata,colorrange) {
     
     var BARmargin = {top: 20, right: 20, bottom: 30, left: 20}, 
-    BARwidth = 200 - BARmargin.left - BARmargin.right,
+    BARwidth = 350 - BARmargin.left - BARmargin.right,
     BARheight = 400 - BARmargin.top - BARmargin.bottom;
 
     // create svg for bar chart.

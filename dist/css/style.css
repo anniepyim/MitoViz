@@ -78,7 +78,7 @@ text-align: center;
 .palette {
   cursor: pointer;
   display: inline-block;
-  vertical-align: bottom;
+
   margin: 2px 0 2px 2px;
   padding: 2px;
   background: #fff;
@@ -86,8 +86,8 @@ text-align: center;
 }
 
 .swatch {
-  display: block;
-  vertical-align: middle;
+
+display: inline-block;
   width: 20px;
   height: 15px;
 }

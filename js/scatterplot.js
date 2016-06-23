@@ -1,7 +1,7 @@
 var d3 = require('d3');
 var colorbrewer = require('colorbrewer');
 
-var SPmargin = {top: 20, right: 20, bottom: 30, left: 40}, 
+var SPmargin = {top: 20, right: 20, bottom: 30, left: 80}, 
     SPwidth = 900 - SPmargin.left - SPmargin.right, 
     SPheight = 400 - SPmargin.top - SPmargin.bottom;
 

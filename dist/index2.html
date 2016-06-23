@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+
+  <title>Methods - bootstrap-select</title>
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../dist/css/bootstrap-select.min.css" rel="stylesheet">
+ 
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<script src="../dist/js/bootstrap-select.min.js"></script>
+    
+    <script type="text/javascript">
+  window.onload = function () {
+    var $re = $('.remove-example'),
+        $de = $('.disable-example');
+
+    $('.rm-mustard').click(function () {
+      $re.find('[value=Mustard]').remove();
+      $re.selectpicker('refresh');
+        
+        $('#selection1').find('[text=3neg-A0B3]').remove();
+        $('#selection1').selectpicker('refresh');
+    });
+    $('.rm-ketchup').click(function () {
+      $re.find('[value=Ketchup]').remove();
+      $re.selectpicker('refresh');
+    });
+    $('.rm-relish').click(function () {
+      $re.find('[value=Relish]').remove();
+      $re.selectpicker('refresh');
+    });
+    $('.ex-disable').click(function () {
+      $de.prop('disabled', true);
+      $de.selectpicker('refresh');
+    });
+    $('.ex-enable').click(function () {
+      $de.prop('disabled', false);
+      $de.selectpicker('refresh');
+    });
+      
+    
+  };
+</script>
+
+
+
+</head>
+
+<body>
+
+fsdfdsagdsagfdhthfd
+
+<div class="bs-docs-example">
+  <div class="form-group">
+    <select class="selectpicker remove-example">
+      <option value="Mustard">Mustard</option>
+      <option value="Ketchup">Ketchup</option>
+      <option value="Relish">Relish</option>
+    </select>
+  </div>
+
+  <button class="btn btn-warning rm-mustard">Remove Mustard</button>
+  <button class="btn btn-danger rm-ketchup">Remove Ketchup</button>
+  <button class="btn btn-success rm-relish">Remove Relish</button>
+</div>
+
+
+
+<div class="bs-docs-example">
+  <div class="form-group">
+    <select class="selectpicker disable-example">
+      <option value="Mustard">Mustard</option>
+      <option value="Ketchup">Ketchup</option>
+      <option value="Relish">Relish</option>
+    </select>
+  </div>
+    
+        <div id = "select1">
+        <select class="selectpicker" multiple data-live-search="true" data-style="btn btn-small btn-default" id="selection1" title="TCGA BRCA" data-width="200px" data-actions-box="true" data-selected-text-format="static">
+            <option value='hi'>3neg-A0B3</option>
+            <option value='./data/3neg-A0E0.json'>3neg-A0E0</option>
+            <option value='./data/3neg-A18V.json'>3neg-A18V</option>
+            <option value='./data/others-A0BM.json'>others-A0BM</option>
+            <option value='./data/others-A0HK.json'>others-A0HK</option>
+            <option value='./data/others-A0DV.json'>others-A0DV</option>
+        </select> 
+        </div> 
+
+  <button class="btn btn-default ex-disable"><i class="icon-remove"></i> Disable</button>
+  <button class="btn btn-default ex-enable"><i class="icon-ok"></i> Enable</button>
+</div>
+
+
+
+
+
+
+</body>
+</html>

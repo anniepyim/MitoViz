@@ -78,7 +78,7 @@ var BC = function (obj) {
 BC.draw = function (jsondata,colorrange) {
     
     var BARmargin = {top: 20, right: 20, bottom: 30, left: 20}, 
-    BARwidth = 200 - BARmargin.left - BARmargin.right,
+    BARwidth = 350 - BARmargin.left - BARmargin.right,
     BARheight = 400 - BARmargin.top - BARmargin.bottom;
 
     // create svg for bar chart.
@@ -267,7 +267,7 @@ heatmap.draw = function (jsondata, samplelist, genelist,colorrange) {
 
     
     var HMmargin = {top: 60, right: 0, bottom: 100, left: 80}, 
-        HMwidth = 1300 - HMmargin.left - HMmargin.right, 
+        HMwidth = 1250 - HMmargin.left - HMmargin.right, 
         HMheight = 430 - HMmargin.top - HMmargin.bottom,
         gridheight = HMheight / samplelist.length, 
         gridwidth = HMwidth / genelist.length, 
@@ -480,7 +480,7 @@ heatmap.mouseoverfunc = function (d, ingene) {
         for (i = 0; i < muts.length; i++) {
             muttext += muts[i] + "<br>";
         }
-        tooltipheight = (53 + muts.length * 13).toString() + "px";
+        tooltipheight = (53 + muts.length * 18).toString() + "px";
         div.transition()
             .duration(200)
             .style("opacity", 0.9)
@@ -585,7 +585,7 @@ module.exports = parser;
 var d3 = require('d3');
 var colorbrewer = require('colorbrewer');
 
-var SPmargin = {top: 20, right: 20, bottom: 30, left: 40}, 
+var SPmargin = {top: 20, right: 20, bottom: 30, left: 80}, 
     SPwidth = 900 - SPmargin.left - SPmargin.right, 
     SPheight = 400 - SPmargin.top - SPmargin.bottom;
 

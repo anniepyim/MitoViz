@@ -4,62 +4,65 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-select.css">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../dist/css/bootstrap-select.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="../dist/js/bootstrap-select.min.js"></script>
         
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-        <script src="js/bootstrap-select.js"></script>
-        <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
         <script type="text/javascript">
-        $(document).ready(function() {
-            $("#selection1").on('change',function(){
-                myFunction();
-            });
-            $("#selection2").on('change',function(){
-                myFunction();
-            });
-            $("#selection3").on('change',function(){
-                myFunction();
-            });
-            $("#selection4").on('change',function(){
+        window.onload = function () {
+            $(".selectpicker").on('change',function(){
                 myFunction();
             });
 
             function myFunction() {
                $('#selected-sample').empty();
-                $.each($("#selection1 option:selected"), function(){ 
+                $.each($(".selectpicker option:selected"), function(){
                     $('#selected-sample').append($('<option>', { 
                         value: $(this).val(),
                         text : $(this).text() 
                     }));
                 });
-                $.each($("#selection2 option:selected"), function(){ 
-                    $('#selected-sample').append($('<option>', { 
-                        value: $(this).val(),
-                        text : $(this).text() 
-                    }));
-                });
-                $.each($("#selection3 option:selected"), function(){ 
-                    $('#selected-sample').append($('<option>', { 
-                        value: $(this).val(),
-                        text : $(this).text() 
-                    }));
-                });
-                $.each($("#selection4 option:selected"), function(){ 
-                    $('#selected-sample').append($('<option>', { 
-                        value: $(this).val(),
-                        text : $(this).text() 
-                    }));
-                });
+                
                 if ($('#selected-sample').find('option').length === 0){
                     $('#selected-sample').append($('<option>', { 
                         text : 'Add samples...'
                     }))
                 }
             }
-        });
+            
+            $('#delete-selected').click(function(){
+                
+    
+                $.each($("#selected-sample option:selected"), function(){
+                    var value = $(this).val();
+                    //alert('[value='+value+']');
+                    $('.selectpicker').find('[value="'+value+'"]').prop('selected',false);
+                    $('.selectpicker').selectpicker('refresh');
+                });
+                
+                $('#selected-sample option:selected').remove();
+                
+                if ($('#selected-sample').find('option').length === 0){
+                    $('#selected-sample').append($('<option>', { 
+                        text : 'Add samples...'
+                    }))
+                }
+            })
+            
+            $('#clear-all').click(function(){
+                $('#selected-sample').empty();
+                $('#selected-sample').append($('<option>', { 
+                        text : 'Add samples...'
+                    }))
+                $('.selectpicker').selectpicker('deselectAll');
+                $('.selectpicker').selectpicker('refresh');
+            })
+            
+        };
         </script>
     </head>
     
@@ -80,7 +83,7 @@
         <div id = "select1">
         <select class="selectpicker" multiple data-live-search="true" data-style="btn btn-small btn-default" id="selection1" title="TCGA BRCA" data-width="200px" data-actions-box="true" data-selected-text-format="static">
             <option value='./data/3neg-A0B3.json'>3neg-A0B3</option>
-            <option value='./data/3neg-A0E0.json'>3neg-A0E0</option>
+            <option value="./data/3neg-A0E0.json">3neg-A0E0</option>
             <option value='./data/3neg-A18V.json'>3neg-A18V</option>
             <option value='./data/others-A0BM.json'>others-A0BM</option>
             <option value='./data/others-A0HK.json'>others-A0HK</option>
@@ -128,6 +131,8 @@
             <OPTION>Add samples...</OPTION>
         </select>      
         <br>
+        <button id = "delete-selected" class="btn btn-default">Delete</button>
+        <button id = "clear-all" class="btn btn-default">Clear</button>
         </div>
 
         <div id="color-picker">
