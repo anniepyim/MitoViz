@@ -2,7 +2,7 @@ var d3 = require('d3');
 var colorbrewer = require('colorbrewer');
 
 var SPmargin = {top: 20, right: 20, bottom: 30, left: 80}, 
-    SPwidth = 900 - SPmargin.left - SPmargin.right, 
+    SPwidth = 1000 - SPmargin.left - SPmargin.right, 
     SPheight = 400 - SPmargin.top - SPmargin.bottom;
 
 var SPsvg = d3.select("#scatterplot").append("svg")
@@ -226,7 +226,7 @@ SP.mouseoverfunc = function (d, ingene) {
         for (i = 0; i < muts.length; i++) {
             muttext += muts[i] + "<br>";
         }
-        tooltipheight = (53 + muts.length * 18).toString() + "px";
+        tooltipheight = (58 + muts.length * 15).toString() + "px";
         div.transition()
             .duration(200)
             .style("opacity", 0.9)
