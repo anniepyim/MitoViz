@@ -49,27 +49,43 @@ div.heatmaptooltip {
 
 .cell{
     stroke: #E6E6E6;
-    stroke-width:2px;   
+    stroke-width:1px;   
   }
 
 text.text-hover {
         fill: red;
       }
 
-label {
-font: 12px verdana; 
-text-align: center;
+
+#nav_bar{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font: 18px verdana;
+}
+
+
+#svgs-all{
+    text-align: center
 }
 
 #scatterplot {
-    display: inline-block;
+    display: inline-block
 }
+
 #barchart {
-    display: inline-block;
+    display: inline-block
 }
 
-
-
+#wrapUp {
+    white-space:nowrap;
+    overflow:hidden;
+}
+#heatmap {
+    white-space:nowrap;
+    overflow:hidden;
+}
 
 #selected-sample{
     font: 14px verdana; 
@@ -82,17 +98,23 @@ text-align: center;
   margin: 2px 0 2px 2px;
   padding: 2px;
   background: #fff;
-  border: solid 1px #aaa;
+  border: solid 1px #aaa;    
+
+white-space:nowrap;
+    overflow:hidden;
+
+
 }
 
 .swatch {
-
 display: inline-block;
   width: 20px;
   height: 15px;
 }
 
-#compare {
-    text-align: center
+
+.overflow{
+    white-space:nowrap;
+    overflow:hidden;
 }
 

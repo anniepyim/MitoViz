@@ -51,11 +51,15 @@ function compareData(){
         parser.parse(arr, onError, onSuccess,colorrange);
 }
 
-colorpicker();
 
-//fetch('', function(data){console.log(data);});
-//SP.init();
-//PC();
+
+$("#navbar li").click(function(e){
+    $("#navbar li").prop('class','');
+    $(this).toggleClass('active');
+    document.getElementById("barchart").remove();
+});
+
+
 },{"./js/barchart.js":2,"./js/colorpicker.js":3,"./js/heatmap.js":4,"./js/parser.js":5,"./js/scatterplot.js":6,"d3":26}],2:[function(require,module,exports){
 var d3 = require('d3');
 var colorbrewer = require('colorbrewer');
@@ -78,7 +82,7 @@ var BC = function (obj) {
 BC.draw = function (jsondata,colorrange) {
     
     var BARmargin = {top: 20, right: 20, bottom: 30, left: 20}, 
-    BARwidth = 350 - BARmargin.left - BARmargin.right,
+    BARwidth = 300 - BARmargin.left - BARmargin.right,
     BARheight = 400 - BARmargin.top - BARmargin.bottom;
 
     // create svg for bar chart.
@@ -266,8 +270,8 @@ heatmap.draw = function (jsondata, samplelist, genelist,colorrange) {
     });
 
     
-    var HMmargin = {top: 60, right: 0, bottom: 100, left: 80}, 
-        HMwidth = 1350 - HMmargin.left - HMmargin.right, 
+    var HMmargin = {top: 60, right: 0, bottom: 20, left: 80}, 
+        HMwidth = 1200 - HMmargin.left - HMmargin.right, 
         HMheight = 430 - HMmargin.top - HMmargin.bottom,
         gridheight = HMheight / samplelist.length, 
         gridwidth = HMwidth / genelist.length, 
@@ -364,8 +368,8 @@ heatmap.draw = function (jsondata, samplelist, genelist,colorrange) {
         .attr("y", function (d) {
             return (d.rowidx - 1) * gridheight;
         })
-        .attr("rx", 4)
-        .attr("ry", 4)
+        .attr("rx", 1)
+        .attr("ry", 1)
         .attr("class", function (d) {
             return "cell cr" + (d.rowidx - 1) + " cc" + (d.colidx - 1);
         })
@@ -586,15 +590,10 @@ var d3 = require('d3');
 var colorbrewer = require('colorbrewer');
 
 var SPmargin = {top: 20, right: 20, bottom: 30, left: 80}, 
-    SPwidth = 1000 - SPmargin.left - SPmargin.right, 
+    SPwidth = 900 - SPmargin.left - SPmargin.right, 
     SPheight = 400 - SPmargin.top - SPmargin.bottom;
 
-var SPsvg = d3.select("#scatterplot").append("svg")
-    .attr("id", "scatterplotsvg")
-    .attr("width", SPwidth + SPmargin.left + SPmargin.right)
-    .attr("height", SPheight + SPmargin.top + SPmargin.bottom)
-    .append("g")
-    .attr("transform", "translate(" + SPmargin.left + "," + SPmargin.top + ")");
+var SPsvg;
 
 var x = d3.scale.ordinal()
     .rangeRoundPoints([0, SPwidth], 1);
@@ -881,6 +880,13 @@ SP.highlight = function(d, ingene){
 };
 
 SP.init = function (jsondata,colorrange) {
+    SPsvg = d3.select("#scatterplot").append("svg")
+    .attr("id", "scatterplotsvg")
+    .attr("width", SPwidth + SPmargin.left + SPmargin.right)
+    .attr("height", SPheight + SPmargin.top + SPmargin.bottom)
+    .append("g")
+    .attr("transform", "translate(" + SPmargin.left + "," + SPmargin.top + ")");
+    
     SP.drawaxis();
     SP.update(jsondata, "Translation", "#8dd3c7",colorrange);
 };

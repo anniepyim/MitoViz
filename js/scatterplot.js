@@ -2,15 +2,10 @@ var d3 = require('d3');
 var colorbrewer = require('colorbrewer');
 
 var SPmargin = {top: 20, right: 20, bottom: 30, left: 80}, 
-    SPwidth = 1000 - SPmargin.left - SPmargin.right, 
+    SPwidth = 900 - SPmargin.left - SPmargin.right, 
     SPheight = 400 - SPmargin.top - SPmargin.bottom;
 
-var SPsvg = d3.select("#scatterplot").append("svg")
-    .attr("id", "scatterplotsvg")
-    .attr("width", SPwidth + SPmargin.left + SPmargin.right)
-    .attr("height", SPheight + SPmargin.top + SPmargin.bottom)
-    .append("g")
-    .attr("transform", "translate(" + SPmargin.left + "," + SPmargin.top + ")");
+var SPsvg;
 
 var x = d3.scale.ordinal()
     .rangeRoundPoints([0, SPwidth], 1);
@@ -297,6 +292,13 @@ SP.highlight = function(d, ingene){
 };
 
 SP.init = function (jsondata,colorrange) {
+    SPsvg = d3.select("#scatterplot").append("svg")
+    .attr("id", "scatterplotsvg")
+    .attr("width", SPwidth + SPmargin.left + SPmargin.right)
+    .attr("height", SPheight + SPmargin.top + SPmargin.bottom)
+    .append("g")
+    .attr("transform", "translate(" + SPmargin.left + "," + SPmargin.top + ")");
+    
     SP.drawaxis();
     SP.update(jsondata, "Translation", "#8dd3c7",colorrange);
 };

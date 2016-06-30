@@ -82,8 +82,8 @@ heatmap.draw = function (jsondata, samplelist, genelist,colorrange) {
     });
 
     
-    var HMmargin = {top: 60, right: 0, bottom: 100, left: 80}, 
-        HMwidth = 1350 - HMmargin.left - HMmargin.right, 
+    var HMmargin = {top: 60, right: 0, bottom: 20, left: 80}, 
+        HMwidth = 1200 - HMmargin.left - HMmargin.right, 
         HMheight = 430 - HMmargin.top - HMmargin.bottom,
         gridheight = HMheight / samplelist.length, 
         gridwidth = HMwidth / genelist.length, 
@@ -180,8 +180,8 @@ heatmap.draw = function (jsondata, samplelist, genelist,colorrange) {
         .attr("y", function (d) {
             return (d.rowidx - 1) * gridheight;
         })
-        .attr("rx", 4)
-        .attr("ry", 4)
+        .attr("rx", 1)
+        .attr("ry", 1)
         .attr("class", function (d) {
             return "cell cr" + (d.rowidx - 1) + " cc" + (d.colidx - 1);
         })

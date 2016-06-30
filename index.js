@@ -50,8 +50,11 @@ function compareData(){
         parser.parse(arr, onError, onSuccess,colorrange);
 }
 
-colorpicker();
 
-//fetch('', function(data){console.log(data);});
-//SP.init();
-//PC();
+
+$("#navbar li").click(function(e){
+    $("#navbar li").prop('class','');
+    $(this).toggleClass('active');
+    document.getElementById("barchart").remove();
+});
+
