@@ -14,8 +14,6 @@
         <script src="js/bootstrap-select.min.js"></script>
         <script type="text/javascript">   
         window.onload = function () {
-
-            
             $("#menu-toggle").click(function(e) {
             e.preventDefault();
             $("#wrapper").toggleClass("toggled");
@@ -76,11 +74,13 @@
     <body>
         <!--<img id="loading" src="./image/loading.gif">-->
         <div id = "wrapper"> 
-        <div id="sidebar-wrapper">
+        <div id="sidebar-wrapper"  style="border-right: 2px solid #cccccc">
         <br><br>
             <div id = "datasets">
             <div class = "overflow">
-                    <h3> Data Sets </h3><br></div>
+                    <h3> Data Sets </h3>
+                </div>
+            
             <div id = "select1">
             <select class="selectpicker" multiple data-live-search="true" data-style="btn btn-small btn-default" id="selection1" title="TCGA BRCA" data-width="200px" data-actions-box="true" data-selected-text-format="static">
                 <option value='./data/3neg-A0B3.json'>3neg-A0B3</option>
@@ -152,19 +152,20 @@
         
         <div id = "page-content-wrapper">
             <div id = "nav_bar">
-                <ul class="nav nav-tabs" id = "navbar">
-                  <li class="active"><a href="#">Home</a></li>
-                  <li><a href="#">Profile</a></li>
-                  <li><a href="#">Messages</a></li>
+                <ul class="nav nav-tabs" id = "navbar" >
+                  <li class="active"><a href="#">Scatter plot</a></li>
+                  <li><a href="#">PCA</a></li>
+                  <li><a href="#">Don't click me</a></li>
                 </ul>
             </div>
+            <a href="#menu-toggle" class="btn btn-default" id="menu-toggle"> <span class="glyphicon glyphicon-star" aria-hidden="true"></span></a>
             <div id = "svgs-all">
                 <div id="wrapUp">
                 <div id="scatterplot"></div>
+                <div id="pca"></div>
                 <div id="barchart"></div>
             </div>
             <div id="heatmap"></div>
-                <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
             </div>
             
         </div>

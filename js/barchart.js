@@ -80,8 +80,6 @@ BC.draw = function (jsondata,colorrange) {
       .text(function(d) { return d.func+" ("+d.count+")"; })
       .on("click", click);
     
-    console.log(data);
-    
     function click(d) {
         SP.update(jsondata, d.func, color(d.func),colorrange);
         d3.select("#heatmapsvg").remove();

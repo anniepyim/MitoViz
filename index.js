@@ -8,6 +8,7 @@ var SP = require('./js/scatterplot.js');
 var BC = require('./js/barchart.js');
 var heatmap = require('./js/heatmap.js');
 var parser = require('./js/parser.js');
+var pcPlot = require('./js/pcPlot.js');
 var exist = false;
 
 function hideLoading() {
@@ -26,6 +27,7 @@ function onSuccess(data,colorrange) {
         SP.init(data,colorrange);
         BC.init(data,colorrange);
         heatmap.init(data,colorrange);
+        pcPlot.init();
     }
     else{
         SP.update(data, "Apoptosis", "#b3de69",colorrange);
@@ -55,6 +57,20 @@ function compareData(){
 $("#navbar li").click(function(e){
     $("#navbar li").prop('class','');
     $(this).toggleClass('active');
-    document.getElementById("barchart").remove();
+    
+    if ($(this).text() == "PCA"){
+        document.getElementById("scatterplot").style.display="none";
+        document.getElementById("barchart").style.display="none";
+        document.getElementById("heatmap").style.display="none";
+        document.getElementById("pca").style.display="";
+    }
+    
+    if ($(this).text() == "Scatter plot"){
+        document.getElementById("scatterplot").style.display="";
+        document.getElementById("barchart").style.display="";
+        document.getElementById("heatmap").style.display="";
+        document.getElementById("pca").style.display="none";
+    }
 });
 
+pcPlot.init();

@@ -1,5 +1,18 @@
 body {
   font: 10px verdana;
+    margin: 10
+}
+
+#pca { 
+    text-align: center; 
+}
+
+canvas { 
+    display:inline;
+    top:10px;
+    left:10px;
+    padding:0;
+    margin:10px;
 }
 
 .axis path,
@@ -34,6 +47,19 @@ div.heatmaptooltip {
   border-radius: 6px;           
   pointer-events: none;         
 }
+
+div.pcatooltip {   
+      position: absolute;           
+      text-align: left;           
+      width: 250px;               
+      height: 55px;                 
+      padding: 6px;             
+      font: 12px sans-serif;        
+      background: lightsteelblue;   
+      border: 2px;      
+      border-radius: 6px;           
+      pointer-events: none;         
+    }
     
 .title {
    font: 12px verdana;  
@@ -116,5 +142,10 @@ display: inline-block;
 .overflow{
     white-space:nowrap;
     overflow:hidden;
+}
+
+#menu-toggle{
+    margin-top: 25px;
+    float:left;
 }
 
