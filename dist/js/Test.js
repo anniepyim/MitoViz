@@ -284,7 +284,7 @@ heatmap.draw = function (jsondata, samplelist, genelist,colorrange) {
     });
 
     
-    var HMmargin = {top: 60, right: 0, bottom: 20, left: 80}, 
+    var HMmargin = {top: 60, right: 0, bottom: 50, left: 80}, 
         HMwidth = 1200 - HMmargin.left - HMmargin.right, 
         HMheight = 430 - HMmargin.top - HMmargin.bottom,
         gridheight = HMheight / samplelist.length, 
@@ -1154,7 +1154,7 @@ SP.mouseoverfunc = function (d, ingene) {
         for (i = 0; i < muts.length; i++) {
             muttext += muts[i] + "<br>";
         }
-        tooltipheight = (58 + muts.length * 15).toString() + "px";
+        tooltipheight = (59 + muts.length * 16).toString() + "px";
         div.transition()
             .duration(200)
             .style("opacity", 0.9)

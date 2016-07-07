@@ -221,7 +221,7 @@ SP.mouseoverfunc = function (d, ingene) {
         for (i = 0; i < muts.length; i++) {
             muttext += muts[i] + "<br>";
         }
-        tooltipheight = (58 + muts.length * 15).toString() + "px";
+        tooltipheight = (59 + muts.length * 16).toString() + "px";
         div.transition()
             .duration(200)
             .style("opacity", 0.9)

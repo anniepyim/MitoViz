@@ -82,7 +82,7 @@ heatmap.draw = function (jsondata, samplelist, genelist,colorrange) {
     });
 
     
-    var HMmargin = {top: 60, right: 0, bottom: 20, left: 80}, 
+    var HMmargin = {top: 60, right: 0, bottom: 50, left: 80}, 
         HMwidth = 1200 - HMmargin.left - HMmargin.right, 
         HMheight = 430 - HMmargin.top - HMmargin.bottom,
         gridheight = HMheight / samplelist.length, 
