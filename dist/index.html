@@ -73,16 +73,15 @@
     
     <body>
         <!--<img id="loading" src="./image/loading.gif">-->
-        <div id = "wrapper"> 
-        <div id="sidebar-wrapper"  style="border-right: 2px solid #cccccc">
+        <div class="container main">
+        <div id="#wrapUp" class="row">
+            
+        <div class="col-md-2">
         <br><br>
             <div id = "datasets">
-            <div class = "overflow">
-                    <h3> Data Sets </h3>
-                </div>
-            
+            <h3> Data Sets </h3>
             <div id = "select1">
-            <select class="selectpicker" multiple data-live-search="true" data-style="btn btn-small btn-default" id="selection1" title="TCGA BRCA" data-width="200px" data-actions-box="true" data-selected-text-format="static">
+            <select class="selectpicker" multiple data-live-search="true" data-style="btn-default" id="selection1" title="TCGA BRCA" data-actions-box="true" data-width="175px" data-selected-text-format="static">
                 <option value='./data/3neg-A0B3.json'>3neg-A0B3</option>
                 <option value="./data/3neg-A0E0.json">3neg-A0E0</option>
                 <option value='./data/3neg-A18V.json'>3neg-A18V</option>
@@ -94,7 +93,7 @@
             <br>
 
             <div id = "select2">
-            <select class="selectpicker" multiple data-live-search="true" data-style="btn-default" id="selection2" title="ANEUPLOIDY" data-width="200px" data-actions-box="true" data-selected-text-format="static">
+            <select class="selectpicker" multiple data-live-search="true" data-style="btn-default" id="selection2" title="ANEUPLOIDY" data-width="175px" data-actions-box="true" data-selected-text-format="static">
                 <option value='./data/11654sorted.json'>HCT116-5.4</option>
                 <option value='./data/11683-3sorted.json'>HCT116-8.3-3</option>
                 <option value='./data/11683-4sorted.json'>HCT116-8.3-4</option>
@@ -107,7 +106,7 @@
             <br>
 
             <div id = "select3">
-            <select class="selectpicker" multiple data-live-search="true" data-style="btn-default" id="selection3" title="VIRAL DATA" data-width="200px" data-actions-box="true" data-selected-text-format="static">
+            <select class="selectpicker" multiple data-live-search="true" data-style="btn-default" id="selection3" title="VIRAL DATA" data-width="175px" data-actions-box="true" data-selected-text-format="static">
                 <option value='./data/SC35M_dNS1_12.json'>SC35M_dNS1_12</option>
                 <option value='./data/SC35M_dNS1_24.json'>SC35M_dNS1_24</option>
                 <option value='./data/SC35M_dNS1_48.json'>SC35M_dNS1_48</option>
@@ -119,7 +118,7 @@
             <br>
 
             <div id = "select4">
-            <select class="selectpicker" multiple data-live-search="true" data-style="btn-default" id="selection4" title="TRISOMY" data-width="200px" data-actions-box="true" data-selected-text-format="static">
+            <select class="selectpicker" multiple data-live-search="true" data-style="btn-default" id="selection4" title="TRISOMY" data-width="175px" data-actions-box="true" data-selected-text-format="static">
                 <option value='./data/human-21.3.json'>Human 21.3</option>
                 <option value='./data/mouse-21.3.json'>Mouse 21.3</option>
             </select> 
@@ -129,7 +128,7 @@
 
             <div id = "selected" class="overflow">
             <h3>Selected Samples</h3><br>
-            <select SIZE="6" MULTIPLE id="selected-sample" style="width: 200px">
+            <select SIZE="6" MULTIPLE id="selected-sample" style="width: 175px">
                 <OPTION>Add samples...</OPTION>
             </select>      
             <br>
@@ -138,19 +137,18 @@
             </div>
 
             <div id="color-picker">
-            <div class = "overflow">
-                <h3> Pick color range</h3></div>
-            <input type ="hidden" id="colorinput" > 
+            <h3> Pick color range</h3>
+            <input id="colorinput" value="#d73027,#f46d43,#fdae61,#fee08b,#ffffbf,#d9ef8b,#a6d96a,#66bd63,#1a9850" type="hidden"> 
             </div>
 
-            <div id = "compare" class="overflow">
+            <div id = "compare">
             <br>
             <button id = "compareButton" class="btn btn-default">compare</button>
             </div>
             <!-- the button calls a function in index.js file -->
         </div>
         
-        <div id = "page-content-wrapper">
+        <div class="col-md-10">
             <div id = "nav_bar">
                 <ul class="nav nav-tabs" id = "navbar" >
                   <li class="active"><a href="#">Scatter plot</a></li>
@@ -158,19 +156,16 @@
                   <li><a href="#">Don't click me</a></li>
                 </ul>
             </div>
-            <a href="#menu-toggle" class="btn btn-default" id="menu-toggle"> <span class="glyphicon glyphicon-star" aria-hidden="true"></span></a>
             <div id = "svgs-all">
-                <div id="wrapUp">
-                <div id="scatterplot"></div>
-                <div id="pca"></div>
-                <div id="barchart"></div>
-            </div>
-            <div id="heatmap"></div>
-            </div>
-            
+                <div id="scatterplot" class="col-md-9"></div>
+                <div id="pca" class="col-md-9"></div>
+                <div id="barchart" class="col-md-3"></div>
+                <div id="heatmap" class="col-md-12"></div>
+            </div>  
         </div>
         </div>
-        
+        </div>
+
         <script src="js/Test.js"></script>
     </body>
 </html>

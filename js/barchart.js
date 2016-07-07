@@ -18,20 +18,29 @@ var BC = function (obj) {
 
 BC.draw = function (jsondata,colorrange) {
     
-    var BARmargin = {top: 20, right: 20, bottom: 30, left: 20}, 
-    BARwidth = 300 - BARmargin.left - BARmargin.right,
-    BARheight = 400 - BARmargin.top - BARmargin.bottom;
+    var BARmargin = {top: 20, right: 0, bottom: 30, left: 0},
+    svgHeight = 450,
+    svgWidth = 300,
+    BARwidth = svgWidth - BARmargin.left - BARmargin.right,
+    BARheight = svgHeight - BARmargin.top - BARmargin.bottom;
 
     // create svg for bar chart.
+    
+    var resp = d3.select("#barchart")
+        .append('div')
+        .attr('class', 'svg-container'); //container class to make it responsive
+    
 
-
-    var BARsvg = d3.select("#barchart").append("svg")
+    var BARsvg = resp
+        .append("svg")
         .attr("id", "barchartsvg")
-        .attr("width", BARwidth + BARmargin.left + BARmargin.right)
-        .attr("height", BARheight + BARmargin.top + BARmargin.bottom)
+        .attr('class', 'canvas svg-content-responsive')
+        .attr('preserveAspectRatio', 'xMinYMin meet')
+        .attr('viewBox', [0, 0, svgWidth, svgHeight].join(' '))
         .append("g")
-        .attr("transform", "translate(" + BARmargin.left + "," + BARmargin.top + ")"),
-        barH = 20;
+        .attr("transform", "translate(" + BARmargin.left + "," + BARmargin.top + ")");
+        
+    var barH = BARheight/17;
     
     var data = d3.nest()
         .key(function (d) {

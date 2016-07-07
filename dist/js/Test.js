@@ -4,7 +4,7 @@
 var d3 = require('d3');
 
 //Modules
-var colorpicker = require('./js/colorpicker.js');
+//var colorpicker = require('./js/colorpicker.js');
 var SP = require('./js/scatterplot.js');
 var BC = require('./js/barchart.js');
 var heatmap = require('./js/heatmap.js');
@@ -28,7 +28,6 @@ function onSuccess(data,colorrange) {
         SP.init(data,colorrange);
         BC.init(data,colorrange);
         heatmap.init(data,colorrange);
-        pcPlot.init();
     }
     else{
         SP.update(data, "Apoptosis", "#b3de69",colorrange);
@@ -76,7 +75,7 @@ $("#navbar li").click(function(e){
 
 pcPlot.init();
 
-},{"./js/barchart.js":2,"./js/colorpicker.js":3,"./js/heatmap.js":4,"./js/parser.js":5,"./js/pcPlot.js":6,"./js/scatterplot.js":7,"d3":27}],2:[function(require,module,exports){
+},{"./js/barchart.js":2,"./js/heatmap.js":3,"./js/parser.js":4,"./js/pcPlot.js":5,"./js/scatterplot.js":6,"d3":26}],2:[function(require,module,exports){
 var d3 = require('d3');
 var colorbrewer = require('colorbrewer');
 var SP = require('./scatterplot.js');
@@ -97,20 +96,29 @@ var BC = function (obj) {
 
 BC.draw = function (jsondata,colorrange) {
     
-    var BARmargin = {top: 20, right: 20, bottom: 30, left: 20}, 
-    BARwidth = 300 - BARmargin.left - BARmargin.right,
-    BARheight = 400 - BARmargin.top - BARmargin.bottom;
+    var BARmargin = {top: 20, right: 0, bottom: 30, left: 0},
+    svgHeight = 450,
+    svgWidth = 300,
+    BARwidth = svgWidth - BARmargin.left - BARmargin.right,
+    BARheight = svgHeight - BARmargin.top - BARmargin.bottom;
 
     // create svg for bar chart.
+    
+    var resp = d3.select("#barchart")
+        .append('div')
+        .attr('class', 'svg-container'); //container class to make it responsive
+    
 
-
-    var BARsvg = d3.select("#barchart").append("svg")
+    var BARsvg = resp
+        .append("svg")
         .attr("id", "barchartsvg")
-        .attr("width", BARwidth + BARmargin.left + BARmargin.right)
-        .attr("height", BARheight + BARmargin.top + BARmargin.bottom)
+        .attr('class', 'canvas svg-content-responsive')
+        .attr('preserveAspectRatio', 'xMinYMin meet')
+        .attr('viewBox', [0, 0, svgWidth, svgHeight].join(' '))
         .append("g")
-        .attr("transform", "translate(" + BARmargin.left + "," + BARmargin.top + ")"),
-        barH = 20;
+        .attr("transform", "translate(" + BARmargin.left + "," + BARmargin.top + ")");
+        
+    var barH = BARheight/17;
     
     var data = d3.nest()
         .key(function (d) {
@@ -173,33 +181,7 @@ BC.init = function (jsondata,colorrange) {
 };
 
 module.exports = BC;
-},{"./heatmap.js":4,"./scatterplot.js":7,"colorbrewer":26,"d3":27}],3:[function(require,module,exports){
-var d3 = require('d3');
-var colorbrewer = require('colorbrewer');
-
-colordata = d3.entries(colorbrewer); 
-    
-var data = [];
-
-colordata.forEach(function (d) {
-    if (d.key == "PRGn" || d.key == "PiYG" || d.key == "RdBu" || d.key == "RdYlGn") {
-        data.push(d);
-    }
-});    
-
-d3.select("#color-picker")
-  .selectAll(".palette")
-    .data(data)
-  .enter().append("span")
-    .attr("class", "palette")
-    .attr("title", function(d) { return d.key; })
-    .on("click", function(d) { d3.select("#colorinput").property("value", d.value[d3.keys(d.value).map(Number).sort(d3.descending)[2]]); })
-  .selectAll(".swatch")
-    .data(function(d) { return d.value[d3.keys(d.value).map(Number).sort(d3.descending)[2]]; })
-  .enter().append("span")
-    .attr("class", "swatch")
-    .style("background-color", function(d) { return d; });
-},{"colorbrewer":26,"d3":27}],4:[function(require,module,exports){
+},{"./heatmap.js":3,"./scatterplot.js":6,"colorbrewer":25,"d3":26}],3:[function(require,module,exports){
 var d3 = require('d3');
 var colorbrewer = require('colorbrewer');
 
@@ -284,18 +266,26 @@ heatmap.draw = function (jsondata, samplelist, genelist,colorrange) {
     });
 
     
-    var HMmargin = {top: 60, right: 0, bottom: 20, left: 80}, 
-        HMwidth = 1200 - HMmargin.left - HMmargin.right, 
-        HMheight = 430 - HMmargin.top - HMmargin.bottom,
+    var HMmargin = {top: 60, right: 0, bottom: 50, left: 60},
+        svgWidth = 1200,
+        svgHeight = 450,
+        HMwidth = svgWidth - HMmargin.left - HMmargin.right, 
+        HMheight = svgHeight - HMmargin.top - HMmargin.bottom,
         gridheight = HMheight / samplelist.length, 
         gridwidth = HMwidth / genelist.length, 
         legendElementWidth = HMwidth / 9,
         colors = colorrange.split(',');
+    
+    var resp = d3.select("#heatmap")
+        .append('div')
+        .attr('class', 'svg-container'); //container class to make it responsive
 
-    var svg = d3.select("#heatmap").append("svg")
+    var svg = resp
+        .append("svg")
         .attr("id", "heatmapsvg")
-        .attr("width", HMwidth + HMmargin.left + HMmargin.right)
-        .attr("height", HMheight + HMmargin.top + HMmargin.bottom)
+        .attr('class', 'canvas svg-content-responsive')
+        .attr('preserveAspectRatio', 'xMinYMin meet')
+        .attr('viewBox', [0, 0, svgWidth, svgHeight].join(' '))
         .append("g")
         .attr("transform", "translate(" + HMmargin.left + "," + HMmargin.top + ")");
     
@@ -422,7 +412,7 @@ heatmap.draw = function (jsondata, samplelist, genelist,colorrange) {
         })
         .attr("y", HMheight + 15)
         .attr("width", legendElementWidth)
-        .attr("height", 20)
+        .attr("height", 10)
         .style("fill", function (d, i) {
             return colors[i];
         });
@@ -525,7 +515,7 @@ if (typeof define === "function" && define.amd) {
 } else {
     this.heatmap = heatmap;
 }
-},{"./scatterplot.js":7,"colorbrewer":26,"d3":27}],5:[function(require,module,exports){
+},{"./scatterplot.js":6,"colorbrewer":25,"d3":26}],4:[function(require,module,exports){
 var axios = require('axios');
 var _ = require('underscore');
 
@@ -599,7 +589,7 @@ module.exports = parser;
 
 
 
-},{"axios":8,"underscore":31}],6:[function(require,module,exports){
+},{"axios":7,"underscore":30}],5:[function(require,module,exports){
 var d3 = require('d3');
 var THREE = require ('three');
 var OrbitControls = require('three-orbit-controls')(THREE);
@@ -930,13 +920,15 @@ if (typeof define === "function" && define.amd) {
 } else {
     this.pcPlot = pcPlot;
 }
-},{"d3":27,"three":30,"three-orbit-controls":29}],7:[function(require,module,exports){
+},{"d3":26,"three":29,"three-orbit-controls":28}],6:[function(require,module,exports){
 var d3 = require('d3');
 var colorbrewer = require('colorbrewer');
 
-var SPmargin = {top: 20, right: 20, bottom: 30, left: 80}, 
-    SPwidth = 900 - SPmargin.left - SPmargin.right, 
-    SPheight = 400 - SPmargin.top - SPmargin.bottom;
+var SPmargin = {top: 20, right: 0, bottom: 30, left: 30},
+    svgWidth = 900,
+    svgHeight = 450,
+    SPwidth = svgWidth - SPmargin.left - SPmargin.right, 
+    SPheight = svgHeight - SPmargin.top - SPmargin.bottom;
 
 var SPsvg;
 
@@ -996,13 +988,13 @@ SP.drawaxis = function () {
 
     SPsvg.append("rect")
         .attr("class", "SPrect")
-        .attr("x", SPwidth - 180)
+        .attr("x", SPwidth - 250)
         .attr("width", 18)
         .attr("height", 18);
 
     SPsvg.append("text")
         .attr("class", "SPtitle")
-        .attr("transform", "translate(" + (SPwidth - 155) + ",13)");
+        .attr("transform", "translate(" + (SPwidth - 220) + ",13)");
 
 };
 
@@ -1225,10 +1217,17 @@ SP.highlight = function(d, ingene){
 };
 
 SP.init = function (jsondata,colorrange) {
-    SPsvg = d3.select("#scatterplot").append("svg")
+    
+    var resp = d3.select("#scatterplot")
+        .append('div')
+        .attr('class', 'svg-container'); //container class to make it responsive
+    
+    SPsvg = resp
+    .append("svg")
     .attr("id", "scatterplotsvg")
-    .attr("width", SPwidth + SPmargin.left + SPmargin.right)
-    .attr("height", SPheight + SPmargin.top + SPmargin.bottom)
+    .attr('class', 'canvas svg-content-responsive')
+    .attr('preserveAspectRatio', 'xMinYMin meet')
+    .attr('viewBox', [0, 0, svgWidth, svgHeight].join(' '))
     .append("g")
     .attr("transform", "translate(" + SPmargin.left + "," + SPmargin.top + ")");
     
@@ -1243,9 +1242,9 @@ if (typeof define === "function" && define.amd) {
 } else {
     this.SP = SP;
 }
-},{"colorbrewer":26,"d3":27}],8:[function(require,module,exports){
+},{"colorbrewer":25,"d3":26}],7:[function(require,module,exports){
 module.exports = require('./lib/axios');
-},{"./lib/axios":10}],9:[function(require,module,exports){
+},{"./lib/axios":9}],8:[function(require,module,exports){
 'use strict';
 
 var utils = require('./../utils');
@@ -1377,7 +1376,7 @@ module.exports = function xhrAdapter(resolve, reject, config) {
   request.send(requestData);
 };
 
-},{"./../helpers/btoa":15,"./../helpers/buildURL":16,"./../helpers/cookies":18,"./../helpers/isURLSameOrigin":20,"./../helpers/parseHeaders":21,"./../helpers/transformData":23,"./../utils":24}],10:[function(require,module,exports){
+},{"./../helpers/btoa":14,"./../helpers/buildURL":15,"./../helpers/cookies":17,"./../helpers/isURLSameOrigin":19,"./../helpers/parseHeaders":20,"./../helpers/transformData":22,"./../utils":23}],9:[function(require,module,exports){
 'use strict';
 
 var defaults = require('./defaults');
@@ -1499,7 +1498,7 @@ utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
   axios[method] = bind(Axios.prototype[method], defaultInstance);
 });
 
-},{"./core/InterceptorManager":11,"./core/dispatchRequest":12,"./defaults":13,"./helpers/bind":14,"./helpers/combineURLs":17,"./helpers/isAbsoluteURL":19,"./helpers/spread":22,"./helpers/transformData":23,"./utils":24}],11:[function(require,module,exports){
+},{"./core/InterceptorManager":10,"./core/dispatchRequest":11,"./defaults":12,"./helpers/bind":13,"./helpers/combineURLs":16,"./helpers/isAbsoluteURL":18,"./helpers/spread":21,"./helpers/transformData":22,"./utils":23}],10:[function(require,module,exports){
 'use strict';
 
 var utils = require('./../utils');
@@ -1553,7 +1552,7 @@ InterceptorManager.prototype.forEach = function forEach(fn) {
 
 module.exports = InterceptorManager;
 
-},{"./../utils":24}],12:[function(require,module,exports){
+},{"./../utils":23}],11:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -1591,7 +1590,7 @@ module.exports = function dispatchRequest(config) {
 
 
 }).call(this,require('_process'))
-},{"../adapters/http":9,"../adapters/xhr":9,"_process":28}],13:[function(require,module,exports){
+},{"../adapters/http":8,"../adapters/xhr":8,"_process":27}],12:[function(require,module,exports){
 'use strict';
 
 var utils = require('./utils');
@@ -1656,7 +1655,7 @@ module.exports = {
   xsrfHeaderName: 'X-XSRF-TOKEN'
 };
 
-},{"./utils":24}],14:[function(require,module,exports){
+},{"./utils":23}],13:[function(require,module,exports){
 'use strict';
 
 module.exports = function bind(fn, thisArg) {
@@ -1669,7 +1668,7 @@ module.exports = function bind(fn, thisArg) {
   };
 };
 
-},{}],15:[function(require,module,exports){
+},{}],14:[function(require,module,exports){
 'use strict';
 
 // btoa polyfill for IE<10 courtesy https://github.com/davidchambers/Base64.js
@@ -1707,7 +1706,7 @@ function btoa(input) {
 
 module.exports = btoa;
 
-},{}],16:[function(require,module,exports){
+},{}],15:[function(require,module,exports){
 'use strict';
 
 var utils = require('./../utils');
@@ -1776,7 +1775,7 @@ module.exports = function buildURL(url, params, paramsSerializer) {
 };
 
 
-},{"./../utils":24}],17:[function(require,module,exports){
+},{"./../utils":23}],16:[function(require,module,exports){
 'use strict';
 
 /**
@@ -1790,7 +1789,7 @@ module.exports = function combineURLs(baseURL, relativeURL) {
   return baseURL.replace(/\/+$/, '') + '/' + relativeURL.replace(/^\/+/, '');
 };
 
-},{}],18:[function(require,module,exports){
+},{}],17:[function(require,module,exports){
 'use strict';
 
 var utils = require('./../utils');
@@ -1845,7 +1844,7 @@ module.exports = (
   })()
 );
 
-},{"./../utils":24}],19:[function(require,module,exports){
+},{"./../utils":23}],18:[function(require,module,exports){
 'use strict';
 
 /**
@@ -1861,7 +1860,7 @@ module.exports = function isAbsoluteURL(url) {
   return /^([a-z][a-z\d\+\-\.]*:)?\/\//i.test(url);
 };
 
-},{}],20:[function(require,module,exports){
+},{}],19:[function(require,module,exports){
 'use strict';
 
 var utils = require('./../utils');
@@ -1931,7 +1930,7 @@ module.exports = (
   })()
 );
 
-},{"./../utils":24}],21:[function(require,module,exports){
+},{"./../utils":23}],20:[function(require,module,exports){
 'use strict';
 
 var utils = require('./../utils');
@@ -1970,7 +1969,7 @@ module.exports = function parseHeaders(headers) {
   return parsed;
 };
 
-},{"./../utils":24}],22:[function(require,module,exports){
+},{"./../utils":23}],21:[function(require,module,exports){
 'use strict';
 
 /**
@@ -1999,7 +1998,7 @@ module.exports = function spread(callback) {
   };
 };
 
-},{}],23:[function(require,module,exports){
+},{}],22:[function(require,module,exports){
 'use strict';
 
 var utils = require('./../utils');
@@ -2021,7 +2020,7 @@ module.exports = function transformData(data, headers, fns) {
   return data;
 };
 
-},{"./../utils":24}],24:[function(require,module,exports){
+},{"./../utils":23}],23:[function(require,module,exports){
 'use strict';
 
 /*global toString:true*/
@@ -2267,7 +2266,7 @@ module.exports = {
   trim: trim
 };
 
-},{}],25:[function(require,module,exports){
+},{}],24:[function(require,module,exports){
 // This product includes color specifications and designs developed by Cynthia Brewer (http://colorbrewer.org/).
 // JavaScript specs as packaged in the D3 library (d3js.org). Please see license at http://colorbrewer.org/export/LICENSE.txt
 !function() {
@@ -2584,10 +2583,10 @@ if (typeof define === "function" && define.amd) {
 
 }();
 
-},{}],26:[function(require,module,exports){
+},{}],25:[function(require,module,exports){
 module.exports = require('./colorbrewer.js');
 
-},{"./colorbrewer.js":25}],27:[function(require,module,exports){
+},{"./colorbrewer.js":24}],26:[function(require,module,exports){
 !function() {
   var d3 = {
     version: "3.5.16"
@@ -12142,7 +12141,7 @@ module.exports = require('./colorbrewer.js');
   });
   if (typeof define === "function" && define.amd) this.d3 = d3, define(d3); else if (typeof module === "object" && module.exports) module.exports = d3; else this.d3 = d3;
 }();
-},{}],28:[function(require,module,exports){
+},{}],27:[function(require,module,exports){
 // shim for using process in browser
 
 var process = module.exports = {};
@@ -12235,7 +12234,7 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}],29:[function(require,module,exports){
+},{}],28:[function(require,module,exports){
 module.exports = function(THREE) {
 	var MOUSE = THREE.MOUSE
 	if (!MOUSE)
@@ -13356,7 +13355,7 @@ module.exports = function(THREE) {
 	return OrbitControls;
 }
 
-},{}],30:[function(require,module,exports){
+},{}],29:[function(require,module,exports){
 // File:src/Three.js
 
 /**
@@ -55230,7 +55229,7 @@ THREE.MorphBlendMesh.prototype.update = function ( delta ) {
 };
 
 
-},{}],31:[function(require,module,exports){
+},{}],30:[function(require,module,exports){
 //     Underscore.js 1.7.0
 //     http://underscorejs.org
 //     (c) 2009-2014 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors

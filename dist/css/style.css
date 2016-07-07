@@ -1,24 +1,19 @@
-body {
-  font: 10px verdana;
+body { 
     margin: 10
 }
 
-#pca { 
-    text-align: center; 
+#selected-sample{
+    font: 14px verdana; 
 }
 
-canvas { 
-    display:inline;
-    top:10px;
-    left:10px;
-    padding:0;
-    margin:10px;
+
+#nav_bar{
+    font: 18px verdana;
 }
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
+
+#svgs-all{
+    text-align: center
+    font: 13px verdana;
 }
 
 div.tooltip {   
@@ -59,17 +54,29 @@ div.pcatooltip {
       border-radius: 6px;           
       pointer-events: none;         
     }
-    
-.title {
-   font: 12px verdana;  
+
+#wrapUp {
+    white-space:nowrap;
+    overflow:hidden;
 }
 
-.SPtitle {
-   font: 12px verdana;  
+#scatterplot {
+    display: inline-block
 }
 
-.legend {
-   font: 12px verdana;  
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+#barchart {
+    display: inline-block
+}
+
+#heatmap{
+    font: 10px verdana; 
 }
 
 .cell{
@@ -80,71 +87,4 @@ div.pcatooltip {
 text.text-hover {
         fill: red;
       }
-
-
-#nav_bar{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    font: 18px verdana;
-}
-
-
-#svgs-all{
-    text-align: center
-}
-
-#scatterplot {
-    display: inline-block
-}
-
-#barchart {
-    display: inline-block
-}
-
-#wrapUp {
-    white-space:nowrap;
-    overflow:hidden;
-}
-#heatmap {
-    white-space:nowrap;
-    overflow:hidden;
-}
-
-#selected-sample{
-    font: 14px verdana; 
-}
-
-.palette {
-  cursor: pointer;
-  display: inline-block;
-
-  margin: 2px 0 2px 2px;
-  padding: 2px;
-  background: #fff;
-  border: solid 1px #aaa;    
-
-white-space:nowrap;
-    overflow:hidden;
-
-
-}
-
-.swatch {
-display: inline-block;
-  width: 20px;
-  height: 15px;
-}
-
-
-.overflow{
-    white-space:nowrap;
-    overflow:hidden;
-}
-
-#menu-toggle{
-    margin-top: 25px;
-    float:left;
-}
 

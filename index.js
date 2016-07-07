@@ -3,7 +3,7 @@
 var d3 = require('d3');
 
 //Modules
-var colorpicker = require('./js/colorpicker.js');
+//var colorpicker = require('./js/colorpicker.js');
 var SP = require('./js/scatterplot.js');
 var BC = require('./js/barchart.js');
 var heatmap = require('./js/heatmap.js');
@@ -27,7 +27,6 @@ function onSuccess(data,colorrange) {
         SP.init(data,colorrange);
         BC.init(data,colorrange);
         heatmap.init(data,colorrange);
-        pcPlot.init();
     }
     else{
         SP.update(data, "Apoptosis", "#b3de69",colorrange);

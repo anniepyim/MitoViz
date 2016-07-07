@@ -1,9 +1,11 @@
 var d3 = require('d3');
 var colorbrewer = require('colorbrewer');
 
-var SPmargin = {top: 20, right: 20, bottom: 30, left: 80}, 
-    SPwidth = 900 - SPmargin.left - SPmargin.right, 
-    SPheight = 400 - SPmargin.top - SPmargin.bottom;
+var SPmargin = {top: 20, right: 0, bottom: 30, left: 30},
+    svgWidth = 900,
+    svgHeight = 450,
+    SPwidth = svgWidth - SPmargin.left - SPmargin.right, 
+    SPheight = svgHeight - SPmargin.top - SPmargin.bottom;
 
 var SPsvg;
 
@@ -63,13 +65,13 @@ SP.drawaxis = function () {
 
     SPsvg.append("rect")
         .attr("class", "SPrect")
-        .attr("x", SPwidth - 180)
+        .attr("x", SPwidth - 250)
         .attr("width", 18)
         .attr("height", 18);
 
     SPsvg.append("text")
         .attr("class", "SPtitle")
-        .attr("transform", "translate(" + (SPwidth - 155) + ",13)");
+        .attr("transform", "translate(" + (SPwidth - 220) + ",13)");
 
 };
 
@@ -292,10 +294,17 @@ SP.highlight = function(d, ingene){
 };
 
 SP.init = function (jsondata,colorrange) {
-    SPsvg = d3.select("#scatterplot").append("svg")
+    
+    var resp = d3.select("#scatterplot")
+        .append('div')
+        .attr('class', 'svg-container'); //container class to make it responsive
+    
+    SPsvg = resp
+    .append("svg")
     .attr("id", "scatterplotsvg")
-    .attr("width", SPwidth + SPmargin.left + SPmargin.right)
-    .attr("height", SPheight + SPmargin.top + SPmargin.bottom)
+    .attr('class', 'canvas svg-content-responsive')
+    .attr('preserveAspectRatio', 'xMinYMin meet')
+    .attr('viewBox', [0, 0, svgWidth, svgHeight].join(' '))
     .append("g")
     .attr("transform", "translate(" + SPmargin.left + "," + SPmargin.top + ")");
     

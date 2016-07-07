@@ -82,18 +82,26 @@ heatmap.draw = function (jsondata, samplelist, genelist,colorrange) {
     });
 
     
-    var HMmargin = {top: 60, right: 0, bottom: 20, left: 80}, 
-        HMwidth = 1200 - HMmargin.left - HMmargin.right, 
-        HMheight = 430 - HMmargin.top - HMmargin.bottom,
+    var HMmargin = {top: 60, right: 0, bottom: 50, left: 60},
+        svgWidth = 1200,
+        svgHeight = 450,
+        HMwidth = svgWidth - HMmargin.left - HMmargin.right, 
+        HMheight = svgHeight - HMmargin.top - HMmargin.bottom,
         gridheight = HMheight / samplelist.length, 
         gridwidth = HMwidth / genelist.length, 
         legendElementWidth = HMwidth / 9,
         colors = colorrange.split(',');
+    
+    var resp = d3.select("#heatmap")
+        .append('div')
+        .attr('class', 'svg-container'); //container class to make it responsive
 
-    var svg = d3.select("#heatmap").append("svg")
+    var svg = resp
+        .append("svg")
         .attr("id", "heatmapsvg")
-        .attr("width", HMwidth + HMmargin.left + HMmargin.right)
-        .attr("height", HMheight + HMmargin.top + HMmargin.bottom)
+        .attr('class', 'canvas svg-content-responsive')
+        .attr('preserveAspectRatio', 'xMinYMin meet')
+        .attr('viewBox', [0, 0, svgWidth, svgHeight].join(' '))
         .append("g")
         .attr("transform", "translate(" + HMmargin.left + "," + HMmargin.top + ")");
     
@@ -220,7 +228,7 @@ heatmap.draw = function (jsondata, samplelist, genelist,colorrange) {
         })
         .attr("y", HMheight + 15)
         .attr("width", legendElementWidth)
-        .attr("height", 20)
+        .attr("height", 10)
         .style("fill", function (d, i) {
             return colors[i];
         });
@@ -233,7 +241,7 @@ heatmap.draw = function (jsondata, samplelist, genelist,colorrange) {
         .attr("x", function (d, i) {
             return legendElementWidth * i + legendElementWidth / 2;
         })
-        .attr("y", HMheight + 50);
+        .attr("y", HMheight + 40);
 
     legend.exit().remove();
 
