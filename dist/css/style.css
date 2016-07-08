@@ -1,11 +1,13 @@
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css");
+@import url("bootstrap-select.min.css");
+
+
 body { 
     margin: 10
 }
-
 #selected-sample{
     font: 14px verdana; 
 }
-
 
 #nav_bar{
     font: 18px verdana;

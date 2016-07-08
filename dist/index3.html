@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <meta charset=utf-8>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet" >
+        <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap-select.min.js"></script>
+    </head>
+    
+    <body>
+        <!--<img id="loading" src="./image/loading.gif">-->
+        <div class="container main">
+        <div id="#wrapUp" class="row">
+            
+        <div class="col-md-2">
+
+            <h3> Data Sets </h3>
+
+            <!-- the button calls a function in index.js file -->
+        </div>
+        
+        <div class="col-md-10">
+            <div id = "nav_bar">
+                <ul class="nav nav-tabs" id = "navbar" >
+                  <li class="active"><a href="#">Scatter plot</a></li>
+                  <li><a href="#">PCA</a></li>
+                  <li><a href="#">Don't click me</a></li>
+                </ul>
+            </div>
+            <div id = "svgs-all">
+                <div id="scatterplot" class="col-md-9"></div>
+                <div id="pca" class="col-md-9" style="display:none"></div>
+                <div id="barchart" class="col-md-3"></div>
+                <div id="heatmap" class="col-md-12"></div>
+            </div>  
+        </div>
+        </div>
+        </div>
+
+        <script src="js/Test.js"></script>
+        <script>    
+            App.init();
+        </script>
+    </body>
+</html>

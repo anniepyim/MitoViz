@@ -3,169 +3,17 @@
         <meta charset=utf-8>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/bootstrap-select.min.css" rel="stylesheet">
-        <link href="css/simple-sidebar.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet" >
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/bootstrap-select.min.js"></script>
-        <script type="text/javascript">   
-        window.onload = function () {
-            $("#menu-toggle").click(function(e) {
-            e.preventDefault();
-            $("#wrapper").toggleClass("toggled");
-            });
-            
-            $(".selectpicker").on('change',function(){
-                myFunction();
-            });
-
-            function myFunction() {
-               $('#selected-sample').empty();
-                $.each($(".selectpicker option:selected"), function(){
-                    $('#selected-sample').append($('<option>', { 
-                        value: $(this).val(),
-                        text : $(this).text() 
-                    }));
-                });
-                
-                if ($('#selected-sample').find('option').length === 0){
-                    $('#selected-sample').append($('<option>', { 
-                        text : 'Add samples...'
-                    }))
-                }
-            }
-            
-            $('#delete-selected').click(function(){
-                
-    
-                $.each($("#selected-sample option:selected"), function(){
-                    var value = $(this).val();
-                    //alert('[value='+value+']');
-                    $('.selectpicker').find('[value="'+value+'"]').prop('selected',false);
-                    $('.selectpicker').selectpicker('refresh');
-                });
-                
-                $('#selected-sample option:selected').remove();
-                
-                if ($('#selected-sample').find('option').length === 0){
-                    $('#selected-sample').append($('<option>', { 
-                        text : 'Add samples...'
-                    }))
-                }
-            })
-            
-            $('#clear-all').click(function(){
-                $('#selected-sample').empty();
-                $('#selected-sample').append($('<option>', { 
-                        text : 'Add samples...'
-                    }))
-                $('.selectpicker').selectpicker('deselectAll');
-                $('.selectpicker').selectpicker('refresh');
-            })
-            
-        };
-        </script>
     </head>
     
     <body>
         <!--<img id="loading" src="./image/loading.gif">-->
-        <div class="container main">
-        <div id="#wrapUp" class="row">
-            
-        <div class="col-md-2">
-        <br><br>
-            <div id = "datasets">
-            <h3> Data Sets </h3>
-            <div id = "select1">
-            <select class="selectpicker" multiple data-live-search="true" data-style="btn-default" id="selection1" title="TCGA BRCA" data-actions-box="true" data-width="175px" data-selected-text-format="static">
-                <option value='./data/3neg-A0B3.json'>3neg-A0B3</option>
-                <option value="./data/3neg-A0E0.json">3neg-A0E0</option>
-                <option value='./data/3neg-A18V.json'>3neg-A18V</option>
-                <option value='./data/others-A0BM.json'>others-A0BM</option>
-                <option value='./data/others-A0HK.json'>others-A0HK</option>
-                <option value='./data/others-A0DV.json'>others-A0DV</option>
-            </select> 
-            </div>    
-            <br>
-
-            <div id = "select2">
-            <select class="selectpicker" multiple data-live-search="true" data-style="btn-default" id="selection2" title="ANEUPLOIDY" data-width="175px" data-actions-box="true" data-selected-text-format="static">
-                <option value='./data/11654sorted.json'>HCT116-5.4</option>
-                <option value='./data/11683-3sorted.json'>HCT116-8.3-3</option>
-                <option value='./data/11683-4sorted.json'>HCT116-8.3-4</option>
-                <option value='./data/HCT116-21.3.json'>HCT116-21.3</option>
-                <option value='./data/RPE-213sorted.json'>RPE1H2B-21.3</option>
-                <option value='./data/RPE-123sorted.json'>RPE1H2B-12.3</option>
-                <option value='./data/RPEvsHCT116.json'>RPEvsHCT116</option>
-            </select> 
-            </div>    
-            <br>
-
-            <div id = "select3">
-            <select class="selectpicker" multiple data-live-search="true" data-style="btn-default" id="selection3" title="VIRAL DATA" data-width="175px" data-actions-box="true" data-selected-text-format="static">
-                <option value='./data/SC35M_dNS1_12.json'>SC35M_dNS1_12</option>
-                <option value='./data/SC35M_dNS1_24.json'>SC35M_dNS1_24</option>
-                <option value='./data/SC35M_dNS1_48.json'>SC35M_dNS1_48</option>
-                <option value='./data/SC35M_wt_12.json'>SC35M_wt_12</option>
-                <option value='./data/SC35M_wt_24.json'>C35M_wt_24</option>
-                <option value='./data/SC35M_wt_48.json'>SC35M_wt_48</option>
-            </select> 
-            </div>    
-            <br>
-
-            <div id = "select4">
-            <select class="selectpicker" multiple data-live-search="true" data-style="btn-default" id="selection4" title="TRISOMY" data-width="175px" data-actions-box="true" data-selected-text-format="static">
-                <option value='./data/human-21.3.json'>Human 21.3</option>
-                <option value='./data/mouse-21.3.json'>Mouse 21.3</option>
-            </select> 
-            </div>    
-            <br>
-            </div>
-
-            <div id = "selected" class="overflow">
-            <h3>Selected Samples</h3><br>
-            <select SIZE="6" MULTIPLE id="selected-sample" style="width: 175px">
-                <OPTION>Add samples...</OPTION>
-            </select>      
-            <br>
-            <button id = "delete-selected" class="btn btn-default">Delete</button>
-            <button id = "clear-all" class="btn btn-default">Clear</button>
-            </div>
-
-            <div id="color-picker">
-            <h3> Pick color range</h3>
-            <input id="colorinput" value="#d73027,#f46d43,#fdae61,#fee08b,#ffffbf,#d9ef8b,#a6d96a,#66bd63,#1a9850" type="hidden"> 
-            </div>
-
-            <div id = "compare">
-            <br>
-            <button id = "compareButton" class="btn btn-default">compare</button>
-            </div>
-            <!-- the button calls a function in index.js file -->
-        </div>
-        
-        <div class="col-md-10">
-            <div id = "nav_bar">
-                <ul class="nav nav-tabs" id = "navbar" >
-                  <li class="active"><a href="#">Scatter plot</a></li>
-                  <li><a href="#">PCA</a></li>
-                  <li><a href="#">Don't click me</a></li>
-                </ul>
-            </div>
-            <div id = "svgs-all">
-                <div id="scatterplot" class="col-md-9"></div>
-                <div id="pca" class="col-md-9"></div>
-                <div id="barchart" class="col-md-3"></div>
-                <div id="heatmap" class="col-md-12"></div>
-            </div>  
-        </div>
-        </div>
-        </div>
-
-        <script src="js/Test.js"></script>
     </body>
+    <script src="js/Test.min.js"></script>
+    <script>    
+        App.init();
+    </script>
 </html>
