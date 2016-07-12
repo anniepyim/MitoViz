@@ -2,10 +2,8 @@ var d3 = require('d3');
 var THREE = require ('three');
 var OrbitControls = require('three-orbit-controls')(THREE);
 
-
-
 var div = d3.select("#pca").append("div")
-.attr("class", "pcatooltip")
+.attr("class", "tooltip")
 .style("opacity", 0);    
 
 var scene, camera, renderer, controls, pcObj, boxes, dots, raycaster;
@@ -17,7 +15,11 @@ var gridDepth = 100,
     gridWidth = 100,
     gridHeight = 100;
 var rotate = true, mouseflag = 0;
-var container = document.getElementById( 'pca' );
+var container = document.getElementById( 'pca' ),  
+    pcacanvas = document.getElementById( 'pcacanvas' );
+
+var clickEvent = {target: null, holdClick: false},
+    tipTemplate = require('../views/templates').tooltip;
 
 var pcPlot = function (obj) {
 if (obj instanceof pcPlot) return obj;
@@ -38,8 +40,10 @@ function sceneInit(){
 
     camera = new THREE.PerspectiveCamera( 75, canvasWidth/canvasHeight, 0.1, 1000 );
     camera.position.z = 300;
-
-    renderer = new THREE.WebGLRenderer();
+    
+    //document.body.appendChild( container );
+    
+    renderer = new THREE.WebGLRenderer({ canvas: pcacanvas });
     renderer.setSize( canvasWidth, canvasWidth );
     renderer.setClearColor( 0xf0f0f0 );
 
@@ -57,7 +61,10 @@ function sceneInit(){
     container.addEventListener("mouseup", function(){if(mouseflag === 0) rotate=!rotate;},false);
     
     controls = new OrbitControls( camera,renderer.domElement );
+
 }
+
+    
 
 function createTextCanvas(text, color, font, size) {
     size = size || 16;
@@ -136,7 +143,7 @@ function hexToRgb(hex) { //TODO rewrite with vector output
 }
 
 function dotsInit(){
-    var data = d3.csv("data/final-pca.csv", function (d){
+    var data = d3.csv("data/final.csv", function (d){
 
     dots = new THREE.Object3D();
     var sample = [];
@@ -174,7 +181,7 @@ function dotsInit(){
                   .domain([zmin-zDom,zmax+zDom])
                   .range([-100,100]);
 
-    var sprite = new THREE.TextureLoader().load( "image/circle.png" );   
+    var sprite = new THREE.TextureLoader().load( "pics/circle.png" );   
     for ( i = 0; i < d.length; i ++ ) {
         var realcolor = color(d[i].group);
         var geometry = new THREE.SphereBufferGeometry( 3, 32, 32 );
@@ -227,25 +234,33 @@ function boxInit(){
 function onDocumentMouseMove( event ) {
 
     event.preventDefault();
+    
+    var rect = pcacanvas.getBoundingClientRect();
 
-    mouse.x = ( ( event.clientX - container.offsetLeft ) / container.clientWidth ) * 2 - 1;
-    mouse.y = - ( ( event.clientY - container.offsetTop ) / container.clientHeight ) * 2 + 1;
+    mouse.x = ( ( event.clientX - rect.left ) / renderer.domElement.width ) * 2 - 1;
+    mouse.y = - ( ( event.clientY - rect.top ) / renderer.domElement.height ) * 2 + 1;
 
-    pageEvent.x = event.clientX;
-    pageEvent.y = event.clientY;
+    pageEvent.x = event.clientX - rect.left;
+    pageEvent.y = event.clientY - rect.top;
 
     mouseflag = 1;
+    
+
+
+
 
   }
 
 function onDocumentMouseClick( event ) {
 
     event.preventDefault();
+    
+    var rect = pcacanvas.getBoundingClientRect();
 
-    mouse.x = ( ( event.clientX - renderer.domElement.offsetLeft ) / renderer.domElement.width ) * 2 - 1;
-    mouse.y = - ( ( event.clientY - renderer.domElement.offsetTop ) / renderer.domElement.height ) * 2 + 1;
+    mouse.x = ( ( event.clientX - rect.left ) / renderer.domElement.width ) * 2 - 1;
+    mouse.y = - ( ( event.clientY - rect.top ) / renderer.domElement.height ) * 2 + 1;
 
-    raycaster.setFromCamera( mouse, camera );
+    //raycaster.setFromCamera( mouse, camera );
 
     var intersects = raycaster.intersectObjects( dots.children ); 
     INTERSECTED = intersects[ 0 ].object;

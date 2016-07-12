@@ -196,14 +196,8 @@ heatmap.draw = function (jsondata, samplelist, genelist,colorrange) {
         .attr("width", gridwidth)
         .attr("height", gridheight)
         .style("fill", colors[4])
-        .on("mouseover", function (d) {
-            heatmap.mouseoverfunc(d, d.gene);
-            SP.highlight(d,d.gene);
-        })
-        .on("mouseout", function (d) {
-            heatmap.mouseoverfunc(d, "NULL");
-            SP.highlight(d,"NULL");
-        });
+        .on('mouseover', SP.onMouseOverNode)
+        .on('mouseout', SP.onMouseOut);
 
     cells.transition().duration(1000)
         .style("fill", function (d) {
@@ -291,34 +285,6 @@ heatmap.draw = function (jsondata, samplelist, genelist,colorrange) {
     }
 
 };
-
-heatmap.mouseoverfunc = function (d, ingene) {
-
-    if (ingene == "NULL") {
-        div.transition()
-            .duration(500)
-            .style("opacity", 0);
-    } else {
-        var muts = d.mutation.split(",");
-        var muttext = "<br>";
-        for (i = 0; i < muts.length; i++) {
-            muttext += muts[i] + "<br>";
-        }
-        tooltipheight = (58 + muts.length * 15).toString() + "px";
-        div.transition()
-            .duration(200)
-            .style("opacity", 0.9)
-            .style("height", tooltipheight);
-        div.html("Gene: " + d.gene + "<br>" +
-                "Function: " + d.func + "<br>" +
-                "Log2 Fold Change: " + d.value + "<br>" +
-                "Mutation: " + muttext)
-            .style("left", (d3.event.pageX + 5) + "px")
-            .style("top", (d3.event.pageY - 10) + "px");
-    }
-};
-
-
 
 heatmap.init = function (jsondata,colorrange) {
     heatmap.processData(jsondata, "Translation",colorrange);

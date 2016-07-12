@@ -1,6 +1,8 @@
-jQuery = $ = require('jquery');
+//jQuery = $ = require('jquery');
+jjQuery = require('jquery');
 Backbone = require('backbone');
-Backbone.$ = jQuery;
+//Backbone.$ = jQuery;
+Backbone.$ = jjQuery;
 
 Handlebars = require('handlebars');
 _ = require('underscore');

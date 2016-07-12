@@ -1,61 +1,60 @@
 @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css");
 @import url("bootstrap-select.min.css");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 
 
-body { 
+body {
+    font-family: 'Montserrat', 'sans-serif';
     margin: 10
 }
-#selected-sample{
-    font: 14px verdana; 
+
+.tip {
+    text-align: center;
+    border-right: solid 1px #DDD;
+}
+
+.tip .process{
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+
+.tip .function {
+    color: #666;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+.title{
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size:18px;
+}
+
+.miniTitle{
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size:13px;
+    text-align: left;
+}
+
+input[type=checkbox] {
+    float: right;
+    margin-right: 0.4em;
 }
 
 #nav_bar{
-    font: 18px verdana;
+    font-size: 18px;
 }
 
 #svgs-all{
     text-align: center
-    font: 13px verdana;
+    font-size: 13px;
 }
 
-div.tooltip {   
-  position: absolute;           
-  text-align: left;           
-  width: 350px;                  
-  height: 55px;                 
-  padding: 6px;             
-  font: 12px sans-serif;        
-  background: lightsteelblue;   
-  border: 2px;      
-  border-radius: 6px;           
-  pointer-events: none;         
-}
-
-div.heatmaptooltip {   
-  position: absolute;           
-  text-align: left;           
-  width: 400px;                  
-  height: 55px;                 
-  padding: 6px;             
-  font: 12px sans-serif;        
-  background: lightsteelblue;   
-  border: 2px;      
-  border-radius: 6px;           
-  pointer-events: none;         
-}
-
-div.pcatooltip {   
-      position: absolute;           
-      text-align: left;           
-      width: 250px;               
-      height: 55px;                 
-      padding: 6px;             
-      font: 12px sans-serif;        
-      background: lightsteelblue;   
-      border: 2px;      
-      border-radius: 6px;           
-      pointer-events: none;         
-    }
 
 #wrapUp {
     white-space:nowrap;
@@ -78,7 +77,7 @@ div.pcatooltip {
 }
 
 #heatmap{
-    font: 10px verdana; 
+    font-size: 10px; 
 }
 
 .cell{

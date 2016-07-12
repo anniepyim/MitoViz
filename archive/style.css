@@ -1,0 +1,92 @@
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css");
+@import url("bootstrap-select.min.css");
+
+
+body { 
+    margin: 10
+}
+#selected-sample{
+    font: 14px verdana; 
+}
+
+#nav_bar{
+    font: 18px verdana;
+}
+
+#svgs-all{
+    text-align: center
+    font: 13px verdana;
+}
+
+div.tooltip {   
+  position: absolute;           
+  text-align: left;           
+  width: 350px;                  
+  height: 55px;                 
+  padding: 6px;             
+  font: 12px sans-serif;        
+  background: lightsteelblue;   
+  border: 2px;      
+  border-radius: 6px;           
+  pointer-events: none;         
+}
+
+div.heatmaptooltip {   
+  position: absolute;           
+  text-align: left;           
+  width: 400px;                  
+  height: 55px;                 
+  padding: 6px;             
+  font: 12px sans-serif;        
+  background: lightsteelblue;   
+  border: 2px;      
+  border-radius: 6px;           
+  pointer-events: none;         
+}
+
+div.pcatooltip {   
+      position: absolute;           
+      text-align: left;           
+      width: 250px;               
+      height: 55px;                 
+      padding: 6px;             
+      font: 12px sans-serif;        
+      background: lightsteelblue;   
+      border: 2px;      
+      border-radius: 6px;           
+      pointer-events: none;         
+    }
+
+#wrapUp {
+    white-space:nowrap;
+    overflow:hidden;
+}
+
+#scatterplot {
+    display: inline-block
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+#barchart {
+    display: inline-block
+}
+
+#heatmap{
+    font: 10px verdana; 
+}
+
+.cell{
+    stroke: #E6E6E6;
+    stroke-width:1px;   
+  }
+
+text.text-hover {
+        fill: red;
+      }
+

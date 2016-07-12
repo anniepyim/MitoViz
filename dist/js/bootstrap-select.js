@@ -447,15 +447,11 @@
           : '';
       var actionsbox = this.multiple && this.options.actionsBox ?
       '<div class="bs-actionsbox">' +
-      '<div class="btn-group btn-group-sm btn-block">' +
-      '<button type="button" class="actions-btn bs-select-all btn btn-default">' +
-      this.options.selectAllText +
-      '</button>' +
-      '<button type="button" class="actions-btn bs-deselect-all btn btn-default">' +
-      this.options.deselectAllText +
-      '</button>' +
-      '</div>' +
-      '</div>'
+        '<div style="margin-left:10px;margin-right:5px">'+
+        '<input type="checkbox" id="selectallcb" class="actions"><label>Select all</label>'+
+        '</div>'+
+      '</div>' 
+    
           : '';
       var donebutton = this.multiple && this.options.doneButton ?
       '<div class="bs-donebutton">' +
@@ -1253,7 +1249,16 @@
           that.deselectAll();
         }
       });
-
+        
+    $('#selectallcb').click(function() {
+        if($(this).is(":checked")){
+                that.selectAll();
+            }
+            else if($(this).is(":not(:checked)")){
+                that.deselectAll();
+            }
+    });  
+        
       this.$element.change(function () {
         that.render(false);
       });
