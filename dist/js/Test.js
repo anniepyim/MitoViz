@@ -105,18 +105,18 @@ BC.draw = function (jsondata,colorrange) {
     
     var data = d3.nest()
         .key(function (d) {
-            return d.func;
+            return d.process;
         })
         .entries(jsondata);
     
     var sampledata = d3.nest()
         .key(function (d) {
-            return d.sample;
+            return d.sampleID;
         })
         .entries(jsondata);
 
     data.forEach(function (d) {
-        d.func = d.key;
+        d.process = d.key;
         d.count = d.values.length/sampledata.length;
     });
     
@@ -139,7 +139,7 @@ BC.draw = function (jsondata,colorrange) {
       .attr("width", function(d) { return x(d.count); })
       .attr("height", barH - 1)
       .style("fill", function (d) {
-            return color(d.func);
+            return color(d.process);
         })
       .on("click", click);
     
@@ -147,13 +147,13 @@ BC.draw = function (jsondata,colorrange) {
       .attr("x", 0)
       .attr("y", barH / 2)
       .attr("dy", ".35em")
-      .text(function(d) { return d.func+" ("+d.count+")"; })
+      .text(function(d) { return d.process+" ("+d.count+")"; })
       .on("click", click);
     
     function click(d) {
-        SP.update(jsondata, d.func, color(d.func),colorrange);
+        SP.update(jsondata, d.process, color(d.process),colorrange);
         d3.select("#heatmapsvg").remove();
-        heatmap.processData(jsondata, d.func,colorrange);
+        heatmap.processData(jsondata, d.process,colorrange);
     }
     
 
@@ -185,7 +185,7 @@ heatmap.processData = function (jsondata, nfunc,colorrange) {
     var newdata = [];
 
     jsondata.forEach(function (d) {
-        if (d.func == nfunc && !isNaN(parseFloat(d.value)) && isFinite(d.value)) {
+        if (d.process == nfunc && !isNaN(parseFloat(d.log2)) && isFinite(d.log2)) {
             newdata.push(d);
         }
     });
@@ -199,7 +199,7 @@ heatmap.processData = function (jsondata, nfunc,colorrange) {
 
     var sampledata = d3.nest()
         .key(function (d) {
-            return d.sample;
+            return d.sampleID;
         })
         .entries(newdata);
 
@@ -225,13 +225,15 @@ heatmap.processData = function (jsondata, nfunc,colorrange) {
 
     newdata.forEach(function (d) {
         outdata.push({
-            rowidx: samplemap[d.sample], 
+            rowidx: samplemap[d.sampleID], 
             colidx: genemap[d.gene], 
-            value: d.value, 
-            sample: d.sample, 
+            log2: d.log2, 
+            pvalue: d.pvalue, 
+            sample: d.sampleID, 
             gene: d.gene, 
+            process: d.process, 
             func: d.func, 
-            mutation: d.mutation
+            mutation: d.mutation.split(',')
         });
     });
 
@@ -245,7 +247,7 @@ heatmap.draw = function (jsondata, samplelist, genelist,colorrange) {
     jsondata.forEach(function (d) {
         d.rowidx = +d.rowidx;
         d.colidx = +d.colidx;
-        d.value = +d.value;
+        d.log2 = +d.log2;
     });
 
     
@@ -278,10 +280,10 @@ heatmap.draw = function (jsondata, samplelist, genelist,colorrange) {
         col_number = genelist.length;
     
     var ymin = Math.abs(d3.min(jsondata, function (d) {
-        return d.value;
+        return d.log2;
     }));
     var ymax = Math.abs(d3.max(jsondata, function (d) {
-        return d.value;
+        return d.log2;
     }));
     var yabs = Math.max(ymin, ymax);
 
@@ -368,11 +370,11 @@ heatmap.draw = function (jsondata, samplelist, genelist,colorrange) {
 
     cells.transition().duration(1000)
         .style("fill", function (d) {
-            return colorScale(d.value);
+            return colorScale(d.log2);
         });
 
     cells.select("title").text(function (d) {
-        return d.value;
+        return d.log2;
     });
 
     cells.exit().remove();
@@ -413,7 +415,7 @@ heatmap.draw = function (jsondata, samplelist, genelist,colorrange) {
         var sorted; // sorted is zero-based index
         d3.selectAll(".c" + rORc + i)
             .filter(function (ce) {
-                log2r.push(ce.value);
+                log2r.push(ce.log2);
             });
         if (rORc == "r") { // sort log2ratio of a gene
             sorted = d3.range(col_number).sort(function (a, b) {
@@ -448,7 +450,6 @@ heatmap.draw = function (jsondata, samplelist, genelist,colorrange) {
                     return sorted.indexOf(i) * gridheight;
                 });
         }
-        console.log(sorted);
     }
 
 };
@@ -476,8 +477,8 @@ var div = d3.select("#pca").append("div")
 var scene, camera, renderer, controls, pcObj, boxes, dots, raycaster;
 var mouse = new THREE.Vector2(), INTERSECTED,
     pageEvent = new THREE.Vector2();
-var canvasWidth= 600,
-    canvasHeight = 600;
+var canvasWidth= document.getElementById("pca").offsetWidth-40,
+    canvasHeight = canvasWidth;
 var gridDepth = 100,
     gridWidth = 100,
     gridHeight = 100;
@@ -485,8 +486,8 @@ var rotate = true, mouseflag = 0;
 var container = document.getElementById( 'pca' ),  
     pcacanvas = document.getElementById( 'pcacanvas' );
 
-var clickEvent = {target: null, holdClick: false},
-    tipTemplate = require('../views/templates').tooltip;
+var tipTemplate = require('../views/templates').pcatooltip;
+
 
 var pcPlot = function (obj) {
 if (obj instanceof pcPlot) return obj;
@@ -506,9 +507,7 @@ function sceneInit(){
     scene.add( alight );
 
     camera = new THREE.PerspectiveCamera( 75, canvasWidth/canvasHeight, 0.1, 1000 );
-    camera.position.z = 300;
-    
-    //document.body.appendChild( container );
+    camera.position.z = 250;
     
     renderer = new THREE.WebGLRenderer({ canvas: pcacanvas });
     renderer.setSize( canvasWidth, canvasWidth );
@@ -518,20 +517,21 @@ function sceneInit(){
 
     pcObj = new THREE.Object3D();
     scene.add(pcObj);
-    pcObj.rotation.y = -0.4;
+    pcObj.rotation.y = -0.3;
     pcObj.rotation.x = 0.2;
+    pcObj.position.x = 20;
+    pcObj.position.y = 30;
 
     container.appendChild( renderer.domElement );
     container.addEventListener( 'mousemove', onDocumentMouseMove, false );
     container.addEventListener( 'click', onDocumentMouseClick);
     container.addEventListener("mousedown", function(){mouseflag = 0;}, false);
     container.addEventListener("mouseup", function(){if(mouseflag === 0) rotate=!rotate;},false);
+    window.addEventListener( 'resize', onWindowResize, false );
     
     controls = new OrbitControls( camera,renderer.domElement );
 
-}
-
-    
+}    
 
 function createTextCanvas(text, color, font, size) {
     size = size || 16;
@@ -736,6 +736,16 @@ function onDocumentMouseClick( event ) {
 
   }
 
+function onWindowResize(){
+
+    var w = document.getElementById("pca").offsetWidth-40;
+    camera.aspect = w / w;
+    camera.updateProjectionMatrix();
+
+    renderer.setSize( w, w );
+
+}
+
 function render() {
 
     requestAnimationFrame( render );
@@ -757,24 +767,14 @@ function render() {
             INTERSECTED.currentHex = INTERSECTED.material.emissive.getHex();
             INTERSECTED.material.emissive.setHex( 0xff0000 );
             if (pageEvent.x !== 0 && pageEvent.y !== 0){
-                div.transition()
-                    .duration(200)
-                    .style("opacity", 0.9)
-                    .style("height", 100);
-                div.html("Sample: " + INTERSECTED.sampleID + "<br>" +
-                        "Group: " + INTERSECTED.group + "<br>" +
-                        "Info: " + INTERSECTED.info + "<br>" +
-                        "PCs: PC1: " + INTERSECTED.pc1 + ", PC2: " + INTERSECTED.pc2 + ", PC3: " + INTERSECTED.pc3)
-                    .style("left", (pageEvent.x + 5) + "px")
-                    .style("top", (pageEvent.y - 10) + "px");
+                $('.tip').empty();
+                $('.tip').append(tipTemplate(INTERSECTED));
             }
         }   
     } else {
       if ( INTERSECTED ) {
           INTERSECTED.material.emissive.setHex( INTERSECTED.currentHex );
-          div.transition()
-            .duration(500)
-            .style("opacity", 0);
+          $('.tip').empty();
       }
       INTERSECTED = null;
     }
@@ -898,24 +898,24 @@ SP.update = function (jsondata, nfunc, ncolor,colorrange) {
     var data = [];
 
     jsondata.forEach(function (d) {
-        if (d.func == nfunc && !isNaN(parseFloat(d.value)) && isFinite(d.value)) {
+        if (d.process == nfunc && !isNaN(parseFloat(d.log2)) && isFinite(d.log2)) {
             data.push(d);
         }
     });
 
     data.forEach(function (d) {
-        d.value = +d.value;
+        d.log2 = +d.log2;
     });
 
     x.domain(data.map(function (d) {
-        return d.sample;
+        return d.sampleID;
     }));
 
     var ymin = Math.abs(d3.min(data, function (d) {
-        return d.value;
+        return d.log2;
     }));
     var ymax = Math.abs(d3.max(data, function (d) {
-        return d.value;
+        return d.log2;
     }));
     var yabs = Math.max(ymin, ymax);
     y.domain([yabs * -1, yabs]);
@@ -937,14 +937,16 @@ SP.update = function (jsondata, nfunc, ncolor,colorrange) {
 
     var nodedata = data.map(function (d) {
         return {
-            x: x(d.sample), 
-            y: y(d.value), 
+            x: x(d.sampleID), 
+            y: y(d.log2), 
             r: 3.5,
-            value: d.value,
-            sample: d.sample,
+            log2: d.log2,
+            pvalue: d.pvalue,
+            sample: d.sampleID,
+            process: d.process,
             func: d.func,
             gene: d.gene,
-            mutation: d.mutation
+            mutation: d.mutation.split(',')
         };
     });
 
@@ -983,7 +985,7 @@ SP.update = function (jsondata, nfunc, ncolor,colorrange) {
     nodes.transition()
         .duration(1000)
         .attr("r", function (d) {
-            return d.mutation !== "NULL" ? highlightradius : d.r;
+            return d.mutation[0] !== "NULL" ? highlightradius : d.r;
         })
         .attr("cx", function (d) {
             return d.x;
@@ -992,13 +994,13 @@ SP.update = function (jsondata, nfunc, ncolor,colorrange) {
             return d.y;
         })
         .style("fill", function (d) {
-            return d.mutation !== "NULL" ? mutatedcolor : color(d.value);
+            return d.mutation[0] !== "NULL" ? mutatedcolor : color(d.log2);
         });
 
     nodes.enter().append("circle")
         .attr("class", "node")
         .attr("r", function (d) {
-            return d.mutation !== "NULL" ? highlightradius : d.r;
+            return d.mutation[0] !== "NULL" ? highlightradius : d.r;
         })
         .attr("cx", function (d) {
             return d.x;
@@ -1007,7 +1009,7 @@ SP.update = function (jsondata, nfunc, ncolor,colorrange) {
             return d.y;
         })
         .style("fill", function (d) {
-            return d.mutation !== "NULL" ? mutatedcolor : color(d.value);
+            return d.mutation[0] !== "NULL" ? mutatedcolor : color(d.log2);
         })
         .style("stroke", "black")
         .style("stroke-width", 0.5)
@@ -1048,6 +1050,7 @@ SP.onMouseOverNode = function(node){
     //Init tooltip if hover over gene
     if(!_.isUndefined(node.gene))
         $('.tip').append(tipTemplate(node));
+    console.log(node);
     
     highlight(node.gene);
 
@@ -1061,11 +1064,11 @@ var highlight = function(target){
         .style("fill", function (d) {
             if (d.gene == target) {
                 return highlightcolor;
-            } else if (d.mutation !== "NULL") return mutatedcolor;
-            else return color(d.value);
+            } else if (d.mutation[0] !== "NULL") return mutatedcolor;
+            else return color(d.log2);
         })
         .attr("r", function (d) {
-            return d.gene == target ? highlightradius : d.mutation !== "NULL" ? highlightradius : d.r;
+            return d.gene == target ? highlightradius : d.mutation[0] !== "NULL" ? highlightradius : d.r;
         });
     
 };
@@ -1118,7 +1121,7 @@ $("#navbar li").click(function(e){
     
     if ($(this).text() == "PCA"){
         document.getElementById("scatterplot").style.display="none";
-        document.getElementById("barchart").style.display="";
+        document.getElementById("barchart").style.display="none";
         document.getElementById("heatmap").style.display="none";
         document.getElementById("pca").style.display="";
     }
@@ -1240,8 +1243,8 @@ function parse(urls, errorcb, datacb,colorrange){
     
     var funcs = _.map(urls, axios.get);
     
-    
-    if (urls[0] === "Add samples...") errorcb(new Error('Add samples!'));
+    console.log(urls.length);
+    if (urls.length === 0) errorcb(new Error('Add samples!'));
     if (urls.length > 6) errorcb(new Error('No more than 6 samples!'));
     if (colorrange === "") errorcb(new Error('Pick color!'));
     
@@ -1327,16 +1330,46 @@ this["Templates"]["main"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main
 this["Templates"]["tooltip"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
+    var mutationtext=alias4(((helper = (helper = helpers["mutation"] || (depth0 != null ? depth0["mutation"] : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"mutation","hash":{},"data":data}) : helper))).split(',');
+    
+    var mutationhtml="";
+    
+    for(i = 0; i < mutationtext.length; i++){
+        mutationhtml=mutationhtml+mutationtext[i]+"<br>";
+    }
+
   return "<div class=\"col-md-12 title\">"
     + alias4(((helper = (helper = helpers.gene || (depth0 != null ? depth0.gene : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"gene","hash":{},"data":data}) : helper)))
     + "</div>\n\n<div class=\"col-md-12 process\">"
-    + alias4(((helper = (helper = helpers.func || (depth0 != null ? depth0.func : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"func","hash":{},"data":data}) : helper)))
+    + alias4(((helper = (helper = helpers.process || (depth0 != null ? depth0.process : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"process","hash":{},"data":data}) : helper)))
     + "</div>\n\n<div class=\"col-md-12 function\">"
-    + alias4(((helper = (helper = helpers.Function || (depth0 != null ? depth0.Function : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"Function","hash":{},"data":data}) : helper)))
-    + "</div>\n\n<div class=\"col-md-6 miniTitle\">\n    Pvalue\n</div>\n                \n<div class=\"col-md-6\">"
-    + alias4(((helper = (helper = helpers["p-value"] || (depth0 != null ? depth0["p-value"] : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"p-value","hash":{},"data":data}) : helper)))
-    + "</div>\n\n<div class=\"col-md-6 miniTitle\">\n    Log2 fold change\n</div>\n                \n<div class=\"col-md-6\">"
-    + alias4(((helper = (helper = helpers.Log2FoldChange || (depth0 != null ? depth0.Log2FoldChange : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"Log2FoldChange","hash":{},"data":data}) : helper)))
+    + alias4(((helper = (helper = helpers.func || (depth0 != null ? depth0.func : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"func","hash":{},"data":data}) : helper)))
+    + "</div>\n\n<div class=\"col-md-6 miniTitle\">\n    Log2 FC\n</div>\n                \n<div class=\"col-md-6 info\">"
+    + alias4(((helper = (helper = helpers.log2 || (depth0 != null ? depth0.log2 : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"log2","hash":{},"data":data}) : helper)))
+    + "</div>\n\n<div class=\"col-md-6 miniTitle\">\n    Pvalue\n</div>\n                \n<div class=\"col-md-6 info\">"
+    + alias4(((helper = (helper = helpers["pvalue"] || (depth0 != null ? depth0["pvalue"] : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"pvalue","hash":{},"data":data}) : helper)))
+    + "</div>\n\n<div class=\"col-md-12 miniTitle\">\n    mutation\n</div>\n                \n<div class=\"col-md-12 mutation\">"
+    + mutationhtml
+    + "</div>";
+},"useData":true});
+
+this["Templates"]["pcatooltip"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
+
+  return "<div class=\"col-md-12 title\">"
+    + alias4(((helper = (helper = helpers.sampleID || (depth0 != null ? depth0.sampleID : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"sampleID","hash":{},"data":data}) : helper)))
+    + "</div>\n\n<div class=\"col-md-6 miniTitle\">\n    Group\n</div>\n                \n<div class=\"col-md-6 info\">"
+    + alias4(((helper = (helper = helpers["group"] || (depth0 != null ? depth0["group"] : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"group","hash":{},"data":data}) : helper)))
+    //+ "</div>\n\n<div class=\"col-md-6 miniTitle\">\n    Stage\n</div>\n                \n<div class=\"col-md-6 info\">"
+    //+ alias4(((helper = (helper = helpers.stage || (depth0 != null ? depth0.stage : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"stage","hash":{},"data":data}) : helper)))
+    //+ "</div>\n\n<div class=\"col-md-6 miniTitle\">\n    Gender\n</div>\n                \n<div class=\"col-md-6 info\">"
+    //+ alias4(((helper = (helper = helpers.gender || (depth0 != null ? depth0.gender : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"gender","hash":{},"data":data}) : helper)))
+    + "</div>\n\n<div class=\"col-md-12 miniTitle\">\n    PC\n</div>\n                \n<div class=\"col-md-12\" style=\"text-align:left;font-size:12px\">PC1: "
+    + alias4(((helper = (helper = helpers.pc1 || (depth0 != null ? depth0.pc1 : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"pc1","hash":{},"data":data}) : helper)))
+    + "<br>PC2: "
+    + alias4(((helper = (helper = helpers.pc2 || (depth0 != null ? depth0.pc2 : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"pc2","hash":{},"data":data}) : helper)))
+    + "<br>PC3: "
+    + alias4(((helper = (helper = helpers.pc3 || (depth0 != null ? depth0.pc3 : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"pc3","hash":{},"data":data}) : helper)))
     + "</div>";
 },"useData":true});
 
@@ -1386,11 +1419,11 @@ d3.select('#compareButton').on('click', compareData);
 
 function compareData(){
         var select = document.getElementById('selected-sample');
-        var arr = ['./data/trisomy/human-21.3.json','./data/trisomy/mouse-21.3.json'];
-        /*var arr = [];
+        //var arr = ['./data/TCGA/A0BM.json','./data/TCGA/A0DV.json','./data/TCGA/A0HK.json','./data/TCGA/neg3-A0B3.json','./data/TCGA/neg3-A0E0.json','./data/TCGA/neg3-A18V.json'];
+        var arr = [];
         for (i = 0; i < select.options.length; i++) {
            arr[i] = select.options[i].value;
-        }*/
+        }
         exist = !!document.getElementById("x-axis");
         
         var colorrange = "#d73027,#f46d43,#fdae61,#fee08b,#ffffbf,#d9ef8b,#a6d96a,#66bd63,#1a9850";

@@ -6,7 +6,7 @@ $("#navbar li").click(function(e){
     
     if ($(this).text() == "PCA"){
         document.getElementById("scatterplot").style.display="none";
-        document.getElementById("barchart").style.display="";
+        document.getElementById("barchart").style.display="none";
         document.getElementById("heatmap").style.display="none";
         document.getElementById("pca").style.display="";
     }

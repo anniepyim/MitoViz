@@ -9,8 +9,8 @@ var div = d3.select("#pca").append("div")
 var scene, camera, renderer, controls, pcObj, boxes, dots, raycaster;
 var mouse = new THREE.Vector2(), INTERSECTED,
     pageEvent = new THREE.Vector2();
-var canvasWidth= 600,
-    canvasHeight = 600;
+var canvasWidth= document.getElementById("pca").offsetWidth-40,
+    canvasHeight = canvasWidth;
 var gridDepth = 100,
     gridWidth = 100,
     gridHeight = 100;
@@ -18,8 +18,8 @@ var rotate = true, mouseflag = 0;
 var container = document.getElementById( 'pca' ),  
     pcacanvas = document.getElementById( 'pcacanvas' );
 
-var clickEvent = {target: null, holdClick: false},
-    tipTemplate = require('../views/templates').tooltip;
+var tipTemplate = require('../views/templates').pcatooltip;
+
 
 var pcPlot = function (obj) {
 if (obj instanceof pcPlot) return obj;
@@ -39,9 +39,7 @@ function sceneInit(){
     scene.add( alight );
 
     camera = new THREE.PerspectiveCamera( 75, canvasWidth/canvasHeight, 0.1, 1000 );
-    camera.position.z = 300;
-    
-    //document.body.appendChild( container );
+    camera.position.z = 250;
     
     renderer = new THREE.WebGLRenderer({ canvas: pcacanvas });
     renderer.setSize( canvasWidth, canvasWidth );
@@ -51,20 +49,21 @@ function sceneInit(){
 
     pcObj = new THREE.Object3D();
     scene.add(pcObj);
-    pcObj.rotation.y = -0.4;
+    pcObj.rotation.y = -0.3;
     pcObj.rotation.x = 0.2;
+    pcObj.position.x = 20;
+    pcObj.position.y = 30;
 
     container.appendChild( renderer.domElement );
     container.addEventListener( 'mousemove', onDocumentMouseMove, false );
     container.addEventListener( 'click', onDocumentMouseClick);
     container.addEventListener("mousedown", function(){mouseflag = 0;}, false);
     container.addEventListener("mouseup", function(){if(mouseflag === 0) rotate=!rotate;},false);
+    window.addEventListener( 'resize', onWindowResize, false );
     
     controls = new OrbitControls( camera,renderer.domElement );
 
-}
-
-    
+}    
 
 function createTextCanvas(text, color, font, size) {
     size = size || 16;
@@ -269,6 +268,16 @@ function onDocumentMouseClick( event ) {
 
   }
 
+function onWindowResize(){
+
+    var w = document.getElementById("pca").offsetWidth-40;
+    camera.aspect = w / w;
+    camera.updateProjectionMatrix();
+
+    renderer.setSize( w, w );
+
+}
+
 function render() {
 
     requestAnimationFrame( render );
@@ -290,24 +299,14 @@ function render() {
             INTERSECTED.currentHex = INTERSECTED.material.emissive.getHex();
             INTERSECTED.material.emissive.setHex( 0xff0000 );
             if (pageEvent.x !== 0 && pageEvent.y !== 0){
-                div.transition()
-                    .duration(200)
-                    .style("opacity", 0.9)
-                    .style("height", 100);
-                div.html("Sample: " + INTERSECTED.sampleID + "<br>" +
-                        "Group: " + INTERSECTED.group + "<br>" +
-                        "Info: " + INTERSECTED.info + "<br>" +
-                        "PCs: PC1: " + INTERSECTED.pc1 + ", PC2: " + INTERSECTED.pc2 + ", PC3: " + INTERSECTED.pc3)
-                    .style("left", (pageEvent.x + 5) + "px")
-                    .style("top", (pageEvent.y - 10) + "px");
+                $('.tip').empty();
+                $('.tip').append(tipTemplate(INTERSECTED));
             }
         }   
     } else {
       if ( INTERSECTED ) {
           INTERSECTED.material.emissive.setHex( INTERSECTED.currentHex );
-          div.transition()
-            .duration(500)
-            .style("opacity", 0);
+          $('.tip').empty();
       }
       INTERSECTED = null;
     }

@@ -85,24 +85,24 @@ SP.update = function (jsondata, nfunc, ncolor,colorrange) {
     var data = [];
 
     jsondata.forEach(function (d) {
-        if (d.func == nfunc && !isNaN(parseFloat(d.value)) && isFinite(d.value)) {
+        if (d.process == nfunc && !isNaN(parseFloat(d.log2)) && isFinite(d.log2)) {
             data.push(d);
         }
     });
 
     data.forEach(function (d) {
-        d.value = +d.value;
+        d.log2 = +d.log2;
     });
 
     x.domain(data.map(function (d) {
-        return d.sample;
+        return d.sampleID;
     }));
 
     var ymin = Math.abs(d3.min(data, function (d) {
-        return d.value;
+        return d.log2;
     }));
     var ymax = Math.abs(d3.max(data, function (d) {
-        return d.value;
+        return d.log2;
     }));
     var yabs = Math.max(ymin, ymax);
     y.domain([yabs * -1, yabs]);
@@ -124,14 +124,16 @@ SP.update = function (jsondata, nfunc, ncolor,colorrange) {
 
     var nodedata = data.map(function (d) {
         return {
-            x: x(d.sample), 
-            y: y(d.value), 
+            x: x(d.sampleID), 
+            y: y(d.log2), 
             r: 3.5,
-            value: d.value,
-            sample: d.sample,
+            log2: d.log2,
+            pvalue: d.pvalue,
+            sample: d.sampleID,
+            process: d.process,
             func: d.func,
             gene: d.gene,
-            mutation: d.mutation
+            mutation: d.mutation.split(',')
         };
     });
 
@@ -170,7 +172,7 @@ SP.update = function (jsondata, nfunc, ncolor,colorrange) {
     nodes.transition()
         .duration(1000)
         .attr("r", function (d) {
-            return d.mutation !== "NULL" ? highlightradius : d.r;
+            return d.mutation[0] !== "NULL" ? highlightradius : d.r;
         })
         .attr("cx", function (d) {
             return d.x;
@@ -179,13 +181,13 @@ SP.update = function (jsondata, nfunc, ncolor,colorrange) {
             return d.y;
         })
         .style("fill", function (d) {
-            return d.mutation !== "NULL" ? mutatedcolor : color(d.value);
+            return d.mutation[0] !== "NULL" ? mutatedcolor : color(d.log2);
         });
 
     nodes.enter().append("circle")
         .attr("class", "node")
         .attr("r", function (d) {
-            return d.mutation !== "NULL" ? highlightradius : d.r;
+            return d.mutation[0] !== "NULL" ? highlightradius : d.r;
         })
         .attr("cx", function (d) {
             return d.x;
@@ -194,7 +196,7 @@ SP.update = function (jsondata, nfunc, ncolor,colorrange) {
             return d.y;
         })
         .style("fill", function (d) {
-            return d.mutation !== "NULL" ? mutatedcolor : color(d.value);
+            return d.mutation[0] !== "NULL" ? mutatedcolor : color(d.log2);
         })
         .style("stroke", "black")
         .style("stroke-width", 0.5)
@@ -235,6 +237,7 @@ SP.onMouseOverNode = function(node){
     //Init tooltip if hover over gene
     if(!_.isUndefined(node.gene))
         $('.tip').append(tipTemplate(node));
+    console.log(node);
     
     highlight(node.gene);
 
@@ -248,11 +251,11 @@ var highlight = function(target){
         .style("fill", function (d) {
             if (d.gene == target) {
                 return highlightcolor;
-            } else if (d.mutation !== "NULL") return mutatedcolor;
-            else return color(d.value);
+            } else if (d.mutation[0] !== "NULL") return mutatedcolor;
+            else return color(d.log2);
         })
         .attr("r", function (d) {
-            return d.gene == target ? highlightradius : d.mutation !== "NULL" ? highlightradius : d.r;
+            return d.gene == target ? highlightradius : d.mutation[0] !== "NULL" ? highlightradius : d.r;
         });
     
 };

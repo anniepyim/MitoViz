@@ -44,18 +44,18 @@ BC.draw = function (jsondata,colorrange) {
     
     var data = d3.nest()
         .key(function (d) {
-            return d.func;
+            return d.process;
         })
         .entries(jsondata);
     
     var sampledata = d3.nest()
         .key(function (d) {
-            return d.sample;
+            return d.sampleID;
         })
         .entries(jsondata);
 
     data.forEach(function (d) {
-        d.func = d.key;
+        d.process = d.key;
         d.count = d.values.length/sampledata.length;
     });
     
@@ -78,7 +78,7 @@ BC.draw = function (jsondata,colorrange) {
       .attr("width", function(d) { return x(d.count); })
       .attr("height", barH - 1)
       .style("fill", function (d) {
-            return color(d.func);
+            return color(d.process);
         })
       .on("click", click);
     
@@ -86,13 +86,13 @@ BC.draw = function (jsondata,colorrange) {
       .attr("x", 0)
       .attr("y", barH / 2)
       .attr("dy", ".35em")
-      .text(function(d) { return d.func+" ("+d.count+")"; })
+      .text(function(d) { return d.process+" ("+d.count+")"; })
       .on("click", click);
     
     function click(d) {
-        SP.update(jsondata, d.func, color(d.func),colorrange);
+        SP.update(jsondata, d.process, color(d.process),colorrange);
         d3.select("#heatmapsvg").remove();
-        heatmap.processData(jsondata, d.func,colorrange);
+        heatmap.processData(jsondata, d.process,colorrange);
     }
     
 

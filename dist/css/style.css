@@ -5,7 +5,8 @@
 
 body {
     font-family: 'Montserrat', 'sans-serif';
-    margin: 10
+    margin: 10;
+    font-size:14px
 }
 
 .tip {
@@ -24,6 +25,15 @@ body {
     font-style: italic;
     margin-bottom: 8px;
     font-size: 12px;
+}
+
+.tip .infos {
+    font-size: 13px;
+}
+
+.tip .mutation {
+    text-align: left;
+    font-size: 10px;
 }
 
 .title{

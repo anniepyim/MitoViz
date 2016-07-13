@@ -18,7 +18,7 @@ heatmap.processData = function (jsondata, nfunc,colorrange) {
     var newdata = [];
 
     jsondata.forEach(function (d) {
-        if (d.func == nfunc && !isNaN(parseFloat(d.value)) && isFinite(d.value)) {
+        if (d.process == nfunc && !isNaN(parseFloat(d.log2)) && isFinite(d.log2)) {
             newdata.push(d);
         }
     });
@@ -32,7 +32,7 @@ heatmap.processData = function (jsondata, nfunc,colorrange) {
 
     var sampledata = d3.nest()
         .key(function (d) {
-            return d.sample;
+            return d.sampleID;
         })
         .entries(newdata);
 
@@ -58,13 +58,15 @@ heatmap.processData = function (jsondata, nfunc,colorrange) {
 
     newdata.forEach(function (d) {
         outdata.push({
-            rowidx: samplemap[d.sample], 
+            rowidx: samplemap[d.sampleID], 
             colidx: genemap[d.gene], 
-            value: d.value, 
-            sample: d.sample, 
+            log2: d.log2, 
+            pvalue: d.pvalue, 
+            sample: d.sampleID, 
             gene: d.gene, 
+            process: d.process, 
             func: d.func, 
-            mutation: d.mutation
+            mutation: d.mutation.split(',')
         });
     });
 
@@ -78,7 +80,7 @@ heatmap.draw = function (jsondata, samplelist, genelist,colorrange) {
     jsondata.forEach(function (d) {
         d.rowidx = +d.rowidx;
         d.colidx = +d.colidx;
-        d.value = +d.value;
+        d.log2 = +d.log2;
     });
 
     
@@ -111,10 +113,10 @@ heatmap.draw = function (jsondata, samplelist, genelist,colorrange) {
         col_number = genelist.length;
     
     var ymin = Math.abs(d3.min(jsondata, function (d) {
-        return d.value;
+        return d.log2;
     }));
     var ymax = Math.abs(d3.max(jsondata, function (d) {
-        return d.value;
+        return d.log2;
     }));
     var yabs = Math.max(ymin, ymax);
 
@@ -201,11 +203,11 @@ heatmap.draw = function (jsondata, samplelist, genelist,colorrange) {
 
     cells.transition().duration(1000)
         .style("fill", function (d) {
-            return colorScale(d.value);
+            return colorScale(d.log2);
         });
 
     cells.select("title").text(function (d) {
-        return d.value;
+        return d.log2;
     });
 
     cells.exit().remove();
@@ -246,7 +248,7 @@ heatmap.draw = function (jsondata, samplelist, genelist,colorrange) {
         var sorted; // sorted is zero-based index
         d3.selectAll(".c" + rORc + i)
             .filter(function (ce) {
-                log2r.push(ce.value);
+                log2r.push(ce.log2);
             });
         if (rORc == "r") { // sort log2ratio of a gene
             sorted = d3.range(col_number).sort(function (a, b) {
@@ -281,7 +283,6 @@ heatmap.draw = function (jsondata, samplelist, genelist,colorrange) {
                     return sorted.indexOf(i) * gridheight;
                 });
         }
-        console.log(sorted);
     }
 
 };
