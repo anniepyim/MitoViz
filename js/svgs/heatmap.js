@@ -3,10 +3,6 @@ var colorbrewer = require('colorbrewer');
 
 var SP = require('./scatterplot.js');
 
-var div = d3.select("#heatmap").append("div")
-    .attr("class", "heatmaptooltip")
-    .style("opacity", 0);
-
 var heatmap = function (obj) {
     if (obj instanceof heatmap) return obj;
     if (!(this instanceof heatmap)) return new heatmap(obj);
@@ -96,11 +92,11 @@ heatmap.draw = function (jsondata, samplelist, genelist,colorrange) {
     
     var resp = d3.select("#heatmap")
         .append('div')
+        .attr("id", "heatmapsvg")
         .attr('class', 'svg-container'); //container class to make it responsive
 
     var svg = resp
         .append("svg")
-        .attr("id", "heatmapsvg")
         .attr('class', 'canvas svg-content-responsive')
         .attr('preserveAspectRatio', 'xMinYMin meet')
         .attr('viewBox', [0, 0, svgWidth, svgHeight].join(' '))

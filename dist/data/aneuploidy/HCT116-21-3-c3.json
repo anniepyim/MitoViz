@@ -1,0 +1,5562 @@
+[
+  {
+    "gene": "AARS2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 6,
+    "process": "Translation",
+    "func": "AARS2: Involved in the specific attachment of alanine aminoacid to its cognate tRNA",
+    "log2": 0.21269,
+    "pvalue": 0.0222,
+    "mutation": "chr6 44268135 C>T 3_prime_UTR_variant"
+  },
+  {
+    "gene": "ABCB7",
+    "sampleID": "HCT116-21.3-3",
+    "chr": "X",
+    "process": "Fe-S cluster biosynthesis",
+    "func": "ABCB7: Exports an sulphur product (X) from the mitochondrial iron sulphor cluster system to cytosol",
+    "log2": -0.0285722,
+    "pvalue": 0.77115,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ACAA2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 18,
+    "process": "Fatty acid beta-oxidation",
+    "func": "ACAA2: Medium chain 3-ketoacyl-CoA thiolase",
+    "log2": -0.414841,
+    "pvalue": 0.00005,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ACAD10",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 12,
+    "process": "Fatty acid beta-oxidation",
+    "func": "ACAD10: Involved in the catabolism of fatty acids with significant activity towards branched chains",
+    "log2": 0.0254265,
+    "pvalue": 0.78505,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ACAD8",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 11,
+    "process": "Fatty acid beta-oxidation",
+    "func": "ACAD8: Involved in the caatabolism of fatty acids and branched chain aminoacid valine",
+    "log2": -0.0159099,
+    "pvalue": 0.8684,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ACAD9",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 3,
+    "process": "Electron transport chain",
+    "func": "ACAD9: Role in the assembly of Complex I and might also be involved in the Fatty acid beta-oxidation",
+    "log2": -0.0891097,
+    "pvalue": 0.3099,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ACADM",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Fatty acid beta-oxidation",
+    "func": "ACADM: Fatty acids are metabolized for 3 to 4 cycles by the medium chain acyl-CoA dehydrogenase",
+    "log2": -0.226714,
+    "pvalue": 0.0105,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ACADS",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 12,
+    "process": "Fatty acid beta-oxidation",
+    "func": "ACADS: Short chain acyl-CoA dehydrogenase encoded by ACADS catalyzes the final 1 to 2 cycles",
+    "log2": 0.345737,
+    "pvalue": 0.00065,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ACADSB",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 10,
+    "process": "Fatty acid beta-oxidation",
+    "func": "ACADSB: Involved in the metabolism of short branched chain fatty acids",
+    "log2": -0.0401669,
+    "pvalue": 0.6514,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ACADVL",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 17,
+    "process": "Fatty acid beta-oxidation",
+    "func": "ACADVL: Very long chain acyl-CoAs are first catalyzed by long chain acyl-CoA dehydrogenase",
+    "log2": 0.000145636,
+    "pvalue": 0.9992,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ACO2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 22,
+    "process": "Tricarboxylic acid cycle",
+    "func": "ACO2: Catalyzes the interconversion of citrate to isocitrate",
+    "log2": 0.0982745,
+    "pvalue": 0.43695,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ACSL1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 4,
+    "process": "Fatty acid beta-oxidation",
+    "func": "ACSL1: Acyl-CoA synthetase activity for long chain free fatty acids are also involved in the activation of fatty acids",
+    "log2": -0.188667,
+    "pvalue": 0.04305,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ACSL3",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 2,
+    "process": "Fatty acid beta-oxidation",
+    "func": "ACSL3: Acyl-CoA synthetase activity for long chain free fatty acids are also involved in the activation of fatty acids",
+    "log2": -0.0908272,
+    "pvalue": 0.28335,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ACSL4",
+    "sampleID": "HCT116-21.3-3",
+    "chr": "X",
+    "process": "Fatty acid beta-oxidation",
+    "func": "ACSL4: Acyl-CoA synthetase activity for long chain free fatty acids are also involved in the activation of fatty acids",
+    "log2": -0.128786,
+    "pvalue": 0.13705,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ACSL5",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 10,
+    "process": "Fatty acid beta-oxidation",
+    "func": "ACSL5: Acyl-CoA synthetase activity for long chain free fatty acids are also involved in the activation of fatty acids",
+    "log2": -0.945675,
+    "pvalue": 0.00005,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ACSM3",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 16,
+    "process": "Fatty acid beta-oxidation",
+    "func": "ACSM3: Acyl-CoA synthetase activity for medium chain fatty acids",
+    "log2": 0.0669967,
+    "pvalue": 0.8073,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ACSS2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 20,
+    "process": "Fatty acid beta-oxidation",
+    "func": "ACSS2: Acyl-CoA synthetase activity for short chain fatty acids",
+    "log2": 0.228596,
+    "pvalue": 0.0114,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "AFG3L2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 18,
+    "process": "Mitochondrial Dynamics",
+    "func": "AFG3L2: Involved in the mitochondrial fusion, known to maintain the OPA1 isoforms",
+    "log2": -0.0216999,
+    "pvalue": 0.78925,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "AIFM1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": "X",
+    "process": "Apoptosis",
+    "func": "AIFM1: Mitochondria associated apoptosis inducing factor translocates to nucleus and degrades DNA",
+    "log2": 0.0302542,
+    "pvalue": 0.726,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "AK3",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 9,
+    "process": "Replication & Transcription",
+    "func": "AK3: Phosphorylates the deoxyribonucleoside mono phosphates specifically on dAMP",
+    "log2": -0.291474,
+    "pvalue": 0.00085,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "AK4",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Replication & Transcription",
+    "func": "AK4: Phosphorylates the deoxyribonucleoside mono phosphates specifically on dAMP",
+    "log2": 0.632539,
+    "pvalue": 0.00005,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ALAD",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 9,
+    "process": "Heme Biosynthesis",
+    "func": "ALAD: ALA dehydratase catalyzes the reaction where two molecules of ALA condenses to form monopyrrole porphobilinogen (PBG)",
+    "log2": -0.147965,
+    "pvalue": 0.12655,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ALAS1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 3,
+    "process": "Heme Biosynthesis",
+    "func": "ALAS1: Catalyzes the reaction amino acid glycine and succinyl CoA from TCA cycle condenses to form 5-aminolevulinate (ALA) and CO2",
+    "log2": 0.0594998,
+    "pvalue": 0.49635,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ALDOA",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 16,
+    "process": "Glycolysis",
+    "func": "ALDOA: Catalyzes the reversible conversion of fructose-1,6-bisphosphate to glyceraldehyde 3-phosphate and dihydroxyacetone phosphate",
+    "log2": 0.234514,
+    "pvalue": 0.00525,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ALDOC",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 17,
+    "process": "Glycolysis",
+    "func": "ALDOC: Catalyzes the reversible conversion of fructose-1,6-bisphosphate to glyceraldehyde 3-phosphate and dihydroxyacetone phosphate",
+    "log2": -0.471184,
+    "pvalue": 0.00005,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "AMBRA1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 11,
+    "process": "Mitochondrial Dynamics",
+    "func": "AMBRA1: Involved in the mitophagy, translocates to the mitochondria and facilitate phagophore formation",
+    "log2": -0.0477276,
+    "pvalue": 0.5949,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ANP32A",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 15,
+    "process": "Apoptosis",
+    "func": "ANP32A: Enhances APAF1 function",
+    "log2": -0.0107649,
+    "pvalue": 0.89775,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "APAF1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 12,
+    "process": "Apoptosis",
+    "func": "APAF1: Binds CASP9 preprotein forming an apoptosome and activates it",
+    "log2": -0.159738,
+    "pvalue": 0.09,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "APEX1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 14,
+    "process": "Replication & Transcription",
+    "func": "APEX1: Involved in the mitochondrial DNA base excision repair",
+    "log2": -0.191522,
+    "pvalue": 0.0237,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "APEX2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": "X",
+    "process": "Replication & Transcription",
+    "func": "APEX2: Involved in the mitochondrial DNA base excision repair",
+    "log2": 0.175629,
+    "pvalue": 0.05065,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "APOPT1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 14,
+    "process": "Apoptosis",
+    "func": "APOPT1: Localizes to the mitochondria and stimulates the release of cytochrome c",
+    "log2": 0.0146806,
+    "pvalue": 0.8818,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ARG2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 14,
+    "process": "Urea Cycle",
+    "func": "ARG2: Arginase catalyzes the step where Arginine is hydrolyzed to form urea and ornithine",
+    "log2": -0.0744062,
+    "pvalue": 0.74395,
+    "mutation": "chr14 68117931 C>T 3_prime_UTR_variant"
+  },
+  {
+    "gene": "ASL",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 7,
+    "process": "Urea Cycle",
+    "func": "ASL: Argininosuccinate lyase catalyzes the reaction where Argininosuccinate is cleaved of its nitrogen and carbon skeleton forming arginine and fumarate respectively",
+    "log2": 0.388248,
+    "pvalue": 0.00005,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ASS1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 9,
+    "process": "Urea Cycle",
+    "func": "ASS1: Argininosuccinate synthetase catalyzes the step where Citruline combines with Aspartate to form Argininosuccinate",
+    "log2": 0.194167,
+    "pvalue": 0.02455,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ATAD3A",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Translation",
+    "func": "ATAD3A: May interact with mitochondrial proteins and is required mitochondrial protein synthesis",
+    "log2": 0.232243,
+    "pvalue": 0.00755,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ATAD3B",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Translation",
+    "func": "ATAD3B: May interact with mitochondrial proteins and is required mitochondrial protein synthesis",
+    "log2": 0.285061,
+    "pvalue": 0.0006,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ATP5A1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 18,
+    "process": "Electron transport chain",
+    "func": "ATP5A1: ATP synthase H+ transporting mitochondrial F1 complex alpha subunit 1 cardiac muscle essential component of complex V",
+    "log2": 0.0194202,
+    "pvalue": 0.8129,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ATP5B",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 12,
+    "process": "Electron transport chain",
+    "func": "ATP5B: ATP synthase H+ transporting mitochondrial F1 complex beta polypeptide essential component of complex V",
+    "log2": 0.0166554,
+    "pvalue": 0.8463,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ATP5C1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 10,
+    "process": "Electron transport chain",
+    "func": "ATP5C1: ATP synthase H+ transporting mitochondrial F1 complex gamma polypeptide 1 essential component of complex V",
+    "log2": 0.0799152,
+    "pvalue": 0.34505,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ATP5D",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 19,
+    "process": "Electron transport chain",
+    "func": "ATP5D: ATP synthase H+ transporting mitochondrial F1 complex delta subunit essential component of complex V",
+    "log2": 0.147978,
+    "pvalue": 0.09265,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ATP5F1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Electron transport chain",
+    "func": "ATP5F1: ATP synthase H+ transporting mitochondrial Fo complex subunit B1 essential component of complex V",
+    "log2": 0.104042,
+    "pvalue": 0.29215,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ATP5G1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 17,
+    "process": "Electron transport chain",
+    "func": "ATP5G1: ATP synthase H+ transporting mitochondrial Fo complex subunit C1 (subunit 9) essential component of complex V",
+    "log2": 0.104786,
+    "pvalue": 0.22645,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ATP5G2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 12,
+    "process": "Electron transport chain",
+    "func": "ATP5G2: ATP synthase H+ transporting mitochondrial Fo complex subunit C2 (subunit 9) essential component of complex V",
+    "log2": -0.137113,
+    "pvalue": 0.10485,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ATP5G3",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 2,
+    "process": "Electron transport chain",
+    "func": "ATP5G3: ATP synthase H+ transporting mitochondrial Fo complex subunit C3 (subunit 9) essential component of complex V",
+    "log2": 0.0798523,
+    "pvalue": 0.34825,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ATP5H",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 17,
+    "process": "Electron transport chain",
+    "func": "ATP5H: ATP synthase H+ transporting mitochondrial Fo complex subunit d essential component of complex V",
+    "log2": 0.169613,
+    "pvalue": 0.04645,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ATP5I",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 4,
+    "process": "Electron transport chain",
+    "func": "ATP5I: ATP synthase H+ transporting mitochondrial Fo complex subunit E essential component of complex V",
+    "log2": 0.290592,
+    "pvalue": 0.00095,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ATP5J",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 21,
+    "process": "Electron transport chain",
+    "func": "ATP5J: ATP synthase H+ transporting mitochondrial Fo complex subunit F6 essential component of complex V",
+    "log2": 0.626597,
+    "pvalue": 0.00005,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ATP5L",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 11,
+    "process": "Electron transport chain",
+    "func": "ATP5L: ATP synthase H+ transporting mitochondrial Fo complex subunit G essential component of complex V",
+    "log2": 0.0921952,
+    "pvalue": 0.45915,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ATP5O",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 21,
+    "process": "Electron transport chain",
+    "func": "ATP5O: ATP synthase H+ transporting mitochondrial F1 complex O subunit essential component of complex V",
+    "log2": 0.966612,
+    "pvalue": 0.00005,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ATPAF1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Electron transport chain",
+    "func": "ATPAF1: Complex V assembly factor, essential for assembly of alpha + beta heterooligomer",
+    "log2": -0.211811,
+    "pvalue": 0.01985,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ATPAF2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 17,
+    "process": "Electron transport chain",
+    "func": "ATPAF2: Complex V assembly factor, essential for assembly of alpha + beta heterooligome",
+    "log2": -0.053672,
+    "pvalue": 0.5878,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ATPIF1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Electron transport chain",
+    "func": "ATPIF1: ATPase inhibitory factor 1 essential component of complex V",
+    "log2": 0.0461314,
+    "pvalue": 0.61525,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "BAD",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 11,
+    "process": "Apoptosis",
+    "func": "BAD: Bcl-2 family member propagating apoptosis",
+    "log2": -0.1314,
+    "pvalue": 0.24595,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "BAK1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 6,
+    "process": "Apoptosis",
+    "func": "BAK1: Bcl-2 family member propagating apoptosis",
+    "log2": 0.342632,
+    "pvalue": 0.00015,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "BAX",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 19,
+    "process": "Apoptosis",
+    "func": "BAX: Bcl-2 family member propagating apoptosis",
+    "log2": -0.236552,
+    "pvalue": 0.0071,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "BBC3",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 19,
+    "process": "Apoptosis",
+    "func": "BBC3: Puma Bcl-2 family member propagating apoptosis",
+    "log2": -0.656065,
+    "pvalue": 0.00005,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "BCKDHA",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 19,
+    "process": "ROS defense",
+    "func": "BCKDHA: Involved in the catabolism of aminoacids in mitochondria and may also be involved in the production of superoxides and hydrogen peroxide",
+    "log2": 0.184041,
+    "pvalue": 0.04875,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "BCKDHB",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 6,
+    "process": "ROS defense",
+    "func": "BCKDHB: Involved in the catabolism of aminoacids in mitochondria and may also be involved in the production of superoxides and hydrogen peroxide",
+    "log2": 0.243203,
+    "pvalue": 0.0682,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "BCL2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 18,
+    "process": "Apoptosis",
+    "func": "BCL2: Bcl-2 family member Anti-apoptotic proteins",
+    "log2": 0.0509587,
+    "pvalue": 0.84895,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "BCL2L1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 20,
+    "process": "Apoptosis",
+    "func": "BCL2L1: Bcl-2 family member Anti-apoptotic proteins",
+    "log2": -0.101849,
+    "pvalue": 0.22165,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "BCL2L11",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 2,
+    "process": "Apoptosis",
+    "func": "BCL2L11: Bim Bcl-2 family member propagating apoptosis",
+    "log2": -0.28444,
+    "pvalue": 0.00465,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "BCS1L",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 2,
+    "process": "Electron transport chain",
+    "func": "BCS1L: Involved in the assembly of complex III of the mitochondrial respiratory chain",
+    "log2": 0.15623,
+    "pvalue": 0.10685,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "BECN1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 17,
+    "process": "Mitochondrial Dynamics",
+    "func": "BECN1: Involved in the mitophagy, involved in the initiation of autophagy",
+    "log2": 0.204215,
+    "pvalue": 0.0177,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "BID",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 22,
+    "process": "Apoptosis",
+    "func": "BID: Bcl-2 family member propagating apoptosis",
+    "log2": 0.0581875,
+    "pvalue": 0.50735,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "BIK",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 22,
+    "process": "Apoptosis",
+    "func": "BIK: Bcl-2 family member propagating apoptosis",
+    "log2": 0.220942,
+    "pvalue": 0.02535,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "BNIP3",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 10,
+    "process": "Mitochondrial Dynamics",
+    "func": "BNIP3: Involved in the mitophagy, cause permeabilization of the mitochondrial membrane and also acts as a proapoptotic factor",
+    "log2": 0.12023,
+    "pvalue": 0.20705,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "BNIP3L",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 8,
+    "process": "Mitochondrial Dynamics",
+    "func": "BNIP3L: Involved in the mitophagy, cause permeabilization of the mitochondrial membrane and also regulate mitophagy",
+    "log2": -0.044004,
+    "pvalue": 0.61405,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "BOLA3",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 2,
+    "process": "Fe-S cluster biosynthesis",
+    "func": "BOLA3: Rrole in the biogenesis of iron-sulfur clusters",
+    "log2": 0.129972,
+    "pvalue": 0.20145,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "BRP44",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Pyruvate transfer",
+    "func": "BRP44: Mitochondrial pyruvate carrier 2",
+    "log2": -0.0658142,
+    "pvalue": 0.6914,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "BRP44L",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 6,
+    "process": "Pyruvate transfer",
+    "func": "BRP44L: Mitochondrial pyruvate carrier 1",
+    "log2": 0.0024624,
+    "pvalue": 0.98785,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "C10orf2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 10,
+    "process": "Replication & Transcription",
+    "func": "C10orf2: Mitochondrial DNA (mtDNA) helicase (TWINKLE) plays a important role in the maintenance of mtDNA",
+    "log2": -0.234552,
+    "pvalue": 0.01115,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "C1orf31",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Electron transport chain",
+    "func": "C1orf31: COA6 Complex IV assembly factor",
+    "log2": 0.0557016,
+    "pvalue": 0.58225,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "C20orf7",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 20,
+    "process": "Electron transport chain",
+    "func": "C20orf7: NDUFAF5 is required for complex I assembly",
+    "log2": -0.0172686,
+    "pvalue": 0.8748,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "C22orf32",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 22,
+    "process": "Calcium trafficking",
+    "func": "C22orf32: Forms a important component of mitochondrial calcium uniporter with MCU",
+    "log2": -0.216467,
+    "pvalue": 0.0307,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "C2orf56",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 2,
+    "process": "Electron transport chain",
+    "func": "C2orf56: NDUFAF7 methylates arginine 85 in the NDUFS2 subunit of human complex I",
+    "log2": 0.0197932,
+    "pvalue": 0.85475,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "C7orf44",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 7,
+    "process": "Electron transport chain",
+    "func": "C7orf44: COA1 Complex IV assembly factor",
+    "log2": -0.00873828,
+    "pvalue": 0.9254,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "C8orf38",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 8,
+    "process": "Electron transport chain",
+    "func": "C8orf38: NDUFAF6 important role in the assembly of complex I",
+    "log2": 0.0511776,
+    "pvalue": 0.646,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "CARS2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 13,
+    "process": "Translation",
+    "func": "CARS2: Involved in the specific attachment of cysteine aminoacid to its cognate tRNA",
+    "log2": -0.0217085,
+    "pvalue": 0.8128,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "CASP3",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 4,
+    "process": "Apoptosis",
+    "func": "CASP3: Executioner caspases leading to apoptosis",
+    "log2": 0.0645543,
+    "pvalue": 0.5081,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "CASP7",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 10,
+    "process": "Apoptosis",
+    "func": "CASP7: Executioner caspases leading to apoptosis",
+    "log2": 0.352015,
+    "pvalue": 0.00015,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "CASP9",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Apoptosis",
+    "func": "CASP9: Initiator caspase recruited by Apoptosome",
+    "log2": -0.163217,
+    "pvalue": 0.15605,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "CCDC109B",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 4,
+    "process": "Calcium trafficking",
+    "func": "CCDC109B: Forms a important component of mitochondrial calcium uniporter with MCU",
+    "log2": 0.218107,
+    "pvalue": 0.03825,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "CCDC56",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 17,
+    "process": "Electron transport chain",
+    "func": "CCDC56: COA3 Complex IV assembly factor",
+    "log2": -0.0309858,
+    "pvalue": 0.74355,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "CCDC90A",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 6,
+    "process": "Calcium trafficking",
+    "func": "CCDC90A: Mitochondrial calcium uniporter regulator 1 required for the MCU dependent calcium uptake by the mitochondria",
+    "log2": -0.0649382,
+    "pvalue": 0.46145,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "CDK1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 10,
+    "process": "Apoptosis",
+    "func": "CDK1: Can Inhibit CASP9 activity and also involved in the phosphorylation of DNM1L to increase fission",
+    "log2": -0.042656,
+    "pvalue": 0.6263,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "CDK5RAP1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 20,
+    "process": "Replication & Transcription",
+    "func": "CDK5RAP1: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
+    "log2": 0.0402841,
+    "pvalue": 0.6582,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "CDKAL1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 6,
+    "process": "Replication & Transcription",
+    "func": "CDKAL1: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
+    "log2": -0.197555,
+    "pvalue": 0.0542,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "CDS1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 4,
+    "process": "Cardiolipin biosynthesis",
+    "func": "CDS1: Converts phosphatidic acid to cytidine diphosphate diacylglycerol",
+    "log2": 0.0525775,
+    "pvalue": 0.5721,
+    "mutation": "chr4 85570767 C>T 3_prime_UTR_variant"
+  },
+  {
+    "gene": "CHCHD4",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 3,
+    "process": "Import & Sorting",
+    "func": "CHCHD4: Intermembrane transport and assembly, acts as a receptor at the inter membrane space and recognizes incoming precursor proteins",
+    "log2": 0.177318,
+    "pvalue": 0.0704,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "CHCHD8",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 11,
+    "process": "Electron transport chain",
+    "func": "CHCHD8: COA4 Complex IV assembly factor",
+    "log2": -0.14299,
+    "pvalue": 0.11425,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "CIAO1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 2,
+    "process": "Fe-S cluster biosynthesis",
+    "func": "CIAO1: Cytosolic Fe-S cluster biogenesis and maturation",
+    "log2": -0.0467196,
+    "pvalue": 0.58455,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "CIAPIN1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 16,
+    "process": "Fe-S cluster biosynthesis",
+    "func": "CIAPIN1: Facilitates NUBP1 and NUBP2 assembly",
+    "log2": 0.0253172,
+    "pvalue": 0.8284,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "CLPP",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 19,
+    "process": "Translation",
+    "func": "CLPP: Involved in the post translational quality control, has re-solublization activity of protein aggregates",
+    "log2": 0.0631954,
+    "pvalue": 0.47435,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "CLPX",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 15,
+    "process": "Translation",
+    "func": "CLPX: Quality control of inner membrane proteins",
+    "log2": -0.0280963,
+    "pvalue": 0.74805,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "CMPK2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 2,
+    "process": "Replication & Transcription",
+    "func": "CMPK2: Phosphorylates the deoxyribonucleoside mono phosphates specifically on dCMP",
+    "log2": 0.777235,
+    "pvalue": 0.00005,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "COA5",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 2,
+    "process": "Electron transport chain",
+    "func": "COA5: Complex IV assembly factor",
+    "log2": 0.193284,
+    "pvalue": 0.0558,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "COX10",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 17,
+    "process": "Electron transport chain",
+    "func": "COX10: Complex IV assembly factor",
+    "log2": 0.028054,
+    "pvalue": 0.7714,
+    "mutation": "chr17 13980350 G>A missense_variant"
+  },
+  {
+    "gene": "COX11",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 17,
+    "process": "Electron transport chain",
+    "func": "COX11: Complex IV assembly factor",
+    "log2": -0.0865911,
+    "pvalue": 0.56895,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "COX14",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 12,
+    "process": "Electron transport chain",
+    "func": "COX14: Complex IV assembly factor",
+    "log2": 0.00423973,
+    "pvalue": 0.96665,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "COX15",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 10,
+    "process": "Electron transport chain",
+    "func": "COX15: Complex IV assembly factor, may function in the regulation and assembly of the complex",
+    "log2": -0.151323,
+    "pvalue": 0.13935,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "COX17",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 3,
+    "process": "Electron transport chain",
+    "func": "COX17: Complex IV assembly factor, may function in the regulation and assembly of the complex",
+    "log2": -0.00493198,
+    "pvalue": 0.95885,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "COX18",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 4,
+    "process": "Electron transport chain",
+    "func": "COX18: Complex IV assembly factor",
+    "log2": -0.0741623,
+    "pvalue": 0.4702,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "COX19",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 7,
+    "process": "Electron transport chain",
+    "func": "COX19: Complex IV assembly factor",
+    "log2": 0.11335,
+    "pvalue": 0.26355,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "COX20",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Electron transport chain",
+    "func": "COX20: Complex IV assembly factor",
+    "log2": 0.318436,
+    "pvalue": 0.06615,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "COX4I1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 16,
+    "process": "Electron transport chain",
+    "func": "COX4I1: Cytochrome c oxidase subunit IV isoform 1 essential component of complex IV",
+    "log2": -0.00518621,
+    "pvalue": 0.9506,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "COX5A",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 15,
+    "process": "Electron transport chain",
+    "func": "COX5A: Cytochrome c oxidase subunit Va essential component of complex IV",
+    "log2": 0.119416,
+    "pvalue": 0.1621,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "COX5B",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 2,
+    "process": "Electron transport chain",
+    "func": "COX5B: Cytochrome c oxidase subunit Vb essential component of complex IV",
+    "log2": -0.0667895,
+    "pvalue": 0.434,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "COX6A1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 12,
+    "process": "Electron transport chain",
+    "func": "COX6A1: Cytochrome c oxidase subunit VIa polypeptide 1 essential component of complex IV",
+    "log2": 0.100636,
+    "pvalue": 0.2291,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "COX6B1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 19,
+    "process": "Electron transport chain",
+    "func": "COX6B1: Cytochrome c oxidase subunit VIb polypeptide 1 (ubiquitous) essential component of complex IV",
+    "log2": 0.152052,
+    "pvalue": 0.06995,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "COX6B2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 19,
+    "process": "Electron transport chain",
+    "func": "COX6B2: Cytochrome c oxidase subunit VIb polypeptide 2 (testis) essential component of complex IV",
+    "log2": -0.678166,
+    "pvalue": 0.0435,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "COX6C",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 8,
+    "process": "Electron transport chain",
+    "func": "COX6C: Cytochrome c oxidase subunit VIc essential component of complex IV",
+    "log2": 0.124974,
+    "pvalue": 0.1401,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "COX7A2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 6,
+    "process": "Electron transport chain",
+    "func": "COX7A2: Cytochrome c oxidase subunit VIIa polypeptide 2 (liver) essential component of complex IV",
+    "log2": 0.105702,
+    "pvalue": 0.2076,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "COX7B",
+    "sampleID": "HCT116-21.3-3",
+    "chr": "X",
+    "process": "Electron transport chain",
+    "func": "COX7B: Cytochrome c oxidase subunit VIIb essential component of complex IV",
+    "log2": 0.11636,
+    "pvalue": 0.18395,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "COX7C",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 5,
+    "process": "Electron transport chain",
+    "func": "COX7C: Cytochrome c oxidase subunit VIIc essential component of complex IV",
+    "log2": 0.0124066,
+    "pvalue": 0.88045,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "COX8A",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 11,
+    "process": "Electron transport chain",
+    "func": "COX8A: Cytochrome c oxidase subunit VIIIA (ubiquitous) essential component of complex IV",
+    "log2": -0.0122515,
+    "pvalue": 0.8813,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "CPOX",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 3,
+    "process": "Heme Biosynthesis",
+    "func": "CPOX: Coproporphyrinogen III is transported to mitochondria and in the presence of coproporphyrinogen III oxidase it is oxidatively decarboxylated",
+    "log2": -0.879373,
+    "pvalue": 0.00005,
+    "mutation": "chr3 98309993 C>T missense_variant"
+  },
+  {
+    "gene": "CPS1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 2,
+    "process": "Urea Cycle",
+    "func": "CPS1: Carbamoyl phosphate synthetase catalyzes the step where free NH4+ with HCO3- to form carbamoyl phosphate",
+    "log2": -0.295565,
+    "pvalue": 0.0008,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "CPT1A",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 11,
+    "process": "Fatty acid beta-oxidation",
+    "func": "CPT1A: Carnitiine palmitoyl transferase converts an acyl-CoA into an acylcarnitine",
+    "log2": -0.275863,
+    "pvalue": 0.00175,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "CPT1C",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 19,
+    "process": "Fatty acid beta-oxidation",
+    "func": "CPT1C: Carnitiine palmitoyl transferase converts an acyl-CoA into an acylcarnitine",
+    "log2": 0.185249,
+    "pvalue": 0.05995,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "CPT2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Fatty acid beta-oxidation",
+    "func": "CPT2: Acylcarnitines are reconverted to their CoA esters by carnitine palmitoyltransferase 2",
+    "log2": 0.195087,
+    "pvalue": 0.12395,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "CRAT",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 9,
+    "process": "Fatty acid beta-oxidation",
+    "func": "CRAT: Free carnitine in the mitochondria can be converted into acyl carnitine by the action of carnitine acetyl transferase",
+    "log2": 0.131108,
+    "pvalue": 0.1935,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "CREB1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 2,
+    "process": "Replication & Transcription",
+    "func": "CREB1: Promotes the transcription of mitochondrial genes",
+    "log2": -0.16007,
+    "pvalue": 0.0755,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "CRLS1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 20,
+    "process": "Cardiolipin biosynthesis",
+    "func": "CRLS1: Catalyzes the condensation of cytidine diphosphate diacylglycerol and phosphatidylglycerol forming a nascent cardiolipin",
+    "log2": 0.0232659,
+    "pvalue": 0.80005,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "CS",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 12,
+    "process": "Tricarboxylic acid cycle",
+    "func": "CS: Catalyzes the synthesis of citrate from oxaloacetate and acetyl coenzyme A",
+    "log2": -0.0241006,
+    "pvalue": 0.7802,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "CYC1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 8,
+    "process": "Electron transport chain",
+    "func": "CYC1: Essential component of complex III transfers electrons from iron sulphur protein to cytochrome c",
+    "log2": -0.0394741,
+    "pvalue": 0.6396,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "CYCS",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 7,
+    "process": "Apoptosis",
+    "func": "CYCS: Binds to apoptosis inducing factor 1 (APAF1) forming a structure called apoptosome",
+    "log2": 0.0341898,
+    "pvalue": 0.6797,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "DAP3",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Translation",
+    "func": "DAP3: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.206594,
+    "pvalue": 0.0153,
+    "mutation": "chr1 155658940 T>G 5_prime_UTR_variant"
+  },
+  {
+    "gene": "DARS2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Translation",
+    "func": "DARS2: Involved in the specific attachment of aspartic acid aminoacid to its cognate tRNA",
+    "log2": -0.219147,
+    "pvalue": 0.01795,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "DDX28",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 16,
+    "process": "Translation",
+    "func": "DDX28: May be involved in the biogenesis of mitochondrial ribosomes",
+    "log2": -0.062612,
+    "pvalue": 0.65245,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "DECR1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 8,
+    "process": "Fatty acid beta-oxidation",
+    "func": "DECR1: 2,4 dienoyl CoA reductase 1 catalyzes the metabolism of Polyunsaturated fatty acids",
+    "log2": 0.121006,
+    "pvalue": 0.17305,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "DHX30",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 3,
+    "process": "Translation",
+    "func": "DHX30: May be involved in the biogenesis of mitochondrial ribosomes",
+    "log2": 0.0386974,
+    "pvalue": 0.6471,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "DIABLO",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 12,
+    "process": "Apoptosis",
+    "func": "DIABLO: Acts as caspase activator by inhibiting the inhibitors of apoptotic proteins",
+    "log2": 0.122743,
+    "pvalue": 0.1714,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "DLAT",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 11,
+    "process": "Formation of Acetyl CoA",
+    "func": "DLAT: Catalyzes the conversion of pyruvate to acetyl coenzyme A",
+    "log2": 0.147581,
+    "pvalue": 0.0871,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "DLD",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 7,
+    "process": "Tricarboxylic acid cycle",
+    "func": "DLD: Catalyzes the overall conversion of 2-oxoglutarate to succinyl-CoA and CO2",
+    "log2": 0.0155196,
+    "pvalue": 0.85405,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "DLST",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 14,
+    "process": "Tricarboxylic acid cycle",
+    "func": "DLST: Catalyzes the overall conversion of 2-oxoglutarate to succinyl-CoA and CO2",
+    "log2": 0.0820834,
+    "pvalue": 0.35185,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "DNAJC19",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 3,
+    "process": "Import & Sorting",
+    "func": "DNAJC19: Presequence translocase associated motor, could stimulate the ATPase activity of HSPA9",
+    "log2": -0.0485449,
+    "pvalue": 0.623,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "DNM1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 9,
+    "process": "Apoptosis",
+    "func": "DNM1: Recruited to mitochondria can induce cristae remodelling to release cytochrome c and subsequent apoptosis",
+    "log2": -0.173897,
+    "pvalue": 0.7135,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "DNM1L",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 12,
+    "process": "Mitochondrial Dynamics",
+    "func": "DNM1L: Involved in the mitochondrial fission, mediates the division of mitochondria",
+    "log2": 0.000724034,
+    "pvalue": 0.99175,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "DUS2L",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 16,
+    "process": "Replication & Transcription",
+    "func": "DUS2L: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
+    "log2": 0.137737,
+    "pvalue": 0.3197,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "DYNLL1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 12,
+    "process": "Mitochondrial Dynamics",
+    "func": "DYNLL1: Involved in the mitochondrial movement, have role in the retrograde mitochondrial movement",
+    "log2": 0.124036,
+    "pvalue": 0.15325,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "EARS2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 16,
+    "process": "Translation",
+    "func": "EARS2: Involved in the specific attachment of glutamic acid aminoacid to its cognate tRNA",
+    "log2": 0.0589457,
+    "pvalue": 0.5073,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ECHS1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 10,
+    "process": "Fatty acid beta-oxidation",
+    "func": "ECHS1: Enoyl-CoA hydratases, short chain, 1, mitochondrial",
+    "log2": 0.0411938,
+    "pvalue": 0.6331,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "EFHA1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 13,
+    "process": "Calcium trafficking",
+    "func": "EFHA1: Regulates the mitochodrial calcium uniporter by inhibiting and permitting the calcium depending upon the cytosolic calcium concentrations",
+    "log2": -0.071121,
+    "pvalue": 0.41795,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "EIF3M",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 11,
+    "process": "Apoptosis",
+    "func": "EIF3M: PCI domain containing protein 1 can negatively regulate CASP9 activity",
+    "log2": 0.0318409,
+    "pvalue": 0.7232,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ELAC2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 17,
+    "process": "Replication & Transcription",
+    "func": "ELAC2: Endolytic processing the 3' end of tRNA",
+    "log2": 0.168038,
+    "pvalue": 0.05595,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ENDOG",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 9,
+    "process": "Replication & Transcription",
+    "func": "ENDOG: Nuclease which processes the RNA primers for heavy strand replication also has a role in apopptosis where after release from the mitochondria induces nucleosomal DNA fragmentation",
+    "log2": -0.32191,
+    "pvalue": 0.22585,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ENO1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Glycolysis",
+    "func": "ENO1: Catalyzes the dehydration of 2-phosphoglycerate to phosphoenolpyruate",
+    "log2": 0.0103186,
+    "pvalue": 0.90365,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ENO2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 12,
+    "process": "Glycolysis",
+    "func": "ENO2: Catalyzes the dehydration of 2-phosphoglycerate to phosphoenolpyruate",
+    "log2": 0.0176709,
+    "pvalue": 0.83565,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ENO3",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 17,
+    "process": "Glycolysis",
+    "func": "ENO3: Catalyzes the dehydration of 2-phosphoglycerate to phosphoenolpyruate",
+    "log2": -0.257707,
+    "pvalue": 0.0256,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "FABP5",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 8,
+    "process": "Fatty acid beta-oxidation",
+    "func": "FABP5: Fatty acid binding proteins are also involved in the import and export of fatty acids",
+    "log2": 0.0247249,
+    "pvalue": 0.76695,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "FABP6",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 5,
+    "process": "Fatty acid beta-oxidation",
+    "func": "FABP6: Fatty acid binding proteins are also involved in the import and export of fatty acids",
+    "log2": -0.270239,
+    "pvalue": 0.4367,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "FAM96A",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 15,
+    "process": "Fe-S cluster biosynthesis",
+    "func": "FAM96A: Components of the cytosolic Fe/S protein assembly (CIA) machinery",
+    "log2": 0.0548948,
+    "pvalue": 0.54085,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "FAM96B",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 16,
+    "process": "Fe-S cluster biosynthesis",
+    "func": "FAM96B: Components of the cytosolic Fe/S protein assembly (CIA) machinery",
+    "log2": 0.00747036,
+    "pvalue": 0.93525,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "FARS2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 6,
+    "process": "Translation",
+    "func": "FARS2: Involved in the specific attachment of phenylalanine aminoacid to its cognate tRNA",
+    "log2": -0.0452731,
+    "pvalue": 0.7308,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "FDX1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 11,
+    "process": "Fe-S cluster biosynthesis",
+    "func": "FDX1: Small iron-sulfur protein, transfers electrons from NADPH to mitochondrial cytochrome P450",
+    "log2": -0.393358,
+    "pvalue": 0.00005,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "FDX1L",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 19,
+    "process": "Fe-S cluster biosynthesis",
+    "func": "FDX1L: Transfers electrons from NADPH to mitochondrial cytochrome P450",
+    "log2": 0.128651,
+    "pvalue": 0.2165,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "FDXR",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 17,
+    "process": "Fe-S cluster biosynthesis",
+    "func": "FDXR: Provide reducing equivalents in an electron transfer chain contribute to iron-sulfur cluster biogenesis",
+    "log2": -0.0723378,
+    "pvalue": 0.3938,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "FECH",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 18,
+    "process": "Heme Biosynthesis",
+    "func": "FECH: Ferrochelatase catalyzes the step involving the addition of Ferrous iron into the protoprphyrin IX to form the protoheme IX",
+    "log2": 0.00167898,
+    "pvalue": 0.98525,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "FH",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Tricarboxylic acid cycle",
+    "func": "FH: Catalyzes the formation of L-malate from fumarate",
+    "log2": 0.151904,
+    "pvalue": 0.079,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "FIS1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 7,
+    "process": "Mitochondrial Dynamics",
+    "func": "FIS1: Involved in the mitochondrial fission, facilitates binding and assembly of DNM1L",
+    "log2": -0.29394,
+    "pvalue": 0.00065,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "FOXRED1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 11,
+    "process": "Electron transport chain",
+    "func": "FOXRED1: Complex I assembly factor",
+    "log2": 0.31007,
+    "pvalue": 0.0011,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "FXN",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 9,
+    "process": "Fe-S cluster biosynthesis",
+    "func": "FXN: Functions in regulating mitochondrial iron transport and respiration",
+    "log2": 0.0584323,
+    "pvalue": 0.73055,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "GABARAP",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 17,
+    "process": "Mitochondrial Dynamics",
+    "func": "GABARAP: Involved in the mitophagy, interacts with BNIP3 and BNIP3L to remove mitochondria via autophagy",
+    "log2": -0.0801079,
+    "pvalue": 0.3393,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "GAPDH",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 12,
+    "process": "Glycolysis",
+    "func": "GAPDH: Catalyzes the reversible oxidative phosphorylation of glyceraldehyde-3-phosphate and may also inhibit Caspase independent cell death in apoptosis",
+    "log2": 0.130037,
+    "pvalue": 0.13675,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "GARS",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 7,
+    "process": "Translation",
+    "func": "GARS: Involved in the specific attachment of glycine aminoacid to its cognate tRNA",
+    "log2": 0.0644638,
+    "pvalue": 0.4433,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "GATC",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 12,
+    "process": "Translation",
+    "func": "GATC: Involved in the biosynthesis of glutamyl-tRNA",
+    "log2": -0.00863435,
+    "pvalue": 0.96465,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "GCLC",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 6,
+    "process": "ROS defense",
+    "func": "GCLC: Catalyzes the first step reaction which combines cystein and glutamate to form glutamylcysteine",
+    "log2": -0.0827636,
+    "pvalue": 0.3427,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "GCLM",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "ROS defense",
+    "func": "GCLM: Catalyzes the first step reaction which combines cystein and glutamate to form glutamylcysteine",
+    "log2": -0.358413,
+    "pvalue": 0.0001,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "GDAP1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 8,
+    "process": "Mitochondrial Dynamics",
+    "func": "GDAP1: Involved in the mitochondrial fission, know to have a role in the mitochondrial fragmentation",
+    "log2": -0.0589825,
+    "pvalue": 0.52215,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "GFER",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 16,
+    "process": "Import & Sorting",
+    "func": "GFER: Intermembrane transport and assembly, it is know to oxidize CHCHD4 and then the oxidized CHCHD4 acts as a receptor for the pre proteins",
+    "log2": 0.0376268,
+    "pvalue": 0.6878,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "GFM1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 3,
+    "process": "Translation",
+    "func": "GFM1: Involved in the elongation and termination phases of the translation process",
+    "log2": 0.390899,
+    "pvalue": 0.00005,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "GFM2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 5,
+    "process": "Translation",
+    "func": "GFM2: Involved in the elongation and termination phases of the translation process may also be involved in the ribosome recycling",
+    "log2": 0.10616,
+    "pvalue": 0.48895,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "GLRX2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "ROS defense",
+    "func": "GLRX2: Involved in the control of mitochndrial protein gluthathionylation",
+    "log2": 0.203506,
+    "pvalue": 0.05715,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "GLRX5",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 14,
+    "process": "Fe-S cluster biosynthesis",
+    "func": "GLRX5: Fe-S cluster transfer protein directly to the apoprotein",
+    "log2": -0.067512,
+    "pvalue": 0.4392,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "GOT2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 16,
+    "process": "Fatty acid beta-oxidation",
+    "func": "GOT2: Plasma membrane fatty acid binding protein",
+    "log2": 0.0642717,
+    "pvalue": 0.43945,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "GPI",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 19,
+    "process": "Glycolysis",
+    "func": "GPI: Glycolytic enzyme that interconverts glucose-6-phophsate and fructose-6-phosphate",
+    "log2": 0.0305098,
+    "pvalue": 0.7146,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "GPX1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 3,
+    "process": "ROS defense",
+    "func": "GPX1: Reduces hydrogen peroxide to water by using reducing equivalents from gluthathione",
+    "log2": -0.0500896,
+    "pvalue": 0.54705,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "GPX4",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 19,
+    "process": "ROS defense",
+    "func": "GPX4: Involved in the reduction of the lipid peroxides to their hydroxides",
+    "log2": -0.100475,
+    "pvalue": 0.23915,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "GRPEL1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 4,
+    "process": "Import & Sorting",
+    "func": "GRPEL1: Presequence translocase associated motor, acts as a nucleotide exchange factor releasing the ADP from HSPA9",
+    "log2": 0.153723,
+    "pvalue": 0.07215,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "GRPEL2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 5,
+    "process": "Import & Sorting",
+    "func": "GRPEL2: Presequence translocase associated motor, acts as a nucleotide exchange factor releasing the ADP from HSPA9",
+    "log2": 0.0435459,
+    "pvalue": 0.6183,
+    "mutation": "chr5 148731218 G>A 3_prime_UTR_variant,chr5 148731796 AT>A 3_prime_UTR_variant"
+  },
+  {
+    "gene": "GSR",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 8,
+    "process": "ROS defense",
+    "func": "GSR: Reduces oxidized gluthathione to gluthathione which can be re utilized by GPX1",
+    "log2": -0.167191,
+    "pvalue": 0.04425,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "GSS",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 20,
+    "process": "ROS defense",
+    "func": "GSS: Catalyzes the formation of gluthathione from glutamylcysteine by combining it with the glycine",
+    "log2": 0.17153,
+    "pvalue": 0.0405,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "GSTA1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 6,
+    "process": "ROS defense",
+    "func": "GSTA1: Mitochondrial gluthathione-S-transferases through gluthothione conjugation or proxide reduction detoxify harmful byproducts",
+    "log2": 0.213767,
+    "pvalue": 0.4508,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "GSTA2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 6,
+    "process": "ROS defense",
+    "func": "GSTA2: Mitochondrial gluthathione-S-transferases through gluthothione conjugation or proxide reduction detoxify harmful byproducts",
+    "log2": -0.0222688,
+    "pvalue": 0.9598,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "GSTA4",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 6,
+    "process": "ROS defense",
+    "func": "GSTA4: Mitochondrial gluthathione-S-transferases through gluthothione conjugation or proxide reduction detoxify harmful byproducts",
+    "log2": 0.783772,
+    "pvalue": 0.00755,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "GSTP1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 11,
+    "process": "ROS defense",
+    "func": "GSTP1: Mitochondrial gluthathione-S-transferases through gluthothione conjugation or proxide reduction detoxify harmful byproducts",
+    "log2": 0.183074,
+    "pvalue": 0.03165,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "GTPBP3",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 19,
+    "process": "Replication & Transcription",
+    "func": "GTPBP3: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
+    "log2": 0.0372094,
+    "pvalue": 0.66945,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "HADH",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 4,
+    "process": "Fatty acid beta-oxidation",
+    "func": "HADH: Medium and short chain hydroxyacyl-CoA dehydrogenase",
+    "log2": 0.197105,
+    "pvalue": 0.0358,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "HADHA",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 2,
+    "process": "Fatty acid beta-oxidation",
+    "func": "HADHA: Mitochondrial trifunctional protein catalyzes the Very long and long chain fatty acids",
+    "log2": 0.0769118,
+    "pvalue": 0.36465,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "HADHB",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 2,
+    "process": "Fatty acid beta-oxidation",
+    "func": "HADHB: Mitochondrial trifunctional protein catalyzes the Very long and long chain fatty acids",
+    "log2": -0.0257232,
+    "pvalue": 0.7688,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "HARS2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 5,
+    "process": "Translation",
+    "func": "HARS2: Involved in the specific attachment of histidine aminoacid to its cognate tRNA",
+    "log2": -0.223214,
+    "pvalue": 0.011,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "HCCS",
+    "sampleID": "HCT116-21.3-3",
+    "chr": "X",
+    "process": "Electron transport chain",
+    "func": "HCCS: Complex III assembly factor, covalently links a heme group to the apoprotein of cytochrome c",
+    "log2": 0.0955537,
+    "pvalue": 0.3082,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "HK1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 10,
+    "process": "Glycolysis",
+    "func": "HK1: Hexokinases phosphorylate glucose to produce glucose-6-phosphate",
+    "log2": 0.217829,
+    "pvalue": 0.0109,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "HK2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 2,
+    "process": "Glycolysis",
+    "func": "HK2: Hexokinases phosphorylate glucose to produce glucose-6-phosphate",
+    "log2": 0.0816463,
+    "pvalue": 0.35185,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "HMBS",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 11,
+    "process": "Heme Biosynthesis",
+    "func": "HMBS: Hydroxymethylbilane synthase catalyzes head to tail condensation of four PBG and subsequent deamination to form a linear tetrapyrrole, Hydroxymethylbilane",
+    "log2": 0.190795,
+    "pvalue": 0.0304,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "HSCB",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 22,
+    "process": "Fe-S cluster biosynthesis",
+    "func": "HSCB: Mitochondrial iron-sulfur cluster co-chaperone",
+    "log2": 0.147658,
+    "pvalue": 0.1844,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "HSD17B10",
+    "sampleID": "HCT116-21.3-3",
+    "chr": "X",
+    "process": "Replication & Transcription",
+    "func": "HSD17B10: Human mitochondrial tRNA processing enzyme",
+    "log2": -0.130198,
+    "pvalue": 0.14,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "HSPA9",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 5,
+    "process": "Import & Sorting",
+    "func": "HSPA9: Presequence translocase associated motor, binds to the preprotein and drives it into the matrix in association with other chaperones and also involved in the mediation of the interaction between VDAC1 and Inositol-1,4,5-triphosphate receptors",
+    "log2": 0.0911293,
+    "pvalue": 0.27715,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "HTRA2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 2,
+    "process": "Apoptosis",
+    "func": "HTRA2: Mitochondrial serene protease induces cell death by inhibiting Inhibitors of apoptotic proteins",
+    "log2": 0.0561103,
+    "pvalue": 0.7959,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "IARS2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Translation",
+    "func": "IARS2: Involved in the specific attachment of isoleucine aminoacid to its cognate tRNA",
+    "log2": 0.0644121,
+    "pvalue": 0.6314,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "IBA57",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Fe-S cluster biosynthesis",
+    "func": "IBA57: Involved in the maturation of mitochondrial iron-sulfur proteins",
+    "log2": -0.212701,
+    "pvalue": 0.03555,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "IDH1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 2,
+    "process": "Tricarboxylic acid cycle",
+    "func": "IDH1: Catalyze the oxidative decarboxylation of isocitrate to 2-oxoglutarate",
+    "log2": 0.0815088,
+    "pvalue": 0.33025,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "IDH2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 15,
+    "process": "Tricarboxylic acid cycle",
+    "func": "IDH2: Catalyze the oxidative decarboxylation of isocitrate to 2-oxoglutarate",
+    "log2": 0.162675,
+    "pvalue": 0.06755,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "IDH3A",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 15,
+    "process": "Tricarboxylic acid cycle",
+    "func": "IDH3A: Catalyze the oxidative decarboxylation of isocitrate to 2-oxoglutarate",
+    "log2": -0.0308211,
+    "pvalue": 0.72655,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "IDH3B",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 20,
+    "process": "Tricarboxylic acid cycle",
+    "func": "IDH3B: Catalyze the oxidative decarboxylation of isocitrate to 2-oxoglutarate",
+    "log2": -0.00409465,
+    "pvalue": 0.9619,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "IDH3G",
+    "sampleID": "HCT116-21.3-3",
+    "chr": "X",
+    "process": "Tricarboxylic acid cycle",
+    "func": "IDH3G: Catalyze the oxidative decarboxylation of isocitrate to 2-oxoglutarate",
+    "log2": -0.399656,
+    "pvalue": 0.0114,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "IMMP1L",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 11,
+    "process": "Import & Sorting",
+    "func": "IMMP1L: Inner membrane peptidase that cleaves hydrophobic sorting signal",
+    "log2": 0.0130777,
+    "pvalue": 0.94545,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "IMMP2L",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 7,
+    "process": "Import & Sorting",
+    "func": "IMMP2L: Inner membrane peptidase that cleaves hydrophobic sorting signal",
+    "log2": -0.101991,
+    "pvalue": 0.41955,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ISCA1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 9,
+    "process": "Fe-S cluster biosynthesis",
+    "func": "ISCA1: Involved in the biogenesis and assembly of iron-sulfur clusters",
+    "log2": -0.122548,
+    "pvalue": 0.1883,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ISCA2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 14,
+    "process": "Fe-S cluster biosynthesis",
+    "func": "ISCA2: Involved in the maturation of mitochondrial iron-sulfur proteins",
+    "log2": -0.00947623,
+    "pvalue": 0.9271,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ISCU",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 12,
+    "process": "Fe-S cluster biosynthesis",
+    "func": "ISCU: Iron sulphur cluster assembly enzyme, Fe-S cluster intermediate is formed on it",
+    "log2": -0.0239147,
+    "pvalue": 0.78125,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ITPR1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 3,
+    "process": "Calcium trafficking",
+    "func": "ITPR1: Component of the Inositol-1,4,5-triphosphate receptors channels used for the fluxes of Ca2+ from ER to mitochondria",
+    "log2": -0.330042,
+    "pvalue": 0.0018,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ITPR2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 12,
+    "process": "Calcium trafficking",
+    "func": "ITPR2: Component of the Inositol-1,4,5-triphosphate receptors channels used for the fluxes of Ca2+ from ER to mitochondria",
+    "log2": -0.293284,
+    "pvalue": 0.002,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ITPR3",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 6,
+    "process": "Calcium trafficking",
+    "func": "ITPR3: Component of the Inositol-1,4,5-triphosphate receptors channels used for the fluxes of Ca2+ from ER to mitochondria",
+    "log2": 0.0935308,
+    "pvalue": 0.2614,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "KARS",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 16,
+    "process": "Translation",
+    "func": "KARS: Involved in the specific attachment of lysine aminoacid to its cognate tRNA",
+    "log2": 0.154595,
+    "pvalue": 0.067,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "KIAA0391",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 14,
+    "process": "Replication & Transcription",
+    "func": "KIAA0391: Human mitochondrial tRNA processing enzyme",
+    "log2": 0.0285057,
+    "pvalue": 0.76845,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "KIF1B",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Mitochondrial Dynamics",
+    "func": "KIF1B: Involved in the mitochondrial movement, have role in the mitochondrial distribution in neurons",
+    "log2": -0.0488952,
+    "pvalue": 0.5789,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "KIF5B",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 10,
+    "process": "Mitochondrial Dynamics",
+    "func": "KIF5B: Involved in the mitochondrial movement, have role in the mitochondrial distribution in neurons",
+    "log2": 0.00543171,
+    "pvalue": 0.94945,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "LARS2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 3,
+    "process": "Translation",
+    "func": "LARS2: Involved in the specific attachment of leucine aminoacid to its cognate tRNA",
+    "log2": 0.113013,
+    "pvalue": 0.1991,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "LDHA",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 11,
+    "process": "Glycolysis",
+    "func": "LDHA: Catalyzes the interconversion of pyruvate to lactate and back",
+    "log2": 0.222708,
+    "pvalue": 0.00865,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "LDHB",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 12,
+    "process": "Glycolysis",
+    "func": "LDHB: Catalyzes the interconversion of pyruvate to lactate and back",
+    "log2": -0.000226049,
+    "pvalue": 0.99805,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "LETM1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 4,
+    "process": "Calcium trafficking",
+    "func": "LETM1: Might act as calcium ion and hydrogen ion antiporter exchanging hydrogen for calcium",
+    "log2": 0.0101787,
+    "pvalue": 0.9066,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "LIG3",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 17,
+    "process": "Replication & Transcription",
+    "func": "LIG3: involved in the mitochondrial DNA replication and repair",
+    "log2": -0.156091,
+    "pvalue": 0.0827,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "LONP1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 19,
+    "process": "Translation",
+    "func": "LONP1: Involved in the post translational quality control, has re-solublization activity of protein aggregates",
+    "log2": 0.0677406,
+    "pvalue": 0.4206,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "LRPPRC",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 2,
+    "process": "Translation",
+    "func": "LRPPRC: Might play a role in the translation and stability of COX subunits",
+    "log2": 0.0196584,
+    "pvalue": 0.8152,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "LYRM4",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 6,
+    "process": "Fe-S cluster biosynthesis",
+    "func": "LYRM4: Assembles with NFS1",
+    "log2": 0.0314416,
+    "pvalue": 0.77225,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MAPK1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 22,
+    "process": "Apoptosis",
+    "func": "MAPK1: Inhibitors of CASP9 activity",
+    "log2": -0.147919,
+    "pvalue": 0.13775,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MAPK3",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 16,
+    "process": "Apoptosis",
+    "func": "MAPK3: Inhibitors of CASP9 activity",
+    "log2": -0.0209914,
+    "pvalue": 0.8177,
+    "mutation": "chr16 30125840 G>C 3_prime_UTR_variant"
+  },
+  {
+    "gene": "MARCH5",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 10,
+    "process": "Mitochondrial Dynamics",
+    "func": "MARCH5: Involved in the mitochondrial fusion and fission, control of mitochondrial morphology by regulating MFN2 and DNM1L",
+    "log2": -0.212029,
+    "pvalue": 0.01375,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MARS2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 2,
+    "process": "Translation",
+    "func": "MARS2: Involved in the specific attachment of methionine aminoacid to its cognate tRNA",
+    "log2": 0.0478363,
+    "pvalue": 0.6208,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MCL1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Apoptosis",
+    "func": "MCL1: Bcl-2 family member Anti-apoptotic proteins",
+    "log2": 0.128847,
+    "pvalue": 0.12445,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MCU",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 10,
+    "process": "Calcium trafficking",
+    "func": "MCU: Involved in the accumulation of calcium ions in the matrix through ion impermeable inner mitochondrial membrane",
+    "log2": -0.0666081,
+    "pvalue": 0.46655,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MDH2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 7,
+    "process": "Tricarboxylic acid cycle",
+    "func": "MDH2: Catalyzes the reversible oxidation of malate to oxaloacetate",
+    "log2": -0.0664427,
+    "pvalue": 0.4261,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MFF",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 2,
+    "process": "Mitochondrial Dynamics",
+    "func": "MFF: Involved in the mitochondrial fission, suggested to have roles in recruiting DNM1L",
+    "log2": -0.151376,
+    "pvalue": 0.09545,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MFN1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 3,
+    "process": "Mitochondrial Dynamics",
+    "func": "MFN1: Involved in the mitochondrial fusion, mitofusins dimerize resulting in the tethering of the outer membranes of the fusing mitochondria also involved in the tethering of Endoplasmic reticulum with mitochondria for mitochondrial calcium uptake",
+    "log2": -0.00761207,
+    "pvalue": 0.93125,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MFN2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Mitochondrial Dynamics",
+    "func": "MFN2: Involved in the mitochondrial fusion, mitofusins dimerize resulting in the tethering of the outer membranes of the fusing mitochondria also involved in the tethering of Endoplasmic reticulum with mitochondria for mitochondrial calcium uptake",
+    "log2": -0.0407431,
+    "pvalue": 0.6266,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MICU1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 10,
+    "process": "Calcium trafficking",
+    "func": "MICU1: Regulates the mitochodrial calcium uniporter by inhibiting and permitting the calcium depending upon the cytosolic calcium concentrations",
+    "log2": -0.198094,
+    "pvalue": 0.02935,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MIPEP",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 13,
+    "process": "Import & Sorting",
+    "func": "MIPEP: Secondary cleavage of the pre proteins processed by the mitochondrial processing peptidase",
+    "log2": 0.109429,
+    "pvalue": 0.2428,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MMS19",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 10,
+    "process": "Fe-S cluster biosynthesis",
+    "func": "MMS19: Cytosolic Fe/S protein assembly targeting factor",
+    "log2": 0.0171924,
+    "pvalue": 0.8374,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MNF1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 6,
+    "process": "Electron transport chain",
+    "func": "MNF1: Complex III assembly factor, ubiquinol-cytochrome c reductase complex assembly factor 2",
+    "log2": -0.14278,
+    "pvalue": 0.1423,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MPV17",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 2,
+    "process": "ROS defense",
+    "func": "MPV17: May have a role in the metabolism of reactive oxygen species",
+    "log2": 0.0190888,
+    "pvalue": 0.8506,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MPV17L2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 19,
+    "process": "Translation",
+    "func": "MPV17L2: May be involved in the biogenesis of mitochondrial ribosomes",
+    "log2": 0.153383,
+    "pvalue": 0.1139,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 4,
+    "process": "Translation",
+    "func": "MRPL1: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.131026,
+    "pvalue": 0.14775,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL10",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 17,
+    "process": "Translation",
+    "func": "MRPL10: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": -0.0445141,
+    "pvalue": 0.6046,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL11",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 11,
+    "process": "Translation",
+    "func": "MRPL11: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": -0.0308976,
+    "pvalue": 0.72475,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL12",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 17,
+    "process": "Translation",
+    "func": "MRPL12: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.0621905,
+    "pvalue": 0.46855,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL13",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 8,
+    "process": "Translation",
+    "func": "MRPL13: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.0766239,
+    "pvalue": 0.38185,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL14",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 6,
+    "process": "Translation",
+    "func": "MRPL14: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": -0.0199364,
+    "pvalue": 0.82245,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL15",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 8,
+    "process": "Translation",
+    "func": "MRPL15: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.0937425,
+    "pvalue": 0.295,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL16",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 11,
+    "process": "Translation",
+    "func": "MRPL16: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.550585,
+    "pvalue": 0.00005,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL17",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 11,
+    "process": "Translation",
+    "func": "MRPL17: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.206895,
+    "pvalue": 0.0187,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL18",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 6,
+    "process": "Translation",
+    "func": "MRPL18: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.164042,
+    "pvalue": 0.0549,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL19",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 2,
+    "process": "Translation",
+    "func": "MRPL19: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": -0.0637297,
+    "pvalue": 0.45375,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 6,
+    "process": "Translation",
+    "func": "MRPL2: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.177394,
+    "pvalue": 0.0485,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL20",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Translation",
+    "func": "MRPL20: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.0428047,
+    "pvalue": 0.677,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL21",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 11,
+    "process": "Translation",
+    "func": "MRPL21: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.16829,
+    "pvalue": 0.06305,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL22",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 5,
+    "process": "Translation",
+    "func": "MRPL22: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": -0.0185961,
+    "pvalue": 0.84025,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL23",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 11,
+    "process": "Translation",
+    "func": "MRPL23: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": -0.1433,
+    "pvalue": 0.11855,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL24",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Translation",
+    "func": "MRPL24: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.0108849,
+    "pvalue": 0.8995,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL27",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 17,
+    "process": "Translation",
+    "func": "MRPL27: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.0500361,
+    "pvalue": 0.56785,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL28",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 16,
+    "process": "Translation",
+    "func": "MRPL28: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.0836809,
+    "pvalue": 0.35505,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL3",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 3,
+    "process": "Translation",
+    "func": "MRPL3: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.031487,
+    "pvalue": 0.70975,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL30",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 2,
+    "process": "Translation",
+    "func": "MRPL30: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": -0.0742947,
+    "pvalue": 0.39845,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL32",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 7,
+    "process": "Translation",
+    "func": "MRPL32: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.15941,
+    "pvalue": 0.0782,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL33",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 2,
+    "process": "Translation",
+    "func": "MRPL33: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.11128,
+    "pvalue": 0.261,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL34",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 19,
+    "process": "Translation",
+    "func": "MRPL34: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": -0.01027,
+    "pvalue": 0.91015,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL35",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 2,
+    "process": "Translation",
+    "func": "MRPL35: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": -0.0333426,
+    "pvalue": 0.7307,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL36",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 5,
+    "process": "Translation",
+    "func": "MRPL36: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.154697,
+    "pvalue": 0.09865,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL37",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Translation",
+    "func": "MRPL37: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.0378204,
+    "pvalue": 0.6586,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL38",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 17,
+    "process": "Translation",
+    "func": "MRPL38: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.159111,
+    "pvalue": 0.06175,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL39",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 21,
+    "process": "Translation",
+    "func": "MRPL39: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.777745,
+    "pvalue": 0.00005,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL4",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 19,
+    "process": "Translation",
+    "func": "MRPL4: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.0513077,
+    "pvalue": 0.5631,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL40",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 22,
+    "process": "Translation",
+    "func": "MRPL40: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.1255,
+    "pvalue": 0.1759,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL41",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 9,
+    "process": "Translation",
+    "func": "MRPL41: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": -0.0529441,
+    "pvalue": 0.55925,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL42",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 12,
+    "process": "Translation",
+    "func": "MRPL42: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": -0.0377011,
+    "pvalue": 0.66695,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL43",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 10,
+    "process": "Translation",
+    "func": "MRPL43: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": -0.0135735,
+    "pvalue": 0.90375,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL44",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 2,
+    "process": "Translation",
+    "func": "MRPL44: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": -0.0550401,
+    "pvalue": 0.53245,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL45",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 17,
+    "process": "Translation",
+    "func": "MRPL45: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": -0.0251588,
+    "pvalue": 0.76975,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL46",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 15,
+    "process": "Translation",
+    "func": "MRPL46: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.00115356,
+    "pvalue": 0.9882,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL47",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 3,
+    "process": "Translation",
+    "func": "MRPL47: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.104268,
+    "pvalue": 0.2489,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL48",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 11,
+    "process": "Translation",
+    "func": "MRPL48: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": -0.0311441,
+    "pvalue": 0.7412,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL49",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 11,
+    "process": "Translation",
+    "func": "MRPL49: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": -0.028687,
+    "pvalue": 0.87405,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL50",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 9,
+    "process": "Translation",
+    "func": "MRPL50: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.0682217,
+    "pvalue": 0.47005,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL51",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 12,
+    "process": "Translation",
+    "func": "MRPL51: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.141198,
+    "pvalue": 0.09605,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL52",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 14,
+    "process": "Translation",
+    "func": "MRPL52: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.0388493,
+    "pvalue": 0.6732,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL54",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 19,
+    "process": "Translation",
+    "func": "MRPL54: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": -0.0662831,
+    "pvalue": 0.4993,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL55",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Translation",
+    "func": "MRPL55: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.0833994,
+    "pvalue": 0.44565,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPL9",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Translation",
+    "func": "MRPL9: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.0399201,
+    "pvalue": 0.65625,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPS10",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 6,
+    "process": "Translation",
+    "func": "MRPS10: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.0597866,
+    "pvalue": 0.4969,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPS11",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 15,
+    "process": "Translation",
+    "func": "MRPS11: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.292052,
+    "pvalue": 0.00205,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPS12",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 19,
+    "process": "Translation",
+    "func": "MRPS12: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.0330784,
+    "pvalue": 0.78195,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPS14",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Translation",
+    "func": "MRPS14: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.0812473,
+    "pvalue": 0.39805,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPS15",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Translation",
+    "func": "MRPS15: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.158213,
+    "pvalue": 0.07095,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPS16",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 10,
+    "process": "Translation",
+    "func": "MRPS16: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": -0.0118412,
+    "pvalue": 0.89195,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPS17",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 7,
+    "process": "Translation",
+    "func": "MRPS17: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.13281,
+    "pvalue": 0.17695,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPS18A",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 6,
+    "process": "Translation",
+    "func": "MRPS18A: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.184321,
+    "pvalue": 0.03955,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPS18B",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 6,
+    "process": "Translation",
+    "func": "MRPS18B: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": -0.0343298,
+    "pvalue": 0.68355,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPS18C",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 4,
+    "process": "Translation",
+    "func": "MRPS18C: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.275715,
+    "pvalue": 0.0294,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPS2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 9,
+    "process": "Translation",
+    "func": "MRPS2: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": -0.0624763,
+    "pvalue": 0.46555,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPS21",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Translation",
+    "func": "MRPS21: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.0668049,
+    "pvalue": 0.47755,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPS22",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 3,
+    "process": "Translation",
+    "func": "MRPS22: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.143721,
+    "pvalue": 0.099,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPS23",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 17,
+    "process": "Translation",
+    "func": "MRPS23: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.244727,
+    "pvalue": 0.00375,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPS25",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 3,
+    "process": "Translation",
+    "func": "MRPS25: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.286582,
+    "pvalue": 0.11655,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPS26",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 20,
+    "process": "Translation",
+    "func": "MRPS26: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": -0.0158626,
+    "pvalue": 0.85455,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPS27",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 5,
+    "process": "Translation",
+    "func": "MRPS27: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": -0.101803,
+    "pvalue": 0.2269,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPS28",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 8,
+    "process": "Translation",
+    "func": "MRPS28: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.00281144,
+    "pvalue": 0.9773,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPS30",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 5,
+    "process": "Translation",
+    "func": "MRPS30: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": -0.0697139,
+    "pvalue": 0.42125,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPS31",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 13,
+    "process": "Translation",
+    "func": "MRPS31: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.0388289,
+    "pvalue": 0.69195,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPS33",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 7,
+    "process": "Translation",
+    "func": "MRPS33: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.127471,
+    "pvalue": 0.162,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPS34",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 16,
+    "process": "Translation",
+    "func": "MRPS34: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.034364,
+    "pvalue": 0.6877,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPS35",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 12,
+    "process": "Translation",
+    "func": "MRPS35: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.0251316,
+    "pvalue": 0.77485,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPS36",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 5,
+    "process": "Translation",
+    "func": "MRPS36: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": -0.00202237,
+    "pvalue": 0.98035,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPS5",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 2,
+    "process": "Translation",
+    "func": "MRPS5: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.089691,
+    "pvalue": 0.3055,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPS7",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 17,
+    "process": "Translation",
+    "func": "MRPS7: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.00536368,
+    "pvalue": 0.96465,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRPS9",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 2,
+    "process": "Translation",
+    "func": "MRPS9: Mitoribosome which forms a part of mitochondrial translation machinary",
+    "log2": 0.115565,
+    "pvalue": 0.18675,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MRRF",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 9,
+    "process": "Translation",
+    "func": "MRRF: Acts as a mitochondrial ribosome recycling factor during translation process",
+    "log2": -0.198539,
+    "pvalue": 0.0914,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MSTO1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Mitochondrial Dynamics",
+    "func": "MSTO1: Involved in the regulation of mitochondrial distribution and morphology",
+    "log2": 0.0530079,
+    "pvalue": 0.58415,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MTFMT",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 15,
+    "process": "Translation",
+    "func": "MTFMT: Involved in the specific attachment of methionine aminoacid to its cognate tRNA",
+    "log2": 0.0442739,
+    "pvalue": 0.6399,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MTFP1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 22,
+    "process": "Mitochondrial Dynamics",
+    "func": "MTFP1: Involved in the mitochondrial fission, role in mitochondrial fragmentation and is dependent on DNM1L expression",
+    "log2": 0.0557352,
+    "pvalue": 0.55975,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MTIF2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 2,
+    "process": "Translation",
+    "func": "MTIF2: Translation initiation factor could assist the tRNA to bind to rRNAs",
+    "log2": 0.126879,
+    "pvalue": 0.1535,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MTIF3",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 13,
+    "process": "Translation",
+    "func": "MTIF3: Translation initiation factor could assist the mRNA to bind to rRNAs",
+    "log2": 0.172003,
+    "pvalue": 0.4178,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MTO1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 6,
+    "process": "Replication & Transcription",
+    "func": "MTO1: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
+    "log2": -0.0638904,
+    "pvalue": 0.4949,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MTPAP",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 10,
+    "process": "Replication & Transcription",
+    "func": "MTPAP: Involved in the polyadenylation of mitochondrial tRNAs, rRNAs and mRNAs",
+    "log2": 0.0159714,
+    "pvalue": 0.85775,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MTRF1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 13,
+    "process": "Translation",
+    "func": "MTRF1: Involved in the mitochondrial translation termination, may act as a release factor",
+    "log2": -0.0293073,
+    "pvalue": 0.81835,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MTRF1L",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 6,
+    "process": "Translation",
+    "func": "MTRF1L: Involved in the mitochondrial translation termination, act as a release factor",
+    "log2": 0.0852234,
+    "pvalue": 0.33645,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "MUTYH",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Replication & Transcription",
+    "func": "MUTYH: Involved in the mitochondrial DNA base excision repair",
+    "log2": 0.203597,
+    "pvalue": 0.1473,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NARF",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 17,
+    "process": "Fe-S cluster biosynthesis",
+    "func": "NARF: Cytosolic Fe-S protein maturation",
+    "log2": -0.0963074,
+    "pvalue": 0.2742,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NARS2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 11,
+    "process": "Translation",
+    "func": "NARS2: Involved in the specific attachment of asparagine aminoacid to its cognate tRNA",
+    "log2": -0.0553965,
+    "pvalue": 0.5551,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NDUFA1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": "X",
+    "process": "Electron transport chain",
+    "func": "NDUFA1: Essential component of complex I transfers electrons from NADH to ubiquinone",
+    "log2": 0.131766,
+    "pvalue": 0.1533,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NDUFA10",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 2,
+    "process": "Electron transport chain",
+    "func": "NDUFA10: Essential component of complex I transfers electrons from NADH to ubiquinone",
+    "log2": 0.124923,
+    "pvalue": 0.1424,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NDUFA11",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 19,
+    "process": "Electron transport chain",
+    "func": "NDUFA11: Essential component of complex I transfers electrons from NADH to ubiquinone",
+    "log2": 0.157294,
+    "pvalue": 0.06945,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NDUFA12",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 12,
+    "process": "Electron transport chain",
+    "func": "NDUFA12: Essential component of complex I transfers electrons from NADH to ubiquinone",
+    "log2": 0.0232604,
+    "pvalue": 0.80775,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NDUFA13",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 19,
+    "process": "Electron transport chain",
+    "func": "NDUFA13: Essential component of complex I transfers electrons from NADH to ubiquinone",
+    "log2": -0.144482,
+    "pvalue": 0.08835,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NDUFA2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 5,
+    "process": "Electron transport chain",
+    "func": "NDUFA2: Essential component of complex I may be involved in regulating complex I activity or its assembly via assistance in redox processes",
+    "log2": -0.0561398,
+    "pvalue": 0.58855,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NDUFA3",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 19,
+    "process": "Electron transport chain",
+    "func": "NDUFA3: Essential component of complex I transfers electrons from NADH to ubiquinone",
+    "log2": -0.00948891,
+    "pvalue": 0.9179,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NDUFA4",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 7,
+    "process": "Electron transport chain",
+    "func": "NDUFA4: Essential component of complex I transfers electrons from NADH to ubiquinone",
+    "log2": 0.117051,
+    "pvalue": 0.1733,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NDUFA5",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 7,
+    "process": "Electron transport chain",
+    "func": "NDUFA5: Essential component of complex I transfers electrons from NADH to ubiquinone",
+    "log2": -0.140048,
+    "pvalue": 0.11575,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NDUFA6",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 22,
+    "process": "Electron transport chain",
+    "func": "NDUFA6: Essential component of complex I transfers electrons from NADH to ubiquinone",
+    "log2": 0.0268227,
+    "pvalue": 0.76055,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NDUFA7",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 19,
+    "process": "Electron transport chain",
+    "func": "NDUFA7: Essential component of complex I transfers electrons from NADH to ubiquinone",
+    "log2": 0.00406919,
+    "pvalue": 0.96495,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NDUFA8",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 9,
+    "process": "Electron transport chain",
+    "func": "NDUFA8: Essential component of complex I transfers electrons from NADH to ubiquinone",
+    "log2": 0.0650903,
+    "pvalue": 0.44605,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NDUFA9",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 12,
+    "process": "Electron transport chain",
+    "func": "NDUFA9: Essential component of complex I transfers electrons from NADH to ubiquinone",
+    "log2": 0.182185,
+    "pvalue": 0.0325,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NDUFAB1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 16,
+    "process": "Electron transport chain",
+    "func": "NDUFAB1: Essential component of complex I transfers electrons from NADH to ubiquinone",
+    "log2": 0.0976609,
+    "pvalue": 0.25135,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NDUFAF1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 15,
+    "process": "Electron transport chain",
+    "func": "NDUFAF1: Required in the assembly of Complex I",
+    "log2": 0.202315,
+    "pvalue": 0.04665,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NDUFAF2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 5,
+    "process": "Electron transport chain",
+    "func": "NDUFAF2: Required in the assembly of Complex I",
+    "log2": 0.153603,
+    "pvalue": 0.12095,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NDUFAF3",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 3,
+    "process": "Electron transport chain",
+    "func": "NDUFAF3: Required in the assembly of Complex I",
+    "log2": 0.0947627,
+    "pvalue": 0.71435,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NDUFAF4",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 6,
+    "process": "Electron transport chain",
+    "func": "NDUFAF4: Complex I assembly factor required in the assembly of Complex I",
+    "log2": 0.0150257,
+    "pvalue": 0.8764,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NDUFB1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 14,
+    "process": "Electron transport chain",
+    "func": "NDUFB1: Essential component of complex I transfers electrons from NADH to ubiquinone",
+    "log2": 0.177525,
+    "pvalue": 0.0534,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NDUFB10",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 16,
+    "process": "Electron transport chain",
+    "func": "NDUFB10: Essential component of complex I transfers electrons from NADH to ubiquinone",
+    "log2": -0.0520551,
+    "pvalue": 0.544,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NDUFB11",
+    "sampleID": "HCT116-21.3-3",
+    "chr": "X",
+    "process": "Electron transport chain",
+    "func": "NDUFB11: Essential component of complex I transfers electrons from NADH to ubiquinone",
+    "log2": 0.0478565,
+    "pvalue": 0.5852,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NDUFB2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 7,
+    "process": "Electron transport chain",
+    "func": "NDUFB2: Essential component of complex I transfers electrons from NADH to ubiquinone",
+    "log2": 0.134779,
+    "pvalue": 0.1377,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NDUFB3",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 2,
+    "process": "Electron transport chain",
+    "func": "NDUFB3: Essential component of complex I transfers electrons from NADH to ubiquinone",
+    "log2": 0.143445,
+    "pvalue": 0.12695,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NDUFB4",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 3,
+    "process": "Electron transport chain",
+    "func": "NDUFB4: Essential component of complex I transfers electrons from NADH to ubiquinone",
+    "log2": -0.0275206,
+    "pvalue": 0.7492,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NDUFB5",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 3,
+    "process": "Electron transport chain",
+    "func": "NDUFB5: Essential component of complex I transfers electrons from NADH to ubiquinone",
+    "log2": -0.0323557,
+    "pvalue": 0.7136,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NDUFB6",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 9,
+    "process": "Electron transport chain",
+    "func": "NDUFB6: Essential component of complex I transfers electrons from NADH to ubiquinone",
+    "log2": 0.0351756,
+    "pvalue": 0.69835,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NDUFB7",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 19,
+    "process": "Electron transport chain",
+    "func": "NDUFB7: Essential component of complex I transfers electrons from NADH to ubiquinone",
+    "log2": 0.104684,
+    "pvalue": 0.2313,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NDUFB8",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 10,
+    "process": "Electron transport chain",
+    "func": "NDUFB8: Essential component of complex I transfers electrons from NADH to ubiquinone",
+    "log2": -0.0326355,
+    "pvalue": 0.6992,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NDUFB9",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 8,
+    "process": "Electron transport chain",
+    "func": "NDUFB9: Essential component of complex I transfers electrons from NADH to ubiquinone",
+    "log2": 0.0538107,
+    "pvalue": 0.5204,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NDUFC1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 4,
+    "process": "Electron transport chain",
+    "func": "NDUFC1: Essential component of complex I transfers electrons from NADH to ubiquinone",
+    "log2": -0.0636439,
+    "pvalue": 0.73325,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NDUFS1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 2,
+    "process": "Electron transport chain",
+    "func": "NDUFS1: Essential component of complex I transfers electrons from NADH to ubiquinone",
+    "log2": 0.0067935,
+    "pvalue": 0.93535,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NDUFS2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Electron transport chain",
+    "func": "NDUFS2: Essential component of complex I transfers electrons from NADH to ubiquinone",
+    "log2": -0.049346,
+    "pvalue": 0.5713,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NDUFS3",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 11,
+    "process": "Electron transport chain",
+    "func": "NDUFS3: Essential component of complex I transfers electrons from NADH to ubiquinone",
+    "log2": 0.0424481,
+    "pvalue": 0.74565,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NDUFS4",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 5,
+    "process": "Electron transport chain",
+    "func": "NDUFS4: Essential component of complex I transfers electrons from NADH to ubiquinone",
+    "log2": 0.0839717,
+    "pvalue": 0.35495,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NDUFS5",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Electron transport chain",
+    "func": "NDUFS5: Essential component of complex I transfers electrons from NADH to ubiquinone",
+    "log2": -0.071374,
+    "pvalue": 0.39695,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NDUFS6",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 5,
+    "process": "Electron transport chain",
+    "func": "NDUFS6: Essential component of complex I transfers electrons from NADH to ubiquinone",
+    "log2": 0.131094,
+    "pvalue": 0.13245,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NDUFS7",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 19,
+    "process": "Electron transport chain",
+    "func": "NDUFS7: Essential component of complex I transfers electrons from NADH to ubiquinone",
+    "log2": 0.241562,
+    "pvalue": 0.00865,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NDUFS8",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 11,
+    "process": "Electron transport chain",
+    "func": "NDUFS8: Essential component of complex I transfers electrons from NADH to ubiquinone",
+    "log2": 0.102769,
+    "pvalue": 0.24395,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NDUFV1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 11,
+    "process": "Electron transport chain",
+    "func": "NDUFV1: Essential component of complex I transfers electrons from NADH to ubiquinone",
+    "log2": 0.06119,
+    "pvalue": 0.47225,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NDUFV2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 18,
+    "process": "Electron transport chain",
+    "func": "NDUFV2: Essential component of complex I transfers electrons from NADH to ubiquinone",
+    "log2": -0.0113085,
+    "pvalue": 0.90175,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NDUFV3",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 21,
+    "process": "Electron transport chain",
+    "func": "NDUFV3: Essential component of complex I transfers electrons from NADH to ubiquinone",
+    "log2": 0.662351,
+    "pvalue": 0.00005,
+    "mutation": "chr21 44330831 T>C downstream_gene_variant"
+  },
+  {
+    "gene": "NFE2L2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 2,
+    "process": "Replication & Transcription",
+    "func": "NFE2L2: Regulates the expression of TFB1M and TFB2M which are two mitochondrial transcription factors",
+    "log2": -0.0249953,
+    "pvalue": 0.77035,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NFS1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 20,
+    "process": "Fe-S cluster biosynthesis",
+    "func": "NFS1: The sulfide for Fe-S clusters originates from cysteine via the action of NFS1",
+    "log2": -0.0419558,
+    "pvalue": 0.7754,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NFU1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 2,
+    "process": "Fe-S cluster biosynthesis",
+    "func": "NFU1: Protein assembles and transfers 4Fe-4S clusters to target apoproteins",
+    "log2": 0.304569,
+    "pvalue": 0.0016,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NME3",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 16,
+    "process": "Replication & Transcription",
+    "func": "NME3: Shows mitochondrial nucleoside diphosphate kinase activity",
+    "log2": -0.190677,
+    "pvalue": 0.0341,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NME4",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 16,
+    "process": "Replication & Transcription",
+    "func": "NME4: Shows mitochondrial nucleoside diphosphate kinase activity",
+    "log2": -0.705591,
+    "pvalue": 0.00005,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NME6",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 3,
+    "process": "Replication & Transcription",
+    "func": "NME6: Shows mitochondrial nucleoside diphosphate kinase activity",
+    "log2": 0.153056,
+    "pvalue": 0.20895,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NRF1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 7,
+    "process": "Replication & Transcription",
+    "func": "NRF1: Regulates the expression of TFB1M and TFB2M which are two mitochondrial transcription factors",
+    "log2": -0.205134,
+    "pvalue": 0.03115,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NSUN2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 5,
+    "process": "Replication & Transcription",
+    "func": "NSUN2: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
+    "log2": 0.152473,
+    "pvalue": 0.07115,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NTHL1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 16,
+    "process": "Replication & Transcription",
+    "func": "NTHL1: Involved in the repair of mispairs in DNA",
+    "log2": 0.0471211,
+    "pvalue": 0.6253,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NUBP1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 16,
+    "process": "Fe-S cluster biosynthesis",
+    "func": "NUBP1: Essential for both cytosolic iron-sulfur protein assembly and iron homeostasis",
+    "log2": -0.0313757,
+    "pvalue": 0.74935,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NUBP2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 16,
+    "process": "Fe-S cluster biosynthesis",
+    "func": "NUBP2: Required for the assembly of cyotosolic iron-sulfur proteins",
+    "log2": -0.0252399,
+    "pvalue": 0.76505,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "NUBPL",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 14,
+    "process": "Electron transport chain",
+    "func": "NUBPL: Possible role in the delivery of one or more Fe/S clusters to complex I subunits",
+    "log2": -0.379909,
+    "pvalue": 0.0011,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "OGDH",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 7,
+    "process": "Tricarboxylic acid cycle",
+    "func": "OGDH: Catalyzes the overall conversion of 2-oxoglutarate to succinyl-CoA and CO2",
+    "log2": -0.0602535,
+    "pvalue": 0.4867,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "OGG1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 3,
+    "process": "Replication & Transcription",
+    "func": "OGG1: responsible for the excision of 8-oxoguanine",
+    "log2": 0.0145214,
+    "pvalue": 0.9133,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "OMA1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Mitochondrial Dynamics",
+    "func": "OMA1: Involved in the mitochondrial fusion, know to induce proteolytic inactivation of OPA1",
+    "log2": 0.411185,
+    "pvalue": 0.0001,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "OPA1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 3,
+    "process": "Mitochondrial Dynamics",
+    "func": "OPA1: Involved in the mitochondrial fusion, initiates inner membrane fusion",
+    "log2": -0.0119171,
+    "pvalue": 0.8895,
+    "mutation": "chr3 193412949 T>C 3_prime_UTR_variant,chr3 193413732 A>G 3_prime_UTR_variant"
+  },
+  {
+    "gene": "OPA3",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 19,
+    "process": "Mitochondrial Dynamics",
+    "func": "OPA3: Involved in the mitochondrial fusion, Involved in mitochondrial fragmentation, interacts with MFN1",
+    "log2": -0.0280811,
+    "pvalue": 0.80435,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "OSGEPL1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 2,
+    "process": "Replication & Transcription",
+    "func": "OSGEPL1: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
+    "log2": -0.435601,
+    "pvalue": 0.001,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "OXA1L",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 14,
+    "process": "Translation",
+    "func": "OXA1L: May have a role in the insertion of proteins into inner membrane and also a complex V assembly factor",
+    "log2": 0.0337827,
+    "pvalue": 0.69215,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "PACS2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 14,
+    "process": "Calcium trafficking",
+    "func": "PACS2: Involved in the control of ER mitochondria appositions",
+    "log2": -0.175718,
+    "pvalue": 0.19785,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "PARL",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 3,
+    "process": "Mitochondrial Dynamics",
+    "func": "PARL: Involved in the mitochondrial fusion, regulates the clevage of OPA1",
+    "log2": 0.256025,
+    "pvalue": 0.0048,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "PARS2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Translation",
+    "func": "PARS2: Involved in the specific attachment of proline aminoacid to its cognate tRNA",
+    "log2": -0.0424378,
+    "pvalue": 0.6909,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "PDHA1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": "X",
+    "process": "Formation of Acetyl CoA",
+    "func": "PDHA1: Catalyzes the overall conversion of pyruvate to acetyl-CoA",
+    "log2": 0.16946,
+    "pvalue": 0.05705,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "PDHB",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 3,
+    "process": "Formation of Acetyl CoA",
+    "func": "PDHB: Catalyzes the overall conversion of pyruvate to acetyl-CoA",
+    "log2": 0.0573262,
+    "pvalue": 0.50795,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "PDHX",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 11,
+    "process": "Formation of Acetyl CoA",
+    "func": "PDHX: Catalyzes the conversion of pyruvate to acetyl coenzyme A",
+    "log2": 0.309694,
+    "pvalue": 0.0103,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "PET112",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 4,
+    "process": "Translation",
+    "func": "PET112: Involved in the biosynthesis of glutamyl-tRNA",
+    "log2": 0.0593383,
+    "pvalue": 0.52965,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "PFKL",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 21,
+    "process": "Glycolysis",
+    "func": "PFKL: Catalyzes the conversion of fructose 6-phosphate to fructose 1,6-bisphosphate",
+    "log2": -0.101305,
+    "pvalue": 0.22825,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "PFKM",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 12,
+    "process": "Glycolysis",
+    "func": "PFKM: Catalyzes the phosphorylation of fructose-6-phosphate to fructose-1,6-bisphosphate",
+    "log2": -0.0886389,
+    "pvalue": 0.29595,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "PFKP",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 10,
+    "process": "Glycolysis",
+    "func": "PFKP: Catalyzes the irreversible conversion of fructose-6-phosphate to fructose-1,6-bisphosphate",
+    "log2": 0.143498,
+    "pvalue": 0.08505,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "PGAM1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 10,
+    "process": "Glycolysis",
+    "func": "PGAM1: Catalyzes the reversible reaction of 3-phosphoglycerate to 2-phosphoglycerate",
+    "log2": 0.0732992,
+    "pvalue": 0.39065,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "PGAM2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 7,
+    "process": "Glycolysis",
+    "func": "PGAM2: Catalyzes the reversible reaction of 3-phosphoglycerate to 2-phosphoglycerate",
+    "log2": 1.03788,
+    "pvalue": 0.0343,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "PGK1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": "X",
+    "process": "Glycolysis",
+    "func": "PGK1: Catalyzes the conversion of 1,3-diphosphoglycerate to 3-phosphoglycerate",
+    "log2": 0.0206456,
+    "pvalue": 0.8077,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "PGS1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 17,
+    "process": "Cardiolipin biosynthesis",
+    "func": "PGS1: Phosphatidylglycerol synthase converts cytidine diphosphate diacylglycerol to phosphatidylglycerol phosphate",
+    "log2": -0.278888,
+    "pvalue": 0.00335,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "PHB",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 17,
+    "process": "Translation",
+    "func": "PHB: Involved in the post translational quality control, stabilizes mitochondrially synthesized proteins",
+    "log2": 0.154176,
+    "pvalue": 0.0633,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "PHB2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 12,
+    "process": "Mitochondrial Dynamics",
+    "func": "PHB2: Involved in the mitochondrial fusion, scaffold proteins PHB2 and STOML2 coordinate stability of the OPA1",
+    "log2": 0.0863155,
+    "pvalue": 0.3097,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "PINK1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Mitochondrial Dynamics",
+    "func": "PINK1: Involved in the mitochondrial fusion, PINK1 phosphorylates PARK2 and inturn PARK2 induced ubiquitination of mitofusins may target mitochondria for mitophagy",
+    "log2": 0.00226398,
+    "pvalue": 0.9791,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "PKIA",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 8,
+    "process": "Mitochondrial Dynamics",
+    "func": "PKIA: Involved in the mitochondrial fission, is known to inhibit GTPase activity of DNM1L",
+    "log2": -0.422475,
+    "pvalue": 0.00175,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "PKLR",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Glycolysis",
+    "func": "PKLR: Catalyzes the transphosphorylation of phohsphoenolpyruvate into pyruvate and ATP",
+    "log2": -0.841804,
+    "pvalue": 0.03085,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "PKM2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 15,
+    "process": "Glycolysis",
+    "func": "PKM2: Catalyzes the transphosphorylation of phohsphoenolpyruvate into pyruvate and ATP",
+    "log2": -0.0919928,
+    "pvalue": 0.29015,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "PLD6",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 17,
+    "process": "Mitochondrial Dynamics",
+    "func": "PLD6: Involved in the mitochondrial fusion, promotes mitofusin-mediated fusion",
+    "log2": -0.068607,
+    "pvalue": 0.4994,
+    "mutation": "chr17 17105682 G>A 3_prime_UTR_variant"
+  },
+  {
+    "gene": "PMAIP1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 18,
+    "process": "Apoptosis",
+    "func": "PMAIP1: Noxa Bcl-2 family member propagating apoptosis",
+    "log2": 0.0143708,
+    "pvalue": 0.8655,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "PML",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 15,
+    "process": "Calcium trafficking",
+    "func": "PML: Regulates Inositol-1,4,5-triphosphate receptor mediated Ca2+ release from the ER",
+    "log2": 0.0135745,
+    "pvalue": 0.8936,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "PMPCA",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 9,
+    "process": "Import & Sorting",
+    "func": "PMPCA: Presequence of preproteins are removed by proteolytic enzyme mitochondrial processing peptidase",
+    "log2": 0.115702,
+    "pvalue": 0.17065,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "PMPCB",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 7,
+    "process": "Import & Sorting",
+    "func": "PMPCB: Presequence of preproteins are removed by proteolytic enzyme mitochondrial processing peptidase",
+    "log2": -0.0179426,
+    "pvalue": 0.86975,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "POLG",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 15,
+    "process": "Replication & Transcription",
+    "func": "POLG: Mitochondrial DNA polymerasein addition it also shows 3' to 5' exonuclease activity and ensure faithful replication",
+    "log2": 0.0254252,
+    "pvalue": 0.8456,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "POLG2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 17,
+    "process": "Replication & Transcription",
+    "func": "POLG2: Acts as catalytic subunit of mitochondrial DNA polymerase",
+    "log2": -0.183042,
+    "pvalue": 0.0631,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "POLRMT",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 19,
+    "process": "Replication & Transcription",
+    "func": "POLRMT: provides primers for the initiation of replication of the mitochondria genome",
+    "log2": 0.00415525,
+    "pvalue": 0.9623,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "PPIA",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 7,
+    "process": "Apoptosis",
+    "func": "PPIA: Cyclophilin A might work with ENDOG in a DNA degradation complex",
+    "log2": 0.0487679,
+    "pvalue": 0.56805,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "PPIF",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 10,
+    "process": "Apoptosis",
+    "func": "PPIF: Cyclophilin D forms part of permeability transition pore",
+    "log2": 0.175508,
+    "pvalue": 0.03595,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "PPOX",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Heme Biosynthesis",
+    "func": "PPOX: Enzyme protoporphyrinogen oxidase coverts Protoporphyrinogen IX to Protoporphyrin IX",
+    "log2": -0.0469302,
+    "pvalue": 0.67205,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "PRDX3",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 10,
+    "process": "ROS defense",
+    "func": "PRDX3: Mitochondrial peroxiredoxin reduces hydrogen peroxide to water",
+    "log2": -0.0461378,
+    "pvalue": 0.57825,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "PTCD2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 5,
+    "process": "Electron transport chain",
+    "func": "PTCD2: Complex III assembly factor, maturation and stabilization of cytochrome b mRNA",
+    "log2": -0.121579,
+    "pvalue": 0.25195,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "PTCD3",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 2,
+    "process": "Translation",
+    "func": "PTCD3: Associates with mitochondrial small ribosomal subunit and regulates translation",
+    "log2": 0.0282932,
+    "pvalue": 0.744,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "PTPMT1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 11,
+    "process": "Cardiolipin biosynthesis",
+    "func": "PTPMT1: Phosphatidylglycerophosphatase activity removes phospate from phosphatidylglycerol phosphate to form phosphatidylglycerol",
+    "log2": 0.0514929,
+    "pvalue": 0.75105,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "PUS1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 12,
+    "process": "Replication & Transcription",
+    "func": "PUS1: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
+    "log2": -0.183129,
+    "pvalue": 0.05865,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "PUS3",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 11,
+    "process": "Replication & Transcription",
+    "func": "PUS3: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
+    "log2": 0.01187,
+    "pvalue": 0.937,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "QRSL1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 6,
+    "process": "Translation",
+    "func": "QRSL1: Involved in the biosynthesis of glutamyl-tRNA",
+    "log2": -0.112513,
+    "pvalue": 0.2291,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "QTRT1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 19,
+    "process": "Replication & Transcription",
+    "func": "QTRT1: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
+    "log2": 0.074719,
+    "pvalue": 0.4201,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "QTRTD1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 3,
+    "process": "Replication & Transcription",
+    "func": "QTRTD1: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
+    "log2": -0.00841356,
+    "pvalue": 0.92,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "RARS2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 6,
+    "process": "Translation",
+    "func": "RARS2: Involved in the specific attachment of arginine aminoacid to its cognate tRNA",
+    "log2": 0.0300474,
+    "pvalue": 0.74295,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "RHOT1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 17,
+    "process": "Mitochondrial Dynamics",
+    "func": "RHOT1: Involved in the mitophagy, tethers mitochondria to the tubulin network but phosphorylation by PINK1 results in the disattachment of mitochondria",
+    "log2": -0.100425,
+    "pvalue": 0.2594,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "RHOT2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 16,
+    "process": "Mitochondrial Dynamics",
+    "func": "RHOT2: Involved in the mitophagy, tethers mitochondria to the tubulin network but phosphorylation by PINK1 results in the disattachment of mitochondria",
+    "log2": -0.0348954,
+    "pvalue": 0.6918,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "RMRP",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 9,
+    "process": "Replication & Transcription",
+    "func": "RMRP: RNA component of mitochondrial RNA processing endoribonuclease: cleaves mitochondrial RNA at the priming site of mitochondrial DNA replication",
+    "log2": -0.341276,
+    "pvalue": 0.395,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "RNASEH1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 2,
+    "process": "Replication & Transcription",
+    "func": "RNASEH1: May have role in the removal of RNA primers at the origin of replication on heavy and light strands",
+    "log2": -0.0232895,
+    "pvalue": 0.798,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "RNASEL",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Translation",
+    "func": "RNASEL: Modulate the stability of mitochondrial mRNAsby interacting with MTIF2",
+    "log2": 0.151038,
+    "pvalue": 0.2287,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "RPUSD2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 15,
+    "process": "Replication & Transcription",
+    "func": "RPUSD2: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
+    "log2": 0.0732394,
+    "pvalue": 0.4454,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "RPUSD4",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 11,
+    "process": "Replication & Transcription",
+    "func": "RPUSD4: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
+    "log2": 0.0387222,
+    "pvalue": 0.65975,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "RRM2B",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 8,
+    "process": "Replication & Transcription",
+    "func": "RRM2B: Required for the de novo deoxyribonucloetide synthesis in nonproliferating cells supplying dNTPs to mtDNA synthesis",
+    "log2": -0.401719,
+    "pvalue": 0.00005,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "SAMM50",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 22,
+    "process": "Import & Sorting",
+    "func": "SAMM50: Outermembrane sorting and assembly machinary, central component of SAMM complex and inserts beta barrel proteins into the outer membrane",
+    "log2": 0.22455,
+    "pvalue": 0.0106,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "SARS2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 19,
+    "process": "Translation",
+    "func": "SARS2: Involved in the specific attachment of serine aminoacid to its cognate tRNA",
+    "log2": 0.0905076,
+    "pvalue": 0.48405,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "SCO1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 17,
+    "process": "Electron transport chain",
+    "func": "SCO1: Complex IV assembly factor, Incorporation of copper atoms in the catalytic sites of the nascent complex",
+    "log2": 0.0625386,
+    "pvalue": 0.4937,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "SDHA",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 5,
+    "process": "Tricarboxylic acid cycle",
+    "func": "SDHA: Part of Succinate dehydrogenase complex in oxidative phosporylation in TCA cycle it catalyzes the oxidation of succinate to fumarate",
+    "log2": -0.0608321,
+    "pvalue": 0.4687,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "SDHAF1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 19,
+    "process": "Electron transport chain",
+    "func": "SDHAF1: Essential for complex II assembly",
+    "log2": -0.0854545,
+    "pvalue": 0.4384,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "SDHAF2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 11,
+    "process": "Electron transport chain",
+    "func": "SDHAF2: Required for flavination of a succinate dehydrogenase complex",
+    "log2": -0.0344053,
+    "pvalue": 0.71365,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "SDHB",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Tricarboxylic acid cycle",
+    "func": "SDHB: Part of Succinate dehydrogenase complex in oxidative phosporylation in TCA cycle it catalyzes the oxidation of succinate to fumarate",
+    "log2": 0.0906678,
+    "pvalue": 0.28705,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "SDHC",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Tricarboxylic acid cycle",
+    "func": "SDHC: Part of Succinate dehydrogenase complex in oxidative phosporylation in TCA cycle it catalyzes the oxidation of succinate to fumarate",
+    "log2": -0.0224154,
+    "pvalue": 0.7917,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "SDHD",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 11,
+    "process": "Tricarboxylic acid cycle",
+    "func": "SDHD: Part of Succinate dehydrogenase complex in oxidative phosporylation in TCA cycle it catalyzes the oxidation of succinate to fumarate",
+    "log2": 0.00548543,
+    "pvalue": 0.94965,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "SELRC1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Electron transport chain",
+    "func": "SELRC1: COA7 Complex IV assembly factor",
+    "log2": -0.0312384,
+    "pvalue": 0.72295,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "SH3GLB1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Mitochondrial Dynamics",
+    "func": "SH3GLB1: Involved in the mitochondrial fission, proposed to be involved in the lipid remodeling of the outer membrane during fission",
+    "log2": 0.0155174,
+    "pvalue": 0.8561,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "SHC1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "ROS defense",
+    "func": "SHC1: Could be involved in the generation of the hydrogen peroxide independent of superoxides in mitochondria",
+    "log2": 0.0183688,
+    "pvalue": 0.8294,
+    "mutation": "chr1 154938165 G>A synonymous_variant"
+  },
+  {
+    "gene": "SIGMAR1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 9,
+    "process": "Calcium trafficking",
+    "func": "SIGMAR1: Stabilises the Inositol-1,4,5-triphosphate receptors and ensures proper Ca2+ fluxes",
+    "log2": 0.198382,
+    "pvalue": 0.0195,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "SLC24A6",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 12,
+    "process": "Calcium trafficking",
+    "func": "SLC24A6: Involved in the calcium homeostasis by counteracting the calcium accumaltion in the mitochondria",
+    "log2": -0.0684645,
+    "pvalue": 0.4685,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "SLC25A1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 22,
+    "process": "ROS defense",
+    "func": "SLC25A1: May be involved in the transport of gluthathione into the mitochondria",
+    "log2": 0.13646,
+    "pvalue": 0.115,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "SLC25A19",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 17,
+    "process": "Replication & Transcription",
+    "func": "SLC25A19: Transports thiamine pyrophosphates into mitochondria",
+    "log2": 0.0217453,
+    "pvalue": 0.8319,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "SLC25A20",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 3,
+    "process": "Fatty acid beta-oxidation",
+    "func": "SLC25A20: Carnitine acylcarnitine translocase mediates acylcarnitine entry into mitochondria",
+    "log2": -0.0635659,
+    "pvalue": 0.56565,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "SLC25A28",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 10,
+    "process": "Fe-S cluster biosynthesis",
+    "func": "SLC25A28: Mitochondrial iron transporter",
+    "log2": 0.0448518,
+    "pvalue": 0.63225,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "SLC25A3",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 12,
+    "process": "Replication & Transcription",
+    "func": "SLC25A3: Involved in the transport of phosphate into the mitochondrial matrix",
+    "log2": -0.0792158,
+    "pvalue": 0.34775,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "SLC25A33",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Replication & Transcription",
+    "func": "SLC25A33: Mitochondrial pyrimidine nucleotide carrier",
+    "log2": -0.00806126,
+    "pvalue": 0.93065,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "SLC25A37",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 8,
+    "process": "Fe-S cluster biosynthesis",
+    "func": "SLC25A37: Functions as an essential iron importer",
+    "log2": 0.467659,
+    "pvalue": 0.00005,
+    "mutation": "chr8 23425885 G>A missense_variant"
+  },
+  {
+    "gene": "SLC25A4",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 4,
+    "process": "Apoptosis",
+    "func": "SLC25A4: Adenine nucleotide translocator forms part of permeability transition pore",
+    "log2": -0.102108,
+    "pvalue": 0.28645,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "SLC25A5",
+    "sampleID": "HCT116-21.3-3",
+    "chr": "X",
+    "process": "Apoptosis",
+    "func": "SLC25A5: Adenine nucleotide translocator forms part of permeability transition pore",
+    "log2": -0.122671,
+    "pvalue": 0.1421,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "SLC27A1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 19,
+    "process": "Fatty acid beta-oxidation",
+    "func": "SLC27A1: Readily converts the transported very long chain fatty acids to acyl-CoAs",
+    "log2": 0.420558,
+    "pvalue": 0.00005,
+    "mutation": "chr19 17616041 G>A 3_prime_UTR_variant,chr19 17616171 G>A 3_prime_UTR_variant"
+  },
+  {
+    "gene": "SLC27A2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 15,
+    "process": "Fatty acid beta-oxidation",
+    "func": "SLC27A2: Readily converts the transported very long chain fatty acids to acyl-CoAs",
+    "log2": -0.245111,
+    "pvalue": 0.01535,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "SLC27A3",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Fatty acid beta-oxidation",
+    "func": "SLC27A3: Readily converts the transported very long chain fatty acids to acyl-CoAs",
+    "log2": 0.438329,
+    "pvalue": 0.00005,
+    "mutation": "chr1 153750738 G>C synonymous_variant"
+  },
+  {
+    "gene": "SLC27A4",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 9,
+    "process": "Fatty acid beta-oxidation",
+    "func": "SLC27A4: Readily converts the transported very long chain fatty acids to acyl-CoAs",
+    "log2": 0.114041,
+    "pvalue": 0.19245,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "SLC27A5",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 19,
+    "process": "Fatty acid beta-oxidation",
+    "func": "SLC27A5: Readily converts the transported very long chain fatty acids to acyl-CoAs",
+    "log2": 0.0723984,
+    "pvalue": 0.53275,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "SLC27A6",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 5,
+    "process": "Fatty acid beta-oxidation",
+    "func": "SLC27A6: Readily converts the transported very long chain fatty acids to acyl-CoAs",
+    "log2": -0.507503,
+    "pvalue": 0.00005,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "SLC29A1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 6,
+    "process": "Replication & Transcription",
+    "func": "SLC29A1: Equilibrative nucleoside transporter 1 imports recycled deoxyribonucleosides from cytoplasm into mitochondria",
+    "log2": -0.0241334,
+    "pvalue": 0.78385,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "SLC2A1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Glycolysis",
+    "func": "SLC2A1: A major glucose transporter in the mammalian blood-brain barrier",
+    "log2": 0.109727,
+    "pvalue": 0.19175,
+    "mutation": "chr1 43395635 C>T synonymous_variant,chr1 43408966 G>A synonymous_variant"
+  },
+  {
+    "gene": "SLC2A3",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 12,
+    "process": "Glycolysis",
+    "func": "SLC2A3: Solute carrier family 2 (facilitated glucose transporter), member 3",
+    "log2": 0.472276,
+    "pvalue": 0.00025,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "SLC2A4",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 17,
+    "process": "Glycolysis",
+    "func": "SLC2A4: Insulin-regulated facilitative glucose transporter",
+    "log2": -0.18312,
+    "pvalue": 0.2848,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "SOD1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 21,
+    "process": "ROS defense",
+    "func": "SOD1: May be involved in the removal of superoxides in the inter membrane space of mitochondria",
+    "log2": 0.958473,
+    "pvalue": 0.00005,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "SOD2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 6,
+    "process": "ROS defense",
+    "func": "SOD2: Dismutates the super oxide generated in the mitochondiral matrix to hydrogen peroxide",
+    "log2": -0.0675503,
+    "pvalue": 0.46,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "SPG7",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 16,
+    "process": "Mitochondrial Dynamics",
+    "func": "SPG7: Involved in the mitochondrial fusion, known to maintain the OPA1 isoforms",
+    "log2": 0.103282,
+    "pvalue": 0.24045,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "SQSTM1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 5,
+    "process": "Mitochondrial Dynamics",
+    "func": "SQSTM1: Involved  in the mitophagy, recruited to mitochondria and binds mitochondrial substrates on the autophagosomes",
+    "log2": -0.0921482,
+    "pvalue": 0.3712,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "SSBP1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 7,
+    "process": "Replication & Transcription",
+    "func": "SSBP1: Promotes helical destabilization for the DNA helicases and Polymerase gama (POLG) to support mtDNA replication",
+    "log2": 0.204318,
+    "pvalue": 0.0211,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "STOML2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 9,
+    "process": "Mitochondrial Dynamics",
+    "func": "STOML2:  Involved in the mitochondrial fusion, scaffold proteins PHB2 and STOML2 coordinate stability of the OPA1",
+    "log2": 0.00899092,
+    "pvalue": 0.91445,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "SUCLA2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 13,
+    "process": "Tricarboxylic acid cycle",
+    "func": "SUCLA2: convert succinate to succinyl-CoA",
+    "log2": 0.0132634,
+    "pvalue": 0.8828,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "SUCLG1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 2,
+    "process": "Tricarboxylic acid cycle",
+    "func": "SUCLG1: Catalyzes the conversion of succinyl CoA to succinate",
+    "log2": 0.0678612,
+    "pvalue": 0.4324,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "SUCLG2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 3,
+    "process": "Tricarboxylic acid cycle",
+    "func": "SUCLG2: Catalyzes the conversion of succinyl CoA to succinate",
+    "log2": -0.0321182,
+    "pvalue": 0.72565,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "SURF1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 9,
+    "process": "Electron transport chain",
+    "func": "SURF1: Complex IV assembly factor, involved in the biogenesis of the cytochrome c oxidase complex",
+    "log2": -0.00630699,
+    "pvalue": 0.9457,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "SYBU",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 8,
+    "process": "Mitochondrial Dynamics",
+    "func": "SYBU: Involved in the mitochondrial movement, have a role in linking the mitochondria to KIF5B",
+    "log2": -0.492137,
+    "pvalue": 0.00005,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TACO1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 17,
+    "process": "Translation",
+    "func": "TACO1: Translation activator of complex IV subunit",
+    "log2": 0.0331302,
+    "pvalue": 0.7166,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TARS2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Translation",
+    "func": "TARS2: Involved in the specific attachment of threonine aminoacid to its cognate tRNA",
+    "log2": 0.0903811,
+    "pvalue": 0.3643,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TAZ",
+    "sampleID": "HCT116-21.3-3",
+    "chr": "X",
+    "process": "Cardiolipin biosynthesis",
+    "func": "TAZ: Converts the nascent cardiolipin to mature cardiolipin",
+    "log2": -0.0466349,
+    "pvalue": 0.95345,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TCHP",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 12,
+    "process": "Calcium trafficking",
+    "func": "TCHP: Involved in the regulation of ER mitochondria juxtaposition",
+    "log2": 0.136397,
+    "pvalue": 0.14255,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TERT",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 5,
+    "process": "Replication & Transcription",
+    "func": "TERT: Role in the protection of mitochondrial integrity with a suggested role in mt-DNA replication and/or repair",
+    "log2": -0.171023,
+    "pvalue": 0.21235,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TFAM",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 10,
+    "process": "Replication & Transcription",
+    "func": "TFAM: A key activator of mitochondrial transcription and also functions in replication and repair",
+    "log2": -0.0993767,
+    "pvalue": 0.2548,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TFB1M",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 6,
+    "process": "Replication & Transcription",
+    "func": "TFB1M: Regulates the stability of small subunit of mitochondrial ribosome by its methylation activity. It also plays a very important role in transcription",
+    "log2": 0.14405,
+    "pvalue": 0.15805,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TFB2M",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Replication & Transcription",
+    "func": "TFB2M: Essential transcription faactor involved in the transcription of mitochondrial genes",
+    "log2": 0.0288612,
+    "pvalue": 0.7581,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TIMM10",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 11,
+    "process": "Import & Sorting",
+    "func": "TIMM10: Innermembrane carrier pathway, forms complex with TIMM9 and performs chaperone like activity in the intermembrane space",
+    "log2": 0.135129,
+    "pvalue": 0.1667,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TIMM13",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 19,
+    "process": "Import & Sorting",
+    "func": "TIMM13: Innermembrane carrier pathway, forms complex with TIMM8 and performs the transfer of inner membrane proteins",
+    "log2": 0.257862,
+    "pvalue": 0.00255,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TIMM17A",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Import & Sorting",
+    "func": "TIMM17A: Inner membrane translocation, might influence the channel activity formed by the TIMM23",
+    "log2": 0.102847,
+    "pvalue": 0.22965,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TIMM17B",
+    "sampleID": "HCT116-21.3-3",
+    "chr": "X",
+    "process": "Import & Sorting",
+    "func": "TIMM17B: Inner membrane translocation, might influence the channel activity formed by the TIMM23",
+    "log2": 0.0400296,
+    "pvalue": 0.859,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TIMM21",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 18,
+    "process": "Import & Sorting",
+    "func": "TIMM21: Inner membrane translocation, connects TOMM and TIMM complex and may assist in the release of preprotein from the TOMM complex",
+    "log2": 0.0323962,
+    "pvalue": 0.7331,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TIMM22",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 17,
+    "process": "Import & Sorting",
+    "func": "TIMM22: Innermembrane carrier pathway, forms the core channel and inserts proteins into inner membrane",
+    "log2": 0.11464,
+    "pvalue": 0.21445,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TIMM23",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 10,
+    "process": "Import & Sorting",
+    "func": "TIMM23: Inner membrane translocation, forms the main channel of TIMM23 complex",
+    "log2": 0.208893,
+    "pvalue": 0.0157,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TIMM44",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 19,
+    "process": "Import & Sorting",
+    "func": "TIMM44: Presequence translocase associated motor, gets asssociated with the HSPA9 to drive proteins into the matrix",
+    "log2": 0.136422,
+    "pvalue": 0.11565,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TIMM50",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 19,
+    "process": "Import & Sorting",
+    "func": "TIMM50: Inner membrane translocation, guides the preproteins to the import channel formed by TIMM23",
+    "log2": 0.0777476,
+    "pvalue": 0.3779,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TIMM8A",
+    "sampleID": "HCT116-21.3-3",
+    "chr": "X",
+    "process": "Import & Sorting",
+    "func": "TIMM8A: Innermembrane carrier pathway, forms complex with TIMM13 and also performs the transfer of inner membrane proteins",
+    "log2": 0.119354,
+    "pvalue": 0.3368,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TIMM8B",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 11,
+    "process": "Import & Sorting",
+    "func": "TIMM8B: Innermembrane carrier pathway, forms complex with TIMM13 and also performs the transfer of inner membrane proteins",
+    "log2": 0.340376,
+    "pvalue": 0.01325,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TIMM9",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 14,
+    "process": "Import & Sorting",
+    "func": "TIMM9: Innermembrane carrier pathway, forms complex with TIMM10 and performs chaperone like activity in the intermembrane space",
+    "log2": -0.0908358,
+    "pvalue": 0.5671,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TK2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 16,
+    "process": "Replication & Transcription",
+    "func": "TK2: Involved in the phosphorylation of recycled deoxyribonucleosides in mitochondria specific for thymidine, cytidine and uridine",
+    "log2": -0.121778,
+    "pvalue": 0.2119,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TMEM126B",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 11,
+    "process": "Electron transport chain",
+    "func": "TMEM126B: Component of the mitochondrial complex I assembly complex",
+    "log2": 0.0106438,
+    "pvalue": 0.9102,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TMEM70",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 8,
+    "process": "Electron transport chain",
+    "func": "TMEM70: Complex V assembly factor, may play a role in biogenesis of mitochondrial ATP synthase",
+    "log2": -0.0758487,
+    "pvalue": 0.4015,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TOMM20",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Import & Sorting",
+    "func": "TOMM20: Outer membrane translocation, recognize presequences on the mitochondrial outer membrane",
+    "log2": -0.0669317,
+    "pvalue": 0.4212,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TOMM22",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 22,
+    "process": "Import & Sorting",
+    "func": "TOMM22: Outer membrane translocation, recognize presequences on the mitochondrial outer membrane",
+    "log2": 0.129414,
+    "pvalue": 0.12745,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TOMM40",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 19,
+    "process": "Import & Sorting",
+    "func": "TOMM40: Outer membrane translocation, forms the outer membrane channel forming protein",
+    "log2": 0.146141,
+    "pvalue": 0.0855,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TOMM40L",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Import & Sorting",
+    "func": "TOMM40L: Outer membrane translocation, forms the outer membrane channel forming protein",
+    "log2": 0.289519,
+    "pvalue": 0.00605,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TOMM5",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 9,
+    "process": "Import & Sorting",
+    "func": "TOMM5: Outer membrane translocation, transports preprotein to the import pore formed by TOMM40",
+    "log2": 0.167258,
+    "pvalue": 0.0562,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TOMM6",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 6,
+    "process": "Import & Sorting",
+    "func": "TOMM6: Outer membrane translocation, required for the assembly and stability of the TOM complex",
+    "log2": 0.137843,
+    "pvalue": 0.10155,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TOMM7",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 7,
+    "process": "Import & Sorting",
+    "func": "TOMM7: Outer membrane translocation, required for the assembly and stability of the TOM complex",
+    "log2": 0.153022,
+    "pvalue": 0.07265,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TOMM70A",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 3,
+    "process": "Import & Sorting",
+    "func": "TOMM70A: Outer membrane translocation, recognizes proteins with internal targeting signals",
+    "log2": 0.0754539,
+    "pvalue": 0.38185,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TOP1MT",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 8,
+    "process": "Replication & Transcription",
+    "func": "TOP1MT: Suggested to have a role in the removal of positive supercoils created by helicase activity",
+    "log2": -0.0951573,
+    "pvalue": 0.27765,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TOP3A",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 17,
+    "process": "Replication & Transcription",
+    "func": "TOP3A: May also be present in mitochondrial with the role in the removal of positive supercoils during replication",
+    "log2": -0.18117,
+    "pvalue": 0.03835,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TP53",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 17,
+    "process": "Apoptosis",
+    "func": "TP53: Directly binds both BAK and BAX and activates them",
+    "log2": 0.189596,
+    "pvalue": 0.0434,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TPI1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 12,
+    "process": "Glycolysis",
+    "func": "TPI1: Catalyzes the isomerization of glyceraldehydes 3-phosphate and dihydroxy-acetone phosphate",
+    "log2": 0.0356592,
+    "pvalue": 0.67465,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TRAK1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 3,
+    "process": "Mitochondrial Dynamics",
+    "func": "TRAK1: Involved in the mitochondrial movement, acts as a adapter linking kinesin-1 to mitochondria",
+    "log2": -0.0328029,
+    "pvalue": 0.71015,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TRAK2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 2,
+    "process": "Mitochondrial Dynamics",
+    "func": "TRAK2: Involved in the mitochondrial movement, acts as a adapter linking kinesin-1 to mitochondria",
+    "log2": 0.0653592,
+    "pvalue": 0.4613,
+    "mutation": "chr2 202264156 C>T missense_variant"
+  },
+  {
+    "gene": "TRAP1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 16,
+    "process": "Mitochondrial Dynamics",
+    "func": "TRAP1: Involved in the mitochonrial fission, known to regulate fission proteins DNM1L and MFF",
+    "log2": -0.0225703,
+    "pvalue": 0.79285,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TRIT1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Replication & Transcription",
+    "func": "TRIT1: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
+    "log2": -0.00284737,
+    "pvalue": 0.97905,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TRMT1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 19,
+    "process": "Replication & Transcription",
+    "func": "TRMT1: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
+    "log2": 0.179142,
+    "pvalue": 0.0399,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TRMT11",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 6,
+    "process": "Replication & Transcription",
+    "func": "TRMT11: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
+    "log2": -0.0232958,
+    "pvalue": 0.80865,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TRMT112",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 11,
+    "process": "Replication & Transcription",
+    "func": "TRMT112: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
+    "log2": 0.0570866,
+    "pvalue": 0.5676,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TRMT2B",
+    "sampleID": "HCT116-21.3-3",
+    "chr": "X",
+    "process": "Replication & Transcription",
+    "func": "TRMT2B: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
+    "log2": 0.120159,
+    "pvalue": 0.2781,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TRMT5",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 14,
+    "process": "Replication & Transcription",
+    "func": "TRMT5: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
+    "log2": 0.0347379,
+    "pvalue": 0.7056,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TRMT6",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 20,
+    "process": "Replication & Transcription",
+    "func": "TRMT6: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
+    "log2": 0.0231763,
+    "pvalue": 0.802,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TRMT61B",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 2,
+    "process": "Replication & Transcription",
+    "func": "TRMT61B: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
+    "log2": -0.161873,
+    "pvalue": 0.13395,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TRMU",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 22,
+    "process": "Replication & Transcription",
+    "func": "TRMU: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
+    "log2": -0.188559,
+    "pvalue": 0.0436,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TRNT1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 3,
+    "process": "Replication & Transcription",
+    "func": "TRNT1: Mitochondrial CCA adding enzyme, adds CCA sequence to the 3' end of tRNA",
+    "log2": 0.137449,
+    "pvalue": 0.1636,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TRUB2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 9,
+    "process": "Replication & Transcription",
+    "func": "TRUB2: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
+    "log2": -0.0504953,
+    "pvalue": 0.56845,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TSFM",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 12,
+    "process": "Translation",
+    "func": "TSFM: Involved in the elongation and termination phases of the translation process",
+    "log2": -0.0293853,
+    "pvalue": 0.7578,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TTC19",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 17,
+    "process": "Electron transport chain",
+    "func": "TTC19: Complex III assembly factor",
+    "log2": 0.204894,
+    "pvalue": 0.02595,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TUFM",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 16,
+    "process": "Translation",
+    "func": "TUFM: Involved in the elongation and termination phases of the translation process",
+    "log2": 0.0118086,
+    "pvalue": 0.886,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TXN2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 22,
+    "process": "ROS defense",
+    "func": "TXN2: Mitochondrial thioredoxin reduces peroxiredoxin to their super oxide scavenging state",
+    "log2": -0.116998,
+    "pvalue": 0.1748,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "TXNRD2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 22,
+    "process": "ROS defense",
+    "func": "TXNRD2: Maintains thioredoxins in their reduced state using NAPDH reducing equivalents",
+    "log2": 0.0847864,
+    "pvalue": 0.72715,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "UNG",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 12,
+    "process": "Replication & Transcription",
+    "func": "UNG: prevent mutagenesis by eliminating uracil from DNA molecules",
+    "log2": -0.194438,
+    "pvalue": 0.02125,
+    "mutation": "chr12 109548639 GAT>G 3_prime_UTR_variant"
+  },
+  {
+    "gene": "UQCC",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 20,
+    "process": "Electron transport chain",
+    "func": "UQCC: Complex III assembly factor, ubiquinol-cytochrome c reductase complex assembly factor 1",
+    "log2": -0.104444,
+    "pvalue": 0.25185,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "UQCR10",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 22,
+    "process": "Electron transport chain",
+    "func": "UQCR10: Ubiquinol-cytochrome c reductase essential component of complex III",
+    "log2": 0.10148,
+    "pvalue": 0.25485,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "UQCR11",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 19,
+    "process": "Electron transport chain",
+    "func": "UQCR11: Ubiquinol-cytochrome c reductase essential component of complex III",
+    "log2": 0.0515629,
+    "pvalue": 0.5412,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "UQCRB",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 8,
+    "process": "Electron transport chain",
+    "func": "UQCRB: Ubiquinol-cytochrome c reductase binding protein essential component of complex III",
+    "log2": -0.0540256,
+    "pvalue": 0.5129,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "UQCRC1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 3,
+    "process": "Electron transport chain",
+    "func": "UQCRC1: Ubiquinol-cytochrome c reductase core protein I essential component of complex III",
+    "log2": 0.0840382,
+    "pvalue": 0.31505,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "UQCRC2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 16,
+    "process": "Electron transport chain",
+    "func": "UQCRC2: Ubiquinol-cytochrome c reductase core protein II essential component of complex III",
+    "log2": 0.0868708,
+    "pvalue": 0.307,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "UQCRFS1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 19,
+    "process": "Electron transport chain",
+    "func": "UQCRFS1: Ubiquinol-cytochrome c reductase Rieske iron-sulfur polypeptide 1 essential component of complex III",
+    "log2": 0.0425,
+    "pvalue": 0.617,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "UQCRH",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Electron transport chain",
+    "func": "UQCRH: Ubiquinol-cytochrome c reductase hinge protein essential component of complex III",
+    "log2": -0.0928289,
+    "pvalue": 0.26545,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "UQCRQ",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 5,
+    "process": "Electron transport chain",
+    "func": "UQCRQ: Ubiquinol-cytochrome c reductase essential component of complex III",
+    "log2": 0.0379017,
+    "pvalue": 0.66305,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "UROD",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Heme Biosynthesis",
+    "func": "UROD: Uroporphyrinogen III decarboxylase catalyzes stepwise decarboxylation of the Uroporphyrinogen III",
+    "log2": -0.135284,
+    "pvalue": 0.12175,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "UROS",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 10,
+    "process": "Heme Biosynthesis",
+    "func": "UROS: Enzyme uroporphyrinogen III syntase catalyzes the liner tetrapyrrole molecule is cyclized or rearranged",
+    "log2": 0.111992,
+    "pvalue": 0.2061,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "VARS2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 6,
+    "process": "Translation",
+    "func": "VARS2: Involved in the specific attachment of valine aminoacid to its cognate tRNA",
+    "log2": 0.182085,
+    "pvalue": 0.0412,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "VDAC1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 5,
+    "process": "Apoptosis",
+    "func": "VDAC1: Voltage dependent anion channel forms part of permeability transition pore and also involved in the takeup of calcium ions from the Endoplasmic reticulum",
+    "log2": 0.0930495,
+    "pvalue": 0.2742,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "VDAC2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 10,
+    "process": "Apoptosis",
+    "func": "VDAC2: Voltage dependent anion channel forms part of permeability transition pore and also involved in the takeup of calcium ions from the Endoplasmic reticulum",
+    "log2": 0.066341,
+    "pvalue": 0.433,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "VDAC3",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 8,
+    "process": "Apoptosis",
+    "func": "VDAC3: Voltage dependent anion channel forms part of permeability transition pore and also involved in the takeup of calcium ions from the Endoplasmic reticulum",
+    "log2": 0.00765333,
+    "pvalue": 0.9293,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "WARS2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Translation",
+    "func": "WARS2: Involved in the specific attachment of tryptophan aminoacid to its cognate tRNA",
+    "log2": 0.0500709,
+    "pvalue": 0.67385,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "XIAP",
+    "sampleID": "HCT116-21.3-3",
+    "chr": "X",
+    "process": "Apoptosis",
+    "func": "XIAP: X-linked inhibitor of apoptosis protein inhibits caspase activity by directly binding to CASP9, 3 and 7",
+    "log2": 0.0731194,
+    "pvalue": 0.41285,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "YARS2",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 12,
+    "process": "Translation",
+    "func": "YARS2: Involved in the specific attachment of tyrosine aminoacid to its cognate tRNA",
+    "log2": -0.0281477,
+    "pvalue": 0.758,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "YME1L1",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 10,
+    "process": "Mitochondrial Dynamics",
+    "func": "YME1L1: Involved in the mitochondrial fusion, known to cleave OPA1",
+    "log2": -0.0536051,
+    "pvalue": 0.52595,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "YRDC",
+    "sampleID": "HCT116-21.3-3",
+    "chr": 1,
+    "process": "Replication & Transcription",
+    "func": "YRDC: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
+    "log2": 0.202977,
+    "pvalue": 0.10705,
+    "mutation": "NULL"
+  }
+]

@@ -89,12 +89,12 @@ BC.draw = function (jsondata,colorrange) {
     
     var resp = d3.select("#barchart")
         .append('div')
+        .attr("id", "barchartsvg")
         .attr('class', 'svg-container'); //container class to make it responsive
     
 
     var BARsvg = resp
         .append("svg")
-        .attr("id", "barchartsvg")
         .attr('class', 'canvas svg-content-responsive')
         .attr('preserveAspectRatio', 'xMinYMin meet')
         .attr('viewBox', [0, 0, svgWidth, svgHeight].join(' '))
@@ -169,10 +169,6 @@ var d3 = require('d3');
 var colorbrewer = require('colorbrewer');
 
 var SP = require('./scatterplot.js');
-
-var div = d3.select("#heatmap").append("div")
-    .attr("class", "heatmaptooltip")
-    .style("opacity", 0);
 
 var heatmap = function (obj) {
     if (obj instanceof heatmap) return obj;
@@ -263,11 +259,11 @@ heatmap.draw = function (jsondata, samplelist, genelist,colorrange) {
     
     var resp = d3.select("#heatmap")
         .append('div')
+        .attr("id", "heatmapsvg")
         .attr('class', 'svg-container'); //container class to make it responsive
 
     var svg = resp
         .append("svg")
-        .attr("id", "heatmapsvg")
         .attr('class', 'canvas svg-content-responsive')
         .attr('preserveAspectRatio', 'xMinYMin meet')
         .attr('viewBox', [0, 0, svgWidth, svgHeight].join(' '))
@@ -477,7 +473,7 @@ var div = d3.select("#pca").append("div")
 var scene, camera, renderer, controls, pcObj, boxes, dots, raycaster;
 var mouse = new THREE.Vector2(), INTERSECTED,
     pageEvent = new THREE.Vector2();
-var canvasWidth= document.getElementById("pca").offsetWidth-40,
+var canvasWidth= document.getElementById("nav_bar").offsetWidth*9/12-40,
     canvasHeight = canvasWidth;
 var gridDepth = 100,
     gridWidth = 100,
@@ -731,7 +727,13 @@ function onDocumentMouseClick( event ) {
 
     var intersects = raycaster.intersectObjects( dots.children ); 
     INTERSECTED = intersects[ 0 ].object;
-    alert(INTERSECTED.sampleID);
+    
+    var option = document.createElement("option");
+    option.text = INTERSECTED.sampleID;
+    option.value = INTERSECTED.info;
+    var select = document.getElementById("selected-sample");
+    select.appendChild(option);
+    
       
 
   }

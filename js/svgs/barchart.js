@@ -28,12 +28,12 @@ BC.draw = function (jsondata,colorrange) {
     
     var resp = d3.select("#barchart")
         .append('div')
+        .attr("id", "barchartsvg")
         .attr('class', 'svg-container'); //container class to make it responsive
     
 
     var BARsvg = resp
         .append("svg")
-        .attr("id", "barchartsvg")
         .attr('class', 'canvas svg-content-responsive')
         .attr('preserveAspectRatio', 'xMinYMin meet')
         .attr('viewBox', [0, 0, svgWidth, svgHeight].join(' '))

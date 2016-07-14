@@ -9,7 +9,7 @@ var div = d3.select("#pca").append("div")
 var scene, camera, renderer, controls, pcObj, boxes, dots, raycaster;
 var mouse = new THREE.Vector2(), INTERSECTED,
     pageEvent = new THREE.Vector2();
-var canvasWidth= document.getElementById("pca").offsetWidth-40,
+var canvasWidth= document.getElementById("nav_bar").offsetWidth*9/12-40,
     canvasHeight = canvasWidth;
 var gridDepth = 100,
     gridWidth = 100,
@@ -263,7 +263,13 @@ function onDocumentMouseClick( event ) {
 
     var intersects = raycaster.intersectObjects( dots.children ); 
     INTERSECTED = intersects[ 0 ].object;
-    alert(INTERSECTED.sampleID);
+    
+    var option = document.createElement("option");
+    option.text = INTERSECTED.sampleID;
+    option.value = INTERSECTED.info;
+    var select = document.getElementById("selected-sample");
+    select.appendChild(option);
+    
       
 
   }
