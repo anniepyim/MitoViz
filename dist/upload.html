@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MITOMODEL INPUT PORTAL</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
+</head>
+
+<body>
+  
+<div class="container">
+   
+    
+    <img class="img-responsive" src="mitomodel.png" width="297" align="left" background = "#EEEEEE">
+    
+    <div class="jumbotron">
+    	<br>
+        <!--<h2 class="text-center">--><h2> MITOMODEL INPUT PORTAL</h2>
+        <br><br>
+    </div>
+
+    <div class="jumbotron">
+    <h3>SELECT ORGANISM</h3>
+        
+            <p>At present MitoModel can be generated only for human and mouse data</p>
+            <form enctype="multipart/form-data" action="upload/uploader.php" method="POST">
+            <input type="hidden" name="MAX_FILE_SIZE" value="3000000"/>
+            <select id="organism" name="organism" class="form-control" >
+                    <option value="">Choose organism</option>
+                    <option value="Human">Human</option>
+                    <option value="Mouse">Mouse</option>
+            </select>
+            
+    </div>
+    
+
+    <div class="jumbotron">
+    <h3>EXPRESSION AND/OR MUTATION DATA</h3>
+        <p>To generate MitoModel:</p>
+    <p>Submit both expression and mutation data at once OR Submit either expression or mutation data</p> 
+      
+    <label>Expression file: <a href="#Expression format">Example</a></label>
+ 	<div class="fileinput fileinput-new input-group" data-provides="fileinput">
+  		<div class="form-control" data-trigger="fileinput">
+  		<i class="glyphicon glyphicon-file fileinput-exists"></i> 
+  		<span class="fileinput-filename"></span>
+  		</div>
+  		<span class="input-group-addon btn btn-default btn-file">
+  		<span class="fileinput-new">Select file</span>
+  		<span class="fileinput-exists">Change</span>
+  		<input name="uploadedfile" type="file"></span>
+  		<a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+	</div>
+        <p>and/or</p>
+   <label>Mutation file: <a href="#Mutation Format">Example</a></label>
+   <div class="fileinput fileinput-new input-group" data-provides="fileinput">
+  		<div class="form-control" data-trigger="fileinput">
+  		<i class="glyphicon glyphicon-file fileinput-exists"></i> 
+  		<span class="fileinput-filename"></span>
+  		</div>
+  		<span class="input-group-addon btn btn-default btn-file">
+  		<span class="fileinput-new">Select file</span>
+  		<span class="fileinput-exists">Change</span>
+  		<input name="uploadfile" type="file"  >
+  		</span>
+  		<a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+	</div>
+    <button type="submit" class="btn btn-default" value="Upload File">Submit</button>
+	</div>
+      
+  
+        
+    <div class="jumbotron">
+    <h3>LEGENDS</h3>
+    <p>Defines the symbols observed in the MitoModel</p>
+    <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Symbol</th>
+                    <th>Name</th>
+                    <th>Condition</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                
+                <tr>
+                    <td>&#x25cf;</td>
+                    <td>Circle</td>
+                    <td>Node/gene with no mis-regulations (up/downregulated) nor mutations</td>
+                    
+                </tr>
+                <tr>
+                    <td>&#x25B2;</td>
+                    <td>Up-triangle</td>
+                    <td>Node/gene upregulated in abnormal either with log2foldchange > 1.5 or p-value < 0.05</td>
+                    
+                </tr>
+                <tr>
+                    <td>&#x25BC;</td>
+                    <td>Down-triangle</td>
+                    <td>Node/gene downregulated in abnormal either with log2foldchange < -1.5 or p-value < 0.05</td>
+                    
+                </tr>
+                <tr>
+                    <td>&#x271a;</td>
+                    <td>Cross</td>
+                    <td>Node/gene conatining one to several mutation sites</td>
+                    
+                </tr>
+                <tr>
+                    <td>&#x2666;</td>
+                    <td>Diamond</td>
+                    <td>Mis-regulated also contains one to several mutations</td>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </div>    
+    
+    <div class="jumbotron">
+        <a name="Expression format"><h3>Expression File Format</h3></a>
+        <p>Only tab seperated text file as defined below is accepted</p>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Genename</th>
+                    <th>Normal</th>
+                    <th>Abnormal</th>
+                    <th>Log2Fold</th>
+                    <th>p-value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Slc25a34</td>
+                    <td>5.14185</td>
+                    <td>0.525591</td>
+                    <td>-3.29027</td>
+                    <td>0.04165</td>
+                </tr>
+                <tr>
+                    <td>Ephb2</td>
+                    <td>21.6398</td>
+                    <td>77.9794</td>
+                    <td>1.84941</td>
+                    <td>0.03615</td>
+                </tr>
+                <tr>
+                    <td>Cd52</td>
+                    <td>113.979</td>
+                    <td>24.01</td>
+                    <td>-2.24706</td>
+                    <td>0.14155</td>
+                </tr>
+                <tr>
+                    <td>Mfsd2a</td>
+                    <td>2.671</td>
+                    <td>16.7198</td>
+                    <td>2.64611</td>
+                    <td>0.0318</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Note: Only NCBI gene symbols compatible at present, above table contains mouse gene symbols</p>
+    </div>
+  
+    <div class="jumbotron">
+        <a name="Mutation Format"><h3>Mutation File Format</h3></a>
+        <p>Only tab seperated text file as defined below is accepted</p>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Genename</th>
+                    <th>Chromosome</th>
+                    <th>Position</th>
+                    <th>Reference Allele</th>
+                    <th>Varinat Allele</th>
+                    <th>Mutation Type</th>
+                    <th>Consequence</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>MT-CO2</td>
+                    <td>M</td>
+                    <td>8159</td>
+                    <td>T</td>
+                    <td>C</td>
+                    <td>SNP</td>
+                    <td>Missense</td>
+                </tr>
+                <tr>
+                    <td>AGO1</td>
+                    <td>1</td>
+                    <td>36391661</td>
+                    <td>TGAA</td>
+                    <td>T</td>
+                    <td>DEL</td>
+                    <td>3'UTR</td>
+                </tr>
+                <tr>
+                    <td>ITIH1</td>
+                    <td>3</td>
+                    <td>52825585</td>
+                    <td>T</td>
+                    <td>C</td>
+                    <td>SNP</td>
+                    <td>Silent</td>
+                </tr>
+                <tr>
+                    <td>GPR35</td>
+                    <td>2</td>
+                    <td>241566012</td>
+                    <td>G</td>
+                    <td>A</td>
+                    <td>SNP</td>
+                    <td>Intron</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Note: Only NCBI gene symbols compatible at present, above table contains human gene symbols</p>
+    </div>
+        
+    <div class="jumbotron">
+<img class="img-responsive" src="MPIB_Logo.png" class="img-rounded" width="300" align="right" background = "#EEEEEE"> 
+	<address>
+        <strong>Dr. Bianca Habermann</strong><br>
+            Group leader Computational biology<br>
+        mail to: <a href="mailto:#">habermann@biochem.mpg.de</a>
+        </address>
+    
+    <address>
+        <strong>Max Planck Institute of Biochemistry</strong><br>
+        Am Klopferspitz 18 <br>
+        82152 Martinsried Germany<br>
+        </address>
+        
+    </div>        
+</body>
+
+</html>
