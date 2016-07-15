@@ -228,7 +228,7 @@ heatmap.processData = function (jsondata, nfunc,colorrange) {
             sample: d.sampleID, 
             gene: d.gene, 
             process: d.process, 
-            func: d.func, 
+            gene_function: d.gene_function, 
             mutation: d.mutation.split(',')
         });
     });
@@ -946,7 +946,7 @@ SP.update = function (jsondata, nfunc, ncolor,colorrange) {
             pvalue: d.pvalue,
             sample: d.sampleID,
             process: d.process,
-            func: d.func,
+            gene_function: d.gene_function,
             gene: d.gene,
             mutation: d.mutation.split(',')
         };
@@ -1345,7 +1345,7 @@ this["Templates"]["tooltip"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"m
     + "</div>\n\n<div class=\"col-md-12 process\">"
     + alias4(((helper = (helper = helpers.process || (depth0 != null ? depth0.process : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"process","hash":{},"data":data}) : helper)))
     + "</div>\n\n<div class=\"col-md-12 function\">"
-    + alias4(((helper = (helper = helpers.func || (depth0 != null ? depth0.func : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"func","hash":{},"data":data}) : helper)))
+    + alias4(((helper = (helper = helpers.gene_function || (depth0 != null ? depth0.gene_function : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"gene_function","hash":{},"data":data}) : helper)))
     + "</div>\n\n<div class=\"col-md-6 miniTitle\">\n    Log2 FC\n</div>\n                \n<div class=\"col-md-6 info\">"
     + alias4(((helper = (helper = helpers.log2 || (depth0 != null ? depth0.log2 : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"log2","hash":{},"data":data}) : helper)))
     + "</div>\n\n<div class=\"col-md-6 miniTitle\">\n    Pvalue\n</div>\n                \n<div class=\"col-md-6 info\">"

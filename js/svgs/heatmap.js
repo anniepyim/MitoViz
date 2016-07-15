@@ -61,7 +61,7 @@ heatmap.processData = function (jsondata, nfunc,colorrange) {
             sample: d.sampleID, 
             gene: d.gene, 
             process: d.process, 
-            func: d.func, 
+            gene_function: d.gene_function, 
             mutation: d.mutation.split(',')
         });
     });

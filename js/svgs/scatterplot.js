@@ -131,7 +131,7 @@ SP.update = function (jsondata, nfunc, ncolor,colorrange) {
             pvalue: d.pvalue,
             sample: d.sampleID,
             process: d.process,
-            func: d.func,
+            gene_function: d.gene_function,
             gene: d.gene,
             mutation: d.mutation.split(',')
         };
