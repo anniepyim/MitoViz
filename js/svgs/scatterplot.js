@@ -172,7 +172,7 @@ SP.update = function (jsondata, nfunc, ncolor,colorrange) {
     nodes.transition()
         .duration(1000)
         .attr("r", function (d) {
-            return d.mutation[0] !== "NULL" ? highlightradius : d.r;
+            return d.mutation[0] !== ("NULL" || "") ? highlightradius : d.r;
         })
         .attr("cx", function (d) {
             return d.x;
@@ -181,13 +181,13 @@ SP.update = function (jsondata, nfunc, ncolor,colorrange) {
             return d.y;
         })
         .style("fill", function (d) {
-            return d.mutation[0] !== "NULL" ? mutatedcolor : color(d.log2);
+            return d.mutation[0] !== ("NULL" || "") ? mutatedcolor : color(d.log2);
         });
 
     nodes.enter().append("circle")
         .attr("class", "node")
         .attr("r", function (d) {
-            return d.mutation[0] !== "NULL" ? highlightradius : d.r;
+            return d.mutation[0] !== ("NULL" || "") ? highlightradius : d.r;
         })
         .attr("cx", function (d) {
             return d.x;
@@ -196,7 +196,7 @@ SP.update = function (jsondata, nfunc, ncolor,colorrange) {
             return d.y;
         })
         .style("fill", function (d) {
-            return d.mutation[0] !== "NULL" ? mutatedcolor : color(d.log2);
+            return d.mutation[0] !== ("NULL" || "") ? mutatedcolor : color(d.log2);
         })
         .style("stroke", "black")
         .style("stroke-width", 0.5)
@@ -205,8 +205,8 @@ SP.update = function (jsondata, nfunc, ncolor,colorrange) {
             SP.highlight(d, d.gene);
         })
         .on("mouseout", function (d) {
-            SP.mouseoverfunc(d, "NULL");
-            SP.highlight(d, "NULL");
+            SP.mouseoverfunc(d, ("NULL" || ""));
+            SP.highlight(d, ("NULL" || ""));
         });*/
         .on('mouseover', SP.onMouseOverNode)
         .on('mouseout', SP.onMouseOut);
@@ -226,7 +226,7 @@ SP.onMouseOut = function(node){
     //Clear tooltip
     $('.tip').empty();
     
-    highlight("NULL");
+    highlight(("NULL" || ""));
 };
 
 
@@ -251,11 +251,11 @@ var highlight = function(target){
         .style("fill", function (d) {
             if (d.gene == target) {
                 return highlightcolor;
-            } else if (d.mutation[0] !== "NULL") return mutatedcolor;
+            } else if (d.mutation[0] !== ("NULL" || "")) return mutatedcolor;
             else return color(d.log2);
         })
         .attr("r", function (d) {
-            return d.gene == target ? highlightradius : d.mutation[0] !== "NULL" ? highlightradius : d.r;
+            return d.gene == target ? highlightradius : d.mutation[0] !== ("NULL" || "") ? highlightradius : d.r;
         });
     
 };

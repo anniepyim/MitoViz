@@ -987,7 +987,7 @@ SP.update = function (jsondata, nfunc, ncolor,colorrange) {
     nodes.transition()
         .duration(1000)
         .attr("r", function (d) {
-            return d.mutation[0] !== "NULL" ? highlightradius : d.r;
+            return d.mutation[0] !== ("NULL" || "") ? highlightradius : d.r;
         })
         .attr("cx", function (d) {
             return d.x;
@@ -996,13 +996,13 @@ SP.update = function (jsondata, nfunc, ncolor,colorrange) {
             return d.y;
         })
         .style("fill", function (d) {
-            return d.mutation[0] !== "NULL" ? mutatedcolor : color(d.log2);
+            return d.mutation[0] !== ("NULL" || "") ? mutatedcolor : color(d.log2);
         });
 
     nodes.enter().append("circle")
         .attr("class", "node")
         .attr("r", function (d) {
-            return d.mutation[0] !== "NULL" ? highlightradius : d.r;
+            return d.mutation[0] !== ("NULL" || "") ? highlightradius : d.r;
         })
         .attr("cx", function (d) {
             return d.x;
@@ -1011,7 +1011,7 @@ SP.update = function (jsondata, nfunc, ncolor,colorrange) {
             return d.y;
         })
         .style("fill", function (d) {
-            return d.mutation[0] !== "NULL" ? mutatedcolor : color(d.log2);
+            return d.mutation[0] !== ("NULL" || "") ? mutatedcolor : color(d.log2);
         })
         .style("stroke", "black")
         .style("stroke-width", 0.5)
@@ -1020,8 +1020,8 @@ SP.update = function (jsondata, nfunc, ncolor,colorrange) {
             SP.highlight(d, d.gene);
         })
         .on("mouseout", function (d) {
-            SP.mouseoverfunc(d, "NULL");
-            SP.highlight(d, "NULL");
+            SP.mouseoverfunc(d, ("NULL" || ""));
+            SP.highlight(d, ("NULL" || ""));
         });*/
         .on('mouseover', SP.onMouseOverNode)
         .on('mouseout', SP.onMouseOut);
@@ -1041,7 +1041,7 @@ SP.onMouseOut = function(node){
     //Clear tooltip
     $('.tip').empty();
     
-    highlight("NULL");
+    highlight(("NULL" || ""));
 };
 
 
@@ -1066,11 +1066,11 @@ var highlight = function(target){
         .style("fill", function (d) {
             if (d.gene == target) {
                 return highlightcolor;
-            } else if (d.mutation[0] !== "NULL") return mutatedcolor;
+            } else if (d.mutation[0] !== ("NULL" || "")) return mutatedcolor;
             else return color(d.log2);
         })
         .attr("r", function (d) {
-            return d.gene == target ? highlightradius : d.mutation[0] !== "NULL" ? highlightradius : d.r;
+            return d.gene == target ? highlightradius : d.mutation[0] !== ("NULL" || "") ? highlightradius : d.r;
         });
     
 };
@@ -1316,7 +1316,7 @@ Handlebars = glob.Handlebars || require('handlebars');
 this["Templates"] = this["Templates"] || {};
 
 this["Templates"]["main"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<!-- Page Content -->        <div class=\"container main\">\n        <div id=\"#wrapUp\" class=\"row\">\n            \n        <div class=\"col-md-2\">\n        	<div class=\"row\">\n            	<div class=\"col-md-12 title\" style=\"margin-top:20px;\">\n	            Data Sets\n	            </div>\n	            <div class=\"col-md-12\" style=\"margin-top:10px;\">\n	            <select class=\"selectpicker\" id=\"folders\" data-style=\"btn-default\" id=\"selection1\" title=\"Pick dataset\" data-width=\"175px\" >\n	                <option value='./data/TCGA'>TCGA</option>\n	                <option value=\"./data/aneuploidy\">Aneuploidy</option>\n	                <option value='./data/viral'>Viral</option>\n	                <option value='./data/trisomy'>Trisomy</option>\n	            </select> \n	            </div>\n	           \n	            <div class=\"col-md-12\" style=\"margin-top:10px;\">\n	            <select class=\"selectpicker\" MULTIPLE id=\"files\" data-style=\"btn-default\" id=\"selection1\" title=\"Pick samples\" data-width=\"175px\" data-actions-box=\"true\" data-selected-text-format=\"static\">\n	            </select> \n	            </div>\n\n	            <div class=\"col-md-12\" style=\"margin-top:10px\">\n	            <select SIZE=\"6\" MULTIPLE id=\"selected-sample\" style=\"width: 175px;font-size: 14px\">\n	            </select>\n	            </div>\n	            \n	            <div class=\"col-md-12\" style=\"margin-top:10px;text-align:right\">\n	            <button id = \"delete-selected\" class=\"btn btn-xs btn-default\"><span class=\"glyphicon glyphicon-remove\" aria-hidden=\"true\"></span> Remove</button>\n	            <button id = \"clear-all\" class=\"btn btn-xs btn-danger\"><span class=\"glyphicon glyphicon-trash\" aria-hidden=\"true\"></span> Clear</button>\n	            </div>\n	            \n	            <div class=\"col-md-12\" id=\"warning\" style=\"margin-top:10px\"></div>\n	    \n	            <div class=\"col-md-12\" style=\"margin-top:20px;text-align: center\">\n	            <button id = \"compareButton\" class=\"btn btn-success\">compare</button>\n	            </div>\n            	<div class=\"col-md-12\"><hr></div>\n            </div>\n            <div class=\"row tip\" style=\"margin-top:20px;\"></div>\n        </div>\n        \n        <div class=\"col-md-10\">\n            <div id = \"nav_bar\">\n                <ul class=\"nav nav-tabs\" id = \"navbar\" >\n                  <li class=\"active\"><a href=\"#\">Scatter plot</a></li>\n                  <li><a href=\"#\">PCA</a></li>\n                  <li><a href=\"#\">Don't click me</a></li>\n                </ul>\n            </div>\n            <div id = \"svgs-all\">\n                <div id=\"scatterplot\" class=\"col-md-9\"></div>\n                <div id=\"pca\" class=\"col-md-9\" style=\"display:none\">\n<canvas id=\"pcacanvas\"></canvas>\n</div>\n                <div id=\"barchart\" class=\"col-md-3\"></div>\n                <div id=\"heatmap\" class=\"col-md-12\"></div>\n            </div>\n            \n        </div>\n        </div>\n        </div>";
+    return "<!-- Page Content -->        <div class=\"container main\">\n        <div id=\"#wrapUp\" class=\"row\">\n            \n        <div class=\"col-md-2\">\n        	<div class=\"row\">\n            	<div class=\"col-md-12 title\" style=\"margin-top:20px;\">\n	            Data Sets\n	            </div>\n	            <div class=\"col-md-12\" style=\"margin-top:10px;\">\n	            <select class=\"selectpicker\" id=\"folders\" data-style=\"btn-default\" id=\"selection1\" title=\"Pick dataset\" data-width=\"175px\" >\n	                <option value='./data/TCGA'>TCGA</option>\n	                <option value=\"./data/aneuploidy\">Aneuploidy</option>\n	                <option value='./data/viral'>Viral</option>\n	                <option value='./data/trisomy'>Trisomy</option>\n	                <option value='./data/user_uploads/json_files'>User Uploads</option>\n	            </select> \n	            </div>\n	           \n	            <div class=\"col-md-12\" style=\"margin-top:10px;\">\n	            <select class=\"selectpicker\" MULTIPLE id=\"files\" data-style=\"btn-default\" id=\"selection1\" title=\"Pick samples\" data-width=\"175px\" data-actions-box=\"true\" data-selected-text-format=\"static\">\n	            </select> \n	            </div>\n\n	            <div class=\"col-md-12\" style=\"margin-top:10px\">\n	            <select SIZE=\"6\" MULTIPLE id=\"selected-sample\" style=\"width: 175px;font-size: 14px\">\n	            </select>\n	            </div>\n	            \n	            <div class=\"col-md-12\" style=\"margin-top:10px;text-align:right\">\n	            <button id = \"delete-selected\" class=\"btn btn-xs btn-default\"><span class=\"glyphicon glyphicon-remove\" aria-hidden=\"true\"></span> Remove</button>\n	            <button id = \"clear-all\" class=\"btn btn-xs btn-danger\"><span class=\"glyphicon glyphicon-trash\" aria-hidden=\"true\"></span> Clear</button>\n	            </div>\n	            \n	            <div class=\"col-md-12\" id=\"warning\" style=\"margin-top:10px\"></div>\n	    \n	            <div class=\"col-md-12\" style=\"margin-top:20px;text-align: center\">\n	            <button id = \"compareButton\" class=\"btn btn-success\">compare</button>\n	            </div>\n            	<div class=\"col-md-12\"><hr></div>\n            </div>\n            <div class=\"row tip\" style=\"margin-top:20px;\"></div>\n        </div>\n        \n        <div class=\"col-md-10\">\n            <div id = \"nav_bar\">\n                <ul class=\"nav nav-tabs\" id = \"navbar\" >\n                  <li class=\"active\"><a href=\"#\">Scatter plot</a></li>\n                  <li><a href=\"#\">PCA</a></li>\n                  <li><a href=\"#\">Don't click me</a></li>\n                </ul>\n            </div>\n            <div id = \"svgs-all\">\n                <div id=\"scatterplot\" class=\"col-md-9\"></div>\n                <div id=\"pca\" class=\"col-md-9\" style=\"display:none\">\n<canvas id=\"pcacanvas\"></canvas>\n</div>\n                <div id=\"barchart\" class=\"col-md-3\"></div>\n                <div id=\"heatmap\" class=\"col-md-12\"></div>\n            </div>\n            \n        </div>\n        </div>\n        </div>";
 },"useData":true});
 
 /*this["Templates"]["result"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {

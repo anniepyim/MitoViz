@@ -47,7 +47,10 @@
     <h3>EXPRESSION AND/OR MUTATION DATA</h3>
         <p>To generate MitoModel:</p>
     <p>Submit both expression and mutation data at once OR Submit either expression or mutation data</p> 
-      
+    <div class="form-group">
+    <label for="samplename">Sample Name:</label>
+  <input type="text" class="form-control" name="samplename">
+</div>
     <label>Expression file: <a href="#Expression format">Example</a></label>
  	<div class="fileinput fileinput-new input-group" data-provides="fileinput">
   		<div class="form-control" data-trigger="fileinput">
@@ -57,7 +60,7 @@
   		<span class="input-group-addon btn btn-default btn-file">
   		<span class="fileinput-new">Select file</span>
   		<span class="fileinput-exists">Change</span>
-  		<input name="uploadedfile" type="file"></span>
+  		<input name="expfile1" type="file"></span>
   		<a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
 	</div>
         <p>and/or</p>
@@ -70,7 +73,7 @@
   		<span class="input-group-addon btn btn-default btn-file">
   		<span class="fileinput-new">Select file</span>
   		<span class="fileinput-exists">Change</span>
-  		<input name="uploadfile" type="file"  >
+  		<input name="mutfile1" type="file"  >
   		</span>
   		<a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
 	</div>

@@ -20,6 +20,7 @@ if (!$connect)
 } 
 //your database name
 $cid =mysql_select_db('test',$connect);
+$samplename = $_POST['samplename'];
 
 
 //creating tables
@@ -34,14 +35,14 @@ $s=mysql_query($quer, $connect);
 //--------------------------modified on 24 february 2015
 /*$que = ("load data local infile '/home/pkoti/mitomodel/www/uploads/".$id."new_exp_input.txt' into table expression FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\n' (@gene, @val1, @val2, @foch) set Gene_name = @gene, Expression_Sample_1 = @val1, Expression_Sample_2 = @val2, log2fold_change = @foch;");*/
 
-$que = ("load data local infile '/Users/ayim/Sites/MitoViz/dist/data/user_uploads/raw_files/".$id."new_exp_input.txt' into table expression FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\n' (@gene, @val1, @val2, @foch, @pval) set Gene_name = @gene, Expression_Sample_1 = @val1, Expression_Sample_2 = @val2, log2fold_change = @foch, p_value = @pval;");
+$que = ("load data local infile '../data/user_uploads/raw_files/".$id."_exp.txt' into table expression FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\n' (@gene, @val1, @val2, @foch, @pval) set Gene_name = @gene, Expression_Sample_1 = @val1, Expression_Sample_2 = @val2, log2fold_change = @foch, p_value = @pval;");
 $z=mysql_query($que, $connect);
 
 $function = "DROP TABLE IF EXISTS `function`";
 $t=mysql_query($function, $connect);
 $funct="create table function (Gene_function varchar(1000), Process varchar(100), Gene_id varchar(50), Link varchar(1000))";
 $t=mysql_query($funct, $connect);
-$func = ("load data local infile '/Users/ayim/Sites/MitoViz/dist/upload/human/function_and_links.json' into table function FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\n' IGNORE 1 LINES (@gene_function, @process, @gene_id, @link) set Gene_function = @gene_function, Process = @process, Gene_id = @gene_id, Link = @link;");
+$func = ("load data local infile 'human/function_and_links.json' into table function FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\n' IGNORE 1 LINES (@gene_function, @process, @gene_id, @link) set Gene_function = @gene_function, Process = @process, Gene_id = @gene_id, Link = @link;");
 $u=mysql_query($func, $connect);
 
 
@@ -49,7 +50,7 @@ $target = "DROP TABLE IF EXISTS target";
 $v=mysql_query($target, $connect);
 $targe="create table target (Source varchar(100), Target varchar(100))";
 $v=mysql_query($targe, $connect);
-$targ= ("load data local infile '/Users/ayim/Sites/MitoViz/dist/upload/human/source_target.json' into table target FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\n' (@source, @target) set Source = @source, Target = @target;");
+$targ= ("load data local infile 'human/source_target.json' into table target FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\n' (@source, @target) set Source = @source, Target = @target;");
 $w=mysql_query($targ, $connect);
 
 $mutants = "DROP TABLE IF EXISTS variant";
@@ -57,7 +58,7 @@ $m=mysql_query($mutants, $connect);
 $mutant="create table variant (Gene_mutname varchar(150), Chromosome_number varchar(50), Reference_position bigint, Reference_base varchar(1000), Reference_variant varchar(1000), Varinat_type varchar(100), Mutation_type varchar(100))";
 $m=mysql_query($mutant, $connect);
 //---------------------------modified on december 18th
-$mutan=("load data local infile '/Users/ayim/Sites/MitoViz/dist/data/user_uploads/raw_files/".$id."new_var_input.txt' into table variant FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\n' (@gene_name, @chrmo, @position, @reference, @variant, @varianttype, @variantname) set Gene_mutname = @gene_name, Chromosome_number = @chrmo, Reference_position = @position, Reference_base = @reference, Reference_variant = @variant, Varinat_type = @varianttype, Mutation_type = @variantname;");  
+$mutan=("load data local infile '../data/user_uploads/raw_files/".$id."_var.txt' into table variant FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\n' (@gene_name, @chrmo, @position, @reference, @variant, @varianttype, @variantname) set Gene_mutname = @gene_name, Chromosome_number = @chrmo, Reference_position = @position, Reference_base = @reference, Reference_variant = @variant, Varinat_type = @varianttype, Mutation_type = @variantname;");  
 $n=mysql_query($mutan, $connect);
 
 /* $mutan=("load data local infile '/home/pkoti/mitomodel/www/uploads/new_var_input.txt' into table variant FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\n' (@gene_name, @chrmo, @position, @reference, @variant, @varianttype, @variantname) set Gene_mutname = @gene_name, Chromosome_number = @chrmo, Reference_position = @position, Reference_base = @reference, Reference_variant = @variant, Varinat_type = @varianttype, Mutation_type = @variantname;"); */
@@ -106,20 +107,20 @@ if ( !$result )
 
 $id = session_id();
 $prefix = '';
-$fp = fopen('/Users/ayim/Sites/MitoViz/dist/data/user_uploads/json_files/'.$id.'.json', 'w');
+$fp = fopen('../data/user_uploads/json_files/'.$samplename.'.'.$id.'.json', 'w');
 
- fprintf($fp, "{\n");
- fprintf($fp,'"nodes": [');
- fprintf($fp,"\n");
+ fprintf($fp, "[\n");
 while ( $row = mysql_fetch_assoc( $result))
 { 
 	 fprintf($fp, $prefix . " {\n");
 	 //fprintf($fp,'  "name": "' . $row['Gene_name'] . '",' . "\n");
 	 	 //fprintf($fp,'  "name": "' . $row['Gene_id'] . '",' . "\n");
-	fprintf($fp,'  "name": "' . $row['Res_geneid'] . '",' . "\n");
+	fprintf($fp,'  "gene": "' . $row['Res_geneid'] . '",' . "\n");
 	/* fprintf($fp,'  "process": "' . $row['Process'] . '",' . "\n");
 	 fprintf($fp,'  "gene_function": "' . $row['Gene_function'] . '",' . "\n");
 	 fprintf($fp,'  "id": "' . $row['Gene_id'] . '",' . "\n");*/
+	fprintf($fp,'  "sampleID": "' . $samplename . '",' . "\n");
+fprintf($fp,'  "chr": "' . $row['Res_chromosome_number'] . '",' . "\n");
 	fprintf($fp,'  "process": "' . $row['Res_process'] . '",' . "\n");
          fprintf($fp,'  "gene_function": "' . $row['Res_gene_function'] . '",' . "\n");
          fprintf($fp,'  "id": "' . $row['Res_geneid'] . '",' . "\n");
@@ -130,35 +131,20 @@ while ( $row = mysql_fetch_assoc( $result))
 	 fprintf($fp,'  "p_value": "' . $row['p_value'] . '",' . "\n");*/ //23rd april
 	fprintf($fp,'  "Normal": ' . $row['Res_expression_1'] . ',' . "\n");
          fprintf($fp,'  "Abnormal": ' . $row['Res_expression_2'] . ',' . "\n");
-         fprintf($fp,'  "Log2fold_change": ' . $row['Res_log2fold'] . ',' . "\n");
-         fprintf($fp,'  "p_value": ' . $row['Res_pvalue'] . ',' . "\n");
+         fprintf($fp,'  "log2": ' . $row['Res_log2fold'] . ',' . "\n");
+         fprintf($fp,'  "pvalue": ' . $row['Res_pvalue'] . ',' . "\n");
 	 //fprintf($fp,'  "Normal": ' . $row['Expression_Sample_1'] . ',' . "\n");
          //fprintf($fp,'  "Abnormal": ' . $row['Expression_Sample_2'] . ',' . "\n");
          //fprintf($fp,'  "Log2fold_change": ' . $row['log2fold_change'] . ',' . "\n");
          //fprintf($fp,'  "p_value": ' . $row['p_value'] . ',' . "\n");
 	 /*fprintf($fp,'  "Chromosome_number": "' . $row['Chromosome_number'] . '",' . "\n");
 	 fprintf($fp,'  "Variant_sites": "' . $row['Variants'] . '",' . "\n");	*/ // 23rd April
-	fprintf($fp,'  "Chromosome_number": "' . $row['Res_chromosome_number'] . '",' . "\n");
-         fprintf($fp,'  "Variant_sites": "' . $row['Res_variants'] . '",' . "\n");
+         fprintf($fp,'  "mutation": "' . $row['Res_variants'] . '"' . "\n");
 // '  "link": "' . $row['Link'] . '",' . "\n";
-	 fprintf($fp,'  "status": "' . $row['Status'] . '"' . "\n");
 	 fprintf($fp," }");
 	$prefix = ",\n";
 }
- fprintf($fp,"\n],\n");
-$prefixed = '';
- fprintf($fp,'"links": [');;
- fprintf($fp,"\n");;
-while ($roe = mysql_fetch_assoc( $target_result ) )
-{
-	 fprintf($fp, $prefixed . " {");
-	 fprintf($fp,'  "source":"' . $roe['Source'] . '",' );
-	 fprintf($fp,'  "target":"' . $roe['Target'] . '"' );
-	 fprintf($fp," }");
-	$prefixed = ",\n";
-}
- fprintf($fp,"\n]\n");
- fprintf($fp,"}");
+ fprintf($fp,"\n]");
 
 
 
