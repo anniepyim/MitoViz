@@ -19,7 +19,11 @@ if (!$connect)
 	 //echo "Connected\n";
 } 
 //your database name
-$cid =mysql_select_db('test',$connect);
+
+$sql = "CREATE DATABASE IF NOT EXISTS mitomodel";
+$cre = mysql_query($sql,$connect);
+    
+$cid =mysql_select_db('mitomodel',$connect);
 $samplename = $_POST['samplename'];
 
 
@@ -35,33 +39,27 @@ $z=mysql_query($que, $connect);
 
 $function = "DROP TABLE IF EXISTS `function`";
 $t=mysql_query($function, $connect);
-$funct="create table function (Gene_function varchar(1000), Process varchar(100), Gene_id varchar(50), Link varchar(1000))";
+$funct="create table function (Gene_function varchar(1000), Process varchar(100), Chromosome_number varchar(50), Gene_id varchar(50), ensg_symbol varchar(500))";
 $t=mysql_query($funct, $connect);
-$func = ("load data local infile 'human/function_and_links.json' into table function FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\n' IGNORE 1 LINES (@gene_function, @process, @gene_id, @link) set Gene_function = @gene_function, Process = @process, Gene_id = @gene_id, Link = @link;");
+$func = ("load data local infile 'human/gene_function.txt' into table function FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\n' IGNORE 1 LINES (@gene_id, @process, @chrmo, @gene_function, @ensgsymbol) set Gene_function = @gene_function, Process = @process, Gene_id = @gene_id, Chromosome_number = @chrmo, ensg_symbol = @ensgsymbol");
 $u=mysql_query($func, $connect);
 
 
 
 $mutants = "DROP TABLE IF EXISTS variant";
 $m=mysql_query($mutants, $connect);
-$mutant="create table variant (Gene_mutname varchar(150), Chromosome_number varchar(50), Reference_position bigint, Reference_base varchar(1000), Reference_variant varchar(1000), Varinat_type varchar(100), Mutation_type varchar(100))";
+$mutant="create table variant (Gene_mutname varchar(150), Reference_position bigint, Reference_base varchar(1000), Reference_variant varchar(1000), Variant_type varchar(100), Mutation_type varchar(100))";
 $m=mysql_query($mutant, $connect);
 //---------------------------modified on december 18th
-$mutan=("load data local infile '../data/user_uploads/raw_files/".$id."_var.txt' into table variant FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\n' (@gene_name, @chrmo, @position, @reference, @variant, @varianttype, @variantname) set Gene_mutname = @gene_name, Chromosome_number = @chrmo, Reference_position = @position, Reference_base = @reference, Reference_variant = @variant, Varinat_type = @varianttype, Mutation_type = @variantname;");  
+$mutan=("load data local infile '../data/user_uploads/raw_files/".$id."_var.txt' into table variant FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\n' (@gene_name, @chrmo, @position, @reference, @variant, @varianttype, @variantname) set Gene_mutname = @gene_name, Reference_position = @position, Reference_base = @reference, Reference_variant = @variant, Variant_type = @varianttype, Mutation_type = @variantname;");  
 $n=mysql_query($mutan, $connect);
 
-$ensgformat = "DROP TABLE IF EXISTS ensgformat";
-$ensg=mysql_query($ensgformat, $connect);
-$ensgform = "create table ensgformat (Gene_ename varchar(500), ensg_symbol varchar(500))";
-$ensg=mysql_query($ensgform, $connect);
-$ensgforms=("load data local infile 'human/ensg.txt' into table ensgformat FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\n' (@gene_esname, @ensgsymbol) set Gene_ename = @gene_esname, ensg_symbol = @ensgsymbol;");
-$ensgf=mysql_query($ensgforms, $connect);
 
 $mutantformat = "DROP TABLE IF EXISTS variantformat";
 $mt=mysql_query($mutantformat, $connect);
-$mutform = "create table variantformat (Gene_varname varchar(500), Chromosome_number varchar(50), Variants varchar(20000))";
+$mutform = "create table variantformat (Gene_varname varchar(500), Variants varchar(20000))";
 $mt=mysql_query($mutform, $connect);
-$mtform="INSERT INTO variantformat (Gene_varname, Chromosome_number, Variants) SELECT Gene_mutname, Chromosome_number, GROUP_CONCAT(Reference_position,' ',Reference_base,'/',Reference_variant,': ',Varinat_type,': ', Mutation_type SEPARATOR', ') from variant GROUP BY Gene_mutname";
+$mtform="INSERT INTO variantformat (Gene_varname, Variants) SELECT Gene_mutname, GROUP_CONCAT('chr',Chromosome_number,' ',Reference_position,' ',Reference_base,'/',Reference_variant,': ',Variant_type,': ', Mutation_type SEPARATOR', ') from variant right join function on function.Gene_id =variant.Gene_mutname GROUP BY Gene_mutname";
 $mutf=mysql_query($mtform, $connect);
 
 
@@ -70,7 +68,7 @@ $result_json = "DROP TABLE IF EXISTS result";
 $re = mysql_query($result_json, $connect);
 $reform = "create table result (Res_geneid varchar(50), Res_gene_function varchar(1000), Res_process varchar(100), Res_expression_1 float NOT NULL DEFAULT '0.00', Res_expression_2 float NOT NULL DEFAULT '0.00', Res_log2fold float NOT NULL DEFAULT '0.00', Res_pvalue float NOT NULL DEFAULT '0.00', Res_chromosome_number varchar(50), Res_variants varchar(20000), Res_ensg_symbol varchar(500))";
 $re = mysql_query($reform, $connect);
-$result = "insert into result (Res_geneid, Res_gene_function, Res_process, Res_expression_1, Res_expression_2, Res_log2fold, Res_pvalue, Res_chromosome_number, Res_variants,Res_ensg_symbol) select Gene_id, Gene_function, Process, Expression_Sample_1, Expression_Sample_2, log2fold_change, p_value, Chromosome_number, Variants, ensg_symbol from function left join expression on function.Gene_id = expression.Gene_name left join variantformat on function.Gene_id = variantformat.Gene_varname left join ensgformat on function.Gene_id = ensgformat.Gene_ename where Expression_Sample_1";
+$result = "insert into result (Res_geneid, Res_gene_function, Res_process, Res_expression_1, Res_expression_2, Res_log2fold, Res_pvalue, Res_chromosome_number, Res_variants,Res_ensg_symbol) select Gene_id, Gene_function, Process, Expression_Sample_1, Expression_Sample_2, log2fold_change, p_value, Chromosome_number, Variants, ensg_symbol from function left join expression on function.Gene_id = expression.Gene_name left join variantformat on function.Gene_id = variantformat.Gene_varname where Expression_Sample_1";
 $result_form = mysql_query($result, $connect);
 
 //if(! $mutf )

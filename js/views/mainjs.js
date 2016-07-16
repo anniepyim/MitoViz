@@ -1,23 +1,4 @@
-$(document).ready(function(){
-
-$("#navbar li").click(function(e){
-    $("#navbar li").prop('class','');
-    $(this).toggleClass('active');
-    
-    if ($(this).text() == "PCA"){
-        document.getElementById("scatterplot").style.display="none";
-        document.getElementById("barchart").style.display="none";
-        document.getElementById("heatmap").style.display="none";
-        document.getElementById("pca").style.display="";
-    }
-    
-    if ($(this).text() == "Scatter plot"){
-        document.getElementById("scatterplot").style.display="";
-        document.getElementById("barchart").style.display="";
-        document.getElementById("heatmap").style.display="";
-        document.getElementById("pca").style.display="none";
-    }
-});    
+$(document).ready(function(){   
     
 $("#folders").on('change',function(){
    updateFolder();

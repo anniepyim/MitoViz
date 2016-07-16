@@ -1,8 +1,0 @@
-gene	process	data	data2	data3	data4
-A0	Fatty acid beta-oxidation	0	0	456.0000	456.0000
-AARS2	Translation	1.0000	11.0000	11.0000	11.0000
-ABCB7	Fe-S cluster biosynthesis	2.0000	21.0000	21.0000	21.0000
-ACAA2	Fatty acid beta-oxidation	3.0000	31.0000	31.0000	3.0000
-ACAD10	Fatty acid beta-oxidation	4.0000	41.0000	41.0000	4.0000
-ACAD11	Fatty acid beta-oxidation	5.0000	0	0	0
-AD10	Fatty acid beta-oxidation	0	0	55.0000	55.0000

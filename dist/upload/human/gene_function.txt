@@ -1,0 +1,662 @@
+gene	process	chr	function	ENSG
+MT-ND1	Electron transport chain	MT	MT-ND1: Mitochondrially encoded NADH dehydrogenase 1 part of enzyme complex I	ENSG00000198888
+MT-ND2	Electron transport chain	MT	MT-ND2: Mitochondrially encoded NADH dehydrogenase 2 part of enzyme complex I	ENSG00000198763
+MT-ND3	Electron transport chain	MT	MT-ND3: Mitochondrially encoded NADH dehydrogenase 3 part of enzyme complex I	ENSG00000198840
+MT-ND4	Electron transport chain	MT	MT-ND4: Mitochondrially encoded NADH dehydrogenase 4 part of enzyme complex I	ENSG00000198886
+MT-ND4L	Electron transport chain	MT	MT-ND4L: Mitochondrially encoded NADH dehydrogenase 4L part of enzyme complex I	ENSG00000212907
+MT-ND5	Electron transport chain	MT	MT-ND5: Mitochondrially encoded NADH dehydrogenase 5 part of enzyme complex I	ENSG00000198786
+MT-ND6	Electron transport chain	MT	MT-ND6: Mitochondrially encoded NADH dehydrogenase 6 part of enzyme complex I	ENSG00000198695
+NDUFA1	Electron transport chain	X	NDUFA1: Essential component of complex I transfers electrons from NADH to ubiquinone	ENSG00000125356
+NDUFA2	Electron transport chain	5	NDUFA2: Essential component of complex I may be involved in regulating complex I activity or its assembly via assistance in redox processes	ENSG00000131495
+NDUFA3	Electron transport chain	19	NDUFA3: Essential component of complex I transfers electrons from NADH to ubiquinone	ENSG00000170906
+NDUFA4	Electron transport chain	7	NDUFA4: Essential component of complex I transfers electrons from NADH to ubiquinone	ENSG00000189043
+NDUFA5	Electron transport chain	7	NDUFA5: Essential component of complex I transfers electrons from NADH to ubiquinone	ENSG00000128609
+NDUFA6	Electron transport chain	22	NDUFA6: Essential component of complex I transfers electrons from NADH to ubiquinone	ENSG00000184983
+NDUFA7	Electron transport chain	19	NDUFA7: Essential component of complex I transfers electrons from NADH to ubiquinone	ENSG00000267855
+NDUFA8	Electron transport chain	9	NDUFA8: Essential component of complex I transfers electrons from NADH to ubiquinone	ENSG00000119421
+NDUFA9	Electron transport chain	12	NDUFA9: Essential component of complex I transfers electrons from NADH to ubiquinone	ENSG00000139180
+NDUFA10	Electron transport chain	2	NDUFA10: Essential component of complex I transfers electrons from NADH to ubiquinone	ENSG00000130414
+NDUFA11	Electron transport chain	19	NDUFA11: Essential component of complex I transfers electrons from NADH to ubiquinone	ENSG00000174886
+NDUFA12	Electron transport chain	12	NDUFA12: Essential component of complex I transfers electrons from NADH to ubiquinone	ENSG00000184752
+NDUFA13	Electron transport chain	19	NDUFA13: Essential component of complex I transfers electrons from NADH to ubiquinone	ENSG00000186010
+NDUFAB1	Electron transport chain	16	NDUFAB1: Essential component of complex I transfers electrons from NADH to ubiquinone	ENSG00000004779
+NDUFB1	Electron transport chain	14	NDUFB1: Essential component of complex I transfers electrons from NADH to ubiquinone	ENSG00000183648
+NDUFB2	Electron transport chain	7	NDUFB2: Essential component of complex I transfers electrons from NADH to ubiquinone	ENSG00000090266
+NDUFB3	Electron transport chain	2	NDUFB3: Essential component of complex I transfers electrons from NADH to ubiquinone	ENSG00000119013
+NDUFB4	Electron transport chain	3	NDUFB4: Essential component of complex I transfers electrons from NADH to ubiquinone	ENSG00000065518
+NDUFB5	Electron transport chain	3	NDUFB5: Essential component of complex I transfers electrons from NADH to ubiquinone	ENSG00000136521
+NDUFB6	Electron transport chain	9	NDUFB6: Essential component of complex I transfers electrons from NADH to ubiquinone	ENSG00000165264
+NDUFB7	Electron transport chain	19	NDUFB7: Essential component of complex I transfers electrons from NADH to ubiquinone	ENSG00000099795
+NDUFB8	Electron transport chain	10	NDUFB8: Essential component of complex I transfers electrons from NADH to ubiquinone	ENSG00000166136
+NDUFB9	Electron transport chain	8	NDUFB9: Essential component of complex I transfers electrons from NADH to ubiquinone	ENSG00000147684
+NDUFB10	Electron transport chain	16	NDUFB10: Essential component of complex I transfers electrons from NADH to ubiquinone	ENSG00000140990
+NDUFB11	Electron transport chain	X	NDUFB11: Essential component of complex I transfers electrons from NADH to ubiquinone	ENSG00000147123
+NDUFC1	Electron transport chain	4	NDUFC1: Essential component of complex I transfers electrons from NADH to ubiquinone	ENSG00000109390
+NDUFC2	Electron transport chain	11	NDUFC2: Essential component of complex I transfers electrons from NADH to ubiquinone	ENSG00000151366
+NDUFS1	Electron transport chain	2	NDUFS1: Essential component of complex I transfers electrons from NADH to ubiquinone	ENSG00000023228
+NDUFS2	Electron transport chain	1	NDUFS2: Essential component of complex I transfers electrons from NADH to ubiquinone	ENSG00000158864
+NDUFS3	Electron transport chain	11	NDUFS3: Essential component of complex I transfers electrons from NADH to ubiquinone	ENSG00000213619
+NDUFS4	Electron transport chain	5	NDUFS4: Essential component of complex I transfers electrons from NADH to ubiquinone	ENSG00000164258
+NDUFS5	Electron transport chain	1	NDUFS5: Essential component of complex I transfers electrons from NADH to ubiquinone	ENSG00000168653
+NDUFS6	Electron transport chain	5	NDUFS6: Essential component of complex I transfers electrons from NADH to ubiquinone	ENSG00000145494
+NDUFS7	Electron transport chain	19	NDUFS7: Essential component of complex I transfers electrons from NADH to ubiquinone	ENSG00000115286
+NDUFS8	Electron transport chain	11	NDUFS8: Essential component of complex I transfers electrons from NADH to ubiquinone	ENSG00000110717
+NDUFV1	Electron transport chain	11	NDUFV1: Essential component of complex I transfers electrons from NADH to ubiquinone	ENSG00000167792
+NDUFV2	Electron transport chain	18	NDUFV2: Essential component of complex I transfers electrons from NADH to ubiquinone	ENSG00000178127
+NDUFV3	Electron transport chain	21	NDUFV3: Essential component of complex I transfers electrons from NADH to ubiquinone	ENSG00000160194
+CYC1	Electron transport chain	8	CYC1: Essential component of complex III transfers electrons from iron sulphur protein to cytochrome c	ENSG00000179091
+MT-CYB	Electron transport chain	MT	MT-CYB: Essential component of complex III transfers electrons from iron sulphur protein to cytochrome c	ENSG00000198727
+UQCR10	Electron transport chain	22	UQCR10: Ubiquinol-cytochrome c reductase essential component of complex III	ENSG00000184076
+UQCR11	Electron transport chain	19	UQCR11: Ubiquinol-cytochrome c reductase essential component of complex III	ENSG00000127540
+UQCRB	Electron transport chain	8	UQCRB: Ubiquinol-cytochrome c reductase binding protein essential component of complex III	ENSG00000156467
+UQCRC1	Electron transport chain	3	UQCRC1: Ubiquinol-cytochrome c reductase core protein I essential component of complex III	ENSG00000010256
+UQCRC2	Electron transport chain	16	UQCRC2: Ubiquinol-cytochrome c reductase core protein II essential component of complex III	ENSG00000140740
+UQCRFS1	Electron transport chain	19	UQCRFS1: Ubiquinol-cytochrome c reductase Rieske iron-sulfur polypeptide 1 essential component of complex III	ENSG00000169021
+UQCRH	Electron transport chain	1	UQCRH: Ubiquinol-cytochrome c reductase hinge protein essential component of complex III	ENSG00000173660
+UQCRQ	Electron transport chain	5	UQCRQ: Ubiquinol-cytochrome c reductase essential component of complex III	ENSG00000164405
+COX4I1	Electron transport chain	16	COX4I1: Cytochrome c oxidase subunit IV isoform 1 essential component of complex IV	ENSG00000131143
+COX4I2	Electron transport chain	20	COX4I2: Cytochrome c oxidase subunit IV isoform 2 (lung) essential component of complex IV	ENSG00000131055
+COX5A	Electron transport chain	15	COX5A: Cytochrome c oxidase subunit Va essential component of complex IV	ENSG00000178741
+COX5B	Electron transport chain	2	COX5B: Cytochrome c oxidase subunit Vb essential component of complex IV	ENSG00000135940
+COX6A1	Electron transport chain	12	COX6A1: Cytochrome c oxidase subunit VIa polypeptide 1 essential component of complex IV	ENSG00000111775
+COX6A2	Electron transport chain	16	COX6A2: Cytochrome c oxidase subunit VIa polypeptide 2 essential component of complex IV	ENSG00000156885
+COX6B1	Electron transport chain	19	COX6B1: Cytochrome c oxidase subunit VIb polypeptide 1 (ubiquitous) essential component of complex IV	ENSG00000126267
+COX6B2	Electron transport chain	19	COX6B2: Cytochrome c oxidase subunit VIb polypeptide 2 (testis) essential component of complex IV	ENSG00000160471
+COX6C	Electron transport chain	8	COX6C: Cytochrome c oxidase subunit VIc essential component of complex IV	ENSG00000164919
+COX7A1	Electron transport chain	19	COX7A1: Cytochrome c oxidase subunit VIIa polypeptide 1 (muscle) essential component of complex IV	ENSG00000161281
+COX7A2	Electron transport chain	6	COX7A2: Cytochrome c oxidase subunit VIIa polypeptide 2 (liver) essential component of complex IV	ENSG00000112695
+COX7B	Electron transport chain	X	COX7B: Cytochrome c oxidase subunit VIIb essential component of complex IV	ENSG00000131174
+COX7B2	Electron transport chain	4	COX7B2: Cytochrome c oxidase subunit VIIb2 essential component of complex IV	ENSG00000170516
+COX7C	Electron transport chain	5	COX7C: Cytochrome c oxidase subunit VIIc essential component of complex IV	ENSG00000127184
+COX8A	Electron transport chain	11	COX8A: Cytochrome c oxidase subunit VIIIA (ubiquitous) essential component of complex IV	ENSG00000176340
+MT-CO1	Electron transport chain	MT	MT-CO1: Mitochondrially encoded cytochrome c oxidase I essential component of complex IV	ENSG00000198804
+MT-CO2	Electron transport chain	MT	MT-CO2: Mitochondrially encoded cytochrome c oxidase II essential component of complex IV	ENSG00000198712
+MT-CO3	Electron transport chain	MT	MT-CO3: Mitochondrially encoded cytochrome c oxidase III essential component of complex IV	ENSG00000198938
+ATP5A1	Electron transport chain	18	ATP5A1: ATP synthase H+ transporting mitochondrial F1 complex alpha subunit 1 cardiac muscle essential component of complex V	ENSG00000152234
+ATP5B	Electron transport chain	12	ATP5B: ATP synthase H+ transporting mitochondrial F1 complex beta polypeptide essential component of complex V	ENSG00000110955
+ATP5C1	Electron transport chain	10	ATP5C1: ATP synthase H+ transporting mitochondrial F1 complex gamma polypeptide 1 essential component of complex V	ENSG00000165629
+ATP5D	Electron transport chain	19	ATP5D: ATP synthase H+ transporting mitochondrial F1 complex delta subunit essential component of complex V	ENSG00000099624
+ATP5E	Electron transport chain	20	ATP5E: ATP synthase H+ transporting mitochondrial F1 complex epsilon subunit essential component of complex V	ENSG00000124172
+ATP5F1	Electron transport chain	1	ATP5F1: ATP synthase H+ transporting mitochondrial Fo complex subunit B1 essential component of complex V	ENSG00000116459
+ATP5G1	Electron transport chain	17	ATP5G1: ATP synthase H+ transporting mitochondrial Fo complex subunit C1 (subunit 9) essential component of complex V	ENSG00000159199
+ATP5G2	Electron transport chain	12	ATP5G2: ATP synthase H+ transporting mitochondrial Fo complex subunit C2 (subunit 9) essential component of complex V	ENSG00000135390
+ATP5G3	Electron transport chain	2	ATP5G3: ATP synthase H+ transporting mitochondrial Fo complex subunit C3 (subunit 9) essential component of complex V	ENSG00000154518
+ATP5H	Electron transport chain	17	ATP5H: ATP synthase H+ transporting mitochondrial Fo complex subunit d essential component of complex V	ENSG00000167863
+ATP5I	Electron transport chain	4	ATP5I: ATP synthase H+ transporting mitochondrial Fo complex subunit E essential component of complex V	ENSG00000169020
+ATP5J	Electron transport chain	21	ATP5J: ATP synthase H+ transporting mitochondrial Fo complex subunit F6 essential component of complex V	ENSG00000154723
+ATP5J2	Electron transport chain	7	ATP5J2: ATP synthase H+ transporting mitochondrial Fo complex subunit F2 essential component of complex V	ENSG00000241468
+ATP5L	Electron transport chain	11	ATP5L: ATP synthase H+ transporting mitochondrial Fo complex subunit G essential component of complex V	ENSG00000167283
+ATP5O	Electron transport chain	21	ATP5O: ATP synthase H+ transporting mitochondrial F1 complex O subunit essential component of complex V	ENSG00000241837
+ATPIF1	Electron transport chain	1	ATPIF1: ATPase inhibitory factor 1 essential component of complex V	ENSG00000130770
+MT-ATP6	Electron transport chain	MT	MT-ATP6: Mitochondrially encoded ATP synthase 6 essential component of complex V	ENSG00000198899
+MT-ATP8	Electron transport chain	MT	MT-ATP8: Mitochondrially encoded ATP synthase 6 essential component of complex V	ENSG00000228253
+SLC27A1	Fatty acid beta-oxidation	19	SLC27A1: Readily converts the transported very long chain fatty acids to acyl-CoAs	ENSG00000130304
+SLC27A2	Fatty acid beta-oxidation	15	SLC27A2: Readily converts the transported very long chain fatty acids to acyl-CoAs	ENSG00000140284
+SLC27A3	Fatty acid beta-oxidation	1	SLC27A3: Readily converts the transported very long chain fatty acids to acyl-CoAs	ENSG00000143554
+SLC27A4	Fatty acid beta-oxidation	9	SLC27A4: Readily converts the transported very long chain fatty acids to acyl-CoAs	ENSG00000167114
+SLC27A5	Fatty acid beta-oxidation	19	SLC27A5: Readily converts the transported very long chain fatty acids to acyl-CoAs	ENSG00000083807
+SLC27A6	Fatty acid beta-oxidation	5	SLC27A6: Readily converts the transported very long chain fatty acids to acyl-CoAs	ENSG00000113396
+ACSL1	Fatty acid beta-oxidation	4	ACSL1: Acyl-CoA synthetase activity for long chain free fatty acids are also involved in the activation of fatty acids	ENSG00000151726
+ACSL3	Fatty acid beta-oxidation	2	ACSL3: Acyl-CoA synthetase activity for long chain free fatty acids are also involved in the activation of fatty acids	ENSG00000123983
+ACSL4	Fatty acid beta-oxidation	X	ACSL4: Acyl-CoA synthetase activity for long chain free fatty acids are also involved in the activation of fatty acids	ENSG00000068366
+ACSL5	Fatty acid beta-oxidation	10	ACSL5: Acyl-CoA synthetase activity for long chain free fatty acids are also involved in the activation of fatty acids	ENSG00000197142
+ACSL6	Fatty acid beta-oxidation	5	ACSL6: Acyl-CoA synthetase activity for long chain free fatty acids are also involved in the activation of fatty acids	ENSG00000164398
+ACSS1	Fatty acid beta-oxidation	20	ACSS1: Acyl-CoA synthetase activity for short chain fatty acids	ENSG00000154930
+ACSS2	Fatty acid beta-oxidation	20	ACSS2: Acyl-CoA synthetase activity for short chain fatty acids	ENSG00000131069
+ACSS3	Fatty acid beta-oxidation	12	ACSS3: Acyl-CoA synthetase activity for short chain fatty acids	ENSG00000111058
+ACSM1	Fatty acid beta-oxidation	16	ACSM1: Acyl-CoA synthetase activity for medium chain fatty acids	ENSG00000166743
+ACSM2A	Fatty acid beta-oxidation	16	ACSM2A: Acyl-CoA synthetase activity for medium chain fatty acids	ENSG00000183747
+ACSM2B	Fatty acid beta-oxidation	16	ACSM2B: Acyl-CoA synthetase activity for medium chain fatty acids	ENSG00000066813
+ACSM3	Fatty acid beta-oxidation	16	ACSM3: Acyl-CoA synthetase activity for medium chain fatty acids	ENSG00000005187
+ACSM4	Fatty acid beta-oxidation	12	ACSM4: Acyl-CoA synthetase activity for medium chain fatty acids	ENSG00000215009
+ACSM5	Fatty acid beta-oxidation	16	ACSM5: Acyl-CoA synthetase activity for medium chain fatty acids	ENSG00000183549
+C10orf129	Fatty acid beta-oxidation	10	C10orf129: ACSM6 Acyl-CoA synthetase activity for medium chain fatty acids	ENSG00000173124
+ACSBG1	Fatty acid beta-oxidation	15	ACSBG1: Acyl-CoA synthetase activity for bubblegum family members	ENSG00000103740
+ACSBG2	Fatty acid beta-oxidation	19	ACSBG2: Acyl-CoA synthetase activity for bubblegum family members	ENSG00000130377
+FABP1	Fatty acid beta-oxidation	2	FABP1: Fatty acid binding proteins are also involved in the import and export of fatty acids	ENSG00000163586
+FABP2	Fatty acid beta-oxidation	4	FABP2: Fatty acid binding proteins are also involved in the import and export of fatty acids	ENSG00000145384
+FABP3	Fatty acid beta-oxidation	1	FABP3: Fatty acid binding proteins are also involved in the import and export of fatty acids	ENSG00000121769
+FABP4	Fatty acid beta-oxidation	8	FABP4: Fatty acid binding proteins are also involved in the import and export of fatty acids	ENSG00000170323
+FABP5	Fatty acid beta-oxidation	8	FABP5: Fatty acid binding proteins are also involved in the import and export of fatty acids	ENSG00000164687
+FABP6	Fatty acid beta-oxidation	5	FABP6: Fatty acid binding proteins are also involved in the import and export of fatty acids	ENSG00000170231
+FABP7	Fatty acid beta-oxidation	6	FABP7: Fatty acid binding proteins are also involved in the import and export of fatty acids	ENSG00000164434
+FABP9	Fatty acid beta-oxidation	8	FABP9: Fatty acid binding proteins are also involved in the import and export of fatty acids	ENSG00000205186
+FABP12	Fatty acid beta-oxidation	8	FABP12: Fatty acid binding proteins are also involved in the import and export of fatty acids	ENSG00000197416
+CD36	Fatty acid beta-oxidation	7	CD36: Fatty acid translocase	ENSG00000135218
+GOT2	Fatty acid beta-oxidation	16	GOT2: Plasma membrane fatty acid binding protein	ENSG00000125166
+CPT1A	Fatty acid beta-oxidation	11	CPT1A: Carnitiine palmitoyl transferase converts an acyl-CoA into an acylcarnitine	ENSG00000110090
+CPT1B	Fatty acid beta-oxidation	22	CPT1B: Carnitiine palmitoyl transferase converts an acyl-CoA into an acylcarnitine	ENSG00000205560
+CPT1C	Fatty acid beta-oxidation	19	CPT1C: Carnitiine palmitoyl transferase converts an acyl-CoA into an acylcarnitine	ENSG00000169169
+SLC25A20	Fatty acid beta-oxidation	3	SLC25A20: Carnitine acylcarnitine translocase mediates acylcarnitine entry into mitochondria	ENSG00000178537
+CPT2	Fatty acid beta-oxidation	1	CPT2: Acylcarnitines are reconverted to their CoA esters by carnitine palmitoyltransferase 2	ENSG00000157184
+CRAT	Fatty acid beta-oxidation	9	CRAT: Free carnitine in the mitochondria can be converted into acyl carnitine by the action of carnitine acetyl transferase	ENSG00000095321
+ACAD8	Fatty acid beta-oxidation	11	ACAD8: Involved in the caatabolism of fatty acids and branched chain aminoacid valine	ENSG00000151498
+ACAD10	Fatty acid beta-oxidation	12	ACAD10: Involved in the catabolism of fatty acids with significant activity towards branched chains	ENSG00000111271
+ACAD11	Fatty acid beta-oxidation	3	ACAD11: May be involved in the catabolism of long chain fatty acids	ENSG00000240303
+ACADL	Fatty acid beta-oxidation	2	ACADL: Long chain hydroxyacyl-CoA dehydrogenase	ENSG00000115361
+ACADVL	Fatty acid beta-oxidation	17	ACADVL: Very long chain acyl-CoAs are first catalyzed by long chain acyl-CoA dehydrogenase	ENSG00000072778
+HADHA	Fatty acid beta-oxidation	2	HADHA: Mitochondrial trifunctional protein catalyzes the Very long and long chain fatty acids	ENSG00000084754
+HADHB	Fatty acid beta-oxidation	2	HADHB: Mitochondrial trifunctional protein catalyzes the Very long and long chain fatty acids	ENSG00000138029
+ACADM	Fatty acid beta-oxidation	1	ACADM: Fatty acids are metabolized for 3 to 4 cycles by the medium chain acyl-CoA dehydrogenase	ENSG00000117054
+ECHS1	Fatty acid beta-oxidation	10	ECHS1: Enoyl-CoA hydratases, short chain, 1, mitochondrial	ENSG00000127884
+HADH	Fatty acid beta-oxidation	4	HADH: Medium and short chain hydroxyacyl-CoA dehydrogenase	ENSG00000138796
+ACAA2	Fatty acid beta-oxidation	18	ACAA2: Medium chain 3-ketoacyl-CoA thiolase	ENSG00000167315
+ACADS	Fatty acid beta-oxidation	12	ACADS: Short chain acyl-CoA dehydrogenase encoded by ACADS catalyzes the final 1 to 2 cycles	ENSG00000122971
+ACADSB	Fatty acid beta-oxidation	10	ACADSB: Involved in the metabolism of short branched chain fatty acids	ENSG00000196177
+DECR1	Fatty acid beta-oxidation	8	DECR1: 2,4 dienoyl CoA reductase 1 catalyzes the metabolism of Polyunsaturated fatty acids	ENSG00000104325
+CPS1	Urea Cycle	2	CPS1: Carbamoyl phosphate synthetase catalyzes the step where free NH4+ with HCO3- to form carbamoyl phosphate	ENSG00000021826
+OTC	Urea Cycle	X	OTC: Ornithine transcarbamoylase catalyzes the step in which carbamoyl phosphate combines with ornithine to form citruline	ENSG00000036473
+ASS1	Urea Cycle	9	ASS1: Argininosuccinate synthetase catalyzes the step where Citruline combines with Aspartate to form Argininosuccinate	ENSG00000130707
+ASL	Urea Cycle	7	ASL: Argininosuccinate lyase catalyzes the reaction where Argininosuccinate is cleaved of its nitrogen and carbon skeleton forming arginine and fumarate respectively	ENSG00000126522
+ARG1	Urea Cycle	6	ARG1: Arginase catalyzes the step where Arginine is hydrolyzed to form urea and ornithine	ENSG00000118520
+ARG2	Urea Cycle	14	ARG2: Arginase catalyzes the step where Arginine is hydrolyzed to form urea and ornithine	ENSG00000081181
+APAF1	Apoptosis	12	APAF1: Binds CASP9 preprotein forming an apoptosome and activates it	ENSG00000120868
+CASP3	Apoptosis	4	CASP3: Executioner caspases leading to apoptosis	ENSG00000164305
+MAPK1	Apoptosis	22	MAPK1: Inhibitors of CASP9 activity	ENSG00000100030
+CASP7	Apoptosis	10	CASP7: Executioner caspases leading to apoptosis	ENSG00000165806
+DIABLO	Apoptosis	12	DIABLO: Acts as caspase activator by inhibiting the inhibitors of apoptotic proteins	ENSG00000184047
+XIAP	Apoptosis	X	XIAP: X-linked inhibitor of apoptosis protein inhibits caspase activity by directly binding to CASP9, 3 and 7	ENSG00000101966
+BCL2	Apoptosis	18	BCL2: Bcl-2 family member Anti-apoptotic proteins	ENSG00000171791
+BCL2L1	Apoptosis	20	BCL2L1: Bcl-2 family member Anti-apoptotic proteins	ENSG00000171552
+MCL1	Apoptosis	1	MCL1: Bcl-2 family member Anti-apoptotic proteins	ENSG00000143384
+BAX	Apoptosis	19	BAX: Bcl-2 family member propagating apoptosis	ENSG00000087088
+BAK1	Apoptosis	6	BAK1: Bcl-2 family member propagating apoptosis	ENSG00000030110
+BAD	Apoptosis	11	BAD: Bcl-2 family member propagating apoptosis	ENSG00000002330
+BIK	Apoptosis	22	BIK: Bcl-2 family member propagating apoptosis	ENSG00000100290
+BID	Apoptosis	22	BID: Bcl-2 family member propagating apoptosis	ENSG00000015475
+BCL2L11	Apoptosis	2	BCL2L11: Bim Bcl-2 family member propagating apoptosis	ENSG00000153094
+PMAIP1	Apoptosis	18	PMAIP1: Noxa Bcl-2 family member propagating apoptosis	ENSG00000141682
+BBC3	Apoptosis	19	BBC3: Puma Bcl-2 family member propagating apoptosis	ENSG00000105327
+TP53	Apoptosis	17	TP53: Directly binds both BAK and BAX and activates them	ENSG00000141510
+VDAC1	Apoptosis	5	VDAC1: Voltage dependent anion channel forms part of permeability transition pore and also involved in the takeup of calcium ions from the Endoplasmic reticulum	ENSG00000213585
+VDAC2	Apoptosis	10	VDAC2: Voltage dependent anion channel forms part of permeability transition pore and also involved in the takeup of calcium ions from the Endoplasmic reticulum	ENSG00000165637
+VDAC3	Apoptosis	8	VDAC3: Voltage dependent anion channel forms part of permeability transition pore and also involved in the takeup of calcium ions from the Endoplasmic reticulum	ENSG00000078668
+SLC25A4	Apoptosis	4	SLC25A4: Adenine nucleotide translocator forms part of permeability transition pore	ENSG00000151729
+SLC25A5	Apoptosis	X	SLC25A5: Adenine nucleotide translocator forms part of permeability transition pore	ENSG00000005022
+SLC25A6	Apoptosis	X	SLC25A6: Adenine nucleotide translocator forms part of permeability transition pore	ENSG00000169100
+APOPT1	Apoptosis	14	APOPT1: Localizes to the mitochondria and stimulates the release of cytochrome c	ENSG00000256053
+PPIF	Apoptosis	10	PPIF: Cyclophilin D forms part of permeability transition pore	ENSG00000108179
+CYCS	Apoptosis	7	CYCS: Binds to apoptosis inducing factor 1 (APAF1) forming a structure called apoptosome	ENSG00000172115
+ANP32A	Apoptosis	15	ANP32A: Enhances APAF1 function	ENSG00000140350
+CASP9	Apoptosis	1	CASP9: Initiator caspase recruited by Apoptosome	ENSG00000132906
+CDK1	Apoptosis	10	CDK1: Can Inhibit CASP9 activity and also involved in the phosphorylation of DNM1L to increase fission	ENSG00000170312
+DNM1	Apoptosis	9	DNM1: Recruited to mitochondria can induce cristae remodelling to release cytochrome c and subsequent apoptosis	ENSG00000106976
+MAPK3	Apoptosis	16	MAPK3: Inhibitors of CASP9 activity	ENSG00000102882
+EIF3M	Apoptosis	11	EIF3M: PCI domain containing protein 1 can negatively regulate CASP9 activity	ENSG00000149100
+AIFM1	Apoptosis	X	AIFM1: Mitochondria associated apoptosis inducing factor translocates to nucleus and degrades DNA	ENSG00000156709
+PPIA	Apoptosis	7	PPIA: Cyclophilin A might work with ENDOG in a DNA degradation complex	ENSG00000196262
+HTRA2	Apoptosis	2	HTRA2: Mitochondrial serene protease induces cell death by inhibiting Inhibitors of apoptotic proteins	ENSG00000115317
+ALAS2	Heme Biosynthesis	X	ALAS2: Catalyzes the reaction amino acid glycine and succinyl CoA from TCA cycle condenses to form 5-aminolevulinate (ALA) and CO2	ENSG00000158578
+ALAS1	Heme Biosynthesis	3	ALAS1: Catalyzes the reaction amino acid glycine and succinyl CoA from TCA cycle condenses to form 5-aminolevulinate (ALA) and CO2	ENSG00000023330
+FECH	Heme Biosynthesis	18	FECH: Ferrochelatase catalyzes the step involving the addition of Ferrous iron into the protoprphyrin IX to form the protoheme IX	ENSG00000066926
+PPOX	Heme Biosynthesis	1	PPOX: Enzyme protoporphyrinogen oxidase coverts Protoporphyrinogen IX to Protoporphyrin IX	ENSG00000143224
+CPOX	Heme Biosynthesis	3	CPOX: Coproporphyrinogen III is transported to mitochondria and in the presence of coproporphyrinogen III oxidase it is oxidatively decarboxylated	ENSG00000080819
+UROD	Heme Biosynthesis	1	UROD: Uroporphyrinogen III decarboxylase catalyzes stepwise decarboxylation of the Uroporphyrinogen III	ENSG00000126088
+UROS	Heme Biosynthesis	10	UROS: Enzyme uroporphyrinogen III syntase catalyzes the liner tetrapyrrole molecule is cyclized or rearranged	ENSG00000188690
+HMBS	Heme Biosynthesis	11	HMBS: Hydroxymethylbilane synthase catalyzes head to tail condensation of four PBG and subsequent deamination to form a linear tetrapyrrole, Hydroxymethylbilane	ENSG00000256269
+ALAD	Heme Biosynthesis	9	ALAD: ALA dehydratase catalyzes the reaction where two molecules of ALA condenses to form monopyrrole porphobilinogen (PBG)	ENSG00000148218
+CS	Tricarboxylic acid cycle	12	CS: Catalyzes the synthesis of citrate from oxaloacetate and acetyl coenzyme A	ENSG00000062485
+ACO2	Tricarboxylic acid cycle	22	ACO2: Catalyzes the interconversion of citrate to isocitrate 	ENSG00000100412
+IDH2	Tricarboxylic acid cycle	15	IDH2: Catalyze the oxidative decarboxylation of isocitrate to 2-oxoglutarate	ENSG00000182054
+IDH3A	Tricarboxylic acid cycle	15	IDH3A: Catalyze the oxidative decarboxylation of isocitrate to 2-oxoglutarate	ENSG00000166411
+IDH1	Tricarboxylic acid cycle	2	IDH1: Catalyze the oxidative decarboxylation of isocitrate to 2-oxoglutarate	ENSG00000138413
+IDH3B	Tricarboxylic acid cycle	20	IDH3B: Catalyze the oxidative decarboxylation of isocitrate to 2-oxoglutarate	ENSG00000101365
+IDH3G	Tricarboxylic acid cycle	X	IDH3G: Catalyze the oxidative decarboxylation of isocitrate to 2-oxoglutarate	ENSG00000067829
+OGDH	Tricarboxylic acid cycle	7	OGDH: Catalyzes the overall conversion of 2-oxoglutarate to succinyl-CoA and CO2	ENSG00000105953
+DLST	Tricarboxylic acid cycle	14	DLST: Catalyzes the overall conversion of 2-oxoglutarate to succinyl-CoA and CO2	ENSG00000119689
+DLD	Tricarboxylic acid cycle	7	DLD: Catalyzes the overall conversion of 2-oxoglutarate to succinyl-CoA and CO2	ENSG00000091140
+SUCLG1	Tricarboxylic acid cycle	2	SUCLG1: Catalyzes the conversion of succinyl CoA to succinate	ENSG00000163541
+SUCLA2	Tricarboxylic acid cycle	13	SUCLA2: convert succinate to succinyl-CoA	ENSG00000136143
+SUCLG2	Tricarboxylic acid cycle	3	SUCLG2: Catalyzes the conversion of succinyl CoA to succinate	ENSG00000172340
+SDHA	Tricarboxylic acid cycle	5	SDHA: Part of Succinate dehydrogenase complex in oxidative phosporylation in TCA cycle it catalyzes the oxidation of succinate to fumarate	ENSG00000073578
+SDHB	Tricarboxylic acid cycle	1	SDHB: Part of Succinate dehydrogenase complex in oxidative phosporylation in TCA cycle it catalyzes the oxidation of succinate to fumarate	ENSG00000117118
+SDHC	Tricarboxylic acid cycle	1	SDHC: Part of Succinate dehydrogenase complex in oxidative phosporylation in TCA cycle it catalyzes the oxidation of succinate to fumarate	ENSG00000143252
+SDHD	Tricarboxylic acid cycle	11	SDHD: Part of Succinate dehydrogenase complex in oxidative phosporylation in TCA cycle it catalyzes the oxidation of succinate to fumarate	ENSG00000204370
+FH	Tricarboxylic acid cycle	1	FH: Catalyzes the formation of L-malate from fumarate	ENSG00000091483
+MDH2	Tricarboxylic acid cycle	7	MDH2: Catalyzes the reversible oxidation of malate to oxaloacetate	ENSG00000146701
+BRP44	Pyruvate transfer	1	BRP44: Mitochondrial pyruvate carrier 2	ENSG00000143158
+BRP44L	Pyruvate transfer	6	BRP44L: Mitochondrial pyruvate carrier 1	ENSG00000060762
+PDHA1	Formation of Acetyl CoA	X	PDHA1: Catalyzes the overall conversion of pyruvate to acetyl-CoA	ENSG00000131828
+PDHA2	Formation of Acetyl CoA	4	PDHA2: Catalyzes the overall conversion of pyruvate to acetyl-CoA	ENSG00000163114
+PDHB	Formation of Acetyl CoA	3	PDHB: Catalyzes the overall conversion of pyruvate to acetyl-CoA	ENSG00000168291
+PDHX	Formation of Acetyl CoA	11	PDHX: Catalyzes the conversion of pyruvate to acetyl coenzyme A	ENSG00000110435
+DLAT	Formation of Acetyl CoA	11	DLAT: Catalyzes the conversion of pyruvate to acetyl coenzyme A	ENSG00000150768
+SLC2A1	Glycolysis	1	SLC2A1: A major glucose transporter in the mammalian blood-brain barrier	ENSG00000117394
+SLC2A2	Glycolysis	3	SLC2A2: Mediates facilitated bidirectional glucose transport of the liver, islet beta cells, intestine, and kidney epithelium	ENSG00000163581
+SLC2A3	Glycolysis	12	SLC2A3: Solute carrier family 2 (facilitated glucose transporter), member 3	ENSG00000059804
+SLC2A4	Glycolysis	17	SLC2A4: Insulin-regulated facilitative glucose transporter	ENSG00000181856
+SLC2A5	Glycolysis	1	SLC2A5: Solute carrier family 2 (facilitated glucose/fructose transporter), member 5	ENSG00000142583
+HK1	Glycolysis	10	HK1: Hexokinases phosphorylate glucose to produce glucose-6-phosphate	ENSG00000156515
+HK2	Glycolysis	2	HK2: Hexokinases phosphorylate glucose to produce glucose-6-phosphate	ENSG00000159399
+HK3	Glycolysis	5	HK3: Hexokinases phosphorylate glucose to produce glucose-6-phosphate	ENSG00000160883
+GCK	Glycolysis	7	GCK: Hexokinases phosphorylate glucose to produce glucose-6-phosphate	ENSG00000106633
+GPI	Glycolysis	19	GPI: Glycolytic enzyme that interconverts glucose-6-phophsate and fructose-6-phosphate	ENSG00000105220
+PFKL	Glycolysis	21	PFKL: Catalyzes the conversion of fructose 6-phosphate to fructose 1,6-bisphosphate	ENSG00000141959
+PFKM	Glycolysis	12	PFKM: Catalyzes the phosphorylation of fructose-6-phosphate to fructose-1,6-bisphosphate	ENSG00000152556
+PFKP	Glycolysis	10	PFKP: Catalyzes the irreversible conversion of fructose-6-phosphate to fructose-1,6-bisphosphate	ENSG00000067057
+ALDOA	Glycolysis	16	ALDOA: Catalyzes the reversible conversion of fructose-1,6-bisphosphate to glyceraldehyde 3-phosphate and dihydroxyacetone phosphate	ENSG00000149925
+ALDOB	Glycolysis	9	ALDOB: Catalyzes the reversible conversion of fructose-1,6-bisphosphate to glyceraldehyde 3-phosphate and dihydroxyacetone phosphate	ENSG00000136872
+ALDOC	Glycolysis	17	ALDOC: Catalyzes the reversible conversion of fructose-1,6-bisphosphate to glyceraldehyde 3-phosphate and dihydroxyacetone phosphate	ENSG00000109107
+TPI1	Glycolysis	12	TPI1: Catalyzes the isomerization of glyceraldehydes 3-phosphate and dihydroxy-acetone phosphate	ENSG00000111669
+GAPDH	Glycolysis	12	GAPDH: Catalyzes the reversible oxidative phosphorylation of glyceraldehyde-3-phosphate and may also inhibit Caspase independent cell death in apoptosis	ENSG00000111640
+GAPDHS	Glycolysis	19	GAPDHS: Catalyzes the reversible oxidative phosphorylation of glyceraldehyde-3-phosphate	ENSG00000105679
+PGK1	Glycolysis	X	PGK1: Catalyzes the conversion of 1,3-diphosphoglycerate to 3-phosphoglycerate	ENSG00000102144
+PGK2	Glycolysis	6	PGK2: Catalyzes the reversible conversion of 1,3-bisphosphoglycerate to 3-phosphoglycerate	ENSG00000170950
+PGAM1	Glycolysis	10	PGAM1: Catalyzes the reversible reaction of 3-phosphoglycerate to 2-phosphoglycerate	ENSG00000171314
+PGAM2	Glycolysis	7	PGAM2: Catalyzes the reversible reaction of 3-phosphoglycerate to 2-phosphoglycerate	ENSG00000164708
+ENO1	Glycolysis	1	ENO1: Catalyzes the dehydration of 2-phosphoglycerate to phosphoenolpyruate	ENSG00000074800
+ENO2	Glycolysis	12	ENO2: Catalyzes the dehydration of 2-phosphoglycerate to phosphoenolpyruate	ENSG00000111674
+ENO3	Glycolysis	17	ENO3: Catalyzes the dehydration of 2-phosphoglycerate to phosphoenolpyruate	ENSG00000108515
+PKLR	Glycolysis	1	PKLR: Catalyzes the transphosphorylation of phohsphoenolpyruvate into pyruvate and ATP	ENSG00000143627
+PKM2	Glycolysis	15	PKM2: Catalyzes the transphosphorylation of phohsphoenolpyruvate into pyruvate and ATP	ENSG00000067225
+LDHAL6B	Glycolysis	15	LDHAL6B: Catalyzes the interconversion of pyruvate to lactate and back	ENSG00000171989
+LDHC	Glycolysis	11	LDHC: Catalyzes the interconversion of pyruvate to lactate and back	ENSG00000166796
+LDHB	Glycolysis	12	LDHB: Catalyzes the interconversion of pyruvate to lactate and back	ENSG00000111716
+LDHA	Glycolysis	11	LDHA: Catalyzes the interconversion of pyruvate to lactate and back	ENSG00000134333
+ACAD9	Electron transport chain	3	ACAD9: Role in the assembly of Complex I and might also be involved in the Fatty acid beta-oxidation	ENSG00000177646
+FOXRED1	Electron transport chain	11	FOXRED1: Complex I assembly factor	ENSG00000110074
+ATPAF1	Electron transport chain	1	ATPAF1: Complex V assembly factor, essential for assembly of alpha + beta heterooligomer	ENSG00000123472
+ATPAF2	Electron transport chain	17	ATPAF2: Complex V assembly factor, essential for assembly of alpha + beta heterooligome	ENSG00000171953
+BCS1L	Electron transport chain	2	BCS1L: Involved in the assembly of complex III of the mitochondrial respiratory chain	ENSG00000074582
+C7orf44	Electron transport chain	7	C7orf44: COA1 Complex IV assembly factor	ENSG00000106603
+CCDC56	Electron transport chain	17	CCDC56: COA3 Complex IV assembly factor	ENSG00000183978
+CHCHD8	Electron transport chain	11	CHCHD8: COA4 Complex IV assembly factor	ENSG00000181924
+COA5	Electron transport chain	2	COA5: Complex IV assembly factor	ENSG00000183513
+C1orf31	Electron transport chain	1	C1orf31: COA6 Complex IV assembly factor	ENSG00000168275
+SELRC1	Electron transport chain	1	SELRC1: COA7 Complex IV assembly factor	ENSG00000162377
+COX10	Electron transport chain	17	COX10: Complex IV assembly factor	ENSG00000006695
+COX11	Electron transport chain	17	COX11: Complex IV assembly factor	ENSG00000166260
+COX14	Electron transport chain	12	COX14: Complex IV assembly factor	ENSG00000178449
+COX15	Electron transport chain	10	COX15: Complex IV assembly factor, may function in the regulation and assembly of the complex	ENSG00000014919
+COX17	Electron transport chain	3	COX17: Complex IV assembly factor, may function in the regulation and assembly of the complex	ENSG00000138495
+COX18	Electron transport chain	4	COX18: Complex IV assembly factor	ENSG00000163626
+COX19	Electron transport chain	7	COX19: Complex IV assembly factor	ENSG00000240230
+COX20	Electron transport chain	1	COX20: Complex IV assembly factor	ENSG00000203667
+ECSIT	Electron transport chain	19	ECSIT: Interactcs with NDUFAF1 and functions in Complex I assembly	ENSG00000130159
+NDUFAF1	Electron transport chain	15	NDUFAF1: Required in the assembly of Complex I	ENSG00000137806
+NDUFAF2	Electron transport chain	5	NDUFAF2: Required in the assembly of Complex I	ENSG00000164182
+NDUFAF3	Electron transport chain	3	NDUFAF3: Required in the assembly of Complex I	ENSG00000178057
+NDUFAF4	Electron transport chain	6	NDUFAF4: Complex I assembly factor required in the assembly of Complex I	ENSG00000123545
+C20orf7	Electron transport chain	20	C20orf7: NDUFAF5 is required for complex I assembly	ENSG00000101247
+C8orf38	Electron transport chain	8	C8orf38: NDUFAF6 important role in the assembly of complex I	ENSG00000156170
+C2orf56	Electron transport chain	2	C2orf56: NDUFAF7 methylates arginine 85 in the NDUFS2 subunit of human complex I	ENSG00000003509
+NUBPL	Electron transport chain	14	NUBPL: Possible role in the delivery of one or more Fe/S clusters to complex I subunits	ENSG00000151413
+SCO1	Electron transport chain	17	SCO1: Complex IV assembly factor, Incorporation of copper atoms in the catalytic sites of the nascent complex	ENSG00000133028
+SCO2	Electron transport chain	22	SCO2: Complex IV assembly factor, involved in the biogenesis of cytochrome c oxidase subunit II	ENSG00000130489
+SDHAF1	Electron transport chain	19	SDHAF1: Essential for complex II assembly	ENSG00000205138
+SDHAF2	Electron transport chain	11	SDHAF2: Required for flavination of a succinate dehydrogenase complex	ENSG00000167985
+SURF1	Electron transport chain	9	SURF1: Complex IV assembly factor, involved in the biogenesis of the cytochrome c oxidase complex	ENSG00000148290
+TMEM126B	Electron transport chain	11	TMEM126B: Component of the mitochondrial complex I assembly complex	ENSG00000171204
+UQCC	Electron transport chain	20	UQCC: Complex III assembly factor, ubiquinol-cytochrome c reductase complex assembly factor 1	ENSG00000101019
+MNF1	Electron transport chain	6	MNF1: Complex III assembly factor, ubiquinol-cytochrome c reductase complex assembly factor 2	ENSG00000137288
+TTC19	Electron transport chain	17	TTC19: Complex III assembly factor	ENSG00000011295
+HCCS	Electron transport chain	X	HCCS: Complex III assembly factor, covalently links a heme group to the apoprotein of cytochrome c	ENSG00000004961
+PTCD2	Electron transport chain	5	PTCD2: Complex III assembly factor, maturation and stabilization of cytochrome b mRNA	ENSG00000049883
+TMEM70	Electron transport chain	8	TMEM70: Complex V assembly factor, may play a role in biogenesis of mitochondrial ATP synthase	ENSG00000175606
+FXN	Fe-S cluster biosynthesis	9	FXN: Functions in regulating mitochondrial iron transport and respiration	ENSG00000165060
+ISCU	Fe-S cluster biosynthesis	12	ISCU: Iron sulphur cluster assembly enzyme, Fe-S cluster intermediate is formed on it	ENSG00000136003
+NFS1	Fe-S cluster biosynthesis	20	NFS1: The sulfide for Fe-S clusters originates from cysteine via the action of NFS1	ENSG00000244005
+LYRM4	Fe-S cluster biosynthesis	6	LYRM4: Assembles with NFS1	ENSG00000214113
+SLC25A37	Fe-S cluster biosynthesis	8	SLC25A37: Functions as an essential iron importer	ENSG00000147454
+SLC25A28	Fe-S cluster biosynthesis	10	SLC25A28: Mitochondrial iron transporter	ENSG00000155287
+FDXR	Fe-S cluster biosynthesis	17	FDXR: Provide reducing equivalents in an electron transfer chain contribute to iron-sulfur cluster biogenesis	ENSG00000161513
+FDX1	Fe-S cluster biosynthesis	11	FDX1: Small iron-sulfur protein, transfers electrons from NADPH to mitochondrial cytochrome P450	ENSG00000137714
+FDX1L	Fe-S cluster biosynthesis	19	FDX1L: Transfers electrons from NADPH to mitochondrial cytochrome P450	ENSG00000267673
+HSCB	Fe-S cluster biosynthesis	22	HSCB: Mitochondrial iron-sulfur cluster co-chaperone	ENSG00000100209
+GLRX5	Fe-S cluster biosynthesis	14	GLRX5: Fe-S cluster transfer protein directly to the apoprotein	ENSG00000182512
+NFU1	Fe-S cluster biosynthesis	2	NFU1: Protein assembles and transfers 4Fe-4S clusters to target apoproteins	ENSG00000169599
+BOLA3	Fe-S cluster biosynthesis	2	BOLA3: Rrole in the biogenesis of iron-sulfur clusters	ENSG00000163170
+FTMT	Fe-S cluster biosynthesis	5	FTMT: Shows ferroxidase activity and binds iron	ENSG00000181867
+ABCB7	Fe-S cluster biosynthesis	X	ABCB7: Exports an sulphur product (X) from the mitochondrial iron sulphor cluster system to cytosol	ENSG00000131269
+NUBP2	Fe-S cluster biosynthesis	16	NUBP2: Required for the assembly of cyotosolic iron-sulfur proteins	ENSG00000095906
+NUBP1	Fe-S cluster biosynthesis	16	NUBP1: Essential for both cytosolic iron-sulfur protein assembly and iron homeostasis	ENSG00000103274
+CIAPIN1	Fe-S cluster biosynthesis	16	CIAPIN1: Facilitates NUBP1 and NUBP2 assembly	ENSG00000005194
+GFER	Fe-S cluster biosynthesis	16	GFER: Facilitates ABCB7 and essential for assembly of cytosolic Fe–S proteins	ENSG00000127554
+ISCA1	Fe-S cluster biosynthesis	9	ISCA1: Involved in the biogenesis and assembly of iron-sulfur clusters	ENSG00000135070
+ISCA2	Fe-S cluster biosynthesis	14	ISCA2: Involved in the maturation of mitochondrial iron-sulfur proteins	ENSG00000165898
+IBA57	Fe-S cluster biosynthesis	1	IBA57: Involved in the maturation of mitochondrial iron-sulfur proteins	ENSG00000181873
+CIAO1	Fe-S cluster biosynthesis	2	CIAO1: Cytosolic Fe-S cluster biogenesis and maturation	ENSG00000144021
+FAM96A	Fe-S cluster biosynthesis	15	FAM96A: Components of the cytosolic Fe/S protein assembly (CIA) machinery	ENSG00000166797
+FAM96B	Fe-S cluster biosynthesis	16	FAM96B: Components of the cytosolic Fe/S protein assembly (CIA) machinery	ENSG00000166595
+MMS19	Fe-S cluster biosynthesis	10	MMS19: Cytosolic Fe/S protein assembly targeting factor	ENSG00000155229
+NARF	Fe-S cluster biosynthesis	17	NARF: Cytosolic Fe-S protein maturation	ENSG00000141562
+MFN1	Mitochondrial Dynamics	3	MFN1: Involved in the mitochondrial fusion, mitofusins dimerize resulting in the tethering of the outer membranes of the fusing mitochondria also involved in the tethering of Endoplasmic reticulum with mitochondria for mitochondrial calcium uptake	ENSG00000171109
+MFN2	Mitochondrial Dynamics	1	MFN2: Involved in the mitochondrial fusion, mitofusins dimerize resulting in the tethering of the outer membranes of the fusing mitochondria also involved in the tethering of Endoplasmic reticulum with mitochondria for mitochondrial calcium uptake	ENSG00000116688
+OPA1	Mitochondrial Dynamics	3	OPA1: Involved in the mitochondrial fusion, initiates inner membrane fusion	ENSG00000198836
+PHB2	Mitochondrial Dynamics	12	PHB2: Involved in the mitochondrial fusion, scaffold proteins PHB2 and STOML2 coordinate stability of the OPA1	ENSG00000215021
+STOML2	Mitochondrial Dynamics	9	STOML2:  Involved in the mitochondrial fusion, scaffold proteins PHB2 and STOML2 coordinate stability of the OPA1	ENSG00000165283
+PINK1	Mitochondrial Dynamics	1	PINK1: Involved in the mitochondrial fusion, PINK1 phosphorylates PARK2 and inturn PARK2 induced ubiquitination of mitofusins may target mitochondria for mitophagy	ENSG00000158828
+PARK2	Mitochondrial Dynamics	6	PARK2: Involved in the mitochondrial fusion, PARK2 induced ubiquitination of mitofusins may target mitochondria for mitophagy	ENSG00000185345
+OPA3	Mitochondrial Dynamics	19	OPA3: Involved in the mitochondrial fusion, Involved in mitochondrial fragmentation, interacts with MFN1	ENSG00000125741
+PARL	Mitochondrial Dynamics	3	PARL: Involved in the mitochondrial fusion, regulates the clevage of OPA1	ENSG00000175193
+SPG7	Mitochondrial Dynamics	16	SPG7: Involved in the mitochondrial fusion, known to maintain the OPA1 isoforms	ENSG00000197912
+AFG3L2	Mitochondrial Dynamics	18	AFG3L2: Involved in the mitochondrial fusion, known to maintain the OPA1 isoforms	ENSG00000141385
+OMA1	Mitochondrial Dynamics	1	OMA1: Involved in the mitochondrial fusion, know to induce proteolytic inactivation of OPA1	ENSG00000162600
+YME1L1	Mitochondrial Dynamics	10	YME1L1: Involved in the mitochondrial fusion, known to cleave OPA1	ENSG00000136758
+PLD6	Mitochondrial Dynamics	17	PLD6: Involved in the mitochondrial fusion, promotes mitofusin-mediated fusion	ENSG00000179598
+MARCH5	Mitochondrial Dynamics	10	MARCH5: Involved in the mitochondrial fusion and fission, control of mitochondrial morphology by regulating MFN2 and DNM1L	ENSG00000198060
+TRAP1	Mitochondrial Dynamics	16	TRAP1: Involved in the mitochonrial fission, known to regulate fission proteins DNM1L and MFF	ENSG00000126602
+DNM1L	Mitochondrial Dynamics	12	DNM1L: Involved in the mitochondrial fission, mediates the division of mitochondria	ENSG00000087470
+MFF	Mitochondrial Dynamics	2	MFF: Involved in the mitochondrial fission, suggested to have roles in recruiting DNM1L	ENSG00000168958
+MIEF1	Mitochondrial Dynamics	22	MIEF1: Involved in the mitochondrial fission, suggested to have roles in recruiting DNM1L	ENSG00000100335
+MIEF2	Mitochondrial Dynamics	17	MIEF2: Involved in the mitochondrial fission, suggested to have roles in recruiting DNM1L	ENSG00000177427
+FIS1	Mitochondrial Dynamics	7	FIS1: Involved in the mitochondrial fission, facilitates binding and assembly of DNM1L	ENSG00000214253
+MTFP1	Mitochondrial Dynamics	22	MTFP1: Involved in the mitochondrial fission, role in mitochondrial fragmentation and is dependent on DNM1L expression	ENSG00000242114
+GDAP1	Mitochondrial Dynamics	8	GDAP1: Involved in the mitochondrial fission, know to have a role in the mitochondrial fragmentation	ENSG00000104381
+SH3GLB1	Mitochondrial Dynamics	1	SH3GLB1: Involved in the mitochondrial fission, proposed to be involved in the lipid remodeling of the outer membrane during fission	ENSG00000097033
+PKIA	Mitochondrial Dynamics	8	PKIA: Involved in the mitochondrial fission, is known to inhibit GTPase activity of DNM1L	ENSG00000171033
+BECN1	Mitochondrial Dynamics	17	BECN1: Involved in the mitophagy, involved in the initiation of autophagy	ENSG00000126581
+AMBRA1	Mitochondrial Dynamics	11	AMBRA1: Involved in the mitophagy, translocates to the mitochondria and facilitate phagophore formation	ENSG00000110497
+BNIP3	Mitochondrial Dynamics	10	BNIP3: Involved in the mitophagy, cause permeabilization of the mitochondrial membrane and also acts as a proapoptotic factor	ENSG00000176171
+BNIP3L	Mitochondrial Dynamics	8	BNIP3L: Involved in the mitophagy, cause permeabilization of the mitochondrial membrane and also regulate mitophagy	ENSG00000104765
+MAP1LC3A	Mitochondrial Dynamics	20	MAP1LC3A: Involved in the mitophagy, interacts with BNIP3 and BNIP3L to remove mitochondria via autophagy	ENSG00000101460
+GABARAP	Mitochondrial Dynamics	17	GABARAP: Involved in the mitophagy, interacts with BNIP3 and BNIP3L to remove mitochondria via autophagy	ENSG00000170296
+SQSTM1	Mitochondrial Dynamics	5	SQSTM1: Involved  in the mitophagy, recruited to mitochondria and binds mitochondrial substrates on the autophagosomes	ENSG00000161011
+RHOT1	Mitochondrial Dynamics	17	RHOT1: Involved in the mitophagy, tethers mitochondria to the tubulin network but phosphorylation by PINK1 results in the disattachment of mitochondria	ENSG00000126858
+RHOT2	Mitochondrial Dynamics	16	RHOT2: Involved in the mitophagy, tethers mitochondria to the tubulin network but phosphorylation by PINK1 results in the disattachment of mitochondria	ENSG00000140983
+KIF5B	Mitochondrial Dynamics	10	KIF5B: Involved in the mitochondrial movement, have role in the mitochondrial distribution in neurons	ENSG00000170759
+KIF1B	Mitochondrial Dynamics	1	KIF1B: Involved in the mitochondrial movement, have role in the mitochondrial distribution in neurons	ENSG00000054523
+DYNLL1	Mitochondrial Dynamics	12	DYNLL1: Involved in the mitochondrial movement, have role in the retrograde mitochondrial movement	ENSG00000088986
+SYBU	Mitochondrial Dynamics	8	SYBU: Involved in the mitochondrial movement, have a role in linking the mitochondria to KIF5B	ENSG00000147642
+TRAK1	Mitochondrial Dynamics	3	TRAK1: Involved in the mitochondrial movement, acts as a adapter linking kinesin-1 to mitochondria	ENSG00000182606
+TRAK2	Mitochondrial Dynamics	2	TRAK2: Involved in the mitochondrial movement, acts as a adapter linking kinesin-1 to mitochondria	ENSG00000115993
+MSTO1	Mitochondrial Dynamics	1	MSTO1: Involved in the regulation of mitochondrial distribution and morphology	ENSG00000125459
+TOMM20	Import & Sorting	1	TOMM20: Outer membrane translocation, recognize presequences on the mitochondrial outer membrane	ENSG00000173726
+TOMM22	Import & Sorting	22	TOMM22: Outer membrane translocation, recognize presequences on the mitochondrial outer membrane	ENSG00000100216
+TOMM40	Import & Sorting	19	TOMM40: Outer membrane translocation, forms the outer membrane channel forming protein	ENSG00000130204
+TOMM40L	Import & Sorting	1	TOMM40L: Outer membrane translocation, forms the outer membrane channel forming protein	ENSG00000158882
+TOMM5	Import & Sorting	9	TOMM5: Outer membrane translocation, transports preprotein to the import pore formed by TOMM40	ENSG00000175768
+TOMM70A	Import & Sorting	3	TOMM70A: Outer membrane translocation, recognizes proteins with internal targeting signals	ENSG00000154174
+TOMM6	Import & Sorting	6	TOMM6: Outer membrane translocation, required for the assembly and stability of the TOM complex	ENSG00000214736
+TOMM7	Import & Sorting	7	TOMM7: Outer membrane translocation, required for the assembly and stability of the TOM complex	ENSG00000196683
+TIMM50	Import & Sorting	19	TIMM50: Inner membrane translocation, guides the preproteins to the import channel formed by TIMM23	ENSG00000105197
+TIMM17A	Import & Sorting	1	TIMM17A: Inner membrane translocation, might influence the channel activity formed by the TIMM23	ENSG00000134375
+TIMM17B	Import & Sorting	X	TIMM17B: Inner membrane translocation, might influence the channel activity formed by the TIMM23	ENSG00000126768
+TIMM23	Import & Sorting	10	TIMM23: Inner membrane translocation, forms the main channel of TIMM23 complex	ENSG00000265354
+TIMM21	Import & Sorting	18	TIMM21: Inner membrane translocation, connects TOMM and TIMM complex and may assist in the release of preprotein from the TOMM complex	ENSG00000075336
+HSPA9	Import & Sorting	5	HSPA9: Presequence translocase associated motor, binds to the preprotein and drives it into the matrix in association with other chaperones and also involved in the mediation of the interaction between VDAC1 and Inositol-1,4,5-triphosphate receptors	ENSG00000113013
+TIMM44	Import & Sorting	19	TIMM44: Presequence translocase associated motor, gets asssociated with the HSPA9 to drive proteins into the matrix	ENSG00000104980
+DNAJC19	Import & Sorting	3	DNAJC19: Presequence translocase associated motor, could stimulate the ATPase activity of HSPA9	ENSG00000205981
+PAM16	Import & Sorting	16	PAM16: Presequence translocase associated motor, controls the activity of DNAJC19	ENSG00000217930
+GRPEL1	Import & Sorting	4	GRPEL1: Presequence translocase associated motor, acts as a nucleotide exchange factor releasing the ADP from HSPA9	ENSG00000109519
+GRPEL2	Import & Sorting	5	GRPEL2: Presequence translocase associated motor, acts as a nucleotide exchange factor releasing the ADP from HSPA9	ENSG00000164284
+TIMM9	Import & Sorting	14	TIMM9: Innermembrane carrier pathway, forms complex with TIMM10 and performs chaperone like activity in the intermembrane space	ENSG00000100575
+TIMM10	Import & Sorting	11	TIMM10: Innermembrane carrier pathway, forms complex with TIMM9 and performs chaperone like activity in the intermembrane space	ENSG00000134809
+TIMM8A	Import & Sorting	X	TIMM8A: Innermembrane carrier pathway, forms complex with TIMM13 and also performs the transfer of inner membrane proteins	ENSG00000126953
+TIMM8B	Import & Sorting	11	TIMM8B: Innermembrane carrier pathway, forms complex with TIMM13 and also performs the transfer of inner membrane proteins	ENSG00000150779
+TIMM13	Import & Sorting	19	TIMM13: Innermembrane carrier pathway, forms complex with TIMM8 and performs the transfer of inner membrane proteins	ENSG00000099800
+TIMM22	Import & Sorting	17	TIMM22: Innermembrane carrier pathway, forms the core channel and inserts proteins into inner membrane	ENSG00000177370
+CHCHD4	Import & Sorting	3	CHCHD4: Intermembrane transport and assembly, acts as a receptor at the inter membrane space and recognizes incoming precursor proteins	ENSG00000163528
+GFER	Import & Sorting	16	GFER: Intermembrane transport and assembly, it is know to oxidize CHCHD4 and then the oxidized CHCHD4 acts as a receptor for the pre proteins	ENSG00000127554
+SAMM50	Import & Sorting	22	SAMM50: Outermembrane sorting and assembly machinary, central component of SAMM complex and inserts beta barrel proteins into the outer membrane	ENSG00000100347
+PMPCA	Import & Sorting	9	PMPCA: Presequence of preproteins are removed by proteolytic enzyme mitochondrial processing peptidase	ENSG00000165688
+PMPCB	Import & Sorting	7	PMPCB: Presequence of preproteins are removed by proteolytic enzyme mitochondrial processing peptidase	ENSG00000105819
+MIPEP	Import & Sorting	13	MIPEP: Secondary cleavage of the pre proteins processed by the mitochondrial processing peptidase	ENSG00000027001
+IMMP1L	Import & Sorting	11	IMMP1L: Inner membrane peptidase that cleaves hydrophobic sorting signal	ENSG00000148950
+IMMP2L	Import & Sorting	7	IMMP2L: Inner membrane peptidase that cleaves hydrophobic sorting signal	ENSG00000184903
+SSBP1	Replication & Transcription	7	SSBP1: Promotes helical destabilization for the DNA helicases and Polymerase gama (POLG) to support mtDNA replication	ENSG00000106028
+C10orf2	Replication & Transcription	10	C10orf2: Mitochondrial DNA (mtDNA) helicase (TWINKLE) plays a important role in the maintenance of mtDNA	ENSG00000107815
+RNASEH1	Replication & Transcription	2	RNASEH1: May have role in the removal of RNA primers at the origin of replication on heavy and light strands	ENSG00000171865
+TOP1MT	Replication & Transcription	8	TOP1MT: Suggested to have a role in the removal of positive supercoils created by helicase activity	ENSG00000184428
+TOP3A	Replication & Transcription	17	TOP3A: May also be present in mitochondrial with the role in the removal of positive supercoils during replication	ENSG00000177302
+LIG3	Replication & Transcription	17	LIG3: involved in the mitochondrial DNA replication and repair	ENSG00000005156
+TERT	Replication & Transcription	5	TERT: Role in the protection of mitochondrial integrity with a suggested role in mt-DNA replication and/or repair	ENSG00000164362
+TFAM	Replication & Transcription	10	TFAM: A key activator of mitochondrial transcription and also functions in replication and repair	ENSG00000108064
+TFB1M	Replication & Transcription	6	TFB1M: Regulates the stability of small subunit of mitochondrial ribosome by its methylation activity. It also plays a very important role in transcription	ENSG00000029639
+TFB2M	Replication & Transcription	1	TFB2M: Essential transcription faactor involved in the transcription of mitochondrial genes	ENSG00000162851
+NRF1	Replication & Transcription	7	NRF1: Regulates the expression of TFB1M and TFB2M which are two mitochondrial transcription factors	ENSG00000106459
+NFE2L2	Replication & Transcription	2	NFE2L2: Regulates the expression of TFB1M and TFB2M which are two mitochondrial transcription factors	ENSG00000116044
+PPARGC1A	Replication & Transcription	4	PPARGC1A: Regulates the expression of TFB1M and TFB2M which are two mitochondrial transcription factors	ENSG00000109819
+POLRMT	Replication & Transcription	19	POLRMT: provides primers for the initiation of replication of the mitochondria genome	ENSG00000099821
+RMRP	Replication & Transcription	9	RMRP: RNA component of mitochondrial RNA processing endoribonuclease: cleaves mitochondrial RNA at the priming site of mitochondrial DNA replication	ENSG00000277027
+UNG	Replication & Transcription	12	UNG: prevent mutagenesis by eliminating uracil from DNA molecules	ENSG00000076248
+OGG1	Replication & Transcription	3	OGG1: responsible for the excision of 8-oxoguanine	ENSG00000114026
+NTHL1	Replication & Transcription	16	NTHL1: Involved in the repair of mispairs in DNA	ENSG00000065057
+MUTYH	Replication & Transcription	1	MUTYH: Involved in the mitochondrial DNA base excision repair	ENSG00000132781
+APEX1	Replication & Transcription	14	APEX1: Involved in the mitochondrial DNA base excision repair	ENSG00000100823
+APEX2	Replication & Transcription	X	APEX2: Involved in the mitochondrial DNA base excision repair	ENSG00000169188
+ENDOG	Replication & Transcription	9	ENDOG: Nuclease which processes the RNA primers for heavy strand replication also has a role in apopptosis where after release from the mitochondria induces nucleosomal DNA fragmentation	ENSG00000167136
+POLG	Replication & Transcription	15	POLG: Mitochondrial DNA polymerasein addition it also shows 3' to 5' exonuclease activity and ensure faithful replication	ENSG00000140521
+POLG2	Replication & Transcription	17	POLG2: Acts as catalytic subunit of mitochondrial DNA polymerase	ENSG00000256525
+MTERF1	Replication & Transcription	7	MTERF1: Mitochondrial transcription termination factor	ENSG00000127989
+MTERF2	Replication & Transcription	12	MTERF2: Mitochondrial transcription termination factor	ENSG00000120832
+MTERF3	Replication & Transcription	8	MTERF3: Mitochondrial transcription termination factor	ENSG00000156469
+MTERF4	Replication & Transcription	2	MTERF4: Mitochondrial transcription termination factor	ENSG00000122085
+TRMT10C	Replication & Transcription	3	TRMT10C: Cleaves the 5' terminus of mitochondrial tRNAs	ENSG00000174173
+KIAA0391	Replication & Transcription	14	KIAA0391: Human mitochondrial tRNA processing enzyme	ENSG00000100890
+HSD17B10	Replication & Transcription	X	HSD17B10: Human mitochondrial tRNA processing enzyme	ENSG00000072506
+ELAC2	Replication & Transcription	17	ELAC2: Endolytic processing the 3' end of tRNA	ENSG00000006744
+TRNT1	Replication & Transcription	3	TRNT1: Mitochondrial CCA adding enzyme, adds CCA sequence to the 3' end of tRNA	ENSG00000072756
+DGOUK	Replication & Transcription	2	DGOUK: Involved in the phosphorylation of recycled deoxyribonucleosides in mitochondria specific for guanosine, adenosine and inosine	ENSG00000114956
+TK2	Replication & Transcription	16	TK2: Involved in the phosphorylation of recycled deoxyribonucleosides in mitochondria specific for thymidine, cytidine and uridine	ENSG00000166548
+NTM5	Replication & Transcription	17	NTM5: Pyrimidine 5', 3' deoxyribonucleotidase that dephosphorylates dTMP	ENSG00000205309
+AK3	Replication & Transcription	9	AK3: Phosphorylates the deoxyribonucleoside mono phosphates specifically on dAMP	ENSG00000147853
+AK4	Replication & Transcription	1	AK4: Phosphorylates the deoxyribonucleoside mono phosphates specifically on dAMP	ENSG00000162433
+CMPK2	Replication & Transcription	2	CMPK2: Phosphorylates the deoxyribonucleoside mono phosphates specifically on dCMP	ENSG00000134326
+NME4	Replication & Transcription	16	NME4: Shows mitochondrial nucleoside diphosphate kinase activity	ENSG00000103202
+SLC25A19	Replication & Transcription	17	SLC25A19: Transports thiamine pyrophosphates into mitochondria	ENSG00000125454
+SLC25A33	Replication & Transcription	1	SLC25A33: Mitochondrial pyrimidine nucleotide carrier	ENSG00000171612
+SLC29A1	Replication & Transcription	6	SLC29A1: Equilibrative nucleoside transporter 1 imports recycled deoxyribonucleosides from cytoplasm into mitochondria	ENSG00000112759
+NME3	Replication & Transcription	16	NME3: Shows mitochondrial nucleoside diphosphate kinase activity	ENSG00000103024
+NME6	Replication & Transcription	3	NME6: Shows mitochondrial nucleoside diphosphate kinase activity	ENSG00000172113
+TRMT11	Replication & Transcription	6	TRMT11: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs	ENSG00000066651
+TRMT112	Replication & Transcription	11	TRMT112: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs	ENSG00000173113
+DUS2L	Replication & Transcription	16	DUS2L: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs	ENSG00000167264
+TRMT1	Replication & Transcription	19	TRMT1: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs	ENSG00000104907
+PUS1	Replication & Transcription	12	PUS1: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs	ENSG00000177192
+RPUSD2	Replication & Transcription	15	RPUSD2: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs	ENSG00000166133
+RPUSD4	Replication & Transcription	11	RPUSD4: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs	ENSG00000165526
+GTPBP3	Replication & Transcription	19	GTPBP3: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs	ENSG00000130299
+MTO1	Replication & Transcription	6	MTO1: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs	ENSG00000135297
+TRMU	Replication & Transcription	22	TRMU: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs	ENSG00000100416
+QTRT1	Replication & Transcription	19	QTRT1: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs	ENSG00000213339
+QTRTD1	Replication & Transcription	3	QTRTD1: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs	ENSG00000151576
+TRMT5	Replication & Transcription	14	TRMT5: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs	ENSG00000126814
+YRDC	Replication & Transcription	1	YRDC: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs	ENSG00000196449
+OSGEPL1	Replication & Transcription	2	OSGEPL1: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs	ENSG00000128694
+TRIT1	Replication & Transcription	1	TRIT1: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs	ENSG00000043514
+CDK5RAP1	Replication & Transcription	20	CDK5RAP1: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs	ENSG00000101391
+CDKAL1	Replication & Transcription	6	CDKAL1: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs	ENSG00000145996
+PUS3	Replication & Transcription	11	PUS3: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs	ENSG00000110060
+NSUN2	Replication & Transcription	5	NSUN2: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs	ENSG00000037474
+TRMT2B	Replication & Transcription	X	TRMT2B: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs	ENSG00000188917
+TRUB2	Replication & Transcription	9	TRUB2: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs	ENSG00000167112
+TRMT6	Replication & Transcription	20	TRMT6: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs	ENSG00000089195
+TRMT61B	Replication & Transcription	2	TRMT61B: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs	ENSG00000171103
+CREB1	Replication & Transcription	2	CREB1: Promotes the transcription of mitochondrial genes	ENSG00000118260
+SLC25A3	Replication & Transcription	12	SLC25A3: Involved in the transport of phosphate into the mitochondrial matrix	ENSG00000075415
+MTPAP	Replication & Transcription	10	MTPAP: Involved in the polyadenylation of mitochondrial tRNAs, rRNAs and mRNAs	ENSG00000107951
+RRM2B	Replication & Transcription	8	RRM2B: Required for the de novo deoxyribonucloetide synthesis in nonproliferating cells supplying dNTPs to mtDNA synthesis	ENSG00000048392
+RARS2	Translation	6	RARS2: Involved in the specific attachment of arginine aminoacid to its cognate tRNA	ENSG00000146282
+CARS2	Translation	13	CARS2: Involved in the specific attachment of cysteine aminoacid to its cognate tRNA	ENSG00000134905
+EARS2	Translation	16	EARS2: Involved in the specific attachment of glutamic acid aminoacid to its cognate tRNA	ENSG00000103356
+IARS2	Translation	1	IARS2: Involved in the specific attachment of isoleucine aminoacid to its cognate tRNA	ENSG00000067704
+LARS2	Translation	3	LARS2: Involved in the specific attachment of leucine aminoacid to its cognate tRNA	ENSG00000011376
+MARS2	Translation	2	MARS2: Involved in the specific attachment of methionine aminoacid to its cognate tRNA	ENSG00000247626
+WARS2	Translation	1	WARS2: Involved in the specific attachment of tryptophan aminoacid to its cognate tRNA	ENSG00000116874
+YARS2	Translation	12	YARS2: Involved in the specific attachment of tyrosine aminoacid to its cognate tRNA	ENSG00000139131
+VARS2	Translation	6	VARS2: Involved in the specific attachment of valine aminoacid to its cognate tRNA	ENSG00000137411
+AARS2	Translation	6	AARS2: Involved in the specific attachment of alanine aminoacid to its cognate tRNA	ENSG00000124608
+NARS2	Translation	11	NARS2: Involved in the specific attachment of asparagine aminoacid to its cognate tRNA	ENSG00000137513
+DARS2	Translation	1	DARS2: Involved in the specific attachment of aspartic acid aminoacid to its cognate tRNA	ENSG00000117593
+GARS	Translation	7	GARS: Involved in the specific attachment of glycine aminoacid to its cognate tRNA	ENSG00000106105
+HARS2	Translation	5	HARS2: Involved in the specific attachment of histidine aminoacid to its cognate tRNA	ENSG00000112855
+KARS	Translation	16	KARS: Involved in the specific attachment of lysine aminoacid to its cognate tRNA	ENSG00000065427
+FARS2	Translation	6	FARS2: Involved in the specific attachment of phenylalanine aminoacid to its cognate tRNA	ENSG00000145982
+PARS2	Translation	1	PARS2: Involved in the specific attachment of proline aminoacid to its cognate tRNA	ENSG00000162396
+SARS2	Translation	19	SARS2: Involved in the specific attachment of serine aminoacid to its cognate tRNA	ENSG00000104835
+TARS2	Translation	1	TARS2: Involved in the specific attachment of threonine aminoacid to its cognate tRNA	ENSG00000143374
+QRSL1	Translation	6	QRSL1: Involved in the biosynthesis of glutamyl-tRNA	ENSG00000130348
+PET112	Translation	4	PET112: Involved in the biosynthesis of glutamyl-tRNA	ENSG00000059691
+GATC	Translation	12	GATC: Involved in the biosynthesis of glutamyl-tRNA	ENSG00000257218
+MTFMT	Translation	15	MTFMT: Involved in the specific attachment of methionine aminoacid to its cognate tRNA	ENSG00000103707
+TUFM	Translation	16	TUFM: Involved in the elongation and termination phases of the translation process	ENSG00000178952
+GFM2	Translation	5	GFM2: Involved in the elongation and termination phases of the translation process may also be involved in the ribosome recycling	ENSG00000164347
+GFM1	Translation	3	GFM1: Involved in the elongation and termination phases of the translation process	ENSG00000168827
+TSFM	Translation	12	TSFM: Involved in the elongation and termination phases of the translation process	ENSG00000123297
+MTRF1	Translation	13	MTRF1: Involved in the mitochondrial translation termination, may act as a release factor	ENSG00000120662
+MTRF1L	Translation	6	MTRF1L: Involved in the mitochondrial translation termination, act as a release factor	ENSG00000112031
+MRRF	Translation	9	MRRF: Acts as a mitochondrial ribosome recycling factor during translation process	ENSG00000148187
+PTCD3	Translation	2	PTCD3: Associates with mitochondrial small ribosomal subunit and regulates translation	ENSG00000132300
+MT-RNR1	Translation	MT	MT-RNR1: mitochondrially encoded 12S RNA	ENSG00000211459
+MT-RNR2	Translation	MT	MT-RNR2: mitochondrially encoded 16S RNA	ENSG00000210082
+MT-TA	Translation	MT	MT-TA: mitochondrially encoded tRNA alanine	ENSG00000210127
+MT-TC	Translation	MT	MT-TC: mitochondrially encoded tRNA cysteine	ENSG00000210140
+MT-TD	Translation	MT	MT-TD: mitochondrially encoded tRNA aspartic acid	ENSG00000210154
+MT-TE	Translation	MT	MT-TE: mitochondrially encoded tRNA glutamic acid	ENSG00000210194
+MT-TF	Translation	MT	MT-TF: mitochondrially encoded tRNA phenylalanine	ENSG00000210049
+MT-TG	Translation	MT	MT-TG: mitochondrially encoded tRNA glycine	ENSG00000210164
+MT-TH	Translation	MT	MT-TH: mitochondrially encoded tRNA histidine	ENSG00000210176
+MT-TI	Translation	MT	MT-TI: mitochondrially encoded tRNA isoleucine	ENSG00000210100
+MT-TK	Translation	MT	MT-TK: mitochondrially encoded tRNA lysine	ENSG00000210156
+MT-TL1	Translation	MT	MT-TL1: mitochondrially encoded tRNA leucine 1 (UUA/G)	ENSG00000209082
+MT-TL2	Translation	MT	MT-TL2: mitochondrially encoded tRNA leucine 2 (CUN)	ENSG00000210191
+MT-TM	Translation	MT	MT-TM: mitochondrially encoded tRNA methionine	ENSG00000210112
+MT-TN	Translation	MT	MT-TN: mitochondrially encoded tRNA asparagine	ENSG00000210135
+MT-TP	Translation	MT	MT-TP: mitochondrially encoded tRNA proline	ENSG00000210196
+MT-TQ	Translation	MT	MT-TQ: mitochondrially encoded tRNA glutamine	ENSG00000210107
+MT-TR	Translation	MT	MT-TR: mitochondrially encoded tRNA arginine	ENSG00000210174
+MT-TS1	Translation	MT	MT-TS1: mitochondrially encoded tRNA serine 1 (UCN)	ENSG00000210151
+MT-TS2	Translation	MT	MT-TS2: mitochondrially encoded tRNA serine 2 (AGU/C)	ENSG00000210184
+MT-TT	Translation	MT	MT-TT: mitochondrially encoded tRNA threonine	ENSG00000210195
+MT-TV	Translation	MT	MT-TV: mitochondrially encoded tRNA valine	ENSG00000210077
+MT-TW	Translation	MT	MT-TW: mitochondrially encoded tRNA tryptophan	ENSG00000210117
+MT-TY	Translation	MT	MT-TY: mitochondrially encoded tRNA tyrosine	ENSG00000210144
+MRPL1	Translation	4	MRPL1: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000169288
+MRPL2	Translation	6	MRPL2: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000112651
+MRPL3	Translation	3	MRPL3: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000114686
+MRPL4	Translation	19	MRPL4: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000105364
+MRPL9	Translation	1	MRPL9: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000143436
+MRPL10	Translation	17	MRPL10: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000159111
+MRPL11	Translation	11	MRPL11: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000174547
+MRPL12	Translation	17	MRPL12: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000262814
+MRPL13	Translation	8	MRPL13: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000172172
+MRPL14	Translation	6	MRPL14: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000180992
+MRPL15	Translation	8	MRPL15: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000137547
+MRPL16	Translation	11	MRPL16: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000166902
+MRPL17	Translation	11	MRPL17: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000158042
+MRPL18	Translation	6	MRPL18: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000112110
+MRPL19	Translation	2	MRPL19: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000115364
+MRPL20	Translation	1	MRPL20: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000242485
+MRPL21	Translation	11	MRPL21: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000197345
+MRPL22	Translation	5	MRPL22: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000082515
+MRPL23	Translation	11	MRPL23: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000214026
+MRPL24	Translation	1	MRPL24: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000143314
+MRPL27	Translation	17	MRPL27: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000108826
+MRPL28	Translation	16	MRPL28: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000086504
+MRPL30	Translation	2	MRPL30: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000185414
+MRPL32	Translation	7	MRPL32: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000106591
+MRPL33	Translation	2	MRPL33: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000243147
+MRPL34	Translation	19	MRPL34: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000130312
+MRPL35	Translation	2	MRPL35: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000132313
+MRPL36	Translation	5	MRPL36: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000171421
+MRPL37	Translation	1	MRPL37: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000116221
+MRPL38	Translation	17	MRPL38: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000204316
+MRPL39	Translation	21	MRPL39: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000154719
+MRPL40	Translation	22	MRPL40: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000185608
+MRPL41	Translation	9	MRPL41: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000182154
+MRPL42	Translation	12	MRPL42: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000198015
+MRPL43	Translation	10	MRPL43: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000055950
+MRPL44	Translation	2	MRPL44: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000135900
+MRPL45	Translation	17	MRPL45: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000278845
+MRPL46	Translation	15	MRPL46: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000259494
+MRPL47	Translation	3	MRPL47: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000136522
+MRPL48	Translation	11	MRPL48: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000175581
+MRPL49	Translation	11	MRPL49: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000149792
+MRPL50	Translation	9	MRPL50: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000136897
+MRPL51	Translation	12	MRPL51: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000111639
+MRPL52	Translation	14	MRPL52: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000172590
+MRPL53	Translation	2	MRPL53: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000204822
+MRPL54	Translation	19	MRPL54: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000183617
+MRPL55	Translation	1	MRPL55: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000162910
+MRPL57	Translation	13	MRPL57: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000173141
+MRPS10	Translation	6	MRPS10: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000048544
+MRPS11	Translation	15	MRPS11: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000181991
+MRPS12	Translation	19	MRPS12: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000128626
+MRPS14	Translation	1	MRPS14: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000120333
+MRPS15	Translation	1	MRPS15: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000116898
+MRPS16	Translation	10	MRPS16: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000182180
+MRPS17	Translation	7	MRPS17: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000239789
+MRPS18A	Translation	6	MRPS18A: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000096080
+MRPS18B	Translation	6	MRPS18B: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000204568
+MRPS18C	Translation	4	MRPS18C: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000163319
+MRPS2	Translation	9	MRPS2: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000122140
+MRPS21	Translation	1	MRPS21: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000266472
+MRPS22	Translation	3	MRPS22: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000175110
+MRPS23	Translation	17	MRPS23: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000181610
+MRPS24	Translation	7	MRPS24: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000062582
+MRPS25	Translation	3	MRPS25: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000131368
+MRPS26	Translation	20	MRPS26: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000125901
+MRPS27	Translation	5	MRPS27: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000113048
+MRPS28	Translation	8	MRPS28: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000147586
+DAP3	Translation	1	DAP3: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000132676
+MRPS30	Translation	5	MRPS30: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000112996
+MRPS31	Translation	13	MRPS31: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000102738
+MRPS33	Translation	7	MRPS33: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000090263
+MRPS34	Translation	16	MRPS34: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000074071
+MRPS35	Translation	12	MRPS35: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000061794
+MRPS36	Translation	5	MRPS36: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000134056
+MRPS5	Translation	2	MRPS5: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000144029
+MRPS6	Translation	21	MRPS6: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000243927
+MRPS7	Translation	17	MRPS7: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000125445
+MRPS9	Translation	2	MRPS9: Mitoribosome which forms a part of mitochondrial translation machinary	ENSG00000135972
+MTIF3	Translation	13	MTIF3: Translation initiation factor could assist the mRNA to bind to rRNAs	ENSG00000122033
+MTIF2	Translation	2	MTIF2: Translation initiation factor could assist the tRNA to bind to rRNAs	ENSG00000085760
+TACO1	Translation	17	TACO1: Translation activator of complex IV subunit	ENSG00000136463
+LRPPRC	Translation	2	LRPPRC: Might play a role in the translation and stability of COX subunits	ENSG00000138095
+RNASEL	Translation	1	RNASEL: Modulate the stability of mitochondrial mRNAsby interacting with MTIF2	ENSG00000135828
+LONP1	Translation	19	LONP1: Involved in the post translational quality control, has re-solublization activity of protein aggregates	ENSG00000196365
+CLPP	Translation	19	CLPP: Involved in the post translational quality control, has re-solublization activity of protein aggregates	ENSG00000125656
+CLPX	Translation	15	CLPX: Quality control of inner membrane proteins	ENSG00000166855
+PHB	Translation	17	PHB: Involved in the post translational quality control, stabilizes mitochondrially synthesized proteins	ENSG00000167085
+OXA1L	Translation	14	OXA1L: May have a role in the insertion of proteins into inner membrane and also a complex V assembly factor	ENSG00000155463
+ATAD3A	Translation	1	ATAD3A: May interact with mitochondrial proteins and is required mitochondrial protein synthesis	ENSG00000197785
+ATAD3B	Translation	1	ATAD3B: May interact with mitochondrial proteins and is required mitochondrial protein synthesis	ENSG00000160072
+MPV17L2	Translation	19	MPV17L2: May be involved in the biogenesis of mitochondrial ribosomes	ENSG00000254858
+DHX30	Translation	3	DHX30: May be involved in the biogenesis of mitochondrial ribosomes	ENSG00000132153
+DDX28	Translation	16	DDX28: May be involved in the biogenesis of mitochondrial ribosomes	ENSG00000182810
+MCU	Calcium trafficking	10	MCU: Involved in the accumulation of calcium ions in the matrix through ion impermeable inner mitochondrial membrane	ENSG00000156026
+SLC24A6	Calcium trafficking	12	SLC24A6: Involved in the calcium homeostasis by counteracting the calcium accumaltion in the mitochondria	ENSG00000089060
+LETM1	Calcium trafficking	4	LETM1: Might act as calcium ion and hydrogen ion antiporter exchanging hydrogen for calcium	ENSG00000168924
+MICU1	Calcium trafficking	10	MICU1: Regulates the mitochodrial calcium uniporter by inhibiting and permitting the calcium depending upon the cytosolic calcium concentrations	ENSG00000107745
+EFHA1	Calcium trafficking	13	EFHA1: Regulates the mitochodrial calcium uniporter by inhibiting and permitting the calcium depending upon the cytosolic calcium concentrations	ENSG00000165487
+CCDC90A	Calcium trafficking	6	CCDC90A: Mitochondrial calcium uniporter regulator 1 required for the MCU dependent calcium uptake by the mitochondria 	ENSG00000050393
+EFHA2	Calcium trafficking	8	EFHA2: Regulates the mitochodrial calcium uniporter by inhibiting and permitting the calcium depending upon the cytosolic calcium concentrations	ENSG00000155970
+CCDC109B	Calcium trafficking	4	CCDC109B: Forms a important component of mitochondrial calcium uniporter with MCU	ENSG00000005059
+C22orf32	Calcium trafficking	22	C22orf32: Forms a important component of mitochondrial calcium uniporter with MCU	ENSG00000183172
+ITPR3	Calcium trafficking	6	ITPR3: Component of the Inositol-1,4,5-triphosphate receptors channels used for the fluxes of Ca2+ from ER to mitochondria	ENSG00000096433
+ITPR2	Calcium trafficking	12	ITPR2: Component of the Inositol-1,4,5-triphosphate receptors channels used for the fluxes of Ca2+ from ER to mitochondria	ENSG00000123104
+ITPR1	Calcium trafficking	3	ITPR1: Component of the Inositol-1,4,5-triphosphate receptors channels used for the fluxes of Ca2+ from ER to mitochondria	ENSG00000150995
+TCHP	Calcium trafficking	12	TCHP: Involved in the regulation of ER mitochondria juxtaposition 	ENSG00000139437
+SIGMAR1	Calcium trafficking	9	SIGMAR1: Stabilises the Inositol-1,4,5-triphosphate receptors and ensures proper Ca2+ fluxes	ENSG00000147955
+PACS2	Calcium trafficking	14	PACS2: Involved in the control of ER mitochondria appositions 	ENSG00000179364
+PML	Calcium trafficking	15	PML: Regulates Inositol-1,4,5-triphosphate receptor mediated Ca2+ release from the ER	ENSG00000140464
+CDS1	Cardiolipin biosynthesis	4	CDS1: Converts phosphatidic acid to cytidine diphosphate diacylglycerol	ENSG00000163624
+PGS1	Cardiolipin biosynthesis	17	PGS1: Phosphatidylglycerol synthase converts cytidine diphosphate diacylglycerol to phosphatidylglycerol phosphate	ENSG00000087157
+PTPMT1	Cardiolipin biosynthesis	11	PTPMT1: Phosphatidylglycerophosphatase activity removes phospate from phosphatidylglycerol phosphate to form phosphatidylglycerol	ENSG00000110536
+CRLS1	Cardiolipin biosynthesis	20	CRLS1: Catalyzes the condensation of cytidine diphosphate diacylglycerol and phosphatidylglycerol forming a nascent cardiolipin	ENSG00000088766
+TAZ	Cardiolipin biosynthesis	X	TAZ: Converts the nascent cardiolipin to mature cardiolipin	ENSG00000102125
+GCLC	ROS defense	6	GCLC: Catalyzes the first step reaction which combines cystein and glutamate to form glutamylcysteine	ENSG00000001084
+GCLM	ROS defense	1	GCLM: Catalyzes the first step reaction which combines cystein and glutamate to form glutamylcysteine	ENSG00000023909
+GSS	ROS defense	20	GSS: Catalyzes the formation of gluthathione from glutamylcysteine by combining it with the glycine	ENSG00000100983
+SCLC25A11	ROS defense	17	SLC25A11: May be involved in the transport of gluthathione into the mitochondria	ENSG00000108528
+SCLC25A10	ROS defense	17	SLC25A10: May be involved in the transport of gluthathione into the mitochondria	ENSG00000183048
+SLC25A1	ROS defense	22	SLC25A1: May be involved in the transport of gluthathione into the mitochondria	ENSG00000100075
+SOD2	ROS defense	6	SOD2: Dismutates the super oxide generated in the mitochondiral matrix to hydrogen peroxide	ENSG00000112096
+SOD1	ROS defense	21	SOD1: May be involved in the removal of superoxides in the inter membrane space of mitochondria	ENSG00000142168
+SHC1	ROS defense	1	SHC1: Could be involved in the generation of the hydrogen peroxide independent of superoxides in mitochondria	ENSG00000160691
+BCKDHA	ROS defense	19	BCKDHA: Involved in the catabolism of aminoacids in mitochondria and may also be involved in the production of superoxides and hydrogen peroxide	ENSG00000248098
+BCKDHB	ROS defense	6	BCKDHB: Involved in the catabolism of aminoacids in mitochondria and may also be involved in the production of superoxides and hydrogen peroxide	ENSG00000083123
+GPX1	ROS defense	3	GPX1: Reduces hydrogen peroxide to water by using reducing equivalents from gluthathione	ENSG00000233276
+GSR	ROS defense	8	GSR: Reduces oxidized gluthathione to gluthathione which can be re utilized by GPX1	ENSG00000104687
+GPX4	ROS defense	19	GPX4: Involved in the reduction of the lipid peroxides to their hydroxides	ENSG00000167468
+PRDX3	ROS defense	10	PRDX3: Mitochondrial peroxiredoxin reduces hydrogen peroxide to water	ENSG00000165672
+TXN2	ROS defense	22	TXN2: Mitochondrial thioredoxin reduces peroxiredoxin to their super oxide scavenging state	ENSG00000100348
+TXNRD2	ROS defense	22	TXNRD2: Maintains thioredoxins in their reduced state using NAPDH reducing equivalents	ENSG00000184470
+MPV17	ROS defense	2	MPV17: May have a role in the metabolism of reactive oxygen species	ENSG00000115204
+MPV17L	ROS defense	16	MPV17L: May have a role in the metabolism of reactive oxygen species	ENSG00000156968
+GLRX2	ROS defense	1	GLRX2: Involved in the control of mitochndrial protein gluthathionylation	ENSG00000023572
+GSTA1	ROS defense	6	GSTA1: Mitochondrial gluthathione-S-transferases through gluthothione conjugation or proxide reduction detoxify harmful byproducts	ENSG00000243955
+GSTA2	ROS defense	6	GSTA2: Mitochondrial gluthathione-S-transferases through gluthothione conjugation or proxide reduction detoxify harmful byproducts	ENSG00000244067
+GSTA4	ROS defense	6	GSTA4: Mitochondrial gluthathione-S-transferases through gluthothione conjugation or proxide reduction detoxify harmful byproducts	ENSG00000170899
+GSTP1	ROS defense	11	GSTP1: Mitochondrial gluthathione-S-transferases through gluthothione conjugation or proxide reduction detoxify harmful byproducts	ENSG00000084207

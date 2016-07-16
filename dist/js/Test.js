@@ -701,7 +701,6 @@ SP.onMouseOverNode = function(node){
     //Init tooltip if hover over gene
     if(!_.isUndefined(node.gene))
         $('.tip').append(tipTemplate(node));
-    console.log(node);
     
     highlight(node.gene);
 
@@ -764,26 +763,7 @@ module.exports = Backbone.View.extend({
 });
 
 },{"./templates":9}],7:[function(require,module,exports){
-$(document).ready(function(){
-
-$("#navbar li").click(function(e){
-    $("#navbar li").prop('class','');
-    $(this).toggleClass('active');
-    
-    if ($(this).text() == "PCA"){
-        document.getElementById("scatterplot").style.display="none";
-        document.getElementById("barchart").style.display="none";
-        document.getElementById("heatmap").style.display="none";
-        document.getElementById("pca").style.display="";
-    }
-    
-    if ($(this).text() == "Scatter plot"){
-        document.getElementById("scatterplot").style.display="";
-        document.getElementById("barchart").style.display="";
-        document.getElementById("heatmap").style.display="";
-        document.getElementById("pca").style.display="none";
-    }
-});    
+$(document).ready(function(){   
     
 $("#folders").on('change',function(){
    updateFolder();
@@ -894,7 +874,6 @@ function parse(urls, errorcb, datacb,colorrange){
     
     var funcs = _.map(urls, axios.get);
     
-    console.log(urls.length);
     if (urls.length === 0) errorcb(new Error('Add samples!'));
     if (urls.length > 6) errorcb(new Error('No more than 6 samples!'));
     if (colorrange === "") errorcb(new Error('Pick color!'));
@@ -965,7 +944,7 @@ Handlebars = glob.Handlebars || require('handlebars');
 this["Templates"] = this["Templates"] || {};
 
 this["Templates"]["main"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<!-- Page Content -->        <div class=\"container main\">\n        <div id=\"#wrapUp\" class=\"row\">\n            \n        <div class=\"col-md-2\">\n        	<div class=\"row\">\n            	<div class=\"col-md-12 title\" style=\"margin-top:20px;\">\n	            Data Sets\n	            </div>\n	            <div class=\"col-md-12\" style=\"margin-top:10px;\">\n	            <select class=\"selectpicker\" id=\"folders\" data-style=\"btn-default\" id=\"selection1\" title=\"Pick dataset\" data-width=\"175px\" >\n	                <option value='./data/TCGA'>TCGA</option>\n	                <option value=\"./data/aneuploidy\">Aneuploidy</option>\n	                <option value='./data/viral'>Viral</option>\n	                <option value='./data/trisomy'>Trisomy</option>\n	                <option value='./data/user_uploads/json_files'>User Uploads</option>\n	            </select> \n	            </div>\n	           \n	            <div class=\"col-md-12\" style=\"margin-top:10px;\">\n	            <select class=\"selectpicker\" MULTIPLE id=\"files\" data-style=\"btn-default\" id=\"selection1\" title=\"Pick samples\" data-width=\"175px\" data-actions-box=\"true\" data-selected-text-format=\"static\">\n	            </select> \n	            </div>\n\n	            <div class=\"col-md-12\" style=\"margin-top:10px\">\n	            <select SIZE=\"6\" MULTIPLE id=\"selected-sample\" style=\"width: 175px;font-size: 14px\">\n	            </select>\n	            </div>\n	            \n	            <div class=\"col-md-12\" style=\"margin-top:10px;text-align:right\">\n	            <button id = \"delete-selected\" class=\"btn btn-xs btn-default\"><span class=\"glyphicon glyphicon-remove\" aria-hidden=\"true\"></span> Remove</button>\n	            <button id = \"clear-all\" class=\"btn btn-xs btn-danger\"><span class=\"glyphicon glyphicon-trash\" aria-hidden=\"true\"></span> Clear</button>\n	            </div>\n	            \n	            <div class=\"col-md-12\" id=\"warning\" style=\"margin-top:10px\"></div>\n	    \n	            <div class=\"col-md-12\" style=\"margin-top:20px;text-align: center\">\n	            <button id = \"compareButton\" class=\"btn btn-success\">compare</button>\n	            </div>\n            	<div class=\"col-md-12\"><hr></div>\n            </div>\n            <div class=\"row tip\" style=\"margin-top:20px;\"></div>\n        </div>\n        \n        <div class=\"col-md-10\">\n            <div id = \"nav_bar\">\n                <ul class=\"nav nav-tabs\" id = \"navbar\" >\n                  <li class=\"active\"><a href=\"#\">Scatter plot</a></li>\n                  <li><a href=\"#\">PCA</a></li>\n                  <li><a href=\"#\">Don't click me</a></li>\n                </ul>\n            </div>\n            <div id = \"svgs-all\">\n                <div id=\"scatterplot\" class=\"col-md-9\"></div>\n                <div id=\"pca\" class=\"col-md-9\" style=\"display:none\">\n<canvas id=\"pcacanvas\"></canvas>\n</div>\n                <div id=\"barchart\" class=\"col-md-3\"></div>\n                <div id=\"heatmap\" class=\"col-md-12\"></div>\n            </div>\n            \n        </div>\n        </div>\n        </div>";
+    return "<!-- Page Content -->        <div class=\"container main\">\n        <div id=\"#wrapUp\" class=\"row\">\n            \n        <div class=\"col-md-2\">\n        	<div class=\"row\">\n            	<div class=\"col-md-12 title\" style=\"margin-top:20px;\">\n	            Data Sets\n	            </div>\n	            <div class=\"col-md-12\" style=\"margin-top:10px;\">\n	            <select class=\"selectpicker\" id=\"folders\" data-style=\"btn-default\" id=\"selection1\" title=\"Pick dataset\" data-width=\"175px\" >\n	                <option value='./data/TCGA'>TCGA</option>\n	                <option value='./data/user_uploads/json_files'>User Uploads</option>\n	            </select> \n	            </div>\n	           \n	            <div class=\"col-md-12\" style=\"margin-top:10px;\">\n	            <select class=\"selectpicker\" MULTIPLE id=\"files\" data-style=\"btn-default\" id=\"selection1\" title=\"Pick samples\" data-width=\"175px\" data-actions-box=\"true\" data-selected-text-format=\"static\">\n	            </select> \n	            </div>\n\n	            <div class=\"col-md-12\" style=\"margin-top:10px\">\n	            <select SIZE=\"6\" MULTIPLE id=\"selected-sample\" style=\"width: 175px;font-size: 14px\">\n	            </select>\n	            </div>\n	            \n	            <div class=\"col-md-12\" style=\"margin-top:10px;text-align:right\">\n	            <button id = \"delete-selected\" class=\"btn btn-xs btn-default\"><span class=\"glyphicon glyphicon-remove\" aria-hidden=\"true\"></span> Remove</button>\n	            <button id = \"clear-all\" class=\"btn btn-xs btn-danger\"><span class=\"glyphicon glyphicon-trash\" aria-hidden=\"true\"></span> Clear</button>\n	            </div>\n	            \n	            <div class=\"col-md-12\" id=\"warning\" style=\"margin-top:10px\"></div>\n	    \n	            <div class=\"col-md-12\" style=\"margin-top:20px;text-align: center\">\n	            <button id = \"compareButton\" class=\"btn btn-success\">compare</button>\n	            </div>\n            	<div class=\"col-md-12\"><hr></div>\n            </div>\n            <div class=\"row tip\" style=\"margin-top:20px;\"></div>\n        </div>\n        \n        <div class=\"col-md-10\">\n            <div id = \"svgs-all\">\n                <div id=\"scatterplot\" class=\"col-md-9\"></div>\n                <div id=\"pca\" class=\"col-md-9\" style=\"display:none\">\n<canvas id=\"pcacanvas\"></canvas>\n</div>\n                <div id=\"barchart\" class=\"col-md-3\"></div>\n                <div id=\"heatmap\" class=\"col-md-12\"></div>\n            </div>\n            \n        </div>\n        </div>\n        </div>";
 },"useData":true});
 
 /*this["Templates"]["result"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
@@ -1032,11 +1011,10 @@ if (typeof exports === 'object' && exports) {module.exports = this["Templates"];
 var d3 = require('d3');
 
 //Modules
-//var colorpicker = require('./js/colorpicker.js');
+//var colorpicker = 
 var SP = require('../svgs/scatterplot.js');
 var BC = require('../svgs/barchart.js');
 var heatmap = require('../svgs/heatmap.js');
-//var pcPlot = require('../svgs/pcPlot.js');
 var parser = require('./parser.js');
 var exist = false;
 
@@ -1070,7 +1048,6 @@ d3.select('#compareButton').on('click', compareData);
 
 function compareData(){
         var select = document.getElementById('selected-sample');
-        //var arr = ['./data/TCGA/A0BM.json','./data/TCGA/A0DV.json','./data/TCGA/A0HK.json','./data/TCGA/neg3-A0B3.json','./data/TCGA/neg3-A0E0.json','./data/TCGA/neg3-A18V.json'];
         var arr = [];
         for (i = 0; i < select.options.length; i++) {
            arr[i] = select.options[i].value;
@@ -1078,13 +1055,11 @@ function compareData(){
         exist = !!document.getElementById("x-axis");
         
         var colorrange = "#d73027,#f46d43,#fdae61,#fee08b,#ffffbf,#d9ef8b,#a6d96a,#66bd63,#1a9850";
-        //var colorrange = d3.select('#colorinput').property("value");
+
         parser.parse(arr, onError, onSuccess,colorrange);
-        //pcPlot.init();
 }
 
 
-//compareData();
 
 var vis = function(){};
 
