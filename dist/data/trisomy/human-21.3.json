@@ -11,56 +11,56 @@
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "human-21.3",
     "log2": 0.698797448301763,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACAA2",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "human-21.3",
     "log2": 0.0637230621664071,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACAD10",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "human-21.3",
     "log2": 0.0802450569991385,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACAD11",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "human-21.3",
     "log2": 1.79193542972708,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACAD8",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "human-21.3",
     "log2": -0.107460471013989,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACAD9",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": -0.051285308053003,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACADM",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "human-21.3",
     "log2": 1.04438775753983,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACADS",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "human-21.3",
     "log2": -0.546275174181889,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACADSB",
@@ -74,35 +74,35 @@
     "process": "Fatty acid beta-oxidation",
     "sampleID": "human-21.3",
     "log2": 0.245101760716231,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACO2",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "human-21.3",
     "log2": -0.43967246715378,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSBG1",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "human-21.3",
     "log2": 1.14807841732994,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSBG2",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "human-21.3",
     "log2": 0.793756631367072,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSL1",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "human-21.3",
     "log2": 0.543226702869766,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSL3",
@@ -116,70 +116,70 @@
     "process": "Fatty acid beta-oxidation",
     "sampleID": "human-21.3",
     "log2": 1.56985767216021,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSL5",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "human-21.3",
     "log2": 1.06974844208757,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSL6",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "human-21.3",
     "log2": 0.945759724812118,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSM3",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "human-21.3",
     "log2": 1.5028724426064,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSS1",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "human-21.3",
     "log2": 0.0640033765234351,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSS2",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "human-21.3",
     "log2": -0.204295754377121,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSS3",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "human-21.3",
     "log2": 1.98568590922487,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "AFG3L2",
     "process": "Mitochondrial Dynamics",
     "sampleID": "human-21.3",
     "log2": 0.290874182696485,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "AIFM1",
     "process": "Apoptosis",
     "sampleID": "human-21.3",
     "log2": 0.35498980472053,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "AK3",
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": 1.23531125709376,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "AK4",
@@ -200,77 +200,77 @@
     "process": "Heme Biosynthesis",
     "sampleID": "human-21.3",
     "log2": -0.429922997953325,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ALDOA",
     "process": "Glycolysis",
     "sampleID": "human-21.3",
     "log2": -0.560308629359473,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ALDOC",
     "process": "Glycolysis",
     "sampleID": "human-21.3",
     "log2": 0.0322143229290371,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "AMBRA1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "human-21.3",
     "log2": -0.272035711391244,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ANP32A",
     "process": "Apoptosis",
     "sampleID": "human-21.3",
     "log2": 0.923843930307382,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "APAF1",
     "process": "Apoptosis",
     "sampleID": "human-21.3",
     "log2": 1.28155047308122,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "APEX1",
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": -0.0111635153931998,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "APEX2",
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": -0.479866409454921,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ARG1",
     "process": "Urea Cycle",
     "sampleID": "human-21.3",
     "log2": 0.909233848787002,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ARG2",
     "process": "Urea Cycle",
     "sampleID": "human-21.3",
     "log2": 0.955979567129992,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ASL",
     "process": "Urea Cycle",
     "sampleID": "human-21.3",
     "log2": -0.278152006349461,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ASS1",
@@ -284,28 +284,28 @@
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": -0.539616266094271,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATAD3B",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": -0.523446558735248,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5A1",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.35177465985893,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5B",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": -0.147334872635668,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5C1",
@@ -319,21 +319,21 @@
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": -0.524371388664957,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5E",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 1.07451597726821,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5F1",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.957875246081369,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5G1",
@@ -347,7 +347,7 @@
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": -0.19974828197085,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5G3",
@@ -361,42 +361,42 @@
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 1.0393397398368,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5I",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.739745696716953,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5J",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 1.31502897848243,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5J2",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.0561506285847948,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5L",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.268063962327312,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5O",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 1.51814086873466,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATPAF1",
@@ -410,14 +410,14 @@
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": -0.235878262948712,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATPIF1",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.708689747718841,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BAD",
@@ -431,21 +431,21 @@
     "process": "Apoptosis",
     "sampleID": "human-21.3",
     "log2": -0.729199568433184,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BAX",
     "process": "Apoptosis",
     "sampleID": "human-21.3",
     "log2": -0.301704501144462,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BBC3",
     "process": "Apoptosis",
     "sampleID": "human-21.3",
     "log2": 0.114940339962239,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BCKDHB",
@@ -459,28 +459,28 @@
     "process": "Apoptosis",
     "sampleID": "human-21.3",
     "log2": 0.115684726254432,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BCL2L1",
     "process": "Apoptosis",
     "sampleID": "human-21.3",
     "log2": -0.802692818592784,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BCL2L11",
     "process": "Apoptosis",
     "sampleID": "human-21.3",
     "log2": -0.065047030144471,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BCS1L",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": -0.475126850163413,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BECN1",
@@ -494,14 +494,14 @@
     "process": "Apoptosis",
     "sampleID": "human-21.3",
     "log2": 0.220441590698578,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BNIP3",
     "process": "Mitochondrial Dynamics",
     "sampleID": "human-21.3",
     "log2": 0.979500622839151,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BNIP3L",
@@ -515,14 +515,14 @@
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "human-21.3",
     "log2": 0.776008783216901,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "C10orf2",
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": -0.640093053654599,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CARS2",
@@ -550,84 +550,84 @@
     "process": "Apoptosis",
     "sampleID": "human-21.3",
     "log2": -0.00132376733964547,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CCDC109B",
     "process": "Calcium trafficking",
     "sampleID": "human-21.3",
     "log2": 0.120480392856079,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CD36",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "human-21.3",
     "log2": -0.0542402751878836,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CDK1",
     "process": "Apoptosis",
     "sampleID": "human-21.3",
     "log2": 1.06157836811008,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CDK5RAP1",
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": -0.0758860262462838,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CDKAL1",
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": 0.542754781028169,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CDS1",
     "process": "Cardiolipin biosynthesis",
     "sampleID": "human-21.3",
     "log2": 2.11568472625443,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CHCHD4",
     "process": "Import & Sorting",
     "sampleID": "human-21.3",
     "log2": 0.258805898813734,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CIAO1",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "human-21.3",
     "log2": 0.0349750132807211,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CIAPIN1",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "human-21.3",
     "log2": -0.398966952172006,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CLPP",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": -0.586039242592037,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CLPX",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 1.22354707885777,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COA5",
@@ -641,28 +641,28 @@
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.165992422630128,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX11",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 1.14466788360508,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX14",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.178515315681608,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX15",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.443313611764793,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX17",
@@ -676,21 +676,21 @@
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.775580705402621,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX19",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": -0.0628688597658152,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX20",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 1.84618649623677,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX4I1",
@@ -704,77 +704,77 @@
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": -0.212568214540832,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX5B",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.101624811638226,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX6A1",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.170624425145936,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX6B1",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.184110978672621,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX6B2",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 1.37202447951421,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX6C",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 1.54541777710789,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX7A1",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": -0.663219657027575,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX7A2",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.458867323231967,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX7B",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 1.10707159594972,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX7C",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.808200994838557,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX8A",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": -0.362323340569013,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CPOX",
@@ -795,35 +795,35 @@
     "process": "Fatty acid beta-oxidation",
     "sampleID": "human-21.3",
     "log2": -0.637519051960963,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CPT1B",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "human-21.3",
     "log2": 0.723012615080302,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CPT1C",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "human-21.3",
     "log2": -0.0611899910354569,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CPT2",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "human-21.3",
     "log2": 0.26604849683286,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CRAT",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "human-21.3",
     "log2": -0.293250855413501,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CREB1",
@@ -844,56 +844,56 @@
     "process": "Tricarboxylic acid cycle",
     "sampleID": "human-21.3",
     "log2": -0.548718840924382,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CYC1",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": -0.615034662606805,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CYCS",
     "process": "Apoptosis",
     "sampleID": "human-21.3",
     "log2": 1.48558169154703,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DAP3",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 0.386424314053879,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DARS2",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": -0.00830224123822579,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DDX28",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": -0.966275904487923,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DECR1",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "human-21.3",
     "log2": 1.26098971359098,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DHX30",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": -0.718907939171684,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DIABLO",
@@ -928,35 +928,35 @@
     "process": "Import & Sorting",
     "sampleID": "human-21.3",
     "log2": 1.08020101331123,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DNM1",
     "process": "Apoptosis",
     "sampleID": "human-21.3",
     "log2": -0.412361869068973,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DNM1L",
     "process": "Mitochondrial Dynamics",
     "sampleID": "human-21.3",
     "log2": 1.50512627605255,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DYNLL1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "human-21.3",
     "log2": 0.664321827801487,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "EARS2",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": -0.0611392057564913,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ECHS1",
@@ -970,42 +970,42 @@
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": -0.396570162316244,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "EIF3M",
     "process": "Apoptosis",
     "sampleID": "human-21.3",
     "log2": 1.15514504039313,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ELAC2",
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": -0.312340973669934,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ENDOG",
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": -0.619970220498549,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ENO1",
     "process": "Glycolysis",
     "sampleID": "human-21.3",
     "log2": -0.650904061057615,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ENO2",
     "process": "Glycolysis",
     "sampleID": "human-21.3",
     "log2": -0.483555574715335,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ENO3",
@@ -1019,133 +1019,133 @@
     "process": "Fatty acid beta-oxidation",
     "sampleID": "human-21.3",
     "log2": 0.604084869738757,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FABP4",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "human-21.3",
     "log2": 2.60872473753455,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FABP5",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "human-21.3",
     "log2": 0.286533880595481,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FABP6",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "human-21.3",
     "log2": -1.19174379893782,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FAM96A",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "human-21.3",
     "log2": 1.38235578945006,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FAM96B",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "human-21.3",
     "log2": -0.207652063028268,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FARS2",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 0.259237255109648,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FDX1",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "human-21.3",
     "log2": 0.556246810985587,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FDXR",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "human-21.3",
     "log2": -0.0380823135362139,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FECH",
     "process": "Heme Biosynthesis",
     "sampleID": "human-21.3",
     "log2": 0.1871918761607,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FH",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "human-21.3",
     "log2": 0.616589049109869,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FIS1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "human-21.3",
     "log2": -0.144970574441416,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FOXRED1",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": -0.257645563513087,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FXN",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "human-21.3",
     "log2": 0.094837941348824,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GABARAP",
     "process": "Mitochondrial Dynamics",
     "sampleID": "human-21.3",
     "log2": -0.0118317832606857,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GAPDH",
     "process": "Glycolysis",
     "sampleID": "human-21.3",
     "log2": -0.346119645217595,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GAPDHS",
     "process": "Glycolysis",
     "sampleID": "human-21.3",
     "log2": 0.0035302569067462,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GARS",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 0.510374617489987,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GCK",
     "process": "Glycolysis",
     "sampleID": "human-21.3",
     "log2": -0.0542402751878818,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GCLC",
@@ -1159,7 +1159,7 @@
     "process": "ROS defense",
     "sampleID": "human-21.3",
     "log2": 0.326283262789579,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GDAP1",
@@ -1173,7 +1173,7 @@
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "human-21.3",
     "log2": -0.480629078849842,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GFM1",
@@ -1187,7 +1187,7 @@
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 1.38470250628924,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GLRX2",
@@ -1201,63 +1201,63 @@
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "human-21.3",
     "log2": 0.0500194110141546,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GOT2",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "human-21.3",
     "log2": -0.288438380443632,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GPI",
     "process": "Glycolysis",
     "sampleID": "human-21.3",
     "log2": -0.501937301007248,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GPX1",
     "process": "ROS defense",
     "sampleID": "human-21.3",
     "log2": -0.87690363020609,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GPX4",
     "process": "ROS defense",
     "sampleID": "human-21.3",
     "log2": -0.163757510100425,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GRPEL1",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "human-21.3",
     "log2": 0.184233308328158,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GRPEL2",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "human-21.3",
     "log2": 1.37335575922457,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GSR",
     "process": "ROS defense",
     "sampleID": "human-21.3",
     "log2": -0.275696995459714,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GSS",
     "process": "ROS defense",
     "sampleID": "human-21.3",
     "log2": -0.239418095502019,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GSTA4",
@@ -1278,168 +1278,168 @@
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": -0.492361387579769,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HADH",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "human-21.3",
     "log2": 0.0803843920701016,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HADHA",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "human-21.3",
     "log2": 0.239390027679064,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HADHB",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "human-21.3",
     "log2": 0.193537464568482,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HARS2",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 0.514959976393979,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HCCS",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.364340480168095,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HK1",
     "process": "Glycolysis",
     "sampleID": "human-21.3",
     "log2": -0.635467235881193,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HK2",
     "process": "Glycolysis",
     "sampleID": "human-21.3",
     "log2": 0.364629775812985,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HSCB",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "human-21.3",
     "log2": 1.09453891738288,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HSD17B10",
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": -0.364943383609443,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HSPA9",
     "process": "Import & Sorting",
     "sampleID": "human-21.3",
     "log2": 0.608897973295425,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HTRA2",
     "process": "Apoptosis",
     "sampleID": "human-21.3",
     "log2": -0.16097303845531,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "IARS2",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 0.789553733691437,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "IBA57",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "human-21.3",
     "log2": -0.172627572409468,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "IDH1",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "human-21.3",
     "log2": 1.05322761487032,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "IDH2",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "human-21.3",
     "log2": -0.554299892170384,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "IDH3A",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "human-21.3",
     "log2": 1.1060271023777,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "IDH3B",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "human-21.3",
     "log2": -0.190335181489058,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "IDH3G",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "human-21.3",
     "log2": -0.433137384979507,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "IMMP1L",
     "process": "Import & Sorting",
     "sampleID": "human-21.3",
     "log2": 0.91909177435004,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "IMMP2L",
     "process": "Import & Sorting",
     "sampleID": "human-21.3",
     "log2": 1.66674302043647,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ISCA1",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "human-21.3",
     "log2": 1.14317162257765,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ISCA2",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "human-21.3",
     "log2": 0.201427593611525,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ISCU",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "human-21.3",
     "log2": 1.03717047067206,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ITPR1",
@@ -1460,14 +1460,14 @@
     "process": "Calcium trafficking",
     "sampleID": "human-21.3",
     "log2": 0.00673624784549035,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "KARS",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 0.635217635513137,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "KIAA0391",
@@ -1488,14 +1488,14 @@
     "process": "Mitochondrial Dynamics",
     "sampleID": "human-21.3",
     "log2": 1.4634423188464,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "LARS2",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": -0.130544879219976,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "LDHA",
@@ -1509,224 +1509,224 @@
     "process": "Glycolysis",
     "sampleID": "human-21.3",
     "log2": 0.88085426177527,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "LETM1",
     "process": "Calcium trafficking",
     "sampleID": "human-21.3",
     "log2": -0.551728683951655,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "LIG3",
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": -0.0036597180279055,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "LONP1",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": -0.631662386987904,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "LRPPRC",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 1.36058188040209,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "LYRM4",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "human-21.3",
     "log2": 0.277285678457833,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MAP1LC3A",
     "process": "Mitochondrial Dynamics",
     "sampleID": "human-21.3",
     "log2": -0.449391279180535,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MAPK1",
     "process": "Apoptosis",
     "sampleID": "human-21.3",
     "log2": 0.417561341613401,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MAPK3",
     "process": "Apoptosis",
     "sampleID": "human-21.3",
     "log2": -0.167921274612861,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MARCH5",
     "process": "Mitochondrial Dynamics",
     "sampleID": "human-21.3",
     "log2": 0.67518448667593,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MCL1",
     "process": "Apoptosis",
     "sampleID": "human-21.3",
     "log2": 0.70774063544012,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MCU",
     "process": "Calcium trafficking",
     "sampleID": "human-21.3",
     "log2": 1.52684995891172,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MDH2",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "human-21.3",
     "log2": -0.420576095386664,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MFF",
     "process": "Mitochondrial Dynamics",
     "sampleID": "human-21.3",
     "log2": 0.315703756461038,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MFN1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "human-21.3",
     "log2": 1.67103747311394,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MFN2",
     "process": "Mitochondrial Dynamics",
     "sampleID": "human-21.3",
     "log2": -0.379089556155036,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MICU1",
     "process": "Calcium trafficking",
     "sampleID": "human-21.3",
     "log2": 0.318214273581522,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MIEF1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "human-21.3",
     "log2": -0.350610618844963,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MIEF2",
     "process": "Mitochondrial Dynamics",
     "sampleID": "human-21.3",
     "log2": -0.365740170358318,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MIPEP",
     "process": "Import & Sorting",
     "sampleID": "human-21.3",
     "log2": 0.502952959719672,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MMS19",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "human-21.3",
     "log2": -0.054503781132151,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MPV17",
     "process": "ROS defense",
     "sampleID": "human-21.3",
     "log2": -0.164547485517672,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MPV17L",
     "process": "ROS defense",
     "sampleID": "human-21.3",
     "log2": 0.245320006671022,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL1",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 2.18189723768306,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL10",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": -0.371570506650463,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL11",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 0.0862947186713718,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL13",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 1.57394897306099,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL14",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": -0.122080099791669,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL15",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 0.584365915399536,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL16",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 0.31876084216505,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL17",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 0.0440408428018449,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL18",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 0.875522358198268,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL19",
@@ -1740,147 +1740,147 @@
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": -0.238487681797302,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL20",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 0.109156603421478,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL21",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 0.357046482781967,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL22",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 0.574318614685672,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL23",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": -0.445240313358018,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL24",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": -0.172652783632366,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL27",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 0.14536334534022,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL28",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": -0.421681676747547,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL3",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 1.28563477818233,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL30",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 1.02755381597577,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL32",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 1.1801314154256,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL33",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 0.34266172805399,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL34",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": -0.387895625379806,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL35",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 1.29920601068394,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL36",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 0.786186468475369,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL37",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": -0.417036556777682,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL38",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": -0.463587638317335,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL39",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 1.7359053568375,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL4",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": -0.405284840808548,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL40",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 0.287236332305963,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL41",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": -0.308014297496804,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL42",
@@ -1894,154 +1894,154 @@
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": -0.11536977413366,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL44",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 0.288268697121932,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL47",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 1.39321870178334,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL48",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 0.524579523994816,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL49",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": -0.326158122788688,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL50",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 1.59097539039401,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL51",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 0.703965833485952,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL52",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": -0.0488016619524656,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL53",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": -0.0245407758694604,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL54",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": -0.238118206494067,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL55",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": -0.407961423146298,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL57",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 0.0376090363500873,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL9",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 0.397123156239254,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS10",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 1.18051074551769,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS11",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": -0.137664392435588,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS12",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": -0.598362196182412,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS14",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 0.825125891785109,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS15",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 0.449181923653999,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS16",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": -0.110606722124248,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS17",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 0.472473460514081,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS18A",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": -0.497876220261218,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS18B",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 0.0543989334687528,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS18C",
@@ -2055,7 +2055,7 @@
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": -0.864598379865278,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS22",
@@ -2076,7 +2076,7 @@
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 0.0518512845860933,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS25",
@@ -2090,56 +2090,56 @@
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": -0.28941793024221,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS27",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 0.122867551222141,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS28",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 0.848204415389442,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS30",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 0.751677142696759,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS31",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 1.5541465710446,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS33",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 1.24066464593293,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS34",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": -0.357644215626545,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS35",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 1.22789585984318,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS36",
@@ -2153,133 +2153,133 @@
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 0.56503951445428,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS6",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 1.29618871535161,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS7",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 0.00867680712687865,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS9",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 1.05064629697995,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRRF",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 0.632178972638278,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MSTO1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "human-21.3",
     "log2": 0.0506663760410422,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MT-ATP6",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": -0.348543357307203,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MT-ATP8",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": -0.150771373044111,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MT-CO1",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": -0.327143171801107,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MT-CO2",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": -0.193942850268637,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MT-CO3",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": -0.0635387591354344,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MT-CYB",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": -0.150672326708766,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MT-ND1",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": -0.222878944129069,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MT-ND2",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.0189072330436153,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MT-ND3",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.276634910931671,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MT-ND4",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": -0.218411124443792,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MT-ND4L",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": -0.28384219052752,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MT-ND5",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": -0.0644190844912583,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MT-ND6",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.310471703694669,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MTERF1",
@@ -2293,63 +2293,63 @@
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": 2.01041268315437,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MTERF3",
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": 1.383880837204,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MTERF4",
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": 0.727018053098617,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MTFMT",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 0.455515881344097,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MTFP1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "human-21.3",
     "log2": -1.28512415741798,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MTIF2",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 1.80600022712181,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MTIF3",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 1.74205945836073,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MTO1",
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": 0.8767664078271,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MTPAP",
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": 0.910895461456592,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MTRF1",
@@ -2363,35 +2363,35 @@
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 1.18430890593984,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MUTYH",
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": -0.147510255576068,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NARF",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "human-21.3",
     "log2": 0.0520936363346095,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NARS2",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 0.87349457421348,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA1",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 1.01881015764536,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA10",
@@ -2405,98 +2405,98 @@
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": -0.257825505669679,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA12",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.626518809366653,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA13",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": -0.0182325901798366,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA2",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.415742746617803,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA3",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.00277895913867597,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA4",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 1.05776869626036,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA5",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 2.15980077671564,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA6",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.959654166470495,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA8",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.46825666448209,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA9",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.197811201749334,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFAB1",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.50444100474537,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFAF1",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.467410728882408,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFAF2",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 1.42575266593173,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFAF3",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": -0.362954098763874,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFAF4",
@@ -2510,91 +2510,91 @@
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.983707600140198,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB10",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": -0.0330107805403771,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB11",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": -0.21343364743205,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB2",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.499548884318436,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB3",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 1.4404452671972,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB4",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.299109541349254,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB5",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 1.10672990437511,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB6",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.888722243447767,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB7",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": -0.33645326306237,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB8",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.212466534370967,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB9",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.0144471100559067,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFC1",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.713599249737655,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFC2",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.455284090946253,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFS1",
@@ -2608,91 +2608,91 @@
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": -0.111027696433917,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFS3",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.0404803426762869,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFS4",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 1.35336401604403,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFS5",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.414202739559664,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFS6",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.429081963657437,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFS7",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": -0.52740134318746,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFS8",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": -0.442551337519019,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFV1",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": -0.428788609739752,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFV2",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.723318844545448,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFV3",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.678764109077133,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NFE2L2",
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": 1.52743870766436,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NFS1",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "human-21.3",
     "log2": 0.23105469713726,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NFU1",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "human-21.3",
     "log2": 1.10003299188199,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NME3",
@@ -2706,7 +2706,7 @@
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": -0.136930107509584,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NME6",
@@ -2720,7 +2720,7 @@
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": -0.321822512685612,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NSUN2",
@@ -2741,7 +2741,7 @@
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "human-21.3",
     "log2": 0.201016780054191,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NUBP2",
@@ -2762,21 +2762,21 @@
     "process": "Tricarboxylic acid cycle",
     "sampleID": "human-21.3",
     "log2": -0.41739811215215,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "OGG1",
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": -0.229456514804047,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "OMA1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "human-21.3",
     "log2": 1.66389220661983,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "OPA1",
@@ -2790,70 +2790,70 @@
     "process": "Mitochondrial Dynamics",
     "sampleID": "human-21.3",
     "log2": -0.475792324150448,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "OSGEPL1",
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": 0.750896821619906,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "OXA1L",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": -0.0371562314772284,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PACS2",
     "process": "Calcium trafficking",
     "sampleID": "human-21.3",
     "log2": -0.448343716501971,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PAM16",
     "process": "Import & Sorting",
     "sampleID": "human-21.3",
     "log2": -0.297699972709888,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PARK2",
     "process": "Mitochondrial Dynamics",
     "sampleID": "human-21.3",
     "log2": 0.356955157796566,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PARL",
     "process": "Mitochondrial Dynamics",
     "sampleID": "human-21.3",
     "log2": 0.379073537307936,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PARS2",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": -0.513907339772809,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PDHA1",
     "process": "Formation of Acetyl CoA",
     "sampleID": "human-21.3",
     "log2": 0.305103937327887,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PDHB",
     "process": "Formation of Acetyl CoA",
     "sampleID": "human-21.3",
     "log2": 1.06468904312646,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PDHX",
@@ -2874,7 +2874,7 @@
     "process": "Glycolysis",
     "sampleID": "human-21.3",
     "log2": 0.0137632394728611,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PFKP",
@@ -2888,7 +2888,7 @@
     "process": "Glycolysis",
     "sampleID": "human-21.3",
     "log2": -0.0685334392228729,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PGAM2",
@@ -2902,28 +2902,28 @@
     "process": "Glycolysis",
     "sampleID": "human-21.3",
     "log2": -0.036528285840571,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PGS1",
     "process": "Cardiolipin biosynthesis",
     "sampleID": "human-21.3",
     "log2": -0.147891130154641,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PHB",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": -0.101284141516753,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PHB2",
     "process": "Mitochondrial Dynamics",
     "sampleID": "human-21.3",
     "log2": -0.408131452393487,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PINK1",
@@ -2937,28 +2937,28 @@
     "process": "Mitochondrial Dynamics",
     "sampleID": "human-21.3",
     "log2": 1.2777414843634,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PLD6",
     "process": "Mitochondrial Dynamics",
     "sampleID": "human-21.3",
     "log2": -0.521366285615182,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PMAIP1",
     "process": "Apoptosis",
     "sampleID": "human-21.3",
     "log2": 1.03859669127608,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PML",
     "process": "Calcium trafficking",
     "sampleID": "human-21.3",
     "log2": -0.557510314321502,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PMPCA",
@@ -2972,28 +2972,28 @@
     "process": "Import & Sorting",
     "sampleID": "human-21.3",
     "log2": 0.896869398942766,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "POLG",
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": -0.193701821178675,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "POLRMT",
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": -0.697690966751978,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PPARGC1A",
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": -0.165271587576616,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PPIA",
@@ -3007,21 +3007,21 @@
     "process": "Apoptosis",
     "sampleID": "human-21.3",
     "log2": -0.643130005744684,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PPOX",
     "process": "Heme Biosynthesis",
     "sampleID": "human-21.3",
     "log2": -0.118421385448453,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PRDX3",
     "process": "ROS defense",
     "sampleID": "human-21.3",
     "log2": 0.977724821932053,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PTCD2",
@@ -3049,7 +3049,7 @@
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": -0.347664193531828,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PUS3",
@@ -3084,14 +3084,14 @@
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 1.33915579813898,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "RHOT1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "human-21.3",
     "log2": 1.20103669399125,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "RHOT2",
@@ -3119,14 +3119,14 @@
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": -0.369374637180356,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "RPUSD4",
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": -0.129383133049908,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "RRM2B",
@@ -3140,14 +3140,14 @@
     "process": "Import & Sorting",
     "sampleID": "human-21.3",
     "log2": 0.340897666653254,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SARS2",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": -0.338033241188475,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SCO1",
@@ -3168,42 +3168,42 @@
     "process": "Tricarboxylic acid cycle",
     "sampleID": "human-21.3",
     "log2": -0.277731575224965,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SDHAF1",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": -0.197321617502834,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SDHAF2",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.267206841184979,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SDHB",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "human-21.3",
     "log2": 0.549056654989021,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SDHC",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "human-21.3",
     "log2": 0.189980407765553,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SDHD",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "human-21.3",
     "log2": 1.29125185580868,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SH3GLB1",
@@ -3217,42 +3217,42 @@
     "process": "ROS defense",
     "sampleID": "human-21.3",
     "log2": -0.236304712222071,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SIGMAR1",
     "process": "Calcium trafficking",
     "sampleID": "human-21.3",
     "log2": -0.388345583252694,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC25A1",
     "process": "ROS defense",
     "sampleID": "human-21.3",
     "log2": -0.458676679617868,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC25A19",
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": -0.299291847116301,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC25A20",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "human-21.3",
     "log2": 0.114573678805685,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC25A28",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "human-21.3",
     "log2": -0.015134484190287,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC25A3",
@@ -3266,7 +3266,7 @@
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": 0.0556494254069227,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC25A37",
@@ -3280,21 +3280,21 @@
     "process": "Apoptosis",
     "sampleID": "human-21.3",
     "log2": -0.293290555427405,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC25A5",
     "process": "Apoptosis",
     "sampleID": "human-21.3",
     "log2": -0.262931892271809,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC25A6",
     "process": "Apoptosis",
     "sampleID": "human-21.3",
     "log2": -0.314977395439303,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC27A1",
@@ -3308,119 +3308,119 @@
     "process": "Fatty acid beta-oxidation",
     "sampleID": "human-21.3",
     "log2": 0.00753592239880607,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC27A4",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "human-21.3",
     "log2": -0.844414631567248,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC27A5",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "human-21.3",
     "log2": -0.347265332459294,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC27A6",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "human-21.3",
     "log2": 1.13485980537523,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC29A1",
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": -0.668574716616419,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC2A1",
     "process": "Glycolysis",
     "sampleID": "human-21.3",
     "log2": -0.665010722781464,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC2A3",
     "process": "Glycolysis",
     "sampleID": "human-21.3",
     "log2": 0.293460297303837,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC2A4",
     "process": "Glycolysis",
     "sampleID": "human-21.3",
     "log2": -0.402163578608197,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC2A5",
     "process": "Glycolysis",
     "sampleID": "human-21.3",
     "log2": -0.508806138653364,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SOD1",
     "process": "ROS defense",
     "sampleID": "human-21.3",
     "log2": 1.37866374075226,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SOD2",
     "process": "ROS defense",
     "sampleID": "human-21.3",
     "log2": 0.594252720015276,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SPG7",
     "process": "Mitochondrial Dynamics",
     "sampleID": "human-21.3",
     "log2": 0.00590096814335999,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SQSTM1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "human-21.3",
     "log2": -0.560595421310891,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SSBP1",
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": 0.886866035758547,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "STOML2",
     "process": "Mitochondrial Dynamics",
     "sampleID": "human-21.3",
     "log2": -0.244704599870389,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SUCLA2",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "human-21.3",
     "log2": 1.41617268687698,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SUCLG1",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "human-21.3",
     "log2": 0.549226693920346,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SUCLG2",
@@ -3434,42 +3434,42 @@
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": -0.143165554516708,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SYBU",
     "process": "Mitochondrial Dynamics",
     "sampleID": "human-21.3",
     "log2": -0.850706881102756,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TACO1",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": -0.28584494004556,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TARS2",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 0.238383830208204,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TAZ",
     "process": "Cardiolipin biosynthesis",
     "sampleID": "human-21.3",
     "log2": -0.167709286491676,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TCHP",
     "process": "Calcium trafficking",
     "sampleID": "human-21.3",
     "log2": 0.481767127643152,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TFAM",
@@ -3483,56 +3483,56 @@
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": 0.942484592779257,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TFB2M",
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": 1.19304469825448,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM10",
     "process": "Import & Sorting",
     "sampleID": "human-21.3",
     "log2": -0.323320743289757,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM13",
     "process": "Import & Sorting",
     "sampleID": "human-21.3",
     "log2": -0.165693644199511,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM17A",
     "process": "Import & Sorting",
     "sampleID": "human-21.3",
     "log2": 1.27154491806011,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM17B",
     "process": "Import & Sorting",
     "sampleID": "human-21.3",
     "log2": -0.25470091703262,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM21",
     "process": "Import & Sorting",
     "sampleID": "human-21.3",
     "log2": 1.09596282421096,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM22",
     "process": "Import & Sorting",
     "sampleID": "human-21.3",
     "log2": -0.217797358298528,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM44",
@@ -3553,28 +3553,28 @@
     "process": "Import & Sorting",
     "sampleID": "human-21.3",
     "log2": 0.330423575047445,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM8B",
     "process": "Import & Sorting",
     "sampleID": "human-21.3",
     "log2": 0.143223749852709,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM9",
     "process": "Import & Sorting",
     "sampleID": "human-21.3",
     "log2": 0.912907564331448,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TK2",
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": -0.077832452732722,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TMEM126B",
@@ -3588,63 +3588,63 @@
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 1.13089437104245,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOMM20",
     "process": "Import & Sorting",
     "sampleID": "human-21.3",
     "log2": 0.893503487680693,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOMM22",
     "process": "Import & Sorting",
     "sampleID": "human-21.3",
     "log2": 0.195131646072081,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOMM40",
     "process": "Import & Sorting",
     "sampleID": "human-21.3",
     "log2": -0.450052764433442,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOMM40L",
     "process": "Import & Sorting",
     "sampleID": "human-21.3",
     "log2": -0.31557929645076,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOMM5",
     "process": "Import & Sorting",
     "sampleID": "human-21.3",
     "log2": 1.18924063050794,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOMM6",
     "process": "Import & Sorting",
     "sampleID": "human-21.3",
     "log2": 0.430207900701721,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOMM7",
     "process": "Import & Sorting",
     "sampleID": "human-21.3",
     "log2": 0.710689213172512,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOMM70A",
     "process": "Import & Sorting",
     "sampleID": "human-21.3",
     "log2": 1.23855952589265,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOP1MT",
@@ -3658,14 +3658,14 @@
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": -0.537718830568604,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TP53",
     "process": "Apoptosis",
     "sampleID": "human-21.3",
     "log2": -0.550590781926361,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TPI1",
@@ -3686,14 +3686,14 @@
     "process": "Mitochondrial Dynamics",
     "sampleID": "human-21.3",
     "log2": 1.05845211447878,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRAP1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "human-21.3",
     "log2": -0.434189110539226,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRIT1",
@@ -3707,35 +3707,35 @@
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": -0.257302410213812,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRMT10C",
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": 1.52913422863008,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRMT11",
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": 1.90228108814523,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRMT112",
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": -0.00408567622560511,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRMT2B",
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": -0.28495696074895,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRMT5",
@@ -3749,21 +3749,21 @@
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": 0.955112723799782,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRMT61B",
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": 0.88615023567396,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRMU",
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": -0.0555232410713578,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRNT1",
@@ -3777,35 +3777,35 @@
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": -0.100523823458644,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TSFM",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 0.202048254189319,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TTC19",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.795700964600565,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TUFM",
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": -0.4929653412034,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TXN2",
     "process": "ROS defense",
     "sampleID": "human-21.3",
     "log2": 0.0461478031387222,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TXNRD2",
@@ -3819,49 +3819,49 @@
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": -0.29238939164065,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UQCR10",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.399688960657923,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UQCR11",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.267287848795646,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UQCRB",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 1.95826613785046,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UQCRC1",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": -0.46422138411805,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UQCRC2",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.904825371271129,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UQCRFS1",
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.0997244952612216,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UQCRH",
@@ -3875,14 +3875,14 @@
     "process": "Electron transport chain",
     "sampleID": "human-21.3",
     "log2": 0.148351661207951,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UROD",
     "process": "Heme Biosynthesis",
     "sampleID": "human-21.3",
     "log2": -0.278478326298603,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UROS",
@@ -3896,28 +3896,28 @@
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": -0.102703773302602,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "VDAC1",
     "process": "Apoptosis",
     "sampleID": "human-21.3",
     "log2": 0.342165222575604,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "VDAC2",
     "process": "Apoptosis",
     "sampleID": "human-21.3",
     "log2": 0.204527902674884,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "VDAC3",
     "process": "Apoptosis",
     "sampleID": "human-21.3",
     "log2": 0.742721823804971,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "WARS2",
@@ -3938,20 +3938,20 @@
     "process": "Translation",
     "sampleID": "human-21.3",
     "log2": 1.34071201716282,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "YME1L1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "human-21.3",
     "log2": 1.3647819605103,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "YRDC",
     "process": "Replication & Transcription",
     "sampleID": "human-21.3",
     "log2": -0.37024278348537,
-    "mutation": "NULL"
+    "mutation": ""
   }
 ]

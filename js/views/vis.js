@@ -7,7 +7,7 @@ var d3 = require('d3');
 var SP = require('../svgs/scatterplot.js');
 var BC = require('../svgs/barchart.js');
 var heatmap = require('../svgs/heatmap.js');
-var pcPlot = require('../svgs/pcPlot.js');
+//var pcPlot = require('../svgs/pcPlot.js');
 var parser = require('./parser.js');
 var exist = false;
 
@@ -51,7 +51,7 @@ function compareData(){
         var colorrange = "#d73027,#f46d43,#fdae61,#fee08b,#ffffbf,#d9ef8b,#a6d96a,#66bd63,#1a9850";
         //var colorrange = d3.select('#colorinput').property("value");
         parser.parse(arr, onError, onSuccess,colorrange);
-        pcPlot.init();
+        //pcPlot.init();
 }
 
 

@@ -38,7 +38,7 @@ function updateFolder(){
       url: targeturl,
       success: function(data){
           $('#files').empty();
-          $(data).find("a:contains(.json)").each(function(){             
+          $(data).find("a:contains(json)").each(function(){             
             value = targeturl+"/"+$(this).attr("href");
             text = $(this).attr("href").split(".")[0];
             htmltext = htmltext+'<option value=\"'+value+'\">'+text+'</option>';

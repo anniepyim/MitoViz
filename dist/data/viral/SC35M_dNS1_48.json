@@ -4,4304 +4,4304 @@
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.117173,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ABCB7",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.535475,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACAA2",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.159052,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACAD10",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.762661,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACAD11",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.0371216,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACAD8",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.187127,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACAD9",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.145268,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACADL",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.25192,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACADM",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.223606,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACADS",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.37819,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACADSB",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.563784,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACADVL",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.214999,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACO2",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.325905,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSBG1",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.507815,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSBG2",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.65066,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSL1",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0819491,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSL3",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 1.18657,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSL4",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 2.38297,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSL5",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 2.80334,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSL6",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.913305,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSM1",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSM2A",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSM2B",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSM3",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.410282,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSM4",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.523801,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSM5",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSS1",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSS2",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.837146,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSS3",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "AFG3L2",
     "process": "Mitochondrial Dynamics",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.477348,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "AIFM1",
     "process": "Apoptosis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.291999,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "AK3",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.179107,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "AK4",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.330298,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ALAD",
     "process": "Heme Biosynthesis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.268476,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ALAS1",
     "process": "Heme Biosynthesis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.695038,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ALAS2",
     "process": "Heme Biosynthesis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -2.19388,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ALDOA",
     "process": "Glycolysis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.0493213,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ALDOB",
     "process": "Glycolysis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ALDOC",
     "process": "Glycolysis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.135107,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "AMBRA1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.263856,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ANP32A",
     "process": "Apoptosis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.181108,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "APAF1",
     "process": "Apoptosis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.138736,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "APEX1",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.704135,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "APEX2",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.325805,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "APOPT1",
     "process": "Apoptosis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.431979,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ARG1",
     "process": "Urea Cycle",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ARG2",
     "process": "Urea Cycle",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.940122,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ASL",
     "process": "Urea Cycle",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.166157,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ASS1",
     "process": "Urea Cycle",
     "sampleID": "SC35M_dNS1_48",
     "log2": -1.55784,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATAD3A",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.342756,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATAD3B",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.208315,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5A1",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.203908,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5B",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.241051,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5C1",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.114503,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5D",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.393033,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5E",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.126612,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5F1",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.637025,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5G1",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.39595,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5G2",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.790261,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5G3",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0623294,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5H",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.273536,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5I",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.163363,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5J",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.215663,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5J2",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.266996,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5L",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.227934,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5O",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.561577,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATPAF1",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.258569,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATPAF2",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.153478,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATPIF1",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0407445,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BAD",
     "process": "Apoptosis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.142771,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BAK1",
     "process": "Apoptosis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 1.18881,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BAX",
     "process": "Apoptosis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.106825,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BBC3",
     "process": "Apoptosis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.0982023,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BCKDHA",
     "process": "ROS defense",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.698889,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BCKDHB",
     "process": "ROS defense",
     "sampleID": "SC35M_dNS1_48",
     "log2": -1.03621,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BCL2",
     "process": "Apoptosis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.150661,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BCL2L1",
     "process": "Apoptosis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 1.0229,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BCL2L11",
     "process": "Apoptosis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.291167,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BCS1L",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.570406,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BECN1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0284769,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BID",
     "process": "Apoptosis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.347923,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BIK",
     "process": "Apoptosis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.463311,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BNIP3",
     "process": "Mitochondrial Dynamics",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.225452,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BNIP3L",
     "process": "Mitochondrial Dynamics",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.0303751,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BOLA3",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.152626,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "C10orf129",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "C10orf2",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.644388,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "C22orf32",
     "process": "Calcium trafficking",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.634417,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CARS2",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -1.12306,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CASP3",
     "process": "Apoptosis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.342202,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CASP7",
     "process": "Apoptosis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.721402,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CASP9",
     "process": "Apoptosis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.0931324,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CCDC109B",
     "process": "Calcium trafficking",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.134487,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CCDC90A",
     "process": "Calcium trafficking",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.340299,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CD36",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -1.56033,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CDK1",
     "process": "Apoptosis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0144436,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CDK5RAP1",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.0785229,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CDKAL1",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.188786,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CDS1",
     "process": "Cardiolipin biosynthesis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.501966,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CHCHD4",
     "process": "Import & Sorting",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.402827,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CIAO1",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.220967,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CIAPIN1",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.00450807,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CLPP",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.1919,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CLPX",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.129519,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CMPK2",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COA5",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.18264,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX10",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.220809,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX11",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.327141,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX14",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.138297,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX15",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.29855,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX17",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.210182,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX18",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.461599,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX19",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0888219,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX20",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.764207,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX4I1",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.23066,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX4I2",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX5A",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.119593,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX5B",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.211656,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX6A1",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.223028,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX6A2",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX6B1",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0642193,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX6B2",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": 5.01278,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX6C",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.246853,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX7A1",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": 1.18409,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX7A2",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.0180009,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX7B",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.296977,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX7B2",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX7C",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.45192,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX8A",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.00144606,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CPOX",
     "process": "Heme Biosynthesis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.275556,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CPS1",
     "process": "Urea Cycle",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.534765,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CPT1A",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.352483,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CPT1B",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.642022,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CPT1C",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.682223,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CPT2",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.427992,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CRAT",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.40777,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CREB1",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.314536,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CRLS1",
     "process": "Cardiolipin biosynthesis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0894962,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CS",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.416189,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CYC1",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.141277,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CYCS",
     "process": "Apoptosis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.189902,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DAP3",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.300806,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DARS2",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.169349,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DDX28",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.085721,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DECR1",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.025433,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DHX30",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.074452,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DIABLO",
     "process": "Apoptosis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.184619,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DLAT",
     "process": "Formation of Acetyl CoA",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.386619,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DLD",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.0110714,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DLST",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.416962,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DNAJC19",
     "process": "Import & Sorting",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0966703,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DNM1",
     "process": "Apoptosis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.603915,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DNM1L",
     "process": "Mitochondrial Dynamics",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.346545,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DUS2L",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.289479,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DYNLL1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.034912,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "EARS2",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.230285,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ECHS1",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.365769,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ECSIT",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.303565,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "EFHA1",
     "process": "Calcium trafficking",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0793419,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "EFHA2",
     "process": "Calcium trafficking",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "EIF3M",
     "process": "Apoptosis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.230075,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ELAC2",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.0823534,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ENDOG",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.414919,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ENO1",
     "process": "Glycolysis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.245649,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ENO2",
     "process": "Glycolysis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.357067,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ENO3",
     "process": "Glycolysis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.177745,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FABP1",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FABP12",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FABP2",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FABP3",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.134176,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FABP4",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 2.81828,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FABP5",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.309306,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FABP6",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.140962,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FABP7",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FABP9",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FAM96A",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.136377,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FAM96B",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.554984,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FARS2",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.366658,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FDX1",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.605612,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FDX1L",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -1.05488,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FDXR",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.161389,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FECH",
     "process": "Heme Biosynthesis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.59368,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FH",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.482974,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FIS1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.181816,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FOXRED1",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.090951,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FTMT",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FXN",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.263093,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GABARAP",
     "process": "Mitochondrial Dynamics",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.282874,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GAPDH",
     "process": "Glycolysis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.399119,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GAPDHS",
     "process": "Glycolysis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -1.93169,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GARS",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.978363,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GATC",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -1.56132,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GCK",
     "process": "Glycolysis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GCLC",
     "process": "ROS defense",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0409852,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GCLM",
     "process": "ROS defense",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.367735,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GDAP1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.120969,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GFER",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.204571,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GFM1",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.482502,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GFM2",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.0959041,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GLRX2",
     "process": "ROS defense",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.252511,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GLRX5",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.358363,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GOT2",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.168529,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GPI",
     "process": "Glycolysis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.69377,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GPX1",
     "process": "ROS defense",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.131201,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GPX4",
     "process": "ROS defense",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.874947,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GRPEL1",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.000136225,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GRPEL2",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.373203,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GSR",
     "process": "ROS defense",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.208855,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GSS",
     "process": "ROS defense",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0230579,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GSTA1",
     "process": "ROS defense",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GSTA2",
     "process": "ROS defense",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GSTA4",
     "process": "ROS defense",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.36279,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GSTP1",
     "process": "ROS defense",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GTPBP3",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.246589,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HADH",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.827072,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HADHA",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.606299,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HADHB",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.537577,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HARS2",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.35703,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HCCS",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.210245,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HK1",
     "process": "Glycolysis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.507447,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HK2",
     "process": "Glycolysis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.617828,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HK3",
     "process": "Glycolysis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HMBS",
     "process": "Heme Biosynthesis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.0325618,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HSCB",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.0129311,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HSD17B10",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.315089,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HSPA9",
     "process": "Import & Sorting",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0337128,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HTRA2",
     "process": "Apoptosis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.372066,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "IARS2",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.34658,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "IBA57",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0900021,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "IDH1",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.456962,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "IDH2",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.169674,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "IDH3A",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.148987,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "IDH3B",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.0975122,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "IDH3G",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.232288,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "IMMP1L",
     "process": "Import & Sorting",
     "sampleID": "SC35M_dNS1_48",
     "log2": -2.97464,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "IMMP2L",
     "process": "Import & Sorting",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.541868,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ISCA1",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.519493,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ISCA2",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.327924,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ISCU",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.197823,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ITPR1",
     "process": "Calcium trafficking",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.381834,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ITPR2",
     "process": "Calcium trafficking",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.28664,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ITPR3",
     "process": "Calcium trafficking",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.104764,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "KARS",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.277077,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "KIAA0391",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0814702,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "KIF1B",
     "process": "Mitochondrial Dynamics",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.226833,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "KIF5B",
     "process": "Mitochondrial Dynamics",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.0190904,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "LARS2",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0379031,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "LDHA",
     "process": "Glycolysis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.0753708,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "LDHAL6B",
     "process": "Glycolysis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 2.12769,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "LDHB",
     "process": "Glycolysis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.565025,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "LDHC",
     "process": "Glycolysis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "LETM1",
     "process": "Calcium trafficking",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.152844,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "LIG3",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.0110467,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "LONP1",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.594409,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "LRPPRC",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.420685,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "LYRM4",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.619848,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MAP1LC3A",
     "process": "Mitochondrial Dynamics",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.268915,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MAPK1",
     "process": "Apoptosis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.154862,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MAPK3",
     "process": "Apoptosis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.409987,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MARCH5",
     "process": "Mitochondrial Dynamics",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0796688,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MARS2",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.609767,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MCL1",
     "process": "Apoptosis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 1.68592,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MCU",
     "process": "Calcium trafficking",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.280868,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MDH2",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.448885,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MFF",
     "process": "Mitochondrial Dynamics",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.184624,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MFN1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.179275,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MFN2",
     "process": "Mitochondrial Dynamics",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.328857,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MICU1",
     "process": "Calcium trafficking",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.0755935,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MIPEP",
     "process": "Import & Sorting",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.844685,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MMS19",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.610265,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MNF1",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0247862,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MPV17",
     "process": "ROS defense",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0602039,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MPV17L",
     "process": "ROS defense",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.226253,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MPV17L2",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.254446,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL1",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.252404,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL10",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.105733,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL11",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.127988,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL12",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0514831,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL13",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.0082886,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL14",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.112354,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL15",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.253708,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL16",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.074491,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL17",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.309303,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL18",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0162376,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL19",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.107804,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL2",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.148456,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL20",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.229848,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL21",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.290298,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL22",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.106733,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL23",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0141808,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL24",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.812416,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL27",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.303712,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL28",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.10574,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL3",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.461805,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL30",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.319418,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL32",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.239105,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL33",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.105651,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL34",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.242829,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL35",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.0680073,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL36",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.156238,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL37",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.416731,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL38",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0509079,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL39",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.220131,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL4",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.269365,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL40",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.249384,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL41",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.34861,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL42",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0738025,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL43",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.18238,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL44",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.242018,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL45",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.480137,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL46",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.200427,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL47",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0526724,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL48",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.436265,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL49",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.269641,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL50",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.0291602,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL51",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.191222,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL52",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.159717,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL53",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.244635,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL54",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.194289,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL55",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0817929,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL9",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.0251595,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS10",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.743207,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS11",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.398616,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS12",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.226197,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS14",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.245428,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS15",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0622124,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS16",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.52218,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS17",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0044201,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS18A",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.0103499,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS18B",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.407884,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS18C",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.713642,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS2",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.380016,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS21",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.171009,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS22",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.0988926,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS23",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.173253,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS24",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.494116,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS25",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.0124817,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS26",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.326606,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS27",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.884579,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS28",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.0882976,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS30",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0936108,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS31",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.388519,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS33",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.346426,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS34",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.394129,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS35",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0458034,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS36",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0275947,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS5",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.382388,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS6",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.589682,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS7",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0903625,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS9",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0489961,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRRF",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.348579,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MSTO1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.346318,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MT-ATP6",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -1.34345,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MT-ATP8",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -1.38009,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MT-CO1",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.211392,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MT-CO2",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.419815,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MT-CO3",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -1.02661,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MT-CYB",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -1.23728,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MT-ND1",
     "process": "Electron",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.348486,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MT-ND2",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.723631,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MT-ND3",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.905012,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MT-ND4",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0770239,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MT-ND4L",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.181667,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MT-ND5",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.473482,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MT-ND6",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.401788,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MTFMT",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.235499,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MTFP1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.39619,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MTIF2",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.433609,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MTIF3",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.147869,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MTO1",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.0218674,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MTPAP",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.248269,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MTRF1",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.513109,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MTRF1L",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.357124,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MUTYH",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.22542,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NARF",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.35921,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NARS2",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.520296,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA1",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.259475,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA10",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.654219,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA11",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.235518,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA12",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.20243,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA13",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.106466,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA2",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.316089,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA3",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.106971,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA4",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0685248,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA5",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0816285,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA6",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.110579,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA7",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": 1.33648,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA8",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0753367,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA9",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0628465,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFAB1",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.127207,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFAF1",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0414268,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFAF2",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.256041,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFAF3",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0893064,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFAF4",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.0203584,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB1",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.236703,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB10",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.381586,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB11",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.125124,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB2",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.139838,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB3",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0109461,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB4",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.185749,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB5",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0300982,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB6",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.113092,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB7",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.220413,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB8",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.304585,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB9",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.348428,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFC1",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.0294037,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFC2",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.0815017,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFS1",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.278852,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFS2",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0807557,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFS3",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.0282306,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFS4",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.155005,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFS5",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.0609704,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFS6",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.229968,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFS7",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0610866,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFS8",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.209483,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFV1",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.387365,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFV2",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.305895,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFV3",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.183599,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NFE2L2",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.039415,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NFS1",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.10964,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NFU1",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.0694686,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NME3",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.17927,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NME4",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.432528,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NME6",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0964259,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NRF1",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.244572,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NSUN2",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.056181,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NTHL1",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.593795,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NUBP1",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.299886,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NUBP2",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.615264,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NUBPL",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.991384,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "OGDH",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.267126,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "OGG1",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.300433,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "OMA1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.526184,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "OPA1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.340813,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "OPA3",
     "process": "Mitochondrial Dynamics",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.206434,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "OSGEPL1",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -1.34888,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "OTC",
     "process": "Urea Cycle",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "OXA1L",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.663599,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PACS2",
     "process": "Calcium trafficking",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.257079,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PAM16",
     "process": "Import & Sorting",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.170149,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PARK2",
     "process": "Mitochondrial Dynamics",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.891459,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PARL",
     "process": "Mitochondrial Dynamics",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.162644,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PARS2",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.520063,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PDHA1",
     "process": "Formation of Acetyl CoA",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.40619,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PDHA2",
     "process": "Formation of Acetyl CoA",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PDHB",
     "process": "Formation of Acetyl CoA",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0210342,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PDHX",
     "process": "Formation of Acetyl CoA",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.529609,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PET112",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.384644,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PFKL",
     "process": "Glycolysis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.189776,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PFKM",
     "process": "Glycolysis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.703281,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PFKP",
     "process": "Glycolysis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.510829,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PGAM1",
     "process": "Glycolysis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.234154,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PGAM2",
     "process": "Glycolysis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -1.0548,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PGK1",
     "process": "Glycolysis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.028296,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PGK2",
     "process": "Glycolysis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PGS1",
     "process": "Cardiolipin biosynthesis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.0550651,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PHB",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.167778,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PHB2",
     "process": "Mitochondrial Dynamics",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.124674,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PINK1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.56472,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PKIA",
     "process": "Mitochondrial Dynamics",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PKLR",
     "process": "Glycolysis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PLD6",
     "process": "Mitochondrial Dynamics",
     "sampleID": "SC35M_dNS1_48",
     "log2": -1.17551,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PMAIP1",
     "process": "Apoptosis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.677973,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PML",
     "process": "Calcium trafficking",
     "sampleID": "SC35M_dNS1_48",
     "log2": 1.94646,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PMPCA",
     "process": "Import & Sorting",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.551015,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PMPCB",
     "process": "Import & Sorting",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.537724,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "POLG",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.16091,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "POLG2",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.290682,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "POLRMT",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.111325,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PPARGC1A",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.588673,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PPIA",
     "process": "Apoptosis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.149416,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PPIF",
     "process": "Apoptosis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.134422,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PPOX",
     "process": "Heme Biosynthesis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.620831,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PRDX3",
     "process": "ROS defense",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.454436,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PTCD2",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.344068,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PTCD3",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.185026,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PTPMT1",
     "process": "Cardiolipin biosynthesis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.294861,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PUS1",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.467642,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PUS3",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.298159,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "QRSL1",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.0107045,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "QTRT1",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.624237,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "QTRTD1",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.201139,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "RARS2",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.148993,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "RHOT1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.303316,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "RHOT2",
     "process": "Mitochondrial Dynamics",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.165872,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "RMRP",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.148177,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "RNASEH1",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0516178,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "RNASEL",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 1.17918,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "RPUSD2",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.182791,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "RPUSD4",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.799155,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "RRM2B",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": 1.11284,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SAMM50",
     "process": "Import & Sorting",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.234033,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SARS2",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.118825,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SCO1",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0745541,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SCO2",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.174934,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SDHA",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.114342,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SDHAF1",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.536676,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SDHAF2",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0505136,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SDHB",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.133183,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SDHC",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.0724079,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SDHD",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.180907,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SELRC1",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.451551,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SH3GLB1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.468073,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SHC1",
     "process": "ROS defense",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.435462,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SIGMAR1",
     "process": "Calcium trafficking",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.0244361,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC24A6",
     "process": "Calcium trafficking",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.323284,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC25A1",
     "process": "ROS defense",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.0293198,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC25A19",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.438481,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC25A20",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.100165,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC25A28",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.919524,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC25A3",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.890641,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC25A33",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.176451,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC25A37",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.580986,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC25A4",
     "process": "Apoptosis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.045213,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC25A5",
     "process": "Apoptosis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.661208,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC25A6",
     "process": "Apoptosis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -1.56142,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC27A1",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.236042,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC27A2",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.423142,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC27A3",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.370274,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC27A4",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.362708,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC27A5",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.668688,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC27A6",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.696219,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC29A1",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.534379,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC2A1",
     "process": "Glycolysis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.586887,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC2A2",
     "process": "Glycolysis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC2A3",
     "process": "Glycolysis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.470475,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC2A4",
     "process": "Glycolysis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -1.13529,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC2A5",
     "process": "Glycolysis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -2.71671,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SOD1",
     "process": "ROS defense",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.117752,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SOD2",
     "process": "ROS defense",
     "sampleID": "SC35M_dNS1_48",
     "log2": 1.82839,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SPG7",
     "process": "Mitochondrial Dynamics",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.144561,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SQSTM1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.145781,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SSBP1",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.174256,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "STOML2",
     "process": "Mitochondrial Dynamics",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.0656629,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SUCLA2",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.173491,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SUCLG1",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.341633,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SUCLG2",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.398227,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SURF1",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.135495,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SYBU",
     "process": "Mitochondrial Dynamics",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.940305,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TACO1",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.260379,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TARS2",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.153963,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TAZ",
     "process": "Cardiolipin biosynthesis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.197726,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TCHP",
     "process": "Calcium trafficking",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0314344,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TERT",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.142166,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TFAM",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.214038,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TFB1M",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.310256,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TFB2M",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.693112,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM10",
     "process": "Import & Sorting",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0483506,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM13",
     "process": "Import & Sorting",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.33171,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM17A",
     "process": "Import & Sorting",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.010382,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM17B",
     "process": "Import & Sorting",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.121847,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM21",
     "process": "Import & Sorting",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.734714,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM22",
     "process": "Import & Sorting",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0751315,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM23",
     "process": "Import & Sorting",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.0324177,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM44",
     "process": "Import & Sorting",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.661825,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM50",
     "process": "Import & Sorting",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.109073,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM8A",
     "process": "Import & Sorting",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.815042,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM8B",
     "process": "Import & Sorting",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.144556,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM9",
     "process": "Import & Sorting",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.370573,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TK2",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.541411,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TMEM126B",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.230752,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TMEM70",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.186675,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOMM20",
     "process": "Import & Sorting",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.794875,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOMM22",
     "process": "Import & Sorting",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.320146,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOMM40",
     "process": "Import & Sorting",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.396282,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOMM40L",
     "process": "Import & Sorting",
     "sampleID": "SC35M_dNS1_48",
     "log2": 1.0137,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOMM5",
     "process": "Import & Sorting",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.181727,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOMM6",
     "process": "Import & Sorting",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.142025,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOMM7",
     "process": "Import & Sorting",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.7615,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOMM70A",
     "process": "Import & Sorting",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.121441,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOP1MT",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -1.09087,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOP3A",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.340788,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TP53",
     "process": "Apoptosis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.663669,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TPI1",
     "process": "Glycolysis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0403337,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRAK1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.292075,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRAK2",
     "process": "Mitochondrial Dynamics",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.320512,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRAP1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.451966,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRIT1",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.322014,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRMT1",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0657854,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRMT10C",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.00496867,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRMT11",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.415297,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRMT112",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.048953,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRMT2B",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.153229,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRMT5",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.346809,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRMT6",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.105851,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRMT61B",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.363695,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRMU",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.274257,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRNT1",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.159972,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRUB2",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.307878,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TSFM",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0925283,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TTC19",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0957954,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TUFM",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.440279,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TXN2",
     "process": "ROS defense",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.314599,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TXNRD2",
     "process": "ROS defense",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.0258452,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UNG",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": -1.73478,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UQCC",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.301469,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UQCR10",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0596046,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UQCR11",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.111112,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UQCRB",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.521143,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UQCRC1",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.174969,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UQCRC2",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.447909,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UQCRFS1",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.353644,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UQCRH",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.445193,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UQCRQ",
     "process": "Electron transport chain",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.206418,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UROD",
     "process": "Heme Biosynthesis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0522182,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UROS",
     "process": "Heme Biosynthesis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0060147,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "VARS2",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.33988,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "VDAC1",
     "process": "Apoptosis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.176687,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "VDAC2",
     "process": "Apoptosis",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0786691,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "VDAC3",
     "process": "Apoptosis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.0157334,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "WARS2",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.895262,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "XIAP",
     "process": "Apoptosis",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.145301,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "YARS2",
     "process": "Translation",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.153255,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "YME1L1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "SC35M_dNS1_48",
     "log2": -0.0544909,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "YRDC",
     "process": "Replication & Transcription",
     "sampleID": "SC35M_dNS1_48",
     "log2": 0.238617,
-    "mutation": "NULL"
+    "mutation": ""
   }
 ]

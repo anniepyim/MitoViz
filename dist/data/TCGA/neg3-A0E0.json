@@ -7,7 +7,7 @@
     "gene_function": "AARS2: Involved in the specific attachment of alanine aminoacid to its cognate tRNA",
     "log2": 1.4746,
     "pvalue": 0.2024,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ABCB7",
@@ -17,7 +17,7 @@
     "gene_function": "ABCB7: Exports an sulphur product (X) from the mitochondrial iron sulphor cluster system to cytosol",
     "log2": -0.0182256,
     "pvalue": 0.987,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACAA2",
@@ -27,7 +27,7 @@
     "gene_function": "ACAA2: Medium chain 3-ketoacyl-CoA thiolase",
     "log2": 1.26797,
     "pvalue": 0.25005,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACAD10",
@@ -37,7 +37,7 @@
     "gene_function": "ACAD10: Involved in the catabolism of fatty acids with significant activity towards branched chains",
     "log2": -0.843671,
     "pvalue": 0.47715,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACAD8",
@@ -47,7 +47,7 @@
     "gene_function": "ACAD8: Involved in the caatabolism of fatty acids and branched chain aminoacid valine",
     "log2": -0.30014,
     "pvalue": 0.79575,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACAD9",
@@ -57,7 +57,7 @@
     "gene_function": "ACAD9: Role in the assembly of Complex I and might also be involved in the Fatty acid beta-oxidation",
     "log2": 1.62323,
     "pvalue": 0.1417,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACADL",
@@ -67,7 +67,7 @@
     "gene_function": "ACADL: Long chain hydroxyacyl-CoA dehydrogenase",
     "log2": -1.93739,
     "pvalue": 0.3274,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACADM",
@@ -77,7 +77,7 @@
     "gene_function": "ACADM: Fatty acids are metabolized for 3 to 4 cycles by the medium chain acyl-CoA dehydrogenase",
     "log2": -0.406874,
     "pvalue": 0.70675,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACADS",
@@ -87,7 +87,7 @@
     "gene_function": "ACADS: Short chain acyl-CoA dehydrogenase encoded by ACADS catalyzes the final 1 to 2 cycles",
     "log2": -1.22161,
     "pvalue": 0.2932,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACADSB",
@@ -97,7 +97,7 @@
     "gene_function": "ACADSB: Involved in the metabolism of short branched chain fatty acids",
     "log2": -1.63559,
     "pvalue": 0.15315,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACADVL",
@@ -107,7 +107,7 @@
     "gene_function": "ACADVL: Very long chain acyl-CoAs are first catalyzed by long chain acyl-CoA dehydrogenase",
     "log2": -0.70995,
     "pvalue": 0.5239,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACO2",
@@ -117,7 +117,7 @@
     "gene_function": "ACO2: Catalyzes the interconversion of citrate to isocitrate",
     "log2": 0,
     "pvalue": 1,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSBG1",
@@ -127,7 +127,7 @@
     "gene_function": "ACSBG1: Acyl-CoA synthetase activity for bubblegum family members",
     "log2": 8.00092,
     "pvalue": 0.0348,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSL1",
@@ -137,7 +137,7 @@
     "gene_function": "ACSL1: Acyl-CoA synthetase activity for long chain free fatty acids are also involved in the activation of fatty acids",
     "log2": -0.0521759,
     "pvalue": 0.96165,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSL3",
@@ -147,7 +147,7 @@
     "gene_function": "ACSL3: Acyl-CoA synthetase activity for long chain free fatty acids are also involved in the activation of fatty acids",
     "log2": -1.49538,
     "pvalue": 0.179,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSL4",
@@ -157,7 +157,7 @@
     "gene_function": "ACSL4: Acyl-CoA synthetase activity for long chain free fatty acids are also involved in the activation of fatty acids",
     "log2": -2.04338,
     "pvalue": 0.10945,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSL5",
@@ -167,7 +167,7 @@
     "gene_function": "ACSL5: Acyl-CoA synthetase activity for long chain free fatty acids are also involved in the activation of fatty acids",
     "log2": 2.65928,
     "pvalue": 0.0246,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSL6",
@@ -177,7 +177,7 @@
     "gene_function": "ACSL6: Acyl-CoA synthetase activity for long chain free fatty acids are also involved in the activation of fatty acids",
     "log2": -2.47223,
     "pvalue": 0.1441,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSM1",
@@ -187,7 +187,7 @@
     "gene_function": "ACSM1: Acyl-CoA synthetase activity for medium chain fatty acids",
     "log2": -4.14101,
     "pvalue": 0.1126,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSM3",
@@ -197,7 +197,7 @@
     "gene_function": "ACSM3: Acyl-CoA synthetase activity for medium chain fatty acids",
     "log2": 0.655502,
     "pvalue": 0.70195,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSM5",
@@ -207,7 +207,7 @@
     "gene_function": "ACSM5: Acyl-CoA synthetase activity for medium chain fatty acids",
     "log2": -3.03331,
     "pvalue": 0.1223,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSS1",
@@ -217,7 +217,7 @@
     "gene_function": "ACSS1: Acyl-CoA synthetase activity for short chain fatty acids",
     "log2": 1.64557,
     "pvalue": 0.15065,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSS2",
@@ -227,7 +227,7 @@
     "gene_function": "ACSS2: Acyl-CoA synthetase activity for short chain fatty acids",
     "log2": 1.27751,
     "pvalue": 0.24185,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSS3",
@@ -237,7 +237,7 @@
     "gene_function": "ACSS3: Acyl-CoA synthetase activity for short chain fatty acids",
     "log2": -2.34807,
     "pvalue": 0.1032,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "AFG3L2",
@@ -247,7 +247,7 @@
     "gene_function": "AFG3L2: Involved in the mitochondrial fusion, known to maintain the OPA1 isoforms",
     "log2": 1.6475,
     "pvalue": 0.1403,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "AIFM1",
@@ -257,7 +257,7 @@
     "gene_function": "AIFM1: Mitochondria associated apoptosis inducing factor translocates to nucleus and degrades DNA",
     "log2": 0.754687,
     "pvalue": 0.4832,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "AK3",
@@ -267,7 +267,7 @@
     "gene_function": "AK3: Phosphorylates the deoxyribonucleoside mono phosphates specifically on dAMP",
     "log2": 0.372562,
     "pvalue": 0.72365,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "AK4",
@@ -277,7 +277,7 @@
     "gene_function": "AK4: Phosphorylates the deoxyribonucleoside mono phosphates specifically on dAMP",
     "log2": -1.10761,
     "pvalue": 0.3036,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ALAD",
@@ -287,7 +287,7 @@
     "gene_function": "ALAD: ALA dehydratase catalyzes the reaction where two molecules of ALA condenses to form monopyrrole porphobilinogen (PBG)",
     "log2": -1.77266,
     "pvalue": 0.12065,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ALAS1",
@@ -297,7 +297,7 @@
     "gene_function": "ALAS1: Catalyzes the reaction amino acid glycine and succinyl CoA from TCA cycle condenses to form 5-aminolevulinate (ALA) and CO2",
     "log2": 2.14366,
     "pvalue": 0.0555,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ALDOA",
@@ -307,7 +307,7 @@
     "gene_function": "ALDOA: Catalyzes the reversible conversion of fructose-1,6-bisphosphate to glyceraldehyde 3-phosphate and dihydroxyacetone phosphate",
     "log2": 0.0750802,
     "pvalue": 0.95095,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ALDOC",
@@ -317,7 +317,7 @@
     "gene_function": "ALDOC: Catalyzes the reversible conversion of fructose-1,6-bisphosphate to glyceraldehyde 3-phosphate and dihydroxyacetone phosphate",
     "log2": -1.8972,
     "pvalue": 0.12475,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "AMBRA1",
@@ -327,7 +327,7 @@
     "gene_function": "AMBRA1: Involved in the mitophagy, translocates to the mitochondria and facilitate phagophore formation",
     "log2": -0.229602,
     "pvalue": 0.8324,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ANP32A",
@@ -337,7 +337,7 @@
     "gene_function": "ANP32A: Enhances APAF1 function",
     "log2": -0.703996,
     "pvalue": 0.51225,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "APAF1",
@@ -347,7 +347,7 @@
     "gene_function": "APAF1: Binds CASP9 preprotein forming an apoptosome and activates it",
     "log2": -0.741985,
     "pvalue": 0.67235,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "APEX1",
@@ -357,7 +357,7 @@
     "gene_function": "APEX1: Involved in the mitochondrial DNA base excision repair",
     "log2": -0.941728,
     "pvalue": 0.3788,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "APEX2",
@@ -367,7 +367,7 @@
     "gene_function": "APEX2: Involved in the mitochondrial DNA base excision repair",
     "log2": 1.51891,
     "pvalue": 0.17415,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "APOPT1",
@@ -377,7 +377,7 @@
     "gene_function": "APOPT1: Localizes to the mitochondria and stimulates the release of cytochrome c",
     "log2": 0.464105,
     "pvalue": 0.68325,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ARG2",
@@ -387,7 +387,7 @@
     "gene_function": "ARG2: Arginase catalyzes the step where Arginine is hydrolyzed to form urea and ornithine",
     "log2": 0.451558,
     "pvalue": 0.90645,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ASL",
@@ -397,7 +397,7 @@
     "gene_function": "ASL: Argininosuccinate lyase catalyzes the reaction where Argininosuccinate is cleaved of its nitrogen and carbon skeleton forming arginine and fumarate respectively",
     "log2": -0.0397377,
     "pvalue": 0.97295,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ASS1",
@@ -407,7 +407,7 @@
     "gene_function": "ASS1: Argininosuccinate synthetase catalyzes the step where Citruline combines with Aspartate to form Argininosuccinate",
     "log2": 1.44881,
     "pvalue": 0.1958,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATAD3A",
@@ -417,7 +417,7 @@
     "gene_function": "ATAD3A: May interact with mitochondrial proteins and is required mitochondrial protein synthesis",
     "log2": 1.29926,
     "pvalue": 0.2773,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATAD3B",
@@ -427,7 +427,7 @@
     "gene_function": "ATAD3B: May interact with mitochondrial proteins and is required mitochondrial protein synthesis",
     "log2": 2.7128,
     "pvalue": 0.0707,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5A1",
@@ -437,7 +437,7 @@
     "gene_function": "ATP5A1: ATP synthase H+ transporting mitochondrial F1 complex alpha subunit 1 cardiac muscle essential component of complex V",
     "log2": 0.146903,
     "pvalue": 0.9011,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5B",
@@ -447,7 +447,7 @@
     "gene_function": "ATP5B: ATP synthase H+ transporting mitochondrial F1 complex beta polypeptide essential component of complex V",
     "log2": -0.173051,
     "pvalue": 0.8808,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5C1",
@@ -457,7 +457,7 @@
     "gene_function": "ATP5C1: ATP synthase H+ transporting mitochondrial F1 complex gamma polypeptide 1 essential component of complex V",
     "log2": 0.849364,
     "pvalue": 0.4461,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5D",
@@ -467,7 +467,7 @@
     "gene_function": "ATP5D: ATP synthase H+ transporting mitochondrial F1 complex delta subunit essential component of complex V",
     "log2": 0.152729,
     "pvalue": 0.89105,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5F1",
@@ -477,7 +477,7 @@
     "gene_function": "ATP5F1: ATP synthase H+ transporting mitochondrial Fo complex subunit B1 essential component of complex V",
     "log2": 0.268879,
     "pvalue": 0.8176,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5G1",
@@ -487,7 +487,7 @@
     "gene_function": "ATP5G1: ATP synthase H+ transporting mitochondrial Fo complex subunit C1 (subunit 9) essential component of complex V",
     "log2": 0.383595,
     "pvalue": 0.7174,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5G2",
@@ -497,7 +497,7 @@
     "gene_function": "ATP5G2: ATP synthase H+ transporting mitochondrial Fo complex subunit C2 (subunit 9) essential component of complex V",
     "log2": -0.600137,
     "pvalue": 0.60045,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5G3",
@@ -507,7 +507,7 @@
     "gene_function": "ATP5G3: ATP synthase H+ transporting mitochondrial Fo complex subunit C3 (subunit 9) essential component of complex V",
     "log2": 0.0786165,
     "pvalue": 0.94515,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5H",
@@ -517,7 +517,7 @@
     "gene_function": "ATP5H: ATP synthase H+ transporting mitochondrial Fo complex subunit d essential component of complex V",
     "log2": -0.389236,
     "pvalue": 0.7112,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5I",
@@ -527,7 +527,7 @@
     "gene_function": "ATP5I: ATP synthase H+ transporting mitochondrial Fo complex subunit E essential component of complex V",
     "log2": 0.205379,
     "pvalue": 0.84595,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5J",
@@ -537,7 +537,7 @@
     "gene_function": "ATP5J: ATP synthase H+ transporting mitochondrial Fo complex subunit F6 essential component of complex V",
     "log2": 0.104914,
     "pvalue": 0.93395,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5L",
@@ -547,7 +547,7 @@
     "gene_function": "ATP5L: ATP synthase H+ transporting mitochondrial Fo complex subunit G essential component of complex V",
     "log2": -0.2647,
     "pvalue": 0.8334,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5O",
@@ -557,7 +557,7 @@
     "gene_function": "ATP5O: ATP synthase H+ transporting mitochondrial F1 complex O subunit essential component of complex V",
     "log2": -0.180119,
     "pvalue": 0.87075,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATPAF1",
@@ -567,7 +567,7 @@
     "gene_function": "ATPAF1: Complex V assembly factor, essential for assembly of alpha + beta heterooligomer",
     "log2": 0.282831,
     "pvalue": 0.7899,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATPAF2",
@@ -577,7 +577,7 @@
     "gene_function": "ATPAF2: Complex V assembly factor, essential for assembly of alpha + beta heterooligome",
     "log2": -0.715193,
     "pvalue": 0.571,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATPIF1",
@@ -587,7 +587,7 @@
     "gene_function": "ATPIF1: ATPase inhibitory factor 1 essential component of complex V",
     "log2": 0.430703,
     "pvalue": 0.7104,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BAD",
@@ -597,7 +597,7 @@
     "gene_function": "BAD: Bcl-2 family member propagating apoptosis",
     "log2": 0.204254,
     "pvalue": 0.88265,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BAK1",
@@ -607,7 +607,7 @@
     "gene_function": "BAK1: Bcl-2 family member propagating apoptosis",
     "log2": 0.688592,
     "pvalue": 0.5557,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BAX",
@@ -617,7 +617,7 @@
     "gene_function": "BAX: Bcl-2 family member propagating apoptosis",
     "log2": 1.52201,
     "pvalue": 0.20305,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BBC3",
@@ -627,7 +627,7 @@
     "gene_function": "BBC3: Puma Bcl-2 family member propagating apoptosis",
     "log2": 1.17666,
     "pvalue": 0.368,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BCKDHA",
@@ -637,7 +637,7 @@
     "gene_function": "BCKDHA: Involved in the catabolism of aminoacids in mitochondria and may also be involved in the production of superoxides and hydrogen peroxide",
     "log2": 0.707101,
     "pvalue": 0.4984,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BCKDHB",
@@ -647,7 +647,7 @@
     "gene_function": "BCKDHB: Involved in the catabolism of aminoacids in mitochondria and may also be involved in the production of superoxides and hydrogen peroxide",
     "log2": 0.359268,
     "pvalue": 0.76895,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BCL2",
@@ -657,7 +657,7 @@
     "gene_function": "BCL2: Bcl-2 family member Anti-apoptotic proteins",
     "log2": -2.07529,
     "pvalue": 0.09065,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BCL2L1",
@@ -667,7 +667,7 @@
     "gene_function": "BCL2L1: Bcl-2 family member Anti-apoptotic proteins",
     "log2": -0.0133506,
     "pvalue": 0.9907,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BCL2L11",
@@ -677,7 +677,7 @@
     "gene_function": "BCL2L11: Bim Bcl-2 family member propagating apoptosis",
     "log2": -1.51215,
     "pvalue": 0.16795,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BCS1L",
@@ -687,7 +687,7 @@
     "gene_function": "BCS1L: Involved in the assembly of complex III of the mitochondrial respiratory chain",
     "log2": 0.0473215,
     "pvalue": 0.97,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BECN1",
@@ -697,7 +697,7 @@
     "gene_function": "BECN1: Involved in the mitophagy, involved in the initiation of autophagy",
     "log2": -1.6468,
     "pvalue": 0.13535,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BID",
@@ -707,7 +707,7 @@
     "gene_function": "BID: Bcl-2 family member propagating apoptosis",
     "log2": -1.15992,
     "pvalue": 0.3519,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BIK",
@@ -717,7 +717,7 @@
     "gene_function": "BIK: Bcl-2 family member propagating apoptosis",
     "log2": -3.74693,
     "pvalue": 0.0332,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BNIP3",
@@ -727,7 +727,7 @@
     "gene_function": "BNIP3: Involved in the mitophagy, cause permeabilization of the mitochondrial membrane and also acts as a proapoptotic factor",
     "log2": 2.2642,
     "pvalue": 0.051,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BNIP3L",
@@ -737,7 +737,7 @@
     "gene_function": "BNIP3L: Involved in the mitophagy, cause permeabilization of the mitochondrial membrane and also regulate mitophagy",
     "log2": 0.499991,
     "pvalue": 0.6477,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BOLA3",
@@ -747,7 +747,7 @@
     "gene_function": "BOLA3: Rrole in the biogenesis of iron-sulfur clusters",
     "log2": 1.27924,
     "pvalue": 0.32085,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BRP44",
@@ -757,7 +757,7 @@
     "gene_function": "BRP44: Mitochondrial pyruvate carrier 2",
     "log2": 0.150022,
     "pvalue": 0.91875,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BRP44L",
@@ -767,7 +767,7 @@
     "gene_function": "BRP44L: Mitochondrial pyruvate carrier 1",
     "log2": 0.292934,
     "pvalue": 0.79495,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "C10orf2",
@@ -777,7 +777,7 @@
     "gene_function": "C10orf2: Mitochondrial DNA (mtDNA) helicase (TWINKLE) plays a important role in the maintenance of mtDNA",
     "log2": 0.715453,
     "pvalue": 0.55805,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "C1orf31",
@@ -787,7 +787,7 @@
     "gene_function": "C1orf31: COA6 Complex IV assembly factor",
     "log2": 0.0781323,
     "pvalue": 0.9485,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "C20orf7",
@@ -797,7 +797,7 @@
     "gene_function": "C20orf7: NDUFAF5 is required for complex I assembly",
     "log2": 0.52962,
     "pvalue": 0.6983,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "C22orf32",
@@ -807,7 +807,7 @@
     "gene_function": "C22orf32: Forms a important component of mitochondrial calcium uniporter with MCU",
     "log2": -1.06074,
     "pvalue": 0.34145,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "C2orf56",
@@ -817,7 +817,7 @@
     "gene_function": "C2orf56: NDUFAF7 methylates arginine 85 in the NDUFS2 subunit of human complex I",
     "log2": 0.586881,
     "pvalue": 0.64155,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "C7orf44",
@@ -827,7 +827,7 @@
     "gene_function": "C7orf44: COA1 Complex IV assembly factor",
     "log2": 0.049345,
     "pvalue": 0.96555,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "C8orf38",
@@ -837,7 +837,7 @@
     "gene_function": "C8orf38: NDUFAF6 important role in the assembly of complex I",
     "log2": 0.561941,
     "pvalue": 0.6625,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CARS2",
@@ -847,7 +847,7 @@
     "gene_function": "CARS2: Involved in the specific attachment of cysteine aminoacid to its cognate tRNA",
     "log2": 0.907702,
     "pvalue": 0.4013,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CASP3",
@@ -857,7 +857,7 @@
     "gene_function": "CASP3: Executioner caspases leading to apoptosis",
     "log2": -0.0574271,
     "pvalue": 0.9603,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CASP7",
@@ -867,7 +867,7 @@
     "gene_function": "CASP7: Executioner caspases leading to apoptosis",
     "log2": -0.801901,
     "pvalue": 0.49175,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CASP9",
@@ -877,7 +877,7 @@
     "gene_function": "CASP9: Initiator caspase recruited by Apoptosome",
     "log2": -0.248805,
     "pvalue": 0.83335,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CCDC109B",
@@ -887,7 +887,7 @@
     "gene_function": "CCDC109B: Forms a important component of mitochondrial calcium uniporter with MCU",
     "log2": 1.54673,
     "pvalue": 0.2383,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CCDC56",
@@ -897,7 +897,7 @@
     "gene_function": "CCDC56: COA3 Complex IV assembly factor",
     "log2": -0.758637,
     "pvalue": 0.48265,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CCDC90A",
@@ -907,7 +907,7 @@
     "gene_function": "CCDC90A: Mitochondrial calcium uniporter regulator 1 required for the MCU dependent calcium uptake by the mitochondria",
     "log2": 1.07728,
     "pvalue": 0.32565,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CD36",
@@ -917,7 +917,7 @@
     "gene_function": "CD36: Fatty acid translocase",
     "log2": -3.06802,
     "pvalue": 0.0118,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CDK1",
@@ -927,7 +927,7 @@
     "gene_function": "CDK1: Can Inhibit CASP9 activity and also involved in the phosphorylation of DNM1L to increase fission",
     "log2": 3.30728,
     "pvalue": 0.02795,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CDK5RAP1",
@@ -937,7 +937,7 @@
     "gene_function": "CDK5RAP1: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
     "log2": 0.469092,
     "pvalue": 0.68995,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CDKAL1",
@@ -947,7 +947,7 @@
     "gene_function": "CDKAL1: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
     "log2": 0.19139,
     "pvalue": 0.8796,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CDS1",
@@ -957,7 +957,7 @@
     "gene_function": "CDS1: Converts phosphatidic acid to cytidine diphosphate diacylglycerol",
     "log2": 0.570372,
     "pvalue": 0.59975,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CHCHD4",
@@ -967,7 +967,7 @@
     "gene_function": "CHCHD4: Intermembrane transport and assembly, acts as a receptor at the inter membrane space and recognizes incoming precursor proteins",
     "log2": -0.299496,
     "pvalue": 0.8201,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CHCHD8",
@@ -977,7 +977,7 @@
     "gene_function": "CHCHD8: COA4 Complex IV assembly factor",
     "log2": 0.489766,
     "pvalue": 0.6559,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CIAO1",
@@ -987,7 +987,7 @@
     "gene_function": "CIAO1: Cytosolic Fe-S cluster biogenesis and maturation",
     "log2": -0.508707,
     "pvalue": 0.6296,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CIAPIN1",
@@ -997,7 +997,7 @@
     "gene_function": "CIAPIN1: Facilitates NUBP1 and NUBP2 assembly",
     "log2": 0.0327531,
     "pvalue": 0.98395,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CLPP",
@@ -1007,7 +1007,7 @@
     "gene_function": "CLPP: Involved in the post translational quality control, has re-solublization activity of protein aggregates",
     "log2": 0.15959,
     "pvalue": 0.88025,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CLPX",
@@ -1017,7 +1017,7 @@
     "gene_function": "CLPX: Quality control of inner membrane proteins",
     "log2": 0.413773,
     "pvalue": 0.71765,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CMPK2",
@@ -1027,7 +1027,7 @@
     "gene_function": "CMPK2: Phosphorylates the deoxyribonucleoside mono phosphates specifically on dCMP",
     "log2": -0.815029,
     "pvalue": 0.62635,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COA5",
@@ -1037,7 +1037,7 @@
     "gene_function": "COA5: Complex IV assembly factor",
     "log2": -1.22807,
     "pvalue": 0.3112,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX10",
@@ -1047,7 +1047,7 @@
     "gene_function": "COX10: Complex IV assembly factor",
     "log2": 0.172208,
     "pvalue": 0.8946,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX11",
@@ -1057,7 +1057,7 @@
     "gene_function": "COX11: Complex IV assembly factor",
     "log2": -0.195878,
     "pvalue": 0.89955,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX14",
@@ -1067,7 +1067,7 @@
     "gene_function": "COX14: Complex IV assembly factor",
     "log2": -0.192535,
     "pvalue": 0.86295,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX15",
@@ -1077,7 +1077,7 @@
     "gene_function": "COX15: Complex IV assembly factor, may function in the regulation and assembly of the complex",
     "log2": 0.235603,
     "pvalue": 0.86205,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX17",
@@ -1087,7 +1087,7 @@
     "gene_function": "COX17: Complex IV assembly factor, may function in the regulation and assembly of the complex",
     "log2": 0.810194,
     "pvalue": 0.4812,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX18",
@@ -1097,7 +1097,7 @@
     "gene_function": "COX18: Complex IV assembly factor",
     "log2": -0.912403,
     "pvalue": 0.4702,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX19",
@@ -1107,7 +1107,7 @@
     "gene_function": "COX19: Complex IV assembly factor",
     "log2": 1.15018,
     "pvalue": 0.3785,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX20",
@@ -1117,7 +1117,7 @@
     "gene_function": "COX20: Complex IV assembly factor",
     "log2": -0.0240571,
     "pvalue": 0.86465,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX4I1",
@@ -1127,7 +1127,7 @@
     "gene_function": "COX4I1: Cytochrome c oxidase subunit IV isoform 1 essential component of complex IV",
     "log2": -0.44163,
     "pvalue": 0.6966,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX4I2",
@@ -1137,7 +1137,7 @@
     "gene_function": "COX4I2: Cytochrome c oxidase subunit IV isoform 2 (lung) essential component of complex IV",
     "log2": -0.719541,
     "pvalue": 0.6741,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX5A",
@@ -1147,7 +1147,7 @@
     "gene_function": "COX5A: Cytochrome c oxidase subunit Va essential component of complex IV",
     "log2": 1.02218,
     "pvalue": 0.35065,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX5B",
@@ -1157,7 +1157,7 @@
     "gene_function": "COX5B: Cytochrome c oxidase subunit Vb essential component of complex IV",
     "log2": -0.111076,
     "pvalue": 0.91765,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX6A1",
@@ -1167,7 +1167,7 @@
     "gene_function": "COX6A1: Cytochrome c oxidase subunit VIa polypeptide 1 essential component of complex IV",
     "log2": -0.223485,
     "pvalue": 0.8406,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX6B1",
@@ -1177,7 +1177,7 @@
     "gene_function": "COX6B1: Cytochrome c oxidase subunit VIb polypeptide 1 (ubiquitous) essential component of complex IV",
     "log2": 0.728014,
     "pvalue": 0.52075,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX6B2",
@@ -1187,7 +1187,7 @@
     "gene_function": "COX6B2: Cytochrome c oxidase subunit VIb polypeptide 2 (testis) essential component of complex IV",
     "log2": -1.5297,
     "pvalue": 0.4901,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX6C",
@@ -1197,7 +1197,7 @@
     "gene_function": "COX6C: Cytochrome c oxidase subunit VIc essential component of complex IV",
     "log2": -0.319553,
     "pvalue": 0.7709,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX7A1",
@@ -1207,7 +1207,7 @@
     "gene_function": "COX7A1: Cytochrome c oxidase subunit VIIa polypeptide 1 (muscle) essential component of complex IV",
     "log2": -2.90567,
     "pvalue": 0.06915,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX7A2",
@@ -1217,7 +1217,7 @@
     "gene_function": "COX7A2: Cytochrome c oxidase subunit VIIa polypeptide 2 (liver) essential component of complex IV",
     "log2": 0.269067,
     "pvalue": 0.8024,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX7B",
@@ -1227,7 +1227,7 @@
     "gene_function": "COX7B: Cytochrome c oxidase subunit VIIb essential component of complex IV",
     "log2": 0.842462,
     "pvalue": 0.44225,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX7C",
@@ -1237,7 +1237,7 @@
     "gene_function": "COX7C: Cytochrome c oxidase subunit VIIc essential component of complex IV",
     "log2": 0.195176,
     "pvalue": 0.8598,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX8A",
@@ -1247,7 +1247,7 @@
     "gene_function": "COX8A: Cytochrome c oxidase subunit VIIIA (ubiquitous) essential component of complex IV",
     "log2": 1.10402,
     "pvalue": 0.32075,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CPOX",
@@ -1257,7 +1257,7 @@
     "gene_function": "CPOX: Coproporphyrinogen III is transported to mitochondria and in the presence of coproporphyrinogen III oxidase it is oxidatively decarboxylated",
     "log2": 0.808706,
     "pvalue": 0.54295,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CPS1",
@@ -1267,7 +1267,7 @@
     "gene_function": "CPS1: Carbamoyl phosphate synthetase catalyzes the step where free NH4+ with HCO3- to form carbamoyl phosphate",
     "log2": -3.64969,
     "pvalue": 0.0483,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CPT1A",
@@ -1277,7 +1277,7 @@
     "gene_function": "CPT1A: Carnitiine palmitoyl transferase converts an acyl-CoA into an acylcarnitine",
     "log2": -0.895571,
     "pvalue": 0.43145,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CPT1C",
@@ -1287,7 +1287,7 @@
     "gene_function": "CPT1C: Carnitiine palmitoyl transferase converts an acyl-CoA into an acylcarnitine",
     "log2": 1.0911,
     "pvalue": 0.4931,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CPT2",
@@ -1297,7 +1297,7 @@
     "gene_function": "CPT2: Acylcarnitines are reconverted to their CoA esters by carnitine palmitoyltransferase 2",
     "log2": 0.611305,
     "pvalue": 0.6549,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CRAT",
@@ -1307,7 +1307,7 @@
     "gene_function": "CRAT: Free carnitine in the mitochondria can be converted into acyl carnitine by the action of carnitine acetyl transferase",
     "log2": 2.72006,
     "pvalue": 0.0198,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CREB1",
@@ -1317,7 +1317,7 @@
     "gene_function": "CREB1: Promotes the transcription of mitochondrial genes",
     "log2": -0.694554,
     "pvalue": 0.52685,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CRLS1",
@@ -1327,7 +1327,7 @@
     "gene_function": "CRLS1: Catalyzes the condensation of cytidine diphosphate diacylglycerol and phosphatidylglycerol forming a nascent cardiolipin",
     "log2": -0.0519438,
     "pvalue": 0.963,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CS",
@@ -1337,7 +1337,7 @@
     "gene_function": "CS: Catalyzes the synthesis of citrate from oxaloacetate and acetyl coenzyme A",
     "log2": -0.323799,
     "pvalue": 0.7673,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CYC1",
@@ -1347,7 +1347,7 @@
     "gene_function": "CYC1: Essential component of complex III transfers electrons from iron sulphur protein to cytochrome c",
     "log2": 1.03901,
     "pvalue": 0.3417,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CYCS",
@@ -1357,7 +1357,7 @@
     "gene_function": "CYCS: Binds to apoptosis inducing factor 1 (APAF1) forming a structure called apoptosome",
     "log2": 1.64742,
     "pvalue": 0.1423,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DAP3",
@@ -1367,7 +1367,7 @@
     "gene_function": "DAP3: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": 1.92073,
     "pvalue": 0.0904,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DARS2",
@@ -1377,7 +1377,7 @@
     "gene_function": "DARS2: Involved in the specific attachment of aspartic acid aminoacid to its cognate tRNA",
     "log2": 2.60917,
     "pvalue": 0.0348,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DDX28",
@@ -1387,7 +1387,7 @@
     "gene_function": "DDX28: May be involved in the biogenesis of mitochondrial ribosomes",
     "log2": 0.371345,
     "pvalue": 0.8131,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DECR1",
@@ -1397,7 +1397,7 @@
     "gene_function": "DECR1: 2,4 dienoyl CoA reductase 1 catalyzes the metabolism of Polyunsaturated fatty acids",
     "log2": 0.639701,
     "pvalue": 0.5472,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DHX30",
@@ -1407,7 +1407,7 @@
     "gene_function": "DHX30: May be involved in the biogenesis of mitochondrial ribosomes",
     "log2": -0.061472,
     "pvalue": 0.9551,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DIABLO",
@@ -1417,7 +1417,7 @@
     "gene_function": "DIABLO: Acts as caspase activator by inhibiting the inhibitors of apoptotic proteins",
     "log2": -0.00057168,
     "pvalue": 0.99895,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DLAT",
@@ -1427,7 +1427,7 @@
     "gene_function": "DLAT: Catalyzes the conversion of pyruvate to acetyl coenzyme A",
     "log2": 2.08715,
     "pvalue": 0.06805,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DLD",
@@ -1437,7 +1437,7 @@
     "gene_function": "DLD: Catalyzes the overall conversion of 2-oxoglutarate to succinyl-CoA and CO2",
     "log2": 0.427747,
     "pvalue": 0.69415,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DLST",
@@ -1447,7 +1447,7 @@
     "gene_function": "DLST: Catalyzes the overall conversion of 2-oxoglutarate to succinyl-CoA and CO2",
     "log2": -0.540072,
     "pvalue": 0.6139,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DNAJC19",
@@ -1457,7 +1457,7 @@
     "gene_function": "DNAJC19: Presequence translocase associated motor, could stimulate the ATPase activity of HSPA9",
     "log2": 0.0723611,
     "pvalue": 0.94785,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DNM1",
@@ -1467,7 +1467,7 @@
     "gene_function": "DNM1: Recruited to mitochondria can induce cristae remodelling to release cytochrome c and subsequent apoptosis",
     "log2": -0.373237,
     "pvalue": 0.91055,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DNM1L",
@@ -1477,7 +1477,7 @@
     "gene_function": "DNM1L: Involved in the mitochondrial fission, mediates the division of mitochondria",
     "log2": 1.02734,
     "pvalue": 0.3507,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DUS2L",
@@ -1487,7 +1487,7 @@
     "gene_function": "DUS2L: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
     "log2": 0.0161559,
     "pvalue": 0.993,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DYNLL1",
@@ -1497,7 +1497,7 @@
     "gene_function": "DYNLL1: Involved in the mitochondrial movement, have role in the retrograde mitochondrial movement",
     "log2": 0.218365,
     "pvalue": 0.8485,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "EARS2",
@@ -1507,7 +1507,7 @@
     "gene_function": "EARS2: Involved in the specific attachment of glutamic acid aminoacid to its cognate tRNA",
     "log2": -0.43241,
     "pvalue": 0.7067,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ECHS1",
@@ -1517,7 +1517,7 @@
     "gene_function": "ECHS1: Enoyl-CoA hydratases, short chain, 1, mitochondrial",
     "log2": 0.248603,
     "pvalue": 0.82,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "EFHA1",
@@ -1527,7 +1527,7 @@
     "gene_function": "EFHA1: Regulates the mitochodrial calcium uniporter by inhibiting and permitting the calcium depending upon the cytosolic calcium concentrations",
     "log2": -0.867507,
     "pvalue": 0.43845,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "EFHA2",
@@ -1537,7 +1537,7 @@
     "gene_function": "EFHA2: Regulates the mitochodrial calcium uniporter by inhibiting and permitting the calcium depending upon the cytosolic calcium concentrations",
     "log2": -2.67877,
     "pvalue": 0.2026,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "EIF3M",
@@ -1547,7 +1547,7 @@
     "gene_function": "EIF3M: PCI domain containing protein 1 can negatively regulate CASP9 activity",
     "log2": 0.0593582,
     "pvalue": 0.95855,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ELAC2",
@@ -1557,7 +1557,7 @@
     "gene_function": "ELAC2: Endolytic processing the 3' end of tRNA",
     "log2": -0.377416,
     "pvalue": 0.742,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ENDOG",
@@ -1567,7 +1567,7 @@
     "gene_function": "ENDOG: Nuclease which processes the RNA primers for heavy strand replication also has a role in apopptosis where after release from the mitochondria induces nucleosomal DNA fragmentation",
     "log2": 0.675952,
     "pvalue": 0.87345,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ENO1",
@@ -1577,7 +1577,7 @@
     "gene_function": "ENO1: Catalyzes the dehydration of 2-phosphoglycerate to phosphoenolpyruate",
     "log2": 0.401279,
     "pvalue": 0.73565,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ENO2",
@@ -1587,7 +1587,7 @@
     "gene_function": "ENO2: Catalyzes the dehydration of 2-phosphoglycerate to phosphoenolpyruate",
     "log2": -1.36731,
     "pvalue": 0.36385,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ENO3",
@@ -1597,7 +1597,7 @@
     "gene_function": "ENO3: Catalyzes the dehydration of 2-phosphoglycerate to phosphoenolpyruate",
     "log2": -1.22552,
     "pvalue": 0.4697,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FABP3",
@@ -1607,7 +1607,7 @@
     "gene_function": "FABP3: Fatty acid binding proteins are also involved in the import and export of fatty acids",
     "log2": 3.05893,
     "pvalue": 0.0535,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FABP4",
@@ -1617,7 +1617,7 @@
     "gene_function": "FABP4: Fatty acid binding proteins are also involved in the import and export of fatty acids",
     "log2": -9.38296,
     "pvalue": 0.00365,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FABP5",
@@ -1627,7 +1627,7 @@
     "gene_function": "FABP5: Fatty acid binding proteins are also involved in the import and export of fatty acids",
     "log2": 2.01373,
     "pvalue": 0.07635,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FABP6",
@@ -1637,7 +1637,7 @@
     "gene_function": "FABP6: Fatty acid binding proteins are also involved in the import and export of fatty acids",
     "log2": 2.34714,
     "pvalue": 0.1965,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FABP7",
@@ -1647,7 +1647,7 @@
     "gene_function": "FABP7: Fatty acid binding proteins are also involved in the import and export of fatty acids",
     "log2": -4.3717,
     "pvalue": 0.0276,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FAM96A",
@@ -1657,7 +1657,7 @@
     "gene_function": "FAM96A: Components of the cytosolic Fe/S protein assembly (CIA) machinery",
     "log2": -0.368273,
     "pvalue": 0.74605,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FAM96B",
@@ -1667,7 +1667,7 @@
     "gene_function": "FAM96B: Components of the cytosolic Fe/S protein assembly (CIA) machinery",
     "log2": 0.410272,
     "pvalue": 0.70255,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FARS2",
@@ -1677,7 +1677,7 @@
     "gene_function": "FARS2: Involved in the specific attachment of phenylalanine aminoacid to its cognate tRNA",
     "log2": -0.356855,
     "pvalue": 0.7612,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FDX1",
@@ -1687,7 +1687,7 @@
     "gene_function": "FDX1: Small iron-sulfur protein, transfers electrons from NADPH to mitochondrial cytochrome P450",
     "log2": 1.18904,
     "pvalue": 0.32045,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FDX1L",
@@ -1697,7 +1697,7 @@
     "gene_function": "FDX1L: Transfers electrons from NADPH to mitochondrial cytochrome P450",
     "log2": 0.0935971,
     "pvalue": 0.94205,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FDXR",
@@ -1707,7 +1707,7 @@
     "gene_function": "FDXR: Provide reducing equivalents in an electron transfer chain contribute to iron-sulfur cluster biogenesis",
     "log2": 1.54581,
     "pvalue": 0.20855,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FECH",
@@ -1717,7 +1717,7 @@
     "gene_function": "FECH: Ferrochelatase catalyzes the step involving the addition of Ferrous iron into the protoprphyrin IX to form the protoheme IX",
     "log2": 0.732838,
     "pvalue": 0.5056,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FH",
@@ -1727,7 +1727,7 @@
     "gene_function": "FH: Catalyzes the formation of L-malate from fumarate",
     "log2": 0.512626,
     "pvalue": 0.6357,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FIS1",
@@ -1737,7 +1737,7 @@
     "gene_function": "FIS1: Involved in the mitochondrial fission, facilitates binding and assembly of DNM1L",
     "log2": -0.265596,
     "pvalue": 0.8066,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FOXRED1",
@@ -1747,7 +1747,7 @@
     "gene_function": "FOXRED1: Complex I assembly factor",
     "log2": -0.295798,
     "pvalue": 0.8018,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FXN",
@@ -1757,7 +1757,7 @@
     "gene_function": "FXN: Functions in regulating mitochondrial iron transport and respiration",
     "log2": 0.797514,
     "pvalue": 0.6668,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GABARAP",
@@ -1767,7 +1767,7 @@
     "gene_function": "GABARAP: Involved in the mitophagy, interacts with BNIP3 and BNIP3L to remove mitochondria via autophagy",
     "log2": -0.323693,
     "pvalue": 0.77805,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GAPDH",
@@ -1777,7 +1777,7 @@
     "gene_function": "GAPDH: Catalyzes the reversible oxidative phosphorylation of glyceraldehyde-3-phosphate and may also inhibit Caspase independent cell death in apoptosis",
     "log2": 0.984258,
     "pvalue": 0.43515,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GARS",
@@ -1787,7 +1787,7 @@
     "gene_function": "GARS: Involved in the specific attachment of glycine aminoacid to its cognate tRNA",
     "log2": 1.50999,
     "pvalue": 0.17565,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GATC",
@@ -1797,7 +1797,7 @@
     "gene_function": "GATC: Involved in the biosynthesis of glutamyl-tRNA",
     "log2": 0.500055,
     "pvalue": 0.8072,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GCLC",
@@ -1807,7 +1807,7 @@
     "gene_function": "GCLC: Catalyzes the first step reaction which combines cystein and glutamate to form glutamylcysteine",
     "log2": -0.44843,
     "pvalue": 0.68125,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GCLM",
@@ -1817,7 +1817,7 @@
     "gene_function": "GCLM: Catalyzes the first step reaction which combines cystein and glutamate to form glutamylcysteine",
     "log2": 1.00358,
     "pvalue": 0.42135,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GDAP1",
@@ -1827,7 +1827,7 @@
     "gene_function": "GDAP1: Involved in the mitochondrial fission, know to have a role in the mitochondrial fragmentation",
     "log2": -0.601211,
     "pvalue": 0.64325,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GFER",
@@ -1837,7 +1837,7 @@
     "gene_function": "GFER: Intermembrane transport and assembly, it is know to oxidize CHCHD4 and then the oxidized CHCHD4 acts as a receptor for the pre proteins",
     "log2": -0.0321525,
     "pvalue": 0.9799,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GFM1",
@@ -1847,7 +1847,7 @@
     "gene_function": "GFM1: Involved in the elongation and termination phases of the translation process",
     "log2": -0.52223,
     "pvalue": 0.66855,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GFM2",
@@ -1857,7 +1857,7 @@
     "gene_function": "GFM2: Involved in the elongation and termination phases of the translation process may also be involved in the ribosome recycling",
     "log2": 0.517155,
     "pvalue": 0.81655,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GLRX2",
@@ -1867,7 +1867,7 @@
     "gene_function": "GLRX2: Involved in the control of mitochndrial protein gluthathionylation",
     "log2": 2.55078,
     "pvalue": 0.0636,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GLRX5",
@@ -1877,7 +1877,7 @@
     "gene_function": "GLRX5: Fe-S cluster transfer protein directly to the apoprotein",
     "log2": -0.129623,
     "pvalue": 0.90425,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GOT2",
@@ -1887,7 +1887,7 @@
     "gene_function": "GOT2: Plasma membrane fatty acid binding protein",
     "log2": -0.933585,
     "pvalue": 0.38765,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GPI",
@@ -1897,7 +1897,7 @@
     "gene_function": "GPI: Glycolytic enzyme that interconverts glucose-6-phophsate and fructose-6-phosphate",
     "log2": 1.13324,
     "pvalue": 0.3259,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GPX1",
@@ -1907,7 +1907,7 @@
     "gene_function": "GPX1: Reduces hydrogen peroxide to water by using reducing equivalents from gluthathione",
     "log2": -1.48508,
     "pvalue": 0.1759,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GPX4",
@@ -1917,7 +1917,7 @@
     "gene_function": "GPX4: Involved in the reduction of the lipid peroxides to their hydroxides",
     "log2": 0.659997,
     "pvalue": 0.5554,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GRPEL1",
@@ -1927,7 +1927,7 @@
     "gene_function": "GRPEL1: Presequence translocase associated motor, acts as a nucleotide exchange factor releasing the ADP from HSPA9",
     "log2": 0.583352,
     "pvalue": 0.59415,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GRPEL2",
@@ -1937,7 +1937,7 @@
     "gene_function": "GRPEL2: Presequence translocase associated motor, acts as a nucleotide exchange factor releasing the ADP from HSPA9",
     "log2": 0.40521,
     "pvalue": 0.74075,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GSR",
@@ -1947,7 +1947,7 @@
     "gene_function": "GSR: Reduces oxidized gluthathione to gluthathione which can be re utilized by GPX1",
     "log2": -1.08691,
     "pvalue": 0.3163,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GSS",
@@ -1957,7 +1957,7 @@
     "gene_function": "GSS: Catalyzes the formation of gluthathione from glutamylcysteine by combining it with the glycine",
     "log2": 0.279893,
     "pvalue": 0.79385,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GSTA1",
@@ -1967,7 +1967,7 @@
     "gene_function": "GSTA1: Mitochondrial gluthathione-S-transferases through gluthothione conjugation or proxide reduction detoxify harmful byproducts",
     "log2": -7.91297,
     "pvalue": 0.16115,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GSTA4",
@@ -1977,7 +1977,7 @@
     "gene_function": "GSTA4: Mitochondrial gluthathione-S-transferases through gluthothione conjugation or proxide reduction detoxify harmful byproducts",
     "log2": -1.34998,
     "pvalue": 0.2627,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GSTP1",
@@ -1987,7 +1987,7 @@
     "gene_function": "GSTP1: Mitochondrial gluthathione-S-transferases through gluthothione conjugation or proxide reduction detoxify harmful byproducts",
     "log2": 0.228612,
     "pvalue": 0.84425,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GTPBP3",
@@ -1997,7 +1997,7 @@
     "gene_function": "GTPBP3: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
     "log2": -0.130431,
     "pvalue": 0.92125,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HADH",
@@ -2007,7 +2007,7 @@
     "gene_function": "HADH: Medium and short chain hydroxyacyl-CoA dehydrogenase",
     "log2": -0.379079,
     "pvalue": 0.72215,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HADHA",
@@ -2017,7 +2017,7 @@
     "gene_function": "HADHA: Mitochondrial trifunctional protein catalyzes the Very long and long chain fatty acids",
     "log2": 0.513693,
     "pvalue": 0.657,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HADHB",
@@ -2027,7 +2027,7 @@
     "gene_function": "HADHB: Mitochondrial trifunctional protein catalyzes the Very long and long chain fatty acids",
     "log2": 1.09425,
     "pvalue": 0.32695,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HARS2",
@@ -2037,7 +2037,7 @@
     "gene_function": "HARS2: Involved in the specific attachment of histidine aminoacid to its cognate tRNA",
     "log2": 0.0774169,
     "pvalue": 0.9466,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HCCS",
@@ -2047,7 +2047,7 @@
     "gene_function": "HCCS: Complex III assembly factor, covalently links a heme group to the apoprotein of cytochrome c",
     "log2": 0.506703,
     "pvalue": 0.6642,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HK1",
@@ -2057,7 +2057,7 @@
     "gene_function": "HK1: Hexokinases phosphorylate glucose to produce glucose-6-phosphate",
     "log2": -0.723335,
     "pvalue": 0.5017,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HK2",
@@ -2067,7 +2067,7 @@
     "gene_function": "HK2: Hexokinases phosphorylate glucose to produce glucose-6-phosphate",
     "log2": 0.772247,
     "pvalue": 0.47045,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HK3",
@@ -2077,7 +2077,7 @@
     "gene_function": "HK3: Hexokinases phosphorylate glucose to produce glucose-6-phosphate",
     "log2": 3.42278,
     "pvalue": 0.3266,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HMBS",
@@ -2087,7 +2087,7 @@
     "gene_function": "HMBS: Hydroxymethylbilane synthase catalyzes head to tail condensation of four PBG and subsequent deamination to form a linear tetrapyrrole, Hydroxymethylbilane",
     "log2": -0.0933771,
     "pvalue": 0.9406,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HSCB",
@@ -2097,7 +2097,7 @@
     "gene_function": "HSCB: Mitochondrial iron-sulfur cluster co-chaperone",
     "log2": -1.35824,
     "pvalue": 0.3315,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HSD17B10",
@@ -2107,7 +2107,7 @@
     "gene_function": "HSD17B10: Human mitochondrial tRNA processing enzyme",
     "log2": 0.424433,
     "pvalue": 0.68975,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HSPA9",
@@ -2117,7 +2117,7 @@
     "gene_function": "HSPA9: Presequence translocase associated motor, binds to the preprotein and drives it into the matrix in association with other chaperones and also involved in the mediation of the interaction between VDAC1 and Inositol-1,4,5-triphosphate receptors",
     "log2": 0.420906,
     "pvalue": 0.7133,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HTRA2",
@@ -2127,7 +2127,7 @@
     "gene_function": "HTRA2: Mitochondrial serene protease induces cell death by inhibiting Inhibitors of apoptotic proteins",
     "log2": 0.47435,
     "pvalue": 0.88335,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "IARS2",
@@ -2137,7 +2137,7 @@
     "gene_function": "IARS2: Involved in the specific attachment of isoleucine aminoacid to its cognate tRNA",
     "log2": 0.220728,
     "pvalue": 0.91055,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "IBA57",
@@ -2147,7 +2147,7 @@
     "gene_function": "IBA57: Involved in the maturation of mitochondrial iron-sulfur proteins",
     "log2": 0.0237339,
     "pvalue": 0.9842,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "IDH1",
@@ -2157,7 +2157,7 @@
     "gene_function": "IDH1: Catalyze the oxidative decarboxylation of isocitrate to 2-oxoglutarate",
     "log2": 1.76932,
     "pvalue": 0.12775,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "IDH2",
@@ -2167,7 +2167,7 @@
     "gene_function": "IDH2: Catalyze the oxidative decarboxylation of isocitrate to 2-oxoglutarate",
     "log2": 2.85971,
     "pvalue": 0.01885,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "IDH3A",
@@ -2177,7 +2177,7 @@
     "gene_function": "IDH3A: Catalyze the oxidative decarboxylation of isocitrate to 2-oxoglutarate",
     "log2": 1.08174,
     "pvalue": 0.3291,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "IDH3B",
@@ -2187,7 +2187,7 @@
     "gene_function": "IDH3B: Catalyze the oxidative decarboxylation of isocitrate to 2-oxoglutarate",
     "log2": 0.433044,
     "pvalue": 0.68505,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "IDH3G",
@@ -2197,7 +2197,7 @@
     "gene_function": "IDH3G: Catalyze the oxidative decarboxylation of isocitrate to 2-oxoglutarate",
     "log2": 0.226907,
     "pvalue": 0.93145,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "IMMP1L",
@@ -2207,7 +2207,7 @@
     "gene_function": "IMMP1L: Inner membrane peptidase that cleaves hydrophobic sorting signal",
     "log2": -0.715692,
     "pvalue": 0.7345,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "IMMP2L",
@@ -2217,7 +2217,7 @@
     "gene_function": "IMMP2L: Inner membrane peptidase that cleaves hydrophobic sorting signal",
     "log2": -1.23201,
     "pvalue": 0.3453,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ISCA1",
@@ -2227,7 +2227,7 @@
     "gene_function": "ISCA1: Involved in the biogenesis and assembly of iron-sulfur clusters",
     "log2": -1.05115,
     "pvalue": 0.3468,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ISCA2",
@@ -2237,7 +2237,7 @@
     "gene_function": "ISCA2: Involved in the maturation of mitochondrial iron-sulfur proteins",
     "log2": -0.629057,
     "pvalue": 0.62385,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ISCU",
@@ -2247,7 +2247,7 @@
     "gene_function": "ISCU: Iron sulphur cluster assembly enzyme, Fe-S cluster intermediate is formed on it",
     "log2": -0.898028,
     "pvalue": 0.40995,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ITPR1",
@@ -2257,7 +2257,7 @@
     "gene_function": "ITPR1: Component of the Inositol-1,4,5-triphosphate receptors channels used for the fluxes of Ca2+ from ER to mitochondria",
     "log2": -4.32214,
     "pvalue": 0.0061,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ITPR2",
@@ -2267,7 +2267,7 @@
     "gene_function": "ITPR2: Component of the Inositol-1,4,5-triphosphate receptors channels used for the fluxes of Ca2+ from ER to mitochondria",
     "log2": -1.64245,
     "pvalue": 0.15155,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ITPR3",
@@ -2277,7 +2277,7 @@
     "gene_function": "ITPR3: Component of the Inositol-1,4,5-triphosphate receptors channels used for the fluxes of Ca2+ from ER to mitochondria",
     "log2": -2.72271,
     "pvalue": 0.03325,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "KARS",
@@ -2287,7 +2287,7 @@
     "gene_function": "KARS: Involved in the specific attachment of lysine aminoacid to its cognate tRNA",
     "log2": -0.216912,
     "pvalue": 0.8366,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "KIAA0391",
@@ -2297,7 +2297,7 @@
     "gene_function": "KIAA0391: Human mitochondrial tRNA processing enzyme",
     "log2": -0.213853,
     "pvalue": 0.85165,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "KIF1B",
@@ -2307,7 +2307,7 @@
     "gene_function": "KIF1B: Involved in the mitochondrial movement, have role in the mitochondrial distribution in neurons",
     "log2": 1.50557,
     "pvalue": 0.17615,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "KIF5B",
@@ -2317,7 +2317,7 @@
     "gene_function": "KIF5B: Involved in the mitochondrial movement, have role in the mitochondrial distribution in neurons",
     "log2": -0.015195,
     "pvalue": 0.98755,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "LARS2",
@@ -2327,7 +2327,7 @@
     "gene_function": "LARS2: Involved in the specific attachment of leucine aminoacid to its cognate tRNA",
     "log2": -0.330278,
     "pvalue": 0.78465,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "LDHA",
@@ -2337,7 +2337,7 @@
     "gene_function": "LDHA: Catalyzes the interconversion of pyruvate to lactate and back",
     "log2": -0.468735,
     "pvalue": 0.6733,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "LDHB",
@@ -2347,7 +2347,7 @@
     "gene_function": "LDHB: Catalyzes the interconversion of pyruvate to lactate and back",
     "log2": -0.504465,
     "pvalue": 0.6693,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "LDHC",
@@ -2357,7 +2357,7 @@
     "gene_function": "LDHC: Catalyzes the interconversion of pyruvate to lactate and back",
     "log2": 3.19404,
     "pvalue": 0.20655,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "LETM1",
@@ -2367,7 +2367,7 @@
     "gene_function": "LETM1: Might act as calcium ion and hydrogen ion antiporter exchanging hydrogen for calcium",
     "log2": 0.863584,
     "pvalue": 0.4189,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "LIG3",
@@ -2377,7 +2377,7 @@
     "gene_function": "LIG3: involved in the mitochondrial DNA replication and repair",
     "log2": 0.79492,
     "pvalue": 0.4666,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "LONP1",
@@ -2387,7 +2387,7 @@
     "gene_function": "LONP1: Involved in the post translational quality control, has re-solublization activity of protein aggregates",
     "log2": 0.759129,
     "pvalue": 0.47485,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "LRPPRC",
@@ -2397,7 +2397,7 @@
     "gene_function": "LRPPRC: Might play a role in the translation and stability of COX subunits",
     "log2": 1.41745,
     "pvalue": 0.2177,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "LYRM4",
@@ -2407,7 +2407,7 @@
     "gene_function": "LYRM4: Assembles with NFS1",
     "log2": -1.11883,
     "pvalue": 0.3529,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MAP1LC3A",
@@ -2417,7 +2417,7 @@
     "gene_function": "MAP1LC3A: Involved in the mitophagy, interacts with BNIP3 and BNIP3L to remove mitochondria via autophagy",
     "log2": 1.81947,
     "pvalue": 0.11835,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MAPK1",
@@ -2427,7 +2427,7 @@
     "gene_function": "MAPK1: Inhibitors of CASP9 activity",
     "log2": -0.46156,
     "pvalue": 0.6742,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MAPK3",
@@ -2437,7 +2437,7 @@
     "gene_function": "MAPK3: Inhibitors of CASP9 activity",
     "log2": -0.103697,
     "pvalue": 0.92055,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MARCH5",
@@ -2447,7 +2447,7 @@
     "gene_function": "MARCH5: Involved in the mitochondrial fusion and fission, control of mitochondrial morphology by regulating MFN2 and DNM1L",
     "log2": 0.27084,
     "pvalue": 0.80015,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MARS2",
@@ -2457,7 +2457,7 @@
     "gene_function": "MARS2: Involved in the specific attachment of methionine aminoacid to its cognate tRNA",
     "log2": 0.0780868,
     "pvalue": 0.95595,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MCL1",
@@ -2467,7 +2467,7 @@
     "gene_function": "MCL1: Bcl-2 family member Anti-apoptotic proteins",
     "log2": 0.41997,
     "pvalue": 0.71435,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MCU",
@@ -2477,7 +2477,7 @@
     "gene_function": "MCU: Involved in the accumulation of calcium ions in the matrix through ion impermeable inner mitochondrial membrane",
     "log2": -0.52489,
     "pvalue": 0.6686,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MDH2",
@@ -2487,7 +2487,7 @@
     "gene_function": "MDH2: Catalyzes the reversible oxidation of malate to oxaloacetate",
     "log2": 0.937252,
     "pvalue": 0.40305,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MFF",
@@ -2497,7 +2497,7 @@
     "gene_function": "MFF: Involved in the mitochondrial fission, suggested to have roles in recruiting DNM1L",
     "log2": -0.431555,
     "pvalue": 0.69445,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MFN1",
@@ -2507,7 +2507,7 @@
     "gene_function": "MFN1: Involved in the mitochondrial fusion, mitofusins dimerize resulting in the tethering of the outer membranes of the fusing mitochondria also involved in the tethering of Endoplasmic reticulum with mitochondria for mitochondrial calcium uptake",
     "log2": 0.282983,
     "pvalue": 0.80645,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MFN2",
@@ -2517,7 +2517,7 @@
     "gene_function": "MFN2: Involved in the mitochondrial fusion, mitofusins dimerize resulting in the tethering of the outer membranes of the fusing mitochondria also involved in the tethering of Endoplasmic reticulum with mitochondria for mitochondrial calcium uptake",
     "log2": 0.795876,
     "pvalue": 0.4731,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MICU1",
@@ -2527,7 +2527,7 @@
     "gene_function": "MICU1: Regulates the mitochodrial calcium uniporter by inhibiting and permitting the calcium depending upon the cytosolic calcium concentrations",
     "log2": 0.0169838,
     "pvalue": 0.9878,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MIPEP",
@@ -2537,7 +2537,7 @@
     "gene_function": "MIPEP: Secondary cleavage of the pre proteins processed by the mitochondrial processing peptidase",
     "log2": -1.51988,
     "pvalue": 0.19345,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MMS19",
@@ -2547,7 +2547,7 @@
     "gene_function": "MMS19: Cytosolic Fe/S protein assembly targeting factor",
     "log2": 0.0649043,
     "pvalue": 0.9509,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MNF1",
@@ -2557,7 +2557,7 @@
     "gene_function": "MNF1: Complex III assembly factor, ubiquinol-cytochrome c reductase complex assembly factor 2",
     "log2": 0.242147,
     "pvalue": 0.83715,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MPV17",
@@ -2567,7 +2567,7 @@
     "gene_function": "MPV17: May have a role in the metabolism of reactive oxygen species",
     "log2": -0.180306,
     "pvalue": 0.8653,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MPV17L",
@@ -2577,7 +2577,7 @@
     "gene_function": "MPV17L: May have a role in the metabolism of reactive oxygen species",
     "log2": -2.46173,
     "pvalue": 0.1439,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MPV17L2",
@@ -2587,7 +2587,7 @@
     "gene_function": "MPV17L2: May be involved in the biogenesis of mitochondrial ribosomes",
     "log2": -0.201894,
     "pvalue": 0.8774,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL1",
@@ -2597,7 +2597,7 @@
     "gene_function": "MRPL1: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": 0.156287,
     "pvalue": 0.89215,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL10",
@@ -2607,7 +2607,7 @@
     "gene_function": "MRPL10: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": -1.28341,
     "pvalue": 0.24295,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL11",
@@ -2617,7 +2617,7 @@
     "gene_function": "MRPL11: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": 0.245134,
     "pvalue": 0.81795,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL12",
@@ -2627,7 +2627,7 @@
     "gene_function": "MRPL12: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": 0.695515,
     "pvalue": 0.51365,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL13",
@@ -2637,7 +2637,7 @@
     "gene_function": "MRPL13: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": 0.605495,
     "pvalue": 0.5775,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL14",
@@ -2647,7 +2647,7 @@
     "gene_function": "MRPL14: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": 0.882343,
     "pvalue": 0.42665,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL15",
@@ -2657,7 +2657,7 @@
     "gene_function": "MRPL15: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": 0.945751,
     "pvalue": 0.3908,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL16",
@@ -2667,7 +2667,7 @@
     "gene_function": "MRPL16: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": 0.373246,
     "pvalue": 0.7307,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL17",
@@ -2677,7 +2677,7 @@
     "gene_function": "MRPL17: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": 0.590398,
     "pvalue": 0.5838,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL18",
@@ -2687,7 +2687,7 @@
     "gene_function": "MRPL18: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": 0.39864,
     "pvalue": 0.71005,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL19",
@@ -2697,7 +2697,7 @@
     "gene_function": "MRPL19: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": 1.08898,
     "pvalue": 0.3258,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL2",
@@ -2707,7 +2707,7 @@
     "gene_function": "MRPL2: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": 0.486637,
     "pvalue": 0.65695,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL20",
@@ -2717,7 +2717,7 @@
     "gene_function": "MRPL20: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": 0.814045,
     "pvalue": 0.49375,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL21",
@@ -2727,7 +2727,7 @@
     "gene_function": "MRPL21: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": 0.149736,
     "pvalue": 0.8946,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL22",
@@ -2737,7 +2737,7 @@
     "gene_function": "MRPL22: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": -0.060799,
     "pvalue": 0.9565,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL23",
@@ -2747,7 +2747,7 @@
     "gene_function": "MRPL23: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": 0.421959,
     "pvalue": 0.6941,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL24",
@@ -2757,7 +2757,7 @@
     "gene_function": "MRPL24: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": 1.53789,
     "pvalue": 0.166,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL27",
@@ -2767,7 +2767,7 @@
     "gene_function": "MRPL27: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": -0.228845,
     "pvalue": 0.83455,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL28",
@@ -2777,7 +2777,7 @@
     "gene_function": "MRPL28: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": -0.216788,
     "pvalue": 0.8408,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL3",
@@ -2787,7 +2787,7 @@
     "gene_function": "MRPL3: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": 0.239574,
     "pvalue": 0.8147,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL30",
@@ -2797,7 +2797,7 @@
     "gene_function": "MRPL30: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": -0.12632,
     "pvalue": 0.90835,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL32",
@@ -2807,7 +2807,7 @@
     "gene_function": "MRPL32: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": -0.243582,
     "pvalue": 0.8186,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL33",
@@ -2817,7 +2817,7 @@
     "gene_function": "MRPL33: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": -0.0853604,
     "pvalue": 0.9402,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL34",
@@ -2827,7 +2827,7 @@
     "gene_function": "MRPL34: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": -1.00473,
     "pvalue": 0.39425,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL35",
@@ -2837,7 +2837,7 @@
     "gene_function": "MRPL35: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": 0.0804729,
     "pvalue": 0.94455,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL36",
@@ -2847,7 +2847,7 @@
     "gene_function": "MRPL36: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": -0.29654,
     "pvalue": 0.79875,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL37",
@@ -2857,7 +2857,7 @@
     "gene_function": "MRPL37: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": 0.891151,
     "pvalue": 0.4173,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL38",
@@ -2867,7 +2867,7 @@
     "gene_function": "MRPL38: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": 0.085766,
     "pvalue": 0.93695,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL39",
@@ -2877,7 +2877,7 @@
     "gene_function": "MRPL39: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": 0.518968,
     "pvalue": 0.64025,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL4",
@@ -2887,7 +2887,7 @@
     "gene_function": "MRPL4: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": 0.474246,
     "pvalue": 0.66625,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL40",
@@ -2897,7 +2897,7 @@
     "gene_function": "MRPL40: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": -0.920016,
     "pvalue": 0.426,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL41",
@@ -2907,7 +2907,7 @@
     "gene_function": "MRPL41: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": 1.0762,
     "pvalue": 0.3424,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL42",
@@ -2917,7 +2917,7 @@
     "gene_function": "MRPL42: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": -0.436056,
     "pvalue": 0.6967,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL43",
@@ -2927,7 +2927,7 @@
     "gene_function": "MRPL43: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": 0.727182,
     "pvalue": 0.53125,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL44",
@@ -2937,7 +2937,7 @@
     "gene_function": "MRPL44: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": -0.520121,
     "pvalue": 0.64165,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL45",
@@ -2947,7 +2947,7 @@
     "gene_function": "MRPL45: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": -0.875245,
     "pvalue": 0.41745,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL46",
@@ -2957,7 +2957,7 @@
     "gene_function": "MRPL46: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": -0.358971,
     "pvalue": 0.7666,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL47",
@@ -2967,7 +2967,7 @@
     "gene_function": "MRPL47: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": 0.843668,
     "pvalue": 0.44925,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL48",
@@ -2977,7 +2977,7 @@
     "gene_function": "MRPL48: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": -0.027414,
     "pvalue": 0.98285,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL49",
@@ -2987,7 +2987,7 @@
     "gene_function": "MRPL49: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": 0.164621,
     "pvalue": 0.9659,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL50",
@@ -2997,7 +2997,7 @@
     "gene_function": "MRPL50: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": -0.898074,
     "pvalue": 0.46505,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL51",
@@ -3007,7 +3007,7 @@
     "gene_function": "MRPL51: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": 0.429808,
     "pvalue": 0.695,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL52",
@@ -3017,7 +3017,7 @@
     "gene_function": "MRPL52: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": -0.501369,
     "pvalue": 0.66145,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL54",
@@ -3027,7 +3027,7 @@
     "gene_function": "MRPL54: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": -1.5531,
     "pvalue": 0.2079,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL55",
@@ -3037,7 +3037,7 @@
     "gene_function": "MRPL55: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": 1.10384,
     "pvalue": 0.33445,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL9",
@@ -3047,7 +3047,7 @@
     "gene_function": "MRPL9: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": 1.39874,
     "pvalue": 0.2288,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS10",
@@ -3057,7 +3057,7 @@
     "gene_function": "MRPS10: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": 0.383454,
     "pvalue": 0.7185,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS11",
@@ -3067,7 +3067,7 @@
     "gene_function": "MRPS11: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": -0.266486,
     "pvalue": 0.8143,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS12",
@@ -3077,7 +3077,7 @@
     "gene_function": "MRPS12: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": 1.17854,
     "pvalue": 0.38185,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS14",
@@ -3087,7 +3087,7 @@
     "gene_function": "MRPS14: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": 1.23582,
     "pvalue": 0.2696,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS15",
@@ -3097,7 +3097,7 @@
     "gene_function": "MRPS15: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": 0.589382,
     "pvalue": 0.58585,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS16",
@@ -3107,7 +3107,7 @@
     "gene_function": "MRPS16: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": 0.832902,
     "pvalue": 0.4423,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS17",
@@ -3117,7 +3117,7 @@
     "gene_function": "MRPS17: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": 1.28775,
     "pvalue": 0.28315,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS18A",
@@ -3127,7 +3127,7 @@
     "gene_function": "MRPS18A: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": 0.0282336,
     "pvalue": 0.97725,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS18B",
@@ -3137,7 +3137,7 @@
     "gene_function": "MRPS18B: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": -0.767997,
     "pvalue": 0.4723,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS18C",
@@ -3147,7 +3147,7 @@
     "gene_function": "MRPS18C: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": -0.934833,
     "pvalue": 0.5771,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS2",
@@ -3157,7 +3157,7 @@
     "gene_function": "MRPS2: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": 0.365849,
     "pvalue": 0.7293,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS21",
@@ -3167,7 +3167,7 @@
     "gene_function": "MRPS21: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": 1.2592,
     "pvalue": 0.25445,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS22",
@@ -3177,7 +3177,7 @@
     "gene_function": "MRPS22: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": -0.121409,
     "pvalue": 0.91495,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS23",
@@ -3187,7 +3187,7 @@
     "gene_function": "MRPS23: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": -0.596375,
     "pvalue": 0.60935,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS25",
@@ -3197,7 +3197,7 @@
     "gene_function": "MRPS25: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": 0.00119246,
     "pvalue": 0.99915,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS26",
@@ -3207,7 +3207,7 @@
     "gene_function": "MRPS26: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": 1.19462,
     "pvalue": 0.27415,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS27",
@@ -3217,7 +3217,7 @@
     "gene_function": "MRPS27: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": -1.3029,
     "pvalue": 0.23765,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS28",
@@ -3227,7 +3227,7 @@
     "gene_function": "MRPS28: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": -0.530516,
     "pvalue": 0.6453,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS30",
@@ -3237,7 +3237,7 @@
     "gene_function": "MRPS30: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": 0.0142523,
     "pvalue": 0.99005,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS31",
@@ -3247,7 +3247,7 @@
     "gene_function": "MRPS31: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": -0.149198,
     "pvalue": 0.89825,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS33",
@@ -3257,7 +3257,7 @@
     "gene_function": "MRPS33: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": 1.00746,
     "pvalue": 0.3602,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS34",
@@ -3267,7 +3267,7 @@
     "gene_function": "MRPS34: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": 0.970502,
     "pvalue": 0.3693,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS35",
@@ -3277,7 +3277,7 @@
     "gene_function": "MRPS35: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": 0.484297,
     "pvalue": 0.6554,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS36",
@@ -3287,7 +3287,7 @@
     "gene_function": "MRPS36: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": -0.975464,
     "pvalue": 0.42775,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS5",
@@ -3297,7 +3297,7 @@
     "gene_function": "MRPS5: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": 0.251943,
     "pvalue": 0.8211,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS7",
@@ -3307,7 +3307,7 @@
     "gene_function": "MRPS7: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": -0.443639,
     "pvalue": 0.7749,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS9",
@@ -3317,7 +3317,7 @@
     "gene_function": "MRPS9: Mitoribosome which forms a part of mitochondrial translation machinary",
     "log2": -0.285375,
     "pvalue": 0.79215,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRRF",
@@ -3327,7 +3327,7 @@
     "gene_function": "MRRF: Acts as a mitochondrial ribosome recycling factor during translation process",
     "log2": -0.288754,
     "pvalue": 0.8569,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MSTO1",
@@ -3337,7 +3337,7 @@
     "gene_function": "MSTO1: Involved in the regulation of mitochondrial distribution and morphology",
     "log2": 2.36212,
     "pvalue": 0.0833,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MTFMT",
@@ -3347,7 +3347,7 @@
     "gene_function": "MTFMT: Involved in the specific attachment of methionine aminoacid to its cognate tRNA",
     "log2": -0.342122,
     "pvalue": 0.8033,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MTFP1",
@@ -3357,7 +3357,7 @@
     "gene_function": "MTFP1: Involved in the mitochondrial fission, role in mitochondrial fragmentation and is dependent on DNM1L expression",
     "log2": 0.0564084,
     "pvalue": 0.96565,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MTIF2",
@@ -3367,7 +3367,7 @@
     "gene_function": "MTIF2: Translation initiation factor could assist the tRNA to bind to rRNAs",
     "log2": 0.507472,
     "pvalue": 0.64035,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MTIF3",
@@ -3377,7 +3377,7 @@
     "gene_function": "MTIF3: Translation initiation factor could assist the mRNA to bind to rRNAs",
     "log2": -0.525572,
     "pvalue": 0.8209,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MTO1",
@@ -3387,7 +3387,7 @@
     "gene_function": "MTO1: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
     "log2": 0.114372,
     "pvalue": 0.924,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MTPAP",
@@ -3397,7 +3397,7 @@
     "gene_function": "MTPAP: Involved in the polyadenylation of mitochondrial tRNAs, rRNAs and mRNAs",
     "log2": 0.697861,
     "pvalue": 0.5468,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MTRF1",
@@ -3407,7 +3407,7 @@
     "gene_function": "MTRF1: Involved in the mitochondrial translation termination, may act as a release factor",
     "log2": -0.183782,
     "pvalue": 0.90925,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MTRF1L",
@@ -3417,7 +3417,7 @@
     "gene_function": "MTRF1L: Involved in the mitochondrial translation termination, act as a release factor",
     "log2": -0.213501,
     "pvalue": 0.8604,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MUTYH",
@@ -3427,7 +3427,7 @@
     "gene_function": "MUTYH: Involved in the mitochondrial DNA base excision repair",
     "log2": 0.714814,
     "pvalue": 0.759,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NARF",
@@ -3437,7 +3437,7 @@
     "gene_function": "NARF: Cytosolic Fe-S protein maturation",
     "log2": 0.864564,
     "pvalue": 0.4324,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NARS2",
@@ -3447,7 +3447,7 @@
     "gene_function": "NARS2: Involved in the specific attachment of asparagine aminoacid to its cognate tRNA",
     "log2": 1.19242,
     "pvalue": 0.2894,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA1",
@@ -3457,7 +3457,7 @@
     "gene_function": "NDUFA1: Essential component of complex I transfers electrons from NADH to ubiquinone",
     "log2": 0.522136,
     "pvalue": 0.65235,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA10",
@@ -3467,7 +3467,7 @@
     "gene_function": "NDUFA10: Essential component of complex I transfers electrons from NADH to ubiquinone",
     "log2": -0.542524,
     "pvalue": 0.61645,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA11",
@@ -3477,7 +3477,7 @@
     "gene_function": "NDUFA11: Essential component of complex I transfers electrons from NADH to ubiquinone",
     "log2": -0.237064,
     "pvalue": 0.8245,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA12",
@@ -3487,7 +3487,7 @@
     "gene_function": "NDUFA12: Essential component of complex I transfers electrons from NADH to ubiquinone",
     "log2": -0.37146,
     "pvalue": 0.7344,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA13",
@@ -3497,7 +3497,7 @@
     "gene_function": "NDUFA13: Essential component of complex I transfers electrons from NADH to ubiquinone",
     "log2": -0.215998,
     "pvalue": 0.8436,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA2",
@@ -3507,7 +3507,7 @@
     "gene_function": "NDUFA2: Essential component of complex I may be involved in regulating complex I activity or its assembly via assistance in redox processes",
     "log2": 0.515418,
     "pvalue": 0.65815,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA3",
@@ -3517,7 +3517,7 @@
     "gene_function": "NDUFA3: Essential component of complex I transfers electrons from NADH to ubiquinone",
     "log2": 1.45253,
     "pvalue": 0.19115,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA4",
@@ -3527,7 +3527,7 @@
     "gene_function": "NDUFA4: Essential component of complex I transfers electrons from NADH to ubiquinone",
     "log2": 0.240434,
     "pvalue": 0.8316,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA5",
@@ -3537,7 +3537,7 @@
     "gene_function": "NDUFA5: Essential component of complex I transfers electrons from NADH to ubiquinone",
     "log2": -0.0588084,
     "pvalue": 0.95755,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA6",
@@ -3547,7 +3547,7 @@
     "gene_function": "NDUFA6: Essential component of complex I transfers electrons from NADH to ubiquinone",
     "log2": -0.324029,
     "pvalue": 0.75705,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA7",
@@ -3557,7 +3557,7 @@
     "gene_function": "NDUFA7: Essential component of complex I transfers electrons from NADH to ubiquinone",
     "log2": -0.302194,
     "pvalue": 0.79105,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA8",
@@ -3567,7 +3567,7 @@
     "gene_function": "NDUFA8: Essential component of complex I transfers electrons from NADH to ubiquinone",
     "log2": 0.0224935,
     "pvalue": 0.98335,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA9",
@@ -3577,7 +3577,7 @@
     "gene_function": "NDUFA9: Essential component of complex I transfers electrons from NADH to ubiquinone",
     "log2": 0.345847,
     "pvalue": 0.74505,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFAB1",
@@ -3587,7 +3587,7 @@
     "gene_function": "NDUFAB1: Essential component of complex I transfers electrons from NADH to ubiquinone",
     "log2": 0.501081,
     "pvalue": 0.6421,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFAF1",
@@ -3597,7 +3597,7 @@
     "gene_function": "NDUFAF1: Required in the assembly of Complex I",
     "log2": -0.661494,
     "pvalue": 0.59405,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFAF2",
@@ -3607,7 +3607,7 @@
     "gene_function": "NDUFAF2: Required in the assembly of Complex I",
     "log2": -0.428544,
     "pvalue": 0.71305,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFAF3",
@@ -3617,7 +3617,7 @@
     "gene_function": "NDUFAF3: Required in the assembly of Complex I",
     "log2": 0.888826,
     "pvalue": 0.6687,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFAF4",
@@ -3627,7 +3627,7 @@
     "gene_function": "NDUFAF4: Complex I assembly factor required in the assembly of Complex I",
     "log2": 0.670366,
     "pvalue": 0.58525,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB1",
@@ -3637,7 +3637,7 @@
     "gene_function": "NDUFB1: Essential component of complex I transfers electrons from NADH to ubiquinone",
     "log2": 0.0133824,
     "pvalue": 0.98985,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB10",
@@ -3647,7 +3647,7 @@
     "gene_function": "NDUFB10: Essential component of complex I transfers electrons from NADH to ubiquinone",
     "log2": -0.0753712,
     "pvalue": 0.9404,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB11",
@@ -3657,7 +3657,7 @@
     "gene_function": "NDUFB11: Essential component of complex I transfers electrons from NADH to ubiquinone",
     "log2": 1.24484,
     "pvalue": 0.2565,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB2",
@@ -3667,7 +3667,7 @@
     "gene_function": "NDUFB2: Essential component of complex I transfers electrons from NADH to ubiquinone",
     "log2": 1.08949,
     "pvalue": 0.32005,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB3",
@@ -3677,7 +3677,7 @@
     "gene_function": "NDUFB3: Essential component of complex I transfers electrons from NADH to ubiquinone",
     "log2": 0.091366,
     "pvalue": 0.93215,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB4",
@@ -3687,7 +3687,7 @@
     "gene_function": "NDUFB4: Essential component of complex I transfers electrons from NADH to ubiquinone",
     "log2": -0.130364,
     "pvalue": 0.9035,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB5",
@@ -3697,7 +3697,7 @@
     "gene_function": "NDUFB5: Essential component of complex I transfers electrons from NADH to ubiquinone",
     "log2": 0.0646145,
     "pvalue": 0.95305,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB6",
@@ -3707,7 +3707,7 @@
     "gene_function": "NDUFB6: Essential component of complex I transfers electrons from NADH to ubiquinone",
     "log2": 0.0447196,
     "pvalue": 0.9688,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB7",
@@ -3717,7 +3717,7 @@
     "gene_function": "NDUFB7: Essential component of complex I transfers electrons from NADH to ubiquinone",
     "log2": -0.402136,
     "pvalue": 0.7065,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB8",
@@ -3727,7 +3727,7 @@
     "gene_function": "NDUFB8: Essential component of complex I transfers electrons from NADH to ubiquinone",
     "log2": 1.14924,
     "pvalue": 0.29505,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB9",
@@ -3737,7 +3737,7 @@
     "gene_function": "NDUFB9: Essential component of complex I transfers electrons from NADH to ubiquinone",
     "log2": 0.396719,
     "pvalue": 0.7201,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFC1",
@@ -3747,7 +3747,7 @@
     "gene_function": "NDUFC1: Essential component of complex I transfers electrons from NADH to ubiquinone",
     "log2": -0.151029,
     "pvalue": 0.92445,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFS1",
@@ -3757,7 +3757,7 @@
     "gene_function": "NDUFS1: Essential component of complex I transfers electrons from NADH to ubiquinone",
     "log2": 0.0998737,
     "pvalue": 0.9266,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFS2",
@@ -3767,7 +3767,7 @@
     "gene_function": "NDUFS2: Essential component of complex I transfers electrons from NADH to ubiquinone",
     "log2": 1.42175,
     "pvalue": 0.20135,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFS3",
@@ -3777,7 +3777,7 @@
     "gene_function": "NDUFS3: Essential component of complex I transfers electrons from NADH to ubiquinone",
     "log2": 0.359361,
     "pvalue": 0.81005,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFS4",
@@ -3787,7 +3787,7 @@
     "gene_function": "NDUFS4: Essential component of complex I transfers electrons from NADH to ubiquinone",
     "log2": -0.71386,
     "pvalue": 0.5087,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFS5",
@@ -3797,7 +3797,7 @@
     "gene_function": "NDUFS5: Essential component of complex I transfers electrons from NADH to ubiquinone",
     "log2": 0.647668,
     "pvalue": 0.5574,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFS6",
@@ -3807,7 +3807,7 @@
     "gene_function": "NDUFS6: Essential component of complex I transfers electrons from NADH to ubiquinone",
     "log2": -0.635528,
     "pvalue": 0.55835,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFS7",
@@ -3817,7 +3817,7 @@
     "gene_function": "NDUFS7: Essential component of complex I transfers electrons from NADH to ubiquinone",
     "log2": 0.432353,
     "pvalue": 0.69875,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFS8",
@@ -3827,7 +3827,7 @@
     "gene_function": "NDUFS8: Essential component of complex I transfers electrons from NADH to ubiquinone",
     "log2": 0.391885,
     "pvalue": 0.701,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFV1",
@@ -3837,7 +3837,7 @@
     "gene_function": "NDUFV1: Essential component of complex I transfers electrons from NADH to ubiquinone",
     "log2": 0.518696,
     "pvalue": 0.634,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFV2",
@@ -3847,7 +3847,7 @@
     "gene_function": "NDUFV2: Essential component of complex I transfers electrons from NADH to ubiquinone",
     "log2": 0.331184,
     "pvalue": 0.76525,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFV3",
@@ -3857,7 +3857,7 @@
     "gene_function": "NDUFV3: Essential component of complex I transfers electrons from NADH to ubiquinone",
     "log2": 1.11882,
     "pvalue": 0.3417,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NFE2L2",
@@ -3867,7 +3867,7 @@
     "gene_function": "NFE2L2: Regulates the expression of TFB1M and TFB2M which are two mitochondrial transcription factors",
     "log2": -0.80649,
     "pvalue": 0.44655,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NFS1",
@@ -3877,7 +3877,7 @@
     "gene_function": "NFS1: The sulfide for Fe-S clusters originates from cysteine via the action of NFS1",
     "log2": 0.925628,
     "pvalue": 0.61525,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NFU1",
@@ -3887,7 +3887,7 @@
     "gene_function": "NFU1: Protein assembles and transfers 4Fe-4S clusters to target apoproteins",
     "log2": -0.573679,
     "pvalue": 0.60365,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NME3",
@@ -3897,7 +3897,7 @@
     "gene_function": "NME3: Shows mitochondrial nucleoside diphosphate kinase activity",
     "log2": 0.506848,
     "pvalue": 0.6498,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NME4",
@@ -3907,7 +3907,7 @@
     "gene_function": "NME4: Shows mitochondrial nucleoside diphosphate kinase activity",
     "log2": 0.75379,
     "pvalue": 0.47755,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NME6",
@@ -3917,7 +3917,7 @@
     "gene_function": "NME6: Shows mitochondrial nucleoside diphosphate kinase activity",
     "log2": 1.04049,
     "pvalue": 0.47015,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NRF1",
@@ -3927,7 +3927,7 @@
     "gene_function": "NRF1: Regulates the expression of TFB1M and TFB2M which are two mitochondrial transcription factors",
     "log2": 0.176603,
     "pvalue": 0.87985,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NSUN2",
@@ -3937,7 +3937,7 @@
     "gene_function": "NSUN2: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
     "log2": -0.164674,
     "pvalue": 0.8755,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NTHL1",
@@ -3947,7 +3947,7 @@
     "gene_function": "NTHL1: Involved in the repair of mispairs in DNA",
     "log2": 0.425434,
     "pvalue": 0.7334,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NUBP1",
@@ -3957,7 +3957,7 @@
     "gene_function": "NUBP1: Essential for both cytosolic iron-sulfur protein assembly and iron homeostasis",
     "log2": -0.511596,
     "pvalue": 0.68455,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NUBP2",
@@ -3967,7 +3967,7 @@
     "gene_function": "NUBP2: Required for the assembly of cyotosolic iron-sulfur proteins",
     "log2": -0.146364,
     "pvalue": 0.89245,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NUBPL",
@@ -3977,7 +3977,7 @@
     "gene_function": "NUBPL: Possible role in the delivery of one or more Fe/S clusters to complex I subunits",
     "log2": -0.915977,
     "pvalue": 0.46045,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "OGDH",
@@ -3987,7 +3987,7 @@
     "gene_function": "OGDH: Catalyzes the overall conversion of 2-oxoglutarate to succinyl-CoA and CO2",
     "log2": 0.448184,
     "pvalue": 0.67735,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "OGG1",
@@ -3997,7 +3997,7 @@
     "gene_function": "OGG1: responsible for the excision of 8-oxoguanine",
     "log2": -0.120112,
     "pvalue": 0.94115,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "OMA1",
@@ -4007,7 +4007,7 @@
     "gene_function": "OMA1: Involved in the mitochondrial fusion, know to induce proteolytic inactivation of OPA1",
     "log2": -0.297562,
     "pvalue": 0.8104,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "OPA1",
@@ -4017,7 +4017,7 @@
     "gene_function": "OPA1: Involved in the mitochondrial fusion, initiates inner membrane fusion",
     "log2": 0.891422,
     "pvalue": 0.4115,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "OPA3",
@@ -4027,7 +4027,7 @@
     "gene_function": "OPA3: Involved in the mitochondrial fusion, Involved in mitochondrial fragmentation, interacts with MFN1",
     "log2": 0.449533,
     "pvalue": 0.74225,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "OSGEPL1",
@@ -4037,7 +4037,7 @@
     "gene_function": "OSGEPL1: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
     "log2": -1.11737,
     "pvalue": 0.45985,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "OXA1L",
@@ -4047,7 +4047,7 @@
     "gene_function": "OXA1L: May have a role in the insertion of proteins into inner membrane and also a complex V assembly factor",
     "log2": -0.347522,
     "pvalue": 0.74595,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PACS2",
@@ -4057,7 +4057,7 @@
     "gene_function": "PACS2: Involved in the control of ER mitochondria appositions",
     "log2": 0.362759,
     "pvalue": 0.84115,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PARK2",
@@ -4067,7 +4067,7 @@
     "gene_function": "PARK2: Involved in the mitochondrial fusion, PARK2 induced ubiquitination of mitofusins may target mitochondria for mitophagy",
     "log2": -1.26388,
     "pvalue": 0.454,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PARL",
@@ -4077,7 +4077,7 @@
     "gene_function": "PARL: Involved in the mitochondrial fusion, regulates the clevage of OPA1",
     "log2": 0.575422,
     "pvalue": 0.59095,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PARS2",
@@ -4087,7 +4087,7 @@
     "gene_function": "PARS2: Involved in the specific attachment of proline aminoacid to its cognate tRNA",
     "log2": 0.99537,
     "pvalue": 0.45825,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PDHA1",
@@ -4097,7 +4097,7 @@
     "gene_function": "PDHA1: Catalyzes the overall conversion of pyruvate to acetyl-CoA",
     "log2": 1.40372,
     "pvalue": 0.2074,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PDHB",
@@ -4107,7 +4107,7 @@
     "gene_function": "PDHB: Catalyzes the overall conversion of pyruvate to acetyl-CoA",
     "log2": -0.0969496,
     "pvalue": 0.92855,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PDHX",
@@ -4117,7 +4117,7 @@
     "gene_function": "PDHX: Catalyzes the conversion of pyruvate to acetyl coenzyme A",
     "log2": 0.541876,
     "pvalue": 0.69495,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PET112",
@@ -4127,7 +4127,7 @@
     "gene_function": "PET112: Involved in the biosynthesis of glutamyl-tRNA",
     "log2": -0.800757,
     "pvalue": 0.51925,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PFKL",
@@ -4137,7 +4137,7 @@
     "gene_function": "PFKL: Catalyzes the conversion of fructose 6-phosphate to fructose 1,6-bisphosphate",
     "log2": 0.666057,
     "pvalue": 0.54305,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PFKM",
@@ -4147,7 +4147,7 @@
     "gene_function": "PFKM: Catalyzes the phosphorylation of fructose-6-phosphate to fructose-1,6-bisphosphate",
     "log2": -2.14112,
     "pvalue": 0.08665,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PFKP",
@@ -4157,7 +4157,7 @@
     "gene_function": "PFKP: Catalyzes the irreversible conversion of fructose-6-phosphate to fructose-1,6-bisphosphate",
     "log2": 0.263065,
     "pvalue": 0.79975,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PGAM1",
@@ -4167,7 +4167,7 @@
     "gene_function": "PGAM1: Catalyzes the reversible reaction of 3-phosphoglycerate to 2-phosphoglycerate",
     "log2": 0.563237,
     "pvalue": 0.60445,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PGAM2",
@@ -4177,7 +4177,7 @@
     "gene_function": "PGAM2: Catalyzes the reversible reaction of 3-phosphoglycerate to 2-phosphoglycerate",
     "log2": -2.6408,
     "pvalue": 0.24035,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PGK1",
@@ -4187,7 +4187,7 @@
     "gene_function": "PGK1: Catalyzes the conversion of 1,3-diphosphoglycerate to 3-phosphoglycerate",
     "log2": 0.444271,
     "pvalue": 0.6937,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PGS1",
@@ -4197,7 +4197,7 @@
     "gene_function": "PGS1: Phosphatidylglycerol synthase converts cytidine diphosphate diacylglycerol to phosphatidylglycerol phosphate",
     "log2": 0.620088,
     "pvalue": 0.61865,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PHB",
@@ -4207,7 +4207,7 @@
     "gene_function": "PHB: Involved in the post translational quality control, stabilizes mitochondrially synthesized proteins",
     "log2": -0.311011,
     "pvalue": 0.78005,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PHB2",
@@ -4217,7 +4217,7 @@
     "gene_function": "PHB2: Involved in the mitochondrial fusion, scaffold proteins PHB2 and STOML2 coordinate stability of the OPA1",
     "log2": 0.541644,
     "pvalue": 0.63285,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PINK1",
@@ -4227,7 +4227,7 @@
     "gene_function": "PINK1: Involved in the mitochondrial fusion, PINK1 phosphorylates PARK2 and inturn PARK2 induced ubiquitination of mitofusins may target mitochondria for mitophagy",
     "log2": -0.47687,
     "pvalue": 0.65395,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PKIA",
@@ -4237,7 +4237,7 @@
     "gene_function": "PKIA: Involved in the mitochondrial fission, is known to inhibit GTPase activity of DNM1L",
     "log2": -3.2893,
     "pvalue": 0.03945,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PKLR",
@@ -4247,7 +4247,7 @@
     "gene_function": "PKLR: Catalyzes the transphosphorylation of phohsphoenolpyruvate into pyruvate and ATP",
     "log2": 5.03143,
     "pvalue": 0.2677,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PKM2",
@@ -4257,7 +4257,7 @@
     "gene_function": "PKM2: Catalyzes the transphosphorylation of phohsphoenolpyruvate into pyruvate and ATP",
     "log2": -0.185768,
     "pvalue": 0.87465,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PLD6",
@@ -4267,7 +4267,7 @@
     "gene_function": "PLD6: Involved in the mitochondrial fusion, promotes mitofusin-mediated fusion",
     "log2": 0.827857,
     "pvalue": 0.56515,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PMAIP1",
@@ -4277,7 +4277,7 @@
     "gene_function": "PMAIP1: Noxa Bcl-2 family member propagating apoptosis",
     "log2": 1.40756,
     "pvalue": 0.3466,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PML",
@@ -4287,7 +4287,7 @@
     "gene_function": "PML: Regulates Inositol-1,4,5-triphosphate receptor mediated Ca2+ release from the ER",
     "log2": 0.520948,
     "pvalue": 0.64635,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PMPCA",
@@ -4297,7 +4297,7 @@
     "gene_function": "PMPCA: Presequence of preproteins are removed by proteolytic enzyme mitochondrial processing peptidase",
     "log2": 0.511111,
     "pvalue": 0.6315,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PMPCB",
@@ -4307,7 +4307,7 @@
     "gene_function": "PMPCB: Presequence of preproteins are removed by proteolytic enzyme mitochondrial processing peptidase",
     "log2": 0.256634,
     "pvalue": 0.83685,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "POLG",
@@ -4317,7 +4317,7 @@
     "gene_function": "POLG: Mitochondrial DNA polymerasein addition it also shows 3' to 5' exonuclease activity and ensure faithful replication",
     "log2": 0.0136099,
     "pvalue": 0.99215,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "POLG2",
@@ -4327,7 +4327,7 @@
     "gene_function": "POLG2: Acts as catalytic subunit of mitochondrial DNA polymerase",
     "log2": -0.380708,
     "pvalue": 0.81075,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "POLRMT",
@@ -4337,7 +4337,7 @@
     "gene_function": "POLRMT: provides primers for the initiation of replication of the mitochondria genome",
     "log2": 0.557678,
     "pvalue": 0.60945,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PPARGC1A",
@@ -4347,7 +4347,7 @@
     "gene_function": "PPARGC1A: Regulates the expression of TFB1M and TFB2M which are two mitochondrial transcription factors",
     "log2": 2.56786,
     "pvalue": 0.1203,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PPIA",
@@ -4357,7 +4357,7 @@
     "gene_function": "PPIA: Cyclophilin A might work with ENDOG in a DNA degradation complex",
     "log2": 0.213781,
     "pvalue": 0.86075,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PPIF",
@@ -4367,7 +4367,7 @@
     "gene_function": "PPIF: Cyclophilin D forms part of permeability transition pore",
     "log2": 1.4792,
     "pvalue": 0.179,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PPOX",
@@ -4377,7 +4377,7 @@
     "gene_function": "PPOX: Enzyme protoporphyrinogen oxidase coverts Protoporphyrinogen IX to Protoporphyrin IX",
     "log2": 1.42754,
     "pvalue": 0.242,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PRDX3",
@@ -4387,7 +4387,7 @@
     "gene_function": "PRDX3: Mitochondrial peroxiredoxin reduces hydrogen peroxide to water",
     "log2": -0.392619,
     "pvalue": 0.71625,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PTCD2",
@@ -4397,7 +4397,7 @@
     "gene_function": "PTCD2: Complex III assembly factor, maturation and stabilization of cytochrome b mRNA",
     "log2": -1.03424,
     "pvalue": 0.50105,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PTCD3",
@@ -4407,7 +4407,7 @@
     "gene_function": "PTCD3: Associates with mitochondrial small ribosomal subunit and regulates translation",
     "log2": 0.909646,
     "pvalue": 0.391,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PTPMT1",
@@ -4417,7 +4417,7 @@
     "gene_function": "PTPMT1: Phosphatidylglycerophosphatase activity removes phospate from phosphatidylglycerol phosphate to form phosphatidylglycerol",
     "log2": -0.371997,
     "pvalue": 0.8832,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PUS1",
@@ -4427,7 +4427,7 @@
     "gene_function": "PUS1: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
     "log2": 0.629118,
     "pvalue": 0.61415,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PUS3",
@@ -4437,7 +4437,7 @@
     "gene_function": "PUS3: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
     "log2": -0.364462,
     "pvalue": 0.8061,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "QRSL1",
@@ -4447,7 +4447,7 @@
     "gene_function": "QRSL1: Involved in the biosynthesis of glutamyl-tRNA",
     "log2": 0.34909,
     "pvalue": 0.77255,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "QTRT1",
@@ -4457,7 +4457,7 @@
     "gene_function": "QTRT1: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
     "log2": -0.327632,
     "pvalue": 0.78285,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "QTRTD1",
@@ -4467,7 +4467,7 @@
     "gene_function": "QTRTD1: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
     "log2": 0.336129,
     "pvalue": 0.77635,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "RARS2",
@@ -4477,7 +4477,7 @@
     "gene_function": "RARS2: Involved in the specific attachment of arginine aminoacid to its cognate tRNA",
     "log2": 0.1492,
     "pvalue": 0.88835,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "RHOT1",
@@ -4487,7 +4487,7 @@
     "gene_function": "RHOT1: Involved in the mitophagy, tethers mitochondria to the tubulin network but phosphorylation by PINK1 results in the disattachment of mitochondria",
     "log2": -0.857591,
     "pvalue": 0.43765,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "RHOT2",
@@ -4497,7 +4497,7 @@
     "gene_function": "RHOT2: Involved in the mitophagy, tethers mitochondria to the tubulin network but phosphorylation by PINK1 results in the disattachment of mitochondria",
     "log2": -0.172313,
     "pvalue": 0.8765,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "RMRP",
@@ -4507,7 +4507,7 @@
     "gene_function": "RMRP: RNA component of mitochondrial RNA processing endoribonuclease: cleaves mitochondrial RNA at the priming site of mitochondrial DNA replication",
     "log2": -3.39855,
     "pvalue": 0.1178,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "RNASEH1",
@@ -4517,7 +4517,7 @@
     "gene_function": "RNASEH1: May have role in the removal of RNA primers at the origin of replication on heavy and light strands",
     "log2": 2.39132,
     "pvalue": 0.0698,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "RNASEL",
@@ -4527,7 +4527,7 @@
     "gene_function": "RNASEL: Modulate the stability of mitochondrial mRNAsby interacting with MTIF2",
     "log2": -0.340028,
     "pvalue": 0.7874,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "RPUSD2",
@@ -4537,7 +4537,7 @@
     "gene_function": "RPUSD2: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
     "log2": -0.0429899,
     "pvalue": 0.976,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "RPUSD4",
@@ -4547,7 +4547,7 @@
     "gene_function": "RPUSD4: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
     "log2": -0.944151,
     "pvalue": 0.42625,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "RRM2B",
@@ -4557,7 +4557,7 @@
     "gene_function": "RRM2B: Required for the de novo deoxyribonucloetide synthesis in nonproliferating cells supplying dNTPs to mtDNA synthesis",
     "log2": -1.57094,
     "pvalue": 0.2327,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SAMM50",
@@ -4567,7 +4567,7 @@
     "gene_function": "SAMM50: Outermembrane sorting and assembly machinary, central component of SAMM complex and inserts beta barrel proteins into the outer membrane",
     "log2": -0.118725,
     "pvalue": 0.913,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SARS2",
@@ -4577,7 +4577,7 @@
     "gene_function": "SARS2: Involved in the specific attachment of serine aminoacid to its cognate tRNA",
     "log2": 0.377134,
     "pvalue": 0.85105,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SCO1",
@@ -4587,7 +4587,7 @@
     "gene_function": "SCO1: Complex IV assembly factor, Incorporation of copper atoms in the catalytic sites of the nascent complex",
     "log2": -0.13404,
     "pvalue": 0.9074,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SDHA",
@@ -4597,7 +4597,7 @@
     "gene_function": "SDHA: Part of Succinate dehydrogenase complex in oxidative phosporylation in TCA cycle it catalyzes the oxidation of succinate to fumarate",
     "log2": -0.39019,
     "pvalue": 0.7079,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SDHAF1",
@@ -4607,7 +4607,7 @@
     "gene_function": "SDHAF1: Essential for complex II assembly",
     "log2": 0.881897,
     "pvalue": 0.48285,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SDHAF2",
@@ -4617,7 +4617,7 @@
     "gene_function": "SDHAF2: Required for flavination of a succinate dehydrogenase complex",
     "log2": 0.613259,
     "pvalue": 0.58135,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SDHB",
@@ -4627,7 +4627,7 @@
     "gene_function": "SDHB: Part of Succinate dehydrogenase complex in oxidative phosporylation in TCA cycle it catalyzes the oxidation of succinate to fumarate",
     "log2": 0.0165298,
     "pvalue": 0.9872,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SDHC",
@@ -4637,7 +4637,7 @@
     "gene_function": "SDHC: Part of Succinate dehydrogenase complex in oxidative phosporylation in TCA cycle it catalyzes the oxidation of succinate to fumarate",
     "log2": 1.12783,
     "pvalue": 0.30855,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SDHD",
@@ -4647,7 +4647,7 @@
     "gene_function": "SDHD: Part of Succinate dehydrogenase complex in oxidative phosporylation in TCA cycle it catalyzes the oxidation of succinate to fumarate",
     "log2": 0.762352,
     "pvalue": 0.48645,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SELRC1",
@@ -4657,7 +4657,7 @@
     "gene_function": "SELRC1: COA7 Complex IV assembly factor",
     "log2": 0.662211,
     "pvalue": 0.61165,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SH3GLB1",
@@ -4667,7 +4667,7 @@
     "gene_function": "SH3GLB1: Involved in the mitochondrial fission, proposed to be involved in the lipid remodeling of the outer membrane during fission",
     "log2": 0.321741,
     "pvalue": 0.7634,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SHC1",
@@ -4677,7 +4677,7 @@
     "gene_function": "SHC1: Could be involved in the generation of the hydrogen peroxide independent of superoxides in mitochondria",
     "log2": 1.07498,
     "pvalue": 0.33265,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SIGMAR1",
@@ -4687,7 +4687,7 @@
     "gene_function": "SIGMAR1: Stabilises the Inositol-1,4,5-triphosphate receptors and ensures proper Ca2+ fluxes",
     "log2": 1.7969,
     "pvalue": 0.1053,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC24A6",
@@ -4697,7 +4697,7 @@
     "gene_function": "SLC24A6: Involved in the calcium homeostasis by counteracting the calcium accumaltion in the mitochondria",
     "log2": -0.090287,
     "pvalue": 0.9351,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC25A1",
@@ -4707,7 +4707,7 @@
     "gene_function": "SLC25A1: May be involved in the transport of gluthathione into the mitochondria",
     "log2": 1.73969,
     "pvalue": 0.11705,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC25A19",
@@ -4717,7 +4717,7 @@
     "gene_function": "SLC25A19: Transports thiamine pyrophosphates into mitochondria",
     "log2": 0.936098,
     "pvalue": 0.5214,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC25A20",
@@ -4727,7 +4727,7 @@
     "gene_function": "SLC25A20: Carnitine acylcarnitine translocase mediates acylcarnitine entry into mitochondria",
     "log2": -1.11313,
     "pvalue": 0.38895,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC25A28",
@@ -4737,7 +4737,7 @@
     "gene_function": "SLC25A28: Mitochondrial iron transporter",
     "log2": 0.274485,
     "pvalue": 0.8102,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC25A3",
@@ -4747,7 +4747,7 @@
     "gene_function": "SLC25A3: Involved in the transport of phosphate into the mitochondrial matrix",
     "log2": -0.625736,
     "pvalue": 0.5774,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC25A33",
@@ -4757,7 +4757,7 @@
     "gene_function": "SLC25A33: Mitochondrial pyrimidine nucleotide carrier",
     "log2": 1.86337,
     "pvalue": 0.1249,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC25A37",
@@ -4767,7 +4767,7 @@
     "gene_function": "SLC25A37: Functions as an essential iron importer",
     "log2": 1.70479,
     "pvalue": 0.1944,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC25A4",
@@ -4777,7 +4777,7 @@
     "gene_function": "SLC25A4: Adenine nucleotide translocator forms part of permeability transition pore",
     "log2": -1.39997,
     "pvalue": 0.2364,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC25A5",
@@ -4787,7 +4787,7 @@
     "gene_function": "SLC25A5: Adenine nucleotide translocator forms part of permeability transition pore",
     "log2": 0.447639,
     "pvalue": 0.69705,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC27A1",
@@ -4797,7 +4797,7 @@
     "gene_function": "SLC27A1: Readily converts the transported very long chain fatty acids to acyl-CoAs",
     "log2": -3.48861,
     "pvalue": 0.0204,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC27A2",
@@ -4807,7 +4807,7 @@
     "gene_function": "SLC27A2: Readily converts the transported very long chain fatty acids to acyl-CoAs",
     "log2": -3.54376,
     "pvalue": 0.0598,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC27A3",
@@ -4817,7 +4817,7 @@
     "gene_function": "SLC27A3: Readily converts the transported very long chain fatty acids to acyl-CoAs",
     "log2": -0.587492,
     "pvalue": 0.6158,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC27A4",
@@ -4827,7 +4827,7 @@
     "gene_function": "SLC27A4: Readily converts the transported very long chain fatty acids to acyl-CoAs",
     "log2": 0.993018,
     "pvalue": 0.35875,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC27A5",
@@ -4837,7 +4837,7 @@
     "gene_function": "SLC27A5: Readily converts the transported very long chain fatty acids to acyl-CoAs",
     "log2": -0.611862,
     "pvalue": 0.66625,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC27A6",
@@ -4847,7 +4847,7 @@
     "gene_function": "SLC27A6: Readily converts the transported very long chain fatty acids to acyl-CoAs",
     "log2": -0.301701,
     "pvalue": 0.80245,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC29A1",
@@ -4857,7 +4857,7 @@
     "gene_function": "SLC29A1: Equilibrative nucleoside transporter 1 imports recycled deoxyribonucleosides from cytoplasm into mitochondria",
     "log2": -0.30909,
     "pvalue": 0.77365,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC2A1",
@@ -4867,7 +4867,7 @@
     "gene_function": "SLC2A1: A major glucose transporter in the mammalian blood-brain barrier",
     "log2": 2.5969,
     "pvalue": 0.02515,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC2A3",
@@ -4877,7 +4877,7 @@
     "gene_function": "SLC2A3: Solute carrier family 2 (facilitated glucose transporter), member 3",
     "log2": 0.052092,
     "pvalue": 0.9684,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC2A4",
@@ -4887,7 +4887,7 @@
     "gene_function": "SLC2A4: Insulin-regulated facilitative glucose transporter",
     "log2": -5.26471,
     "pvalue": 0.02415,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC2A5",
@@ -4897,7 +4897,7 @@
     "gene_function": "SLC2A5: Solute carrier family 2 (facilitated glucose/fructose transporter), member 5",
     "log2": 0.426726,
     "pvalue": 0.80965,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SOD1",
@@ -4907,7 +4907,7 @@
     "gene_function": "SOD1: May be involved in the removal of superoxides in the inter membrane space of mitochondria",
     "log2": -0.568882,
     "pvalue": 0.6114,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SOD2",
@@ -4917,7 +4917,7 @@
     "gene_function": "SOD2: Dismutates the super oxide generated in the mitochondiral matrix to hydrogen peroxide",
     "log2": 0.664383,
     "pvalue": 0.5429,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SPG7",
@@ -4927,7 +4927,7 @@
     "gene_function": "SPG7: Involved in the mitochondrial fusion, known to maintain the OPA1 isoforms",
     "log2": 0.125253,
     "pvalue": 0.90305,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SQSTM1",
@@ -4937,7 +4937,7 @@
     "gene_function": "SQSTM1: Involved  in the mitophagy, recruited to mitochondria and binds mitochondrial substrates on the autophagosomes",
     "log2": 0.384168,
     "pvalue": 0.76565,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SSBP1",
@@ -4947,7 +4947,7 @@
     "gene_function": "SSBP1: Promotes helical destabilization for the DNA helicases and Polymerase gama (POLG) to support mtDNA replication",
     "log2": 1.15723,
     "pvalue": 0.2789,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "STOML2",
@@ -4957,7 +4957,7 @@
     "gene_function": "STOML2:  Involved in the mitochondrial fusion, scaffold proteins PHB2 and STOML2 coordinate stability of the OPA1",
     "log2": 0.613649,
     "pvalue": 0.56755,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SUCLA2",
@@ -4967,7 +4967,7 @@
     "gene_function": "SUCLA2: convert succinate to succinyl-CoA",
     "log2": -0.791866,
     "pvalue": 0.49115,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SUCLG1",
@@ -4977,7 +4977,7 @@
     "gene_function": "SUCLG1: Catalyzes the conversion of succinyl CoA to succinate",
     "log2": 0.0950178,
     "pvalue": 0.92995,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SUCLG2",
@@ -4987,7 +4987,7 @@
     "gene_function": "SUCLG2: Catalyzes the conversion of succinyl CoA to succinate",
     "log2": -1.36485,
     "pvalue": 0.20555,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SURF1",
@@ -4997,7 +4997,7 @@
     "gene_function": "SURF1: Complex IV assembly factor, involved in the biogenesis of the cytochrome c oxidase complex",
     "log2": -1.06659,
     "pvalue": 0.3506,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SYBU",
@@ -5007,7 +5007,7 @@
     "gene_function": "SYBU: Involved in the mitochondrial movement, have a role in linking the mitochondria to KIF5B",
     "log2": -4.82087,
     "pvalue": 0.0013,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TACO1",
@@ -5017,7 +5017,7 @@
     "gene_function": "TACO1: Translation activator of complex IV subunit",
     "log2": -0.3321,
     "pvalue": 0.78525,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TARS2",
@@ -5027,7 +5027,7 @@
     "gene_function": "TARS2: Involved in the specific attachment of threonine aminoacid to its cognate tRNA",
     "log2": 1.18439,
     "pvalue": 0.28315,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TAZ",
@@ -5037,7 +5037,7 @@
     "gene_function": "TAZ: Converts the nascent cardiolipin to mature cardiolipin",
     "log2": 0.704722,
     "pvalue": 0.2752,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TCHP",
@@ -5047,7 +5047,7 @@
     "gene_function": "TCHP: Involved in the regulation of ER mitochondria juxtaposition",
     "log2": -0.326064,
     "pvalue": 0.79805,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TFAM",
@@ -5057,7 +5057,7 @@
     "gene_function": "TFAM: A key activator of mitochondrial transcription and also functions in replication and repair",
     "log2": 0.112276,
     "pvalue": 0.922,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TFB1M",
@@ -5067,7 +5067,7 @@
     "gene_function": "TFB1M: Regulates the stability of small subunit of mitochondrial ribosome by its methylation activity. It also plays a very important role in transcription",
     "log2": -1.06297,
     "pvalue": 0.4389,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TFB2M",
@@ -5077,7 +5077,7 @@
     "gene_function": "TFB2M: Essential transcription faactor involved in the transcription of mitochondrial genes",
     "log2": -0.102649,
     "pvalue": 0.93335,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM10",
@@ -5087,7 +5087,7 @@
     "gene_function": "TIMM10: Innermembrane carrier pathway, forms complex with TIMM9 and performs chaperone like activity in the intermembrane space",
     "log2": 0.770685,
     "pvalue": 0.50735,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM13",
@@ -5097,7 +5097,7 @@
     "gene_function": "TIMM13: Innermembrane carrier pathway, forms complex with TIMM8 and performs the transfer of inner membrane proteins",
     "log2": -0.169722,
     "pvalue": 0.8738,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM17A",
@@ -5107,7 +5107,7 @@
     "gene_function": "TIMM17A: Inner membrane translocation, might influence the channel activity formed by the TIMM23",
     "log2": 0.478861,
     "pvalue": 0.66085,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM17B",
@@ -5117,7 +5117,7 @@
     "gene_function": "TIMM17B: Inner membrane translocation, might influence the channel activity formed by the TIMM23",
     "log2": 1.79683,
     "pvalue": 0.36745,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM21",
@@ -5127,7 +5127,7 @@
     "gene_function": "TIMM21: Inner membrane translocation, connects TOMM and TIMM complex and may assist in the release of preprotein from the TOMM complex",
     "log2": 0.447062,
     "pvalue": 0.7074,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM22",
@@ -5137,7 +5137,7 @@
     "gene_function": "TIMM22: Innermembrane carrier pathway, forms the core channel and inserts proteins into inner membrane",
     "log2": -0.359062,
     "pvalue": 0.76715,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM23",
@@ -5147,7 +5147,7 @@
     "gene_function": "TIMM23: Inner membrane translocation, forms the main channel of TIMM23 complex",
     "log2": 0.924364,
     "pvalue": 0.39315,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM44",
@@ -5157,7 +5157,7 @@
     "gene_function": "TIMM44: Presequence translocase associated motor, gets asssociated with the HSPA9 to drive proteins into the matrix",
     "log2": 0.513317,
     "pvalue": 0.6486,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM50",
@@ -5167,7 +5167,7 @@
     "gene_function": "TIMM50: Inner membrane translocation, guides the preproteins to the import channel formed by TIMM23",
     "log2": 0.948345,
     "pvalue": 0.38835,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM8A",
@@ -5177,7 +5177,7 @@
     "gene_function": "TIMM8A: Innermembrane carrier pathway, forms complex with TIMM13 and also performs the transfer of inner membrane proteins",
     "log2": 1.487,
     "pvalue": 0.3174,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM8B",
@@ -5187,7 +5187,7 @@
     "gene_function": "TIMM8B: Innermembrane carrier pathway, forms complex with TIMM13 and also performs the transfer of inner membrane proteins",
     "log2": 1.12892,
     "pvalue": 0.45755,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM9",
@@ -5197,7 +5197,7 @@
     "gene_function": "TIMM9: Innermembrane carrier pathway, forms complex with TIMM10 and performs chaperone like activity in the intermembrane space",
     "log2": -0.0503903,
     "pvalue": 0.96905,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TK2",
@@ -5207,7 +5207,7 @@
     "gene_function": "TK2: Involved in the phosphorylation of recycled deoxyribonucleosides in mitochondria specific for thymidine, cytidine and uridine",
     "log2": -1.74064,
     "pvalue": 0.14,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TMEM126B",
@@ -5217,7 +5217,7 @@
     "gene_function": "TMEM126B: Component of the mitochondrial complex I assembly complex",
     "log2": 1.11579,
     "pvalue": 0.3361,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TMEM70",
@@ -5227,7 +5227,7 @@
     "gene_function": "TMEM70: Complex V assembly factor, may play a role in biogenesis of mitochondrial ATP synthase",
     "log2": 0.745742,
     "pvalue": 0.5203,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOMM20",
@@ -5237,7 +5237,7 @@
     "gene_function": "TOMM20: Outer membrane translocation, recognize presequences on the mitochondrial outer membrane",
     "log2": -0.591532,
     "pvalue": 0.59645,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOMM22",
@@ -5247,7 +5247,7 @@
     "gene_function": "TOMM22: Outer membrane translocation, recognize presequences on the mitochondrial outer membrane",
     "log2": -0.281211,
     "pvalue": 0.79305,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOMM40",
@@ -5257,7 +5257,7 @@
     "gene_function": "TOMM40: Outer membrane translocation, forms the outer membrane channel forming protein",
     "log2": 1.56097,
     "pvalue": 0.1531,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOMM40L",
@@ -5267,7 +5267,7 @@
     "gene_function": "TOMM40L: Outer membrane translocation, forms the outer membrane channel forming protein",
     "log2": 1.66002,
     "pvalue": 0.18625,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOMM5",
@@ -5277,7 +5277,7 @@
     "gene_function": "TOMM5: Outer membrane translocation, transports preprotein to the import pore formed by TOMM40",
     "log2": 1.10028,
     "pvalue": 0.3123,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOMM6",
@@ -5287,7 +5287,7 @@
     "gene_function": "TOMM6: Outer membrane translocation, required for the assembly and stability of the TOM complex",
     "log2": 0.801816,
     "pvalue": 0.46605,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOMM7",
@@ -5297,7 +5297,7 @@
     "gene_function": "TOMM7: Outer membrane translocation, required for the assembly and stability of the TOM complex",
     "log2": 0.0220166,
     "pvalue": 0.9826,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOMM70A",
@@ -5307,7 +5307,7 @@
     "gene_function": "TOMM70A: Outer membrane translocation, recognizes proteins with internal targeting signals",
     "log2": 0.658624,
     "pvalue": 0.5459,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOP1MT",
@@ -5317,7 +5317,7 @@
     "gene_function": "TOP1MT: Suggested to have a role in the removal of positive supercoils created by helicase activity",
     "log2": 0.49537,
     "pvalue": 0.6496,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOP3A",
@@ -5327,7 +5327,7 @@
     "gene_function": "TOP3A: May also be present in mitochondrial with the role in the removal of positive supercoils during replication",
     "log2": 0.387539,
     "pvalue": 0.75455,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TP53",
@@ -5347,7 +5347,7 @@
     "gene_function": "TPI1: Catalyzes the isomerization of glyceraldehydes 3-phosphate and dihydroxy-acetone phosphate",
     "log2": 1.05102,
     "pvalue": 0.37565,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRAK1",
@@ -5357,7 +5357,7 @@
     "gene_function": "TRAK1: Involved in the mitochondrial movement, acts as a adapter linking kinesin-1 to mitochondria",
     "log2": -1.48046,
     "pvalue": 0.19995,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRAK2",
@@ -5367,7 +5367,7 @@
     "gene_function": "TRAK2: Involved in the mitochondrial movement, acts as a adapter linking kinesin-1 to mitochondria",
     "log2": -1.57543,
     "pvalue": 0.17415,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRAP1",
@@ -5377,7 +5377,7 @@
     "gene_function": "TRAP1: Involved in the mitochonrial fission, known to regulate fission proteins DNM1L and MFF",
     "log2": 0.0139383,
     "pvalue": 0.98995,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRIT1",
@@ -5387,7 +5387,7 @@
     "gene_function": "TRIT1: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
     "log2": 0.585857,
     "pvalue": 0.62445,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRMT1",
@@ -5397,7 +5397,7 @@
     "gene_function": "TRMT1: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
     "log2": -0.291899,
     "pvalue": 0.7932,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRMT11",
@@ -5407,7 +5407,7 @@
     "gene_function": "TRMT11: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
     "log2": -0.395358,
     "pvalue": 0.7744,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRMT112",
@@ -5417,7 +5417,7 @@
     "gene_function": "TRMT112: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
     "log2": 0.675799,
     "pvalue": 0.60965,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRMT2B",
@@ -5427,7 +5427,7 @@
     "gene_function": "TRMT2B: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
     "log2": 1.13565,
     "pvalue": 0.33045,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRMT5",
@@ -5437,7 +5437,7 @@
     "gene_function": "TRMT5: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
     "log2": -0.36027,
     "pvalue": 0.7641,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRMT6",
@@ -5447,7 +5447,7 @@
     "gene_function": "TRMT6: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
     "log2": 1.05936,
     "pvalue": 0.37705,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRMT61B",
@@ -5457,7 +5457,7 @@
     "gene_function": "TRMT61B: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
     "log2": -0.153186,
     "pvalue": 0.9051,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRMU",
@@ -5467,7 +5467,7 @@
     "gene_function": "TRMU: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
     "log2": 0.334254,
     "pvalue": 0.8032,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRNT1",
@@ -5477,7 +5477,7 @@
     "gene_function": "TRNT1: Mitochondrial CCA adding enzyme, adds CCA sequence to the 3' end of tRNA",
     "log2": -0.363133,
     "pvalue": 0.7905,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRUB2",
@@ -5487,7 +5487,7 @@
     "gene_function": "TRUB2: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
     "log2": 0.106828,
     "pvalue": 0.9214,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TSFM",
@@ -5497,7 +5497,7 @@
     "gene_function": "TSFM: Involved in the elongation and termination phases of the translation process",
     "log2": -0.192503,
     "pvalue": 0.86995,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TTC19",
@@ -5507,7 +5507,7 @@
     "gene_function": "TTC19: Complex III assembly factor",
     "log2": -1.03582,
     "pvalue": 0.38955,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TUFM",
@@ -5527,7 +5527,7 @@
     "gene_function": "TXN2: Mitochondrial thioredoxin reduces peroxiredoxin to their super oxide scavenging state",
     "log2": -0.444135,
     "pvalue": 0.67915,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TXNRD2",
@@ -5537,7 +5537,7 @@
     "gene_function": "TXNRD2: Maintains thioredoxins in their reduced state using NAPDH reducing equivalents",
     "log2": -0.759477,
     "pvalue": 0.7927,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UNG",
@@ -5547,7 +5547,7 @@
     "gene_function": "UNG: prevent mutagenesis by eliminating uracil from DNA molecules",
     "log2": -0.297036,
     "pvalue": 0.78005,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UQCC",
@@ -5557,7 +5557,7 @@
     "gene_function": "UQCC: Complex III assembly factor, ubiquinol-cytochrome c reductase complex assembly factor 1",
     "log2": 0.651013,
     "pvalue": 0.5486,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UQCR10",
@@ -5567,7 +5567,7 @@
     "gene_function": "UQCR10: Ubiquinol-cytochrome c reductase essential component of complex III",
     "log2": 0.207093,
     "pvalue": 0.84675,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UQCR11",
@@ -5577,7 +5577,7 @@
     "gene_function": "UQCR11: Ubiquinol-cytochrome c reductase essential component of complex III",
     "log2": -0.20804,
     "pvalue": 0.84835,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UQCRB",
@@ -5587,7 +5587,7 @@
     "gene_function": "UQCRB: Ubiquinol-cytochrome c reductase binding protein essential component of complex III",
     "log2": -0.417869,
     "pvalue": 0.71245,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UQCRC1",
@@ -5597,7 +5597,7 @@
     "gene_function": "UQCRC1: Ubiquinol-cytochrome c reductase core protein I essential component of complex III",
     "log2": 0.185686,
     "pvalue": 0.86435,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UQCRC2",
@@ -5607,7 +5607,7 @@
     "gene_function": "UQCRC2: Ubiquinol-cytochrome c reductase core protein II essential component of complex III",
     "log2": -0.579365,
     "pvalue": 0.59905,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UQCRFS1",
@@ -5617,7 +5617,7 @@
     "gene_function": "UQCRFS1: Ubiquinol-cytochrome c reductase Rieske iron-sulfur polypeptide 1 essential component of complex III",
     "log2": 0.217607,
     "pvalue": 0.8417,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UQCRH",
@@ -5627,7 +5627,7 @@
     "gene_function": "UQCRH: Ubiquinol-cytochrome c reductase hinge protein essential component of complex III",
     "log2": 1.15892,
     "pvalue": 0.2959,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UQCRQ",
@@ -5637,7 +5637,7 @@
     "gene_function": "UQCRQ: Ubiquinol-cytochrome c reductase essential component of complex III",
     "log2": -0.612026,
     "pvalue": 0.57095,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UROD",
@@ -5647,7 +5647,7 @@
     "gene_function": "UROD: Uroporphyrinogen III decarboxylase catalyzes stepwise decarboxylation of the Uroporphyrinogen III",
     "log2": -0.936095,
     "pvalue": 0.38505,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UROS",
@@ -5657,7 +5657,7 @@
     "gene_function": "UROS: Enzyme uroporphyrinogen III syntase catalyzes the liner tetrapyrrole molecule is cyclized or rearranged",
     "log2": 0.269124,
     "pvalue": 0.802,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "VARS2",
@@ -5667,7 +5667,7 @@
     "gene_function": "VARS2: Involved in the specific attachment of valine aminoacid to its cognate tRNA",
     "log2": 0.413729,
     "pvalue": 0.709,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "VDAC1",
@@ -5677,7 +5677,7 @@
     "gene_function": "VDAC1: Voltage dependent anion channel forms part of permeability transition pore and also involved in the takeup of calcium ions from the Endoplasmic reticulum",
     "log2": 0.832787,
     "pvalue": 0.44605,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "VDAC2",
@@ -5687,7 +5687,7 @@
     "gene_function": "VDAC2: Voltage dependent anion channel forms part of permeability transition pore and also involved in the takeup of calcium ions from the Endoplasmic reticulum",
     "log2": 0.901689,
     "pvalue": 0.4231,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "VDAC3",
@@ -5697,7 +5697,7 @@
     "gene_function": "VDAC3: Voltage dependent anion channel forms part of permeability transition pore and also involved in the takeup of calcium ions from the Endoplasmic reticulum",
     "log2": 0.552406,
     "pvalue": 0.605,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "WARS2",
@@ -5707,7 +5707,7 @@
     "gene_function": "WARS2: Involved in the specific attachment of tryptophan aminoacid to its cognate tRNA",
     "log2": -0.771091,
     "pvalue": 0.53315,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "XIAP",
@@ -5717,7 +5717,7 @@
     "gene_function": "XIAP: X-linked inhibitor of apoptosis protein inhibits caspase activity by directly binding to CASP9, 3 and 7",
     "log2": -0.0905422,
     "pvalue": 0.93185,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "YARS2",
@@ -5727,7 +5727,7 @@
     "gene_function": "YARS2: Involved in the specific attachment of tyrosine aminoacid to its cognate tRNA",
     "log2": 1.28658,
     "pvalue": 0.2696,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "YME1L1",
@@ -5737,7 +5737,7 @@
     "gene_function": "YME1L1: Involved in the mitochondrial fusion, known to cleave OPA1",
     "log2": 0.511754,
     "pvalue": 0.63495,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "YRDC",
@@ -5747,6 +5747,6 @@
     "gene_function": "YRDC: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs",
     "log2": 0.50656,
     "pvalue": 0.78885,
-    "mutation": "NULL"
+    "mutation": ""
   }
 ]

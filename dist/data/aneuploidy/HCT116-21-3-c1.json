@@ -11,91 +11,91 @@
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.422,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACAA2",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.182392,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACAD10",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.23314,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACAD8",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.355838,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACAD9",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.00993093,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACADM",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.118597,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACADS",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0692836,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACADSB",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.00968606,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACADVL",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.24396,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACO2",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.114167,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSL1",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.226212,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSL3",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.211481,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSL4",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0404563,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSL5",
@@ -109,56 +109,56 @@
     "process": "Fatty acid beta-oxidation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.838746,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSS2",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0833172,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "AFG3L2",
     "process": "Mitochondrial Dynamics",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.176132,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "AIFM1",
     "process": "Apoptosis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.155791,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "AK3",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0139671,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "AK4",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.106639,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ALAD",
     "process": "Heme Biosynthesis",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.201125,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ALAS1",
     "process": "Heme Biosynthesis",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.190549,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ALDOA",
@@ -172,112 +172,112 @@
     "process": "Glycolysis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.324409,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "AMBRA1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0131968,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ANP32A",
     "process": "Apoptosis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.00200061,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "APAF1",
     "process": "Apoptosis",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.243847,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "APEX1",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.119045,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "APEX2",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0212997,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "APOPT1",
     "process": "Apoptosis",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0182758,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ARG2",
     "process": "Urea Cycle",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.384781,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ASL",
     "process": "Urea Cycle",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.292153,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ASS1",
     "process": "Urea Cycle",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.538325,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATAD3A",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.230257,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATAD3B",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.175915,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5A1",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0575153,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5B",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0592925,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5C1",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.13302,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5D",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.363343,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5F1",
@@ -291,434 +291,434 @@
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.285513,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5G2",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.00183452,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5G3",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.144632,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5H",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.309693,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5I",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.287114,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5J",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.789096,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5L",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0912649,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5O",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.742487,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATPAF1",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.00387585,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATPAF2",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.185599,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATPIF1",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.154453,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BAD",
     "process": "Apoptosis",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0635916,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BAK1",
     "process": "Apoptosis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.346791,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BAX",
     "process": "Apoptosis",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.100732,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BBC3",
     "process": "Apoptosis",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.345485,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BCKDHA",
     "process": "ROS defense",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.194794,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BCKDHB",
     "process": "ROS defense",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.411527,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BCL2",
     "process": "Apoptosis",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.352976,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BCL2L1",
     "process": "Apoptosis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0649691,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BCL2L11",
     "process": "Apoptosis",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.191042,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BCS1L",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.18703,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BECN1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.254645,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BID",
     "process": "Apoptosis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0580755,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BIK",
     "process": "Apoptosis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.232359,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BNIP3",
     "process": "Mitochondrial Dynamics",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.425041,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BNIP3L",
     "process": "Mitochondrial Dynamics",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.157323,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BOLA3",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.300811,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BRP44",
     "process": "Pyruvate transfer",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.184598,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BRP44L",
     "process": "Pyruvate transfer",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.198017,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "C10orf2",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.157064,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "C1orf31",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.131163,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "C20orf7",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0357976,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "C22orf32",
     "process": "Calcium trafficking",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0504335,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "C2orf56",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0233356,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "C7orf44",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.064734,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "C8orf38",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.174316,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CARS2",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0782558,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CASP3",
     "process": "Apoptosis",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0156025,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CASP7",
     "process": "Apoptosis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.154872,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CASP9",
     "process": "Apoptosis",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.050091,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CCDC109B",
     "process": "Calcium trafficking",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.242526,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CCDC56",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0934187,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CCDC90A",
     "process": "Calcium trafficking",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.204625,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CDK1",
     "process": "Apoptosis",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0778719,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CDK5RAP1",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.245531,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CDKAL1",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0960749,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CDS1",
     "process": "Cardiolipin biosynthesis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.153614,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CHCHD4",
     "process": "Import & Sorting",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.263699,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CHCHD8",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.182214,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CIAO1",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0438976,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CIAPIN1",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.153306,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CLPP",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0682247,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CLPX",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.184456,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CMPK2",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.375598,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COA5",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.200981,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX10",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.111775,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX11",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0812357,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX14",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.15202,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX15",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0889001,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX17",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0689806,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX18",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.00997418,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX19",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0500492,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX20",
@@ -732,112 +732,112 @@
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.1024,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX5A",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.316959,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX5B",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0804812,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX6A1",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.181662,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX6B1",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.105605,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX6B2",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": -1.41018,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX6C",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.227595,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX7A2",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.118922,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX7B",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0959515,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX7C",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.193214,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX8A",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0349083,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CPOX",
     "process": "Heme Biosynthesis",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.905366,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CPS1",
     "process": "Urea Cycle",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0138012,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CPT1A",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0498616,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CPT1C",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.415474,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CPT2",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.196505,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CRAT",
@@ -851,35 +851,35 @@
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.14326,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CRLS1",
     "process": "Cardiolipin biosynthesis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.103825,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CS",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0920202,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CYC1",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0643153,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CYCS",
     "process": "Apoptosis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.224413,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DAP3",
@@ -893,91 +893,91 @@
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0226649,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DDX28",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.155743,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DECR1",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.149103,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DHX30",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0377696,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DIABLO",
     "process": "Apoptosis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.128557,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DLAT",
     "process": "Formation of Acetyl CoA",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.177759,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DLD",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0919584,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DLST",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.207108,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DNAJC19",
     "process": "Import & Sorting",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.319431,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DNM1",
     "process": "Apoptosis",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.402077,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DNM1L",
     "process": "Mitochondrial Dynamics",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.138922,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DUS2L",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.146804,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DYNLL1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0246701,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "EARS2",
@@ -991,210 +991,210 @@
     "process": "Fatty acid beta-oxidation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.194776,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "EFHA1",
     "process": "Calcium trafficking",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.138635,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "EIF3M",
     "process": "Apoptosis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.311602,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ELAC2",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.235291,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ENDOG",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.00929528,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ENO1",
     "process": "Glycolysis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0945698,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ENO2",
     "process": "Glycolysis",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.262171,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ENO3",
     "process": "Glycolysis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.22237,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FABP5",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.482722,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FABP6",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "HCT116-21.3-1",
     "log2": 1.32135,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FAM96A",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.210806,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FAM96B",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0556158,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FARS2",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.105651,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FDX1",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0197119,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FDX1L",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0505349,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FDXR",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0689449,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FECH",
     "process": "Heme Biosynthesis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.10812,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FH",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.047935,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FIS1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.00331279,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FOXRED1",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.264614,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FXN",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.19186,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GABARAP",
     "process": "Mitochondrial Dynamics",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.114716,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GAPDH",
     "process": "Glycolysis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.136756,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GARS",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.448412,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GATC",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0762365,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GCLC",
     "process": "ROS defense",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0719603,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GCLM",
     "process": "ROS defense",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.83903,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GDAP1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.242653,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GFER",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0692049,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GFM1",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.392435,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GFM2",
@@ -1208,7 +1208,7 @@
     "process": "ROS defense",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.249488,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GLRX5",
@@ -1222,35 +1222,35 @@
     "process": "Fatty acid beta-oxidation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.23843,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GPI",
     "process": "Glycolysis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.128519,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GPX1",
     "process": "ROS defense",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.184763,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GPX4",
     "process": "ROS defense",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0842904,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GRPEL1",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.383463,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GRPEL2",
@@ -1264,329 +1264,329 @@
     "process": "ROS defense",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.17,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GSS",
     "process": "ROS defense",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.159244,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GSTA1",
     "process": "ROS defense",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0826251,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GSTA2",
     "process": "ROS defense",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.535162,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GSTA4",
     "process": "ROS defense",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.757051,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GSTP1",
     "process": "ROS defense",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.201934,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GTPBP3",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.216801,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HADH",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.327181,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HADHA",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.193626,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HADHB",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0255447,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HARS2",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.191058,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HCCS",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.126618,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HK1",
     "process": "Glycolysis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.359513,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HK2",
     "process": "Glycolysis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.668995,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HMBS",
     "process": "Heme Biosynthesis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.140813,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HSCB",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.242358,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HSD17B10",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.264483,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HSPA9",
     "process": "Import & Sorting",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.136939,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HTRA2",
     "process": "Apoptosis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.253938,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "IARS2",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.137293,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "IBA57",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.16716,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "IDH1",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0386165,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "IDH2",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.221187,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "IDH3A",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.00471092,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "IDH3B",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0520091,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "IDH3G",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0341387,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "IMMP1L",
     "process": "Import & Sorting",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.119878,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "IMMP2L",
     "process": "Import & Sorting",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0123019,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ISCA1",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.1701,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ISCA2",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.00841174,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ISCU",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.218227,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ITPR1",
     "process": "Calcium trafficking",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0608718,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ITPR2",
     "process": "Calcium trafficking",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.324043,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ITPR3",
     "process": "Calcium trafficking",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.354983,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "KARS",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.336185,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "KIAA0391",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0111728,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "KIF1B",
     "process": "Mitochondrial Dynamics",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0256188,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "KIF5B",
     "process": "Mitochondrial Dynamics",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.182275,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "LARS2",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.149475,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "LDHA",
     "process": "Glycolysis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.206538,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "LDHB",
     "process": "Glycolysis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.338389,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "LETM1",
     "process": "Calcium trafficking",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0802878,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "LIG3",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0230881,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "LONP1",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.284231,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "LRPPRC",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.34479,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "LYRM4",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.272932,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MAPK1",
     "process": "Apoptosis",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0703018,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MAPK3",
@@ -1600,980 +1600,980 @@
     "process": "Mitochondrial Dynamics",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.030587,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MARS2",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.341576,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MCL1",
     "process": "Apoptosis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.184792,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MCU",
     "process": "Calcium trafficking",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0476735,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MDH2",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.237468,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MFF",
     "process": "Mitochondrial Dynamics",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0136619,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MFN1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0128981,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MFN2",
     "process": "Mitochondrial Dynamics",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0844341,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MICU1",
     "process": "Calcium trafficking",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.243521,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MIPEP",
     "process": "Import & Sorting",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.200835,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MMS19",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.184388,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MNF1",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0836828,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MPV17",
     "process": "ROS defense",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.322809,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MPV17L2",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0311199,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL1",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.338116,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL10",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.169588,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL11",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.08483,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL12",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.119716,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL13",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.109082,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL14",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0948291,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL15",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0758691,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL16",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0255259,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL17",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.112596,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL18",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.191624,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL19",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.153026,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL2",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.334364,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL20",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.15759,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL21",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.358305,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL22",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.101337,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL23",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0245783,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL24",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0931132,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL27",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.00308552,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL28",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0112493,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL3",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.160518,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL30",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0526243,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL32",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.294825,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL33",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.184077,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL34",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0498255,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL35",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0958796,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL36",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.342526,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL37",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.145752,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL38",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.149073,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL39",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.744489,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL4",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.188079,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL40",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.172264,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL41",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.00929324,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL42",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.162004,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL43",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0190718,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL44",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0554595,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL45",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.181185,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL46",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0615149,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL47",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.212283,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL48",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0410815,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL49",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0672056,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL50",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.154199,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL51",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.296873,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL52",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.05448,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL54",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0104968,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL55",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.111724,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL9",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0351423,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS10",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.157315,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS11",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.18488,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS12",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.200247,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS14",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0087108,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS15",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.223831,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS16",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0607551,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS17",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.418781,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS18A",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.195438,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS18B",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0407493,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS18C",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.158051,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS2",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0845905,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS21",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.300416,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS22",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.13779,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS23",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.26507,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS25",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.182356,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS26",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.13908,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS27",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.144744,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS28",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0472976,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS30",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.105244,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS31",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.207701,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS33",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.313267,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS34",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0876858,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS35",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.365204,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS36",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.1547,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS5",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.212403,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS7",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.182337,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS9",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.188833,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRRF",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0545693,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MSTO1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0903465,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MTFMT",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.200017,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MTFP1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.285515,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MTIF2",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.289142,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MTIF3",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.23601,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MTO1",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0750138,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MTPAP",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.159963,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MTRF1",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0662654,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MTRF1L",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0261495,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MUTYH",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.102079,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NARF",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.114472,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NARS2",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.27127,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA1",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.275744,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA10",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.104817,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA11",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.10033,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA12",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0567757,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA13",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.138596,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA2",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0454455,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA3",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.136724,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA4",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.292165,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA5",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.130901,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA6",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.110046,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA7",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.140328,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA8",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.160605,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA9",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.117541,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFAB1",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.189687,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFAF1",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.16851,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFAF2",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.567462,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFAF3",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.13769,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFAF4",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.251592,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB1",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.154935,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB10",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.138324,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB11",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.134952,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB2",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.193146,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB3",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.135889,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB4",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.00139958,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB5",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0522956,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB6",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0564941,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB7",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.12528,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB8",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0737422,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB9",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.200606,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFC1",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0801201,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFS1",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0240999,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFS2",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0790186,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFS3",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.00191366,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFS4",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.00832388,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFS5",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.175958,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFS6",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.286496,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFS7",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.218328,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFS8",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0240569,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFV1",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.286086,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFV2",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0943718,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFV3",
@@ -2587,105 +2587,105 @@
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.123448,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NFS1",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.210916,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NFU1",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.179974,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NME3",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.131862,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NME4",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.175513,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NME6",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.18536,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NRF1",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.207823,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NSUN2",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.212586,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NTHL1",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.162622,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NUBP1",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.202165,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NUBP2",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0406768,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NUBPL",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.288069,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "OGDH",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0214005,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "OGG1",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0428656,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "OMA1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.431211,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "OPA1",
@@ -2699,70 +2699,70 @@
     "process": "Mitochondrial Dynamics",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.103438,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "OSGEPL1",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.146744,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "OXA1L",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.25254,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PACS2",
     "process": "Calcium trafficking",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0265145,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PARL",
     "process": "Mitochondrial Dynamics",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.432203,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PARS2",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.1336,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PDHA1",
     "process": "Formation of Acetyl CoA",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.136158,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PDHB",
     "process": "Formation of Acetyl CoA",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.087677,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PDHX",
     "process": "Formation of Acetyl CoA",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.00998119,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PET112",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0391656,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PFKL",
@@ -2776,84 +2776,84 @@
     "process": "Glycolysis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.148631,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PFKP",
     "process": "Glycolysis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.098847,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PGAM1",
     "process": "Glycolysis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0672231,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PGAM2",
     "process": "Glycolysis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.547897,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PGK1",
     "process": "Glycolysis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.130582,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PGS1",
     "process": "Cardiolipin biosynthesis",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.195404,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PHB",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.256019,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PHB2",
     "process": "Mitochondrial Dynamics",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.230449,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PINK1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.260475,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PKIA",
     "process": "Mitochondrial Dynamics",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.338256,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PKLR",
     "process": "Glycolysis",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.112687,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PKM2",
     "process": "Glycolysis",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.321325,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PLD6",
@@ -2867,357 +2867,357 @@
     "process": "Apoptosis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.400045,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PML",
     "process": "Calcium trafficking",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0815526,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PMPCA",
     "process": "Import & Sorting",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.20168,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PMPCB",
     "process": "Import & Sorting",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.253332,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "POLG",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0732339,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "POLG2",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.146688,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "POLRMT",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0545368,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PPIA",
     "process": "Apoptosis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.100514,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PPIF",
     "process": "Apoptosis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.140314,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PPOX",
     "process": "Heme Biosynthesis",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.144981,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PRDX3",
     "process": "ROS defense",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0276572,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PTCD2",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0640512,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PTCD3",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.210667,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PTPMT1",
     "process": "Cardiolipin biosynthesis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.187289,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PUS1",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.238498,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PUS3",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.274075,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "QRSL1",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0497856,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "QTRT1",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.213417,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "QTRTD1",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.141215,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "RARS2",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0137219,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "RHOT1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.00491973,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "RHOT2",
     "process": "Mitochondrial Dynamics",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0917311,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "RMRP",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0604469,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "RNASEH1",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0632509,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "RNASEL",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.29177,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "RPUSD2",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.159218,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "RPUSD4",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.172375,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "RRM2B",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0620175,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SAMM50",
     "process": "Import & Sorting",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.241731,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SARS2",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0445021,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SCO1",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.139008,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SDHA",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0797224,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SDHAF1",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.164975,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SDHAF2",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.091323,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SDHB",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.179522,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SDHC",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0676822,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SDHD",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.122541,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SELRC1",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.230189,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SH3GLB1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.125734,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SHC1",
     "process": "ROS defense",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.244767,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SIGMAR1",
     "process": "Calcium trafficking",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.387667,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC24A6",
     "process": "Calcium trafficking",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.187617,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC25A1",
     "process": "ROS defense",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0392319,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC25A19",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.324496,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC25A20",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.251671,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC25A28",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.132447,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC25A3",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.132369,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC25A33",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.217309,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC25A37",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.179022,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC25A4",
     "process": "Apoptosis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0295729,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC25A5",
     "process": "Apoptosis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0931561,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC27A1",
@@ -3231,42 +3231,42 @@
     "process": "Fatty acid beta-oxidation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.079985,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC27A3",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0492994,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC27A4",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.269187,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC27A5",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.24575,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC27A6",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.156092,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC29A1",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.132261,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC2A1",
@@ -3280,615 +3280,615 @@
     "process": "Glycolysis",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.00329708,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC2A4",
     "process": "Glycolysis",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0316372,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SOD1",
     "process": "ROS defense",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.68345,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SOD2",
     "process": "ROS defense",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0138542,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SPG7",
     "process": "Mitochondrial Dynamics",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0941,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SQSTM1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.552664,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SSBP1",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.338681,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "STOML2",
     "process": "Mitochondrial Dynamics",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.191955,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SUCLA2",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0517527,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SUCLG1",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0590808,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SUCLG2",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.24647,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SURF1",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.100906,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SYBU",
     "process": "Mitochondrial Dynamics",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.423653,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TACO1",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0453602,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TARS2",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.281996,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TAZ",
     "process": "Cardiolipin biosynthesis",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0108779,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TCHP",
     "process": "Calcium trafficking",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.036131,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TERT",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.865517,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TFAM",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0706417,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TFB1M",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.332851,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TFB2M",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.253453,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM10",
     "process": "Import & Sorting",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.246289,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM13",
     "process": "Import & Sorting",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.245343,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM17A",
     "process": "Import & Sorting",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.104778,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM17B",
     "process": "Import & Sorting",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.184952,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM21",
     "process": "Import & Sorting",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.136176,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM22",
     "process": "Import & Sorting",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.148134,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM23",
     "process": "Import & Sorting",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.193869,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM44",
     "process": "Import & Sorting",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.317972,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM50",
     "process": "Import & Sorting",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.175274,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM8A",
     "process": "Import & Sorting",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.226165,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM8B",
     "process": "Import & Sorting",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.256007,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM9",
     "process": "Import & Sorting",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.319868,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TK2",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.188589,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TMEM126B",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.203885,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TMEM70",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0486562,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOMM20",
     "process": "Import & Sorting",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.244017,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOMM22",
     "process": "Import & Sorting",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.184395,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOMM40",
     "process": "Import & Sorting",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.200585,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOMM40L",
     "process": "Import & Sorting",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.271311,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOMM5",
     "process": "Import & Sorting",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.324001,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOMM6",
     "process": "Import & Sorting",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.222899,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOMM7",
     "process": "Import & Sorting",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.380084,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOMM70A",
     "process": "Import & Sorting",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.16567,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOP1MT",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.24069,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOP3A",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.150609,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TP53",
     "process": "Apoptosis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.24517,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TPI1",
     "process": "Glycolysis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0787595,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRAK1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0573055,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRAK2",
     "process": "Mitochondrial Dynamics",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.145988,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRAP1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.309606,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRIT1",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.113617,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRMT1",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.176492,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRMT11",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.279289,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRMT112",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0612213,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRMT2B",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0800597,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRMT5",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.213668,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRMT6",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0214253,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRMT61B",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.145281,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRMU",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.178195,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRNT1",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.2124,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRUB2",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0672765,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TSFM",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0557322,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TTC19",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.112346,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TUFM",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.270459,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TXN2",
     "process": "ROS defense",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.017108,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TXNRD2",
     "process": "ROS defense",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.106142,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UNG",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0981208,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UQCC",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0460925,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UQCR10",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0466512,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UQCR11",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.282217,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UQCRB",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.217516,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UQCRC1",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0154367,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UQCRC2",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.175687,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UQCRFS1",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0735335,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UQCRH",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.173988,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UQCRQ",
     "process": "Electron transport chain",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.163084,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UROD",
     "process": "Heme Biosynthesis",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.191196,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UROS",
     "process": "Heme Biosynthesis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.352811,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "VARS2",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.213464,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "VDAC1",
     "process": "Apoptosis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.30338,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "VDAC2",
     "process": "Apoptosis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.214434,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "VDAC3",
     "process": "Apoptosis",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.00191123,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "WARS2",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.0841173,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "XIAP",
     "process": "Apoptosis",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.0775659,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "YARS2",
     "process": "Translation",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.183805,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "YME1L1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "HCT116-21.3-1",
     "log2": -0.00444829,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "YRDC",
     "process": "Replication & Transcription",
     "sampleID": "HCT116-21.3-1",
     "log2": 0.356659,
-    "mutation": "NULL"
+    "mutation": ""
   }
 ]

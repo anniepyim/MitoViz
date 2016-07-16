@@ -4,63 +4,63 @@
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.052228,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ABCB7",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "8/3 clone 3",
     "log2": -0.0890049,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACAA2",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "8/3 clone 3",
     "log2": -0.287341,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACAD10",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "8/3 clone 3",
     "log2": 0.329753,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACAD11",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "8/3 clone 3",
     "log2": -0.149885,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACAD8",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "8/3 clone 3",
     "log2": 0.0925119,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACAD9",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": 0.133195,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACADM",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "8/3 clone 3",
     "log2": 0.0354659,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACADS",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "8/3 clone 3",
     "log2": 0.221155,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACADSB",
@@ -74,35 +74,35 @@
     "process": "Fatty acid beta-oxidation",
     "sampleID": "8/3 clone 3",
     "log2": 0.237439,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACO2",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "8/3 clone 3",
     "log2": 0.0335055,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSL1",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "8/3 clone 3",
     "log2": -0.274904,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSL3",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "8/3 clone 3",
     "log2": 0.147017,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSL4",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "8/3 clone 3",
     "log2": -0.398262,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSL5",
@@ -116,14 +116,14 @@
     "process": "Fatty acid beta-oxidation",
     "sampleID": "8/3 clone 3",
     "log2": -0.124036,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ACSS2",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "8/3 clone 3",
     "log2": -0.264095,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "AFG3L2",
@@ -137,28 +137,28 @@
     "process": "Apoptosis",
     "sampleID": "8/3 clone 3",
     "log2": -0.0560588,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "AK3",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": -0.279041,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "AK4",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": -0.212049,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ALAD",
     "process": "Heme Biosynthesis",
     "sampleID": "8/3 clone 3",
     "log2": -0.237199,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ALAS1",
@@ -172,21 +172,21 @@
     "process": "Glycolysis",
     "sampleID": "8/3 clone 3",
     "log2": 0.19125,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ALDOC",
     "process": "Glycolysis",
     "sampleID": "8/3 clone 3",
     "log2": 0.242833,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "AMBRA1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "8/3 clone 3",
     "log2": -0.0564161,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ANP32A",
@@ -200,56 +200,56 @@
     "process": "Apoptosis",
     "sampleID": "8/3 clone 3",
     "log2": 0.0629459,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "APEX1",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": -0.111887,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "APEX2",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": 0.0119149,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "APOPT1",
     "process": "Apoptosis",
     "sampleID": "8/3 clone 3",
     "log2": -0.109473,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ARG2",
     "process": "Urea Cycle",
     "sampleID": "8/3 clone 3",
     "log2": 0.276393,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ASL",
     "process": "Urea Cycle",
     "sampleID": "8/3 clone 3",
     "log2": 0.14367,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ASS1",
     "process": "Urea Cycle",
     "sampleID": "8/3 clone 3",
     "log2": 0.217205,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATAD3A",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.262688,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATAD3B",
@@ -263,56 +263,56 @@
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.0633035,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5B",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.0996378,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5C1",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.15748,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5D",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": 0.0867114,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5E",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.00949438,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5F1",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.0116705,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5G1",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": 0.193034,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5G2",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.0925765,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5G3",
@@ -326,77 +326,77 @@
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.0576427,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5I",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": 0.0699783,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5J",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.117343,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5J2",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": 0.00676316,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5L",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.200795,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATP5O",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.101413,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATPAF1",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": 0.0651838,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATPAF2",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.0838006,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ATPIF1",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": 0.0226094,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BAD",
     "process": "Apoptosis",
     "sampleID": "8/3 clone 3",
     "log2": 0.217329,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BAK1",
     "process": "Apoptosis",
     "sampleID": "8/3 clone 3",
     "log2": 0.0340874,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BAX",
@@ -410,7 +410,7 @@
     "process": "Apoptosis",
     "sampleID": "8/3 clone 3",
     "log2": -0.138162,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BCKDHA",
@@ -424,63 +424,63 @@
     "process": "ROS defense",
     "sampleID": "8/3 clone 3",
     "log2": 0.167055,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BCL2",
     "process": "Apoptosis",
     "sampleID": "8/3 clone 3",
     "log2": 0.294486,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BCL2L1",
     "process": "Apoptosis",
     "sampleID": "8/3 clone 3",
     "log2": -0.178983,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BCL2L11",
     "process": "Apoptosis",
     "sampleID": "8/3 clone 3",
     "log2": -0.0404591,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BCS1L",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": 0.282542,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BECN1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "8/3 clone 3",
     "log2": 0.00284626,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BID",
     "process": "Apoptosis",
     "sampleID": "8/3 clone 3",
     "log2": -0.0475981,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BIK",
     "process": "Apoptosis",
     "sampleID": "8/3 clone 3",
     "log2": 0.0930047,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BNIP3",
     "process": "Mitochondrial Dynamics",
     "sampleID": "8/3 clone 3",
     "log2": 0.302704,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BNIP3L",
@@ -494,70 +494,70 @@
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "8/3 clone 3",
     "log2": 0.0871788,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BRP44",
     "process": "Pyruvate transfer",
     "sampleID": "8/3 clone 3",
     "log2": -0.00321422,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "BRP44L",
     "process": "Pyruvate transfer",
     "sampleID": "8/3 clone 3",
     "log2": -0.536267,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "C10orf2",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": -0.0617255,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "C1orf31",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.205637,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "C20orf7",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.00263886,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "C22orf32",
     "process": "Calcium trafficking",
     "sampleID": "8/3 clone 3",
     "log2": -0.384876,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "C2orf56",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.0958033,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "C7orf44",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.0190971,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "C8orf38",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": 0.221969,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CARS2",
@@ -571,7 +571,7 @@
     "process": "Apoptosis",
     "sampleID": "8/3 clone 3",
     "log2": 0.0744683,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CASP7",
@@ -585,28 +585,28 @@
     "process": "Apoptosis",
     "sampleID": "8/3 clone 3",
     "log2": 0.229851,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CCDC109B",
     "process": "Calcium trafficking",
     "sampleID": "8/3 clone 3",
     "log2": -0.0686486,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CCDC56",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": 0.0680842,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CCDC90A",
     "process": "Calcium trafficking",
     "sampleID": "8/3 clone 3",
     "log2": -0.203082,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CDK1",
@@ -620,14 +620,14 @@
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": 0.139778,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CDKAL1",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": -0.482368,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CDS1",
@@ -641,203 +641,203 @@
     "process": "Import & Sorting",
     "sampleID": "8/3 clone 3",
     "log2": -0.116579,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CHCHD8",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": 0.00436109,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CIAO1",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "8/3 clone 3",
     "log2": -0.0785158,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CIAPIN1",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "8/3 clone 3",
     "log2": 0.0394809,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CLPP",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.0951573,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CLPX",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": -0.109257,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CMPK2",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": 0.426128,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COA5",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.20882,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX10",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": 0.107801,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX11",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.0973843,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX14",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.0428244,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX15",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.0127653,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX17",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": 0.10206,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX18",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": 0.0723674,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX19",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": 0.232157,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX20",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.167082,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX4I1",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.0803013,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX5A",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.020399,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX5B",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.0584249,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX6A1",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.13455,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX6B1",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.0570404,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX6B2",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": 0.638819,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX6C",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": 0.209527,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX7A2",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.233721,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX7B",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.0291745,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX7C",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.204456,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "COX8A",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.0632497,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CPOX",
     "process": "Heme Biosynthesis",
     "sampleID": "8/3 clone 3",
     "log2": 0.45497,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CPS1",
     "process": "Urea Cycle",
     "sampleID": "8/3 clone 3",
     "log2": -0.123005,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CPT1A",
@@ -858,56 +858,56 @@
     "process": "Fatty acid beta-oxidation",
     "sampleID": "8/3 clone 3",
     "log2": 0.0546225,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CPT2",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "8/3 clone 3",
     "log2": 0.070928,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CRAT",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "8/3 clone 3",
     "log2": 0.347831,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CREB1",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": -0.0463813,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CRLS1",
     "process": "Cardiolipin biosynthesis",
     "sampleID": "8/3 clone 3",
     "log2": -0.196969,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CS",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "8/3 clone 3",
     "log2": -0.0503214,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CYC1",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": 0.012151,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "CYCS",
     "process": "Apoptosis",
     "sampleID": "8/3 clone 3",
     "log2": -0.0875371,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DAP3",
@@ -921,35 +921,35 @@
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.345424,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DDX28",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.182399,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DECR1",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "8/3 clone 3",
     "log2": 0.10847,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DHX30",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.0209023,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DIABLO",
     "process": "Apoptosis",
     "sampleID": "8/3 clone 3",
     "log2": -0.00639964,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DLAT",
@@ -970,21 +970,21 @@
     "process": "Tricarboxylic acid cycle",
     "sampleID": "8/3 clone 3",
     "log2": -0.021748,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DNAJC19",
     "process": "Import & Sorting",
     "sampleID": "8/3 clone 3",
     "log2": -0.221305,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DNM1",
     "process": "Apoptosis",
     "sampleID": "8/3 clone 3",
     "log2": -0.194754,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DNM1L",
@@ -998,14 +998,14 @@
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": 0.309851,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "DYNLL1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "8/3 clone 3",
     "log2": -0.00246572,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "EARS2",
@@ -1019,56 +1019,56 @@
     "process": "Fatty acid beta-oxidation",
     "sampleID": "8/3 clone 3",
     "log2": 0.0150962,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ECSIT",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.133299,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "EFHA1",
     "process": "Calcium trafficking",
     "sampleID": "8/3 clone 3",
     "log2": 0.0790095,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "EFHA2",
     "process": "Calcium trafficking",
     "sampleID": "8/3 clone 3",
     "log2": 5.6219,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "EIF3M",
     "process": "Apoptosis",
     "sampleID": "8/3 clone 3",
     "log2": -0.147213,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ELAC2",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": 0.0661724,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ENDOG",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": 0.0332295,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ENO1",
     "process": "Glycolysis",
     "sampleID": "8/3 clone 3",
     "log2": -0.127993,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ENO2",
@@ -1082,56 +1082,56 @@
     "process": "Glycolysis",
     "sampleID": "8/3 clone 3",
     "log2": -0.0294816,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FABP5",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "8/3 clone 3",
     "log2": 0.298026,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FABP6",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "8/3 clone 3",
     "log2": -0.195698,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FAM96A",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "8/3 clone 3",
     "log2": -0.0137319,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FAM96B",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "8/3 clone 3",
     "log2": 0.06916,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FARS2",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.109481,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FDX1",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "8/3 clone 3",
     "log2": -0.0288337,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FDX1L",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "8/3 clone 3",
     "log2": 0.167408,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FDXR",
@@ -1152,63 +1152,63 @@
     "process": "Tricarboxylic acid cycle",
     "sampleID": "8/3 clone 3",
     "log2": 0.0146821,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FIS1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "8/3 clone 3",
     "log2": 0.00349824,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FOXRED1",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": 0.234924,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "FXN",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "8/3 clone 3",
     "log2": 0.137762,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GABARAP",
     "process": "Mitochondrial Dynamics",
     "sampleID": "8/3 clone 3",
     "log2": -0.150535,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GAPDH",
     "process": "Glycolysis",
     "sampleID": "8/3 clone 3",
     "log2": 0.169743,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GAPDHS",
     "process": "Glycolysis",
     "sampleID": "8/3 clone 3",
     "log2": 0.334785,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GARS",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.181232,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GATC",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": -0.122589,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GCLC",
@@ -1222,7 +1222,7 @@
     "process": "ROS defense",
     "sampleID": "8/3 clone 3",
     "log2": 0.102806,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GDAP1",
@@ -1236,28 +1236,28 @@
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "8/3 clone 3",
     "log2": 0.247238,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GFM1",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.0866773,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GFM2",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": -0.151973,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GLRX2",
     "process": "ROS defense",
     "sampleID": "8/3 clone 3",
     "log2": -0.188704,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GLRX5",
@@ -1271,7 +1271,7 @@
     "process": "Fatty acid beta-oxidation",
     "sampleID": "8/3 clone 3",
     "log2": -0.0452838,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GPI",
@@ -1285,70 +1285,70 @@
     "process": "ROS defense",
     "sampleID": "8/3 clone 3",
     "log2": 0.167256,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GPX4",
     "process": "ROS defense",
     "sampleID": "8/3 clone 3",
     "log2": -0.0246449,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GRPEL1",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "8/3 clone 3",
     "log2": -0.092358,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GRPEL2",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "8/3 clone 3",
     "log2": -0.182789,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GSR",
     "process": "ROS defense",
     "sampleID": "8/3 clone 3",
     "log2": 0.738735,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GSS",
     "process": "ROS defense",
     "sampleID": "8/3 clone 3",
     "log2": 0.131752,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GSTA1",
     "process": "ROS defense",
     "sampleID": "8/3 clone 3",
     "log2": -0.700369,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GSTA2",
     "process": "ROS defense",
     "sampleID": "8/3 clone 3",
     "log2": -0.498273,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GSTA4",
     "process": "ROS defense",
     "sampleID": "8/3 clone 3",
     "log2": 0.306376,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GSTP1",
     "process": "ROS defense",
     "sampleID": "8/3 clone 3",
     "log2": 0.0190579,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "GTPBP3",
@@ -1362,182 +1362,182 @@
     "process": "Fatty acid beta-oxidation",
     "sampleID": "8/3 clone 3",
     "log2": -0.0529606,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HADHA",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "8/3 clone 3",
     "log2": -0.0897546,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HADHB",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "8/3 clone 3",
     "log2": -0.0631423,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HARS2",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.0386867,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HCCS",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.00270935,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HK1",
     "process": "Glycolysis",
     "sampleID": "8/3 clone 3",
     "log2": -0.214742,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HK2",
     "process": "Glycolysis",
     "sampleID": "8/3 clone 3",
     "log2": -0.105297,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HMBS",
     "process": "Heme Biosynthesis",
     "sampleID": "8/3 clone 3",
     "log2": 0.135825,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HSCB",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "8/3 clone 3",
     "log2": -0.204823,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HSD17B10",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": 0.0125644,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HSPA9",
     "process": "Import & Sorting",
     "sampleID": "8/3 clone 3",
     "log2": 0.0488858,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "HTRA2",
     "process": "Apoptosis",
     "sampleID": "8/3 clone 3",
     "log2": -0.113392,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "IARS2",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.032936,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "IBA57",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "8/3 clone 3",
     "log2": -0.0178046,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "IDH1",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "8/3 clone 3",
     "log2": -0.00638957,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "IDH2",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "8/3 clone 3",
     "log2": 0.047355,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "IDH3A",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "8/3 clone 3",
     "log2": -0.183692,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "IDH3B",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "8/3 clone 3",
     "log2": -0.149841,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "IDH3G",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "8/3 clone 3",
     "log2": 0.117565,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "IMMP1L",
     "process": "Import & Sorting",
     "sampleID": "8/3 clone 3",
     "log2": -0.0757972,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "IMMP2L",
     "process": "Import & Sorting",
     "sampleID": "8/3 clone 3",
     "log2": -0.170592,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ISCA1",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "8/3 clone 3",
     "log2": 0.0876719,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ISCA2",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "8/3 clone 3",
     "log2": -0.199519,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ISCU",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "8/3 clone 3",
     "log2": -0.0448001,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ITPR1",
     "process": "Calcium trafficking",
     "sampleID": "8/3 clone 3",
     "log2": 0.155274,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ITPR2",
     "process": "Calcium trafficking",
     "sampleID": "8/3 clone 3",
     "log2": -0.440441,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "ITPR3",
@@ -1551,7 +1551,7 @@
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": -0.0176809,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "KIAA0391",
@@ -1565,7 +1565,7 @@
     "process": "Mitochondrial Dynamics",
     "sampleID": "8/3 clone 3",
     "log2": -0.153663,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "KIF5B",
@@ -1586,35 +1586,35 @@
     "process": "Glycolysis",
     "sampleID": "8/3 clone 3",
     "log2": 0.156991,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "LDHB",
     "process": "Glycolysis",
     "sampleID": "8/3 clone 3",
     "log2": -0.168288,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "LETM1",
     "process": "Calcium trafficking",
     "sampleID": "8/3 clone 3",
     "log2": 0.0548258,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "LIG3",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": 0.113275,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "LONP1",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.17412,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "LRPPRC",
@@ -1628,7 +1628,7 @@
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "8/3 clone 3",
     "log2": -0.190149,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MAPK1",
@@ -1649,42 +1649,42 @@
     "process": "Mitochondrial Dynamics",
     "sampleID": "8/3 clone 3",
     "log2": -0.198512,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MARS2",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.0636595,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MCL1",
     "process": "Apoptosis",
     "sampleID": "8/3 clone 3",
     "log2": 0.10381,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MCU",
     "process": "Calcium trafficking",
     "sampleID": "8/3 clone 3",
     "log2": 0.0298419,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MDH2",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "8/3 clone 3",
     "log2": -0.0520253,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MFF",
     "process": "Mitochondrial Dynamics",
     "sampleID": "8/3 clone 3",
     "log2": -0.0206169,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MFN1",
@@ -1698,7 +1698,7 @@
     "process": "Mitochondrial Dynamics",
     "sampleID": "8/3 clone 3",
     "log2": 0.11468,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MICU1",
@@ -1726,14 +1726,14 @@
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": 0.145802,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MPV17",
     "process": "ROS defense",
     "sampleID": "8/3 clone 3",
     "log2": 0.265259,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MPV17L2",
@@ -1747,168 +1747,168 @@
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": -0.130563,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL10",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": -0.0133206,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL11",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.162273,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL12",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.0997413,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL13",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": -0.193885,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL14",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": -0.154769,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL15",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.515478,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL16",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.0695696,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL17",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.120579,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL18",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.0378383,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL19",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": -0.02888,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL2",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.181253,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL20",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": -0.0349517,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL21",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": -0.128098,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL22",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": -0.179436,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL23",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": -0.0335426,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL24",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.418471,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL27",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": -0.0482367,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL28",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.238547,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL3",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": -0.00558707,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL30",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": -0.107188,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL32",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": -0.0363426,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL33",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": -0.174965,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL34",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.0530423,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL35",
@@ -1922,21 +1922,21 @@
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": -0.133761,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL37",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.00529217,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL38",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.165569,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL39",
@@ -1950,35 +1950,35 @@
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.245961,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL40",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.083297,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL41",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": -0.101505,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL42",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": -0.125194,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL43",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.0192508,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL44",
@@ -1992,49 +1992,49 @@
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": -0.0986116,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL46",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.0283894,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL47",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": -0.0465121,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL48",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": -0.0899447,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL49",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.134065,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL50",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": -0.0980217,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL51",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.0508107,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL52",
@@ -2048,14 +2048,14 @@
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": -0.0598536,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL54",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": -0.098699,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPL55",
@@ -2076,35 +2076,35 @@
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.0985954,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS11",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.118316,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS12",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.0955234,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS14",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": -0.248014,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS15",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.0898816,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS16",
@@ -2118,105 +2118,105 @@
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": -0.0241154,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS18A",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.109759,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS18B",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.320307,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS18C",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": -0.0886174,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS2",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.113994,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS21",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": -0.0916664,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS22",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.0397242,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS23",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.0623564,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS24",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.00396809,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS25",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.0603281,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS26",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.0547321,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS27",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": -0.300343,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS28",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.44315,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS30",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.0517771,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS31",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": -0.0558792,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS33",
@@ -2230,28 +2230,28 @@
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.055815,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS35",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": -0.0579603,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS36",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": -0.357648,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS5",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": -0.0697278,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS6",
@@ -2265,42 +2265,42 @@
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.0731239,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRPS9",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.0406048,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MRRF",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": -0.0114183,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MSTO1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "8/3 clone 3",
     "log2": 0.0980628,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MTFMT",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": -0.0609679,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MTFP1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "8/3 clone 3",
     "log2": 0.192745,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MTIF2",
@@ -2314,42 +2314,42 @@
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": -0.248317,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MTO1",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": 0.116596,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MTPAP",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": -0.101379,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MTRF1",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": -0.131313,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MTRF1L",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": -0.138915,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "MUTYH",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": 0.477215,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NARF",
@@ -2370,63 +2370,63 @@
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.152122,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA10",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.0175418,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA11",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.0731199,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA12",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.238182,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA13",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.0869405,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA2",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.188898,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA3",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": 0.188342,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA4",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.0385258,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA5",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.193329,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA6",
@@ -2440,238 +2440,238 @@
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": 0.0062431,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA8",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.16836,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFA9",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.0094791,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFAB1",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.067764,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFAF1",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.132147,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFAF2",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.0647433,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFAF3",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.1133,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFAF4",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": 0.000290318,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB1",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.26523,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB10",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": 0.0385457,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB11",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.0137229,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB2",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.102771,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB3",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.060681,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB4",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.079196,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB5",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.17276,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB6",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.119633,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB7",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": 0.0920319,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB8",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": 0.0312756,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFB9",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.11264,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFC1",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": 0.0933948,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFC2",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.0467449,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFS1",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.0157733,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFS2",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.0567808,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFS3",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.0303823,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFS4",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.292021,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFS5",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.175154,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFS6",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": 0.00670798,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFS7",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": 0.0695665,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFS8",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": 0.165288,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFV1",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": 0.031569,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFV2",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.0786105,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NDUFV3",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": 0.0135688,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NFE2L2",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": 0.193687,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NFS1",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "8/3 clone 3",
     "log2": 0.189636,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NFU1",
@@ -2685,84 +2685,84 @@
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": -0.00926505,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NME4",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": -0.0454755,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NME6",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": 0.153501,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NRF1",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": 0.145807,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NSUN2",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": 0.141175,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NTHL1",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": 0.118217,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NUBP1",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "8/3 clone 3",
     "log2": -0.0828508,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NUBP2",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "8/3 clone 3",
     "log2": -0.041755,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "NUBPL",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": 0.125417,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "OGDH",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "8/3 clone 3",
     "log2": 0.119817,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "OGG1",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": 0.109334,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "OMA1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "8/3 clone 3",
     "log2": 0.198058,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "OPA1",
@@ -2776,35 +2776,35 @@
     "process": "Mitochondrial Dynamics",
     "sampleID": "8/3 clone 3",
     "log2": -0.0132141,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "OSGEPL1",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": -0.19865,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "OXA1L",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.0711013,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PACS2",
     "process": "Calcium trafficking",
     "sampleID": "8/3 clone 3",
     "log2": 0.172346,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PAM16",
     "process": "Import & Sorting",
     "sampleID": "8/3 clone 3",
     "log2": -0.0232469,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PARL",
@@ -2818,14 +2818,14 @@
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.242163,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PDHA1",
     "process": "Formation of Acetyl CoA",
     "sampleID": "8/3 clone 3",
     "log2": 0.0627099,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PDHB",
@@ -2846,56 +2846,56 @@
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.17612,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PFKL",
     "process": "Glycolysis",
     "sampleID": "8/3 clone 3",
     "log2": 0.14653,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PFKM",
     "process": "Glycolysis",
     "sampleID": "8/3 clone 3",
     "log2": -0.283819,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PFKP",
     "process": "Glycolysis",
     "sampleID": "8/3 clone 3",
     "log2": -0.0028511,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PGAM1",
     "process": "Glycolysis",
     "sampleID": "8/3 clone 3",
     "log2": 0.125032,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PGAM2",
     "process": "Glycolysis",
     "sampleID": "8/3 clone 3",
     "log2": -0.5094,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PGK1",
     "process": "Glycolysis",
     "sampleID": "8/3 clone 3",
     "log2": -0.0399919,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PGS1",
     "process": "Cardiolipin biosynthesis",
     "sampleID": "8/3 clone 3",
     "log2": -0.0160405,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PHB",
@@ -2909,7 +2909,7 @@
     "process": "Mitochondrial Dynamics",
     "sampleID": "8/3 clone 3",
     "log2": 0.0269165,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PINK1",
@@ -2923,42 +2923,42 @@
     "process": "Mitochondrial Dynamics",
     "sampleID": "8/3 clone 3",
     "log2": 0.345985,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PKLR",
     "process": "Glycolysis",
     "sampleID": "8/3 clone 3",
     "log2": -0.336319,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PKM2",
     "process": "Glycolysis",
     "sampleID": "8/3 clone 3",
     "log2": -0.0476797,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PLD6",
     "process": "Mitochondrial Dynamics",
     "sampleID": "8/3 clone 3",
     "log2": 0.467472,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PMAIP1",
     "process": "Apoptosis",
     "sampleID": "8/3 clone 3",
     "log2": 0.171983,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PML",
     "process": "Calcium trafficking",
     "sampleID": "8/3 clone 3",
     "log2": 0.0534275,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PMPCA",
@@ -2972,28 +2972,28 @@
     "process": "Import & Sorting",
     "sampleID": "8/3 clone 3",
     "log2": -0.239559,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "POLG",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": 0.0873651,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "POLG2",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": 0.0570221,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "POLRMT",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": 0.217422,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PPIA",
@@ -3007,28 +3007,28 @@
     "process": "Apoptosis",
     "sampleID": "8/3 clone 3",
     "log2": -0.0461717,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PPOX",
     "process": "Heme Biosynthesis",
     "sampleID": "8/3 clone 3",
     "log2": -0.0438352,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PRDX3",
     "process": "ROS defense",
     "sampleID": "8/3 clone 3",
     "log2": -0.0583312,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PTCD2",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.31943,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PTCD3",
@@ -3042,7 +3042,7 @@
     "process": "Cardiolipin biosynthesis",
     "sampleID": "8/3 clone 3",
     "log2": 0.135071,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "PUS1",
@@ -3056,28 +3056,28 @@
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": -0.230841,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "QRSL1",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": -0.152393,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "QTRT1",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": 0.203368,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "QTRTD1",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": -0.0327436,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "RARS2",
@@ -3091,7 +3091,7 @@
     "process": "Mitochondrial Dynamics",
     "sampleID": "8/3 clone 3",
     "log2": -0.0926099,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "RHOT2",
@@ -3105,119 +3105,119 @@
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": -2.02261,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "RNASEH1",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": 0.0837091,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "RNASEL",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": -0.111458,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "RPUSD2",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": 0.246261,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "RPUSD4",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": 0.0924296,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "RRM2B",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": 0.281536,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SAMM50",
     "process": "Import & Sorting",
     "sampleID": "8/3 clone 3",
     "log2": -0.147917,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SARS2",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.0739758,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SCO1",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": 0.144685,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SCO2",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": 0.131547,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SDHA",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "8/3 clone 3",
     "log2": 0.138886,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SDHAF1",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.0878759,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SDHAF2",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": 0.10549,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SDHB",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "8/3 clone 3",
     "log2": -0.0136701,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SDHC",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "8/3 clone 3",
     "log2": -0.0878479,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SDHD",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "8/3 clone 3",
     "log2": -0.193053,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SELRC1",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.31607,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SH3GLB1",
@@ -3231,28 +3231,28 @@
     "process": "ROS defense",
     "sampleID": "8/3 clone 3",
     "log2": -0.113476,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SIGMAR1",
     "process": "Calcium trafficking",
     "sampleID": "8/3 clone 3",
     "log2": 0.205712,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC24A6",
     "process": "Calcium trafficking",
     "sampleID": "8/3 clone 3",
     "log2": 0.0626428,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC25A1",
     "process": "ROS defense",
     "sampleID": "8/3 clone 3",
     "log2": 0.208743,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC25A19",
@@ -3266,28 +3266,28 @@
     "process": "Fatty acid beta-oxidation",
     "sampleID": "8/3 clone 3",
     "log2": -0.0130511,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC25A28",
     "process": "Fe-S cluster biosynthesis",
     "sampleID": "8/3 clone 3",
     "log2": 0.215852,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC25A3",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": -0.122077,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC25A33",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": -0.121994,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC25A37",
@@ -3301,91 +3301,91 @@
     "process": "Apoptosis",
     "sampleID": "8/3 clone 3",
     "log2": -0.284554,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC25A5",
     "process": "Apoptosis",
     "sampleID": "8/3 clone 3",
     "log2": -0.159281,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC25A6",
     "process": "Apoptosis",
     "sampleID": "8/3 clone 3",
     "log2": -0.104808,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC27A1",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "8/3 clone 3",
     "log2": -0.222485,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC27A2",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "8/3 clone 3",
     "log2": -0.160639,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC27A3",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "8/3 clone 3",
     "log2": 0.239833,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC27A4",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "8/3 clone 3",
     "log2": 0.476448,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC27A5",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "8/3 clone 3",
     "log2": -0.0160837,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC27A6",
     "process": "Fatty acid beta-oxidation",
     "sampleID": "8/3 clone 3",
     "log2": 0.411385,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC29A1",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": 0.279495,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC2A1",
     "process": "Glycolysis",
     "sampleID": "8/3 clone 3",
     "log2": 0.297455,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC2A3",
     "process": "Glycolysis",
     "sampleID": "8/3 clone 3",
     "log2": -1.01124,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SLC2A4",
     "process": "Glycolysis",
     "sampleID": "8/3 clone 3",
     "log2": -0.335903,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SOD1",
@@ -3399,175 +3399,175 @@
     "process": "ROS defense",
     "sampleID": "8/3 clone 3",
     "log2": 0.0440344,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SPG7",
     "process": "Mitochondrial Dynamics",
     "sampleID": "8/3 clone 3",
     "log2": 0.0736425,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SQSTM1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "8/3 clone 3",
     "log2": 0.124357,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SSBP1",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": -0.182194,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "STOML2",
     "process": "Mitochondrial Dynamics",
     "sampleID": "8/3 clone 3",
     "log2": 0.108511,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SUCLA2",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "8/3 clone 3",
     "log2": -0.0544484,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SUCLG1",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "8/3 clone 3",
     "log2": -0.0983999,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SUCLG2",
     "process": "Tricarboxylic acid cycle",
     "sampleID": "8/3 clone 3",
     "log2": 0.179433,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SURF1",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.128739,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "SYBU",
     "process": "Mitochondrial Dynamics",
     "sampleID": "8/3 clone 3",
     "log2": 0.0184527,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TACO1",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.0303413,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TARS2",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": -0.0448829,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TAZ",
     "process": "Cardiolipin biosynthesis",
     "sampleID": "8/3 clone 3",
     "log2": 0.400215,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TCHP",
     "process": "Calcium trafficking",
     "sampleID": "8/3 clone 3",
     "log2": 0.247734,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TERT",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": 0.33429,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TFAM",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": -0.124317,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TFB1M",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": -0.107592,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TFB2M",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": -0.0746175,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM10",
     "process": "Import & Sorting",
     "sampleID": "8/3 clone 3",
     "log2": 0.122556,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM13",
     "process": "Import & Sorting",
     "sampleID": "8/3 clone 3",
     "log2": -0.078152,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM17A",
     "process": "Import & Sorting",
     "sampleID": "8/3 clone 3",
     "log2": -0.174855,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM17B",
     "process": "Import & Sorting",
     "sampleID": "8/3 clone 3",
     "log2": -0.193689,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM21",
     "process": "Import & Sorting",
     "sampleID": "8/3 clone 3",
     "log2": -0.060879,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM22",
     "process": "Import & Sorting",
     "sampleID": "8/3 clone 3",
     "log2": -0.00967886,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM23",
     "process": "Import & Sorting",
     "sampleID": "8/3 clone 3",
     "log2": -0.0443548,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM44",
@@ -3581,42 +3581,42 @@
     "process": "Import & Sorting",
     "sampleID": "8/3 clone 3",
     "log2": 0.0873909,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM8A",
     "process": "Import & Sorting",
     "sampleID": "8/3 clone 3",
     "log2": -0.139417,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM8B",
     "process": "Import & Sorting",
     "sampleID": "8/3 clone 3",
     "log2": -0.108528,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TIMM9",
     "process": "Import & Sorting",
     "sampleID": "8/3 clone 3",
     "log2": -0.145086,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TK2",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": -0.162517,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TMEM126B",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.146479,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TMEM70",
@@ -3630,49 +3630,49 @@
     "process": "Import & Sorting",
     "sampleID": "8/3 clone 3",
     "log2": -0.170207,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOMM22",
     "process": "Import & Sorting",
     "sampleID": "8/3 clone 3",
     "log2": -0.087969,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOMM40",
     "process": "Import & Sorting",
     "sampleID": "8/3 clone 3",
     "log2": 0.295277,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOMM40L",
     "process": "Import & Sorting",
     "sampleID": "8/3 clone 3",
     "log2": 0.00972798,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOMM5",
     "process": "Import & Sorting",
     "sampleID": "8/3 clone 3",
     "log2": -0.106657,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOMM6",
     "process": "Import & Sorting",
     "sampleID": "8/3 clone 3",
     "log2": 0.0826949,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOMM7",
     "process": "Import & Sorting",
     "sampleID": "8/3 clone 3",
     "log2": -0.292059,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOMM70A",
@@ -3686,49 +3686,49 @@
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": -0.146248,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TOP3A",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": -0.0172735,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TP53",
     "process": "Apoptosis",
     "sampleID": "8/3 clone 3",
     "log2": 0.0677488,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TPI1",
     "process": "Glycolysis",
     "sampleID": "8/3 clone 3",
     "log2": 0.0968731,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRAK1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "8/3 clone 3",
     "log2": -0.0571873,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRAK2",
     "process": "Mitochondrial Dynamics",
     "sampleID": "8/3 clone 3",
     "log2": -0.0633857,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRAP1",
     "process": "Mitochondrial Dynamics",
     "sampleID": "8/3 clone 3",
     "log2": 0.0999754,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRIT1",
@@ -3742,98 +3742,98 @@
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": 0.107113,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRMT11",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": -0.204252,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRMT112",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": 0.0762211,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRMT2B",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": -0.201686,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRMT5",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": -0.169923,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRMT6",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": -0.0734927,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRMT61B",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": -0.0686984,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRMU",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": -0.176878,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRNT1",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": -0.0273587,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TRUB2",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": -0.0281187,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TSFM",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.024256,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TTC19",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.0404346,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TUFM",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": 0.0239065,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TXN2",
     "process": "ROS defense",
     "sampleID": "8/3 clone 3",
     "log2": 0.0858414,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "TXNRD2",
@@ -3847,84 +3847,84 @@
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": -0.19492,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UQCC",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": 0.0473474,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UQCR10",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": 0.11443,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UQCR11",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": 0.000740516,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UQCRB",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": 0.231471,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UQCRC1",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.0889962,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UQCRC2",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.149003,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UQCRFS1",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.036486,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UQCRH",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.172323,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UQCRQ",
     "process": "Electron transport chain",
     "sampleID": "8/3 clone 3",
     "log2": -0.216142,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UROD",
     "process": "Heme Biosynthesis",
     "sampleID": "8/3 clone 3",
     "log2": -0.209233,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "UROS",
     "process": "Heme Biosynthesis",
     "sampleID": "8/3 clone 3",
     "log2": 0.141427,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "VARS2",
@@ -3938,35 +3938,35 @@
     "process": "Apoptosis",
     "sampleID": "8/3 clone 3",
     "log2": 0.0301413,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "VDAC2",
     "process": "Apoptosis",
     "sampleID": "8/3 clone 3",
     "log2": -0.209587,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "VDAC3",
     "process": "Apoptosis",
     "sampleID": "8/3 clone 3",
     "log2": 0.52707,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "WARS2",
     "process": "Translation",
     "sampleID": "8/3 clone 3",
     "log2": -0.0574034,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "XIAP",
     "process": "Apoptosis",
     "sampleID": "8/3 clone 3",
     "log2": 0.0629009,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "YARS2",
@@ -3980,13 +3980,13 @@
     "process": "Mitochondrial Dynamics",
     "sampleID": "8/3 clone 3",
     "log2": -0.0752538,
-    "mutation": "NULL"
+    "mutation": ""
   },
   {
     "gene": "YRDC",
     "process": "Replication & Transcription",
     "sampleID": "8/3 clone 3",
     "log2": 0.117352,
-    "mutation": "NULL"
+    "mutation": ""
   }
 ]
