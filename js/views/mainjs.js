@@ -10,6 +10,7 @@ $("#navbar li").click(function(e){
         document.getElementById("heatmap").style.display="none";
         document.getElementById("pca").style.display="";
         document.getElementById("pcbarchart").style.display="";
+        
     }
     
     if ($(this).text() == "Scatter plot"){
@@ -19,7 +20,12 @@ $("#navbar li").click(function(e){
         document.getElementById("pca").style.display="none";
         document.getElementById("pcbarchart").style.display="none";
     }
-});    
+});
+    
+$('#pcbarchart').click(function(){
+    //$ ('.pcbc').css('background','green');
+    alert("f");
+});
     
 $("#folders").on('change',function(){
    updateFolder("#folders");

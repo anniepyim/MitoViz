@@ -57,7 +57,7 @@ PCBC.draw = function (cat) {
         var resp = d3.select("#pcbarchart")
             .append('div')
             //.attr("id", svgname)
-            .attr('class', 'svg-container'); //container class to make it responsive
+            .attr('class', 'pcbc svg-container'); //container class to make it responsive
 
         var BARsvg = resp
             .append("svg")
@@ -97,13 +97,12 @@ PCBC.draw = function (cat) {
           .text(function(d) { return d.key+" ("+d.count+")"; })
           .on("click", click);
         
-    if (cat == "stage") pcPlot.init(prdata);
+    if (!document.getElementById("pcacanvas")) pcPlot.init(prdata);
         
     });
     
     
     function click(d) {
-            //console.log(d);
             pcPlot.deletedots();
             pcPlot.adddots(d.values);
             

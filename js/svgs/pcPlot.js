@@ -15,11 +15,10 @@ var gridDepth = 100,
     gridWidth = 100,
     gridHeight = 100;
 var rotate = true, mouseflag = 0;
-var container = document.getElementById( 'pca' ),  
-    pcacanvas = document.getElementById( 'pcacanvas' );
+var container = document.getElementById( 'pca' ),
+    pcacanvas;
 
 var tipTemplate = require('../views/templates').pcatooltip;
-
 
 var pcPlot = function (obj) {
 if (obj instanceof pcPlot) return obj;
@@ -28,7 +27,14 @@ this.pcPlotwrapped = obj;
 };
 
 function sceneInit(){
+    
+    var canv = document.createElement('canvas');
+    canv.id = 'pcacanvas';
 
+    document.getElementById('pca').appendChild(canv);
+
+    pcacanvas = document.getElementById( 'pcacanvas' );
+    
     scene = new THREE.Scene();
 
     var light = new THREE.DirectionalLight( 0xffffff, 0.5 );

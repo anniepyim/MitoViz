@@ -7,7 +7,7 @@ var d3 = require('d3');
 var SP = require('../svgs/scatterplot.js');
 var BC = require('../svgs/barchart.js');
 var heatmap = require('../svgs/heatmap.js');
-var pcPlot = require('../svgs/pcPlot.js');
+//var pcPlot = require('../svgs/pcPlot.js');
 var PCBC = require('../svgs/pcbarchart.js');
 var parser = require('./parser.js');
 var exist = false;
@@ -56,7 +56,6 @@ function compareData(){
         PCBC.init("gender");
         PCBC.init("stage");
         PCBC.init("group");
-        //pcPlot.init("gender","");
 }
 
 
