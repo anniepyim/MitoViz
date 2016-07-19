@@ -1,0 +1,37 @@
+[
+  {
+    "gene": "AARS2",
+    "process": "Translation",
+    "sampleID": "8/3 clone 4",
+    "log2": 1,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ABCB7",
+    "process": "Fe-S cluster biosynthesis",
+    "sampleID": "8/3 clone 4",
+    "log2": 2,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ACAA2",
+    "process": "Fatty acid beta-oxidation",
+    "sampleID": "8/3 clone 4",
+    "log2": 3,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ACAD10",
+    "process": "Fatty acid beta-oxidation",
+    "sampleID": "8/3 clone 4",
+    "log2": 4,
+    "mutation": "NULL"
+  },
+  {
+    "gene": "ACAD11",
+    "process": "Fatty acid beta-oxidation",
+    "sampleID": "8/3 clone 4",
+    "log2": 5,
+    "mutation": "NULL"
+  }
+]

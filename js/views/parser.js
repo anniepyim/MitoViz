@@ -54,7 +54,7 @@ function parse(urls, errorcb, datacb,colorrange){
                     newdata = newdata.concat(data[k]);
                 }        
             }
-
+            console.log(mitomap);
             datacb(newdata,colorrange);
         
         }))

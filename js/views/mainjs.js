@@ -9,6 +9,7 @@ $("#navbar li").click(function(e){
         document.getElementById("barchart").style.display="none";
         document.getElementById("heatmap").style.display="none";
         document.getElementById("pca").style.display="";
+        document.getElementById("pcbarchart").style.display="";
     }
     
     if ($(this).text() == "Scatter plot"){
@@ -16,45 +17,61 @@ $("#navbar li").click(function(e){
         document.getElementById("barchart").style.display="";
         document.getElementById("heatmap").style.display="";
         document.getElementById("pca").style.display="none";
+        document.getElementById("pcbarchart").style.display="none";
     }
 });    
     
 $("#folders").on('change',function(){
-   updateFolder();
-});    
+   updateFolder("#folders");
+}); 
+    
+$("#subfolders").on('change',function(){
+   updateFolder("#subfolders");
+}); 
     
 $("#files").on('change',function(){
     updateFile();
 });
 
-function updateFolder(){
-     
-    var targeturl = $("#folders option:selected").val();
-    var htmltext = "",
-        value = "",
-        text = "";
+function updateFolder(folder){
     
-    $.ajax({
-      url: targeturl,
-      success: function(data){
-          $('#files').empty();
-          $(data).find("a:contains(json)").each(function(){             
-            value = targeturl+"/"+$(this).attr("href");
-            text = $(this).attr("href").split(".")[0];
-            htmltext = htmltext+'<option value=\"'+value+'\">'+text+'</option>';
-            
-         });
-        $("#files").html(htmltext);
-        $('#files').selectpicker('refresh');
-        $.each($("#selected-sample option"), function(){
-            var value = $(this).val();
-            $('#files').find('[value="'+value+'"]').prop('selected',true);
+    if ($(folder+" option:selected").text() != "TCGA"){
+
+        var targeturl = $(folder+" option:selected").val();
+        var htmltext = "",
+            value = "",
+            text = "";
+
+        $.ajax({
+          url: targeturl,
+          success: function(data){
+              $('#files').empty();
+              $(data).find("a:contains(json)").each(function(){             
+                value = targeturl+"/"+$(this).attr("href");
+                text = $(this).attr("href").split(".")[0];
+                htmltext = htmltext+'<option value=\"'+value+'\">'+text+'</option>';
+
+             });
+            $("#files").html(htmltext);
             $('#files').selectpicker('refresh');
+            $.each($("#selected-sample option"), function(){
+                var value = $(this).val();
+                $('#files').find('[value="'+value+'"]').prop('selected',true);
+                $('#files').selectpicker('refresh');
+            });
+          }
         });
-      }
-    });
-    
-    $('#selectallcb').prop('checked', false);
+
+        $('#selectallcb').prop('checked', false);
+        
+        if ($("#folders option:selected").text() != "TCGA"){
+            document.getElementById("subfolders-div").style.display="none"
+        }
+        
+    }else{
+        document.getElementById("subfolders-div").style.display="";
+        updateFolder("#subfolders");
+    }
  
 }
 

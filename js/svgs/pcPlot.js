@@ -9,7 +9,7 @@ var div = d3.select("#pca").append("div")
 var scene, camera, renderer, controls, pcObj, boxes, dots, raycaster;
 var mouse = new THREE.Vector2(), INTERSECTED,
     pageEvent = new THREE.Vector2();
-var canvasWidth= document.getElementById("nav_bar").offsetWidth*9/12-40,
+var canvasWidth= Math.round(document.getElementById("nav_bar").offsetWidth*9/12-40),
     canvasHeight = canvasWidth;
 var gridDepth = 100,
     gridWidth = 100,
@@ -141,30 +141,46 @@ function hexToRgb(hex) { //TODO rewrite with vector output
     } : null;
 }
 
-function dotsInit(){
-    var data = d3.csv("data/final.csv", function (d){
-
+function dotsInit(data){
+      
+    //d3.tsv("data/final.tsv", function (d){
+    
+    console.log(data);
+        
     dots = new THREE.Object3D();
-    var sample = [];
+        
+    /*var sample = [];
     d.forEach(function (d,i) {
             sample[i] = {
                 pc1: +d.pc1,
                 pc2: +d.pc2,
                 pc3: +d.pc3,
+                sampleID: d.sampleID,
+                group: d.group,
+                gender: d.gender,
+                stage: d.stage,
+                color: d.color
+                category: (cat == "group") ? d.group : (cat == "gender") ? d.gender : d.stage
             };
-        });
+        });*/
+    
         
-    var xmax = d3.max(sample, function (d) {return d.pc1;}),
-        xmin = d3.min(sample, function (d) {return d.pc1;}),
-        zmax = d3.max(sample, function (d) {return d.pc2;}),
-        zmin = d3.min(sample, function (d) {return d.pc2;}),
-        ymax = d3.max(sample, function (d) {return d.pc3;}),
-        ymin = d3.min(sample, function (d) {return d.pc3;});
+    //sample.sort(function(a,b) { return d3.ascending(a.category, b.category);});
+        
+    var xmax = d3.max(data, function (d) {return d.pc1;}),
+        xmin = d3.min(data, function (d) {return d.pc1;}),
+        zmax = d3.max(data, function (d) {return d.pc2;}),
+        zmin = d3.min(data, function (d) {return d.pc2;}),
+        ymax = d3.max(data, function (d) {return d.pc3;}),
+        ymin = d3.min(data, function (d) {return d.pc3;});
 
     var format = d3.format("+.2f");
 
-    //var color = d3.scale.ordinal().range(["#fb8072", "#ffffb3", "#b3de69", "#80b1d3", "#bebada", "#fdb462", "#f781bf", "#8dd3c7", "#fccde5", "#d9d9d9", "#bc80bd", "#ccebc5", "#fbb4ae", "#b3cde3", "#ffed6f", "#decbe4", "#fed9a6"]);  
-    var color = d3.scale.ordinal().range(["#e41a1c","#ffff33","#4daf4a","#377eb8","#984ea3"]);
+    var colorgroup = d3.scale.ordinal().range(["#ff004d","#ffff66","#a4ff52","#0067c6","#7d71e5"]),
+    colorstage = d3.scale.ordinal().range(["#a4ff52","#ffff66","#da5802","#ff004d","#a7a5a5"]),
+    colorgender = d3.scale.ordinal().range(["#ff0074","#52a4ff"]);
+        
+    //var color = (cat == "group") ? colorgroup : (cat == "gender") ? colorgender : colorstage;
 
     var xDom = (xmax-xmin)*0.1,
         yDom = (ymax-ymin)*0.1,
@@ -180,25 +196,26 @@ function dotsInit(){
                   .domain([zmin-zDom,zmax+zDom])
                   .range([-100,100]);
 
-    var sprite = new THREE.TextureLoader().load( "pics/circle.png" );   
-    for ( i = 0; i < d.length; i ++ ) {
-        var realcolor = color(d[i].group);
+    var sprite = new THREE.TextureLoader().load( "image/circle.png" );   
+    for ( i = 0; i < data.length; i ++ ) {
+        var realcolor = data[i].color;
         var geometry = new THREE.SphereBufferGeometry( 3, 32, 32 );
         var material = new THREE.MeshLambertMaterial( { color: new THREE.Color().setRGB( hexToRgb(realcolor).r / 255, hexToRgb(realcolor).g / 255, hexToRgb(realcolor).b / 255 ) } );
         var particle = new THREE.Mesh( geometry, material );
-        particle.position.x = xScale(d[i].pc1);
-        particle.position.z = zScale(d[i].pc2);
-        particle.position.y = yScale(d[i].pc3);
-        particle.sampleID = d[i].sampleID;
-        particle.group = d[i].group;
-        particle.info = d[i].info;
-        particle.pc1 = format(d[i].pc1);
-        particle.pc2 = format(d[i].pc2);
-        particle.pc3 = format(d[i].pc3);
+        particle.position.x = xScale(data[i].pc1);
+        particle.position.z = zScale(data[i].pc2);
+        particle.position.y = yScale(data[i].pc3);
+        particle.sampleID = data[i].sampleID;
+        particle.group = data[i].group;
+        particle.gender = data[i].gender;
+        particle.stage = data[i].stage;
+        particle.pc1 = format(data[i].pc1);
+        particle.pc2 = format(data[i].pc2);
+        particle.pc3 = format(data[i].pc3);
         dots.add( particle );
     }
     pcObj.add(dots);
-    });       
+    //});       
 }
 
 function boxInit(){
@@ -319,25 +336,23 @@ function render() {
 
 }
 
-pcPlot.init = function(){
+pcPlot.init = function(d){
     sceneInit();
     gridInit(gridDepth,gridWidth,gridHeight);
-    dotsInit();
+    dotsInit(d);
     //boxInit();
     //pcObj.add(new THREE.Mesh(new THREE.BoxBufferGeometry(100,100,100),new THREE.MeshNormalMaterial()))
     render();
 };
 
 pcPlot.deletedots = function(){
-    alert("remove");
     pcObj.remove(dots);
     dots = null;
-    render();
+    //render();
 };
 
-pcPlot.adddots = function(){
-    alert("add");
-    dotsInit();
+pcPlot.adddots = function(d){
+    dotsInit(d);
     render();
 };
 
