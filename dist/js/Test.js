@@ -1354,15 +1354,17 @@ function updateFolder(folder){
             text = "";
 
         $.ajax({
-          url: targeturl,
+          url: "getdirectory.php",
+            dataType: "json",
           success: function(data){
               alert(targeturl);
               console.log(data);
               $('#files').empty();
-              $(data).find("a:contains(json)").each(function(){             
-                value = targeturl+"/"+$(this).attr("href");
-                text = $(this).attr("href").split(".")[0];
-                htmltext = htmltext+'<option value=\"'+value+'\">'+text+'</option>';
+              $.each(data, function(i,filename){
+                alert(filename);
+                //value = targeturl+"/"+$(this).attr("href");
+                //text = $(this).attr("href").split(".")[0];
+                //htmltext = htmltext+'<option value=\"'+value+'\">'+text+'</option>';
 
              });
             $("#files").html(htmltext);
