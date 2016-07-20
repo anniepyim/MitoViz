@@ -49,7 +49,7 @@ function sceneInit(){
     
     renderer = new THREE.WebGLRenderer({ canvas: pcacanvas });
     renderer.setSize( canvasWidth, canvasWidth );
-    renderer.setClearColor( 0xf0f0f0 );
+    renderer.setClearColor( 0xffffff );
 
     raycaster = new THREE.Raycaster();
 
@@ -150,8 +150,6 @@ function hexToRgb(hex) { //TODO rewrite with vector output
 function dotsInit(data){
       
     //d3.tsv("data/final.tsv", function (d){
-    
-    console.log(data);
         
     dots = new THREE.Object3D();
         

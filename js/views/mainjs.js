@@ -8,8 +8,10 @@ $("#navbar li").click(function(e){
         document.getElementById("scatterplot").style.display="none";
         document.getElementById("barchart").style.display="none";
         document.getElementById("heatmap").style.display="none";
+        document.getElementById("spbdiv").style.display="none";
         document.getElementById("pca").style.display="";
         document.getElementById("pcbarchart").style.display="";
+        document.getElementById("pcabdiv").style.display="";
         
     }
     
@@ -17,15 +19,13 @@ $("#navbar li").click(function(e){
         document.getElementById("scatterplot").style.display="";
         document.getElementById("barchart").style.display="";
         document.getElementById("heatmap").style.display="";
+        document.getElementById("spbdiv").style.display="";
         document.getElementById("pca").style.display="none";
         document.getElementById("pcbarchart").style.display="none";
+        document.getElementById("pcabdiv").style.display="none";
     }
 });
-    
-$('#pcbarchart').click(function(){
-    //$ ('.pcbc').css('background','green');
-    alert("f");
-});
+
     
 $("#folders").on('change',function(){
    updateFolder("#folders");

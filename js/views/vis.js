@@ -38,11 +38,11 @@ function onSuccess(data,colorrange) {
     }
 }
 
-d3.select('#compareButton').on('click', compareData);
+d3.select('#spcompareButton').on('click', spcompareData);
+d3.select('#pcacompareButton').on('click', pcacompareData);
 
-function compareData(){
+function spcompareData(){
         var select = document.getElementById('selected-sample');
-        //var arr = ['./data/TCGA/A0BM.json','./data/TCGA/A0DV.json','./data/TCGA/A0HK.json','./data/TCGA/neg3-A0B3.json','./data/TCGA/neg3-A0E0.json','./data/TCGA/neg3-A18V.json'];
         var arr = [];
         for (i = 0; i < select.options.length; i++) {
            arr[i] = select.options[i].value;
@@ -51,15 +51,21 @@ function compareData(){
         
         var colorrange = "#d73027,#f46d43,#fdae61,#fee08b,#ffffbf,#d9ef8b,#a6d96a,#66bd63,#1a9850";
         //var colorrange = d3.select('#colorinput').property("value");
-        //parser.parse(arr, onError, onSuccess,colorrange);
+        parser.parse(arr, onError, onSuccess,colorrange);
+}
+
+function pcacompareData(){
+    
+        exist = !!document.getElementById("genderbarchart");
         
-        PCBC.init("gender");
-        PCBC.init("stage");
-        PCBC.init("group");
+        if (exist === false){
+            PCBC.init("gender");
+            PCBC.init("stage");
+            PCBC.init("cancer type");   
+        }
 }
 
 
-//compareData();
 
 var vis = function(){};
 

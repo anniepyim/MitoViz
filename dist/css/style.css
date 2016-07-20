@@ -51,6 +51,14 @@ body {
     text-align: left;
 }
 
+.midTitle{
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 700;
+    /*text-transform: uppercase;*/
+    font-size:16px;
+    text-align: left;
+}
+
 input[type=checkbox] {
     float: right;
     margin-right: 0.4em;
@@ -98,11 +106,3 @@ input[type=checkbox] {
 text.text-hover {
         fill: red;
       }
-
-.pcbc:hover{
-background: blue; /* make this whatever you want */
-}
-
-.pcbc:click{
-background: red; /* make this whatever you want */
-}
