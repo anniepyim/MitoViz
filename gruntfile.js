@@ -40,7 +40,7 @@ module.exports = function(grunt) {
     });
     
     //Tasks
-    grunt.registerTask('dist', ['jshint', 'browserify', 'uglify']); //Generates dist folder
+    grunt.registerTask('dist', ['jshint', 'browserify']); //Generates dist folder
     
     // Load the plugins
     grunt.loadNpmTasks('grunt-contrib-jshint');

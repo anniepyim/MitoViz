@@ -4,13 +4,14 @@ var d3 = require('d3');
 
 //Modules
 //var colorpicker = require('./js/colorpicker.js');
-var SP = require('../svgs/scatterplot.js');
-var BC = require('../svgs/barchart.js');
-var heatmap = require('../svgs/heatmap.js');
+//var SP = require('../svgs/scatterplot.js');
+//var BC = require('../svgs/barchart.js');
+//var heatmap = require('../svgs/heatmap.js');
 //var pcPlot = require('../svgs/pcPlot.js');
+//var PCdata = require('../svgs/pcdata.js');
 var PCBC = require('../svgs/pcbarchart.js');
-var parser = require('./parser.js');
-var exist = false;
+//var parser = require('./parser.js');
+//var exist = false;
 
 function hideLoading() {
     d3.select('#loading').remove();
@@ -58,14 +59,12 @@ function pcacompareData(){
     
         exist = !!document.getElementById("genderbarchart");
         
-        if (exist === false){
-            PCBC.init("gender");
-            PCBC.init("stage");
-            PCBC.init("cancer type");   
-        }
+        //if (exist === false){
+            PCdata.init();
+            
+             
+        //}
 }
-
-
 
 var vis = function(){};
 

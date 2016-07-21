@@ -1,5 +1,6 @@
 var d3 = require('d3');
 var pcPlot = require('./pcPlot.js');
+var PCdata = require('./pcdata.js');
 
 var colorgroup = d3.scale.ordinal().range(["#ff004d","#ffff66","#a4ff52","#0067c6","#7d71e5"]),
     colorstage = d3.scale.ordinal().range(["#a4ff52","#ffff66","#da5802","#ff004d","#a7a5a5"]),
@@ -11,13 +12,9 @@ var PCBC = function (obj) {
     this.PCBCwrapped = obj;
 };
 
-PCBC.draw = function (cat) {
-    
-    d3.tsv("data/final.tsv", function (indata){
+/*PCBC.draw = function (indata,cat,svgname,titlename,panelname) {
         
-        var svgname = (cat == "cancer type") ? "groupbarchart" : (cat == "gender") ? "genderbarchart" : "stagebarchart",
-            color = (cat == "cancer type") ? colorgroup : (cat == "gender") ? colorgender : colorstage,
-            prdata = indata.map(function(d){
+        var prdata = indata.map(function(d){
                 return{
                     sampleID: d.sampleID,
                     pc1: +d.pc1,
@@ -26,15 +23,12 @@ PCBC.draw = function (cat) {
                     group: d.group,
                     gender: d.gender,
                     stage: d.stage,
+                    color: (cat == "cancer type") ? d.groupcolor : (cat == "gender") ? d.gendercolor : d.stagecolor,
                     category: (cat == "cancer type") ? d.group : (cat == "gender") ? d.gender : d.stage
                 };
             });
         
         prdata.sort(function(a,b) { return d3.ascending(a.category, b.category);});
-        
-        prdata.forEach(function (d) {
-                d.color= color(d.category);
-            });
         
         var data = d3.nest()
                 .key(function (d) {
@@ -45,42 +39,18 @@ PCBC.draw = function (cat) {
         data.forEach(function (d) {
                 d.count = d.values.length;
             });
+    
+        var color = (cat == "cancer type") ? colorgroup : (cat == "gender") ? colorgender : colorstage;
         
         
-        var BARmargin = {top: 20, right: 20, bottom: 30, left: 10},
+        var BARmargin = {top: 15, right: 20, bottom: 15, left: 10},
         svgWidth = 300,
         barH = 40,
         BARwidth = svgWidth - BARmargin.left - BARmargin.right,
         BARheight = data.length * barH ,
         svgHeight = BARheight + BARmargin.top + BARmargin.bottom;
 
-        // create svg for bar chart.
-
-        var resp = d3.select("#pcbcsvg")
-            .append('div')
-            .attr("id", svgname)
-            .attr('class', 'svg-container pcbc') //container class to make it responsive
-            .style("font-size", "20px");
-        
-        // create div for title
-        
-        resp.append('div')
-            .attr('class','col-md-12 minititle')
-            .style('margin-top','10px')
-            .on({
-                "mouseover": function(){
-                    document.getElementById(svgname).style.borderRadius="15px";
-                    document.getElementById(svgname).style.border="1px solid #6699ff";},
-                "mouseout":  function(){document.getElementById(svgname).style.border="";},  
-                "click": function(){
-                    click(prdata);
-                    changeBackground(svgname);
-                    }
-                })
-            .append('text')
-            .text(cat);
-
-        var BARsvg = resp
+        var BARsvg = d3.select(svgname)//= resp
             .append("svg")
             .attr('class', 'canvas svg-content-responsive')
             .attr('preserveAspectRatio', 'xMinYMin meet')
@@ -94,14 +64,25 @@ PCBC.draw = function (cat) {
             .style("fill","transparent")
             .on({
                 "mouseover": function(){
-                    document.getElementById(svgname).style.borderRadius="15px";
-                    document.getElementById(svgname).style.border="1px solid #6699ff";},
-                "mouseout":  function(){document.getElementById(svgname).style.border="";},  
+                    document.getElementById(panelname).style.border="1px solid #6699ff";},
+                "mouseout":  function(){document.getElementById(panelname).style.border="";},  
                 "click": function(){
                     click(prdata);
-                    changeBackground(svgname);
+                    changeBackground(panelname);
                     }
+                    //trigger PCdata.update, feed indata and cat
                 });
+        
+        d3.select(titlename)
+            .on({
+                    "mouseover": function(){
+                        document.getElementById(panelname).style.border="1px solid #6699ff";},
+                    "mouseout":  function(){document.getElementById(panelname).style.border="";},  
+                    "click": function(){
+                        click(prdata);
+                        changeBackground(panelname);
+                        }
+                    });
         
 
         var xmax = Math.abs(d3.max(data, function (d) {
@@ -125,7 +106,9 @@ PCBC.draw = function (cat) {
             })
           .on("click", function(d){
                 click(d.values);
-                changeBackground(svgname);
+                changeBackground(panelname);
+                    var text = document.getElementById('criteria');
+    text.value = (text.value + d.key+",");
             });
 
         bar.append("text")
@@ -135,14 +118,13 @@ PCBC.draw = function (cat) {
           .text(function(d) { return d.key+" ("+d.count+")"; })
           .on("click", function(d){
                 click(d.values);
-                changeBackground(svgname);
+                changeBackground(panelname);
+                var text = document.getElementById('criteria');
+    text.value = (text.value + d.key+",");
             });
-        
-        
-    if (!document.getElementById("pcacanvas")) pcPlot.init(prdata);
-        
-    });
     
+            var button = document.getElementById('filterbutton')
+        button.addEventListener("click", PCdata.update(prdata,"cancer type"));
     
     function click(d) {
             pcPlot.deletedots();
@@ -151,18 +133,32 @@ PCBC.draw = function (cat) {
             
     }
     
-    function changeBackground(svgname){
+    function changeBackground(panelname){
         var element = document.getElementsByClassName('pcbc');
         for (var e in element) if (element.hasOwnProperty(e)) element[e].style.background="white";
-        document.getElementById(svgname).style.borderRadius="15px";
-        document.getElementById(svgname).style.background="#b3ccff";
+        document.getElementById(panelname).style.background="#b3ccff";
     }
-    
 
+};*/
+
+
+
+PCBC.alert = function(){
+    alert("PCBC");
 };
 
-PCBC.init = function (cat) {
-    PCBC.draw(cat);
-};
+pcPlot.alert();
+PCdata.alert();
 
-module.exports = PCBC;
+//SP.alert();
+
+//fds.alert();
+//PCdata.alert();
+
+if (typeof define === "function" && define.amd) {
+    define(PCBC);
+} else if (typeof module === "object" && module.exports) {
+    module.exports = PCBC;
+} else {
+    this.PCBC = PCBC;
+}

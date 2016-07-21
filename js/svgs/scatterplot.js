@@ -279,6 +279,11 @@ SP.init = function (jsondata,colorrange) {
     SP.update(jsondata, "Translation", "#8dd3c7",colorrange);
 };
 
+SP.alert = function(){
+    alert("SP");
+};
+
+
 if (typeof define === "function" && define.amd) {
     define(SP);
 } else if (typeof module === "object" && module.exports) {

@@ -360,6 +360,10 @@ pcPlot.adddots = function(d){
     render();
 };
 
+pcPlot.alert = function(){
+    alert("pcplot");
+}
+
 if (typeof define === "function" && define.amd) {
     define(pcPlot);
 } else if (typeof module === "object" && module.exports) {

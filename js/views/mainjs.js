@@ -42,22 +42,28 @@ $("#files").on('change',function(){
 function updateFolder(folder){
     
     if ($(folder+" option:selected").text() != "TCGA"){
-
-        var targeturl = $(folder+" option:selected").val();
+        
+        var targeturl = $(folder+" option:selected").val()
+        var folderurl = targeturl.split(".")[1];
         var htmltext = "",
             value = "",
             text = "";
 
         $.ajax({
-          url: targeturl,
+            type: "POST",
+            url: "getdirectory.php",
+            dataType: "json",
+            data: { folderurl : folderurl },
           success: function(data){
               $('#files').empty();
-              $(data).find("a:contains(json)").each(function(){             
-                value = targeturl+"/"+$(this).attr("href");
-                text = $(this).attr("href").split(".")[0];
+              $.each(data, function(i,filename) {
+                console.log(filename);
+                value = targeturl+filename;
+                text = filename.split(".")[0];
                 htmltext = htmltext+'<option value=\"'+value+'\">'+text+'</option>';
 
-             });
+            });
+              
             $("#files").html(htmltext);
             $('#files').selectpicker('refresh');
             $.each($("#selected-sample option"), function(){
