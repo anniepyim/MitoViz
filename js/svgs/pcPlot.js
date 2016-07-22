@@ -149,56 +149,10 @@ function hexToRgb(hex) { //TODO rewrite with vector output
 
 function dotsInit(data){
       
-    //d3.tsv("data/final.tsv", function (d){
         
     dots = new THREE.Object3D();
-        
-    /*var sample = [];
-    d.forEach(function (d,i) {
-            sample[i] = {
-                pc1: +d.pc1,
-                pc2: +d.pc2,
-                pc3: +d.pc3,
-                sampleID: d.sampleID,
-                group: d.group,
-                gender: d.gender,
-                stage: d.stage,
-                color: d.color
-                category: (cat == "group") ? d.group : (cat == "gender") ? d.gender : d.stage
-            };
-        });*/
     
-        
-    //sample.sort(function(a,b) { return d3.ascending(a.category, b.category);});
-        
-    var xmax = d3.max(data, function (d) {return d.pc1;}),
-        xmin = d3.min(data, function (d) {return d.pc1;}),
-        zmax = d3.max(data, function (d) {return d.pc2;}),
-        zmin = d3.min(data, function (d) {return d.pc2;}),
-        ymax = d3.max(data, function (d) {return d.pc3;}),
-        ymin = d3.min(data, function (d) {return d.pc3;});
-
     var format = d3.format("+.2f");
-
-    var colorgroup = d3.scale.ordinal().range(["#ff004d","#ffff66","#a4ff52","#0067c6","#7d71e5"]),
-    colorstage = d3.scale.ordinal().range(["#a4ff52","#ffff66","#da5802","#ff004d","#a7a5a5"]),
-    colorgender = d3.scale.ordinal().range(["#ff0074","#52a4ff"]);
-        
-    //var color = (cat == "group") ? colorgroup : (cat == "gender") ? colorgender : colorstage;
-
-    var xDom = (xmax-xmin)*0.1,
-        yDom = (ymax-ymin)*0.1,
-        zDom = (zmax-zmin)*0.1;
-
-    var xScale = d3.scale.linear()
-                  .domain([xmin-xDom,xmax+xDom])
-                  .range([-100,100]);
-    var yScale = d3.scale.linear()
-                  .domain([ymin-yDom,ymax+yDom])
-                  .range([-100,100]);                  
-    var zScale = d3.scale.linear()
-                  .domain([zmin-zDom,zmax+zDom])
-                  .range([-100,100]);
 
     var sprite = new THREE.TextureLoader().load( "image/circle.png" );   
     for ( i = 0; i < data.length; i ++ ) {
@@ -206,9 +160,9 @@ function dotsInit(data){
         var geometry = new THREE.SphereBufferGeometry( 3, 32, 32 );
         var material = new THREE.MeshLambertMaterial( { color: new THREE.Color().setRGB( hexToRgb(realcolor).r / 255, hexToRgb(realcolor).g / 255, hexToRgb(realcolor).b / 255 ) } );
         var particle = new THREE.Mesh( geometry, material );
-        particle.position.x = xScale(data[i].pc1);
-        particle.position.z = zScale(data[i].pc2);
-        particle.position.y = yScale(data[i].pc3);
+        particle.position.x = data[i].pc1;
+        particle.position.z = data[i].pc2;
+        particle.position.y = data[i].pc3;
         particle.sampleID = data[i].sampleID;
         particle.group = data[i].group;
         particle.gender = data[i].gender;
@@ -219,7 +173,7 @@ function dotsInit(data){
         dots.add( particle );
     }
     pcObj.add(dots);
-    //});       
+    
 }
 
 function boxInit(){

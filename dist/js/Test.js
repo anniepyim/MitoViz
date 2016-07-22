@@ -13,7 +13,7 @@ require('d3-tip')(d3);
 require('underscore'); // bootstrap
 
 App = require('./js/main');
-},{"./js/main":2,"backbone":11,"d3":15,"d3-tip":14,"handlebars":45,"jquery":57,"underscore":62}],2:[function(require,module,exports){
+},{"./js/main":2,"backbone":33,"d3":39,"d3-tip":38,"handlebars":69,"jquery":81,"underscore":86}],2:[function(require,module,exports){
 var d3 = require('d3');
 
 //Public members
@@ -58,7 +58,410 @@ App.init = function(options){
 };
 
 module.exports = App;
-},{"./views/mainframe.js":6,"./views/mainjs.js":7,"./views/vis.js":9,"d3":15}],3:[function(require,module,exports){
+},{"./views/mainframe.js":9,"./views/mainjs.js":10,"./views/vis.js":14,"d3":39}],3:[function(require,module,exports){
+var d3 = require('d3');
+var colorbrewer = require('colorbrewer');
+var SP = require('./scatterplot.js');
+var heatmap = require('./heatmap.js');
+
+
+
+//var color = d3.scale.category20();
+
+var color = d3.scale.ordinal()
+    .range(["#8dd3c7", "#ffffb3", "#bebada", "#fb8072", "#80b1d3", "#fdb462", "#b3de69", "#fccde5", "#d9d9d9", "#bc80bd", "#ccebc5", "#f781bf", "#fbb4ae", "#b3cde3", "#ffed6f", "#decbe4", "#fed9a6"]);
+
+var BC = function (obj) {
+    if (obj instanceof BC) return obj;
+    if (!(this instanceof BC)) return new BC(obj);
+    this.BCwrapped = obj;
+};
+
+BC.draw = function (jsondata,colorrange) {
+    
+    var BARmargin = {top: 20, right: 0, bottom: 30, left: 0},
+    svgHeight = 450,
+    svgWidth = 300,
+    BARwidth = svgWidth - BARmargin.left - BARmargin.right,
+    BARheight = svgHeight - BARmargin.top - BARmargin.bottom;
+
+    // create svg for bar chart.
+    
+    var resp = d3.select("#barchart")
+        .append('div')
+        .attr("id", "barchartsvg")
+        .attr('class', 'svg-container'); //container class to make it responsive
+    
+
+    var BARsvg = resp
+        .append("svg")
+        .attr('class', 'canvas svg-content-responsive')
+        .attr('preserveAspectRatio', 'xMinYMin meet')
+        .attr('viewBox', [0, 0, svgWidth, svgHeight].join(' '))
+        .append("g")
+        .attr("transform", "translate(" + BARmargin.left + "," + BARmargin.top + ")");
+        
+    var barH = BARheight/17;
+    
+    var data = d3.nest()
+        .key(function (d) {
+            return d.process;
+        })
+        .entries(jsondata);
+    
+    var sampledata = d3.nest()
+        .key(function (d) {
+            return d.sampleID;
+        })
+        .entries(jsondata);
+
+    data.forEach(function (d) {
+        d.process = d.key;
+        d.count = d.values.length/sampledata.length;
+    });
+    
+    data.sort(function(a,b) { return +b.count - +a.count; });
+    
+    var xmax = Math.abs(d3.max(data, function (d) {
+        return d.count;
+    }));
+    
+    var x = d3.scale.linear()
+    .range([0, BARwidth])
+    .domain([0,xmax]);
+
+  var bar = BARsvg.selectAll("g")
+      .data(data)
+    .enter().append("g")
+      .attr("transform", function(d, i) { return "translate(0," + i * barH + ")"; });
+
+  bar.append("rect")
+      .attr("width", function(d) { return x(d.count); })
+      .attr("height", barH - 1)
+      .style("fill", function (d) {
+            return color(d.process);
+        })
+      .on("click", click);
+    
+    bar.append("text")
+      .attr("x", 0)
+      .attr("y", barH / 2)
+      .attr("dy", ".35em")
+      .text(function(d) { return d.process+" ("+d.count+")"; })
+      .on("click", click);
+    
+    function click(d) {
+        SP.update(jsondata, d.process, color(d.process),colorrange);
+        d3.select("#heatmapsvg").remove();
+        heatmap.processData(jsondata, d.process,colorrange);
+    }
+    
+
+};
+
+BC.init = function (jsondata,colorrange) {
+    BC.draw(jsondata,colorrange);
+};
+
+module.exports = BC;
+},{"./heatmap.js":4,"./scatterplot.js":8,"colorbrewer":37,"d3":39}],4:[function(require,module,exports){
+var d3 = require('d3');
+var colorbrewer = require('colorbrewer');
+
+var SP = require('./scatterplot.js');
+
+var heatmap = function (obj) {
+    if (obj instanceof heatmap) return obj;
+    if (!(this instanceof heatmap)) return new heatmap(obj);
+    this.heatmapwrapped = obj;
+};
+
+heatmap.processData = function (jsondata, nfunc,colorrange) {
+
+    var newdata = [];
+
+    jsondata.forEach(function (d) {
+        if (d.process == nfunc && !isNaN(parseFloat(d.log2)) && isFinite(d.log2)) {
+            newdata.push(d);
+        }
+    });
+
+    //create map for gene and sample data
+    var genedata = d3.nest()
+        .key(function (d) {
+            return d.gene;
+        })
+        .entries(newdata);
+
+    var sampledata = d3.nest()
+        .key(function (d) {
+            return d.sampleID;
+        })
+        .entries(newdata);
+
+    var id = 1;
+    var genemap = {};
+    var genelist = [];
+    genedata.forEach(function (d) {
+        genemap[d.key] = id;
+        genelist.push(d.key);
+        id += 1;
+    });
+
+    id = 1;
+    var samplemap = {};
+    var samplelist = [];
+    sampledata.forEach(function (d) {
+        samplemap[d.key] = id;
+        samplelist.push(d.key);
+        id += 1;
+    });
+
+    outdata = [];
+
+    newdata.forEach(function (d) {
+        outdata.push({
+            rowidx: samplemap[d.sampleID], 
+            colidx: genemap[d.gene], 
+            log2: d.log2, 
+            pvalue: d.pvalue, 
+            sample: d.sampleID, 
+            gene: d.gene, 
+            process: d.process, 
+            gene_function: d.gene_function, 
+            mutation: d.mutation.split(',')
+        });
+    });
+
+    heatmap.draw(outdata, samplelist, genelist,colorrange);
+};
+
+heatmap.draw = function (jsondata, samplelist, genelist,colorrange) {
+
+    var mycolors = colorrange.split(',');
+    
+    jsondata.forEach(function (d) {
+        d.rowidx = +d.rowidx;
+        d.colidx = +d.colidx;
+        d.log2 = +d.log2;
+    });
+
+    
+    var HMmargin = {top: 60, right: 0, bottom: 50, left: 60},
+        svgWidth = 1200,
+        svgHeight = 450,
+        HMwidth = svgWidth - HMmargin.left - HMmargin.right, 
+        HMheight = svgHeight - HMmargin.top - HMmargin.bottom,
+        gridheight = HMheight / samplelist.length, 
+        gridwidth = HMwidth / genelist.length, 
+        legendElementWidth = HMwidth / 9,
+        colors = colorrange.split(',');
+    
+    var resp = d3.select("#heatmap")
+        .append('div')
+        .attr("id", "heatmapsvg")
+        .attr('class', 'svg-container'); //container class to make it responsive
+
+    var svg = resp
+        .append("svg")
+        .attr('class', 'canvas svg-content-responsive')
+        .attr('preserveAspectRatio', 'xMinYMin meet')
+        .attr('viewBox', [0, 0, svgWidth, svgHeight].join(' '))
+        .append("g")
+        .attr("transform", "translate(" + HMmargin.left + "," + HMmargin.top + ")");
+    
+    var rowSortOrder = false,
+        colSortOrder = false,
+        row_number = samplelist.length,
+        col_number = genelist.length;
+    
+    var ymin = Math.abs(d3.min(jsondata, function (d) {
+        return d.log2;
+    }));
+    var ymax = Math.abs(d3.max(jsondata, function (d) {
+        return d.log2;
+    }));
+    var yabs = Math.max(ymin, ymax);
+
+    var colorScale = d3.scale.quantile()
+        .domain([yabs * -1, 0, yabs])
+        .range(colors);
+
+    var rowLabels = svg.append("g").selectAll(".rowLabel")
+        .data(samplelist)
+        .enter().append("text")
+        .text(function (d) {
+            return d;
+        })
+        .attr("x", 0)
+        .attr("y", function (d, i) {
+            return i * gridheight;
+        })
+        .style("text-anchor", "end")
+        .attr("transform", "translate(-6," + gridheight / 1.5 + ")")
+        .attr("class", function (d, i) {
+            return "rowLabel r" + i;
+        })
+        .on("mouseover", function (d) {
+            d3.select(this).classed("text-hover", true);
+        })
+        .on("mouseout", function (d) {
+            d3.select(this).classed("text-hover", false);
+        })
+        .on("click", function (d, i) {
+            rowSortOrder = !rowSortOrder;
+            sortbylabel("r", i, rowSortOrder); //d3.select("#order").property("selectedIndex", 4).node().focus();
+        });
+
+    var colLabels = svg.append("g").selectAll(".colLabel")
+        .data(genelist)
+        .enter().append("text")
+        .text(function (d) {
+            return d;
+        })
+        .attr("x", 0)
+        .attr("y", function (d, i) {
+            return i * gridwidth;
+        })
+        .style("text-anchor", "left")
+        .attr("transform", "translate(" + gridwidth / 2 + ", -6 ) rotate (-90)")
+        .attr("class", function (d, i) {
+            return "colLabel c" + i;
+        })
+        .on("mouseover", function (d) {
+            d3.select(this).classed("text-hover", true);
+        })
+        .on("mouseout", function (d) {
+            d3.select(this).classed("text-hover", false);
+        })
+        .on("click", function (d, i) {
+            colSortOrder = !colSortOrder;
+            sortbylabel("c", i, colSortOrder); //d3.select("#order").property("selectedIndex", 4).node().focus();
+        });
+
+    var cells = svg.append("g").selectAll(".cell")
+        .data(jsondata, function (d) {
+            return d.rowidx + ':' + d.colidx;
+        });
+
+    //cells.append("title");
+
+    cells.enter().append("rect")
+        .attr("x", function (d) {
+            return (d.colidx - 1) * gridwidth;
+        })
+        .attr("y", function (d) {
+            return (d.rowidx - 1) * gridheight;
+        })
+        .attr("rx", 1)
+        .attr("ry", 1)
+        .attr("class", function (d) {
+            return "cell cr" + (d.rowidx - 1) + " cc" + (d.colidx - 1);
+        })
+        .attr("width", gridwidth)
+        .attr("height", gridheight)
+        .style("fill", colors[4])
+        .on('mouseover', SP.onMouseOverNode)
+        .on('mouseout', SP.onMouseOut);
+
+    cells.transition().duration(1000)
+        .style("fill", function (d) {
+            return colorScale(d.log2);
+        });
+
+    cells.select("title").text(function (d) {
+        return d.log2;
+    });
+
+    cells.exit().remove();
+
+    var legend = svg.append("g").selectAll(".legend")
+        .data([Math.round(yabs * 10) / 10 * -1, 0, 0, 0, 0, 0, 0, 0, Math.round(yabs * 10) / 10]);
+
+    legend.enter().append("g")
+        .attr("class", "legend");
+
+    legend.append("rect")
+        .attr("x", function (d, i) {
+            return legendElementWidth * i;
+        })
+        .attr("y", HMheight + 15)
+        .attr("width", legendElementWidth)
+        .attr("height", 10)
+        .style("fill", function (d, i) {
+            return colors[i];
+        });
+
+    legend.append("text")
+        .attr("class", "mono")
+        .text(function (d, i) {
+            return (i === 0 || i === 4 || i === 8) ? d : "";
+        })
+        .attr("x", function (d, i) {
+            return legendElementWidth * i + legendElementWidth / 2;
+        })
+        .attr("y", HMheight + 40);
+
+    legend.exit().remove();
+
+    function sortbylabel(rORc, i, sortOrder) {
+
+        var t = svg.transition().duration(3000);
+        var log2r = [];
+        var sorted; // sorted is zero-based index
+        d3.selectAll(".c" + rORc + i)
+            .filter(function (ce) {
+                log2r.push(ce.log2);
+            });
+        if (rORc == "r") { // sort log2ratio of a gene
+            sorted = d3.range(col_number).sort(function (a, b) {
+                if (sortOrder) {
+                    return log2r[b] - log2r[a];
+                } else {
+                    return log2r[a] - log2r[b];
+                }
+            });
+            t.selectAll(".cell")
+                .attr("x", function (d) {
+                    return sorted.indexOf(d.colidx - 1) * gridwidth;
+                });
+            t.selectAll(".colLabel")
+                .attr("y", function (d, i) {
+                    return sorted.indexOf(i) * gridwidth;
+                });
+        } else { // sort log2ratio of a contrast
+            sorted = d3.range(row_number).sort(function (a, b) {
+                if (sortOrder) {
+                    return log2r[b] - log2r[a];
+                } else {
+                    return log2r[a] - log2r[b];
+                }
+            });
+            t.selectAll(".cell")
+                .attr("y", function (d) {
+                    return sorted.indexOf(d.rowidx - 1) * gridheight;
+                });
+            t.selectAll(".rowLabel")
+                .attr("y", function (d, i) {
+                    return sorted.indexOf(i) * gridheight;
+                });
+        }
+    }
+
+};
+
+heatmap.init = function (jsondata,colorrange) {
+    heatmap.processData(jsondata, "Translation",colorrange);
+};
+
+if (typeof define === "function" && define.amd) {
+    define(heatmap);
+} else if (typeof module === "object" && module.exports) {
+    module.exports = heatmap;
+} else {
+    this.heatmap = heatmap;
+}
+},{"./scatterplot.js":8,"colorbrewer":37,"d3":39}],5:[function(require,module,exports){
 var d3 = require('d3');
 var THREE = require ('three');
 var OrbitControls = require('three-orbit-controls')(THREE);
@@ -210,56 +613,10 @@ function hexToRgb(hex) { //TODO rewrite with vector output
 
 function dotsInit(data){
       
-    //d3.tsv("data/final.tsv", function (d){
         
     dots = new THREE.Object3D();
-        
-    /*var sample = [];
-    d.forEach(function (d,i) {
-            sample[i] = {
-                pc1: +d.pc1,
-                pc2: +d.pc2,
-                pc3: +d.pc3,
-                sampleID: d.sampleID,
-                group: d.group,
-                gender: d.gender,
-                stage: d.stage,
-                color: d.color
-                category: (cat == "group") ? d.group : (cat == "gender") ? d.gender : d.stage
-            };
-        });*/
     
-        
-    //sample.sort(function(a,b) { return d3.ascending(a.category, b.category);});
-        
-    var xmax = d3.max(data, function (d) {return d.pc1;}),
-        xmin = d3.min(data, function (d) {return d.pc1;}),
-        zmax = d3.max(data, function (d) {return d.pc2;}),
-        zmin = d3.min(data, function (d) {return d.pc2;}),
-        ymax = d3.max(data, function (d) {return d.pc3;}),
-        ymin = d3.min(data, function (d) {return d.pc3;});
-
     var format = d3.format("+.2f");
-
-    var colorgroup = d3.scale.ordinal().range(["#ff004d","#ffff66","#a4ff52","#0067c6","#7d71e5"]),
-    colorstage = d3.scale.ordinal().range(["#a4ff52","#ffff66","#da5802","#ff004d","#a7a5a5"]),
-    colorgender = d3.scale.ordinal().range(["#ff0074","#52a4ff"]);
-        
-    //var color = (cat == "group") ? colorgroup : (cat == "gender") ? colorgender : colorstage;
-
-    var xDom = (xmax-xmin)*0.1,
-        yDom = (ymax-ymin)*0.1,
-        zDom = (zmax-zmin)*0.1;
-
-    var xScale = d3.scale.linear()
-                  .domain([xmin-xDom,xmax+xDom])
-                  .range([-100,100]);
-    var yScale = d3.scale.linear()
-                  .domain([ymin-yDom,ymax+yDom])
-                  .range([-100,100]);                  
-    var zScale = d3.scale.linear()
-                  .domain([zmin-zDom,zmax+zDom])
-                  .range([-100,100]);
 
     var sprite = new THREE.TextureLoader().load( "image/circle.png" );   
     for ( i = 0; i < data.length; i ++ ) {
@@ -267,9 +624,9 @@ function dotsInit(data){
         var geometry = new THREE.SphereBufferGeometry( 3, 32, 32 );
         var material = new THREE.MeshLambertMaterial( { color: new THREE.Color().setRGB( hexToRgb(realcolor).r / 255, hexToRgb(realcolor).g / 255, hexToRgb(realcolor).b / 255 ) } );
         var particle = new THREE.Mesh( geometry, material );
-        particle.position.x = xScale(data[i].pc1);
-        particle.position.z = zScale(data[i].pc2);
-        particle.position.y = yScale(data[i].pc3);
+        particle.position.x = data[i].pc1;
+        particle.position.z = data[i].pc2;
+        particle.position.y = data[i].pc3;
         particle.sampleID = data[i].sampleID;
         particle.group = data[i].group;
         particle.gender = data[i].gender;
@@ -280,7 +637,7 @@ function dotsInit(data){
         dots.add( particle );
     }
     pcObj.add(dots);
-    //});       
+    
 }
 
 function boxInit(){
@@ -432,9 +789,9 @@ if (typeof define === "function" && define.amd) {
 } else {
     this.pcPlot = pcPlot;
 }
-},{"../views/templates":8,"d3":15,"three":61,"three-orbit-controls":60}],4:[function(require,module,exports){
+},{"../views/templates":13,"d3":39,"three":85,"three-orbit-controls":84}],6:[function(require,module,exports){
 var d3 = require('d3');
-var pcPlot = require('./pcPlot.js');
+//var pcPlot = require('./pcPlot.js');
 var PCdata = require('./pcdata.js');
 
 var colorgroup = d3.scale.ordinal().range(["#ff004d","#ffff66","#a4ff52","#0067c6","#7d71e5"]),
@@ -447,7 +804,9 @@ var PCBC = function (obj) {
     this.PCBCwrapped = obj;
 };
 
-/*PCBC.draw = function (indata,cat,svgname,titlename,panelname) {
+PCBC.draw = function (indata,cat,svgname,titlename,panelname) {
+        
+        var criteria = (cat == "cancer type") ? 'criteriagroup' : (cat == "gender") ? 'criteriagender' : 'criteriastage'
         
         var prdata = indata.map(function(d){
                 return{
@@ -502,7 +861,7 @@ var PCBC = function (obj) {
                     document.getElementById(panelname).style.border="1px solid #6699ff";},
                 "mouseout":  function(){document.getElementById(panelname).style.border="";},  
                 "click": function(){
-                    click(prdata);
+                    PCdata.update(indata,cat);
                     changeBackground(panelname);
                     }
                     //trigger PCdata.update, feed indata and cat
@@ -514,7 +873,7 @@ var PCBC = function (obj) {
                         document.getElementById(panelname).style.border="1px solid #6699ff";},
                     "mouseout":  function(){document.getElementById(panelname).style.border="";},  
                     "click": function(){
-                        click(prdata);
+                        PCdata.update(indata,cat);
                         changeBackground(panelname);
                         }
                     });
@@ -540,10 +899,7 @@ var PCBC = function (obj) {
                 return color(d.key);
             })
           .on("click", function(d){
-                click(d.values);
-                changeBackground(panelname);
-                    var text = document.getElementById('criteria');
-    text.value = (text.value + d.key+",");
+                addCriteria(criteria,d.key);
             });
 
         bar.append("text")
@@ -552,43 +908,73 @@ var PCBC = function (obj) {
           .attr("dy", ".35em")
           .text(function(d) { return d.key+" ("+d.count+")"; })
           .on("click", function(d){
-                click(d.values);
-                changeBackground(panelname);
-                var text = document.getElementById('criteria');
-    text.value = (text.value + d.key+",");
+                addCriteria(criteria,d.key);
             });
     
-            var button = document.getElementById('filterbutton')
-        button.addEventListener("click", PCdata.update(prdata,"cancer type"));
-    
-    function click(d) {
-            pcPlot.deletedots();
-            pcPlot.adddots(d);
-            
-            
-    }
+
     
     function changeBackground(panelname){
         var element = document.getElementsByClassName('pcbc');
         for (var e in element) if (element.hasOwnProperty(e)) element[e].style.background="white";
         document.getElementById(panelname).style.background="#b3ccff";
     }
+    
+    var contains = function(needle) {
+        // Per spec, the way to identify NaN is that it is not equal to itself
+        var findNaN = needle !== needle;
+        var indexOf;
 
-};*/
+        if(!findNaN && typeof Array.prototype.indexOf === 'function') {
+            indexOf = Array.prototype.indexOf;
+        } else {
+            indexOf = function(needle) {
+                var i = -1, index = -1;
 
+                for(i = 0; i < this.length; i++) {
+                    var item = this[i];
 
+                    if((findNaN && item !== item) || item === needle) {
+                        index = i;
+                        break;
+                    }
+                }
 
-PCBC.alert = function(){
-    alert("PCBC");
+                return index;
+            };
+        }
+
+        return indexOf.call(this, needle) > -1;
+    };
+    
+    function addCriteria(criteria,key){
+        
+        var text = document.getElementById(criteria);
+        crit = text.value.split(",");
+        crit.pop();
+        
+        if (!contains.call(crit,key)){
+            text.value = (text.value + key+",");
+
+            var button = document.createElement("button");
+            button.className = "btn btn-xs btn-default criteriabut";
+            var textnode = document.createTextNode(key);
+            button.appendChild(textnode);
+            var gly = document.createElement("span");
+            gly.className = "glyphicon glyphicon-trash";
+            button.appendChild(gly);
+            button.onclick = function(e){
+                var array = document.getElementById(criteria).value.split(",");
+                var index = array.indexOf(key);
+                if (index > -1) {array.splice(index, 1);};
+                document.getElementById(criteria).value = array.toString();
+                this.parentNode.removeChild(this)
+            }
+            document.getElementById("criteriabutton").appendChild(button);   
+        }
+    }
+
 };
 
-pcPlot.alert();
-PCdata.alert();
-
-//SP.alert();
-
-//fds.alert();
-//PCdata.alert();
 
 if (typeof define === "function" && define.amd) {
     define(PCBC);
@@ -597,10 +983,9 @@ if (typeof define === "function" && define.amd) {
 } else {
     this.PCBC = PCBC;
 }
-},{"./pcPlot.js":3,"./pcdata.js":5,"d3":15}],5:[function(require,module,exports){
+},{"./pcdata.js":7,"d3":39}],7:[function(require,module,exports){
 var d3 = require('d3');
-//var PCBC = require('./pcbarchart.js');
-//var pcPlot = require('./pcPlot.js');
+var pcPlot = require('./pcPlot.js');
 
 var colorgroup = d3.scale.ordinal().range(["#ff004d","#ffff66","#a4ff52","#0067c6","#7d71e5"]),
     colorstage = d3.scale.ordinal().range(["#a4ff52","#ffff66","#da5802","#ff004d","#a7a5a5"]),
@@ -612,16 +997,35 @@ var PCdata = function (obj) {
     this.PCdatawrapped = obj;
 };
 
-/*PCdata.init = function () {
-    
-    d3.tsv("data/final.tsv", function (indata){
+PCdata.init = function (indata) {
 
+    var xmax = d3.max(indata, function (d) {return d.pc1;}),
+        xmin = d3.min(indata, function (d) {return d.pc1;}),
+        zmax = d3.max(indata, function (d) {return d.pc2;}),
+        zmin = d3.min(indata, function (d) {return d.pc2;}),
+        ymax = d3.max(indata, function (d) {return d.pc3;}),
+        ymin = d3.min(indata, function (d) {return d.pc3;});
+
+    var xDom = (xmax-xmin)*0.1,
+        yDom = (ymax-ymin)*0.1,
+        zDom = (zmax-zmin)*0.1;
+
+    var xScale = d3.scale.linear()
+                  .domain([xmin-xDom,xmax+xDom])
+                  .range([-100,100]);
+    var yScale = d3.scale.linear()
+                  .domain([ymin-yDom,ymax+yDom])
+                  .range([-100,100]);                  
+    var zScale = d3.scale.linear()
+                  .domain([zmin-zDom,zmax+zDom])
+                  .range([-100,100]);
+    
         var prdata = indata.map(function(d){
                 return{
                     sampleID: d.sampleID,
-                    pc1: +d.pc1,
-                    pc2: +d.pc2,
-                    pc3: +d.pc3,
+                    pc1: xScale(d.pc1),
+                    pc2: zScale(d.pc2),
+                    pc3: yScale(d.pc3),
                     group: d.group,
                     gender: d.gender,
                     stage: d.stage,
@@ -646,52 +1050,68 @@ var PCdata = function (obj) {
         prdata.forEach(function (d) {
                 d.stagecolor = colorstage(d.stage);
             });
+        
+    return prdata
+};
 
-        
-        pcPlot.init(prdata);
-        PCBC.draw(prdata,"cancer type","#groupbarchart","#grouptitle","grouppanel");
-        PCBC.draw(prdata,"gender","#genderbarchart","#gendertitle","genderpanel");
-        PCBC.draw(prdata,"stage","#stagebarchart","#stagetitle","stagepanel");
-        
-        //d3.select button trigger pcdata.update
-        //feed prdata,group
-        //change style of bcs
-        
-        
+var contains = function(needle) {
+    // Per spec, the way to identify NaN is that it is not equal to itself
+    var findNaN = needle !== needle;
+    var indexOf;
 
-        
+    if(!findNaN && typeof Array.prototype.indexOf === 'function') {
+        indexOf = Array.prototype.indexOf;
+    } else {
+        indexOf = function(needle) {
+            var i = -1, index = -1;
 
-    });
-    
+            for(i = 0; i < this.length; i++) {
+                var item = this[i];
+
+                if((findNaN && item !== item) || item === needle) {
+                    index = i;
+                    break;
+                }
+            }
+
+            return index;
+        };
+    }
+
+    return indexOf.call(this, needle) > -1;
 };
 
 PCdata.update = function(indata,cat){
     
-    crit = document.getElementById('criteria').value.split(",").pop();
+    criteriagroup = document.getElementById('criteriagroup').value.split(",");
+    criteriagroup.pop();
+    criteriagender = document.getElementById('criteriagender').value.split(",");
+    criteriagender.pop();
+    criteriastage = document.getElementById('criteriastage').value.split(",");
+    criteriastage.pop();
     
     newdata=[]
-    alert("f");
     
-    //for (c in crit) console.log(c);
+    if (criteriagroup.length == 0 && criteriagender.length == 0 && criteriastage.length == 0) newdata = indata;
+    else{
+        indata.forEach(function (d) {
+            if ((contains.call(criteriagroup,d.group) || criteriagroup.length == 0) && (contains.call(criteriagender,d.gender) || criteriagender.length == 0) && (contains.call(criteriastage,d.stage) || criteriastage.length == 0)) newdata.push(d);
+        });   
+    }
     
-    indata.forEach(function (d) {
-        for (c in crit){
-            console.log(c);
-            if (indata.group == c || indata.gender == c  || indata.stage == c ) newdata.push(d);
-        }
+    newdata.forEach(function (d) {
+        d.color = (cat == "cancer type") ? d.groupcolor : (cat == "gender") ? d.gendercolor : d.stagecolor
     });
     
-    console.log(newdata)
-    //get criteria for pushing
-    //set color to feed cat
-    //update pcPlot
-};*/
+    pcPlot.deletedots();
+    pcPlot.adddots(newdata);
+    
+};
 
 PCdata.alert = function(){
     alert("PCdata");
 };
 
-//SP.alert();
 
 //PCBC.alert();
 
@@ -703,7 +1123,301 @@ if (typeof define === "function" && define.amd) {
 } else {
     this.PCdata = PCdata;
 }
-},{"d3":15}],6:[function(require,module,exports){
+},{"./pcPlot.js":5,"d3":39}],8:[function(require,module,exports){
+var d3 = require('d3');
+var colorbrewer = require('colorbrewer');
+
+var SPmargin = {top: 20, right: 0, bottom: 30, left: 30},
+    svgWidth = 900,
+    svgHeight = 450,
+    SPwidth = svgWidth - SPmargin.left - SPmargin.right, 
+    SPheight = svgHeight - SPmargin.top - SPmargin.bottom;
+
+var SPsvg;
+
+var x = d3.scale.ordinal()
+    .rangeRoundPoints([0, SPwidth], 1);
+
+var y = d3.scale.linear()
+    .range([SPheight, 0]);
+
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .orient("bottom");
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left");
+
+var div = d3.select("#scatterplot").append("div")
+    .attr("class", "tooltip")
+    .style("opacity", 0);
+
+var color = d3.scale.linear();
+    //.interpolate(d3.interpolateHsl);
+
+var mutatedcolor = "#6baed6";
+var highlightcolor = "#f768a1";
+var highlightradius = 6.5;
+
+var clickEvent = {target: null, holdClick: false},
+    tipTemplate = require('../views/templates').tooltip;
+
+var SP = function (obj) {
+    if (obj instanceof SP) return obj;
+    if (!(this instanceof SP)) return new SP(obj);
+    this.SPwrapped = obj;
+};
+
+SP.drawaxis = function () {
+
+    SPsvg.append("g")
+        .attr("id","x-axis")
+        .attr("class", "x axis")
+        .attr("transform", "translate(0," + SPheight + ")")
+        .append("text")
+        .attr("class", "label")
+        .attr("x", SPwidth)
+        .attr("y", -6)
+        .style("text-anchor", "end")
+        .text("Sample");
+
+    SPsvg.append("g")
+        .attr("class", "y axis")
+        .append("text")
+        .attr("class", "label")
+        .attr("transform", "rotate(-90)")
+        .attr("y", 6)
+        .attr("dy", ".71em")
+        .style("text-anchor", "end")
+        .text("Log2 Fold change");
+
+    SPsvg.append("rect")
+        .attr("class", "SPrect")
+        .attr("x", SPwidth - 250)
+        .attr("width", 18)
+        .attr("height", 18);
+
+    SPsvg.append("text")
+        .attr("class", "SPtitle")
+        .attr("transform", "translate(" + (SPwidth - 220) + ",13)");
+
+};
+
+SP.update = function (jsondata, nfunc, ncolor,colorrange) {
+    
+    var mycolors = colorrange.split(',');
+    
+    var data = [];
+
+    jsondata.forEach(function (d) {
+        if (d.process == nfunc && !isNaN(parseFloat(d.log2)) && isFinite(d.log2)) {
+            data.push(d);
+        }
+    });
+
+    data.forEach(function (d) {
+        d.log2 = +d.log2;
+    });
+
+    x.domain(data.map(function (d) {
+        return d.sampleID;
+    }));
+
+    var ymin = Math.abs(d3.min(data, function (d) {
+        return d.log2;
+    }));
+    var ymax = Math.abs(d3.max(data, function (d) {
+        return d.log2;
+    }));
+    var yabs = Math.max(ymin, ymax);
+    y.domain([yabs * -1, yabs]);
+    //y.domain([-5,5])
+
+    SPsvg.selectAll("text.SPtitle").text(nfunc);
+    SPsvg.selectAll("rect.SPrect").style("fill", ncolor);
+
+    SPsvg.select(".y.axis")
+        .transition()
+        .duration(1000)
+        .call(yAxis);
+
+    SPsvg.select(".x.axis")
+        .call(xAxis);
+
+    color.domain([yabs * -1, 0,yabs])
+        .range([mycolors[0], mycolors[4],mycolors[8]]);
+
+    var nodedata = data.map(function (d) {
+        return {
+            x: x(d.sampleID), 
+            y: y(d.log2), 
+            r: 3.5,
+            log2: d.log2,
+            pvalue: d.pvalue,
+            sample: d.sampleID,
+            process: d.process,
+            gene_function: d.gene_function,
+            gene: d.gene,
+            mutation: d.mutation.split(',')
+        };
+    });
+
+    var nodes = SPsvg.selectAll("circle.node")
+        .data(nodedata);
+
+    var norm = d3.random.normal(0, 1.5);
+    var iterations = 0;
+
+    function collide(node) {
+        var r = node.r + 16,
+            nx1 = node.x - r,
+            nx2 = node.x + r,
+            ny1 = node.y - r,
+            ny2 = node.y + r;
+        return function (quad, x1, y1, x2, y2) {
+            if (quad.point && (quad.point !== node)) {
+                var x = node.x - quad.point.x,
+                    y = node.y - quad.point.y,
+                    l = Math.sqrt(x * x + y * y),
+                    r = node.r + quad.point.r;
+                if (l < r)
+                    node.x += norm();
+            }
+            return x1 > nx2 || x2 < nx1 || y1 > ny2 || y2 < ny1;
+        };
+    }
+
+    while (iterations++ < 100) {
+        var q = d3.geom.quadtree(nodedata);
+
+        for (var i = 0; i < nodedata.length; i++)
+            q.visit(collide(nodedata[i]));
+    }
+
+    nodes.transition()
+        .duration(1000)
+        .attr("r", function (d) {
+            return d.mutation[0] !== "" ? highlightradius : d.r;
+        })
+        .attr("cx", function (d) {
+            return d.x;
+        })
+        .attr("cy", function (d) {
+            return d.y;
+        })
+        .style("fill", function (d) {
+            return d.mutation[0] !== "" ? mutatedcolor : color(d.log2);
+        });
+
+    nodes.enter().append("circle")
+        .attr("class", "node")
+        .attr("r", function (d) {
+            return d.mutation[0] !== "" ? highlightradius : d.r;
+        })
+        .attr("cx", function (d) {
+            return d.x;
+        })
+        .attr("cy", function (d) {
+            return d.y;
+        })
+        .style("fill", function (d) {
+            return d.mutation[0] !== "" ? mutatedcolor : color(d.log2);
+        })
+        .style("stroke", "black")
+        .style("stroke-width", 0.5)
+        /*.on("mouseover", function (d) {
+            SP.mouseoverfunc(d, d.gene);
+            SP.highlight(d, d.gene);
+        })
+        .on("mouseout", function (d) {
+            SP.mouseoverfunc(d, "");
+            SP.highlight(d, "");
+        });*/
+        .on('mouseover', SP.onMouseOverNode)
+        .on('mouseout', SP.onMouseOut);
+
+    nodes.exit()
+        .transition(1000)
+        .attr("r", 0)
+        .remove();
+
+};
+
+
+SP.onMouseOut = function(node){
+    
+    if(clickEvent.holdClick) return;
+    
+    //Clear tooltip
+    $('.tip').empty();
+    
+    highlight("");
+};
+
+
+SP.onMouseOverNode = function(node){
+    
+    if(clickEvent.holdClick) return;
+    
+    //Init tooltip if hover over gene
+    if(!_.isUndefined(node.gene))
+        $('.tip').append(tipTemplate(node));
+    console.log(node);
+    
+    highlight(node.gene);
+
+};
+
+var highlight = function(target){
+    
+    SPsvg.selectAll("circle.node")
+        .transition()
+        .duration(500)
+        .style("fill", function (d) {
+            if (d.gene == target) {
+                return highlightcolor;
+            } else if (d.mutation[0] !== "") return mutatedcolor;
+            else return color(d.log2);
+        })
+        .attr("r", function (d) {
+            return d.gene == target ? highlightradius : d.mutation[0] !== "" ? highlightradius : d.r;
+        });
+    
+};
+
+SP.init = function (jsondata,colorrange) {
+    
+    var resp = d3.select("#scatterplot")
+        .append('div')
+        .attr('class', 'svg-container'); //container class to make it responsive
+    
+    SPsvg = resp
+    .append("svg")
+    .attr("id", "scatterplotsvg")
+    .attr('class', 'canvas svg-content-responsive')
+    .attr('preserveAspectRatio', 'xMinYMin meet')
+    .attr('viewBox', [0, 0, svgWidth, svgHeight].join(' '))
+    .append("g")
+    .attr("transform", "translate(" + SPmargin.left + "," + SPmargin.top + ")");
+    
+    SP.drawaxis();
+    SP.update(jsondata, "Translation", "#8dd3c7",colorrange);
+};
+
+SP.alert = function(){
+    alert("SP");
+};
+
+
+if (typeof define === "function" && define.amd) {
+    define(SP);
+} else if (typeof module === "object" && module.exports) {
+    module.exports = SP;
+} else {
+    this.SP = SP;
+}
+},{"../views/templates":13,"colorbrewer":37,"d3":39}],9:[function(require,module,exports){
 var templates = require('./templates');
 
 module.exports = Backbone.View.extend({
@@ -716,7 +1430,7 @@ module.exports = Backbone.View.extend({
     },
 });
 
-},{"./templates":8}],7:[function(require,module,exports){
+},{"./templates":13}],10:[function(require,module,exports){
 $(document).ready(function(){
 
 $("#navbar li").click(function(e){
@@ -864,7 +1578,113 @@ function issueWarning(){
 
 
 
-},{}],8:[function(require,module,exports){
+},{}],11:[function(require,module,exports){
+var axios = require('axios');
+var _ = require('underscore');
+
+function parser(){}
+
+   
+   
+function parse(urls, errorcb, datacb,colorrange){
+    
+    var funcs = _.map(urls, axios.get);
+    
+    console.log(urls.length);
+    if (urls.length === 0) errorcb(new Error('Add samples!'));
+    if (urls.length > 6) errorcb(new Error('No more than 6 samples!'));
+    if (colorrange === "") errorcb(new Error('Pick color!'));
+    
+    axios.get('./data/mito-genes.txt')
+    .then(function(response){
+        var mito = [];
+        mito = mito.concat(response.data.split("\n"));
+        
+        var mitomap = {};
+        for(var i = 0; i < mito.length; i++){
+            mitomap[mito[i]] = true;
+        }
+        
+        axios
+        .all(funcs)
+        .then(axios.spread(function (){
+            
+            var data = [];
+            var newdata = [];
+            _.each(arguments, function(res){
+                if(! _.isArray(res.data)) errorcb(new Error('response is not an array'));
+                                
+                for(var i = 0; i < mito.length; i++){
+                    if(mitomap[mito[i]] === true){
+                        var ifExist = false;
+
+                        for(var j = 0; j < res.data.length; j++){
+                            if (res.data[j].gene == mito[i]){
+                                ifExist = true;
+                                break;
+                            }
+                        }
+                        mitomap[mito[i]] = ifExist;
+                    }
+                }                
+                data = data.concat(res.data);
+                console.log(res.data);
+            });
+            //console.log(data);
+           for (var k = 0; k < data.length; k++){
+                if(mitomap[data[k].gene] === true){
+                    newdata = newdata.concat(data[k]);
+                }        
+            }
+            console.log(mitomap);
+            datacb(newdata,colorrange);
+        
+        }))
+        .catch(function (res) {
+            errorcb(res);
+        });
+    });  
+    
+}
+
+parser.parse = parse;
+
+module.exports = parser;
+
+
+
+},{"axios":16,"underscore":86}],12:[function(require,module,exports){
+var axios = require('axios');
+var _ = require('underscore');
+var d3 = require('d3');
+
+var colorgroup = d3.scale.ordinal().range(["#ff004d","#ffff66","#a4ff52","#0067c6","#7d71e5"]),
+    colorstage = d3.scale.ordinal().range(["#a4ff52","#ffff66","#da5802","#ff004d","#a7a5a5"]),
+    colorgender = d3.scale.ordinal().range(["#ff0074","#52a4ff"]);
+
+function parser2(){}
+   
+function parse(urls, errorcb, datacb){
+    
+    axios.get(urls)
+    .then(function(response){
+        datacb(response.data);
+        
+    })
+    .catch(function (res) {
+            errorcb(res);
+    });
+    
+    
+}
+
+parser2.parse = parse;
+
+module.exports = parser2;
+
+
+
+},{"axios":16,"d3":39,"underscore":86}],13:[function(require,module,exports){
 (function (global){
 var glob = ('undefined' === typeof window) ? global : window,
 
@@ -873,7 +1693,7 @@ Handlebars = glob.Handlebars || require('handlebars');
 this["Templates"] = this["Templates"] || {};
 
 this["Templates"]["main"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<!-- Page Content -->        \n<div class=\"container main\">\n        <div id=\"#wrapUp\" class=\"row\">\n            \n        <div class=\"col-md-2\">\n        	<div class=\"row\">\n            	<div class=\"col-md-12 title\" style=\"margin-top:20px;\">\n	            Data Sets\n	            </div>\n	            <div class=\"col-md-12\" style=\"margin-top:10px;\">\n	            <select class=\"selectpicker\" id=\"folders\" data-style=\"btn-default\" id=\"selection1\" title=\"Pick dataset\" data-width=\"175px\" >\n	                <option value='./data/TCGA'>TCGA</option>\n	                <option value='./data/aneuploidy/'>Aneuploidy</option>\n	                <option value='./data/viral/'>Viral</option>\n	                <option value='./data/trisomy/'>Trisomy</option>\n	                <option value='./data/user_uploads/json_files/'>User Uploads</option>\n	            </select> \n	            </div>\n\n	            <div class=\"col-md-12\" style=\"margin-top:10px;display:none\" id=\"subfolders-div\">\n	            <select class=\"selectpicker\" id=\"subfolders\" data-style=\"btn-default\" id=\"selection1\" title=\"Pick Cancer type\" data-width=\"175px\" >\n	                <option value='./data/TCGA/BRCA/'>BRCA</option>\n	                <option value='./data/TCGA/LIHC/'>LIHC</option>\n	                <option value='./data/TCGA/LUAD/'>LUAD</option>\n	                <option value='./data/TCGA/PRAD/'>PRAD</option>\n	                <option value='./data/TCGA/THCA/'>THCA</option>\n	            </select> \n	            </div>\n	           \n	            <div class=\"col-md-12\" style=\"margin-top:10px;\">\n	            <select class=\"selectpicker\" MULTIPLE id=\"files\" data-style=\"btn-default\" id=\"selection1\" title=\"Pick samples\" data-width=\"175px\" data-actions-box=\"true\" data-selected-text-format=\"static\">\n	            </select> \n	            </div>\n\n	            <div class=\"col-md-12\" style=\"margin-top:10px\">\n	            <select SIZE=\"6\" MULTIPLE id=\"selected-sample\" style=\"width: 175px;font-size: 14px\">\n	            </select>\n	            </div>\n	            \n	            <div class=\"col-md-12\" style=\"margin-top:10px;text-align:right\">\n	            <button id = \"delete-selected\" class=\"btn btn-xs btn-default\"><span class=\"glyphicon glyphicon-remove\" aria-hidden=\"true\"></span> Remove</button>\n	            <button id = \"clear-all\" class=\"btn btn-xs btn-danger\"><span class=\"glyphicon glyphicon-trash\" aria-hidden=\"true\"></span> Clear</button>\n	            </div>\n	            \n	            <div class=\"col-md-12\" id=\"warning\" style=\"margin-top:10px\"></div>\n	    \n	            <div class=\"col-md-12\" id=\"spbdiv\" style=\"margin-top:20px;text-align: center;display:none\">\n	            <button id = \"spcompareButton\" class=\"btn btn-success\">compare</button>\n	            </div>\n	            <div class=\"col-md-12\" id=\"pcabdiv\" style=\"margin-top:20px;text-align: center\">\n	            <button id = \"pcacompareButton\" class=\"btn btn-success\">Analyze</button>\n	            </div>\n            	<div class=\"col-md-12\"><hr></div>\n            </div>\n            <div class=\"row tip\" style=\"margin-top:20px;\"></div>\n        </div>\n        \n        <div class=\"col-md-10\">\n            <div id = \"nav_bar\" class=\"col-md-12\">\n                <ul class=\"nav nav-tabs\" id = \"navbar\" >\n                  <li><a href=\"#\">Scatter plot</a></li>\n                  <li class=\"active\"><a href=\"#\">PCA</a></li>\n                  <li><a href=\"#\">Don't click me</a></li>\n                </ul>\n            </div>\n 			<div id = \"svgs-all\" class=\"col-md-12\">\n                <div id=\"scatterplot\" class=\"col-md-9\" style=\"display:none\"></div>\n                <div id=\"pca\" class=\"col-md-9\">\n					\n				</div>\n                <div id=\"barchart\" class=\"col-md-3\" style=\"display:none\"></div>\n                <div id=\"pcbarchart\" class=\"col-md-3\">\n	                <div class=\"col-md-12 midtitle\" style=\"margin-top:20px;\">\n		            Show PCA by Processes\n		            </div>\n		            <div class=\"col-md-12\" style=\"margin-top:20px;\">\n		            <select class=\"selectpicker\" id=\"folders\" data-style=\"btn-default\" id=\"selection1\" title=\"Pick dataset\" data-width=\"175px\" >\n		                <option value='./data/TCGA'>TCGA</option>\n		                <option value=\"./data/aneuploidy\">Aneuploidy</option>\n		                <option value='./data/viral'>Viral</option>\n		                <option value='./data/trisomy'>Trisomy</option>\n		                <option value='./data/user_uploads/json_files'>User Uploads</option>\n		            </select> \n		            </div>\n		            <div class=\"col-md-12\"><hr></div>\n		            <div class=\"col-md-12 midtitle\" style=\"margin-top:0px;margin-bottom:10px;\">\n		            Color samples by\n		            </div>\n		            <div id=\"pcbcsvg\" class=\"col-md-12\">\n		            	<div class=\"panel-group\">\n						  <div class=\"panel panel-default pcbc\" id=\"grouppanel\" style=\"background:#b3ccff\">\n						    <div class=\"minititle\" style=\"padding: 10px 10px;\" id=\"grouptitle\">\n						        <a data-toggle=\"collapse\" href=\"#collapse3\">Group</a>\n						    </div>\n						    <div id=\"collapse3\" class=\"panel-collapse collapse-in\">\n						      <div class=\"panel-body svg-container\" id=\"groupbarchart\" style=\"padding :0px 0px; font-size:20px\"></div>\n						    </div>\n						  </div>\n						  <div class=\"panel panel-default pcbc\" id=\"genderpanel\">\n						    <div class=\"minititle\" style=\"padding: 10px 10px;\" id=\"gendertitle\">\n						        <a data-toggle=\"collapse\" href=\"#collapse1\">Gender</a>\n						    </div>\n						    <div id=\"collapse1\" class=\"panel-collapse collapse\">\n						      <div class=\"panel-body svg-container\" id=\"genderbarchart\" style=\"padding :0px 0px; font-size:20px\"></div>\n						    </div>\n						  </div>\n						  <div class=\"panel panel-default pcbc\" id=\"stagepanel\">\n						    <div class=\"minititle\" style=\"padding: 10px 10px;\" id=\"stagetitle\">\n						        <a data-toggle=\"collapse\" href=\"#collapse2\">Stage</a>\n						    </div>\n						    <div id=\"collapse2\" class=\"panel-collapse collapse\">\n						      <div class=\"panel-body svg-container\" id=\"stagebarchart\" style=\"padding :0px 0px; font-size:20px\"></div>\n						    </div>\n						  </div>\n						</div>\n		            </div>\n		            <div class = \"col-md-12\"><input type=\"text\" id=\"criteria\"></div>\n		            <div class = \"col-md-12\" style=\"margin-top:20px;text-align: center\"><button id = \"filterbutton\" class=\"btn btn-success\">Filter</button>\n		            </div>\n                </div>\n                <div id=\"heatmap\" class=\"col-md-12\" style=\"display:none\"></div>\n            </div>\n            \n        </div>\n        </div>\n        </div>";
+    return "<!-- Page Content -->        \n<div class=\"container main\">\n        <div id=\"#wrapUp\" class=\"row\">\n            \n        <div class=\"col-md-2\">\n        	<div class=\"row\">\n            	<div class=\"col-md-12 title\" style=\"margin-top:20px;\">\n	            Data Sets\n	            </div>\n	            <div class=\"col-md-12\" style=\"margin-top:10px;\">\n	            <select class=\"selectpicker\" id=\"folders\" data-style=\"btn-default\" id=\"selection1\" title=\"Pick dataset\" data-width=\"175px\" >\n	                <option value='./data/TCGA'>TCGA</option>\n	                <option value='./data/aneuploidy/'>Aneuploidy</option>\n	                <option value='./data/viral/'>Viral</option>\n	                <option value='./data/trisomy/'>Trisomy</option>\n	                <option value='./data/user_uploads/json_files/'>User Uploads</option>\n	            </select> \n	            </div>\n\n	            <div class=\"col-md-12\" style=\"margin-top:10px;display:none\" id=\"subfolders-div\">\n	            <select class=\"selectpicker\" id=\"subfolders\" data-style=\"btn-default\" id=\"selection1\" title=\"Pick Cancer type\" data-width=\"175px\" >\n	                <option value='./data/TCGA/BRCA/'>BRCA</option>\n	                <option value='./data/TCGA/LIHC/'>LIHC</option>\n	                <option value='./data/TCGA/LUAD/'>LUAD</option>\n	                <option value='./data/TCGA/PRAD/'>PRAD</option>\n	                <option value='./data/TCGA/THCA/'>THCA</option>\n	            </select> \n	            </div>\n	           \n	            <div class=\"col-md-12\" style=\"margin-top:10px;\">\n	            <select class=\"selectpicker\" MULTIPLE id=\"files\" data-style=\"btn-default\" id=\"selection1\" title=\"Pick samples\" data-width=\"175px\" data-actions-box=\"true\" data-selected-text-format=\"static\">\n	            </select> \n	            </div>\n\n	            <div class=\"col-md-12\" style=\"margin-top:10px\">\n	            <select SIZE=\"6\" MULTIPLE id=\"selected-sample\" style=\"width: 175px;font-size: 14px\">\n	            </select>\n	            </div>\n	            \n	            <div class=\"col-md-12\" style=\"margin-top:10px;text-align:right\">\n	            <button id = \"delete-selected\" class=\"btn btn-xs btn-default\"><span class=\"glyphicon glyphicon-remove\" aria-hidden=\"true\"></span> Remove</button>\n	            <button id = \"clear-all\" class=\"btn btn-xs btn-danger\"><span class=\"glyphicon glyphicon-trash\" aria-hidden=\"true\"></span> Clear</button>\n	            </div>\n	            \n	            <div class=\"col-md-12\" id=\"warning\" style=\"margin-top:10px\"></div>\n	    \n	            <div class=\"col-md-12\" id=\"spbdiv\" style=\"margin-top:20px;text-align: center;display:none\">\n	            <button id = \"spcompareButton\" class=\"btn btn-success\">compare</button>\n	            </div>\n	            <div class=\"col-md-12\" id=\"pcabdiv\" style=\"margin-top:20px;text-align: center\">\n	            <button id = \"pcacompareButton\" class=\"btn btn-success\">Analyze</button>\n	            </div>\n            	<div class=\"col-md-12\"><hr></div>\n            </div>\n            <div class=\"row tip\" style=\"margin-top:20px;\"></div>\n        </div>\n        \n        <div class=\"col-md-10\">\n            <div id = \"nav_bar\" class=\"col-md-12\">\n                <ul class=\"nav nav-tabs\" id = \"navbar\" >\n                  <li><a href=\"#\">Scatter plot</a></li>\n                  <li class=\"active\"><a href=\"#\">PCA</a></li>\n                  <li><a href=\"#\">Don't click me</a></li>\n                </ul>\n            </div>\n 			<div id = \"svgs-all\" class=\"col-md-12\">\n                <div id=\"scatterplot\" class=\"col-md-9\" style=\"display:none\"></div>\n                <div id=\"pca\" class=\"col-md-9\">\n					\n				</div>\n                <div id=\"barchart\" class=\"col-md-3\" style=\"display:none\"></div>\n                <div id=\"pcbarchart\" class=\"col-md-3\">\n	                <div class=\"col-md-12 midtitle\" style=\"margin-top:20px;\">\n		            Show PCA by Processes\n		            </div>\n		            <div class=\"col-md-12\" style=\"margin-top:20px;\">\n		            <select class=\"selectpicker\" id=\"folders\" data-style=\"btn-default\" id=\"selection1\" title=\"Pick dataset\" data-width=\"175px\" >\n		                <option value='./data/TCGA'>TCGA</option>\n		                <option value=\"./data/aneuploidy\">Aneuploidy</option>\n		                <option value='./data/viral'>Viral</option>\n		                <option value='./data/trisomy'>Trisomy</option>\n		                <option value='./data/user_uploads/json_files'>User Uploads</option>\n		            </select> \n		            </div>\n		            <div class=\"col-md-12\"><hr></div>\n		            <div class=\"col-md-12 midtitle\" style=\"margin-top:0px;margin-bottom:10px;\">\n		            Color samples by\n		            </div>\n		            <div id=\"pcbcsvg\" class=\"col-md-12\">\n		            	<div class=\"panel-group\">\n						  <div class=\"panel panel-default pcbc\" id=\"grouppanel\" style=\"background:#b3ccff\">\n						    <div class=\"minititle\" style=\"padding: 10px 10px;\" id=\"grouptitle\">\n						        <a data-toggle=\"collapse\" href=\"#collapse3\">Group</a>\n						    </div>\n						    <div id=\"collapse3\" class=\"panel-collapse collapse-in\">\n						      <div class=\"panel-body svg-container\" id=\"groupbarchart\" style=\"padding :0px 0px; font-size:20px\"></div>\n						    </div>\n						  </div>\n						  <div class=\"panel panel-default pcbc\" id=\"genderpanel\">\n						    <div class=\"minititle\" style=\"padding: 10px 10px;\" id=\"gendertitle\">\n						        <a data-toggle=\"collapse\" href=\"#collapse1\">Gender</a>\n						    </div>\n						    <div id=\"collapse1\" class=\"panel-collapse collapse\">\n						      <div class=\"panel-body svg-container\" id=\"genderbarchart\" style=\"padding :0px 0px; font-size:20px\"></div>\n						    </div>\n						  </div>\n						  <div class=\"panel panel-default pcbc\" id=\"stagepanel\">\n						    <div class=\"minititle\" style=\"padding: 10px 10px;\" id=\"stagetitle\">\n						        <a data-toggle=\"collapse\" href=\"#collapse2\">Stage</a>\n						    </div>\n						    <div id=\"collapse2\" class=\"panel-collapse collapse\">\n						      <div class=\"panel-body svg-container\" id=\"stagebarchart\" style=\"padding :0px 0px; font-size:20px\"></div>\n						    </div>\n						  </div>\n						</div>\n		            </div>\n		            <div class = \"col-md-12\" id=\"criteriabutton\"></div>\n		            <div class = \"col-md-12\" style=\"display:none\"><input type=\"text\" id=\"criteriagroup\"><input type=\"text\" id=\"criteriagender\"><input type=\"text\" id=\"criteriastage\"></div>\n		            <div class = \"col-md-12\" style=\"margin-top:20px;text-align: center\"><button id = \"filterbutton\" class=\"btn btn-success\">Filter</button>\n		            </div>\n                </div>\n                <div id=\"heatmap\" class=\"col-md-12\" style=\"display:none\"></div>\n            </div>\n            \n        </div>\n        </div>\n        </div>";
 },"useData":true});
 
             
@@ -936,20 +1756,21 @@ this["Templates"]["pcatooltip"] = Handlebars.template({"compiler":[7,">= 4.0.0"]
 
 if (typeof exports === 'object' && exports) {module.exports = this["Templates"];}
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"handlebars":45}],9:[function(require,module,exports){
+},{"handlebars":69}],14:[function(require,module,exports){
 //Libs
 //var fetch = require('./js/fetch.js');
 var d3 = require('d3');
 
 //Modules
 //var colorpicker = require('./js/colorpicker.js');
-//var SP = require('../svgs/scatterplot.js');
-//var BC = require('../svgs/barchart.js');
-//var heatmap = require('../svgs/heatmap.js');
-//var pcPlot = require('../svgs/pcPlot.js');
-//var PCdata = require('../svgs/pcdata.js');
+var SP = require('../svgs/scatterplot.js');
+var BC = require('../svgs/barchart.js');
+var heatmap = require('../svgs/heatmap.js');
+var pcPlot = require('../svgs/pcPlot.js');
+var PCdata = require('../svgs/pcdata.js');
 var PCBC = require('../svgs/pcbarchart.js');
-//var parser = require('./parser.js');
+var parser = require('./parser.js');
+var parser2 = require('./parser2.js');
 //var exist = false;
 
 function hideLoading() {
@@ -978,37 +1799,87 @@ function onSuccess(data,colorrange) {
     }
 }
 
+function onSuccess2(data){
+    
+    var prdata = PCdata.init(data);
+    pcPlot.init(prdata);
+    PCBC.draw(prdata,"cancer type","#groupbarchart","#grouptitle","grouppanel");
+    PCBC.draw(prdata,"gender","#genderbarchart","#gendertitle","genderpanel");
+    PCBC.draw(prdata,"stage","#stagebarchart","#stagetitle","stagepanel");
+    
+}
+
+function onSuccess3(data){
+    
+    var cat;
+    var prdata = PCdata.init(data);
+    var element = document.getElementsByClassName('pcbc');
+    for (var e in element) if (element.hasOwnProperty(e)){
+        console.log(element[e].style.background);
+        if (element[e].style.background=="rgb(179, 204, 255)") {
+            cat = (element[e].id == "grouppanel") ? 'cancer type' : (element[e].id == "genderpanel") ? 'gender' : 'stage';
+        }
+    }
+    PCdata.update(prdata,cat);
+    
+}
+
 d3.select('#spcompareButton').on('click', spcompareData);
 d3.select('#pcacompareButton').on('click', pcacompareData);
+d3.select('#filterbutton').on("click", pcaupdateData);
+
 
 function spcompareData(){
-        var select = document.getElementById('selected-sample');
-        var arr = [];
-        for (i = 0; i < select.options.length; i++) {
-           arr[i] = select.options[i].value;
-        }
-        exist = !!document.getElementById("x-axis");
-        
-        var colorrange = "#d73027,#f46d43,#fdae61,#fee08b,#ffffbf,#d9ef8b,#a6d96a,#66bd63,#1a9850";
-        //var colorrange = d3.select('#colorinput').property("value");
-        parser.parse(arr, onError, onSuccess,colorrange);
+    var select = document.getElementById('selected-sample');
+    var arr = [];
+    for (i = 0; i < select.options.length; i++) {
+       arr[i] = select.options[i].value;
+    }
+    exist = !!document.getElementById("x-axis");
+
+    var colorrange = "#d73027,#f46d43,#fdae61,#fee08b,#ffffbf,#d9ef8b,#a6d96a,#66bd63,#1a9850";
+    //var colorrange = d3.select('#colorinput').property("value");
+    parser.parse(arr, onError, onSuccess,colorrange);
 }
 
 function pcacompareData(){
     
-        exist = !!document.getElementById("genderbarchart");
-        
-        //if (exist === false){
-            PCdata.init();
-            
-             
-        //}
+    exist = !!document.getElementById("genderbarchart");    
+    parser2.parse('data/final.json', onError, onSuccess2);
+    
+}
+
+function pcaupdateData(){
+    parser2.parse('data/final.json', onError, onSuccess3);
+}
+
+function removeCriteria(){
+    
+    var index;
+    
+    criteriagroup = document.getElementById('criteriagroup').value.split(",");
+    criteriagender = document.getElementById('criteriagender').value.split(",");
+    criteriastage = document.getElementById('criteriastage').value.split(",");
+    
+    var index = criteriagroup.indexOf(this.textContent);
+    if (index > -1) criteriagroup.splice(index, 1);
+    var index = criteriagender.indexOf(this.textContent);
+    if (index > -1) criteriagender.splice(index, 1);
+    var index = criteriastage.indexOf(this.textContent);
+    if (index > -1) criteriastage.splice(index, 1);
+    
+    console.log(criteriagroup);
+    console.log(criteriagender);
+    console.log(criteriastage);
+    
+    this.parentNode.removeChild(this);
+    
 }
 
 var vis = function(){};
 
 module.exports = vis;
-},{"../svgs/pcbarchart.js":4,"d3":15}],10:[function(require,module,exports){
+},{"../svgs/barchart.js":3,"../svgs/heatmap.js":4,"../svgs/pcPlot.js":5,"../svgs/pcbarchart.js":6,"../svgs/pcdata.js":7,"../svgs/scatterplot.js":8,"./parser.js":11,"./parser2.js":12,"d3":39}],15:[function(require,module,exports){
 (function (process,__filename){
 /** vim: et:ts=4:sw=4:sts=4
  * @license amdefine 1.0.0 Copyright (c) 2011-2015, The Dojo Foundation All Rights Reserved.
@@ -1313,7 +2184,1031 @@ function amdefine(module, requireFn) {
 module.exports = amdefine;
 
 }).call(this,require('_process'),"/node_modules/amdefine/amdefine.js")
-},{"_process":59,"path":58}],11:[function(require,module,exports){
+},{"_process":83,"path":82}],16:[function(require,module,exports){
+module.exports = require('./lib/axios');
+},{"./lib/axios":18}],17:[function(require,module,exports){
+'use strict';
+
+var utils = require('./../utils');
+var buildURL = require('./../helpers/buildURL');
+var parseHeaders = require('./../helpers/parseHeaders');
+var transformData = require('./../helpers/transformData');
+var isURLSameOrigin = require('./../helpers/isURLSameOrigin');
+var btoa = window.btoa || require('./../helpers/btoa');
+
+module.exports = function xhrAdapter(resolve, reject, config) {
+  var requestData = config.data;
+  var requestHeaders = config.headers;
+
+  if (utils.isFormData(requestData)) {
+    delete requestHeaders['Content-Type']; // Let the browser set it
+  }
+
+  var request = new XMLHttpRequest();
+
+  // For IE 8/9 CORS support
+  // Only supports POST and GET calls and doesn't returns the response headers.
+  if (window.XDomainRequest && !('withCredentials' in request) && !isURLSameOrigin(config.url)) {
+    request = new window.XDomainRequest();
+  }
+
+  // HTTP basic authentication
+  if (config.auth) {
+    var username = config.auth.username || '';
+    var password = config.auth.password || '';
+    requestHeaders.Authorization = 'Basic ' + btoa(username + ':' + password);
+  }
+
+  request.open(config.method.toUpperCase(), buildURL(config.url, config.params, config.paramsSerializer), true);
+
+  // Set the request timeout in MS
+  request.timeout = config.timeout;
+
+  // Listen for ready state
+  request.onload = function handleLoad() {
+    if (!request) {
+      return;
+    }
+    // Prepare the response
+    var responseHeaders = 'getAllResponseHeaders' in request ? parseHeaders(request.getAllResponseHeaders()) : null;
+    var responseData = ['text', ''].indexOf(config.responseType || '') !== -1 ? request.responseText : request.response;
+    var response = {
+      data: transformData(
+        responseData,
+        responseHeaders,
+        config.transformResponse
+      ),
+      // IE sends 1223 instead of 204 (https://github.com/mzabriskie/axios/issues/201)
+      status: request.status === 1223 ? 204 : request.status,
+      statusText: request.status === 1223 ? 'No Content' : request.statusText,
+      headers: responseHeaders,
+      config: config
+    };
+
+    // Resolve or reject the Promise based on the status
+    ((response.status >= 200 && response.status < 300) ||
+     (!('status' in request) && response.responseText) ?
+      resolve :
+      reject)(response);
+
+    // Clean up request
+    request = null;
+  };
+
+  // Handle low level network errors
+  request.onerror = function handleError() {
+    // Real errors are hidden from us by the browser
+    // onerror should only fire if it's a network error
+    reject(new Error('Network Error'));
+
+    // Clean up request
+    request = null;
+  };
+
+  // Add xsrf header
+  // This is only done if running in a standard browser environment.
+  // Specifically not if we're in a web worker, or react-native.
+  if (utils.isStandardBrowserEnv()) {
+    var cookies = require('./../helpers/cookies');
+
+    // Add xsrf header
+    var xsrfValue = config.withCredentials || isURLSameOrigin(config.url) ?
+        cookies.read(config.xsrfCookieName) :
+        undefined;
+
+    if (xsrfValue) {
+      requestHeaders[config.xsrfHeaderName] = xsrfValue;
+    }
+  }
+
+  // Add headers to the request
+  if ('setRequestHeader' in request) {
+    utils.forEach(requestHeaders, function setRequestHeader(val, key) {
+      if (typeof requestData === 'undefined' && key.toLowerCase() === 'content-type') {
+        // Remove Content-Type if data is undefined
+        delete requestHeaders[key];
+      } else {
+        // Otherwise add header to the request
+        request.setRequestHeader(key, val);
+      }
+    });
+  }
+
+  // Add withCredentials to request if needed
+  if (config.withCredentials) {
+    request.withCredentials = true;
+  }
+
+  // Add responseType to request if needed
+  if (config.responseType) {
+    try {
+      request.responseType = config.responseType;
+    } catch (e) {
+      if (request.responseType !== 'json') {
+        throw e;
+      }
+    }
+  }
+
+  if (utils.isArrayBuffer(requestData)) {
+    requestData = new DataView(requestData);
+  }
+
+  // Send the request
+  request.send(requestData);
+};
+
+},{"./../helpers/btoa":23,"./../helpers/buildURL":24,"./../helpers/cookies":26,"./../helpers/isURLSameOrigin":28,"./../helpers/parseHeaders":29,"./../helpers/transformData":31,"./../utils":32}],18:[function(require,module,exports){
+'use strict';
+
+var defaults = require('./defaults');
+var utils = require('./utils');
+var dispatchRequest = require('./core/dispatchRequest');
+var InterceptorManager = require('./core/InterceptorManager');
+var isAbsoluteURL = require('./helpers/isAbsoluteURL');
+var combineURLs = require('./helpers/combineURLs');
+var bind = require('./helpers/bind');
+var transformData = require('./helpers/transformData');
+
+function Axios(defaultConfig) {
+  this.defaults = utils.merge({}, defaultConfig);
+  this.interceptors = {
+    request: new InterceptorManager(),
+    response: new InterceptorManager()
+  };
+}
+
+Axios.prototype.request = function request(config) {
+  /*eslint no-param-reassign:0*/
+  // Allow for axios('example/url'[, config]) a la fetch API
+  if (typeof config === 'string') {
+    config = utils.merge({
+      url: arguments[0]
+    }, arguments[1]);
+  }
+
+  config = utils.merge(defaults, this.defaults, { method: 'get' }, config);
+
+  // Support baseURL config
+  if (config.baseURL && !isAbsoluteURL(config.url)) {
+    config.url = combineURLs(config.baseURL, config.url);
+  }
+
+  // Don't allow overriding defaults.withCredentials
+  config.withCredentials = config.withCredentials || this.defaults.withCredentials;
+
+  // Transform request data
+  config.data = transformData(
+    config.data,
+    config.headers,
+    config.transformRequest
+  );
+
+  // Flatten headers
+  config.headers = utils.merge(
+    config.headers.common || {},
+    config.headers[config.method] || {},
+    config.headers || {}
+  );
+
+  utils.forEach(
+    ['delete', 'get', 'head', 'post', 'put', 'patch', 'common'],
+    function cleanHeaderConfig(method) {
+      delete config.headers[method];
+    }
+  );
+
+  // Hook up interceptors middleware
+  var chain = [dispatchRequest, undefined];
+  var promise = Promise.resolve(config);
+
+  this.interceptors.request.forEach(function unshiftRequestInterceptors(interceptor) {
+    chain.unshift(interceptor.fulfilled, interceptor.rejected);
+  });
+
+  this.interceptors.response.forEach(function pushResponseInterceptors(interceptor) {
+    chain.push(interceptor.fulfilled, interceptor.rejected);
+  });
+
+  while (chain.length) {
+    promise = promise.then(chain.shift(), chain.shift());
+  }
+
+  return promise;
+};
+
+var defaultInstance = new Axios(defaults);
+var axios = module.exports = bind(Axios.prototype.request, defaultInstance);
+
+axios.create = function create(defaultConfig) {
+  return new Axios(defaultConfig);
+};
+
+// Expose defaults
+axios.defaults = defaultInstance.defaults;
+
+// Expose all/spread
+axios.all = function all(promises) {
+  return Promise.all(promises);
+};
+axios.spread = require('./helpers/spread');
+
+// Expose interceptors
+axios.interceptors = defaultInstance.interceptors;
+
+// Provide aliases for supported request methods
+utils.forEach(['delete', 'get', 'head'], function forEachMethodNoData(method) {
+  /*eslint func-names:0*/
+  Axios.prototype[method] = function(url, config) {
+    return this.request(utils.merge(config || {}, {
+      method: method,
+      url: url
+    }));
+  };
+  axios[method] = bind(Axios.prototype[method], defaultInstance);
+});
+
+utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
+  /*eslint func-names:0*/
+  Axios.prototype[method] = function(url, data, config) {
+    return this.request(utils.merge(config || {}, {
+      method: method,
+      url: url,
+      data: data
+    }));
+  };
+  axios[method] = bind(Axios.prototype[method], defaultInstance);
+});
+
+},{"./core/InterceptorManager":19,"./core/dispatchRequest":20,"./defaults":21,"./helpers/bind":22,"./helpers/combineURLs":25,"./helpers/isAbsoluteURL":27,"./helpers/spread":30,"./helpers/transformData":31,"./utils":32}],19:[function(require,module,exports){
+'use strict';
+
+var utils = require('./../utils');
+
+function InterceptorManager() {
+  this.handlers = [];
+}
+
+/**
+ * Add a new interceptor to the stack
+ *
+ * @param {Function} fulfilled The function to handle `then` for a `Promise`
+ * @param {Function} rejected The function to handle `reject` for a `Promise`
+ *
+ * @return {Number} An ID used to remove interceptor later
+ */
+InterceptorManager.prototype.use = function use(fulfilled, rejected) {
+  this.handlers.push({
+    fulfilled: fulfilled,
+    rejected: rejected
+  });
+  return this.handlers.length - 1;
+};
+
+/**
+ * Remove an interceptor from the stack
+ *
+ * @param {Number} id The ID that was returned by `use`
+ */
+InterceptorManager.prototype.eject = function eject(id) {
+  if (this.handlers[id]) {
+    this.handlers[id] = null;
+  }
+};
+
+/**
+ * Iterate over all the registered interceptors
+ *
+ * This method is particularly useful for skipping over any
+ * interceptors that may have become `null` calling `eject`.
+ *
+ * @param {Function} fn The function to call for each interceptor
+ */
+InterceptorManager.prototype.forEach = function forEach(fn) {
+  utils.forEach(this.handlers, function forEachHandler(h) {
+    if (h !== null) {
+      fn(h);
+    }
+  });
+};
+
+module.exports = InterceptorManager;
+
+},{"./../utils":32}],20:[function(require,module,exports){
+(function (process){
+'use strict';
+
+/**
+ * Dispatch a request to the server using whichever adapter
+ * is supported by the current environment.
+ *
+ * @param {object} config The config that is to be used for the request
+ * @returns {Promise} The Promise to be fulfilled
+ */
+module.exports = function dispatchRequest(config) {
+  return new Promise(function executor(resolve, reject) {
+    try {
+      var adapter;
+
+      if (typeof config.adapter === 'function') {
+        // For custom adapter support
+        adapter = config.adapter;
+      } else if (typeof XMLHttpRequest !== 'undefined') {
+        // For browsers use XHR adapter
+        adapter = require('../adapters/xhr');
+      } else if (typeof process !== 'undefined') {
+        // For node use HTTP adapter
+        adapter = require('../adapters/http');
+      }
+
+      if (typeof adapter === 'function') {
+        adapter(resolve, reject, config);
+      }
+    } catch (e) {
+      reject(e);
+    }
+  });
+};
+
+
+}).call(this,require('_process'))
+},{"../adapters/http":17,"../adapters/xhr":17,"_process":83}],21:[function(require,module,exports){
+'use strict';
+
+var utils = require('./utils');
+
+var PROTECTION_PREFIX = /^\)\]\}',?\n/;
+var DEFAULT_CONTENT_TYPE = {
+  'Content-Type': 'application/x-www-form-urlencoded'
+};
+
+module.exports = {
+  transformRequest: [function transformResponseJSON(data, headers) {
+    if (utils.isFormData(data)) {
+      return data;
+    }
+    if (utils.isArrayBuffer(data)) {
+      return data;
+    }
+    if (utils.isArrayBufferView(data)) {
+      return data.buffer;
+    }
+    if (utils.isObject(data) && !utils.isFile(data) && !utils.isBlob(data)) {
+      // Set application/json if no Content-Type has been specified
+      if (!utils.isUndefined(headers)) {
+        utils.forEach(headers, function processContentTypeHeader(val, key) {
+          if (key.toLowerCase() === 'content-type') {
+            headers['Content-Type'] = val;
+          }
+        });
+
+        if (utils.isUndefined(headers['Content-Type'])) {
+          headers['Content-Type'] = 'application/json;charset=utf-8';
+        }
+      }
+      return JSON.stringify(data);
+    }
+    return data;
+  }],
+
+  transformResponse: [function transformResponseJSON(data) {
+    /*eslint no-param-reassign:0*/
+    if (typeof data === 'string') {
+      data = data.replace(PROTECTION_PREFIX, '');
+      try {
+        data = JSON.parse(data);
+      } catch (e) { /* Ignore */ }
+    }
+    return data;
+  }],
+
+  headers: {
+    common: {
+      'Accept': 'application/json, text/plain, */*'
+    },
+    patch: utils.merge(DEFAULT_CONTENT_TYPE),
+    post: utils.merge(DEFAULT_CONTENT_TYPE),
+    put: utils.merge(DEFAULT_CONTENT_TYPE)
+  },
+
+  timeout: 0,
+
+  xsrfCookieName: 'XSRF-TOKEN',
+  xsrfHeaderName: 'X-XSRF-TOKEN'
+};
+
+},{"./utils":32}],22:[function(require,module,exports){
+'use strict';
+
+module.exports = function bind(fn, thisArg) {
+  return function wrap() {
+    var args = new Array(arguments.length);
+    for (var i = 0; i < args.length; i++) {
+      args[i] = arguments[i];
+    }
+    return fn.apply(thisArg, args);
+  };
+};
+
+},{}],23:[function(require,module,exports){
+'use strict';
+
+// btoa polyfill for IE<10 courtesy https://github.com/davidchambers/Base64.js
+
+var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+
+function InvalidCharacterError(message) {
+  this.message = message;
+}
+InvalidCharacterError.prototype = new Error;
+InvalidCharacterError.prototype.code = 5;
+InvalidCharacterError.prototype.name = 'InvalidCharacterError';
+
+function btoa(input) {
+  var str = String(input);
+  var output = '';
+  for (
+    // initialize result and counter
+    var block, charCode, idx = 0, map = chars;
+    // if the next str index does not exist:
+    //   change the mapping table to "="
+    //   check if d has no fractional digits
+    str.charAt(idx | 0) || (map = '=', idx % 1);
+    // "8 - idx % 1 * 8" generates the sequence 2, 4, 6, 8
+    output += map.charAt(63 & block >> 8 - idx % 1 * 8)
+  ) {
+    charCode = str.charCodeAt(idx += 3 / 4);
+    if (charCode > 0xFF) {
+      throw new InvalidCharacterError('INVALID_CHARACTER_ERR: DOM Exception 5');
+    }
+    block = block << 8 | charCode;
+  }
+  return output;
+}
+
+module.exports = btoa;
+
+},{}],24:[function(require,module,exports){
+'use strict';
+
+var utils = require('./../utils');
+
+function encode(val) {
+  return encodeURIComponent(val).
+    replace(/%40/gi, '@').
+    replace(/%3A/gi, ':').
+    replace(/%24/g, '$').
+    replace(/%2C/gi, ',').
+    replace(/%20/g, '+').
+    replace(/%5B/gi, '[').
+    replace(/%5D/gi, ']');
+}
+
+/**
+ * Build a URL by appending params to the end
+ *
+ * @param {string} url The base of the url (e.g., http://www.google.com)
+ * @param {object} [params] The params to be appended
+ * @returns {string} The formatted url
+ */
+module.exports = function buildURL(url, params, paramsSerializer) {
+  /*eslint no-param-reassign:0*/
+  if (!params) {
+    return url;
+  }
+
+  var serializedParams;
+  if (paramsSerializer) {
+    serializedParams = paramsSerializer(params);
+  } else {
+    var parts = [];
+
+    utils.forEach(params, function serialize(val, key) {
+      if (val === null || typeof val === 'undefined') {
+        return;
+      }
+
+      if (utils.isArray(val)) {
+        key = key + '[]';
+      }
+
+      if (!utils.isArray(val)) {
+        val = [val];
+      }
+
+      utils.forEach(val, function parseValue(v) {
+        if (utils.isDate(v)) {
+          v = v.toISOString();
+        } else if (utils.isObject(v)) {
+          v = JSON.stringify(v);
+        }
+        parts.push(encode(key) + '=' + encode(v));
+      });
+    });
+
+    serializedParams = parts.join('&');
+  }
+
+  if (serializedParams) {
+    url += (url.indexOf('?') === -1 ? '?' : '&') + serializedParams;
+  }
+
+  return url;
+};
+
+
+},{"./../utils":32}],25:[function(require,module,exports){
+'use strict';
+
+/**
+ * Creates a new URL by combining the specified URLs
+ *
+ * @param {string} baseURL The base URL
+ * @param {string} relativeURL The relative URL
+ * @returns {string} The combined URL
+ */
+module.exports = function combineURLs(baseURL, relativeURL) {
+  return baseURL.replace(/\/+$/, '') + '/' + relativeURL.replace(/^\/+/, '');
+};
+
+},{}],26:[function(require,module,exports){
+'use strict';
+
+var utils = require('./../utils');
+
+module.exports = (
+  utils.isStandardBrowserEnv() ?
+
+  // Standard browser envs support document.cookie
+  (function standardBrowserEnv() {
+    return {
+      write: function write(name, value, expires, path, domain, secure) {
+        var cookie = [];
+        cookie.push(name + '=' + encodeURIComponent(value));
+
+        if (utils.isNumber(expires)) {
+          cookie.push('expires=' + new Date(expires).toGMTString());
+        }
+
+        if (utils.isString(path)) {
+          cookie.push('path=' + path);
+        }
+
+        if (utils.isString(domain)) {
+          cookie.push('domain=' + domain);
+        }
+
+        if (secure === true) {
+          cookie.push('secure');
+        }
+
+        document.cookie = cookie.join('; ');
+      },
+
+      read: function read(name) {
+        var match = document.cookie.match(new RegExp('(^|;\\s*)(' + name + ')=([^;]*)'));
+        return (match ? decodeURIComponent(match[3]) : null);
+      },
+
+      remove: function remove(name) {
+        this.write(name, '', Date.now() - 86400000);
+      }
+    };
+  })() :
+
+  // Non standard browser env (web workers, react-native) lack needed support.
+  (function nonStandardBrowserEnv() {
+    return {
+      write: function write() {},
+      read: function read() { return null; },
+      remove: function remove() {}
+    };
+  })()
+);
+
+},{"./../utils":32}],27:[function(require,module,exports){
+'use strict';
+
+/**
+ * Determines whether the specified URL is absolute
+ *
+ * @param {string} url The URL to test
+ * @returns {boolean} True if the specified URL is absolute, otherwise false
+ */
+module.exports = function isAbsoluteURL(url) {
+  // A URL is considered absolute if it begins with "<scheme>://" or "//" (protocol-relative URL).
+  // RFC 3986 defines scheme name as a sequence of characters beginning with a letter and followed
+  // by any combination of letters, digits, plus, period, or hyphen.
+  return /^([a-z][a-z\d\+\-\.]*:)?\/\//i.test(url);
+};
+
+},{}],28:[function(require,module,exports){
+'use strict';
+
+var utils = require('./../utils');
+
+module.exports = (
+  utils.isStandardBrowserEnv() ?
+
+  // Standard browser envs have full support of the APIs needed to test
+  // whether the request URL is of the same origin as current location.
+  (function standardBrowserEnv() {
+    var msie = /(msie|trident)/i.test(navigator.userAgent);
+    var urlParsingNode = document.createElement('a');
+    var originURL;
+
+    /**
+    * Parse a URL to discover it's components
+    *
+    * @param {String} url The URL to be parsed
+    * @returns {Object}
+    */
+    function resolveURL(url) {
+      var href = url;
+
+      if (msie) {
+        // IE needs attribute set twice to normalize properties
+        urlParsingNode.setAttribute('href', href);
+        href = urlParsingNode.href;
+      }
+
+      urlParsingNode.setAttribute('href', href);
+
+      // urlParsingNode provides the UrlUtils interface - http://url.spec.whatwg.org/#urlutils
+      return {
+        href: urlParsingNode.href,
+        protocol: urlParsingNode.protocol ? urlParsingNode.protocol.replace(/:$/, '') : '',
+        host: urlParsingNode.host,
+        search: urlParsingNode.search ? urlParsingNode.search.replace(/^\?/, '') : '',
+        hash: urlParsingNode.hash ? urlParsingNode.hash.replace(/^#/, '') : '',
+        hostname: urlParsingNode.hostname,
+        port: urlParsingNode.port,
+        pathname: (urlParsingNode.pathname.charAt(0) === '/') ?
+                  urlParsingNode.pathname :
+                  '/' + urlParsingNode.pathname
+      };
+    }
+
+    originURL = resolveURL(window.location.href);
+
+    /**
+    * Determine if a URL shares the same origin as the current location
+    *
+    * @param {String} requestURL The URL to test
+    * @returns {boolean} True if URL shares the same origin, otherwise false
+    */
+    return function isURLSameOrigin(requestURL) {
+      var parsed = (utils.isString(requestURL)) ? resolveURL(requestURL) : requestURL;
+      return (parsed.protocol === originURL.protocol &&
+            parsed.host === originURL.host);
+    };
+  })() :
+
+  // Non standard browser envs (web workers, react-native) lack needed support.
+  (function nonStandardBrowserEnv() {
+    return function isURLSameOrigin() {
+      return true;
+    };
+  })()
+);
+
+},{"./../utils":32}],29:[function(require,module,exports){
+'use strict';
+
+var utils = require('./../utils');
+
+/**
+ * Parse headers into an object
+ *
+ * ```
+ * Date: Wed, 27 Aug 2014 08:58:49 GMT
+ * Content-Type: application/json
+ * Connection: keep-alive
+ * Transfer-Encoding: chunked
+ * ```
+ *
+ * @param {String} headers Headers needing to be parsed
+ * @returns {Object} Headers parsed into an object
+ */
+module.exports = function parseHeaders(headers) {
+  var parsed = {};
+  var key;
+  var val;
+  var i;
+
+  if (!headers) { return parsed; }
+
+  utils.forEach(headers.split('\n'), function parser(line) {
+    i = line.indexOf(':');
+    key = utils.trim(line.substr(0, i)).toLowerCase();
+    val = utils.trim(line.substr(i + 1));
+
+    if (key) {
+      parsed[key] = parsed[key] ? parsed[key] + ', ' + val : val;
+    }
+  });
+
+  return parsed;
+};
+
+},{"./../utils":32}],30:[function(require,module,exports){
+'use strict';
+
+/**
+ * Syntactic sugar for invoking a function and expanding an array for arguments.
+ *
+ * Common use case would be to use `Function.prototype.apply`.
+ *
+ *  ```js
+ *  function f(x, y, z) {}
+ *  var args = [1, 2, 3];
+ *  f.apply(null, args);
+ *  ```
+ *
+ * With `spread` this example can be re-written.
+ *
+ *  ```js
+ *  spread(function(x, y, z) {})([1, 2, 3]);
+ *  ```
+ *
+ * @param {Function} callback
+ * @returns {Function}
+ */
+module.exports = function spread(callback) {
+  return function wrap(arr) {
+    return callback.apply(null, arr);
+  };
+};
+
+},{}],31:[function(require,module,exports){
+'use strict';
+
+var utils = require('./../utils');
+
+/**
+ * Transform the data for a request or a response
+ *
+ * @param {Object|String} data The data to be transformed
+ * @param {Array} headers The headers for the request or response
+ * @param {Array|Function} fns A single function or Array of functions
+ * @returns {*} The resulting transformed data
+ */
+module.exports = function transformData(data, headers, fns) {
+  /*eslint no-param-reassign:0*/
+  utils.forEach(fns, function transform(fn) {
+    data = fn(data, headers);
+  });
+
+  return data;
+};
+
+},{"./../utils":32}],32:[function(require,module,exports){
+'use strict';
+
+/*global toString:true*/
+
+// utils is a library of generic helper functions non-specific to axios
+
+var toString = Object.prototype.toString;
+
+/**
+ * Determine if a value is an Array
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is an Array, otherwise false
+ */
+function isArray(val) {
+  return toString.call(val) === '[object Array]';
+}
+
+/**
+ * Determine if a value is an ArrayBuffer
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is an ArrayBuffer, otherwise false
+ */
+function isArrayBuffer(val) {
+  return toString.call(val) === '[object ArrayBuffer]';
+}
+
+/**
+ * Determine if a value is a FormData
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is an FormData, otherwise false
+ */
+function isFormData(val) {
+  return toString.call(val) === '[object FormData]';
+}
+
+/**
+ * Determine if a value is a view on an ArrayBuffer
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is a view on an ArrayBuffer, otherwise false
+ */
+function isArrayBufferView(val) {
+  var result;
+  if ((typeof ArrayBuffer !== 'undefined') && (ArrayBuffer.isView)) {
+    result = ArrayBuffer.isView(val);
+  } else {
+    result = (val) && (val.buffer) && (val.buffer instanceof ArrayBuffer);
+  }
+  return result;
+}
+
+/**
+ * Determine if a value is a String
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is a String, otherwise false
+ */
+function isString(val) {
+  return typeof val === 'string';
+}
+
+/**
+ * Determine if a value is a Number
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is a Number, otherwise false
+ */
+function isNumber(val) {
+  return typeof val === 'number';
+}
+
+/**
+ * Determine if a value is undefined
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if the value is undefined, otherwise false
+ */
+function isUndefined(val) {
+  return typeof val === 'undefined';
+}
+
+/**
+ * Determine if a value is an Object
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is an Object, otherwise false
+ */
+function isObject(val) {
+  return val !== null && typeof val === 'object';
+}
+
+/**
+ * Determine if a value is a Date
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is a Date, otherwise false
+ */
+function isDate(val) {
+  return toString.call(val) === '[object Date]';
+}
+
+/**
+ * Determine if a value is a File
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is a File, otherwise false
+ */
+function isFile(val) {
+  return toString.call(val) === '[object File]';
+}
+
+/**
+ * Determine if a value is a Blob
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is a Blob, otherwise false
+ */
+function isBlob(val) {
+  return toString.call(val) === '[object Blob]';
+}
+
+/**
+ * Trim excess whitespace off the beginning and end of a string
+ *
+ * @param {String} str The String to trim
+ * @returns {String} The String freed of excess whitespace
+ */
+function trim(str) {
+  return str.replace(/^\s*/, '').replace(/\s*$/, '');
+}
+
+/**
+ * Determine if we're running in a standard browser environment
+ *
+ * This allows axios to run in a web worker, and react-native.
+ * Both environments support XMLHttpRequest, but not fully standard globals.
+ *
+ * web workers:
+ *  typeof window -> undefined
+ *  typeof document -> undefined
+ *
+ * react-native:
+ *  typeof document.createElement -> undefined
+ */
+function isStandardBrowserEnv() {
+  return (
+    typeof window !== 'undefined' &&
+    typeof document !== 'undefined' &&
+    typeof document.createElement === 'function'
+  );
+}
+
+/**
+ * Iterate over an Array or an Object invoking a function for each item.
+ *
+ * If `obj` is an Array callback will be called passing
+ * the value, index, and complete array for each item.
+ *
+ * If 'obj' is an Object callback will be called passing
+ * the value, key, and complete object for each property.
+ *
+ * @param {Object|Array} obj The object to iterate
+ * @param {Function} fn The callback to invoke for each item
+ */
+function forEach(obj, fn) {
+  // Don't bother if no value provided
+  if (obj === null || typeof obj === 'undefined') {
+    return;
+  }
+
+  // Force an array if not already something iterable
+  if (typeof obj !== 'object' && !isArray(obj)) {
+    /*eslint no-param-reassign:0*/
+    obj = [obj];
+  }
+
+  if (isArray(obj)) {
+    // Iterate over array values
+    for (var i = 0, l = obj.length; i < l; i++) {
+      fn.call(null, obj[i], i, obj);
+    }
+  } else {
+    // Iterate over object keys
+    for (var key in obj) {
+      if (obj.hasOwnProperty(key)) {
+        fn.call(null, obj[key], key, obj);
+      }
+    }
+  }
+}
+
+/**
+ * Accepts varargs expecting each argument to be an object, then
+ * immutably merges the properties of each object and returns result.
+ *
+ * When multiple objects contain the same key the later object in
+ * the arguments list will take precedence.
+ *
+ * Example:
+ *
+ * ```js
+ * var result = merge({foo: 123}, {foo: 456});
+ * console.log(result.foo); // outputs 456
+ * ```
+ *
+ * @param {Object} obj1 Object to merge
+ * @returns {Object} Result of all merge properties
+ */
+function merge(/* obj1, obj2, obj3, ... */) {
+  var result = {};
+  function assignValue(val, key) {
+    if (typeof result[key] === 'object' && typeof val === 'object') {
+      result[key] = merge(result[key], val);
+    } else {
+      result[key] = val;
+    }
+  }
+
+  for (var i = 0, l = arguments.length; i < l; i++) {
+    forEach(arguments[i], assignValue);
+  }
+  return result;
+}
+
+module.exports = {
+  isArray: isArray,
+  isArrayBuffer: isArrayBuffer,
+  isFormData: isFormData,
+  isArrayBufferView: isArrayBufferView,
+  isString: isString,
+  isNumber: isNumber,
+  isObject: isObject,
+  isUndefined: isUndefined,
+  isDate: isDate,
+  isFile: isFile,
+  isBlob: isBlob,
+  isStandardBrowserEnv: isStandardBrowserEnv,
+  forEach: forEach,
+  merge: merge,
+  trim: trim
+};
+
+},{}],33:[function(require,module,exports){
 (function (global){
 //     Backbone.js 1.3.3
 
@@ -3237,7 +5132,7 @@ module.exports = amdefine;
 });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"jquery":57,"underscore":12}],12:[function(require,module,exports){
+},{"jquery":81,"underscore":34}],34:[function(require,module,exports){
 //     Underscore.js 1.8.3
 //     http://underscorejs.org
 //     (c) 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
@@ -4787,9 +6682,329 @@ module.exports = amdefine;
   }
 }.call(this));
 
-},{}],13:[function(require,module,exports){
+},{}],35:[function(require,module,exports){
 
-},{}],14:[function(require,module,exports){
+},{}],36:[function(require,module,exports){
+// This product includes color specifications and designs developed by Cynthia Brewer (http://colorbrewer.org/).
+// JavaScript specs as packaged in the D3 library (d3js.org). Please see license at http://colorbrewer.org/export/LICENSE.txt
+!function() {
+
+var colorbrewer = {YlGn: {
+3: ["#f7fcb9","#addd8e","#31a354"],
+4: ["#ffffcc","#c2e699","#78c679","#238443"],
+5: ["#ffffcc","#c2e699","#78c679","#31a354","#006837"],
+6: ["#ffffcc","#d9f0a3","#addd8e","#78c679","#31a354","#006837"],
+7: ["#ffffcc","#d9f0a3","#addd8e","#78c679","#41ab5d","#238443","#005a32"],
+8: ["#ffffe5","#f7fcb9","#d9f0a3","#addd8e","#78c679","#41ab5d","#238443","#005a32"],
+9: ["#ffffe5","#f7fcb9","#d9f0a3","#addd8e","#78c679","#41ab5d","#238443","#006837","#004529"]
+},YlGnBu: {
+3: ["#edf8b1","#7fcdbb","#2c7fb8"],
+4: ["#ffffcc","#a1dab4","#41b6c4","#225ea8"],
+5: ["#ffffcc","#a1dab4","#41b6c4","#2c7fb8","#253494"],
+6: ["#ffffcc","#c7e9b4","#7fcdbb","#41b6c4","#2c7fb8","#253494"],
+7: ["#ffffcc","#c7e9b4","#7fcdbb","#41b6c4","#1d91c0","#225ea8","#0c2c84"],
+8: ["#ffffd9","#edf8b1","#c7e9b4","#7fcdbb","#41b6c4","#1d91c0","#225ea8","#0c2c84"],
+9: ["#ffffd9","#edf8b1","#c7e9b4","#7fcdbb","#41b6c4","#1d91c0","#225ea8","#253494","#081d58"]
+},GnBu: {
+3: ["#e0f3db","#a8ddb5","#43a2ca"],
+4: ["#f0f9e8","#bae4bc","#7bccc4","#2b8cbe"],
+5: ["#f0f9e8","#bae4bc","#7bccc4","#43a2ca","#0868ac"],
+6: ["#f0f9e8","#ccebc5","#a8ddb5","#7bccc4","#43a2ca","#0868ac"],
+7: ["#f0f9e8","#ccebc5","#a8ddb5","#7bccc4","#4eb3d3","#2b8cbe","#08589e"],
+8: ["#f7fcf0","#e0f3db","#ccebc5","#a8ddb5","#7bccc4","#4eb3d3","#2b8cbe","#08589e"],
+9: ["#f7fcf0","#e0f3db","#ccebc5","#a8ddb5","#7bccc4","#4eb3d3","#2b8cbe","#0868ac","#084081"]
+},BuGn: {
+3: ["#e5f5f9","#99d8c9","#2ca25f"],
+4: ["#edf8fb","#b2e2e2","#66c2a4","#238b45"],
+5: ["#edf8fb","#b2e2e2","#66c2a4","#2ca25f","#006d2c"],
+6: ["#edf8fb","#ccece6","#99d8c9","#66c2a4","#2ca25f","#006d2c"],
+7: ["#edf8fb","#ccece6","#99d8c9","#66c2a4","#41ae76","#238b45","#005824"],
+8: ["#f7fcfd","#e5f5f9","#ccece6","#99d8c9","#66c2a4","#41ae76","#238b45","#005824"],
+9: ["#f7fcfd","#e5f5f9","#ccece6","#99d8c9","#66c2a4","#41ae76","#238b45","#006d2c","#00441b"]
+},PuBuGn: {
+3: ["#ece2f0","#a6bddb","#1c9099"],
+4: ["#f6eff7","#bdc9e1","#67a9cf","#02818a"],
+5: ["#f6eff7","#bdc9e1","#67a9cf","#1c9099","#016c59"],
+6: ["#f6eff7","#d0d1e6","#a6bddb","#67a9cf","#1c9099","#016c59"],
+7: ["#f6eff7","#d0d1e6","#a6bddb","#67a9cf","#3690c0","#02818a","#016450"],
+8: ["#fff7fb","#ece2f0","#d0d1e6","#a6bddb","#67a9cf","#3690c0","#02818a","#016450"],
+9: ["#fff7fb","#ece2f0","#d0d1e6","#a6bddb","#67a9cf","#3690c0","#02818a","#016c59","#014636"]
+},PuBu: {
+3: ["#ece7f2","#a6bddb","#2b8cbe"],
+4: ["#f1eef6","#bdc9e1","#74a9cf","#0570b0"],
+5: ["#f1eef6","#bdc9e1","#74a9cf","#2b8cbe","#045a8d"],
+6: ["#f1eef6","#d0d1e6","#a6bddb","#74a9cf","#2b8cbe","#045a8d"],
+7: ["#f1eef6","#d0d1e6","#a6bddb","#74a9cf","#3690c0","#0570b0","#034e7b"],
+8: ["#fff7fb","#ece7f2","#d0d1e6","#a6bddb","#74a9cf","#3690c0","#0570b0","#034e7b"],
+9: ["#fff7fb","#ece7f2","#d0d1e6","#a6bddb","#74a9cf","#3690c0","#0570b0","#045a8d","#023858"]
+},BuPu: {
+3: ["#e0ecf4","#9ebcda","#8856a7"],
+4: ["#edf8fb","#b3cde3","#8c96c6","#88419d"],
+5: ["#edf8fb","#b3cde3","#8c96c6","#8856a7","#810f7c"],
+6: ["#edf8fb","#bfd3e6","#9ebcda","#8c96c6","#8856a7","#810f7c"],
+7: ["#edf8fb","#bfd3e6","#9ebcda","#8c96c6","#8c6bb1","#88419d","#6e016b"],
+8: ["#f7fcfd","#e0ecf4","#bfd3e6","#9ebcda","#8c96c6","#8c6bb1","#88419d","#6e016b"],
+9: ["#f7fcfd","#e0ecf4","#bfd3e6","#9ebcda","#8c96c6","#8c6bb1","#88419d","#810f7c","#4d004b"]
+},RdPu: {
+3: ["#fde0dd","#fa9fb5","#c51b8a"],
+4: ["#feebe2","#fbb4b9","#f768a1","#ae017e"],
+5: ["#feebe2","#fbb4b9","#f768a1","#c51b8a","#7a0177"],
+6: ["#feebe2","#fcc5c0","#fa9fb5","#f768a1","#c51b8a","#7a0177"],
+7: ["#feebe2","#fcc5c0","#fa9fb5","#f768a1","#dd3497","#ae017e","#7a0177"],
+8: ["#fff7f3","#fde0dd","#fcc5c0","#fa9fb5","#f768a1","#dd3497","#ae017e","#7a0177"],
+9: ["#fff7f3","#fde0dd","#fcc5c0","#fa9fb5","#f768a1","#dd3497","#ae017e","#7a0177","#49006a"]
+},PuRd: {
+3: ["#e7e1ef","#c994c7","#dd1c77"],
+4: ["#f1eef6","#d7b5d8","#df65b0","#ce1256"],
+5: ["#f1eef6","#d7b5d8","#df65b0","#dd1c77","#980043"],
+6: ["#f1eef6","#d4b9da","#c994c7","#df65b0","#dd1c77","#980043"],
+7: ["#f1eef6","#d4b9da","#c994c7","#df65b0","#e7298a","#ce1256","#91003f"],
+8: ["#f7f4f9","#e7e1ef","#d4b9da","#c994c7","#df65b0","#e7298a","#ce1256","#91003f"],
+9: ["#f7f4f9","#e7e1ef","#d4b9da","#c994c7","#df65b0","#e7298a","#ce1256","#980043","#67001f"]
+},OrRd: {
+3: ["#fee8c8","#fdbb84","#e34a33"],
+4: ["#fef0d9","#fdcc8a","#fc8d59","#d7301f"],
+5: ["#fef0d9","#fdcc8a","#fc8d59","#e34a33","#b30000"],
+6: ["#fef0d9","#fdd49e","#fdbb84","#fc8d59","#e34a33","#b30000"],
+7: ["#fef0d9","#fdd49e","#fdbb84","#fc8d59","#ef6548","#d7301f","#990000"],
+8: ["#fff7ec","#fee8c8","#fdd49e","#fdbb84","#fc8d59","#ef6548","#d7301f","#990000"],
+9: ["#fff7ec","#fee8c8","#fdd49e","#fdbb84","#fc8d59","#ef6548","#d7301f","#b30000","#7f0000"]
+},YlOrRd: {
+3: ["#ffeda0","#feb24c","#f03b20"],
+4: ["#ffffb2","#fecc5c","#fd8d3c","#e31a1c"],
+5: ["#ffffb2","#fecc5c","#fd8d3c","#f03b20","#bd0026"],
+6: ["#ffffb2","#fed976","#feb24c","#fd8d3c","#f03b20","#bd0026"],
+7: ["#ffffb2","#fed976","#feb24c","#fd8d3c","#fc4e2a","#e31a1c","#b10026"],
+8: ["#ffffcc","#ffeda0","#fed976","#feb24c","#fd8d3c","#fc4e2a","#e31a1c","#b10026"],
+9: ["#ffffcc","#ffeda0","#fed976","#feb24c","#fd8d3c","#fc4e2a","#e31a1c","#bd0026","#800026"]
+},YlOrBr: {
+3: ["#fff7bc","#fec44f","#d95f0e"],
+4: ["#ffffd4","#fed98e","#fe9929","#cc4c02"],
+5: ["#ffffd4","#fed98e","#fe9929","#d95f0e","#993404"],
+6: ["#ffffd4","#fee391","#fec44f","#fe9929","#d95f0e","#993404"],
+7: ["#ffffd4","#fee391","#fec44f","#fe9929","#ec7014","#cc4c02","#8c2d04"],
+8: ["#ffffe5","#fff7bc","#fee391","#fec44f","#fe9929","#ec7014","#cc4c02","#8c2d04"],
+9: ["#ffffe5","#fff7bc","#fee391","#fec44f","#fe9929","#ec7014","#cc4c02","#993404","#662506"]
+},Purples: {
+3: ["#efedf5","#bcbddc","#756bb1"],
+4: ["#f2f0f7","#cbc9e2","#9e9ac8","#6a51a3"],
+5: ["#f2f0f7","#cbc9e2","#9e9ac8","#756bb1","#54278f"],
+6: ["#f2f0f7","#dadaeb","#bcbddc","#9e9ac8","#756bb1","#54278f"],
+7: ["#f2f0f7","#dadaeb","#bcbddc","#9e9ac8","#807dba","#6a51a3","#4a1486"],
+8: ["#fcfbfd","#efedf5","#dadaeb","#bcbddc","#9e9ac8","#807dba","#6a51a3","#4a1486"],
+9: ["#fcfbfd","#efedf5","#dadaeb","#bcbddc","#9e9ac8","#807dba","#6a51a3","#54278f","#3f007d"]
+},Blues: {
+3: ["#deebf7","#9ecae1","#3182bd"],
+4: ["#eff3ff","#bdd7e7","#6baed6","#2171b5"],
+5: ["#eff3ff","#bdd7e7","#6baed6","#3182bd","#08519c"],
+6: ["#eff3ff","#c6dbef","#9ecae1","#6baed6","#3182bd","#08519c"],
+7: ["#eff3ff","#c6dbef","#9ecae1","#6baed6","#4292c6","#2171b5","#084594"],
+8: ["#f7fbff","#deebf7","#c6dbef","#9ecae1","#6baed6","#4292c6","#2171b5","#084594"],
+9: ["#f7fbff","#deebf7","#c6dbef","#9ecae1","#6baed6","#4292c6","#2171b5","#08519c","#08306b"]
+},Greens: {
+3: ["#e5f5e0","#a1d99b","#31a354"],
+4: ["#edf8e9","#bae4b3","#74c476","#238b45"],
+5: ["#edf8e9","#bae4b3","#74c476","#31a354","#006d2c"],
+6: ["#edf8e9","#c7e9c0","#a1d99b","#74c476","#31a354","#006d2c"],
+7: ["#edf8e9","#c7e9c0","#a1d99b","#74c476","#41ab5d","#238b45","#005a32"],
+8: ["#f7fcf5","#e5f5e0","#c7e9c0","#a1d99b","#74c476","#41ab5d","#238b45","#005a32"],
+9: ["#f7fcf5","#e5f5e0","#c7e9c0","#a1d99b","#74c476","#41ab5d","#238b45","#006d2c","#00441b"]
+},Oranges: {
+3: ["#fee6ce","#fdae6b","#e6550d"],
+4: ["#feedde","#fdbe85","#fd8d3c","#d94701"],
+5: ["#feedde","#fdbe85","#fd8d3c","#e6550d","#a63603"],
+6: ["#feedde","#fdd0a2","#fdae6b","#fd8d3c","#e6550d","#a63603"],
+7: ["#feedde","#fdd0a2","#fdae6b","#fd8d3c","#f16913","#d94801","#8c2d04"],
+8: ["#fff5eb","#fee6ce","#fdd0a2","#fdae6b","#fd8d3c","#f16913","#d94801","#8c2d04"],
+9: ["#fff5eb","#fee6ce","#fdd0a2","#fdae6b","#fd8d3c","#f16913","#d94801","#a63603","#7f2704"]
+},Reds: {
+3: ["#fee0d2","#fc9272","#de2d26"],
+4: ["#fee5d9","#fcae91","#fb6a4a","#cb181d"],
+5: ["#fee5d9","#fcae91","#fb6a4a","#de2d26","#a50f15"],
+6: ["#fee5d9","#fcbba1","#fc9272","#fb6a4a","#de2d26","#a50f15"],
+7: ["#fee5d9","#fcbba1","#fc9272","#fb6a4a","#ef3b2c","#cb181d","#99000d"],
+8: ["#fff5f0","#fee0d2","#fcbba1","#fc9272","#fb6a4a","#ef3b2c","#cb181d","#99000d"],
+9: ["#fff5f0","#fee0d2","#fcbba1","#fc9272","#fb6a4a","#ef3b2c","#cb181d","#a50f15","#67000d"]
+},Greys: {
+3: ["#f0f0f0","#bdbdbd","#636363"],
+4: ["#f7f7f7","#cccccc","#969696","#525252"],
+5: ["#f7f7f7","#cccccc","#969696","#636363","#252525"],
+6: ["#f7f7f7","#d9d9d9","#bdbdbd","#969696","#636363","#252525"],
+7: ["#f7f7f7","#d9d9d9","#bdbdbd","#969696","#737373","#525252","#252525"],
+8: ["#ffffff","#f0f0f0","#d9d9d9","#bdbdbd","#969696","#737373","#525252","#252525"],
+9: ["#ffffff","#f0f0f0","#d9d9d9","#bdbdbd","#969696","#737373","#525252","#252525","#000000"]
+},PuOr: {
+3: ["#f1a340","#f7f7f7","#998ec3"],
+4: ["#e66101","#fdb863","#b2abd2","#5e3c99"],
+5: ["#e66101","#fdb863","#f7f7f7","#b2abd2","#5e3c99"],
+6: ["#b35806","#f1a340","#fee0b6","#d8daeb","#998ec3","#542788"],
+7: ["#b35806","#f1a340","#fee0b6","#f7f7f7","#d8daeb","#998ec3","#542788"],
+8: ["#b35806","#e08214","#fdb863","#fee0b6","#d8daeb","#b2abd2","#8073ac","#542788"],
+9: ["#b35806","#e08214","#fdb863","#fee0b6","#f7f7f7","#d8daeb","#b2abd2","#8073ac","#542788"],
+10: ["#7f3b08","#b35806","#e08214","#fdb863","#fee0b6","#d8daeb","#b2abd2","#8073ac","#542788","#2d004b"],
+11: ["#7f3b08","#b35806","#e08214","#fdb863","#fee0b6","#f7f7f7","#d8daeb","#b2abd2","#8073ac","#542788","#2d004b"]
+},BrBG: {
+3: ["#d8b365","#f5f5f5","#5ab4ac"],
+4: ["#a6611a","#dfc27d","#80cdc1","#018571"],
+5: ["#a6611a","#dfc27d","#f5f5f5","#80cdc1","#018571"],
+6: ["#8c510a","#d8b365","#f6e8c3","#c7eae5","#5ab4ac","#01665e"],
+7: ["#8c510a","#d8b365","#f6e8c3","#f5f5f5","#c7eae5","#5ab4ac","#01665e"],
+8: ["#8c510a","#bf812d","#dfc27d","#f6e8c3","#c7eae5","#80cdc1","#35978f","#01665e"],
+9: ["#8c510a","#bf812d","#dfc27d","#f6e8c3","#f5f5f5","#c7eae5","#80cdc1","#35978f","#01665e"],
+10: ["#543005","#8c510a","#bf812d","#dfc27d","#f6e8c3","#c7eae5","#80cdc1","#35978f","#01665e","#003c30"],
+11: ["#543005","#8c510a","#bf812d","#dfc27d","#f6e8c3","#f5f5f5","#c7eae5","#80cdc1","#35978f","#01665e","#003c30"]
+},PRGn: {
+3: ["#af8dc3","#f7f7f7","#7fbf7b"],
+4: ["#7b3294","#c2a5cf","#a6dba0","#008837"],
+5: ["#7b3294","#c2a5cf","#f7f7f7","#a6dba0","#008837"],
+6: ["#762a83","#af8dc3","#e7d4e8","#d9f0d3","#7fbf7b","#1b7837"],
+7: ["#762a83","#af8dc3","#e7d4e8","#f7f7f7","#d9f0d3","#7fbf7b","#1b7837"],
+8: ["#762a83","#9970ab","#c2a5cf","#e7d4e8","#d9f0d3","#a6dba0","#5aae61","#1b7837"],
+9: ["#762a83","#9970ab","#c2a5cf","#e7d4e8","#f7f7f7","#d9f0d3","#a6dba0","#5aae61","#1b7837"],
+10: ["#40004b","#762a83","#9970ab","#c2a5cf","#e7d4e8","#d9f0d3","#a6dba0","#5aae61","#1b7837","#00441b"],
+11: ["#40004b","#762a83","#9970ab","#c2a5cf","#e7d4e8","#f7f7f7","#d9f0d3","#a6dba0","#5aae61","#1b7837","#00441b"]
+},PiYG: {
+3: ["#e9a3c9","#f7f7f7","#a1d76a"],
+4: ["#d01c8b","#f1b6da","#b8e186","#4dac26"],
+5: ["#d01c8b","#f1b6da","#f7f7f7","#b8e186","#4dac26"],
+6: ["#c51b7d","#e9a3c9","#fde0ef","#e6f5d0","#a1d76a","#4d9221"],
+7: ["#c51b7d","#e9a3c9","#fde0ef","#f7f7f7","#e6f5d0","#a1d76a","#4d9221"],
+8: ["#c51b7d","#de77ae","#f1b6da","#fde0ef","#e6f5d0","#b8e186","#7fbc41","#4d9221"],
+9: ["#c51b7d","#de77ae","#f1b6da","#fde0ef","#f7f7f7","#e6f5d0","#b8e186","#7fbc41","#4d9221"],
+10: ["#8e0152","#c51b7d","#de77ae","#f1b6da","#fde0ef","#e6f5d0","#b8e186","#7fbc41","#4d9221","#276419"],
+11: ["#8e0152","#c51b7d","#de77ae","#f1b6da","#fde0ef","#f7f7f7","#e6f5d0","#b8e186","#7fbc41","#4d9221","#276419"]
+},RdBu: {
+3: ["#ef8a62","#f7f7f7","#67a9cf"],
+4: ["#ca0020","#f4a582","#92c5de","#0571b0"],
+5: ["#ca0020","#f4a582","#f7f7f7","#92c5de","#0571b0"],
+6: ["#b2182b","#ef8a62","#fddbc7","#d1e5f0","#67a9cf","#2166ac"],
+7: ["#b2182b","#ef8a62","#fddbc7","#f7f7f7","#d1e5f0","#67a9cf","#2166ac"],
+8: ["#b2182b","#d6604d","#f4a582","#fddbc7","#d1e5f0","#92c5de","#4393c3","#2166ac"],
+9: ["#b2182b","#d6604d","#f4a582","#fddbc7","#f7f7f7","#d1e5f0","#92c5de","#4393c3","#2166ac"],
+10: ["#67001f","#b2182b","#d6604d","#f4a582","#fddbc7","#d1e5f0","#92c5de","#4393c3","#2166ac","#053061"],
+11: ["#67001f","#b2182b","#d6604d","#f4a582","#fddbc7","#f7f7f7","#d1e5f0","#92c5de","#4393c3","#2166ac","#053061"]
+},RdGy: {
+3: ["#ef8a62","#ffffff","#999999"],
+4: ["#ca0020","#f4a582","#bababa","#404040"],
+5: ["#ca0020","#f4a582","#ffffff","#bababa","#404040"],
+6: ["#b2182b","#ef8a62","#fddbc7","#e0e0e0","#999999","#4d4d4d"],
+7: ["#b2182b","#ef8a62","#fddbc7","#ffffff","#e0e0e0","#999999","#4d4d4d"],
+8: ["#b2182b","#d6604d","#f4a582","#fddbc7","#e0e0e0","#bababa","#878787","#4d4d4d"],
+9: ["#b2182b","#d6604d","#f4a582","#fddbc7","#ffffff","#e0e0e0","#bababa","#878787","#4d4d4d"],
+10: ["#67001f","#b2182b","#d6604d","#f4a582","#fddbc7","#e0e0e0","#bababa","#878787","#4d4d4d","#1a1a1a"],
+11: ["#67001f","#b2182b","#d6604d","#f4a582","#fddbc7","#ffffff","#e0e0e0","#bababa","#878787","#4d4d4d","#1a1a1a"]
+},RdYlBu: {
+3: ["#fc8d59","#ffffbf","#91bfdb"],
+4: ["#d7191c","#fdae61","#abd9e9","#2c7bb6"],
+5: ["#d7191c","#fdae61","#ffffbf","#abd9e9","#2c7bb6"],
+6: ["#d73027","#fc8d59","#fee090","#e0f3f8","#91bfdb","#4575b4"],
+7: ["#d73027","#fc8d59","#fee090","#ffffbf","#e0f3f8","#91bfdb","#4575b4"],
+8: ["#d73027","#f46d43","#fdae61","#fee090","#e0f3f8","#abd9e9","#74add1","#4575b4"],
+9: ["#d73027","#f46d43","#fdae61","#fee090","#ffffbf","#e0f3f8","#abd9e9","#74add1","#4575b4"],
+10: ["#a50026","#d73027","#f46d43","#fdae61","#fee090","#e0f3f8","#abd9e9","#74add1","#4575b4","#313695"],
+11: ["#a50026","#d73027","#f46d43","#fdae61","#fee090","#ffffbf","#e0f3f8","#abd9e9","#74add1","#4575b4","#313695"]
+},Spectral: {
+3: ["#fc8d59","#ffffbf","#99d594"],
+4: ["#d7191c","#fdae61","#abdda4","#2b83ba"],
+5: ["#d7191c","#fdae61","#ffffbf","#abdda4","#2b83ba"],
+6: ["#d53e4f","#fc8d59","#fee08b","#e6f598","#99d594","#3288bd"],
+7: ["#d53e4f","#fc8d59","#fee08b","#ffffbf","#e6f598","#99d594","#3288bd"],
+8: ["#d53e4f","#f46d43","#fdae61","#fee08b","#e6f598","#abdda4","#66c2a5","#3288bd"],
+9: ["#d53e4f","#f46d43","#fdae61","#fee08b","#ffffbf","#e6f598","#abdda4","#66c2a5","#3288bd"],
+10: ["#9e0142","#d53e4f","#f46d43","#fdae61","#fee08b","#e6f598","#abdda4","#66c2a5","#3288bd","#5e4fa2"],
+11: ["#9e0142","#d53e4f","#f46d43","#fdae61","#fee08b","#ffffbf","#e6f598","#abdda4","#66c2a5","#3288bd","#5e4fa2"]
+},RdYlGn: {
+3: ["#fc8d59","#ffffbf","#91cf60"],
+4: ["#d7191c","#fdae61","#a6d96a","#1a9641"],
+5: ["#d7191c","#fdae61","#ffffbf","#a6d96a","#1a9641"],
+6: ["#d73027","#fc8d59","#fee08b","#d9ef8b","#91cf60","#1a9850"],
+7: ["#d73027","#fc8d59","#fee08b","#ffffbf","#d9ef8b","#91cf60","#1a9850"],
+8: ["#d73027","#f46d43","#fdae61","#fee08b","#d9ef8b","#a6d96a","#66bd63","#1a9850"],
+9: ["#d73027","#f46d43","#fdae61","#fee08b","#ffffbf","#d9ef8b","#a6d96a","#66bd63","#1a9850"],
+10: ["#a50026","#d73027","#f46d43","#fdae61","#fee08b","#d9ef8b","#a6d96a","#66bd63","#1a9850","#006837"],
+11: ["#a50026","#d73027","#f46d43","#fdae61","#fee08b","#ffffbf","#d9ef8b","#a6d96a","#66bd63","#1a9850","#006837"]
+},Accent: {
+3: ["#7fc97f","#beaed4","#fdc086"],
+4: ["#7fc97f","#beaed4","#fdc086","#ffff99"],
+5: ["#7fc97f","#beaed4","#fdc086","#ffff99","#386cb0"],
+6: ["#7fc97f","#beaed4","#fdc086","#ffff99","#386cb0","#f0027f"],
+7: ["#7fc97f","#beaed4","#fdc086","#ffff99","#386cb0","#f0027f","#bf5b17"],
+8: ["#7fc97f","#beaed4","#fdc086","#ffff99","#386cb0","#f0027f","#bf5b17","#666666"]
+},Dark2: {
+3: ["#1b9e77","#d95f02","#7570b3"],
+4: ["#1b9e77","#d95f02","#7570b3","#e7298a"],
+5: ["#1b9e77","#d95f02","#7570b3","#e7298a","#66a61e"],
+6: ["#1b9e77","#d95f02","#7570b3","#e7298a","#66a61e","#e6ab02"],
+7: ["#1b9e77","#d95f02","#7570b3","#e7298a","#66a61e","#e6ab02","#a6761d"],
+8: ["#1b9e77","#d95f02","#7570b3","#e7298a","#66a61e","#e6ab02","#a6761d","#666666"]
+},Paired: {
+3: ["#a6cee3","#1f78b4","#b2df8a"],
+4: ["#a6cee3","#1f78b4","#b2df8a","#33a02c"],
+5: ["#a6cee3","#1f78b4","#b2df8a","#33a02c","#fb9a99"],
+6: ["#a6cee3","#1f78b4","#b2df8a","#33a02c","#fb9a99","#e31a1c"],
+7: ["#a6cee3","#1f78b4","#b2df8a","#33a02c","#fb9a99","#e31a1c","#fdbf6f"],
+8: ["#a6cee3","#1f78b4","#b2df8a","#33a02c","#fb9a99","#e31a1c","#fdbf6f","#ff7f00"],
+9: ["#a6cee3","#1f78b4","#b2df8a","#33a02c","#fb9a99","#e31a1c","#fdbf6f","#ff7f00","#cab2d6"],
+10: ["#a6cee3","#1f78b4","#b2df8a","#33a02c","#fb9a99","#e31a1c","#fdbf6f","#ff7f00","#cab2d6","#6a3d9a"],
+11: ["#a6cee3","#1f78b4","#b2df8a","#33a02c","#fb9a99","#e31a1c","#fdbf6f","#ff7f00","#cab2d6","#6a3d9a","#ffff99"],
+12: ["#a6cee3","#1f78b4","#b2df8a","#33a02c","#fb9a99","#e31a1c","#fdbf6f","#ff7f00","#cab2d6","#6a3d9a","#ffff99","#b15928"]
+},Pastel1: {
+3: ["#fbb4ae","#b3cde3","#ccebc5"],
+4: ["#fbb4ae","#b3cde3","#ccebc5","#decbe4"],
+5: ["#fbb4ae","#b3cde3","#ccebc5","#decbe4","#fed9a6"],
+6: ["#fbb4ae","#b3cde3","#ccebc5","#decbe4","#fed9a6","#ffffcc"],
+7: ["#fbb4ae","#b3cde3","#ccebc5","#decbe4","#fed9a6","#ffffcc","#e5d8bd"],
+8: ["#fbb4ae","#b3cde3","#ccebc5","#decbe4","#fed9a6","#ffffcc","#e5d8bd","#fddaec"],
+9: ["#fbb4ae","#b3cde3","#ccebc5","#decbe4","#fed9a6","#ffffcc","#e5d8bd","#fddaec","#f2f2f2"]
+},Pastel2: {
+3: ["#b3e2cd","#fdcdac","#cbd5e8"],
+4: ["#b3e2cd","#fdcdac","#cbd5e8","#f4cae4"],
+5: ["#b3e2cd","#fdcdac","#cbd5e8","#f4cae4","#e6f5c9"],
+6: ["#b3e2cd","#fdcdac","#cbd5e8","#f4cae4","#e6f5c9","#fff2ae"],
+7: ["#b3e2cd","#fdcdac","#cbd5e8","#f4cae4","#e6f5c9","#fff2ae","#f1e2cc"],
+8: ["#b3e2cd","#fdcdac","#cbd5e8","#f4cae4","#e6f5c9","#fff2ae","#f1e2cc","#cccccc"]
+},Set1: {
+3: ["#e41a1c","#377eb8","#4daf4a"],
+4: ["#e41a1c","#377eb8","#4daf4a","#984ea3"],
+5: ["#e41a1c","#377eb8","#4daf4a","#984ea3","#ff7f00"],
+6: ["#e41a1c","#377eb8","#4daf4a","#984ea3","#ff7f00","#ffff33"],
+7: ["#e41a1c","#377eb8","#4daf4a","#984ea3","#ff7f00","#ffff33","#a65628"],
+8: ["#e41a1c","#377eb8","#4daf4a","#984ea3","#ff7f00","#ffff33","#a65628","#f781bf"],
+9: ["#e41a1c","#377eb8","#4daf4a","#984ea3","#ff7f00","#ffff33","#a65628","#f781bf","#999999"]
+},Set2: {
+3: ["#66c2a5","#fc8d62","#8da0cb"],
+4: ["#66c2a5","#fc8d62","#8da0cb","#e78ac3"],
+5: ["#66c2a5","#fc8d62","#8da0cb","#e78ac3","#a6d854"],
+6: ["#66c2a5","#fc8d62","#8da0cb","#e78ac3","#a6d854","#ffd92f"],
+7: ["#66c2a5","#fc8d62","#8da0cb","#e78ac3","#a6d854","#ffd92f","#e5c494"],
+8: ["#66c2a5","#fc8d62","#8da0cb","#e78ac3","#a6d854","#ffd92f","#e5c494","#b3b3b3"]
+},Set3: {
+3: ["#8dd3c7","#ffffb3","#bebada"],
+4: ["#8dd3c7","#ffffb3","#bebada","#fb8072"],
+5: ["#8dd3c7","#ffffb3","#bebada","#fb8072","#80b1d3"],
+6: ["#8dd3c7","#ffffb3","#bebada","#fb8072","#80b1d3","#fdb462"],
+7: ["#8dd3c7","#ffffb3","#bebada","#fb8072","#80b1d3","#fdb462","#b3de69"],
+8: ["#8dd3c7","#ffffb3","#bebada","#fb8072","#80b1d3","#fdb462","#b3de69","#fccde5"],
+9: ["#8dd3c7","#ffffb3","#bebada","#fb8072","#80b1d3","#fdb462","#b3de69","#fccde5","#d9d9d9"],
+10: ["#8dd3c7","#ffffb3","#bebada","#fb8072","#80b1d3","#fdb462","#b3de69","#fccde5","#d9d9d9","#bc80bd"],
+11: ["#8dd3c7","#ffffb3","#bebada","#fb8072","#80b1d3","#fdb462","#b3de69","#fccde5","#d9d9d9","#bc80bd","#ccebc5"],
+12: ["#8dd3c7","#ffffb3","#bebada","#fb8072","#80b1d3","#fdb462","#b3de69","#fccde5","#d9d9d9","#bc80bd","#ccebc5","#ffed6f"]
+}};
+
+if (typeof define === "function" && define.amd) {
+    define(colorbrewer);
+} else if (typeof module === "object" && module.exports) {
+    module.exports = colorbrewer;
+} else {
+    this.colorbrewer = colorbrewer;
+}
+
+}();
+
+},{}],37:[function(require,module,exports){
+module.exports = require('./colorbrewer.js');
+
+},{"./colorbrewer.js":36}],38:[function(require,module,exports){
 // d3.tip
 // Copyright (c) 2013 Justin Palmer
 //
@@ -5095,7 +7310,7 @@ module.exports = amdefine;
 
 }));
 
-},{}],15:[function(require,module,exports){
+},{}],39:[function(require,module,exports){
 !function() {
   var d3 = {
     version: "3.5.16"
@@ -14650,7 +16865,7 @@ module.exports = amdefine;
   });
   if (typeof define === "function" && define.amd) this.d3 = d3, define(d3); else if (typeof module === "object" && module.exports) module.exports = d3; else this.d3 = d3;
 }();
-},{}],16:[function(require,module,exports){
+},{}],40:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -14717,7 +16932,7 @@ exports['default'] = inst;
 module.exports = exports['default'];
 
 
-},{"./handlebars.runtime":17,"./handlebars/compiler/ast":19,"./handlebars/compiler/base":20,"./handlebars/compiler/compiler":22,"./handlebars/compiler/javascript-compiler":24,"./handlebars/compiler/visitor":27,"./handlebars/no-conflict":41}],17:[function(require,module,exports){
+},{"./handlebars.runtime":41,"./handlebars/compiler/ast":43,"./handlebars/compiler/base":44,"./handlebars/compiler/compiler":46,"./handlebars/compiler/javascript-compiler":48,"./handlebars/compiler/visitor":51,"./handlebars/no-conflict":65}],41:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -14785,7 +17000,7 @@ exports['default'] = inst;
 module.exports = exports['default'];
 
 
-},{"./handlebars/base":18,"./handlebars/exception":31,"./handlebars/no-conflict":41,"./handlebars/runtime":42,"./handlebars/safe-string":43,"./handlebars/utils":44}],18:[function(require,module,exports){
+},{"./handlebars/base":42,"./handlebars/exception":55,"./handlebars/no-conflict":65,"./handlebars/runtime":66,"./handlebars/safe-string":67,"./handlebars/utils":68}],42:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -14891,7 +17106,7 @@ exports.createFrame = _utils.createFrame;
 exports.logger = _logger2['default'];
 
 
-},{"./decorators":29,"./exception":31,"./helpers":32,"./logger":40,"./utils":44}],19:[function(require,module,exports){
+},{"./decorators":53,"./exception":55,"./helpers":56,"./logger":64,"./utils":68}],43:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -14924,7 +17139,7 @@ exports['default'] = AST;
 module.exports = exports['default'];
 
 
-},{}],20:[function(require,module,exports){
+},{}],44:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -14974,7 +17189,7 @@ function parse(input, options) {
 }
 
 
-},{"../utils":44,"./helpers":23,"./parser":25,"./whitespace-control":28}],21:[function(require,module,exports){
+},{"../utils":68,"./helpers":47,"./parser":49,"./whitespace-control":52}],45:[function(require,module,exports){
 /* global define */
 'use strict';
 
@@ -15142,7 +17357,7 @@ exports['default'] = CodeGen;
 module.exports = exports['default'];
 
 
-},{"../utils":44,"source-map":46}],22:[function(require,module,exports){
+},{"../utils":68,"source-map":70}],46:[function(require,module,exports){
 /* eslint-disable new-cap */
 
 'use strict';
@@ -15716,7 +17931,7 @@ function transformLiteralToPath(sexpr) {
 }
 
 
-},{"../exception":31,"../utils":44,"./ast":19}],23:[function(require,module,exports){
+},{"../exception":55,"../utils":68,"./ast":43}],47:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -15948,7 +18163,7 @@ function preparePartialBlock(open, program, close, locInfo) {
 }
 
 
-},{"../exception":31}],24:[function(require,module,exports){
+},{"../exception":55}],48:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -17076,7 +19291,7 @@ exports['default'] = JavaScriptCompiler;
 module.exports = exports['default'];
 
 
-},{"../base":18,"../exception":31,"../utils":44,"./code-gen":21}],25:[function(require,module,exports){
+},{"../base":42,"../exception":55,"../utils":68,"./code-gen":45}],49:[function(require,module,exports){
 /* istanbul ignore next */
 /* Jison generated parser */
 "use strict";
@@ -17816,7 +20031,7 @@ var handlebars = (function () {
 exports['default'] = handlebars;
 
 
-},{}],26:[function(require,module,exports){
+},{}],50:[function(require,module,exports){
 /* eslint-disable new-cap */
 'use strict';
 
@@ -18004,7 +20219,7 @@ PrintVisitor.prototype.HashPair = function (pair) {
 /* eslint-enable new-cap */
 
 
-},{"./visitor":27}],27:[function(require,module,exports){
+},{"./visitor":51}],51:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -18146,7 +20361,7 @@ exports['default'] = Visitor;
 module.exports = exports['default'];
 
 
-},{"../exception":31}],28:[function(require,module,exports){
+},{"../exception":55}],52:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -18369,7 +20584,7 @@ exports['default'] = WhitespaceControl;
 module.exports = exports['default'];
 
 
-},{"./visitor":27}],29:[function(require,module,exports){
+},{"./visitor":51}],53:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -18387,7 +20602,7 @@ function registerDefaultDecorators(instance) {
 }
 
 
-},{"./decorators/inline":30}],30:[function(require,module,exports){
+},{"./decorators/inline":54}],54:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -18418,7 +20633,7 @@ exports['default'] = function (instance) {
 module.exports = exports['default'];
 
 
-},{"../utils":44}],31:[function(require,module,exports){
+},{"../utils":68}],55:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -18460,7 +20675,7 @@ exports['default'] = Exception;
 module.exports = exports['default'];
 
 
-},{}],32:[function(require,module,exports){
+},{}],56:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -18508,7 +20723,7 @@ function registerDefaultHelpers(instance) {
 }
 
 
-},{"./helpers/block-helper-missing":33,"./helpers/each":34,"./helpers/helper-missing":35,"./helpers/if":36,"./helpers/log":37,"./helpers/lookup":38,"./helpers/with":39}],33:[function(require,module,exports){
+},{"./helpers/block-helper-missing":57,"./helpers/each":58,"./helpers/helper-missing":59,"./helpers/if":60,"./helpers/log":61,"./helpers/lookup":62,"./helpers/with":63}],57:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -18549,7 +20764,7 @@ exports['default'] = function (instance) {
 module.exports = exports['default'];
 
 
-},{"../utils":44}],34:[function(require,module,exports){
+},{"../utils":68}],58:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -18645,7 +20860,7 @@ exports['default'] = function (instance) {
 module.exports = exports['default'];
 
 
-},{"../exception":31,"../utils":44}],35:[function(require,module,exports){
+},{"../exception":55,"../utils":68}],59:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -18672,7 +20887,7 @@ exports['default'] = function (instance) {
 module.exports = exports['default'];
 
 
-},{"../exception":31}],36:[function(require,module,exports){
+},{"../exception":55}],60:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -18703,7 +20918,7 @@ exports['default'] = function (instance) {
 module.exports = exports['default'];
 
 
-},{"../utils":44}],37:[function(require,module,exports){
+},{"../utils":68}],61:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -18731,7 +20946,7 @@ exports['default'] = function (instance) {
 module.exports = exports['default'];
 
 
-},{}],38:[function(require,module,exports){
+},{}],62:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -18745,7 +20960,7 @@ exports['default'] = function (instance) {
 module.exports = exports['default'];
 
 
-},{}],39:[function(require,module,exports){
+},{}],63:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -18780,7 +20995,7 @@ exports['default'] = function (instance) {
 module.exports = exports['default'];
 
 
-},{"../utils":44}],40:[function(require,module,exports){
+},{"../utils":68}],64:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -18829,7 +21044,7 @@ exports['default'] = logger;
 module.exports = exports['default'];
 
 
-},{"./utils":44}],41:[function(require,module,exports){
+},{"./utils":68}],65:[function(require,module,exports){
 (function (global){
 /* global window */
 'use strict';
@@ -18853,7 +21068,7 @@ module.exports = exports['default'];
 
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],42:[function(require,module,exports){
+},{}],66:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -19147,7 +21362,7 @@ function executeDecorators(fn, prog, container, depths, data, blockParams) {
 }
 
 
-},{"./base":18,"./exception":31,"./utils":44}],43:[function(require,module,exports){
+},{"./base":42,"./exception":55,"./utils":68}],67:[function(require,module,exports){
 // Build out our basic SafeString type
 'use strict';
 
@@ -19164,7 +21379,7 @@ exports['default'] = SafeString;
 module.exports = exports['default'];
 
 
-},{}],44:[function(require,module,exports){
+},{}],68:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -19290,7 +21505,7 @@ function appendContextPath(contextPath, id) {
 }
 
 
-},{}],45:[function(require,module,exports){
+},{}],69:[function(require,module,exports){
 // USAGE:
 // var handlebars = require('handlebars');
 /* eslint-disable no-var */
@@ -19317,7 +21532,7 @@ if (typeof require !== 'undefined' && require.extensions) {
   require.extensions['.hbs'] = extension;
 }
 
-},{"../dist/cjs/handlebars":16,"../dist/cjs/handlebars/compiler/printer":26,"fs":13}],46:[function(require,module,exports){
+},{"../dist/cjs/handlebars":40,"../dist/cjs/handlebars/compiler/printer":50,"fs":35}],70:[function(require,module,exports){
 /*
  * Copyright 2009-2011 Mozilla Foundation and contributors
  * Licensed under the New BSD license. See LICENSE.txt or:
@@ -19327,7 +21542,7 @@ exports.SourceMapGenerator = require('./source-map/source-map-generator').Source
 exports.SourceMapConsumer = require('./source-map/source-map-consumer').SourceMapConsumer;
 exports.SourceNode = require('./source-map/source-node').SourceNode;
 
-},{"./source-map/source-map-consumer":53,"./source-map/source-map-generator":54,"./source-map/source-node":55}],47:[function(require,module,exports){
+},{"./source-map/source-map-consumer":77,"./source-map/source-map-generator":78,"./source-map/source-node":79}],71:[function(require,module,exports){
 /* -*- Mode: js; js-indent-level: 2; -*- */
 /*
  * Copyright 2011 Mozilla Foundation and contributors
@@ -19436,7 +21651,7 @@ define(function (require, exports, module) {
 
 });
 
-},{"./util":56,"amdefine":10}],48:[function(require,module,exports){
+},{"./util":80,"amdefine":15}],72:[function(require,module,exports){
 /* -*- Mode: js; js-indent-level: 2; -*- */
 /*
  * Copyright 2011 Mozilla Foundation and contributors
@@ -19584,7 +21799,7 @@ define(function (require, exports, module) {
 
 });
 
-},{"./base64":49,"amdefine":10}],49:[function(require,module,exports){
+},{"./base64":73,"amdefine":15}],73:[function(require,module,exports){
 /* -*- Mode: js; js-indent-level: 2; -*- */
 /*
  * Copyright 2011 Mozilla Foundation and contributors
@@ -19659,7 +21874,7 @@ define(function (require, exports, module) {
 
 });
 
-},{"amdefine":10}],50:[function(require,module,exports){
+},{"amdefine":15}],74:[function(require,module,exports){
 /* -*- Mode: js; js-indent-level: 2; -*- */
 /*
  * Copyright 2011 Mozilla Foundation and contributors
@@ -19778,7 +21993,7 @@ define(function (require, exports, module) {
 
 });
 
-},{"amdefine":10}],51:[function(require,module,exports){
+},{"amdefine":15}],75:[function(require,module,exports){
 /* -*- Mode: js; js-indent-level: 2; -*- */
 /*
  * Copyright 2014 Mozilla Foundation and contributors
@@ -19866,7 +22081,7 @@ define(function (require, exports, module) {
 
 });
 
-},{"./util":56,"amdefine":10}],52:[function(require,module,exports){
+},{"./util":80,"amdefine":15}],76:[function(require,module,exports){
 /* -*- Mode: js; js-indent-level: 2; -*- */
 /*
  * Copyright 2011 Mozilla Foundation and contributors
@@ -19988,7 +22203,7 @@ define(function (require, exports, module) {
 
 });
 
-},{"amdefine":10}],53:[function(require,module,exports){
+},{"amdefine":15}],77:[function(require,module,exports){
 /* -*- Mode: js; js-indent-level: 2; -*- */
 /*
  * Copyright 2011 Mozilla Foundation and contributors
@@ -21067,7 +23282,7 @@ define(function (require, exports, module) {
 
 });
 
-},{"./array-set":47,"./base64-vlq":48,"./binary-search":50,"./quick-sort":52,"./util":56,"amdefine":10}],54:[function(require,module,exports){
+},{"./array-set":71,"./base64-vlq":72,"./binary-search":74,"./quick-sort":76,"./util":80,"amdefine":15}],78:[function(require,module,exports){
 /* -*- Mode: js; js-indent-level: 2; -*- */
 /*
  * Copyright 2011 Mozilla Foundation and contributors
@@ -21468,7 +23683,7 @@ define(function (require, exports, module) {
 
 });
 
-},{"./array-set":47,"./base64-vlq":48,"./mapping-list":51,"./util":56,"amdefine":10}],55:[function(require,module,exports){
+},{"./array-set":71,"./base64-vlq":72,"./mapping-list":75,"./util":80,"amdefine":15}],79:[function(require,module,exports){
 /* -*- Mode: js; js-indent-level: 2; -*- */
 /*
  * Copyright 2011 Mozilla Foundation and contributors
@@ -21884,7 +24099,7 @@ define(function (require, exports, module) {
 
 });
 
-},{"./source-map-generator":54,"./util":56,"amdefine":10}],56:[function(require,module,exports){
+},{"./source-map-generator":78,"./util":80,"amdefine":15}],80:[function(require,module,exports){
 /* -*- Mode: js; js-indent-level: 2; -*- */
 /*
  * Copyright 2011 Mozilla Foundation and contributors
@@ -22256,7 +24471,7 @@ define(function (require, exports, module) {
 
 });
 
-},{"amdefine":10}],57:[function(require,module,exports){
+},{"amdefine":15}],81:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v3.0.0
  * https://jquery.com/
@@ -32295,7 +34510,7 @@ if ( !noGlobal ) {
 return jQuery;
 } ) );
 
-},{}],58:[function(require,module,exports){
+},{}],82:[function(require,module,exports){
 (function (process){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -32523,7 +34738,7 @@ var substr = 'ab'.substr(-1) === 'b'
 ;
 
 }).call(this,require('_process'))
-},{"_process":59}],59:[function(require,module,exports){
+},{"_process":83}],83:[function(require,module,exports){
 // shim for using process in browser
 
 var process = module.exports = {};
@@ -32616,7 +34831,7 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}],60:[function(require,module,exports){
+},{}],84:[function(require,module,exports){
 module.exports = function(THREE) {
 	var MOUSE = THREE.MOUSE
 	if (!MOUSE)
@@ -33737,7 +35952,7 @@ module.exports = function(THREE) {
 	return OrbitControls;
 }
 
-},{}],61:[function(require,module,exports){
+},{}],85:[function(require,module,exports){
 // File:src/Three.js
 
 /**
@@ -75611,7 +77826,7 @@ THREE.MorphBlendMesh.prototype.update = function ( delta ) {
 };
 
 
-},{}],62:[function(require,module,exports){
+},{}],86:[function(require,module,exports){
 //     Underscore.js 1.7.0
 //     http://underscorejs.org
 //     (c) 2009-2014 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors

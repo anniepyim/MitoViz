@@ -46,7 +46,8 @@ function parse(urls, errorcb, datacb,colorrange){
                         mitomap[mito[i]] = ifExist;
                     }
                 }                
-                data = data.concat(res.data);           
+                data = data.concat(res.data);
+                console.log(res.data);
             });
             //console.log(data);
            for (var k = 0; k < data.length; k++){

@@ -1,5 +1,5 @@
 var d3 = require('d3');
-var pcPlot = require('./pcPlot.js');
+//var pcPlot = require('./pcPlot.js');
 var PCdata = require('./pcdata.js');
 
 var colorgroup = d3.scale.ordinal().range(["#ff004d","#ffff66","#a4ff52","#0067c6","#7d71e5"]),
@@ -12,7 +12,9 @@ var PCBC = function (obj) {
     this.PCBCwrapped = obj;
 };
 
-/*PCBC.draw = function (indata,cat,svgname,titlename,panelname) {
+PCBC.draw = function (indata,cat,svgname,titlename,panelname) {
+        
+        var criteria = (cat == "cancer type") ? 'criteriagroup' : (cat == "gender") ? 'criteriagender' : 'criteriastage'
         
         var prdata = indata.map(function(d){
                 return{
@@ -67,7 +69,7 @@ var PCBC = function (obj) {
                     document.getElementById(panelname).style.border="1px solid #6699ff";},
                 "mouseout":  function(){document.getElementById(panelname).style.border="";},  
                 "click": function(){
-                    click(prdata);
+                    PCdata.update(indata,cat);
                     changeBackground(panelname);
                     }
                     //trigger PCdata.update, feed indata and cat
@@ -79,7 +81,7 @@ var PCBC = function (obj) {
                         document.getElementById(panelname).style.border="1px solid #6699ff";},
                     "mouseout":  function(){document.getElementById(panelname).style.border="";},  
                     "click": function(){
-                        click(prdata);
+                        PCdata.update(indata,cat);
                         changeBackground(panelname);
                         }
                     });
@@ -105,10 +107,7 @@ var PCBC = function (obj) {
                 return color(d.key);
             })
           .on("click", function(d){
-                click(d.values);
-                changeBackground(panelname);
-                    var text = document.getElementById('criteria');
-    text.value = (text.value + d.key+",");
+                addCriteria(criteria,d.key);
             });
 
         bar.append("text")
@@ -117,43 +116,73 @@ var PCBC = function (obj) {
           .attr("dy", ".35em")
           .text(function(d) { return d.key+" ("+d.count+")"; })
           .on("click", function(d){
-                click(d.values);
-                changeBackground(panelname);
-                var text = document.getElementById('criteria');
-    text.value = (text.value + d.key+",");
+                addCriteria(criteria,d.key);
             });
     
-            var button = document.getElementById('filterbutton')
-        button.addEventListener("click", PCdata.update(prdata,"cancer type"));
-    
-    function click(d) {
-            pcPlot.deletedots();
-            pcPlot.adddots(d);
-            
-            
-    }
+
     
     function changeBackground(panelname){
         var element = document.getElementsByClassName('pcbc');
         for (var e in element) if (element.hasOwnProperty(e)) element[e].style.background="white";
         document.getElementById(panelname).style.background="#b3ccff";
     }
+    
+    var contains = function(needle) {
+        // Per spec, the way to identify NaN is that it is not equal to itself
+        var findNaN = needle !== needle;
+        var indexOf;
 
-};*/
+        if(!findNaN && typeof Array.prototype.indexOf === 'function') {
+            indexOf = Array.prototype.indexOf;
+        } else {
+            indexOf = function(needle) {
+                var i = -1, index = -1;
 
+                for(i = 0; i < this.length; i++) {
+                    var item = this[i];
 
+                    if((findNaN && item !== item) || item === needle) {
+                        index = i;
+                        break;
+                    }
+                }
 
-PCBC.alert = function(){
-    alert("PCBC");
+                return index;
+            };
+        }
+
+        return indexOf.call(this, needle) > -1;
+    };
+    
+    function addCriteria(criteria,key){
+        
+        var text = document.getElementById(criteria);
+        crit = text.value.split(",");
+        crit.pop();
+        
+        if (!contains.call(crit,key)){
+            text.value = (text.value + key+",");
+
+            var button = document.createElement("button");
+            button.className = "btn btn-xs btn-default criteriabut";
+            var textnode = document.createTextNode(key);
+            button.appendChild(textnode);
+            var gly = document.createElement("span");
+            gly.className = "glyphicon glyphicon-trash";
+            button.appendChild(gly);
+            button.onclick = function(e){
+                var array = document.getElementById(criteria).value.split(",");
+                var index = array.indexOf(key);
+                if (index > -1) {array.splice(index, 1);};
+                document.getElementById(criteria).value = array.toString();
+                this.parentNode.removeChild(this)
+            }
+            document.getElementById("criteriabutton").appendChild(button);   
+        }
+    }
+
 };
 
-pcPlot.alert();
-PCdata.alert();
-
-//SP.alert();
-
-//fds.alert();
-//PCdata.alert();
 
 if (typeof define === "function" && define.amd) {
     define(PCBC);
