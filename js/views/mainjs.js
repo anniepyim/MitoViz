@@ -57,7 +57,6 @@ function updateFolder(folder){
           success: function(data){
               $('#files').empty();
               $.each(data, function(i,filename) {
-                console.log(filename);
                 value = targeturl+filename;
                 text = filename.split(".")[0];
                 htmltext = htmltext+'<option value=\"'+value+'\">'+text+'</option>';

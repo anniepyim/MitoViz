@@ -85,13 +85,30 @@ function spcompareData(){
 
 function pcacompareData(){
     
-    exist = !!document.getElementById("genderbarchart");    
-    parser2.parse('data/final.json', onError, onSuccess2);
+    exist = !!document.getElementById("genderbarchart");
+    var select = document.getElementById('selected-sample');
+    var url = "test.py?";
+    for (i = 0; i < select.options.length; i++) {
+       url = url+"file_list="+select.options[i].value;
+        if (i < select.options.length-1) url=url+"&";
+    }
+    console.log(url);
+    
+    jQuery.ajax({
+        type: "POST",
+        url: url,
+        dataType: "json",
+        success: function (result) {
+            alert(result);
+            parser2.parse("data/PCA/All Processes-pca.json", onError, onSuccess2);
+        }
+    });
+    
     
 }
 
 function pcaupdateData(){
-    parser2.parse('data/final.json', onError, onSuccess3);
+    parser2.parse('data/PCA/final.json', onError, onSuccess3);
 }
 
 function removeCriteria(){

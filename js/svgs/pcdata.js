@@ -13,12 +13,12 @@ var PCdata = function (obj) {
 
 PCdata.init = function (indata) {
 
-    var xmax = d3.max(indata, function (d) {return d.pc1;}),
-        xmin = d3.min(indata, function (d) {return d.pc1;}),
-        zmax = d3.max(indata, function (d) {return d.pc2;}),
-        zmin = d3.min(indata, function (d) {return d.pc2;}),
-        ymax = d3.max(indata, function (d) {return d.pc3;}),
-        ymin = d3.min(indata, function (d) {return d.pc3;});
+    var xmax = d3.max(indata, function (d) {return d.PC1;}),
+        xmin = d3.min(indata, function (d) {return d.PC1;}),
+        zmax = d3.max(indata, function (d) {return d.PC2;}),
+        zmin = d3.min(indata, function (d) {return d.PC2;}),
+        ymax = d3.max(indata, function (d) {return d.PC3;}),
+        ymin = d3.min(indata, function (d) {return d.PC3;});
 
     var xDom = (xmax-xmin)*0.1,
         yDom = (ymax-ymin)*0.1,
@@ -37,12 +37,13 @@ PCdata.init = function (indata) {
         var prdata = indata.map(function(d){
                 return{
                     sampleID: d.sampleID,
-                    pc1: xScale(d.pc1),
-                    pc2: zScale(d.pc2),
-                    pc3: yScale(d.pc3),
+                    PC1: xScale(d.PC1),
+                    PC2: zScale(d.PC2),
+                    PC3: yScale(d.PC3),
                     group: d.group,
                     gender: d.gender,
                     stage: d.stage,
+                    url: d.url
                 };
             });
         

@@ -9,7 +9,6 @@ function parse(urls, errorcb, datacb,colorrange){
     
     var funcs = _.map(urls, axios.get);
     
-    console.log(urls.length);
     if (urls.length === 0) errorcb(new Error('Add samples!'));
     if (urls.length > 6) errorcb(new Error('No more than 6 samples!'));
     if (colorrange === "") errorcb(new Error('Pick color!'));
@@ -47,7 +46,6 @@ function parse(urls, errorcb, datacb,colorrange){
                     }
                 }                
                 data = data.concat(res.data);
-                console.log(res.data);
             });
             //console.log(data);
            for (var k = 0; k < data.length; k++){
@@ -55,7 +53,6 @@ function parse(urls, errorcb, datacb,colorrange){
                     newdata = newdata.concat(data[k]);
                 }        
             }
-            console.log(mitomap);
             datacb(newdata,colorrange);
         
         }))

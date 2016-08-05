@@ -1,0 +1,251 @@
+sampleID	Cancer_type	Gender	Race	Pathologic_stage	Pathologic_T	Vital_status	Age_at_diagnosis	Family_history	Cancer_first_degree_relatives	Hepato_carcer_factor	BRCA_cancer_factor_3neg	BRCA_cancer_factor_menopause	LUAD_cancer_factor
+TCGA-E2-A1BC	BRCA	FEMALE	NA	Stage I	T1c	Alive	63	NA	NA	NA	Others	Post (prior bilateral ovariectomy OR >12 mo since LMP with no prior hysterectomy)	NA
+TCGA-DD-A39Z	LIHC	FEMALE	NA	Stage II	T2	Dead	43	YES	1	Alcohol consumption	NA	NA	NA
+TCGA-DD-A3A1	LIHC	MALE	NA	Stage III	T3b	Dead	65	YES	1	No History of Primary Risk Factors	NA	NA	NA
+TCGA-BC-A10W	LIHC	MALE	ASIAN	NA	T4	Dead	50	YES	1	Hepatitis B	NA	NA	NA
+TCGA-DD-A1EI	LIHC	MALE	ASIAN	Stage I	T1	Alive	46	NO	0	Hepatitis B	NA	NA	NA
+TCGA-DD-A3A3	LIHC	MALE	ASIAN	Stage I	T1	Dead	45	NO	NA	No History of Primary Risk Factors	NA	NA	NA
+TCGA-AC-A2FF	BRCA	FEMALE	ASIAN	Stage II	T2	Alive	40	NA	NA	NA	Others	NA	NA
+TCGA-G3-A3CH	LIHC	MALE	ASIAN	Stage III	T3a	Alive	53	NO	NA	Hepatitis B	NA	NA	NA
+TCGA-BC-A110	LIHC	FEMALE	BLACK OR AFRICAN AMERICAN	NA	T1	Dead	51	YES	2	Alcohol consumption	NA	NA	NA
+TCGA-BD-A3EP	LIHC	FEMALE	BLACK OR AFRICAN AMERICAN	Stage I	T1	Alive	75	NO	0	No History of Primary Risk Factors	NA	NA	NA
+TCGA-ES-A2HT	LIHC	MALE	BLACK OR AFRICAN AMERICAN	Stage I	T1	Dead	54	NO	0	Hepatitis C	NA	NA	NA
+TCGA-BH-A0BW	BRCA	FEMALE	BLACK OR AFRICAN AMERICAN	Stage I	T1c	Alive	71	NA	NA	NA	NA	Post (prior bilateral ovariectomy OR >12 mo since LMP with no prior hysterectomy)	NA
+TCGA-BH-A209	BRCA	FEMALE	BLACK OR AFRICAN AMERICAN	Stage I	T1c	Dead	77	NA	NA	NA	Others	Post (prior bilateral ovariectomy OR >12 mo since LMP with no prior hysterectomy)	NA
+TCGA-BH-A1FC	BRCA	FEMALE	BLACK OR AFRICAN AMERICAN	Stage II	T1c	Dead	78	NA	NA	NA	3-negative	Post (prior bilateral ovariectomy OR >12 mo since LMP with no prior hysterectomy)	NA
+TCGA-BH-A0DG	BRCA	FEMALE	BLACK OR AFRICAN AMERICAN	Stage II	T2	Alive	30	NA	NA	NA	Others	Pre (<6 months since LMP AND no prior bilateral ovariectomy AND not on estrogen replacement)	NA
+TCGA-GI-A2C9	BRCA	FEMALE	BLACK OR AFRICAN AMERICAN	Stage II	T3	Alive	58	NA	NA	NA	3-negative	Post (prior bilateral ovariectomy OR >12 mo since LMP with no prior hysterectomy)	NA
+TCGA-91-6849	LUAD	FEMALE	BLACK OR AFRICAN AMERICAN	Stage III	T2	Alive	75	NA	NA	NA	NA	NA	3
+TCGA-38-4632	LUAD	MALE	BLACK OR AFRICAN AMERICAN	Stage IV	T2	Dead	42	NA	NA	NA	NA	NA	4
+TCGA-38-4626	LUAD	FEMALE	WHITE	[Discrepancy]	T2b	Alive	57	NA	NA	NA	NA	NA	2
+TCGA-BC-A10Q	LIHC	FEMALE	WHITE	NA	T2	Dead	72	YES	1	No History of Primary Risk Factors	NA	NA	NA
+TCGA-BC-A10R	LIHC	FEMALE	WHITE	NA	T3	Dead	66	YES	1	No History of Primary Risk Factors	NA	NA	NA
+TCGA-BC-A10T	LIHC	MALE	WHITE	NA	T4	Dead	76	NO	NA	No History of Primary Risk Factors	NA	NA	NA
+TCGA-BC-A10U	LIHC	MALE	WHITE	NA	T2	Dead	69	YES	4	Alcohol consumption	NA	NA	NA
+TCGA-BC-A10Y	LIHC	MALE	WHITE	NA	T4	Dead	76	NO	NA	Alcohol consumption	NA	NA	NA
+TCGA-BD-A2L6	LIHC	MALE	WHITE	NA	T2	Alive	69	NA	NA	Alcohol consumption	NA	NA	NA
+TCGA-BH-A1F6	BRCA	FEMALE	WHITE	NA	T4d	Dead	51	NA	NA	NA	3-negative	NA	NA
+TCGA-BC-A10Z	LIHC	FEMALE	WHITE	Stage I	T1	Dead	62	YES	1	No History of Primary Risk Factors	NA	NA	NA
+TCGA-DD-A11C	LIHC	MALE	WHITE	Stage I	T1	Alive	69	YES	1	NA	NA	NA	NA
+TCGA-DD-A11D	LIHC	FEMALE	WHITE	Stage I	T1	Dead	57	YES	2	Non-Alcoholic Fatty Liver Disease	NA	NA	NA
+TCGA-DD-A1EC	LIHC	FEMALE	WHITE	Stage I	T1	Alive	20	NO	NA	NA	NA	NA	NA
+TCGA-DD-A39X	LIHC	FEMALE	WHITE	Stage I	T1	Dead	78	YES	2	No History of Primary Risk Factors	NA	NA	NA
+TCGA-DD-A3A2	LIHC	FEMALE	WHITE	Stage I	T1	Dead	76	NO	NA	No History of Primary Risk Factors	NA	NA	NA
+TCGA-FV-A2QR	LIHC	MALE	WHITE	Stage I	T1	Dead	75	YES	1	Other	NA	NA	NA
+TCGA-FV-A3R2	LIHC	MALE	WHITE	Stage I	T1	Dead	75	YES	4	No History of Primary Risk Factors	NA	NA	NA
+TCGA-BH-A18K	BRCA	FEMALE	WHITE	Stage I	T1	Dead	46	NA	NA	NA	Others	NA	NA
+TCGA-BH-A18P	BRCA	FEMALE	WHITE	Stage I	T1	Dead	60	NA	NA	NA	Others	NA	NA
+TCGA-BH-A1ET	BRCA	FEMALE	WHITE	Stage I	T1	Dead	55	NA	NA	NA	Others	NA	NA
+TCGA-E2-A1LH	BRCA	FEMALE	WHITE	Stage I	T1c	Alive	59	NA	NA	NA	3-negative	Post (prior bilateral ovariectomy OR >12 mo since LMP with no prior hysterectomy)	NA
+TCGA-BH-A0B8	BRCA	FEMALE	WHITE	Stage I	T1b	Alive	64	NA	NA	NA	Others	Post (prior bilateral ovariectomy OR >12 mo since LMP with no prior hysterectomy)	NA
+TCGA-BH-A0DO	BRCA	FEMALE	WHITE	Stage I	T1c	Alive	78	NA	NA	NA	Others	Post (prior bilateral ovariectomy OR >12 mo since LMP with no prior hysterectomy)	NA
+TCGA-BH-A0H5	BRCA	FEMALE	WHITE	Stage I	T1c	Alive	45	NA	NA	NA	Others	Post (prior bilateral ovariectomy OR >12 mo since LMP with no prior hysterectomy)	NA
+TCGA-BH-A18S	BRCA	FEMALE	WHITE	Stage I	T1c	Dead	79	NA	NA	NA	Others	Post (prior bilateral ovariectomy OR >12 mo since LMP with no prior hysterectomy)	NA
+TCGA-BH-A1EU	BRCA	FEMALE	WHITE	Stage I	T1	Dead	83	NA	NA	NA	Others	Post (prior bilateral ovariectomy OR >12 mo since LMP with no prior hysterectomy)	NA
+TCGA-BH-A1FD	BRCA	FEMALE	WHITE	Stage I	T1c	Dead	68	NA	NA	NA	Others	Post (prior bilateral ovariectomy OR >12 mo since LMP with no prior hysterectomy)	NA
+TCGA-BH-A1FG	BRCA	FEMALE	WHITE	Stage I	T1c	Dead	88	NA	NA	NA	Others	Post (prior bilateral ovariectomy OR >12 mo since LMP with no prior hysterectomy)	NA
+TCGA-BH-A0BQ	BRCA	FEMALE	WHITE	Stage I	T1c	Alive	39	NA	NA	NA	Others	Pre (<6 months since LMP AND no prior bilateral ovariectomy AND not on estrogen replacement)	NA
+TCGA-BH-A0C3	BRCA	FEMALE	WHITE	Stage I	T1c	Alive	47	NA	NA	NA	Others	Pre (<6 months since LMP AND no prior bilateral ovariectomy AND not on estrogen replacement)	NA
+TCGA-BH-A0HA	BRCA	FEMALE	WHITE	Stage I	T1c	Alive	31	NA	NA	NA	Others	Pre (<6 months since LMP AND no prior bilateral ovariectomy AND not on estrogen replacement)	NA
+TCGA-44-2655	LUAD	FEMALE	WHITE	Stage I	T1	Alive	65	NA	NA	NA	NA	NA	3
+TCGA-50-5935	LUAD	FEMALE	WHITE	Stage I	T1	Dead	86	NA	NA	NA	NA	NA	NA
+TCGA-55-6980	LUAD	MALE	WHITE	Stage I	T1	Alive	56	NA	NA	NA	NA	NA	1
+TCGA-91-6828	LUAD	MALE	WHITE	Stage I	T1a	Alive	70	NA	NA	NA	NA	NA	3
+TCGA-91-6835	LUAD	FEMALE	WHITE	Stage I	T1	Alive	81	NA	NA	NA	NA	NA	3
+TCGA-BH-A1FU	BRCA	FEMALE	WHITE	Stage I	T1c	Dead	44	NA	NA	NA	NA	NA	NA
+TCGA-E2-A1LS	BRCA	FEMALE	WHITE	Stage I	T1c	Alive	46	NA	NA	NA	3-negative	Pre (<6 months since LMP AND no prior bilateral ovariectomy AND not on estrogen replacement)	NA
+TCGA-50-5931	LUAD	FEMALE	WHITE	Stage I	T2	Dead	75	NA	NA	NA	NA	NA	4
+TCGA-50-5939	LUAD	MALE	WHITE	Stage I	T2	Dead	85	NA	NA	NA	NA	NA	3
+TCGA-55-6971	LUAD	FEMALE	WHITE	Stage I	T2	Alive	59	NA	NA	NA	NA	NA	4
+TCGA-55-6972	LUAD	MALE	WHITE	Stage I	T2	Alive	72	NA	NA	NA	NA	NA	2
+TCGA-55-6985	LUAD	FEMALE	WHITE	Stage I	T2	Alive	58	NA	NA	NA	NA	NA	4
+TCGA-55-6986	LUAD	FEMALE	WHITE	Stage I	T2	Alive	74	NA	NA	NA	NA	NA	1
+TCGA-91-6829	LUAD	MALE	WHITE	Stage I	T2	Dead	78	NA	NA	NA	NA	NA	4
+TCGA-91-6847	LUAD	FEMALE	WHITE	Stage I	T2	Alive	62	NA	NA	NA	NA	NA	3
+TCGA-DD-A118	LIHC	FEMALE	WHITE	Stage II	T2	Alive	77	NO	NA	NA	NA	NA	NA
+TCGA-DD-A39V	LIHC	MALE	WHITE	Stage II	T2	Dead	77	YES	3	No History of Primary Risk Factors	NA	NA	NA
+TCGA-DD-A3A6	LIHC	FEMALE	WHITE	Stage II	T2	Dead	72	NO	NA	No History of Primary Risk Factors	NA	NA	NA
+TCGA-DD-A3A8	LIHC	MALE	WHITE	Stage II	T2	Dead	75	YES	3	No History of Primary Risk Factors	NA	NA	NA
+TCGA-FV-A23B	LIHC	FEMALE	WHITE	Stage II	T2	Alive	70	NA	NA	Hepatitis C	NA	NA	NA
+TCGA-FV-A3I0	LIHC	FEMALE	WHITE	Stage II	T2	Alive	76	NA	NA	No History of Primary Risk Factors	NA	NA	NA
+TCGA-38-4627	LUAD	FEMALE	WHITE	Stage II	T1b	Dead	64	NA	NA	NA	NA	NA	4
+TCGA-49-6742	LUAD	MALE	WHITE	Stage II	T2a	Alive	70	NA	NA	NA	NA	NA	3
+TCGA-49-6744	LUAD	FEMALE	WHITE	Stage II	T2a	Alive	64	NA	NA	NA	NA	NA	4
+TCGA-55-6978	LUAD	MALE	WHITE	Stage II	T2b	Dead	81	NA	NA	NA	NA	NA	1
+TCGA-73-4676	LUAD	MALE	WHITE	Stage II	T2a	Alive	45	NA	NA	NA	NA	NA	4
+TCGA-AC-A2FB	BRCA	FEMALE	WHITE	Stage II	T2	Alive	65	NA	NA	NA	Others	NA	NA
+TCGA-BH-A0BT	BRCA	FEMALE	WHITE	Stage II	T1c	Alive	56	NA	NA	NA	Others	NA	NA
+TCGA-BH-A18N	BRCA	FEMALE	WHITE	Stage II	T2	Dead	88	NA	NA	NA	Others	NA	NA
+TCGA-BH-A18R	BRCA	FEMALE	WHITE	Stage II	T2b	Dead	50	NA	NA	NA	Others	NA	NA
+TCGA-BH-A1FN	BRCA	FEMALE	WHITE	Stage II	T2	Dead	34	NA	NA	NA	Others	NA	NA
+TCGA-A7-A0CE	BRCA	FEMALE	WHITE	Stage II	T2	Alive	57	NA	NA	NA	Others	Indeterminate (neither Pre or Postmenopausal)	NA
+TCGA-A7-A0CH	BRCA	FEMALE	WHITE	Stage II	T2	Alive	79	NA	NA	NA	NA	Post (prior bilateral ovariectomy OR >12 mo since LMP with no prior hysterectomy)	NA
+TCGA-BH-A1F0	BRCA	FEMALE	WHITE	Stage II	T1a	Dead	80	NA	NA	NA	NA	Post (prior bilateral ovariectomy OR >12 mo since LMP with no prior hysterectomy)	NA
+TCGA-A7-A0DB	BRCA	FEMALE	WHITE	Stage II	T2	Alive	56	NA	NA	NA	Others	Post (prior bilateral ovariectomy OR >12 mo since LMP with no prior hysterectomy)	NA
+TCGA-A7-A13G	BRCA	FEMALE	WHITE	Stage II	T2	Alive	79	NA	NA	NA	Others	Post (prior bilateral ovariectomy OR >12 mo since LMP with no prior hysterectomy)	NA
+TCGA-AC-A23H	BRCA	FEMALE	WHITE	Stage II	T2	Alive	90	NA	NA	NA	Others	Post (prior bilateral ovariectomy OR >12 mo since LMP with no prior hysterectomy)	NA
+TCGA-BH-A0AY	BRCA	FEMALE	WHITE	Stage II	T2	Alive	62	NA	NA	NA	Others	Post (prior bilateral ovariectomy OR >12 mo since LMP with no prior hysterectomy)	NA
+TCGA-BH-A0C0	BRCA	FEMALE	WHITE	Stage II	T1c	Alive	62	NA	NA	NA	Others	Post (prior bilateral ovariectomy OR >12 mo since LMP with no prior hysterectomy)	NA
+TCGA-BH-A0DL	BRCA	FEMALE	WHITE	Stage II	T2	Alive	64	NA	NA	NA	Others	Post (prior bilateral ovariectomy OR >12 mo since LMP with no prior hysterectomy)	NA
+TCGA-BH-A0H9	BRCA	FEMALE	WHITE	Stage II	T2	Alive	69	NA	NA	NA	Others	Post (prior bilateral ovariectomy OR >12 mo since LMP with no prior hysterectomy)	NA
+TCGA-BH-A1EN	BRCA	FEMALE	WHITE	Stage II	T2	Dead	78	NA	NA	NA	Others	Post (prior bilateral ovariectomy OR >12 mo since LMP with no prior hysterectomy)	NA
+TCGA-BH-A1EO	BRCA	FEMALE	WHITE	Stage II	T1c	Dead	68	NA	NA	NA	Others	Post (prior bilateral ovariectomy OR >12 mo since LMP with no prior hysterectomy)	NA
+TCGA-E2-A15M	BRCA	FEMALE	WHITE	Stage II	T2	Alive	66	NA	NA	NA	Others	Post (prior bilateral ovariectomy OR >12 mo since LMP with no prior hysterectomy)	NA
+TCGA-BH-A1EW	BRCA	FEMALE	WHITE	Stage II	T2	Dead	38	NA	NA	NA	3-negative	Pre (<6 months since LMP AND no prior bilateral ovariectomy AND not on estrogen replacement)	NA
+TCGA-E2-A158	BRCA	FEMALE	WHITE	Stage II	T1c	Alive	43	NA	NA	NA	3-negative	Pre (<6 months since LMP AND no prior bilateral ovariectomy AND not on estrogen replacement)	NA
+TCGA-A7-A0D9	BRCA	FEMALE	WHITE	Stage II	T2	Alive	37	NA	NA	NA	Others	Pre (<6 months since LMP AND no prior bilateral ovariectomy AND not on estrogen replacement)	NA
+TCGA-BH-A0AU	BRCA	FEMALE	WHITE	Stage II	T2	Alive	45	NA	NA	NA	Others	Pre (<6 months since LMP AND no prior bilateral ovariectomy AND not on estrogen replacement)	NA
+TCGA-BH-A0DK	BRCA	FEMALE	WHITE	Stage II	T2	Alive	49	NA	NA	NA	Others	Pre (<6 months since LMP AND no prior bilateral ovariectomy AND not on estrogen replacement)	NA
+TCGA-BH-A0DT	BRCA	FEMALE	WHITE	Stage II	T1c	Alive	41	NA	NA	NA	Others	Pre (<6 months since LMP AND no prior bilateral ovariectomy AND not on estrogen replacement)	NA
+TCGA-E2-A15I	BRCA	FEMALE	WHITE	Stage II	T2	Alive	44	NA	NA	NA	Others	Pre (<6 months since LMP AND no prior bilateral ovariectomy AND not on estrogen replacement)	NA
+TCGA-50-5932	LUAD	MALE	WHITE	Stage II	T2	Dead	75	NA	NA	NA	NA	NA	NA
+TCGA-55-6979	LUAD	FEMALE	WHITE	Stage II	T2	Dead	59	NA	NA	NA	NA	NA	3
+TCGA-55-6982	LUAD	FEMALE	WHITE	Stage II	T2	Dead	79	NA	NA	NA	NA	NA	1
+TCGA-55-6983	LUAD	MALE	WHITE	Stage II	T2	Alive	81	NA	NA	NA	NA	NA	4
+TCGA-BH-A208	BRCA	FEMALE	WHITE	Stage II	T2	Dead	48	NA	NA	NA	NA	NA	NA
+TCGA-BH-A18V	BRCA	FEMALE	WHITE	Stage II	T2	Dead	48	NA	NA	NA	3-negative	NA	NA
+TCGA-BH-A0DD	BRCA	MALE	WHITE	Stage II	T2	Alive	58	NA	NA	NA	Others	NA	NA
+TCGA-BH-A18Q	BRCA	FEMALE	WHITE	Stage II	T2	Dead	56	NA	NA	NA	Others	NA	NA
+TCGA-BH-A1FE	BRCA	FEMALE	WHITE	Stage II	T2	Dead	31	NA	NA	NA	Others	NA	NA
+TCGA-BH-A0E1	BRCA	FEMALE	WHITE	Stage II	T2	Alive	52	NA	NA	NA	Others	Peri (6-12 months since last menstrual period)	NA
+TCGA-AC-A2FM	BRCA	FEMALE	WHITE	Stage II	T2	Dead	87	NA	NA	NA	NA	Post (prior bilateral ovariectomy OR >12 mo since LMP with no prior hysterectomy)	NA
+TCGA-BH-A203	BRCA	FEMALE	WHITE	Stage II	T2	Dead	78	NA	NA	NA	NA	Post (prior bilateral ovariectomy OR >12 mo since LMP with no prior hysterectomy)	NA
+TCGA-BH-A204	BRCA	FEMALE	WHITE	Stage II	T2	Dead	80	NA	NA	NA	NA	Post (prior bilateral ovariectomy OR >12 mo since LMP with no prior hysterectomy)	NA
+TCGA-BH-A0B3	BRCA	FEMALE	WHITE	Stage II	T2	Alive	53	NA	NA	NA	3-negative	Post (prior bilateral ovariectomy OR >12 mo since LMP with no prior hysterectomy)	NA
+TCGA-A7-A13E	BRCA	FEMALE	WHITE	Stage II	T2	Alive	62	NA	NA	NA	Others	Post (prior bilateral ovariectomy OR >12 mo since LMP with no prior hysterectomy)	NA
+TCGA-BH-A0BM	BRCA	FEMALE	WHITE	Stage II	T2	Alive	54	NA	NA	NA	Others	Post (prior bilateral ovariectomy OR >12 mo since LMP with no prior hysterectomy)	NA
+TCGA-BH-A0BV	BRCA	FEMALE	WHITE	Stage II	T2	Alive	78	NA	NA	NA	Others	Post (prior bilateral ovariectomy OR >12 mo since LMP with no prior hysterectomy)	NA
+TCGA-BH-A0DH	BRCA	FEMALE	WHITE	Stage II	T2	Alive	63	NA	NA	NA	Others	Post (prior bilateral ovariectomy OR >12 mo since LMP with no prior hysterectomy)	NA
+TCGA-BH-A0DP	BRCA	FEMALE	WHITE	Stage II	T3	Alive	60	NA	NA	NA	Others	Post (prior bilateral ovariectomy OR >12 mo since LMP with no prior hysterectomy)	NA
+TCGA-BH-A0HK	BRCA	FEMALE	WHITE	Stage II	T2	Alive	81	NA	NA	NA	Others	Post (prior bilateral ovariectomy OR >12 mo since LMP with no prior hysterectomy)	NA
+TCGA-E2-A15K	BRCA	FEMALE	WHITE	Stage II	T2	Alive	58	NA	NA	NA	Others	Post (prior bilateral ovariectomy OR >12 mo since LMP with no prior hysterectomy)	NA
+TCGA-BH-A0B7	BRCA	FEMALE	WHITE	Stage II	T2	Alive	42	NA	NA	NA	Others	Pre (<6 months since LMP AND no prior bilateral ovariectomy AND not on estrogen replacement)	NA
+TCGA-BH-A0BJ	BRCA	FEMALE	WHITE	Stage II	T2	Alive	41	NA	NA	NA	Others	Pre (<6 months since LMP AND no prior bilateral ovariectomy AND not on estrogen replacement)	NA
+TCGA-BH-A0DQ	BRCA	FEMALE	WHITE	Stage II	T2	Alive	42	NA	NA	NA	Others	Pre (<6 months since LMP AND no prior bilateral ovariectomy AND not on estrogen replacement)	NA
+TCGA-BH-A0DZ	BRCA	FEMALE	WHITE	Stage II	T2	Alive	43	NA	NA	NA	Others	Pre (<6 months since LMP AND no prior bilateral ovariectomy AND not on estrogen replacement)	NA
+TCGA-E2-A153	BRCA	FEMALE	WHITE	Stage II	T2	Alive	51	NA	NA	NA	Others	Pre (<6 months since LMP AND no prior bilateral ovariectomy AND not on estrogen replacement)	NA
+TCGA-DD-A39W	LIHC	FEMALE	WHITE	Stage III	T3	Dead	29	NA	NA	No History of Primary Risk Factors	NA	NA	NA
+TCGA-DD-A3A5	LIHC	FEMALE	WHITE	Stage III	T3	Dead	66	NO	NA	No History of Primary Risk Factors	NA	NA	NA
+TCGA-BC-A10X	LIHC	FEMALE	WHITE	Stage III	T3a	Dead	52	YES	2	No History of Primary Risk Factors	NA	NA	NA
+TCGA-BC-A216	LIHC	FEMALE	WHITE	Stage III	T3	Alive	62	YES	2	No History of Primary Risk Factors	NA	NA	NA
+TCGA-DD-A3A4	LIHC	MALE	WHITE	Stage III	T3	Dead	37	YES	2	Other	NA	NA	NA
+TCGA-49-4490	LUAD	FEMALE	WHITE	Stage III	T3	Dead	45	NA	NA	NA	NA	NA	3
+TCGA-49-4512	LUAD	FEMALE	WHITE	Stage III	T2	Dead	69	NA	NA	NA	NA	NA	1
+TCGA-49-6745	LUAD	MALE	WHITE	Stage III	T2a	Alive	82	NA	NA	NA	NA	NA	4
+TCGA-49-6761	LUAD	FEMALE	WHITE	Stage III	T1	Alive	68	NA	NA	NA	NA	NA	4
+TCGA-50-5936	LUAD	MALE	WHITE	Stage III	T2	Dead	58	NA	NA	NA	NA	NA	NA
+TCGA-50-6595	LUAD	FEMALE	WHITE	Stage III	T2	Dead	74	NA	NA	NA	NA	NA	3
+TCGA-55-6970	LUAD	FEMALE	WHITE	Stage III	T2	Dead	67	NA	NA	NA	NA	NA	4
+TCGA-55-6981	LUAD	FEMALE	WHITE	Stage III	T1	Dead	53	NA	NA	NA	NA	NA	3
+TCGA-BH-A18L	BRCA	FEMALE	WHITE	Stage III	T3	Dead	50	NA	NA	NA	Others	NA	NA
+TCGA-BH-A18M	BRCA	FEMALE	WHITE	Stage III	T3	Dead	39	NA	NA	NA	Others	NA	NA
+TCGA-BH-A1EV	BRCA	FEMALE	WHITE	Stage III	T3	Dead	45	NA	NA	NA	Others	NA	NA
+TCGA-BH-A1FJ	BRCA	FEMALE	WHITE	Stage III	T3	Dead	66	NA	NA	NA	Others	NA	NA
+TCGA-BH-A1FM	BRCA	FEMALE	WHITE	Stage III	T2	Dead	44	NA	NA	NA	Others	NA	NA
+TCGA-BH-A0DV	BRCA	FEMALE	WHITE	Stage III	T2	Alive	54	NA	NA	NA	Others	Peri (6-12 months since last menstrual period)	NA
+TCGA-BH-A0BS	BRCA	FEMALE	WHITE	Stage III	T3	Alive	55	NA	NA	NA	Others	Post (prior bilateral ovariectomy OR >12 mo since LMP with no prior hysterectomy)	NA
+TCGA-BH-A0BZ	BRCA	FEMALE	WHITE	Stage III	T3	Alive	59	NA	NA	NA	Others	Post (prior bilateral ovariectomy OR >12 mo since LMP with no prior hysterectomy)	NA
+TCGA-BH-A0H7	BRCA	FEMALE	WHITE	Stage III	T1c	Alive	65	NA	NA	NA	Others	Post (prior bilateral ovariectomy OR >12 mo since LMP with no prior hysterectomy)	NA
+TCGA-BH-A18U	BRCA	FEMALE	WHITE	Stage III	T2	Dead	72	NA	NA	NA	Others	Post (prior bilateral ovariectomy OR >12 mo since LMP with no prior hysterectomy)	NA
+TCGA-A7-A13F	BRCA	FEMALE	WHITE	Stage III	T3	Alive	44	NA	NA	NA	Others	Pre (<6 months since LMP AND no prior bilateral ovariectomy AND not on estrogen replacement)	NA
+TCGA-BH-A0AZ	BRCA	FEMALE	WHITE	Stage III	T3	Alive	47	NA	NA	NA	Others	Pre (<6 months since LMP AND no prior bilateral ovariectomy AND not on estrogen replacement)	NA
+TCGA-BH-A0B5	BRCA	FEMALE	WHITE	Stage III	T2	Alive	40	NA	NA	NA	Others	Pre (<6 months since LMP AND no prior bilateral ovariectomy AND not on estrogen replacement)	NA
+TCGA-50-5933	LUAD	MALE	WHITE	Stage III	T4	Dead	72	NA	NA	NA	NA	NA	NA
+TCGA-BH-A1F2	BRCA	FEMALE	WHITE	Stage III	T4b	Dead	53	NA	NA	NA	Others	NA	NA
+TCGA-BH-A1FR	BRCA	FEMALE	WHITE	Stage III	T4b	Dead	73	NA	NA	NA	Others	NA	NA
+TCGA-GI-A2C8	BRCA	FEMALE	WHITE	Stage III	T4b	Alive	63	NA	NA	NA	Others	NA	NA
+TCGA-BH-A1F8	BRCA	FEMALE	WHITE	Stage III	T4b	Dead	90	NA	NA	NA	Others	Post (prior bilateral ovariectomy OR >12 mo since LMP with no prior hysterectomy)	NA
+TCGA-BH-A0BC	BRCA	FEMALE	WHITE	Stage III	T2	Alive	60	NA	NA	NA	Others	Post (prior bilateral ovariectomy OR >12 mo since LMP with no prior hysterectomy)	NA
+TCGA-BH-A0E0	BRCA	FEMALE	WHITE	Stage III	T3	Alive	38	NA	NA	NA	3-negative	Pre (<6 months since LMP AND no prior bilateral ovariectomy AND not on estrogen replacement)	NA
+TCGA-BH-A0BA	BRCA	FEMALE	WHITE	Stage III	T3	Alive	51	NA	NA	NA	Others	Pre (<6 months since LMP AND no prior bilateral ovariectomy AND not on estrogen replacement)	NA
+TCGA-BH-A18J	BRCA	FEMALE	WHITE	Stage IV	T4b	Dead	56	NA	NA	NA	Others	NA	NA
+TCGA-BH-A1FH	BRCA	FEMALE	WHITE	Stage IV	T2	Dead	47	NA	NA	NA	Others	NA	NA
+TCGA-BJ-A28R	THCA	FEMALE	WHITE	Stage I	T1	Alive	38	NA	NA	NA	NA	NA	NA
+TCGA-BJ-A28X	THCA	FEMALE	WHITE	Stage I	T3	Alive	32	NA	NA	NA	NA	NA	NA
+TCGA-BJ-A290	THCA	MALE	WHITE	Stage III	T3	Alive	70	NA	NA	NA	NA	NA	NA
+TCGA-BJ-A2N7	THCA	FEMALE	WHITE	Stage I	T3	Alive	30	NA	NA	NA	NA	NA	NA
+TCGA-BJ-A2N8	THCA	FEMALE	WHITE	Stage I	T1b	Alive	30	NA	NA	NA	NA	NA	NA
+TCGA-BJ-A2N9	THCA	FEMALE	WHITE	Stage I	T2	Alive	42	NA	NA	NA	NA	NA	NA
+TCGA-BJ-A2NA	THCA	MALE	WHITE	Stage III	T3	Alive	77	NA	NA	NA	NA	NA	NA
+TCGA-BJ-A3PR	THCA	FEMALE	WHITE	Stage I	T1a	Alive	69	NA	NA	NA	NA	NA	NA
+TCGA-BJ-A3PU	THCA	MALE	WHITE	Stage III	T3	Alive	52	NA	NA	NA	NA	NA	NA
+TCGA-DO-A1JZ	THCA	FEMALE	BLACK OR AFRICAN AMERICAN	Stage I	T2	Alive	23	NA	NA	NA	NA	NA	NA
+TCGA-EL-A3GZ	THCA	FEMALE	WHITE	Stage I	T1	Alive	34	NA	NA	NA	NA	NA	NA
+TCGA-EL-A3H1	THCA	FEMALE	BLACK OR AFRICAN AMERICAN	Stage I	T1	Dead	66	[Unknown]	[Unknown]	NA	NA	NA	NA
+TCGA-EL-A3H2	THCA	MALE	WHITE	Stage II	T2	Dead	58	NA	NA	NA	NA	NA	NA
+TCGA-EL-A3H7	THCA	FEMALE	WHITE	Stage I	T3	Alive	36	[Unknown]	[Unknown]	NA	NA	NA	NA
+TCGA-EL-A3MW	THCA	FEMALE	WHITE	Stage II	T2	Alive	55	NA	NA	NA	NA	NA	NA
+TCGA-EL-A3MX	THCA	FEMALE	WHITE	Stage IV	T4	Dead	66	NA	NA	NA	NA	NA	NA
+TCGA-EL-A3MY	THCA	MALE	WHITE	Stage IV	T4	Dead	81	NA	NA	NA	NA	NA	NA
+TCGA-EL-A3N2	THCA	FEMALE	WHITE	Stage I	T2	Alive	24	NA	NA	NA	NA	NA	NA
+TCGA-EL-A3N3	THCA	FEMALE	WHITE	Stage II	T3	Alive	53	NA	NA	NA	NA	NA	NA
+TCGA-EL-A3T0	THCA	FEMALE	WHITE	Stage III	T3	Alive	45	NA	NA	NA	NA	NA	NA
+TCGA-EL-A3T1	THCA	FEMALE	BLACK OR AFRICAN AMERICAN	Stage I	T2	Alive	38	NA	NA	NA	NA	NA	NA
+TCGA-EL-A3T2	THCA	FEMALE	WHITE	Stage III	T2	Alive	55	NA	NA	NA	NA	NA	NA
+TCGA-EL-A3T3	THCA	MALE	WHITE	Stage II	T2	Alive	63	NA	NA	NA	NA	NA	NA
+TCGA-EL-A3T6	THCA	FEMALE	WHITE	Stage I	T3	Alive	34	NA	NA	NA	NA	NA	NA
+TCGA-EL-A3T7	THCA	FEMALE	WHITE	Stage II	T2	Alive	47	NA	NA	NA	NA	NA	NA
+TCGA-EL-A3T8	THCA	MALE	ASIAN	Stage I	T2	Alive	36	NA	NA	NA	NA	NA	NA
+TCGA-EL-A3TA	THCA	MALE	WHITE	Stage I	T2	Alive	42	NA	NA	NA	NA	NA	NA
+TCGA-EL-A3TB	THCA	FEMALE	WHITE	Stage III	T3	Alive	47	NA	NA	NA	NA	NA	NA
+TCGA-EL-A3ZH	THCA	FEMALE	WHITE	Stage I	T3	Alive	42	NA	NA	NA	NA	NA	NA
+TCGA-EL-A3ZK	THCA	FEMALE	WHITE	Stage I	T2	Alive	41	NA	NA	NA	NA	NA	NA
+TCGA-EL-A3ZQ	THCA	FEMALE	WHITE	Stage II	T2	Alive	78	NA	NA	NA	NA	NA	NA
+TCGA-EL-A3ZR	THCA	FEMALE	WHITE	Stage II	T2	Alive	46	NA	NA	NA	NA	NA	NA
+TCGA-EL-A3ZT	THCA	MALE	WHITE	Stage I	T3	Alive	35	NA	NA	NA	NA	NA	NA
+TCGA-EM-A1CS	THCA	FEMALE	NA	Stage I	T1	Alive	55	NA	NA	NA	NA	NA	NA
+TCGA-EM-A1CT	THCA	MALE	NA	Stage IV	T1b	Alive	76	NA	NA	NA	NA	NA	NA
+TCGA-EM-A1CU	THCA	MALE	NA	Stage I	T3	Alive	31	NA	NA	NA	NA	NA	NA
+TCGA-EM-A1CV	THCA	FEMALE	NA	Stage I	T1	Alive	32	Sibling	Sibling	NA	NA	NA	NA
+TCGA-EM-A1CW	THCA	FEMALE	NA	Stage I	T3	Alive	39	NA	NA	NA	NA	NA	NA
+TCGA-EM-A1YC	THCA	FEMALE	NA	Stage III	T3	Alive	71	NA	NA	NA	NA	NA	NA
+TCGA-ET-A2N5	THCA	FEMALE	BLACK OR AFRICAN AMERICAN	Stage III	T3	Alive	46	Parent|Child	Parent|Child	NA	NA	NA	NA
+TCGA-ET-A3DP	THCA	FEMALE	BLACK OR AFRICAN AMERICAN	Stage I	T2	Alive	43	NA	NA	NA	NA	NA	NA
+TCGA-ET-A3DW	THCA	MALE	ASIAN	Stage III	T2	Alive	64	NA	NA	NA	NA	NA	NA
+TCGA-GE-A2C6	THCA	FEMALE	WHITE	Stage I	T2	Alive	33	NA	NA	NA	NA	NA	NA
+TCGA-H2-A2K9	THCA	MALE	WHITE	Stage I	T2	Alive	25	NA	NA	NA	NA	NA	NA
+TCGA-H2-A3RI	THCA	FEMALE	WHITE	Stage I	T3	Alive	29	NA	NA	NA	NA	NA	NA
+TCGA-KS-A41J	THCA	FEMALE	WHITE	Stage I	T2	Alive	28	NA	NA	NA	NA	NA	NA
+TCGA-CH-5761	PRAD	MALE	WHITE	NA	T3b	Alive	61	NA	NA	NA	NA	NA	NA
+TCGA-CH-5767	PRAD	MALE	WHITE	NA	T2c	Alive	66	NA	NA	NA	NA	NA	NA
+TCGA-CH-5768	PRAD	MALE	WHITE	NA	T3a	Alive	72	NA	NA	NA	NA	NA	NA
+TCGA-CH-5769	PRAD	MALE	WHITE	NA	T3b	Alive	48	NA	NA	NA	NA	NA	NA
+TCGA-EJ-7115	PRAD	MALE	WHITE	NA	T3a	Alive	65	NA	NA	NA	NA	NA	NA
+TCGA-EJ-7123	PRAD	MALE	WHITE	NA	T2c	Alive	59	NA	NA	NA	NA	NA	NA
+TCGA-EJ-7125	PRAD	MALE	WHITE	NA	T2c	Alive	44	NA	NA	NA	NA	NA	NA
+TCGA-EJ-7314	PRAD	MALE	WHITE	NA	T3b	Alive	62	NA	NA	NA	NA	NA	NA
+TCGA-EJ-7315	PRAD	MALE	WHITE	NA	T3a	Alive	68	NA	NA	NA	NA	NA	NA
+TCGA-EJ-7317	PRAD	MALE	WHITE	NA	T2c	Alive	71	NA	NA	NA	NA	NA	NA
+TCGA-EJ-7327	PRAD	MALE	WHITE	NA	T3b	Alive	61	NA	NA	NA	NA	NA	NA
+TCGA-EJ-7328	PRAD	MALE	WHITE	NA	T3a	Alive	70	NA	NA	NA	NA	NA	NA
+TCGA-EJ-7330	PRAD	MALE	WHITE	NA	T3a	Alive	68	NA	NA	NA	NA	NA	NA
+TCGA-EJ-7331	PRAD	MALE	WHITE	NA	T2c	Alive	64	NA	NA	NA	NA	NA	NA
+TCGA-EJ-7781	PRAD	MALE	WHITE	NA	T2c	Alive	65	NA	NA	NA	NA	NA	NA
+TCGA-EJ-7782	PRAD	MALE	BLACK OR AFRICAN AMERICAN	NA	T2c	Alive	71	NA	NA	NA	NA	NA	NA
+TCGA-EJ-7783	PRAD	MALE	WHITE	NA	T3a	Alive	70	NA	NA	NA	NA	NA	NA
+TCGA-EJ-7784	PRAD	MALE	WHITE	NA	T2c	Alive	63	NA	NA	NA	NA	NA	NA
+TCGA-EJ-7785	PRAD	MALE	WHITE	NA	T3a	Alive	54	NA	NA	NA	NA	NA	NA
+TCGA-EJ-7786	PRAD	MALE	WHITE	NA	T2c	Alive	62	NA	NA	NA	NA	NA	NA
+TCGA-EJ-7789	PRAD	MALE	BLACK OR AFRICAN AMERICAN	NA	T3a	Alive	66	NA	NA	NA	NA	NA	NA
+TCGA-EJ-7792	PRAD	MALE	WHITE	NA	T2c	Alive	53	NA	NA	NA	NA	NA	NA
+TCGA-EJ-7794	PRAD	MALE	WHITE	NA	T2c	Alive	67	NA	NA	NA	NA	NA	NA
+TCGA-G9-6333	PRAD	MALE	WHITE	NA	T2c	Alive	66	NA	NA	NA	NA	NA	NA
+TCGA-G9-6342	PRAD	MALE	WHITE	NA	T3a	Alive	61	NA	NA	NA	NA	NA	NA
+TCGA-G9-6348	PRAD	MALE	WHITE	NA	T2c	Alive	68	NA	NA	NA	NA	NA	NA
+TCGA-G9-6351	PRAD	MALE	WHITE	NA	T2c	Alive	51	NA	NA	NA	NA	NA	NA
+TCGA-G9-6356	PRAD	MALE	WHITE	NA	T3b	Alive	60	NA	NA	NA	NA	NA	NA
+TCGA-G9-6362	PRAD	MALE	WHITE	NA	T3a	Alive	57	NA	NA	NA	NA	NA	NA
+TCGA-G9-6363	PRAD	MALE	WHITE	NA	T4	Alive	64	NA	NA	NA	NA	NA	NA
+TCGA-G9-6365	PRAD	MALE	WHITE	NA	T4	Alive	71	NA	NA	NA	NA	NA	NA
+TCGA-G9-6384	PRAD	MALE	WHITE	NA	T3a	Alive	53	NA	NA	NA	NA	NA	NA
+TCGA-G9-6496	PRAD	MALE	WHITE	NA	T2c	Alive	61	NA	NA	NA	NA	NA	NA
+TCGA-G9-6499	PRAD	MALE	WHITE	NA	T3a	Alive	66	NA	NA	NA	NA	NA	NA
+TCGA-HC-7211	PRAD	MALE	WHITE	NA	T2c	Alive	62	NA	NA	NA	NA	NA	NA
+TCGA-HC-7737	PRAD	MALE	BLACK OR AFRICAN AMERICAN	NA	T2c	Alive	55	NA	NA	NA	NA	NA	NA
+TCGA-HC-7738	PRAD	MALE	WHITE	NA	T2c	Alive	58	NA	NA	NA	NA	NA	NA
+TCGA-HC-7740	PRAD	MALE	WHITE	NA	T2c	Alive	59	NA	NA	NA	NA	NA	NA
+TCGA-HC-7742	PRAD	MALE	WHITE	NA	T3a	Alive	58	NA	NA	NA	NA	NA	NA
+TCGA-HC-7745	PRAD	MALE	WHITE	NA	T3b	Alive	65	NA	NA	NA	NA	NA	NA
+TCGA-HC-7747	PRAD	MALE	WHITE	NA	T2c	Alive	52	NA	NA	NA	NA	NA	NA
+TCGA-HC-7752	PRAD	MALE	WHITE	NA	T2c	Alive	61	NA	NA	NA	NA	NA	NA
+TCGA-HC-7819	PRAD	MALE	WHITE	NA	T2c	Alive	53	NA	NA	NA	NA	NA	NA

@@ -160,17 +160,19 @@ function dotsInit(data){
         var geometry = new THREE.SphereBufferGeometry( 3, 32, 32 );
         var material = new THREE.MeshLambertMaterial( { color: new THREE.Color().setRGB( hexToRgb(realcolor).r / 255, hexToRgb(realcolor).g / 255, hexToRgb(realcolor).b / 255 ) } );
         var particle = new THREE.Mesh( geometry, material );
-        particle.position.x = data[i].pc1;
-        particle.position.z = data[i].pc2;
-        particle.position.y = data[i].pc3;
+        particle.position.x = data[i].PC1;
+        particle.position.z = data[i].PC2;
+        particle.position.y = data[i].PC3;
         particle.sampleID = data[i].sampleID;
         particle.group = data[i].group;
         particle.gender = data[i].gender;
         particle.stage = data[i].stage;
-        particle.pc1 = format(data[i].pc1);
-        particle.pc2 = format(data[i].pc2);
-        particle.pc3 = format(data[i].pc3);
+        particle.url = data[i].url;
+        particle.PC1 = format(data[i].PC1);
+        particle.PC2 = format(data[i].PC2);
+        particle.PC3 = format(data[i].PC3);
         dots.add( particle );
+        console.log(particle);
     }
     pcObj.add(dots);
     
@@ -241,7 +243,7 @@ function onDocumentMouseClick( event ) {
     
     var option = document.createElement("option");
     option.text = INTERSECTED.sampleID;
-    option.value = INTERSECTED.info;
+    option.value = INTERSECTED.url;
     var select = document.getElementById("selected-sample");
     select.appendChild(option);
     
