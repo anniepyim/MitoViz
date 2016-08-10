@@ -3,45 +3,37 @@ library(jsonlite)
 
 
 args = commandArgs(trailingOnly=TRUE)
+targetoutpath = "../data/PCA/"
 
 if (length(args)==0) {
   #stop("At least one argument must be supplied (input file).n", call.=FALSE)
-  filelist = c("TCGA-BH-A0B3.json","TCGA-BH-A0BM.json","TCGA-BH-A0E0.json","TCGA-BH-A0HK.json")
+  filelist = c("test/TCGA-BH-A0B3.json","test/TCGA-BH-A0BM.json","test/TCGA-BH-A0E0.json","test/TCGA-BH-A0HK.json")
 } else if (length(args)>=1) {
   filelist = args[1:length(args)]
 }
 
-targetoutpath = "data/PCA/"
+datalist = lapply(filelist,function(x){
+  test <- fromJSON(x)
+  test[1,"sampleID"]
+  })
 
-if (exists("merged")) rm(merged)
-if (exists("url")) rm(url)
 
-for (file in filelist){
+all <- read.table("all.txt", header=TRUE,sep="\t",check.names="FALSE")
+datalist <- unlist(datalist)
+data <- all[,c("gene","process",datalist)]
 
-  test <- fromJSON(file)
+
+url = do.call("rbind", lapply(filelist,function(x){
+  test <- fromJSON(x)
   sampleID <- test[1,"sampleID"]
-  
-  # if the merged dataset doesn't exist, create it
-  if (!exists("merged")){
-    merged <- test[,c("gene","process","log2")]
-    colnames(merged) <- c("gene","process",sampleID)
-    url <- c(sampleID,file)
-  }
-  
-  # if the merged dataset does exist, append to it
-  else if (exists("merged")){
-    test <- test[,c("gene","log2")]
-    colnames(test) <- c("gene",sampleID)
-    merged <- (merge(merged, test, by = 'gene'))
-    url <- rbind(url,c(sampleID,file))
-  }
-}
+  c(sampleID,x)
+}))
 
-colnames(url) <- c("sampleID","url")
-data <- merged[!duplicated(merged[1:2]),]
+
 clinical <- read.table("clinical-modified.txt",header=TRUE,sep="\t",check.names="FALSE")
 clin <- clinical[,c("sampleID","Cancer_type","Gender","Pathologic_stage")]
 colnames(clin) <- c("sampleID","group","gender","stage")
+colnames(url) <- c("sampleID","url")
 
 # PCA
 log2fold.all.mito <- data[,3:length(data)]
@@ -55,6 +47,7 @@ df<- merge(df,url,by="sampleID")
 df$PC1 <- as.numeric(as.character(df$PC1))
 df$PC2 <- as.numeric(as.character(df$PC2))
 df$PC3 <- as.numeric(as.character(df$PC3))
+
 dfjsonall <- toJSON(df)
 outputname <- paste(targetoutpath,"All Processes-pca.json", sep="")
 write(dfjsonall,outputname)
@@ -64,7 +57,7 @@ mitofunc <- unique(data[,"process"])
 for(i in 1:length(mitofunc)){
   subsetdata <- subset(data, process==mitofunc[i])[,3:length(data)]
   if (nrow(subsetdata) >= 3){
-    pca <- prcomp(t(subsetdata),scale.=TRUE, center=TRUE)
+    pca <- prcomp(t(subsetdata))
     sampleID <- rownames(pca$x[,1:3])
     sum <- cbind(sampleID, pca$x[,1:3])
     rownames(sum) <- NULL
@@ -93,3 +86,17 @@ for(i in 1:length(mitofunc)){
 #  outputname <- paste("test/",sampleID[1],".json", sep="")
 #  write(dfjson,outputname)
 #}
+
+#datalist = lapply(filelist,function(x){
+#  test <- fromJSON(x)
+#  sampleID <- test[1,"sampleID"]
+#  test <- test[,c("gene","log2")]
+#  test[,2] <- round(test[,2],3)
+#  colnames(test) <- c("gene",sampleID)
+#  test
+#})
+
+#merged = Reduce(function(x,y) {
+#  print("done")
+#  merge(x,y)
+#}, datalist)

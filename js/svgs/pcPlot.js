@@ -172,7 +172,6 @@ function dotsInit(data){
         particle.PC2 = format(data[i].PC2);
         particle.PC3 = format(data[i].PC3);
         dots.add( particle );
-        console.log(particle);
     }
     pcObj.add(dots);
     
@@ -236,16 +235,21 @@ function onDocumentMouseClick( event ) {
     mouse.x = ( ( event.clientX - rect.left ) / renderer.domElement.width ) * 2 - 1;
     mouse.y = - ( ( event.clientY - rect.top ) / renderer.domElement.height ) * 2 + 1;
 
-    //raycaster.setFromCamera( mouse, camera );
+    raycaster.setFromCamera( mouse, camera );
 
     var intersects = raycaster.intersectObjects( dots.children ); 
     INTERSECTED = intersects[ 0 ].object;
     
-    var option = document.createElement("option");
-    option.text = INTERSECTED.sampleID;
-    option.value = INTERSECTED.url;
-    var select = document.getElementById("selected-sample");
-    select.appendChild(option);
+    var dotvalue = INTERSECTED.url;
+    
+    if ($("#selected-sample option[value='"+dotvalue+"']").length === 0){    
+        var option = document.createElement("option");
+        option.text = INTERSECTED.sampleID;
+        option.value = INTERSECTED.url;
+        var select = document.getElementById("selected-sample");
+        select.appendChild(option);
+    }
+
     
       
 

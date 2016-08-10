@@ -54,7 +54,7 @@ PCBC.draw = function (indata,cat,svgname,titlename,panelname) {
 
         var BARsvg = d3.select(svgname)//= resp
             .append("svg")
-            .attr('class', 'canvas svg-content-responsive')
+            .attr('class', 'canvas svg-content-responsive pcbcchild')
             .attr('preserveAspectRatio', 'xMinYMin meet')
             .attr('viewBox', [0, 0, svgWidth, svgHeight].join(' '))
             .append("g")
@@ -72,7 +72,6 @@ PCBC.draw = function (indata,cat,svgname,titlename,panelname) {
                     PCdata.update(indata,cat);
                     changeBackground(panelname);
                     }
-                    //trigger PCdata.update, feed indata and cat
                 });
         
         d3.select(titlename)

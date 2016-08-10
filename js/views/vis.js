@@ -11,7 +11,6 @@ var pcPlot = require('../svgs/pcPlot.js');
 var PCdata = require('../svgs/pcdata.js');
 var PCBC = require('../svgs/pcbarchart.js');
 var parser = require('./parser.js');
-var parser2 = require('./parser2.js');
 //var exist = false;
 
 function hideLoading() {
@@ -40,34 +39,45 @@ function onSuccess(data,colorrange) {
     }
 }
 
-function onSuccess2(data){
-    
-    var prdata = PCdata.init(data);
-    pcPlot.init(prdata);
-    PCBC.draw(prdata,"cancer type","#groupbarchart","#grouptitle","grouppanel");
-    PCBC.draw(prdata,"gender","#genderbarchart","#gendertitle","genderpanel");
-    PCBC.draw(prdata,"stage","#stagebarchart","#stagetitle","stagepanel");
-    
-}
-
-function onSuccess3(data){
+function redrawPCA(data){
+    d3.selectAll(".pcbcchild").remove();
+    d3.select("#pcacanvas").remove();
     
     var cat;
-    var prdata = PCdata.init(data);
     var element = document.getElementsByClassName('pcbc');
     for (var e in element) if (element.hasOwnProperty(e)){
-        console.log(element[e].style.background);
         if (element[e].style.background=="rgb(179, 204, 255)") {
             cat = (element[e].id == "grouppanel") ? 'cancer type' : (element[e].id == "genderpanel") ? 'gender' : 'stage';
         }
     }
-    PCdata.update(prdata,cat);
+    
+    var prdata = PCdata.init(data,cat);
+    pcPlot.init(prdata);
+    PCBC.draw(prdata,"cancer type","#groupbarchart","#grouptitle","grouppanel");
+    PCBC.draw(prdata,"gender","#genderbarchart","#gendertitle","genderpanel");
+    PCBC.draw(prdata,"stage","#stagebarchart","#stagetitle","stagepanel");
+}
+
+
+function onSuccess3(data){
+    
+    var cat;
+    var element = document.getElementsByClassName('pcbc');
+    for (var e in element) if (element.hasOwnProperty(e)){
+        if (element[e].style.background=="rgb(179, 204, 255)") {
+            cat = (element[e].id == "grouppanel") ? 'cancer type' : (element[e].id == "genderpanel") ? 'gender' : 'stage';
+        }
+    }
+    var prdata = PCdata.init(data,cat);
+    pcPlot.deletedots();
+    pcPlot.adddots(prdata);
     
 }
 
 d3.select('#spcompareButton').on('click', spcompareData);
 d3.select('#pcacompareButton').on('click', pcacompareData);
 d3.select('#filterbutton').on("click", pcaupdateData);
+$('#pcafolders').on('change',pcaupdatefolder);
 
 
 function spcompareData(){
@@ -85,52 +95,110 @@ function spcompareData(){
 
 function pcacompareData(){
     
-    exist = !!document.getElementById("genderbarchart");
-    var select = document.getElementById('selected-sample');
-    var url = "test.py?";
-    for (i = 0; i < select.options.length; i++) {
-       url = url+"file_list="+select.options[i].value;
-        if (i < select.options.length-1) url=url+"&";
-    }
-    console.log(url);
+    var tcga = true;
     
-    jQuery.ajax({
-        type: "POST",
-        url: url,
-        dataType: "json",
-        success: function (result) {
-            alert(result);
-            parser2.parse("data/PCA/All Processes-pca.json", onError, onSuccess2);
-        }
+    $("#selected-sample option").each(function(i){
+        if (!$(this).val().includes("TCGA")) tcga = false;
     });
     
+    if (tcga == false) onError("Sorry! Only TCGA samples are allowed")
+    else if ($('#selected-sample').find('option').length < 3) onError("Please add at least 3 samples")
+    else{
+        
+        var samples = document.getElementById('selected-sample');
     
+        for (var i = 0; i < samples.options.length; i++) { 
+            samples.options[i].selected = true; 
+        } 
+
+        jQuery.ajax({
+            url: "./R/test.py",  // or just test.py
+            data: $("#selected-sample").serialize(),
+            type: "POST",
+            dataType: "json",    
+            success: function (result) {
+                //console.log(result)
+                removeCriteria();
+                redrawPCA(result);
+            },
+            error: function(e){
+                console.log(e);
+            }
+        });
+
+        var targeturl = './data/PCA/';
+        var folderurl = '.'+targeturl;
+        var htmltext = "",
+        value = "",
+        text = "";
+
+        jQuery.ajax({
+            type: "POST",
+            url: "./php/getdirectory.php",
+            dataType: "json",
+            data: { folderurl : folderurl },
+          success: function(data){
+              $('#pcafolders').empty();
+              $.each(data, function(i,filename) {
+                value = targeturl+filename;
+                text = filename.split("-pca")[0];
+                htmltext = htmltext+'<option value=\"'+value+'\">'+text+'</option>';
+
+            });
+
+            $("#pcafolders").html(htmltext);
+            $('#pcafolders').selectpicker('refresh');
+            $('#pcafolders').find('[value="./data/PCA/All Processes-pca.json"]').prop('selected',true);
+            $('#pcafolders').selectpicker('refresh');
+          }
+        });
+    }
+
 }
 
 function pcaupdateData(){
-    parser2.parse('data/PCA/final.json', onError, onSuccess3);
+    
+    var process = $("#pcafolders option:selected").val();
+    
+    jQuery.ajax({
+        url: process,  // or just test.py
+        dataType: "json",    
+        success: function (result) {
+            onSuccess3(result);
+        },
+        error: function(e){
+            console.log(e);
+        }
+    });
+
+}
+
+function pcaupdatefolder(){
+    
+    var process = $("#pcafolders option:selected").val();
+    
+    jQuery.ajax({
+        url: process,  // or just test.py
+        dataType: "json",    
+        success: function (result) {
+            redrawPCA(result);
+        },
+        error: function(e){
+            console.log(e);
+        }
+    });
 }
 
 function removeCriteria(){
     
-    var index;
+    document.getElementById('criteriagroup').value = "";
+    document.getElementById('criteriagender').value = "";
+    document.getElementById('criteriastage').value = "";
     
-    criteriagroup = document.getElementById('criteriagroup').value.split(",");
-    criteriagender = document.getElementById('criteriagender').value.split(",");
-    criteriastage = document.getElementById('criteriastage').value.split(",");
-    
-    var index = criteriagroup.indexOf(this.textContent);
-    if (index > -1) criteriagroup.splice(index, 1);
-    var index = criteriagender.indexOf(this.textContent);
-    if (index > -1) criteriagender.splice(index, 1);
-    var index = criteriastage.indexOf(this.textContent);
-    if (index > -1) criteriastage.splice(index, 1);
-    
-    console.log(criteriagroup);
-    console.log(criteriagender);
-    console.log(criteriastage);
-    
-    this.parentNode.removeChild(this);
+    var buttons = document.getElementById('criteriabutton');
+    while (buttons.hasChildNodes()) {
+    buttons.removeChild(buttons.lastChild);
+    }
     
 }
 

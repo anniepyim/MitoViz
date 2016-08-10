@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    
+var flag = "SP";
 
 $("#navbar li").click(function(e){
     $("#navbar li").prop('class','');
@@ -12,6 +14,8 @@ $("#navbar li").click(function(e){
         document.getElementById("pca").style.display="";
         document.getElementById("pcbarchart").style.display="";
         document.getElementById("pcabdiv").style.display="";
+        flag = "PCA"
+        issueWarning();
         
     }
     
@@ -23,9 +27,10 @@ $("#navbar li").click(function(e){
         document.getElementById("pca").style.display="none";
         document.getElementById("pcbarchart").style.display="none";
         document.getElementById("pcabdiv").style.display="none";
+        flag = "SP";
+        issueWarning();
     }
 });
-
     
 $("#folders").on('change',function(){
    updateFolder("#folders");
@@ -44,14 +49,14 @@ function updateFolder(folder){
     if ($(folder+" option:selected").text() != "TCGA"){
         
         var targeturl = $(folder+" option:selected").val()
-        var folderurl = targeturl.split(".")[1];
+        var folderurl = '.'+targeturl;
         var htmltext = "",
             value = "",
             text = "";
 
         $.ajax({
             type: "POST",
-            url: "getdirectory.php",
+            url: "./php/getdirectory.php",
             dataType: "json",
             data: { folderurl : folderurl },
           success: function(data){
@@ -70,7 +75,10 @@ function updateFolder(folder){
                 $('#files').find('[value="'+value+'"]').prop('selected',true);
                 $('#files').selectpicker('refresh');
             });
-          }
+          },
+            error:function(e){
+                console.log(e);
+            }
         });
 
         $('#selectallcb').prop('checked', false);
@@ -132,8 +140,17 @@ $('#clear-all').click(function(){
 });
     
 function issueWarning(){
-    if ($('#selected-sample').find('option').length > 6)
+    
+    var tcga = true;
+    
+    $("#selected-sample option").each(function(i){
+        if (!$(this).val().includes("TCGA")) tcga = false;
+    });
+    
+    if ($('#selected-sample').find('option').length > 6 && flag == "SP")
         document.getElementById('warning').innerHTML="<font color=\"red\">No more than 6 samples!";
+    else if (tcga == false && flag == "PCA")
+        document.getElementById('warning').innerHTML="<font color=\"red\">Sorry! Only TCGA samples are allowed";
     else
         document.getElementById('warning').innerHTML="";
 }

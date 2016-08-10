@@ -1,6 +1,6 @@
 [
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "AARS2",
     "process": "Translation",
     "chr": 6,
@@ -13,7 +13,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ABCB7",
     "process": "Fe-S cluster biosynthesis",
     "chr": "X",
@@ -26,7 +26,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ACAA2",
     "process": "Fatty acid beta-oxidation",
     "chr": 18,
@@ -39,7 +39,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ACAD10",
     "process": "Fatty acid beta-oxidation",
     "chr": 12,
@@ -52,7 +52,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ACAD11",
     "process": "Fatty acid beta-oxidation",
     "chr": 3,
@@ -65,7 +65,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ACAD8",
     "process": "Fatty acid beta-oxidation",
     "chr": 11,
@@ -78,7 +78,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ACAD9",
     "process": "Electron transport chain",
     "chr": 3,
@@ -91,7 +91,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ACADL",
     "process": "Fatty acid beta-oxidation",
     "chr": 2,
@@ -104,7 +104,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ACADM",
     "process": "Fatty acid beta-oxidation",
     "chr": 1,
@@ -117,7 +117,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ACADSB",
     "process": "Fatty acid beta-oxidation",
     "chr": 10,
@@ -130,7 +130,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ACADS",
     "process": "Fatty acid beta-oxidation",
     "chr": 12,
@@ -143,7 +143,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ACADVL",
     "process": "Fatty acid beta-oxidation",
     "chr": 17,
@@ -156,7 +156,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ACO2",
     "process": "Tricarboxylic acid cycle",
     "chr": 22,
@@ -169,7 +169,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ACSBG1",
     "process": "Fatty acid beta-oxidation",
     "chr": 15,
@@ -182,7 +182,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ACSBG2",
     "process": "Fatty acid beta-oxidation",
     "chr": 19,
@@ -195,7 +195,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ACSL1",
     "process": "Fatty acid beta-oxidation",
     "chr": 4,
@@ -208,7 +208,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ACSL3",
     "process": "Fatty acid beta-oxidation",
     "chr": 2,
@@ -221,7 +221,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ACSL4",
     "process": "Fatty acid beta-oxidation",
     "chr": "X",
@@ -234,7 +234,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ACSL5",
     "process": "Fatty acid beta-oxidation",
     "chr": 10,
@@ -247,7 +247,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ACSL6",
     "process": "Fatty acid beta-oxidation",
     "chr": 5,
@@ -260,7 +260,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ACSM1",
     "process": "Fatty acid beta-oxidation",
     "chr": 16,
@@ -273,7 +273,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ACSM2A",
     "process": "Fatty acid beta-oxidation",
     "chr": 16,
@@ -286,7 +286,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ACSM2B",
     "process": "Fatty acid beta-oxidation",
     "chr": 16,
@@ -299,7 +299,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ACSM3",
     "process": "Fatty acid beta-oxidation",
     "chr": 16,
@@ -312,7 +312,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ACSM4",
     "process": "Fatty acid beta-oxidation",
     "chr": 12,
@@ -325,7 +325,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ACSM5",
     "process": "Fatty acid beta-oxidation",
     "chr": 16,
@@ -338,7 +338,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ACSS1",
     "process": "Fatty acid beta-oxidation",
     "chr": 20,
@@ -351,7 +351,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ACSS2",
     "process": "Fatty acid beta-oxidation",
     "chr": 20,
@@ -364,7 +364,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ACSS3",
     "process": "Fatty acid beta-oxidation",
     "chr": 12,
@@ -377,7 +377,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "AFG3L2",
     "process": "Mitochondrial Dynamics",
     "chr": 18,
@@ -390,7 +390,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "AIFM1",
     "process": "Apoptosis",
     "chr": "X",
@@ -403,7 +403,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "AK3",
     "process": "Replication & Transcription",
     "chr": 9,
@@ -416,7 +416,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ALAD",
     "process": "Heme Biosynthesis",
     "chr": 9,
@@ -429,7 +429,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ALAS1",
     "process": "Heme Biosynthesis",
     "chr": 3,
@@ -442,7 +442,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ALAS2",
     "process": "Heme Biosynthesis",
     "chr": "X",
@@ -455,7 +455,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ALDOA",
     "process": "Glycolysis",
     "chr": 16,
@@ -468,7 +468,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ALDOB",
     "process": "Glycolysis",
     "chr": 9,
@@ -481,7 +481,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ALDOC",
     "process": "Glycolysis",
     "chr": 17,
@@ -494,7 +494,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "AMBRA1",
     "process": "Mitochondrial Dynamics",
     "chr": 11,
@@ -507,7 +507,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ANP32A",
     "process": "Apoptosis",
     "chr": 15,
@@ -520,7 +520,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "APAF1",
     "process": "Apoptosis",
     "chr": 12,
@@ -533,7 +533,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "APEX1",
     "process": "Replication & Transcription",
     "chr": 14,
@@ -546,7 +546,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "APEX2",
     "process": "Replication & Transcription",
     "chr": "X",
@@ -559,7 +559,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ARG1",
     "process": "Urea Cycle",
     "chr": 6,
@@ -572,7 +572,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ARG2",
     "process": "Urea Cycle",
     "chr": 14,
@@ -585,7 +585,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ASL",
     "process": "Urea Cycle",
     "chr": 7,
@@ -598,7 +598,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ASS1",
     "process": "Urea Cycle",
     "chr": 9,
@@ -611,7 +611,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ATAD3A",
     "process": "Translation",
     "chr": 1,
@@ -624,7 +624,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ATAD3B",
     "process": "Translation",
     "chr": 1,
@@ -637,7 +637,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ATP5A1",
     "process": "Electron transport chain",
     "chr": 18,
@@ -650,7 +650,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ATP5B",
     "process": "Electron transport chain",
     "chr": 12,
@@ -663,7 +663,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ATP5C1",
     "process": "Electron transport chain",
     "chr": 10,
@@ -676,7 +676,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ATP5D",
     "process": "Electron transport chain",
     "chr": 19,
@@ -689,7 +689,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ATP5E",
     "process": "Electron transport chain",
     "chr": 20,
@@ -702,7 +702,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ATP5F1",
     "process": "Electron transport chain",
     "chr": 1,
@@ -715,7 +715,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ATP5G1",
     "process": "Electron transport chain",
     "chr": 17,
@@ -728,7 +728,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ATP5G2",
     "process": "Electron transport chain",
     "chr": 12,
@@ -741,7 +741,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ATP5G3",
     "process": "Electron transport chain",
     "chr": 2,
@@ -754,7 +754,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ATP5H",
     "process": "Electron transport chain",
     "chr": 17,
@@ -767,7 +767,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ATP5I",
     "process": "Electron transport chain",
     "chr": 4,
@@ -780,7 +780,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ATP5J2",
     "process": "Electron transport chain",
     "chr": 7,
@@ -793,7 +793,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ATP5J",
     "process": "Electron transport chain",
     "chr": 21,
@@ -806,7 +806,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ATP5L",
     "process": "Electron transport chain",
     "chr": 11,
@@ -819,7 +819,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ATP5O",
     "process": "Electron transport chain",
     "chr": 21,
@@ -832,7 +832,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ATPAF1",
     "process": "Electron transport chain",
     "chr": 1,
@@ -845,7 +845,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ATPAF2",
     "process": "Electron transport chain",
     "chr": 17,
@@ -858,7 +858,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ATPIF1",
     "process": "Electron transport chain",
     "chr": 1,
@@ -871,7 +871,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "BAD",
     "process": "Apoptosis",
     "chr": 11,
@@ -884,7 +884,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "BAK1",
     "process": "Apoptosis",
     "chr": 6,
@@ -897,7 +897,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "BAX",
     "process": "Apoptosis",
     "chr": 19,
@@ -910,7 +910,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "BBC3",
     "process": "Apoptosis",
     "chr": 19,
@@ -923,7 +923,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "BCKDHA",
     "process": "ROS defense",
     "chr": 19,
@@ -936,7 +936,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "BCKDHB",
     "process": "ROS defense",
     "chr": 6,
@@ -949,7 +949,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "BCL2L11",
     "process": "Apoptosis",
     "chr": 2,
@@ -962,7 +962,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "BCL2L1",
     "process": "Apoptosis",
     "chr": 20,
@@ -975,7 +975,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "BCL2",
     "process": "Apoptosis",
     "chr": 18,
@@ -988,7 +988,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "BCS1L",
     "process": "Electron transport chain",
     "chr": 2,
@@ -1001,7 +1001,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "BECN1",
     "process": "Mitochondrial Dynamics",
     "chr": 17,
@@ -1014,7 +1014,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "BID",
     "process": "Apoptosis",
     "chr": 22,
@@ -1027,7 +1027,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "BIK",
     "process": "Apoptosis",
     "chr": 22,
@@ -1040,7 +1040,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "BNIP3L",
     "process": "Mitochondrial Dynamics",
     "chr": 8,
@@ -1053,7 +1053,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "BNIP3",
     "process": "Mitochondrial Dynamics",
     "chr": 10,
@@ -1066,7 +1066,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "BOLA3",
     "process": "Fe-S cluster biosynthesis",
     "chr": 2,
@@ -1079,7 +1079,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "BRP44L",
     "process": "Pyruvate transfer",
     "chr": 6,
@@ -1092,7 +1092,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "BRP44",
     "process": "Pyruvate transfer",
     "chr": 1,
@@ -1105,7 +1105,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "C10orf129",
     "process": "Fatty acid beta-oxidation",
     "chr": 10,
@@ -1118,7 +1118,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "C10orf2",
     "process": "Replication & Transcription",
     "chr": 10,
@@ -1131,7 +1131,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "C1orf31",
     "process": "Electron transport chain",
     "chr": 1,
@@ -1144,7 +1144,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "C20orf7",
     "process": "Electron transport chain",
     "chr": 20,
@@ -1157,7 +1157,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "C22orf32",
     "process": "Calcium trafficking",
     "chr": 22,
@@ -1170,7 +1170,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "C2orf56",
     "process": "Electron transport chain",
     "chr": 2,
@@ -1183,7 +1183,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "C7orf44",
     "process": "Electron transport chain",
     "chr": 7,
@@ -1196,7 +1196,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "C8orf38",
     "process": "Electron transport chain",
     "chr": 8,
@@ -1209,7 +1209,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "CARS2",
     "process": "Translation",
     "chr": 13,
@@ -1222,7 +1222,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "CASP3",
     "process": "Apoptosis",
     "chr": 4,
@@ -1235,7 +1235,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "CASP7",
     "process": "Apoptosis",
     "chr": 10,
@@ -1248,7 +1248,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "CASP9",
     "process": "Apoptosis",
     "chr": 1,
@@ -1261,7 +1261,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "CCDC109B",
     "process": "Calcium trafficking",
     "chr": 4,
@@ -1274,7 +1274,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "CCDC56",
     "process": "Electron transport chain",
     "chr": 17,
@@ -1287,7 +1287,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "CCDC90A",
     "process": "Calcium trafficking",
     "chr": 6,
@@ -1300,7 +1300,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "CD36",
     "process": "Fatty acid beta-oxidation",
     "chr": 7,
@@ -1313,7 +1313,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "CDK1",
     "process": "Apoptosis",
     "chr": 10,
@@ -1326,7 +1326,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "CDK5RAP1",
     "process": "Replication & Transcription",
     "chr": 20,
@@ -1339,7 +1339,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "CDKAL1",
     "process": "Replication & Transcription",
     "chr": 6,
@@ -1352,7 +1352,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "CDS1",
     "process": "Cardiolipin biosynthesis",
     "chr": 4,
@@ -1365,7 +1365,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "CHCHD4",
     "process": "Import & Sorting",
     "chr": 3,
@@ -1378,7 +1378,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "CHCHD8",
     "process": "Electron transport chain",
     "chr": 11,
@@ -1391,7 +1391,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "CIAO1",
     "process": "Fe-S cluster biosynthesis",
     "chr": 2,
@@ -1404,7 +1404,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "CIAPIN1",
     "process": "Fe-S cluster biosynthesis",
     "chr": 16,
@@ -1417,7 +1417,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "CLPP",
     "process": "Translation",
     "chr": 19,
@@ -1430,7 +1430,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "CLPX",
     "process": "Translation",
     "chr": 15,
@@ -1443,7 +1443,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "CMPK2",
     "process": "Replication & Transcription",
     "chr": 2,
@@ -1456,7 +1456,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "COX10",
     "process": "Electron transport chain",
     "chr": 17,
@@ -1469,7 +1469,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "COX11",
     "process": "Electron transport chain",
     "chr": 17,
@@ -1482,7 +1482,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "COX15",
     "process": "Electron transport chain",
     "chr": 10,
@@ -1495,7 +1495,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "COX17",
     "process": "Electron transport chain",
     "chr": 3,
@@ -1508,7 +1508,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "COX18",
     "process": "Electron transport chain",
     "chr": 4,
@@ -1521,7 +1521,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "COX19",
     "process": "Electron transport chain",
     "chr": 7,
@@ -1534,7 +1534,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "COX4I1",
     "process": "Electron transport chain",
     "chr": 16,
@@ -1547,7 +1547,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "COX4I2",
     "process": "Electron transport chain",
     "chr": 20,
@@ -1560,7 +1560,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "COX5A",
     "process": "Electron transport chain",
     "chr": 15,
@@ -1573,7 +1573,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "COX5B",
     "process": "Electron transport chain",
     "chr": 2,
@@ -1586,7 +1586,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "COX6A1",
     "process": "Electron transport chain",
     "chr": 12,
@@ -1599,7 +1599,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "COX6A2",
     "process": "Electron transport chain",
     "chr": 16,
@@ -1612,7 +1612,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "COX6B1",
     "process": "Electron transport chain",
     "chr": 19,
@@ -1625,7 +1625,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "COX6B2",
     "process": "Electron transport chain",
     "chr": 19,
@@ -1638,7 +1638,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "COX6C",
     "process": "Electron transport chain",
     "chr": 8,
@@ -1651,7 +1651,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "COX7A1",
     "process": "Electron transport chain",
     "chr": 19,
@@ -1664,7 +1664,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "COX7A2",
     "process": "Electron transport chain",
     "chr": 6,
@@ -1677,7 +1677,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "COX7B2",
     "process": "Electron transport chain",
     "chr": 4,
@@ -1690,7 +1690,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "COX7B",
     "process": "Electron transport chain",
     "chr": "X",
@@ -1703,7 +1703,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "COX7C",
     "process": "Electron transport chain",
     "chr": 5,
@@ -1716,7 +1716,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "COX8A",
     "process": "Electron transport chain",
     "chr": 11,
@@ -1729,7 +1729,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "CPOX",
     "process": "Heme Biosynthesis",
     "chr": 3,
@@ -1742,7 +1742,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "CPS1",
     "process": "Urea Cycle",
     "chr": 2,
@@ -1755,7 +1755,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "CPT1A",
     "process": "Fatty acid beta-oxidation",
     "chr": 11,
@@ -1768,7 +1768,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "CPT1B",
     "process": "Fatty acid beta-oxidation",
     "chr": 22,
@@ -1781,7 +1781,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "CPT1C",
     "process": "Fatty acid beta-oxidation",
     "chr": 19,
@@ -1794,7 +1794,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "CPT2",
     "process": "Fatty acid beta-oxidation",
     "chr": 1,
@@ -1807,7 +1807,7 @@
     "mutation": "chr1 53675880 | Missense_Mutation | G>C"
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "CRAT",
     "process": "Fatty acid beta-oxidation",
     "chr": 9,
@@ -1820,7 +1820,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "CREB1",
     "process": "Replication & Transcription",
     "chr": 2,
@@ -1833,7 +1833,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "CRLS1",
     "process": "Cardiolipin biosynthesis",
     "chr": 20,
@@ -1846,7 +1846,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "CS",
     "process": "Tricarboxylic acid cycle",
     "chr": 12,
@@ -1859,7 +1859,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "CYC1",
     "process": "Electron transport chain",
     "chr": 8,
@@ -1872,7 +1872,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "CYCS",
     "process": "Apoptosis",
     "chr": 7,
@@ -1885,7 +1885,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "DAP3",
     "process": "Translation",
     "chr": 1,
@@ -1898,7 +1898,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "DARS2",
     "process": "Translation",
     "chr": 1,
@@ -1911,7 +1911,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "DDX28",
     "process": "Translation",
     "chr": 16,
@@ -1924,7 +1924,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "DECR1",
     "process": "Fatty acid beta-oxidation",
     "chr": 8,
@@ -1937,7 +1937,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "DHX30",
     "process": "Translation",
     "chr": 3,
@@ -1950,7 +1950,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "DIABLO",
     "process": "Apoptosis",
     "chr": 12,
@@ -1963,7 +1963,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "DLAT",
     "process": "Formation of Acetyl CoA",
     "chr": 11,
@@ -1976,7 +1976,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "DLD",
     "process": "Tricarboxylic acid cycle",
     "chr": 7,
@@ -1989,7 +1989,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "DLST",
     "process": "Tricarboxylic acid cycle",
     "chr": 14,
@@ -2002,7 +2002,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "DNAJC19",
     "process": "Import & Sorting",
     "chr": 3,
@@ -2015,7 +2015,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "DNM1L",
     "process": "Mitochondrial Dynamics",
     "chr": 12,
@@ -2028,7 +2028,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "DNM1",
     "process": "Apoptosis",
     "chr": 9,
@@ -2041,7 +2041,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "DUS2L",
     "process": "Replication & Transcription",
     "chr": 16,
@@ -2054,7 +2054,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "DYNLL1",
     "process": "Mitochondrial Dynamics",
     "chr": 12,
@@ -2067,7 +2067,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "EARS2",
     "process": "Translation",
     "chr": 16,
@@ -2080,7 +2080,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ECHS1",
     "process": "Fatty acid beta-oxidation",
     "chr": 10,
@@ -2093,7 +2093,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ECSIT",
     "process": "Electron transport chain",
     "chr": 19,
@@ -2106,7 +2106,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "EFHA1",
     "process": "Calcium trafficking",
     "chr": 13,
@@ -2119,7 +2119,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "EFHA2",
     "process": "Calcium trafficking",
     "chr": 8,
@@ -2132,7 +2132,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "EIF3M",
     "process": "Apoptosis",
     "chr": 11,
@@ -2145,7 +2145,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ELAC2",
     "process": "Replication & Transcription",
     "chr": 17,
@@ -2158,7 +2158,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ENDOG",
     "process": "Replication & Transcription",
     "chr": 9,
@@ -2171,7 +2171,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ENO1",
     "process": "Glycolysis",
     "chr": 1,
@@ -2184,7 +2184,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ENO2",
     "process": "Glycolysis",
     "chr": 12,
@@ -2197,7 +2197,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ENO3",
     "process": "Glycolysis",
     "chr": 17,
@@ -2210,7 +2210,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "FABP12",
     "process": "Fatty acid beta-oxidation",
     "chr": 8,
@@ -2223,7 +2223,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "FABP1",
     "process": "Fatty acid beta-oxidation",
     "chr": 2,
@@ -2236,7 +2236,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "FABP2",
     "process": "Fatty acid beta-oxidation",
     "chr": 4,
@@ -2249,7 +2249,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "FABP3",
     "process": "Fatty acid beta-oxidation",
     "chr": 1,
@@ -2262,7 +2262,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "FABP4",
     "process": "Fatty acid beta-oxidation",
     "chr": 8,
@@ -2275,7 +2275,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "FABP5",
     "process": "Fatty acid beta-oxidation",
     "chr": 8,
@@ -2288,7 +2288,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "FABP6",
     "process": "Fatty acid beta-oxidation",
     "chr": 5,
@@ -2301,7 +2301,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "FABP7",
     "process": "Fatty acid beta-oxidation",
     "chr": 6,
@@ -2314,7 +2314,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "FABP9",
     "process": "Fatty acid beta-oxidation",
     "chr": 8,
@@ -2327,7 +2327,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "FAM96A",
     "process": "Fe-S cluster biosynthesis",
     "chr": 15,
@@ -2340,7 +2340,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "FAM96B",
     "process": "Fe-S cluster biosynthesis",
     "chr": 16,
@@ -2353,7 +2353,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "FARS2",
     "process": "Translation",
     "chr": 6,
@@ -2366,7 +2366,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "FDX1L",
     "process": "Fe-S cluster biosynthesis",
     "chr": 19,
@@ -2379,7 +2379,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "FDX1",
     "process": "Fe-S cluster biosynthesis",
     "chr": 11,
@@ -2392,7 +2392,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "FDXR",
     "process": "Fe-S cluster biosynthesis",
     "chr": 17,
@@ -2405,7 +2405,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "FECH",
     "process": "Heme Biosynthesis",
     "chr": 18,
@@ -2418,7 +2418,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "FH",
     "process": "Tricarboxylic acid cycle",
     "chr": 1,
@@ -2431,7 +2431,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "FIS1",
     "process": "Mitochondrial Dynamics",
     "chr": 7,
@@ -2444,7 +2444,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "FOXRED1",
     "process": "Electron transport chain",
     "chr": 11,
@@ -2457,7 +2457,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "FTMT",
     "process": "Fe-S cluster biosynthesis",
     "chr": 5,
@@ -2470,7 +2470,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "FXN",
     "process": "Fe-S cluster biosynthesis",
     "chr": 9,
@@ -2483,7 +2483,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "GABARAP",
     "process": "Mitochondrial Dynamics",
     "chr": 17,
@@ -2496,7 +2496,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "GAPDHS",
     "process": "Glycolysis",
     "chr": 19,
@@ -2509,7 +2509,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "GAPDH",
     "process": "Glycolysis",
     "chr": 12,
@@ -2522,7 +2522,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "GARS",
     "process": "Translation",
     "chr": 7,
@@ -2535,7 +2535,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "GATC",
     "process": "Translation",
     "chr": 12,
@@ -2548,7 +2548,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "GCK",
     "process": "Glycolysis",
     "chr": 7,
@@ -2561,7 +2561,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "GCLC",
     "process": "ROS defense",
     "chr": 6,
@@ -2574,7 +2574,7 @@
     "mutation": "chr6 | 53372344 | C>G"
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "GCLM",
     "process": "ROS defense",
     "chr": 1,
@@ -2587,7 +2587,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "GDAP1",
     "process": "Mitochondrial Dynamics",
     "chr": 8,
@@ -2600,7 +2600,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "GFER",
     "process": "Import & Sorting",
     "chr": 16,
@@ -2613,7 +2613,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "GFER",
     "process": "Fe-S cluster biosynthesis",
     "chr": 16,
@@ -2626,7 +2626,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "GFM1",
     "process": "Translation",
     "chr": 3,
@@ -2639,7 +2639,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "GFM2",
     "process": "Translation",
     "chr": 5,
@@ -2652,7 +2652,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "GLRX2",
     "process": "ROS defense",
     "chr": 1,
@@ -2665,7 +2665,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "GLRX5",
     "process": "Fe-S cluster biosynthesis",
     "chr": 14,
@@ -2678,7 +2678,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "GOT2",
     "process": "Fatty acid beta-oxidation",
     "chr": 16,
@@ -2691,7 +2691,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "GPI",
     "process": "Glycolysis",
     "chr": 19,
@@ -2704,7 +2704,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "GPX1",
     "process": "ROS defense",
     "chr": 3,
@@ -2717,7 +2717,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "GPX4",
     "process": "ROS defense",
     "chr": 19,
@@ -2730,7 +2730,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "GRPEL1",
     "process": "Import & Sorting",
     "chr": 4,
@@ -2743,7 +2743,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "GRPEL2",
     "process": "Import & Sorting",
     "chr": 5,
@@ -2756,7 +2756,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "GSR",
     "process": "ROS defense",
     "chr": 8,
@@ -2769,7 +2769,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "GSS",
     "process": "ROS defense",
     "chr": 20,
@@ -2782,7 +2782,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "GSTA1",
     "process": "ROS defense",
     "chr": 6,
@@ -2795,7 +2795,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "GSTA2",
     "process": "ROS defense",
     "chr": 6,
@@ -2808,7 +2808,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "GSTA4",
     "process": "ROS defense",
     "chr": 6,
@@ -2821,7 +2821,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "GSTP1",
     "process": "ROS defense",
     "chr": 11,
@@ -2834,7 +2834,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "GTPBP3",
     "process": "Replication & Transcription",
     "chr": 19,
@@ -2847,7 +2847,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "HADHA",
     "process": "Fatty acid beta-oxidation",
     "chr": 2,
@@ -2860,7 +2860,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "HADHB",
     "process": "Fatty acid beta-oxidation",
     "chr": 2,
@@ -2873,7 +2873,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "HADH",
     "process": "Fatty acid beta-oxidation",
     "chr": 4,
@@ -2886,7 +2886,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "HARS2",
     "process": "Translation",
     "chr": 5,
@@ -2899,7 +2899,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "HCCS",
     "process": "Electron transport chain",
     "chr": "X",
@@ -2912,7 +2912,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "HK1",
     "process": "Glycolysis",
     "chr": 10,
@@ -2925,7 +2925,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "HK2",
     "process": "Glycolysis",
     "chr": 2,
@@ -2938,7 +2938,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "HK3",
     "process": "Glycolysis",
     "chr": 5,
@@ -2951,7 +2951,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "HMBS",
     "process": "Heme Biosynthesis",
     "chr": 11,
@@ -2964,7 +2964,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "HSCB",
     "process": "Fe-S cluster biosynthesis",
     "chr": 22,
@@ -2977,7 +2977,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "HSD17B10",
     "process": "Replication & Transcription",
     "chr": "X",
@@ -2990,7 +2990,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "HSPA9",
     "process": "Import & Sorting",
     "chr": 5,
@@ -3003,7 +3003,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "HTRA2",
     "process": "Apoptosis",
     "chr": 2,
@@ -3016,7 +3016,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "IARS2",
     "process": "Translation",
     "chr": 1,
@@ -3029,7 +3029,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "IDH1",
     "process": "Tricarboxylic acid cycle",
     "chr": 2,
@@ -3042,7 +3042,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "IDH2",
     "process": "Tricarboxylic acid cycle",
     "chr": 15,
@@ -3055,7 +3055,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "IDH3A",
     "process": "Tricarboxylic acid cycle",
     "chr": 15,
@@ -3068,7 +3068,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "IDH3B",
     "process": "Tricarboxylic acid cycle",
     "chr": 20,
@@ -3081,7 +3081,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "IDH3G",
     "process": "Tricarboxylic acid cycle",
     "chr": "X",
@@ -3094,7 +3094,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "IMMP1L",
     "process": "Import & Sorting",
     "chr": 11,
@@ -3107,7 +3107,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "IMMP2L",
     "process": "Import & Sorting",
     "chr": 7,
@@ -3120,7 +3120,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ISCA1",
     "process": "Fe-S cluster biosynthesis",
     "chr": 9,
@@ -3133,7 +3133,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ISCA2",
     "process": "Fe-S cluster biosynthesis",
     "chr": 14,
@@ -3146,7 +3146,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ISCU",
     "process": "Fe-S cluster biosynthesis",
     "chr": 12,
@@ -3159,7 +3159,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ITPR1",
     "process": "Calcium trafficking",
     "chr": 3,
@@ -3172,7 +3172,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ITPR2",
     "process": "Calcium trafficking",
     "chr": 12,
@@ -3185,7 +3185,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "ITPR3",
     "process": "Calcium trafficking",
     "chr": 6,
@@ -3198,7 +3198,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "KARS",
     "process": "Translation",
     "chr": 16,
@@ -3211,7 +3211,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "KIAA0391",
     "process": "Replication & Transcription",
     "chr": 14,
@@ -3224,7 +3224,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "KIF1B",
     "process": "Mitochondrial Dynamics",
     "chr": 1,
@@ -3237,7 +3237,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "KIF5B",
     "process": "Mitochondrial Dynamics",
     "chr": 10,
@@ -3250,7 +3250,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "LARS2",
     "process": "Translation",
     "chr": 3,
@@ -3263,7 +3263,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "LDHAL6B",
     "process": "Glycolysis",
     "chr": 15,
@@ -3276,7 +3276,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "LDHA",
     "process": "Glycolysis",
     "chr": 11,
@@ -3289,7 +3289,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "LDHB",
     "process": "Glycolysis",
     "chr": 12,
@@ -3302,7 +3302,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "LDHC",
     "process": "Glycolysis",
     "chr": 11,
@@ -3315,7 +3315,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "LETM1",
     "process": "Calcium trafficking",
     "chr": 4,
@@ -3328,7 +3328,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "LIG3",
     "process": "Replication & Transcription",
     "chr": 17,
@@ -3341,7 +3341,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "LONP1",
     "process": "Translation",
     "chr": 19,
@@ -3354,7 +3354,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "LRPPRC",
     "process": "Translation",
     "chr": 2,
@@ -3367,7 +3367,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "LYRM4",
     "process": "Fe-S cluster biosynthesis",
     "chr": 6,
@@ -3380,7 +3380,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MAP1LC3A",
     "process": "Mitochondrial Dynamics",
     "chr": 20,
@@ -3393,7 +3393,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MAPK1",
     "process": "Apoptosis",
     "chr": 22,
@@ -3406,7 +3406,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MAPK3",
     "process": "Apoptosis",
     "chr": 16,
@@ -3419,7 +3419,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MARCH5",
     "process": "Mitochondrial Dynamics",
     "chr": 10,
@@ -3432,7 +3432,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MARS2",
     "process": "Translation",
     "chr": 2,
@@ -3445,7 +3445,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MCL1",
     "process": "Apoptosis",
     "chr": 1,
@@ -3458,7 +3458,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MDH2",
     "process": "Tricarboxylic acid cycle",
     "chr": 7,
@@ -3471,7 +3471,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MFF",
     "process": "Mitochondrial Dynamics",
     "chr": 2,
@@ -3484,7 +3484,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MFN1",
     "process": "Mitochondrial Dynamics",
     "chr": 3,
@@ -3497,7 +3497,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MFN2",
     "process": "Mitochondrial Dynamics",
     "chr": 1,
@@ -3510,7 +3510,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MIPEP",
     "process": "Import & Sorting",
     "chr": 13,
@@ -3523,7 +3523,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MMS19",
     "process": "Fe-S cluster biosynthesis",
     "chr": 10,
@@ -3536,7 +3536,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MPV17L2",
     "process": "Translation",
     "chr": 19,
@@ -3549,7 +3549,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MPV17L",
     "process": "ROS defense",
     "chr": 16,
@@ -3562,7 +3562,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MPV17",
     "process": "ROS defense",
     "chr": 2,
@@ -3575,7 +3575,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL10",
     "process": "Translation",
     "chr": 17,
@@ -3588,7 +3588,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL11",
     "process": "Translation",
     "chr": 11,
@@ -3601,7 +3601,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL12",
     "process": "Translation",
     "chr": 17,
@@ -3614,7 +3614,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL13",
     "process": "Translation",
     "chr": 8,
@@ -3627,7 +3627,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL14",
     "process": "Translation",
     "chr": 6,
@@ -3640,7 +3640,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL15",
     "process": "Translation",
     "chr": 8,
@@ -3653,7 +3653,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL16",
     "process": "Translation",
     "chr": 11,
@@ -3666,7 +3666,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL17",
     "process": "Translation",
     "chr": 11,
@@ -3679,7 +3679,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL18",
     "process": "Translation",
     "chr": 6,
@@ -3692,7 +3692,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL19",
     "process": "Translation",
     "chr": 2,
@@ -3705,7 +3705,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL1",
     "process": "Translation",
     "chr": 4,
@@ -3718,7 +3718,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL20",
     "process": "Translation",
     "chr": 1,
@@ -3731,7 +3731,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL21",
     "process": "Translation",
     "chr": 11,
@@ -3744,7 +3744,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL22",
     "process": "Translation",
     "chr": 5,
@@ -3757,7 +3757,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL23",
     "process": "Translation",
     "chr": 11,
@@ -3770,7 +3770,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL24",
     "process": "Translation",
     "chr": 1,
@@ -3783,7 +3783,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL27",
     "process": "Translation",
     "chr": 17,
@@ -3796,7 +3796,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL28",
     "process": "Translation",
     "chr": 16,
@@ -3809,7 +3809,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL2",
     "process": "Translation",
     "chr": 6,
@@ -3822,7 +3822,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL30",
     "process": "Translation",
     "chr": 2,
@@ -3835,7 +3835,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL32",
     "process": "Translation",
     "chr": 7,
@@ -3848,7 +3848,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL33",
     "process": "Translation",
     "chr": 2,
@@ -3861,7 +3861,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL35",
     "process": "Translation",
     "chr": 2,
@@ -3874,7 +3874,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL36",
     "process": "Translation",
     "chr": 5,
@@ -3887,7 +3887,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL37",
     "process": "Translation",
     "chr": 1,
@@ -3900,7 +3900,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL38",
     "process": "Translation",
     "chr": 17,
@@ -3913,7 +3913,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL39",
     "process": "Translation",
     "chr": 21,
@@ -3926,7 +3926,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL3",
     "process": "Translation",
     "chr": 3,
@@ -3939,7 +3939,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL40",
     "process": "Translation",
     "chr": 22,
@@ -3952,7 +3952,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL41",
     "process": "Translation",
     "chr": 9,
@@ -3965,7 +3965,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL42",
     "process": "Translation",
     "chr": 12,
@@ -3978,7 +3978,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL43",
     "process": "Translation",
     "chr": 10,
@@ -3991,7 +3991,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL44",
     "process": "Translation",
     "chr": 2,
@@ -4004,7 +4004,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL45",
     "process": "Translation",
     "chr": 17,
@@ -4017,7 +4017,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL46",
     "process": "Translation",
     "chr": 15,
@@ -4030,7 +4030,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL47",
     "process": "Translation",
     "chr": 3,
@@ -4043,7 +4043,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL48",
     "process": "Translation",
     "chr": 11,
@@ -4056,7 +4056,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL49",
     "process": "Translation",
     "chr": 11,
@@ -4069,7 +4069,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL4",
     "process": "Translation",
     "chr": 19,
@@ -4082,7 +4082,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL50",
     "process": "Translation",
     "chr": 9,
@@ -4095,7 +4095,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL51",
     "process": "Translation",
     "chr": 12,
@@ -4108,7 +4108,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL52",
     "process": "Translation",
     "chr": 14,
@@ -4121,7 +4121,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL53",
     "process": "Translation",
     "chr": 2,
@@ -4134,7 +4134,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL54",
     "process": "Translation",
     "chr": 19,
@@ -4147,7 +4147,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL55",
     "process": "Translation",
     "chr": 1,
@@ -4160,7 +4160,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPL9",
     "process": "Translation",
     "chr": 1,
@@ -4173,7 +4173,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPS10",
     "process": "Translation",
     "chr": 6,
@@ -4186,7 +4186,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPS11",
     "process": "Translation",
     "chr": 15,
@@ -4199,7 +4199,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPS12",
     "process": "Translation",
     "chr": 19,
@@ -4212,7 +4212,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPS14",
     "process": "Translation",
     "chr": 1,
@@ -4225,7 +4225,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPS15",
     "process": "Translation",
     "chr": 1,
@@ -4238,7 +4238,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPS16",
     "process": "Translation",
     "chr": 10,
@@ -4251,7 +4251,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPS17",
     "process": "Translation",
     "chr": 7,
@@ -4264,7 +4264,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPS18A",
     "process": "Translation",
     "chr": 6,
@@ -4277,7 +4277,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPS18B",
     "process": "Translation",
     "chr": 6,
@@ -4290,7 +4290,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPS18C",
     "process": "Translation",
     "chr": 4,
@@ -4303,7 +4303,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPS21",
     "process": "Translation",
     "chr": 1,
@@ -4316,7 +4316,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPS22",
     "process": "Translation",
     "chr": 3,
@@ -4329,7 +4329,7 @@
     "mutation": "chr3 139074552 | Missense_Mutation | C>G"
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPS23",
     "process": "Translation",
     "chr": 17,
@@ -4342,7 +4342,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPS24",
     "process": "Translation",
     "chr": 7,
@@ -4355,7 +4355,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPS25",
     "process": "Translation",
     "chr": 3,
@@ -4368,7 +4368,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPS26",
     "process": "Translation",
     "chr": 20,
@@ -4381,7 +4381,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPS27",
     "process": "Translation",
     "chr": 5,
@@ -4394,7 +4394,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPS28",
     "process": "Translation",
     "chr": 8,
@@ -4407,7 +4407,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPS2",
     "process": "Translation",
     "chr": 9,
@@ -4420,7 +4420,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPS30",
     "process": "Translation",
     "chr": 5,
@@ -4433,7 +4433,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPS31",
     "process": "Translation",
     "chr": 13,
@@ -4446,7 +4446,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPS33",
     "process": "Translation",
     "chr": 7,
@@ -4459,7 +4459,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPS34",
     "process": "Translation",
     "chr": 16,
@@ -4472,7 +4472,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPS35",
     "process": "Translation",
     "chr": 12,
@@ -4485,7 +4485,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPS36",
     "process": "Translation",
     "chr": 5,
@@ -4498,7 +4498,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPS5",
     "process": "Translation",
     "chr": 2,
@@ -4511,7 +4511,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPS6",
     "process": "Translation",
     "chr": 21,
@@ -4524,7 +4524,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPS7",
     "process": "Translation",
     "chr": 17,
@@ -4537,7 +4537,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRPS9",
     "process": "Translation",
     "chr": 2,
@@ -4550,7 +4550,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MRRF",
     "process": "Translation",
     "chr": 9,
@@ -4563,7 +4563,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MSTO1",
     "process": "Mitochondrial Dynamics",
     "chr": 1,
@@ -4576,7 +4576,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MTFMT",
     "process": "Translation",
     "chr": 15,
@@ -4589,7 +4589,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MTIF2",
     "process": "Translation",
     "chr": 2,
@@ -4602,7 +4602,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MTIF3",
     "process": "Translation",
     "chr": 13,
@@ -4615,7 +4615,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MTO1",
     "process": "Replication & Transcription",
     "chr": 6,
@@ -4628,7 +4628,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MTPAP",
     "process": "Replication & Transcription",
     "chr": 10,
@@ -4641,7 +4641,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MTRF1L",
     "process": "Translation",
     "chr": 6,
@@ -4654,7 +4654,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MTRF1",
     "process": "Translation",
     "chr": 13,
@@ -4667,7 +4667,7 @@
     "mutation": "chr13 41834948 | Missense_Mutation | C>G"
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "MUTYH",
     "process": "Replication & Transcription",
     "chr": 1,
@@ -4680,7 +4680,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NARF",
     "process": "Fe-S cluster biosynthesis",
     "chr": 17,
@@ -4693,7 +4693,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NARS2",
     "process": "Translation",
     "chr": 11,
@@ -4706,7 +4706,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NDUFA10",
     "process": "Electron transport chain",
     "chr": 2,
@@ -4719,7 +4719,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NDUFA11",
     "process": "Electron transport chain",
     "chr": 19,
@@ -4732,7 +4732,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NDUFA12",
     "process": "Electron transport chain",
     "chr": 12,
@@ -4745,7 +4745,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NDUFA13",
     "process": "Electron transport chain",
     "chr": 19,
@@ -4758,7 +4758,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NDUFA1",
     "process": "Electron transport chain",
     "chr": "X",
@@ -4771,7 +4771,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NDUFA2",
     "process": "Electron transport chain",
     "chr": 5,
@@ -4784,7 +4784,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NDUFA3",
     "process": "Electron transport chain",
     "chr": 19,
@@ -4797,7 +4797,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NDUFA4",
     "process": "Electron transport chain",
     "chr": 7,
@@ -4810,7 +4810,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NDUFA5",
     "process": "Electron transport chain",
     "chr": 7,
@@ -4823,7 +4823,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NDUFA6",
     "process": "Electron transport chain",
     "chr": 22,
@@ -4836,7 +4836,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NDUFA7",
     "process": "Electron transport chain",
     "chr": 19,
@@ -4849,7 +4849,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NDUFA8",
     "process": "Electron transport chain",
     "chr": 9,
@@ -4862,7 +4862,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NDUFA9",
     "process": "Electron transport chain",
     "chr": 12,
@@ -4875,7 +4875,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NDUFAB1",
     "process": "Electron transport chain",
     "chr": 16,
@@ -4888,7 +4888,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NDUFAF1",
     "process": "Electron transport chain",
     "chr": 15,
@@ -4901,7 +4901,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NDUFAF2",
     "process": "Electron transport chain",
     "chr": 5,
@@ -4914,7 +4914,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NDUFAF3",
     "process": "Electron transport chain",
     "chr": 3,
@@ -4927,7 +4927,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NDUFAF4",
     "process": "Electron transport chain",
     "chr": 6,
@@ -4940,7 +4940,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NDUFB10",
     "process": "Electron transport chain",
     "chr": 16,
@@ -4953,7 +4953,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NDUFB11",
     "process": "Electron transport chain",
     "chr": "X",
@@ -4966,7 +4966,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NDUFB1",
     "process": "Electron transport chain",
     "chr": 14,
@@ -4979,7 +4979,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NDUFB2",
     "process": "Electron transport chain",
     "chr": 7,
@@ -4992,7 +4992,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NDUFB3",
     "process": "Electron transport chain",
     "chr": 2,
@@ -5005,7 +5005,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NDUFB4",
     "process": "Electron transport chain",
     "chr": 3,
@@ -5018,7 +5018,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NDUFB5",
     "process": "Electron transport chain",
     "chr": 3,
@@ -5031,7 +5031,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NDUFB6",
     "process": "Electron transport chain",
     "chr": 9,
@@ -5044,7 +5044,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NDUFB7",
     "process": "Electron transport chain",
     "chr": 19,
@@ -5057,7 +5057,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NDUFB8",
     "process": "Electron transport chain",
     "chr": 10,
@@ -5070,7 +5070,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NDUFB9",
     "process": "Electron transport chain",
     "chr": 8,
@@ -5083,7 +5083,7 @@
     "mutation": "chr8 125551447 | Missense_Mutation | G>T"
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NDUFC1",
     "process": "Electron transport chain",
     "chr": 4,
@@ -5096,7 +5096,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NDUFC2",
     "process": "Electron transport chain",
     "chr": 11,
@@ -5109,7 +5109,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NDUFS1",
     "process": "Electron transport chain",
     "chr": 2,
@@ -5122,7 +5122,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NDUFS2",
     "process": "Electron transport chain",
     "chr": 1,
@@ -5135,7 +5135,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NDUFS3",
     "process": "Electron transport chain",
     "chr": 11,
@@ -5148,7 +5148,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NDUFS4",
     "process": "Electron transport chain",
     "chr": 5,
@@ -5161,7 +5161,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NDUFS5",
     "process": "Electron transport chain",
     "chr": 1,
@@ -5174,7 +5174,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NDUFS6",
     "process": "Electron transport chain",
     "chr": 5,
@@ -5187,7 +5187,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NDUFS7",
     "process": "Electron transport chain",
     "chr": 19,
@@ -5200,7 +5200,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NDUFS8",
     "process": "Electron transport chain",
     "chr": 11,
@@ -5213,7 +5213,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NDUFV1",
     "process": "Electron transport chain",
     "chr": 11,
@@ -5226,7 +5226,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NDUFV2",
     "process": "Electron transport chain",
     "chr": 18,
@@ -5239,7 +5239,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NDUFV3",
     "process": "Electron transport chain",
     "chr": 21,
@@ -5252,7 +5252,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NFE2L2",
     "process": "Replication & Transcription",
     "chr": 2,
@@ -5265,7 +5265,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NFS1",
     "process": "Fe-S cluster biosynthesis",
     "chr": 20,
@@ -5278,7 +5278,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NFU1",
     "process": "Fe-S cluster biosynthesis",
     "chr": 2,
@@ -5291,7 +5291,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NME3",
     "process": "Replication & Transcription",
     "chr": 16,
@@ -5304,7 +5304,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NME4",
     "process": "Replication & Transcription",
     "chr": 16,
@@ -5317,7 +5317,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NME6",
     "process": "Replication & Transcription",
     "chr": 3,
@@ -5330,7 +5330,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NRF1",
     "process": "Replication & Transcription",
     "chr": 7,
@@ -5343,7 +5343,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NSUN2",
     "process": "Replication & Transcription",
     "chr": 5,
@@ -5356,7 +5356,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NTHL1",
     "process": "Replication & Transcription",
     "chr": 16,
@@ -5369,7 +5369,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NUBP1",
     "process": "Fe-S cluster biosynthesis",
     "chr": 16,
@@ -5382,7 +5382,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NUBP2",
     "process": "Fe-S cluster biosynthesis",
     "chr": 16,
@@ -5395,7 +5395,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "NUBPL",
     "process": "Electron transport chain",
     "chr": 14,
@@ -5408,7 +5408,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "OGDH",
     "process": "Tricarboxylic acid cycle",
     "chr": 7,
@@ -5421,7 +5421,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "OGG1",
     "process": "Replication & Transcription",
     "chr": 3,
@@ -5434,7 +5434,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "OMA1",
     "process": "Mitochondrial Dynamics",
     "chr": 1,
@@ -5447,7 +5447,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "OPA1",
     "process": "Mitochondrial Dynamics",
     "chr": 3,
@@ -5460,7 +5460,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "OPA3",
     "process": "Mitochondrial Dynamics",
     "chr": 19,
@@ -5473,7 +5473,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "OSGEPL1",
     "process": "Replication & Transcription",
     "chr": 2,
@@ -5486,7 +5486,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "OTC",
     "process": "Urea Cycle",
     "chr": "X",
@@ -5499,7 +5499,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "OXA1L",
     "process": "Translation",
     "chr": 14,
@@ -5512,7 +5512,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "PACS2",
     "process": "Calcium trafficking",
     "chr": 14,
@@ -5525,7 +5525,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "PARK2",
     "process": "Mitochondrial Dynamics",
     "chr": 6,
@@ -5538,7 +5538,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "PARL",
     "process": "Mitochondrial Dynamics",
     "chr": 3,
@@ -5551,7 +5551,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "PARS2",
     "process": "Translation",
     "chr": 1,
@@ -5564,7 +5564,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "PDHA1",
     "process": "Formation of Acetyl CoA",
     "chr": "X",
@@ -5577,7 +5577,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "PDHA2",
     "process": "Formation of Acetyl CoA",
     "chr": 4,
@@ -5590,7 +5590,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "PDHB",
     "process": "Formation of Acetyl CoA",
     "chr": 3,
@@ -5603,7 +5603,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "PDHX",
     "process": "Formation of Acetyl CoA",
     "chr": 11,
@@ -5616,7 +5616,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "PFKL",
     "process": "Glycolysis",
     "chr": 21,
@@ -5629,7 +5629,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "PFKM",
     "process": "Glycolysis",
     "chr": 12,
@@ -5642,7 +5642,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "PFKP",
     "process": "Glycolysis",
     "chr": 10,
@@ -5655,7 +5655,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "PGAM1",
     "process": "Glycolysis",
     "chr": 10,
@@ -5668,7 +5668,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "PGAM2",
     "process": "Glycolysis",
     "chr": 7,
@@ -5681,7 +5681,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "PGK1",
     "process": "Glycolysis",
     "chr": "X",
@@ -5694,7 +5694,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "PGK2",
     "process": "Glycolysis",
     "chr": 6,
@@ -5707,7 +5707,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "PGS1",
     "process": "Cardiolipin biosynthesis",
     "chr": 17,
@@ -5720,7 +5720,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "PHB2",
     "process": "Mitochondrial Dynamics",
     "chr": 12,
@@ -5733,7 +5733,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "PHB",
     "process": "Translation",
     "chr": 17,
@@ -5746,7 +5746,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "PINK1",
     "process": "Mitochondrial Dynamics",
     "chr": 1,
@@ -5759,7 +5759,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "PKIA",
     "process": "Mitochondrial Dynamics",
     "chr": 8,
@@ -5772,7 +5772,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "PKLR",
     "process": "Glycolysis",
     "chr": 1,
@@ -5785,7 +5785,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "PKM2",
     "process": "Glycolysis",
     "chr": 15,
@@ -5798,7 +5798,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "PLD6",
     "process": "Mitochondrial Dynamics",
     "chr": 17,
@@ -5811,7 +5811,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "PMAIP1",
     "process": "Apoptosis",
     "chr": 18,
@@ -5824,7 +5824,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "PML",
     "process": "Calcium trafficking",
     "chr": 15,
@@ -5837,7 +5837,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "PMPCA",
     "process": "Import & Sorting",
     "chr": 9,
@@ -5850,7 +5850,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "PMPCB",
     "process": "Import & Sorting",
     "chr": 7,
@@ -5863,7 +5863,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "POLG2",
     "process": "Replication & Transcription",
     "chr": 17,
@@ -5876,7 +5876,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "POLG",
     "process": "Replication & Transcription",
     "chr": 15,
@@ -5889,7 +5889,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "POLRMT",
     "process": "Replication & Transcription",
     "chr": 19,
@@ -5902,7 +5902,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "PPARGC1A",
     "process": "Replication & Transcription",
     "chr": 4,
@@ -5915,7 +5915,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "PPIA",
     "process": "Apoptosis",
     "chr": 7,
@@ -5928,7 +5928,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "PPIF",
     "process": "Apoptosis",
     "chr": 10,
@@ -5941,7 +5941,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "PPOX",
     "process": "Heme Biosynthesis",
     "chr": 1,
@@ -5954,7 +5954,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "PRDX3",
     "process": "ROS defense",
     "chr": 10,
@@ -5967,7 +5967,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "PTCD2",
     "process": "Electron transport chain",
     "chr": 5,
@@ -5980,7 +5980,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "PTCD3",
     "process": "Translation",
     "chr": 2,
@@ -5993,7 +5993,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "PTPMT1",
     "process": "Cardiolipin biosynthesis",
     "chr": 11,
@@ -6006,7 +6006,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "PUS1",
     "process": "Replication & Transcription",
     "chr": 12,
@@ -6019,7 +6019,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "PUS3",
     "process": "Replication & Transcription",
     "chr": 11,
@@ -6032,7 +6032,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "QRSL1",
     "process": "Translation",
     "chr": 6,
@@ -6045,7 +6045,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "QTRT1",
     "process": "Replication & Transcription",
     "chr": 19,
@@ -6058,7 +6058,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "QTRTD1",
     "process": "Replication & Transcription",
     "chr": 3,
@@ -6071,7 +6071,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "RARS2",
     "process": "Translation",
     "chr": 6,
@@ -6084,7 +6084,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "RHOT1",
     "process": "Mitochondrial Dynamics",
     "chr": 17,
@@ -6097,7 +6097,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "RHOT2",
     "process": "Mitochondrial Dynamics",
     "chr": 16,
@@ -6110,7 +6110,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "RMRP",
     "process": "Replication & Transcription",
     "chr": 9,
@@ -6123,7 +6123,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "RNASEH1",
     "process": "Replication & Transcription",
     "chr": 2,
@@ -6136,7 +6136,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "RNASEL",
     "process": "Translation",
     "chr": 1,
@@ -6149,7 +6149,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "RPUSD2",
     "process": "Replication & Transcription",
     "chr": 15,
@@ -6162,7 +6162,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "RPUSD4",
     "process": "Replication & Transcription",
     "chr": 11,
@@ -6175,7 +6175,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "RRM2B",
     "process": "Replication & Transcription",
     "chr": 8,
@@ -6188,7 +6188,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SAMM50",
     "process": "Import & Sorting",
     "chr": 22,
@@ -6201,7 +6201,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SARS2",
     "process": "Translation",
     "chr": 19,
@@ -6214,7 +6214,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SCO1",
     "process": "Electron transport chain",
     "chr": 17,
@@ -6227,7 +6227,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SCO2",
     "process": "Electron transport chain",
     "chr": 22,
@@ -6240,7 +6240,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SDHAF1",
     "process": "Electron transport chain",
     "chr": 19,
@@ -6253,7 +6253,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SDHAF2",
     "process": "Electron transport chain",
     "chr": 11,
@@ -6266,7 +6266,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SDHA",
     "process": "Tricarboxylic acid cycle",
     "chr": 5,
@@ -6279,7 +6279,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SDHB",
     "process": "Tricarboxylic acid cycle",
     "chr": 1,
@@ -6292,7 +6292,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SDHC",
     "process": "Tricarboxylic acid cycle",
     "chr": 1,
@@ -6305,7 +6305,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SDHD",
     "process": "Tricarboxylic acid cycle",
     "chr": 11,
@@ -6318,7 +6318,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SH3GLB1",
     "process": "Mitochondrial Dynamics",
     "chr": 1,
@@ -6331,7 +6331,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SHC1",
     "process": "ROS defense",
     "chr": 1,
@@ -6344,7 +6344,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SIGMAR1",
     "process": "Calcium trafficking",
     "chr": 9,
@@ -6357,7 +6357,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SLC24A6",
     "process": "Calcium trafficking",
     "chr": 12,
@@ -6370,7 +6370,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SLC25A19",
     "process": "Replication & Transcription",
     "chr": 17,
@@ -6383,7 +6383,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SLC25A1",
     "process": "ROS defense",
     "chr": 22,
@@ -6396,7 +6396,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SLC25A20",
     "process": "Fatty acid beta-oxidation",
     "chr": 3,
@@ -6409,7 +6409,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SLC25A28",
     "process": "Fe-S cluster biosynthesis",
     "chr": 10,
@@ -6422,7 +6422,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SLC25A33",
     "process": "Replication & Transcription",
     "chr": 1,
@@ -6435,7 +6435,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SLC25A37",
     "process": "Fe-S cluster biosynthesis",
     "chr": 8,
@@ -6448,7 +6448,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SLC25A3",
     "process": "Replication & Transcription",
     "chr": 12,
@@ -6461,7 +6461,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SLC25A4",
     "process": "Apoptosis",
     "chr": 4,
@@ -6474,7 +6474,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SLC25A5",
     "process": "Apoptosis",
     "chr": "X",
@@ -6487,7 +6487,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SLC25A6",
     "process": "Apoptosis",
     "chr": "X",
@@ -6500,7 +6500,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SLC27A1",
     "process": "Fatty acid beta-oxidation",
     "chr": 19,
@@ -6513,7 +6513,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SLC27A2",
     "process": "Fatty acid beta-oxidation",
     "chr": 15,
@@ -6526,7 +6526,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SLC27A3",
     "process": "Fatty acid beta-oxidation",
     "chr": 1,
@@ -6539,7 +6539,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SLC27A4",
     "process": "Fatty acid beta-oxidation",
     "chr": 9,
@@ -6552,7 +6552,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SLC27A5",
     "process": "Fatty acid beta-oxidation",
     "chr": 19,
@@ -6565,7 +6565,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SLC27A6",
     "process": "Fatty acid beta-oxidation",
     "chr": 5,
@@ -6578,7 +6578,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SLC29A1",
     "process": "Replication & Transcription",
     "chr": 6,
@@ -6591,7 +6591,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SLC2A1",
     "process": "Glycolysis",
     "chr": 1,
@@ -6604,7 +6604,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SLC2A2",
     "process": "Glycolysis",
     "chr": 3,
@@ -6617,7 +6617,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SLC2A3",
     "process": "Glycolysis",
     "chr": 12,
@@ -6630,7 +6630,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SLC2A4",
     "process": "Glycolysis",
     "chr": 17,
@@ -6643,7 +6643,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SLC2A5",
     "process": "Glycolysis",
     "chr": 1,
@@ -6656,7 +6656,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SOD1",
     "process": "ROS defense",
     "chr": 21,
@@ -6669,7 +6669,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SOD2",
     "process": "ROS defense",
     "chr": 6,
@@ -6682,7 +6682,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SPG7",
     "process": "Mitochondrial Dynamics",
     "chr": 16,
@@ -6695,7 +6695,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SQSTM1",
     "process": "Mitochondrial Dynamics",
     "chr": 5,
@@ -6708,7 +6708,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SSBP1",
     "process": "Replication & Transcription",
     "chr": 7,
@@ -6721,7 +6721,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "STOML2",
     "process": "Mitochondrial Dynamics",
     "chr": 9,
@@ -6734,7 +6734,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SUCLA2",
     "process": "Tricarboxylic acid cycle",
     "chr": 13,
@@ -6747,7 +6747,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SUCLG1",
     "process": "Tricarboxylic acid cycle",
     "chr": 2,
@@ -6760,7 +6760,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SUCLG2",
     "process": "Tricarboxylic acid cycle",
     "chr": 3,
@@ -6773,7 +6773,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SURF1",
     "process": "Electron transport chain",
     "chr": 9,
@@ -6786,7 +6786,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "SYBU",
     "process": "Mitochondrial Dynamics",
     "chr": 8,
@@ -6799,7 +6799,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TACO1",
     "process": "Translation",
     "chr": 17,
@@ -6812,7 +6812,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TARS2",
     "process": "Translation",
     "chr": 1,
@@ -6825,7 +6825,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TAZ",
     "process": "Cardiolipin biosynthesis",
     "chr": "X",
@@ -6838,7 +6838,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TCHP",
     "process": "Calcium trafficking",
     "chr": 12,
@@ -6851,7 +6851,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TERT",
     "process": "Replication & Transcription",
     "chr": 5,
@@ -6864,7 +6864,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TFAM",
     "process": "Replication & Transcription",
     "chr": 10,
@@ -6877,7 +6877,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TFB1M",
     "process": "Replication & Transcription",
     "chr": 6,
@@ -6890,7 +6890,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TFB2M",
     "process": "Replication & Transcription",
     "chr": 1,
@@ -6903,7 +6903,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TIMM10",
     "process": "Import & Sorting",
     "chr": 11,
@@ -6916,7 +6916,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TIMM13",
     "process": "Import & Sorting",
     "chr": 19,
@@ -6929,7 +6929,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TIMM17A",
     "process": "Import & Sorting",
     "chr": 1,
@@ -6942,7 +6942,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TIMM17B",
     "process": "Import & Sorting",
     "chr": "X",
@@ -6955,7 +6955,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TIMM22",
     "process": "Import & Sorting",
     "chr": 17,
@@ -6968,7 +6968,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TIMM44",
     "process": "Import & Sorting",
     "chr": 19,
@@ -6981,7 +6981,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TIMM50",
     "process": "Import & Sorting",
     "chr": 19,
@@ -6994,7 +6994,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TIMM8A",
     "process": "Import & Sorting",
     "chr": "X",
@@ -7007,7 +7007,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TIMM8B",
     "process": "Import & Sorting",
     "chr": 11,
@@ -7020,7 +7020,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TIMM9",
     "process": "Import & Sorting",
     "chr": 14,
@@ -7033,7 +7033,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TK2",
     "process": "Replication & Transcription",
     "chr": 16,
@@ -7046,7 +7046,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TMEM126B",
     "process": "Electron transport chain",
     "chr": 11,
@@ -7059,7 +7059,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TMEM70",
     "process": "Electron transport chain",
     "chr": 8,
@@ -7072,7 +7072,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TOMM20",
     "process": "Import & Sorting",
     "chr": 1,
@@ -7085,7 +7085,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TOMM22",
     "process": "Import & Sorting",
     "chr": 22,
@@ -7098,7 +7098,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TOMM40L",
     "process": "Import & Sorting",
     "chr": 1,
@@ -7111,7 +7111,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TOMM40",
     "process": "Import & Sorting",
     "chr": 19,
@@ -7124,7 +7124,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TOMM5",
     "process": "Import & Sorting",
     "chr": 9,
@@ -7137,7 +7137,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TOMM6",
     "process": "Import & Sorting",
     "chr": 6,
@@ -7150,7 +7150,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TOMM70A",
     "process": "Import & Sorting",
     "chr": 3,
@@ -7163,7 +7163,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TOMM7",
     "process": "Import & Sorting",
     "chr": 7,
@@ -7176,7 +7176,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TOP1MT",
     "process": "Replication & Transcription",
     "chr": 8,
@@ -7189,7 +7189,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TOP3A",
     "process": "Replication & Transcription",
     "chr": 17,
@@ -7202,7 +7202,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TP53",
     "process": "Apoptosis",
     "chr": 17,
@@ -7215,7 +7215,7 @@
     "mutation": "chr17 7579521 | Nonsense_Mutation | C>A"
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TPI1",
     "process": "Glycolysis",
     "chr": 12,
@@ -7228,7 +7228,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TRAK1",
     "process": "Mitochondrial Dynamics",
     "chr": 3,
@@ -7241,7 +7241,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TRAK2",
     "process": "Mitochondrial Dynamics",
     "chr": 2,
@@ -7254,7 +7254,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TRAP1",
     "process": "Mitochondrial Dynamics",
     "chr": 16,
@@ -7267,7 +7267,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TRIT1",
     "process": "Replication & Transcription",
     "chr": 1,
@@ -7280,7 +7280,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TRMT112",
     "process": "Replication & Transcription",
     "chr": 11,
@@ -7293,7 +7293,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TRMT11",
     "process": "Replication & Transcription",
     "chr": 6,
@@ -7306,7 +7306,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TRMT1",
     "process": "Replication & Transcription",
     "chr": 19,
@@ -7319,7 +7319,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TRMT2B",
     "process": "Replication & Transcription",
     "chr": "X",
@@ -7332,7 +7332,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TRMT5",
     "process": "Replication & Transcription",
     "chr": 14,
@@ -7345,7 +7345,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TRMT61B",
     "process": "Replication & Transcription",
     "chr": 2,
@@ -7358,7 +7358,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TRMT6",
     "process": "Replication & Transcription",
     "chr": 20,
@@ -7371,7 +7371,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TRMU",
     "process": "Replication & Transcription",
     "chr": 22,
@@ -7384,7 +7384,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TRNT1",
     "process": "Replication & Transcription",
     "chr": 3,
@@ -7397,7 +7397,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TRUB2",
     "process": "Replication & Transcription",
     "chr": 9,
@@ -7410,7 +7410,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TSFM",
     "process": "Translation",
     "chr": 12,
@@ -7423,7 +7423,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TTC19",
     "process": "Electron transport chain",
     "chr": 17,
@@ -7436,7 +7436,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TUFM",
     "process": "Translation",
     "chr": 16,
@@ -7449,7 +7449,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TXN2",
     "process": "ROS defense",
     "chr": 22,
@@ -7462,7 +7462,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "TXNRD2",
     "process": "ROS defense",
     "chr": 22,
@@ -7475,7 +7475,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "UNG",
     "process": "Replication & Transcription",
     "chr": 12,
@@ -7488,7 +7488,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "UQCC",
     "process": "Electron transport chain",
     "chr": 20,
@@ -7501,7 +7501,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "UQCR10",
     "process": "Electron transport chain",
     "chr": 22,
@@ -7514,7 +7514,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "UQCR11",
     "process": "Electron transport chain",
     "chr": 19,
@@ -7527,7 +7527,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "UQCRB",
     "process": "Electron transport chain",
     "chr": 8,
@@ -7540,7 +7540,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "UQCRC1",
     "process": "Electron transport chain",
     "chr": 3,
@@ -7553,7 +7553,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "UQCRC2",
     "process": "Electron transport chain",
     "chr": 16,
@@ -7566,7 +7566,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "UQCRFS1",
     "process": "Electron transport chain",
     "chr": 19,
@@ -7579,7 +7579,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "UQCRH",
     "process": "Electron transport chain",
     "chr": 1,
@@ -7592,7 +7592,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "UQCRQ",
     "process": "Electron transport chain",
     "chr": 5,
@@ -7605,7 +7605,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "UROD",
     "process": "Heme Biosynthesis",
     "chr": 1,
@@ -7618,7 +7618,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "UROS",
     "process": "Heme Biosynthesis",
     "chr": 10,
@@ -7631,7 +7631,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "VARS2",
     "process": "Translation",
     "chr": 6,
@@ -7644,7 +7644,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "VDAC1",
     "process": "Apoptosis",
     "chr": 5,
@@ -7657,7 +7657,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "VDAC2",
     "process": "Apoptosis",
     "chr": 10,
@@ -7670,7 +7670,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "VDAC3",
     "process": "Apoptosis",
     "chr": 8,
@@ -7683,7 +7683,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "WARS2",
     "process": "Translation",
     "chr": 1,
@@ -7696,7 +7696,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "XIAP",
     "process": "Apoptosis",
     "chr": "X",
@@ -7709,7 +7709,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "YARS2",
     "process": "Translation",
     "chr": 12,
@@ -7722,7 +7722,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "YME1L1",
     "process": "Mitochondrial Dynamics",
     "chr": 10,
@@ -7735,7 +7735,7 @@
     "mutation": ""
   },
   {
-    "sampleID": "3neg-A18V",
+    "sampleID": "TCGA-BH-A18V",
     "gene": "YRDC",
     "process": "Replication & Transcription",
     "chr": 1,

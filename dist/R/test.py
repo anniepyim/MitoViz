@@ -8,28 +8,30 @@ import json
 FNRE = re.compile("\S+\.json$")
 
 form = cgi.FieldStorage()
+#json_files = []
+#for nfile in form.keys():
+#   json_files.append(form.getvalue(nfile))
 json_files = form.getlist('file_list')
 
 # fname safety check
 
-for fn in json_files:
+for index, fn in enumerate(json_files):
     if not re.match(FNRE, fn):
         sys.exit(-1)
+    json_files[index] = "."+fn
 
 
-cmd = "/usr/local/bin/Rscript R/test.R "  + ' '.join(json_files)
+cmd = "/usr/local/bin/Rscript test.R "  + ' '.join(json_files)
 os.system(cmd)
 
-with open("data/PCA/All Processes-pca.json") as result:
+with open("../data/PCA/All Processes-pca.json") as result:
     #result = {'success':'true','message':'The Command Completed Successfully'};
     print 'Content-Type: application/json\n\n'
-#data =  json.load(result)
-    #print(data)
+    #print(json.load(result))
     print json.dumps(json.load(result))
 
 
-#print "Content-type: text/html\n"
-#print "<html>"
-#print "fds"
-#print "</html>"
-
+    #print "Content-type: text/html\n"
+    #print "<html>"
+    #print cmd
+    #print "</html>"

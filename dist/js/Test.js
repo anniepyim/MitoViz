@@ -13,7 +13,7 @@ require('d3-tip')(d3);
 require('underscore'); // bootstrap
 
 App = require('./js/main');
-},{"./js/main":2,"backbone":33,"d3":39,"d3-tip":38,"handlebars":69,"jquery":81,"underscore":86}],2:[function(require,module,exports){
+},{"./js/main":2,"backbone":32,"d3":38,"d3-tip":37,"handlebars":68,"jquery":80,"underscore":85}],2:[function(require,module,exports){
 var d3 = require('d3');
 
 //Public members
@@ -58,7 +58,7 @@ App.init = function(options){
 };
 
 module.exports = App;
-},{"./views/mainframe.js":9,"./views/mainjs.js":10,"./views/vis.js":14,"d3":39}],3:[function(require,module,exports){
+},{"./views/mainframe.js":9,"./views/mainjs.js":10,"./views/vis.js":13,"d3":38}],3:[function(require,module,exports){
 var d3 = require('d3');
 var colorbrewer = require('colorbrewer');
 var SP = require('./scatterplot.js');
@@ -164,7 +164,7 @@ BC.init = function (jsondata,colorrange) {
 };
 
 module.exports = BC;
-},{"./heatmap.js":4,"./scatterplot.js":8,"colorbrewer":37,"d3":39}],4:[function(require,module,exports){
+},{"./heatmap.js":4,"./scatterplot.js":8,"colorbrewer":36,"d3":38}],4:[function(require,module,exports){
 var d3 = require('d3');
 var colorbrewer = require('colorbrewer');
 
@@ -461,7 +461,7 @@ if (typeof define === "function" && define.amd) {
 } else {
     this.heatmap = heatmap;
 }
-},{"./scatterplot.js":8,"colorbrewer":37,"d3":39}],5:[function(require,module,exports){
+},{"./scatterplot.js":8,"colorbrewer":36,"d3":38}],5:[function(require,module,exports){
 var d3 = require('d3');
 var THREE = require ('three');
 var OrbitControls = require('three-orbit-controls')(THREE);
@@ -636,7 +636,6 @@ function dotsInit(data){
         particle.PC2 = format(data[i].PC2);
         particle.PC3 = format(data[i].PC3);
         dots.add( particle );
-        console.log(particle);
     }
     pcObj.add(dots);
     
@@ -700,16 +699,21 @@ function onDocumentMouseClick( event ) {
     mouse.x = ( ( event.clientX - rect.left ) / renderer.domElement.width ) * 2 - 1;
     mouse.y = - ( ( event.clientY - rect.top ) / renderer.domElement.height ) * 2 + 1;
 
-    //raycaster.setFromCamera( mouse, camera );
+    raycaster.setFromCamera( mouse, camera );
 
     var intersects = raycaster.intersectObjects( dots.children ); 
     INTERSECTED = intersects[ 0 ].object;
     
-    var option = document.createElement("option");
-    option.text = INTERSECTED.sampleID;
-    option.value = INTERSECTED.url;
-    var select = document.getElementById("selected-sample");
-    select.appendChild(option);
+    var dotvalue = INTERSECTED.url;
+    
+    if ($("#selected-sample option[value='"+dotvalue+"']").length === 0){    
+        var option = document.createElement("option");
+        option.text = INTERSECTED.sampleID;
+        option.value = INTERSECTED.url;
+        var select = document.getElementById("selected-sample");
+        select.appendChild(option);
+    }
+
     
       
 
@@ -791,7 +795,7 @@ if (typeof define === "function" && define.amd) {
 } else {
     this.pcPlot = pcPlot;
 }
-},{"../views/templates":13,"d3":39,"three":85,"three-orbit-controls":84}],6:[function(require,module,exports){
+},{"../views/templates":12,"d3":38,"three":84,"three-orbit-controls":83}],6:[function(require,module,exports){
 var d3 = require('d3');
 //var pcPlot = require('./pcPlot.js');
 var PCdata = require('./pcdata.js');
@@ -848,7 +852,7 @@ PCBC.draw = function (indata,cat,svgname,titlename,panelname) {
 
         var BARsvg = d3.select(svgname)//= resp
             .append("svg")
-            .attr('class', 'canvas svg-content-responsive')
+            .attr('class', 'canvas svg-content-responsive pcbcchild')
             .attr('preserveAspectRatio', 'xMinYMin meet')
             .attr('viewBox', [0, 0, svgWidth, svgHeight].join(' '))
             .append("g")
@@ -866,7 +870,6 @@ PCBC.draw = function (indata,cat,svgname,titlename,panelname) {
                     PCdata.update(indata,cat);
                     changeBackground(panelname);
                     }
-                    //trigger PCdata.update, feed indata and cat
                 });
         
         d3.select(titlename)
@@ -985,12 +988,12 @@ if (typeof define === "function" && define.amd) {
 } else {
     this.PCBC = PCBC;
 }
-},{"./pcdata.js":7,"d3":39}],7:[function(require,module,exports){
+},{"./pcdata.js":7,"d3":38}],7:[function(require,module,exports){
 var d3 = require('d3');
 var pcPlot = require('./pcPlot.js');
 
 var colorgroup = d3.scale.ordinal().range(["#ff004d","#ffff66","#a4ff52","#0067c6","#7d71e5"]),
-    colorstage = d3.scale.ordinal().range(["#a4ff52","#ffff66","#da5802","#ff004d","#a7a5a5"]),
+    colorstage = d3.scale.ordinal().range(["#a4ff52","#ffff66","#ff751a","#ff004d","#a7a5a5"]),
     colorgender = d3.scale.ordinal().range(["#ff0074","#52a4ff"]);
 
 var PCdata = function (obj) {
@@ -999,7 +1002,7 @@ var PCdata = function (obj) {
     this.PCdatawrapped = obj;
 };
 
-PCdata.init = function (indata) {
+PCdata.init = function (indata,cat) {
 
     var xmax = d3.max(indata, function (d) {return d.PC1;}),
         xmin = d3.min(indata, function (d) {return d.PC1;}),
@@ -1022,40 +1025,74 @@ PCdata.init = function (indata) {
                   .domain([zmin-zDom,zmax+zDom])
                   .range([-100,100]);
     
-        var prdata = indata.map(function(d){
-                return{
-                    sampleID: d.sampleID,
-                    PC1: xScale(d.PC1),
-                    PC2: zScale(d.PC2),
-                    PC3: yScale(d.PC3),
-                    group: d.group,
-                    gender: d.gender,
-                    stage: d.stage,
-                    url: d.url
-                };
-            });
+    var prdata = indata.map(function(d){
+            return{
+                sampleID: d.sampleID,
+                PC1: xScale(d.PC1),
+                PC2: zScale(d.PC2),
+                PC3: yScale(d.PC3),
+                group: d.group,
+                gender: d.gender,
+                stage: d.stage,
+                url: d.url
+            };
+        });
+
+    prdata.sort(function(a,b) { return d3.ascending(a.group, b.group);});
+
+    prdata.forEach(function (d) {
+            d.groupcolor = colorgroup(d.group);
+        });
+
+    prdata.sort(function(a,b) { return d3.ascending(a.gender, b.gender);});
+
+    prdata.forEach(function (d) {
+            d.gendercolor = colorgender(d.gender);
+        });
+
+    prdata.sort(function(a,b) { return d3.ascending(a.stage, b.stage);});
+
+    prdata.forEach(function (d) {
+            d.stagecolor = colorstage(d.stage);
+        });
+
+    var newdata = addCriteria(prdata,cat)
         
-        prdata.sort(function(a,b) { return d3.ascending(a.group, b.group);});
-        
-        prdata.forEach(function (d) {
-                d.color= colorgroup(d.group);
-                d.groupcolor = colorgroup(d.group);
-            });
-        
-        prdata.sort(function(a,b) { return d3.ascending(a.gender, b.gender);});
-        
-        prdata.forEach(function (d) {
-                d.gendercolor = colorgender(d.gender);
-            });
-        
-        prdata.sort(function(a,b) { return d3.ascending(a.stage, b.stage);});
-        
-        prdata.forEach(function (d) {
-                d.stagecolor = colorstage(d.stage);
-            });
-        
-    return prdata
+    return newdata
 };
+
+PCdata.update = function (prdata,cat){
+    
+    var newdata = addCriteria(prdata,cat);
+    pcPlot.deletedots();
+    pcPlot.adddots(newdata);
+}
+
+var addCriteria = function(prdata,cat){
+    
+    criteriagroup = document.getElementById('criteriagroup').value.split(",");
+    criteriagroup.pop();
+    criteriagender = document.getElementById('criteriagender').value.split(",");
+    criteriagender.pop();
+    criteriastage = document.getElementById('criteriastage').value.split(",");
+    criteriastage.pop();
+
+    var newdata=[]
+
+    if (criteriagroup.length == 0 && criteriagender.length == 0 && criteriastage.length == 0) newdata = prdata;
+    else{
+        prdata.forEach(function (d) {
+            if ((contains.call(criteriagroup,d.group) || criteriagroup.length == 0) && (contains.call(criteriagender,d.gender) || criteriagender.length == 0) && (contains.call(criteriastage,d.stage) || criteriastage.length == 0)) newdata.push(d);
+        });   
+    }
+    
+    newdata.forEach(function (d) {
+        d.color = (cat == "cancer type") ? d.groupcolor : (cat == "gender") ? d.gendercolor : d.stagecolor
+    });
+    
+    return newdata
+    
+}
 
 var contains = function(needle) {
     // Per spec, the way to identify NaN is that it is not equal to itself
@@ -1084,41 +1121,7 @@ var contains = function(needle) {
     return indexOf.call(this, needle) > -1;
 };
 
-PCdata.update = function(indata,cat){
-    
-    criteriagroup = document.getElementById('criteriagroup').value.split(",");
-    criteriagroup.pop();
-    criteriagender = document.getElementById('criteriagender').value.split(",");
-    criteriagender.pop();
-    criteriastage = document.getElementById('criteriastage').value.split(",");
-    criteriastage.pop();
-    
-    newdata=[]
-    
-    if (criteriagroup.length == 0 && criteriagender.length == 0 && criteriastage.length == 0) newdata = indata;
-    else{
-        indata.forEach(function (d) {
-            if ((contains.call(criteriagroup,d.group) || criteriagroup.length == 0) && (contains.call(criteriagender,d.gender) || criteriagender.length == 0) && (contains.call(criteriastage,d.stage) || criteriastage.length == 0)) newdata.push(d);
-        });   
-    }
-    
-    newdata.forEach(function (d) {
-        d.color = (cat == "cancer type") ? d.groupcolor : (cat == "gender") ? d.gendercolor : d.stagecolor
-    });
-    
-    pcPlot.deletedots();
-    pcPlot.adddots(newdata);
-    
-};
 
-PCdata.alert = function(){
-    alert("PCdata");
-};
-
-
-//PCBC.alert();
-
-//PCdata.alert();
 if (typeof define === "function" && define.amd) {
     define(PCdata);
 } else if (typeof module === "object" && module.exports) {
@@ -1126,7 +1129,7 @@ if (typeof define === "function" && define.amd) {
 } else {
     this.PCdata = PCdata;
 }
-},{"./pcPlot.js":5,"d3":39}],8:[function(require,module,exports){
+},{"./pcPlot.js":5,"d3":38}],8:[function(require,module,exports){
 var d3 = require('d3');
 var colorbrewer = require('colorbrewer');
 
@@ -1420,7 +1423,7 @@ if (typeof define === "function" && define.amd) {
 } else {
     this.SP = SP;
 }
-},{"../views/templates":13,"colorbrewer":37,"d3":39}],9:[function(require,module,exports){
+},{"../views/templates":12,"colorbrewer":36,"d3":38}],9:[function(require,module,exports){
 var templates = require('./templates');
 
 module.exports = Backbone.View.extend({
@@ -1433,8 +1436,10 @@ module.exports = Backbone.View.extend({
     },
 });
 
-},{"./templates":13}],10:[function(require,module,exports){
+},{"./templates":12}],10:[function(require,module,exports){
 $(document).ready(function(){
+    
+var flag = "SP";
 
 $("#navbar li").click(function(e){
     $("#navbar li").prop('class','');
@@ -1448,6 +1453,8 @@ $("#navbar li").click(function(e){
         document.getElementById("pca").style.display="";
         document.getElementById("pcbarchart").style.display="";
         document.getElementById("pcabdiv").style.display="";
+        flag = "PCA"
+        issueWarning();
         
     }
     
@@ -1459,9 +1466,10 @@ $("#navbar li").click(function(e){
         document.getElementById("pca").style.display="none";
         document.getElementById("pcbarchart").style.display="none";
         document.getElementById("pcabdiv").style.display="none";
+        flag = "SP";
+        issueWarning();
     }
 });
-
     
 $("#folders").on('change',function(){
    updateFolder("#folders");
@@ -1480,14 +1488,14 @@ function updateFolder(folder){
     if ($(folder+" option:selected").text() != "TCGA"){
         
         var targeturl = $(folder+" option:selected").val()
-        var folderurl = targeturl.split(".")[1];
+        var folderurl = '.'+targeturl;
         var htmltext = "",
             value = "",
             text = "";
 
         $.ajax({
             type: "POST",
-            url: "getdirectory.php",
+            url: "./php/getdirectory.php",
             dataType: "json",
             data: { folderurl : folderurl },
           success: function(data){
@@ -1506,7 +1514,10 @@ function updateFolder(folder){
                 $('#files').find('[value="'+value+'"]').prop('selected',true);
                 $('#files').selectpicker('refresh');
             });
-          }
+          },
+            error:function(e){
+                console.log(e);
+            }
         });
 
         $('#selectallcb').prop('checked', false);
@@ -1568,8 +1579,17 @@ $('#clear-all').click(function(){
 });
     
 function issueWarning(){
-    if ($('#selected-sample').find('option').length > 6)
+    
+    var tcga = true;
+    
+    $("#selected-sample option").each(function(i){
+        if (!$(this).val().includes("TCGA")) tcga = false;
+    });
+    
+    if ($('#selected-sample').find('option').length > 6 && flag == "SP")
         document.getElementById('warning').innerHTML="<font color=\"red\">No more than 6 samples!";
+    else if (tcga == false && flag == "PCA")
+        document.getElementById('warning').innerHTML="<font color=\"red\">Sorry! Only TCGA samples are allowed";
     else
         document.getElementById('warning').innerHTML="";
 }
@@ -1652,38 +1672,7 @@ module.exports = parser;
 
 
 
-},{"axios":16,"underscore":86}],12:[function(require,module,exports){
-var axios = require('axios');
-var _ = require('underscore');
-var d3 = require('d3');
-
-var colorgroup = d3.scale.ordinal().range(["#ff004d","#ffff66","#a4ff52","#0067c6","#7d71e5"]),
-    colorstage = d3.scale.ordinal().range(["#a4ff52","#ffff66","#da5802","#ff004d","#a7a5a5"]),
-    colorgender = d3.scale.ordinal().range(["#ff0074","#52a4ff"]);
-
-function parser2(){}
-   
-function parse(urls, errorcb, datacb){
-    
-    axios.get(urls)
-    .then(function(response){
-        datacb(response.data);
-        
-    })
-    .catch(function (res) {
-            errorcb(res);
-    });
-    
-    
-}
-
-parser2.parse = parse;
-
-module.exports = parser2;
-
-
-
-},{"axios":16,"d3":39,"underscore":86}],13:[function(require,module,exports){
+},{"axios":15,"underscore":85}],12:[function(require,module,exports){
 (function (global){
 var glob = ('undefined' === typeof window) ? global : window,
 
@@ -1692,7 +1681,7 @@ Handlebars = glob.Handlebars || require('handlebars');
 this["Templates"] = this["Templates"] || {};
 
 this["Templates"]["main"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<!-- Page Content -->        \n<div class=\"container main\">\n        <div id=\"#wrapUp\" class=\"row\">\n            \n        <div class=\"col-md-2\">\n        	<div class=\"row\">\n            	<div class=\"col-md-12 title\" style=\"margin-top:20px;\">\n	            Data Sets\n	            </div>\n	            <div class=\"col-md-12\" style=\"margin-top:10px;\">\n	            <select class=\"selectpicker\" id=\"folders\" data-style=\"btn-default\" title=\"Pick dataset\" data-width=\"175px\" >\n	                <option value='./data/TCGA'>TCGA</option>\n	                <option value='./data/aneuploidy/'>Aneuploidy</option>\n	                <option value='./data/viral/'>Viral</option>\n	                <option value='./data/trisomy/'>Trisomy</option>\n	                <option value='./data/user_uploads/json_files/'>User Uploads</option>\n	            </select> \n	            </div>\n\n	            <div class=\"col-md-12\" style=\"margin-top:10px;display:none\" id=\"subfolders-div\">\n	            <select class=\"selectpicker\" id=\"subfolders\" data-style=\"btn-default\" title=\"Pick Cancer type\" data-width=\"175px\" >\n	                <option value='./data/TCGA/BRCA/'>BRCA</option>\n	                <option value='./data/TCGA/LIHC/'>LIHC</option>\n	                <option value='./data/TCGA/LUAD/'>LUAD</option>\n	                <option value='./data/TCGA/PRAD/'>PRAD</option>\n	                <option value='./data/TCGA/THCA/'>THCA</option>\n	            </select> \n	            </div>\n	           \n	            <div class=\"col-md-12\" style=\"margin-top:10px;\">\n	            <select class=\"selectpicker\" MULTIPLE id=\"files\" data-style=\"btn-default\" title=\"Pick samples\" data-width=\"175px\" data-actions-box=\"true\" data-selected-text-format=\"static\">\n	            </select> \n	            </div>\n\n	            <div class=\"col-md-12\" style=\"margin-top:10px\">\n	            <select SIZE=\"6\" MULTIPLE id=\"selected-sample\" style=\"width: 175px;font-size: 14px\">\n	            </select>\n	            </div>\n	            \n	            <div class=\"col-md-12\" style=\"margin-top:10px;text-align:right\">\n	            <button id = \"delete-selected\" class=\"btn btn-xs btn-default\"><span class=\"glyphicon glyphicon-remove\" aria-hidden=\"true\"></span> Remove</button>\n	            <button id = \"clear-all\" class=\"btn btn-xs btn-danger\"><span class=\"glyphicon glyphicon-trash\" aria-hidden=\"true\"></span> Clear</button>\n	            </div>\n	            \n	            <div class=\"col-md-12\" id=\"warning\" style=\"margin-top:10px\"></div>\n	    \n	            <div class=\"col-md-12\" id=\"spbdiv\" style=\"margin-top:20px;text-align: center\">\n	            <button id = \"spcompareButton\" class=\"btn btn-success\">compare</button>\n	            </div>\n	            <div class=\"col-md-12\" id=\"pcabdiv\" style=\"margin-top:20px;text-align: center;display:none\">\n	            <button id = \"pcacompareButton\" class=\"btn btn-success\">Analyze</button>\n	            </div>\n            	<div class=\"col-md-12\"><hr></div>\n            </div>\n            <div class=\"row tip\" style=\"margin-top:20px;\"></div>\n        </div>\n        \n        <div class=\"col-md-10\">\n            <div id = \"nav_bar\" class=\"col-md-12\">\n                <ul class=\"nav nav-tabs\" id = \"navbar\" >\n                  <li class=\"active\"><a href=\"#\">Scatter plot</a></li>\n                  <li><a href=\"#\">PCA</a></li>\n                  <li><a href=\"#\">Don't click me</a></li>\n                </ul>\n            </div>\n 			<div id = \"svgs-all\" class=\"col-md-12\">\n                <div id=\"scatterplot\" class=\"col-md-9\"></div>\n                <div id=\"pca\" class=\"col-md-9\" style=\"display:none\">\n					\n				</div>\n                <div id=\"barchart\" class=\"col-md-3\"></div>\n                <div id=\"pcbarchart\" class=\"col-md-3\" style=\"display:none\">\n	                <div class=\"col-md-12 midtitle\" style=\"margin-top:20px;\">\n		            Show PCA by Processes\n		            </div>\n		            <div class=\"col-md-12\" style=\"margin-top:10px;\">\n		            <select class=\"selectpicker\" id=\"pcafolders\" data-style=\"btn-default\" title=\"Pick process\" data-width=\"175px\" >\n		                <option value='./data/user_uploads/json_files'>User Uploads</option>\n		            </select> \n		            </div>\n		            <div class=\"col-md-12\"><hr></div>\n		            <div class=\"col-md-12 midtitle\" style=\"margin-top:0px;margin-bottom:10px;\">\n		            Color samples by\n		            </div>\n		            <div id=\"pcbcsvg\" class=\"col-md-12\">\n		            	<div class=\"panel-group\">\n						  <div class=\"panel panel-default pcbc\" id=\"grouppanel\" style=\"background:#b3ccff\">\n						    <div class=\"minititle\" style=\"padding: 10px 10px;\" id=\"grouptitle\">\n						        <a data-toggle=\"collapse\" href=\"#collapse3\">Group</a>\n						    </div>\n						    <div id=\"collapse3\" class=\"panel-collapse collapse-in\">\n						      <div class=\"panel-body svg-container\" id=\"groupbarchart\" style=\"padding :0px 0px; font-size:20px\"></div>\n						    </div>\n						  </div>\n						  <div class=\"panel panel-default pcbc\" id=\"genderpanel\">\n						    <div class=\"minititle\" style=\"padding: 10px 10px;\" id=\"gendertitle\">\n						        <a data-toggle=\"collapse\" href=\"#collapse1\">Gender</a>\n						    </div>\n						    <div id=\"collapse1\" class=\"panel-collapse collapse\">\n						      <div class=\"panel-body svg-container\" id=\"genderbarchart\" style=\"padding :0px 0px; font-size:20px\"></div>\n						    </div>\n						  </div>\n						  <div class=\"panel panel-default pcbc\" id=\"stagepanel\">\n						    <div class=\"minititle\" style=\"padding: 10px 10px;\" id=\"stagetitle\">\n						        <a data-toggle=\"collapse\" href=\"#collapse2\">Stage</a>\n						    </div>\n						    <div id=\"collapse2\" class=\"panel-collapse collapse\">\n						      <div class=\"panel-body svg-container\" id=\"stagebarchart\" style=\"padding :0px 0px; font-size:20px\"></div>\n						    </div>\n						  </div>\n						</div>\n		            </div>\n		            <div class = \"col-md-12\" id=\"criteriabutton\"></div>\n		            <div class = \"col-md-12\" style=\"display:none\"><input type=\"text\" id=\"criteriagroup\"><input type=\"text\" id=\"criteriagender\"><input type=\"text\" id=\"criteriastage\"></div>\n		            <div class = \"col-md-12\" style=\"margin-top:20px;text-align: center\"><button id = \"filterbutton\" class=\"btn btn-success\">Filter</button>\n		            </div>\n                </div>\n                <div id=\"heatmap\" class=\"col-md-12\"></div>\n            </div>\n            \n        </div>\n        </div>\n        </div>";
+    return "<!-- Page Content -->        \n<div class=\"container main\">\n        <div id=\"#wrapUp\" class=\"row\">\n            \n        <div class=\"col-md-2\">\n        	<div class=\"row\">\n            	<div class=\"col-md-12 title\" style=\"margin-top:20px;\">\n	            Data Sets\n	            </div>\n	            <div class=\"col-md-12\" style=\"margin-top:10px;\">\n	          \n	            <select class=\"selectpicker\" id=\"folders\" data-style=\"btn-default\" title=\"Pick dataset\" data-width=\"175px\" >\n	                <option value='./data/TCGA'>TCGA</option>\n	                <option value='./data/aneuploidy/'>Aneuploidy</option>\n	                <option value='./data/viral/'>Viral</option>\n	                <option value='./data/trisomy/'>Trisomy</option>\n	                <option value='./data/user_uploads/json_files/'>User Uploads</option>\n	            </select>\n	            </div>\n\n	            <div class=\"col-md-12\" style=\"margin-top:10px;display:none\" id=\"subfolders-div\">\n	            <select class=\"selectpicker\" id=\"subfolders\" data-style=\"btn-default\" title=\"Pick Cancer type\" data-width=\"175px\" >\n	                <option value='./data/TCGA/BRCA/'>BRCA</option>\n	                <option value='./data/TCGA/LIHC/'>LIHC</option>\n	                <option value='./data/TCGA/LUAD/'>LUAD</option>\n	                <option value='./data/TCGA/PRAD/'>PRAD</option>\n	                <option value='./data/TCGA/THCA/'>THCA</option>\n	            </select>\n	            </div>\n\n	           	\n	            <div class=\"col-md-12\" style=\"margin-top:10px;\">\n	           	<select class=\"selectpicker\" MULTIPLE id=\"files\" data-style=\"btn-default\" title=\"Pick samples\" data-width=\"175px\" data-actions-box=\"true\" data-selected-text-format=\"static\">\n	            </select>\n	            </div>\n	      \n	            <div class=\"col-md-12\" style=\"margin-top:10px\">\n	            <form id=\"form1\">\n				<select name=\"file_list\" SIZE=\"6\" MULTIPLE id=\"selected-sample\" style=\"width: 175px;font-size: 14px\">\n	            </select>\n	           	</form>\n	             </div>\n	            \n	            <div class=\"col-md-12\" style=\"margin-top:10px;text-align:right\">\n	            <button id = \"delete-selected\" class=\"btn btn-xs btn-default\"><span class=\"glyphicon glyphicon-remove\" aria-hidden=\"true\"></span> Remove</button>\n	            <button id = \"clear-all\" class=\"btn btn-xs btn-danger\"><span class=\"glyphicon glyphicon-trash\" aria-hidden=\"true\"></span> Clear</button>\n	            </div>\n	            \n	            <div class=\"col-md-12\" id=\"warning\" style=\"margin-top:10px\"></div>\n	    \n	            <div class=\"col-md-12\" id=\"spbdiv\" style=\"margin-top:20px;text-align: center\">\n	            <button id = \"spcompareButton\" class=\"btn btn-success\">compare</button>\n	            </div>\n	            <div class=\"col-md-12\" id=\"pcabdiv\" style=\"margin-top:20px;text-align: center;display:none\">\n	            <button id = \"pcacompareButton\" class=\"btn btn-success\">Analyze</button>\n	            </div>\n            	<div class=\"col-md-12\"><hr></div>\n            </div>\n            <div class=\"row tip\" style=\"margin-top:20px;\"></div>\n        </div>\n        \n        <div class=\"col-md-10\">\n            <div id = \"nav_bar\" class=\"col-md-12\">\n                <ul class=\"nav nav-tabs\" id = \"navbar\" >\n                  <li class=\"active\"><a href=\"#\">Scatter plot</a></li>\n                  <li><a href=\"#\">PCA</a></li>\n                  <li><a href=\"#\">Don't click me</a></li>\n                </ul>\n            </div>\n 			<div id = \"svgs-all\" class=\"col-md-12\">\n                <div id=\"scatterplot\" class=\"col-md-9\"></div>\n                <div id=\"pca\" class=\"col-md-9\" style=\"display:none\">\n					\n				</div>\n                <div id=\"barchart\" class=\"col-md-3\"></div>\n                <div id=\"pcbarchart\" class=\"col-md-3\" style=\"display:none\">\n	                <div class=\"col-md-12 midtitle\" style=\"margin-top:20px;\">\n		            Show PCA by Processes\n		            </div>\n		            <div class=\"col-md-12\" style=\"margin-top:10px;\">\n		            <select class=\"selectpicker\" id=\"pcafolders\" data-style=\"btn-default\" title=\"Pick process\" data-width=\"175px\" >\n		                \n		            </select>\n		            </div>\n		            <div class=\"col-md-12\"><hr></div>\n		            <div class=\"col-md-12 midtitle\" style=\"margin-top:0px;margin-bottom:10px;\">\n		            Color samples by\n		            </div>\n		            <div id=\"pcbcsvg\" class=\"col-md-12\">\n		            	<div class=\"panel-group\">\n						  <div class=\"panel panel-default pcbc\" id=\"grouppanel\" style=\"background:#b3ccff\">\n						    <div class=\"minititle\" style=\"padding: 10px 10px;\" id=\"grouptitle\">\n						        <a data-toggle=\"collapse\" href=\"#collapse3\">Group</a>\n						    </div>\n						    <div id=\"collapse3\" class=\"panel-collapse collapse-in\">\n						      <div class=\"panel-body svg-container\" id=\"groupbarchart\" style=\"padding :0px 0px; font-size:20px\"></div>\n						    </div>\n						  </div>\n						  <div class=\"panel panel-default pcbc\" id=\"genderpanel\">\n						    <div class=\"minititle\" style=\"padding: 10px 10px;\" id=\"gendertitle\">\n						        <a data-toggle=\"collapse\" href=\"#collapse1\">Gender</a>\n						    </div>\n						    <div id=\"collapse1\" class=\"panel-collapse collapse\">\n						      <div class=\"panel-body svg-container\" id=\"genderbarchart\" style=\"padding :0px 0px; font-size:20px\"></div>\n						    </div>\n						  </div>\n						  <div class=\"panel panel-default pcbc\" id=\"stagepanel\">\n						    <div class=\"minititle\" style=\"padding: 10px 10px;\" id=\"stagetitle\">\n						        <a data-toggle=\"collapse\" href=\"#collapse2\">Stage</a>\n						    </div>\n						    <div id=\"collapse2\" class=\"panel-collapse collapse\">\n						      <div class=\"panel-body svg-container\" id=\"stagebarchart\" style=\"padding :0px 0px; font-size:20px\"></div>\n						    </div>\n						  </div>\n						</div>\n		            </div>\n		            <div class = \"col-md-12\" id=\"criteriabutton\"></div>\n		            <div class = \"col-md-12\" style=\"display:none\"><input type=\"text\" id=\"criteriagroup\"><input type=\"text\" id=\"criteriagender\"><input type=\"text\" id=\"criteriastage\"></div>\n		            <div class = \"col-md-12\" style=\"margin-top:20px;text-align: center\"><button id = \"filterbutton\" class=\"btn btn-success\">Update</button>\n		            </div>\n                </div>\n                <div id=\"heatmap\" class=\"col-md-12\"></div>\n            </div>\n            \n        </div>\n        </div>\n        </div>";
 },"useData":true});
 
             
@@ -1755,7 +1744,7 @@ this["Templates"]["pcatooltip"] = Handlebars.template({"compiler":[7,">= 4.0.0"]
 
 if (typeof exports === 'object' && exports) {module.exports = this["Templates"];}
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"handlebars":69}],14:[function(require,module,exports){
+},{"handlebars":68}],13:[function(require,module,exports){
 //Libs
 //var fetch = require('./js/fetch.js');
 var d3 = require('d3');
@@ -1769,7 +1758,6 @@ var pcPlot = require('../svgs/pcPlot.js');
 var PCdata = require('../svgs/pcdata.js');
 var PCBC = require('../svgs/pcbarchart.js');
 var parser = require('./parser.js');
-var parser2 = require('./parser2.js');
 //var exist = false;
 
 function hideLoading() {
@@ -1798,34 +1786,45 @@ function onSuccess(data,colorrange) {
     }
 }
 
-function onSuccess2(data){
-    
-    var prdata = PCdata.init(data);
-    pcPlot.init(prdata);
-    PCBC.draw(prdata,"cancer type","#groupbarchart","#grouptitle","grouppanel");
-    PCBC.draw(prdata,"gender","#genderbarchart","#gendertitle","genderpanel");
-    PCBC.draw(prdata,"stage","#stagebarchart","#stagetitle","stagepanel");
-    
-}
-
-function onSuccess3(data){
+function redrawPCA(data){
+    d3.selectAll(".pcbcchild").remove();
+    d3.select("#pcacanvas").remove();
     
     var cat;
-    var prdata = PCdata.init(data);
     var element = document.getElementsByClassName('pcbc');
     for (var e in element) if (element.hasOwnProperty(e)){
-        console.log(element[e].style.background);
         if (element[e].style.background=="rgb(179, 204, 255)") {
             cat = (element[e].id == "grouppanel") ? 'cancer type' : (element[e].id == "genderpanel") ? 'gender' : 'stage';
         }
     }
-    PCdata.update(prdata,cat);
+    
+    var prdata = PCdata.init(data,cat);
+    pcPlot.init(prdata);
+    PCBC.draw(prdata,"cancer type","#groupbarchart","#grouptitle","grouppanel");
+    PCBC.draw(prdata,"gender","#genderbarchart","#gendertitle","genderpanel");
+    PCBC.draw(prdata,"stage","#stagebarchart","#stagetitle","stagepanel");
+}
+
+
+function onSuccess3(data){
+    
+    var cat;
+    var element = document.getElementsByClassName('pcbc');
+    for (var e in element) if (element.hasOwnProperty(e)){
+        if (element[e].style.background=="rgb(179, 204, 255)") {
+            cat = (element[e].id == "grouppanel") ? 'cancer type' : (element[e].id == "genderpanel") ? 'gender' : 'stage';
+        }
+    }
+    var prdata = PCdata.init(data,cat);
+    pcPlot.deletedots();
+    pcPlot.adddots(prdata);
     
 }
 
 d3.select('#spcompareButton').on('click', spcompareData);
 d3.select('#pcacompareButton').on('click', pcacompareData);
 d3.select('#filterbutton').on("click", pcaupdateData);
+$('#pcafolders').on('change',pcaupdatefolder);
 
 
 function spcompareData(){
@@ -1843,59 +1842,117 @@ function spcompareData(){
 
 function pcacompareData(){
     
-    exist = !!document.getElementById("genderbarchart");
-    var select = document.getElementById('selected-sample');
-    var url = "test.py?";
-    for (i = 0; i < select.options.length; i++) {
-       url = url+"file_list="+select.options[i].value;
-        if (i < select.options.length-1) url=url+"&";
-    }
-    console.log(url);
+    var tcga = true;
     
-    jQuery.ajax({
-        type: "POST",
-        url: url,
-        dataType: "json",
-        success: function (result) {
-            alert(result);
-            parser2.parse("data/PCA/All Processes-pca.json", onError, onSuccess2);
-        }
+    $("#selected-sample option").each(function(i){
+        if (!$(this).val().includes("TCGA")) tcga = false;
     });
     
+    if (tcga == false) onError("Sorry! Only TCGA samples are allowed")
+    else if ($('#selected-sample').find('option').length < 3) onError("Please add at least 3 samples")
+    else{
+        
+        var samples = document.getElementById('selected-sample');
     
+        for (var i = 0; i < samples.options.length; i++) { 
+            samples.options[i].selected = true; 
+        } 
+
+        jQuery.ajax({
+            url: "./R/test.py",  // or just test.py
+            data: $("#selected-sample").serialize(),
+            type: "POST",
+            dataType: "json",    
+            success: function (result) {
+                //console.log(result)
+                removeCriteria();
+                redrawPCA(result);
+            },
+            error: function(e){
+                console.log(e);
+            }
+        });
+
+        var targeturl = './data/PCA/';
+        var folderurl = '.'+targeturl;
+        var htmltext = "",
+        value = "",
+        text = "";
+
+        jQuery.ajax({
+            type: "POST",
+            url: "./php/getdirectory.php",
+            dataType: "json",
+            data: { folderurl : folderurl },
+          success: function(data){
+              $('#pcafolders').empty();
+              $.each(data, function(i,filename) {
+                value = targeturl+filename;
+                text = filename.split("-pca")[0];
+                htmltext = htmltext+'<option value=\"'+value+'\">'+text+'</option>';
+
+            });
+
+            $("#pcafolders").html(htmltext);
+            $('#pcafolders').selectpicker('refresh');
+            $('#pcafolders').find('[value="./data/PCA/All Processes-pca.json"]').prop('selected',true);
+            $('#pcafolders').selectpicker('refresh');
+          }
+        });
+    }
+
 }
 
 function pcaupdateData(){
-    parser2.parse('data/PCA/final.json', onError, onSuccess3);
+    
+    var process = $("#pcafolders option:selected").val();
+    
+    jQuery.ajax({
+        url: process,  // or just test.py
+        dataType: "json",    
+        success: function (result) {
+            onSuccess3(result);
+        },
+        error: function(e){
+            console.log(e);
+        }
+    });
+
+}
+
+function pcaupdatefolder(){
+    
+    var process = $("#pcafolders option:selected").val();
+    
+    jQuery.ajax({
+        url: process,  // or just test.py
+        dataType: "json",    
+        success: function (result) {
+            redrawPCA(result);
+        },
+        error: function(e){
+            console.log(e);
+        }
+    });
 }
 
 function removeCriteria(){
     
-    var index;
+    document.getElementById('criteriagroup').value = "";
+    document.getElementById('criteriagender').value = "";
+    document.getElementById('criteriastage').value = "";
     
-    criteriagroup = document.getElementById('criteriagroup').value.split(",");
-    criteriagender = document.getElementById('criteriagender').value.split(",");
-    criteriastage = document.getElementById('criteriastage').value.split(",");
-    
-    var index = criteriagroup.indexOf(this.textContent);
-    if (index > -1) criteriagroup.splice(index, 1);
-    var index = criteriagender.indexOf(this.textContent);
-    if (index > -1) criteriagender.splice(index, 1);
-    var index = criteriastage.indexOf(this.textContent);
-    if (index > -1) criteriastage.splice(index, 1);
-    
-    console.log(criteriagroup);
-    console.log(criteriagender);
-    console.log(criteriastage);
-    
-    this.parentNode.removeChild(this);
+    var buttons = document.getElementById('criteriabutton');
+    while (buttons.hasChildNodes()) {
+    buttons.removeChild(buttons.lastChild);
+    }
     
 }
 
 var vis = function(){};
 
 module.exports = vis;
-},{"../svgs/barchart.js":3,"../svgs/heatmap.js":4,"../svgs/pcPlot.js":5,"../svgs/pcbarchart.js":6,"../svgs/pcdata.js":7,"../svgs/scatterplot.js":8,"./parser.js":11,"./parser2.js":12,"d3":39}],15:[function(require,module,exports){
+},{"../svgs/barchart.js":3,"../svgs/heatmap.js":4,"../svgs/pcPlot.js":5,"../svgs/pcbarchart.js":6,"../svgs/pcdata.js":7,"../svgs/scatterplot.js":8,"./parser.js":11,"d3":38}],14:[function(require,module,exports){
 (function (process,__filename){
 /** vim: et:ts=4:sw=4:sts=4
  * @license amdefine 1.0.0 Copyright (c) 2011-2015, The Dojo Foundation All Rights Reserved.
@@ -2200,9 +2257,9 @@ function amdefine(module, requireFn) {
 module.exports = amdefine;
 
 }).call(this,require('_process'),"/node_modules/amdefine/amdefine.js")
-},{"_process":83,"path":82}],16:[function(require,module,exports){
+},{"_process":82,"path":81}],15:[function(require,module,exports){
 module.exports = require('./lib/axios');
-},{"./lib/axios":18}],17:[function(require,module,exports){
+},{"./lib/axios":17}],16:[function(require,module,exports){
 'use strict';
 
 var utils = require('./../utils');
@@ -2334,7 +2391,7 @@ module.exports = function xhrAdapter(resolve, reject, config) {
   request.send(requestData);
 };
 
-},{"./../helpers/btoa":23,"./../helpers/buildURL":24,"./../helpers/cookies":26,"./../helpers/isURLSameOrigin":28,"./../helpers/parseHeaders":29,"./../helpers/transformData":31,"./../utils":32}],18:[function(require,module,exports){
+},{"./../helpers/btoa":22,"./../helpers/buildURL":23,"./../helpers/cookies":25,"./../helpers/isURLSameOrigin":27,"./../helpers/parseHeaders":28,"./../helpers/transformData":30,"./../utils":31}],17:[function(require,module,exports){
 'use strict';
 
 var defaults = require('./defaults');
@@ -2456,7 +2513,7 @@ utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
   axios[method] = bind(Axios.prototype[method], defaultInstance);
 });
 
-},{"./core/InterceptorManager":19,"./core/dispatchRequest":20,"./defaults":21,"./helpers/bind":22,"./helpers/combineURLs":25,"./helpers/isAbsoluteURL":27,"./helpers/spread":30,"./helpers/transformData":31,"./utils":32}],19:[function(require,module,exports){
+},{"./core/InterceptorManager":18,"./core/dispatchRequest":19,"./defaults":20,"./helpers/bind":21,"./helpers/combineURLs":24,"./helpers/isAbsoluteURL":26,"./helpers/spread":29,"./helpers/transformData":30,"./utils":31}],18:[function(require,module,exports){
 'use strict';
 
 var utils = require('./../utils');
@@ -2510,7 +2567,7 @@ InterceptorManager.prototype.forEach = function forEach(fn) {
 
 module.exports = InterceptorManager;
 
-},{"./../utils":32}],20:[function(require,module,exports){
+},{"./../utils":31}],19:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -2548,7 +2605,7 @@ module.exports = function dispatchRequest(config) {
 
 
 }).call(this,require('_process'))
-},{"../adapters/http":17,"../adapters/xhr":17,"_process":83}],21:[function(require,module,exports){
+},{"../adapters/http":16,"../adapters/xhr":16,"_process":82}],20:[function(require,module,exports){
 'use strict';
 
 var utils = require('./utils');
@@ -2613,7 +2670,7 @@ module.exports = {
   xsrfHeaderName: 'X-XSRF-TOKEN'
 };
 
-},{"./utils":32}],22:[function(require,module,exports){
+},{"./utils":31}],21:[function(require,module,exports){
 'use strict';
 
 module.exports = function bind(fn, thisArg) {
@@ -2626,7 +2683,7 @@ module.exports = function bind(fn, thisArg) {
   };
 };
 
-},{}],23:[function(require,module,exports){
+},{}],22:[function(require,module,exports){
 'use strict';
 
 // btoa polyfill for IE<10 courtesy https://github.com/davidchambers/Base64.js
@@ -2664,7 +2721,7 @@ function btoa(input) {
 
 module.exports = btoa;
 
-},{}],24:[function(require,module,exports){
+},{}],23:[function(require,module,exports){
 'use strict';
 
 var utils = require('./../utils');
@@ -2733,7 +2790,7 @@ module.exports = function buildURL(url, params, paramsSerializer) {
 };
 
 
-},{"./../utils":32}],25:[function(require,module,exports){
+},{"./../utils":31}],24:[function(require,module,exports){
 'use strict';
 
 /**
@@ -2747,7 +2804,7 @@ module.exports = function combineURLs(baseURL, relativeURL) {
   return baseURL.replace(/\/+$/, '') + '/' + relativeURL.replace(/^\/+/, '');
 };
 
-},{}],26:[function(require,module,exports){
+},{}],25:[function(require,module,exports){
 'use strict';
 
 var utils = require('./../utils');
@@ -2802,7 +2859,7 @@ module.exports = (
   })()
 );
 
-},{"./../utils":32}],27:[function(require,module,exports){
+},{"./../utils":31}],26:[function(require,module,exports){
 'use strict';
 
 /**
@@ -2818,7 +2875,7 @@ module.exports = function isAbsoluteURL(url) {
   return /^([a-z][a-z\d\+\-\.]*:)?\/\//i.test(url);
 };
 
-},{}],28:[function(require,module,exports){
+},{}],27:[function(require,module,exports){
 'use strict';
 
 var utils = require('./../utils');
@@ -2888,7 +2945,7 @@ module.exports = (
   })()
 );
 
-},{"./../utils":32}],29:[function(require,module,exports){
+},{"./../utils":31}],28:[function(require,module,exports){
 'use strict';
 
 var utils = require('./../utils');
@@ -2927,7 +2984,7 @@ module.exports = function parseHeaders(headers) {
   return parsed;
 };
 
-},{"./../utils":32}],30:[function(require,module,exports){
+},{"./../utils":31}],29:[function(require,module,exports){
 'use strict';
 
 /**
@@ -2956,7 +3013,7 @@ module.exports = function spread(callback) {
   };
 };
 
-},{}],31:[function(require,module,exports){
+},{}],30:[function(require,module,exports){
 'use strict';
 
 var utils = require('./../utils');
@@ -2978,7 +3035,7 @@ module.exports = function transformData(data, headers, fns) {
   return data;
 };
 
-},{"./../utils":32}],32:[function(require,module,exports){
+},{"./../utils":31}],31:[function(require,module,exports){
 'use strict';
 
 /*global toString:true*/
@@ -3224,7 +3281,7 @@ module.exports = {
   trim: trim
 };
 
-},{}],33:[function(require,module,exports){
+},{}],32:[function(require,module,exports){
 (function (global){
 //     Backbone.js 1.3.3
 
@@ -5148,7 +5205,7 @@ module.exports = {
 });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"jquery":81,"underscore":34}],34:[function(require,module,exports){
+},{"jquery":80,"underscore":33}],33:[function(require,module,exports){
 //     Underscore.js 1.8.3
 //     http://underscorejs.org
 //     (c) 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
@@ -6698,9 +6755,9 @@ module.exports = {
   }
 }.call(this));
 
-},{}],35:[function(require,module,exports){
+},{}],34:[function(require,module,exports){
 
-},{}],36:[function(require,module,exports){
+},{}],35:[function(require,module,exports){
 // This product includes color specifications and designs developed by Cynthia Brewer (http://colorbrewer.org/).
 // JavaScript specs as packaged in the D3 library (d3js.org). Please see license at http://colorbrewer.org/export/LICENSE.txt
 !function() {
@@ -7017,10 +7074,10 @@ if (typeof define === "function" && define.amd) {
 
 }();
 
-},{}],37:[function(require,module,exports){
+},{}],36:[function(require,module,exports){
 module.exports = require('./colorbrewer.js');
 
-},{"./colorbrewer.js":36}],38:[function(require,module,exports){
+},{"./colorbrewer.js":35}],37:[function(require,module,exports){
 // d3.tip
 // Copyright (c) 2013 Justin Palmer
 //
@@ -7326,7 +7383,7 @@ module.exports = require('./colorbrewer.js');
 
 }));
 
-},{}],39:[function(require,module,exports){
+},{}],38:[function(require,module,exports){
 !function() {
   var d3 = {
     version: "3.5.16"
@@ -16881,7 +16938,7 @@ module.exports = require('./colorbrewer.js');
   });
   if (typeof define === "function" && define.amd) this.d3 = d3, define(d3); else if (typeof module === "object" && module.exports) module.exports = d3; else this.d3 = d3;
 }();
-},{}],40:[function(require,module,exports){
+},{}],39:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -16948,7 +17005,7 @@ exports['default'] = inst;
 module.exports = exports['default'];
 
 
-},{"./handlebars.runtime":41,"./handlebars/compiler/ast":43,"./handlebars/compiler/base":44,"./handlebars/compiler/compiler":46,"./handlebars/compiler/javascript-compiler":48,"./handlebars/compiler/visitor":51,"./handlebars/no-conflict":65}],41:[function(require,module,exports){
+},{"./handlebars.runtime":40,"./handlebars/compiler/ast":42,"./handlebars/compiler/base":43,"./handlebars/compiler/compiler":45,"./handlebars/compiler/javascript-compiler":47,"./handlebars/compiler/visitor":50,"./handlebars/no-conflict":64}],40:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -17016,7 +17073,7 @@ exports['default'] = inst;
 module.exports = exports['default'];
 
 
-},{"./handlebars/base":42,"./handlebars/exception":55,"./handlebars/no-conflict":65,"./handlebars/runtime":66,"./handlebars/safe-string":67,"./handlebars/utils":68}],42:[function(require,module,exports){
+},{"./handlebars/base":41,"./handlebars/exception":54,"./handlebars/no-conflict":64,"./handlebars/runtime":65,"./handlebars/safe-string":66,"./handlebars/utils":67}],41:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -17122,7 +17179,7 @@ exports.createFrame = _utils.createFrame;
 exports.logger = _logger2['default'];
 
 
-},{"./decorators":53,"./exception":55,"./helpers":56,"./logger":64,"./utils":68}],43:[function(require,module,exports){
+},{"./decorators":52,"./exception":54,"./helpers":55,"./logger":63,"./utils":67}],42:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -17155,7 +17212,7 @@ exports['default'] = AST;
 module.exports = exports['default'];
 
 
-},{}],44:[function(require,module,exports){
+},{}],43:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -17205,7 +17262,7 @@ function parse(input, options) {
 }
 
 
-},{"../utils":68,"./helpers":47,"./parser":49,"./whitespace-control":52}],45:[function(require,module,exports){
+},{"../utils":67,"./helpers":46,"./parser":48,"./whitespace-control":51}],44:[function(require,module,exports){
 /* global define */
 'use strict';
 
@@ -17373,7 +17430,7 @@ exports['default'] = CodeGen;
 module.exports = exports['default'];
 
 
-},{"../utils":68,"source-map":70}],46:[function(require,module,exports){
+},{"../utils":67,"source-map":69}],45:[function(require,module,exports){
 /* eslint-disable new-cap */
 
 'use strict';
@@ -17947,7 +18004,7 @@ function transformLiteralToPath(sexpr) {
 }
 
 
-},{"../exception":55,"../utils":68,"./ast":43}],47:[function(require,module,exports){
+},{"../exception":54,"../utils":67,"./ast":42}],46:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -18179,7 +18236,7 @@ function preparePartialBlock(open, program, close, locInfo) {
 }
 
 
-},{"../exception":55}],48:[function(require,module,exports){
+},{"../exception":54}],47:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -19307,7 +19364,7 @@ exports['default'] = JavaScriptCompiler;
 module.exports = exports['default'];
 
 
-},{"../base":42,"../exception":55,"../utils":68,"./code-gen":45}],49:[function(require,module,exports){
+},{"../base":41,"../exception":54,"../utils":67,"./code-gen":44}],48:[function(require,module,exports){
 /* istanbul ignore next */
 /* Jison generated parser */
 "use strict";
@@ -20047,7 +20104,7 @@ var handlebars = (function () {
 exports['default'] = handlebars;
 
 
-},{}],50:[function(require,module,exports){
+},{}],49:[function(require,module,exports){
 /* eslint-disable new-cap */
 'use strict';
 
@@ -20235,7 +20292,7 @@ PrintVisitor.prototype.HashPair = function (pair) {
 /* eslint-enable new-cap */
 
 
-},{"./visitor":51}],51:[function(require,module,exports){
+},{"./visitor":50}],50:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -20377,7 +20434,7 @@ exports['default'] = Visitor;
 module.exports = exports['default'];
 
 
-},{"../exception":55}],52:[function(require,module,exports){
+},{"../exception":54}],51:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -20600,7 +20657,7 @@ exports['default'] = WhitespaceControl;
 module.exports = exports['default'];
 
 
-},{"./visitor":51}],53:[function(require,module,exports){
+},{"./visitor":50}],52:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -20618,7 +20675,7 @@ function registerDefaultDecorators(instance) {
 }
 
 
-},{"./decorators/inline":54}],54:[function(require,module,exports){
+},{"./decorators/inline":53}],53:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -20649,7 +20706,7 @@ exports['default'] = function (instance) {
 module.exports = exports['default'];
 
 
-},{"../utils":68}],55:[function(require,module,exports){
+},{"../utils":67}],54:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -20691,7 +20748,7 @@ exports['default'] = Exception;
 module.exports = exports['default'];
 
 
-},{}],56:[function(require,module,exports){
+},{}],55:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -20739,7 +20796,7 @@ function registerDefaultHelpers(instance) {
 }
 
 
-},{"./helpers/block-helper-missing":57,"./helpers/each":58,"./helpers/helper-missing":59,"./helpers/if":60,"./helpers/log":61,"./helpers/lookup":62,"./helpers/with":63}],57:[function(require,module,exports){
+},{"./helpers/block-helper-missing":56,"./helpers/each":57,"./helpers/helper-missing":58,"./helpers/if":59,"./helpers/log":60,"./helpers/lookup":61,"./helpers/with":62}],56:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -20780,7 +20837,7 @@ exports['default'] = function (instance) {
 module.exports = exports['default'];
 
 
-},{"../utils":68}],58:[function(require,module,exports){
+},{"../utils":67}],57:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -20876,7 +20933,7 @@ exports['default'] = function (instance) {
 module.exports = exports['default'];
 
 
-},{"../exception":55,"../utils":68}],59:[function(require,module,exports){
+},{"../exception":54,"../utils":67}],58:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -20903,7 +20960,7 @@ exports['default'] = function (instance) {
 module.exports = exports['default'];
 
 
-},{"../exception":55}],60:[function(require,module,exports){
+},{"../exception":54}],59:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -20934,7 +20991,7 @@ exports['default'] = function (instance) {
 module.exports = exports['default'];
 
 
-},{"../utils":68}],61:[function(require,module,exports){
+},{"../utils":67}],60:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -20962,7 +21019,7 @@ exports['default'] = function (instance) {
 module.exports = exports['default'];
 
 
-},{}],62:[function(require,module,exports){
+},{}],61:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -20976,7 +21033,7 @@ exports['default'] = function (instance) {
 module.exports = exports['default'];
 
 
-},{}],63:[function(require,module,exports){
+},{}],62:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -21011,7 +21068,7 @@ exports['default'] = function (instance) {
 module.exports = exports['default'];
 
 
-},{"../utils":68}],64:[function(require,module,exports){
+},{"../utils":67}],63:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -21060,7 +21117,7 @@ exports['default'] = logger;
 module.exports = exports['default'];
 
 
-},{"./utils":68}],65:[function(require,module,exports){
+},{"./utils":67}],64:[function(require,module,exports){
 (function (global){
 /* global window */
 'use strict';
@@ -21084,7 +21141,7 @@ module.exports = exports['default'];
 
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],66:[function(require,module,exports){
+},{}],65:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -21378,7 +21435,7 @@ function executeDecorators(fn, prog, container, depths, data, blockParams) {
 }
 
 
-},{"./base":42,"./exception":55,"./utils":68}],67:[function(require,module,exports){
+},{"./base":41,"./exception":54,"./utils":67}],66:[function(require,module,exports){
 // Build out our basic SafeString type
 'use strict';
 
@@ -21395,7 +21452,7 @@ exports['default'] = SafeString;
 module.exports = exports['default'];
 
 
-},{}],68:[function(require,module,exports){
+},{}],67:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -21521,7 +21578,7 @@ function appendContextPath(contextPath, id) {
 }
 
 
-},{}],69:[function(require,module,exports){
+},{}],68:[function(require,module,exports){
 // USAGE:
 // var handlebars = require('handlebars');
 /* eslint-disable no-var */
@@ -21548,7 +21605,7 @@ if (typeof require !== 'undefined' && require.extensions) {
   require.extensions['.hbs'] = extension;
 }
 
-},{"../dist/cjs/handlebars":40,"../dist/cjs/handlebars/compiler/printer":50,"fs":35}],70:[function(require,module,exports){
+},{"../dist/cjs/handlebars":39,"../dist/cjs/handlebars/compiler/printer":49,"fs":34}],69:[function(require,module,exports){
 /*
  * Copyright 2009-2011 Mozilla Foundation and contributors
  * Licensed under the New BSD license. See LICENSE.txt or:
@@ -21558,7 +21615,7 @@ exports.SourceMapGenerator = require('./source-map/source-map-generator').Source
 exports.SourceMapConsumer = require('./source-map/source-map-consumer').SourceMapConsumer;
 exports.SourceNode = require('./source-map/source-node').SourceNode;
 
-},{"./source-map/source-map-consumer":77,"./source-map/source-map-generator":78,"./source-map/source-node":79}],71:[function(require,module,exports){
+},{"./source-map/source-map-consumer":76,"./source-map/source-map-generator":77,"./source-map/source-node":78}],70:[function(require,module,exports){
 /* -*- Mode: js; js-indent-level: 2; -*- */
 /*
  * Copyright 2011 Mozilla Foundation and contributors
@@ -21667,7 +21724,7 @@ define(function (require, exports, module) {
 
 });
 
-},{"./util":80,"amdefine":15}],72:[function(require,module,exports){
+},{"./util":79,"amdefine":14}],71:[function(require,module,exports){
 /* -*- Mode: js; js-indent-level: 2; -*- */
 /*
  * Copyright 2011 Mozilla Foundation and contributors
@@ -21815,7 +21872,7 @@ define(function (require, exports, module) {
 
 });
 
-},{"./base64":73,"amdefine":15}],73:[function(require,module,exports){
+},{"./base64":72,"amdefine":14}],72:[function(require,module,exports){
 /* -*- Mode: js; js-indent-level: 2; -*- */
 /*
  * Copyright 2011 Mozilla Foundation and contributors
@@ -21890,7 +21947,7 @@ define(function (require, exports, module) {
 
 });
 
-},{"amdefine":15}],74:[function(require,module,exports){
+},{"amdefine":14}],73:[function(require,module,exports){
 /* -*- Mode: js; js-indent-level: 2; -*- */
 /*
  * Copyright 2011 Mozilla Foundation and contributors
@@ -22009,7 +22066,7 @@ define(function (require, exports, module) {
 
 });
 
-},{"amdefine":15}],75:[function(require,module,exports){
+},{"amdefine":14}],74:[function(require,module,exports){
 /* -*- Mode: js; js-indent-level: 2; -*- */
 /*
  * Copyright 2014 Mozilla Foundation and contributors
@@ -22097,7 +22154,7 @@ define(function (require, exports, module) {
 
 });
 
-},{"./util":80,"amdefine":15}],76:[function(require,module,exports){
+},{"./util":79,"amdefine":14}],75:[function(require,module,exports){
 /* -*- Mode: js; js-indent-level: 2; -*- */
 /*
  * Copyright 2011 Mozilla Foundation and contributors
@@ -22219,7 +22276,7 @@ define(function (require, exports, module) {
 
 });
 
-},{"amdefine":15}],77:[function(require,module,exports){
+},{"amdefine":14}],76:[function(require,module,exports){
 /* -*- Mode: js; js-indent-level: 2; -*- */
 /*
  * Copyright 2011 Mozilla Foundation and contributors
@@ -23298,7 +23355,7 @@ define(function (require, exports, module) {
 
 });
 
-},{"./array-set":71,"./base64-vlq":72,"./binary-search":74,"./quick-sort":76,"./util":80,"amdefine":15}],78:[function(require,module,exports){
+},{"./array-set":70,"./base64-vlq":71,"./binary-search":73,"./quick-sort":75,"./util":79,"amdefine":14}],77:[function(require,module,exports){
 /* -*- Mode: js; js-indent-level: 2; -*- */
 /*
  * Copyright 2011 Mozilla Foundation and contributors
@@ -23699,7 +23756,7 @@ define(function (require, exports, module) {
 
 });
 
-},{"./array-set":71,"./base64-vlq":72,"./mapping-list":75,"./util":80,"amdefine":15}],79:[function(require,module,exports){
+},{"./array-set":70,"./base64-vlq":71,"./mapping-list":74,"./util":79,"amdefine":14}],78:[function(require,module,exports){
 /* -*- Mode: js; js-indent-level: 2; -*- */
 /*
  * Copyright 2011 Mozilla Foundation and contributors
@@ -24115,7 +24172,7 @@ define(function (require, exports, module) {
 
 });
 
-},{"./source-map-generator":78,"./util":80,"amdefine":15}],80:[function(require,module,exports){
+},{"./source-map-generator":77,"./util":79,"amdefine":14}],79:[function(require,module,exports){
 /* -*- Mode: js; js-indent-level: 2; -*- */
 /*
  * Copyright 2011 Mozilla Foundation and contributors
@@ -24487,7 +24544,7 @@ define(function (require, exports, module) {
 
 });
 
-},{"amdefine":15}],81:[function(require,module,exports){
+},{"amdefine":14}],80:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v3.0.0
  * https://jquery.com/
@@ -34526,7 +34583,7 @@ if ( !noGlobal ) {
 return jQuery;
 } ) );
 
-},{}],82:[function(require,module,exports){
+},{}],81:[function(require,module,exports){
 (function (process){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -34754,7 +34811,7 @@ var substr = 'ab'.substr(-1) === 'b'
 ;
 
 }).call(this,require('_process'))
-},{"_process":83}],83:[function(require,module,exports){
+},{"_process":82}],82:[function(require,module,exports){
 // shim for using process in browser
 
 var process = module.exports = {};
@@ -34847,7 +34904,7 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}],84:[function(require,module,exports){
+},{}],83:[function(require,module,exports){
 module.exports = function(THREE) {
 	var MOUSE = THREE.MOUSE
 	if (!MOUSE)
@@ -35968,7 +36025,7 @@ module.exports = function(THREE) {
 	return OrbitControls;
 }
 
-},{}],85:[function(require,module,exports){
+},{}],84:[function(require,module,exports){
 // File:src/Three.js
 
 /**
@@ -77842,7 +77899,7 @@ THREE.MorphBlendMesh.prototype.update = function ( delta ) {
 };
 
 
-},{}],86:[function(require,module,exports){
+},{}],85:[function(require,module,exports){
 //     Underscore.js 1.7.0
 //     http://underscorejs.org
 //     (c) 2009-2014 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
