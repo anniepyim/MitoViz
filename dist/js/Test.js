@@ -1493,6 +1493,10 @@ $("#navbar li").click(function(e){
         flag = "SP";
         issueWarning();
     }
+    
+    if ($(this).text() == "Don't click me"){
+        alert("It's good to be curious, but I mean, really, I told you nothing would happen. So let's just back to business")
+    }
 });
     
 $("#folders").on('change',function(){
@@ -1794,7 +1798,7 @@ function onError(res) {
     throw new Error("Something went badly wrong!");
 }
 
-function onSuccess(data,colorrange) {
+function drawSP(data,colorrange) {
     hideLoading();
     if (exist === false){
         SP.init(data,colorrange);
@@ -1832,21 +1836,6 @@ function redrawPCA(data){
 }
 
 
-function onSuccess3(data){
-    
-    var cat;
-    var element = document.getElementsByClassName('pcbc');
-    for (var e in element) if (element.hasOwnProperty(e)){
-        if (element[e].style.background=="rgb(179, 204, 255)") {
-            cat = (element[e].id == "grouppanel") ? 'cancer type' : (element[e].id == "genderpanel") ? 'gender' : (element[e].id == "stagepanel") ? 'stage' :(element[e].id == "vitalpanel") ? 'vital': 'neg3';
-        }
-    }
-    var prdata = PCdata.init(data,cat);
-    pcPlot.deletedots();
-    pcPlot.adddots(prdata);
-    
-}
-
 d3.select('#spcompareButton').on('click', spcompareData);
 d3.select('#pcacompareButton').on('click', pcacompareData);
 d3.select('#filterbutton').on("click", pcaupdateData);
@@ -1863,7 +1852,7 @@ function spcompareData(){
 
     var colorrange = "#d73027,#f46d43,#fdae61,#fee08b,#ffffbf,#d9ef8b,#a6d96a,#66bd63,#1a9850";
     //var colorrange = d3.select('#colorinput').property("value");
-    parser.parse(arr, onError, onSuccess,colorrange);
+    parser.parse(arr, onError, drawSP,colorrange);
 }
 
 function pcacompareData(){
