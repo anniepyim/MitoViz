@@ -26,13 +26,13 @@ data <- all[,c("gene","process",datalist)]
 url = do.call("rbind", lapply(filelist,function(x){
   test <- fromJSON(x)
   sampleID <- test[1,"sampleID"]
-  c(sampleID,x)
+  c(sampleID,substring(x,2))
 }))
 
 
 clinical <- read.table("clinical-modified.txt",header=TRUE,sep="\t",check.names="FALSE")
-clin <- clinical[,c("sampleID","Cancer_type","Gender","Pathologic_stage")]
-colnames(clin) <- c("sampleID","group","gender","stage")
+clin <- clinical[,c("sampleID","Cancer_type","Gender","Pathologic_stage","Vital_status","BRCA_cancer_factor_3neg")]
+colnames(clin) <- c("sampleID","group","gender","stage","vital","neg3")
 colnames(url) <- c("sampleID","url")
 
 # PCA
@@ -64,6 +64,9 @@ for(i in 1:length(mitofunc)){
     sum <- as.data.frame(sum)
     df<- merge(sum,clin,by="sampleID")
     df<- merge(df,url,by="sampleID")
+    df$PC1 <- as.numeric(as.character(df$PC1))
+    df$PC2 <- as.numeric(as.character(df$PC2))
+    df$PC3 <- as.numeric(as.character(df$PC3))
     dfjson <- toJSON(df)
     outputname <- paste(targetoutpath,mitofunc[i],"-pca.json", sep="")
     write(dfjson,outputname)
