@@ -1,5 +1,6 @@
 var axios = require('axios');
 var _ = require('underscore');
+var d3 = require('d3');
 
 function parser(){}
 
@@ -45,6 +46,7 @@ function parse(urls, errorcb, datacb,colorrange){
                         mitomap[mito[i]] = ifExist;
                     }
                 }                
+                res.data.sort(function(a,b) { return d3.ascending(a.gene, b.gene);});
                 data = data.concat(res.data);
             });
             //console.log(data);

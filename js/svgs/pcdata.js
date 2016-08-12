@@ -3,7 +3,9 @@ var pcPlot = require('./pcPlot.js');
 
 var colorgroup = d3.scale.ordinal().range(["#ff004d","#ffff66","#a4ff52","#0067c6","#7d71e5"]),
     colorstage = d3.scale.ordinal().range(["#a4ff52","#ffff66","#ff751a","#ff004d","#a7a5a5"]),
-    colorgender = d3.scale.ordinal().range(["#ff0074","#52a4ff"]);
+    colorgender = d3.scale.ordinal().range(["#ff0074","#52a4ff"]),
+    colorvital = d3.scale.ordinal().range(["#33ff88","#a10000","#a7a5a5"]),
+    colorneg3 = d3.scale.ordinal().range(["#e6114c","#03a9f4","#a7a5a5"]);
 
 var PCdata = function (obj) {
     if (obj instanceof PCdata) return obj;
@@ -43,6 +45,8 @@ PCdata.init = function (indata,cat) {
                 group: d.group,
                 gender: d.gender,
                 stage: d.stage,
+                vital: d.vital,
+                neg3: d.neg3,
                 url: d.url
             };
         });
@@ -63,6 +67,18 @@ PCdata.init = function (indata,cat) {
 
     prdata.forEach(function (d) {
             d.stagecolor = colorstage(d.stage);
+        });
+    
+    prdata.sort(function(a,b) { return d3.ascending(a.vital, b.vital);});
+
+    prdata.forEach(function (d) {
+            d.vitalcolor = colorvital(d.vital);
+        });
+    
+    prdata.sort(function(a,b) { return d3.ascending(a.neg3, b.neg3);});
+
+    prdata.forEach(function (d) {
+            d.neg3color = colorneg3(d.neg3);
         });
 
     var newdata = addCriteria(prdata,cat)
@@ -85,18 +101,22 @@ var addCriteria = function(prdata,cat){
     criteriagender.pop();
     criteriastage = document.getElementById('criteriastage').value.split(",");
     criteriastage.pop();
+    criteriavital = document.getElementById('criteriavital').value.split(",");
+    criteriavital.pop();
+    criterianeg3 = document.getElementById('criterianeg3').value.split(",");
+    criterianeg3.pop();
 
     var newdata=[]
 
-    if (criteriagroup.length == 0 && criteriagender.length == 0 && criteriastage.length == 0) newdata = prdata;
+    if (criteriagroup.length == 0 && criteriagender.length == 0 && criteriastage.length == 0 && criteriavital.length == 0 && criterianeg3.length == 0) newdata = prdata;
     else{
         prdata.forEach(function (d) {
-            if ((contains.call(criteriagroup,d.group) || criteriagroup.length == 0) && (contains.call(criteriagender,d.gender) || criteriagender.length == 0) && (contains.call(criteriastage,d.stage) || criteriastage.length == 0)) newdata.push(d);
+            if ((contains.call(criteriagroup,d.group) || criteriagroup.length == 0) && (contains.call(criteriagender,d.gender) || criteriagender.length == 0) && (contains.call(criteriastage,d.stage) || criteriastage.length == 0) && (contains.call(criteriavital,d.vital) || criteriavital.length == 0) && (contains.call(criterianeg3,d.neg3) || criterianeg3.length == 0)) newdata.push(d);
         });   
     }
     
     newdata.forEach(function (d) {
-        d.color = (cat == "cancer type") ? d.groupcolor : (cat == "gender") ? d.gendercolor : d.stagecolor
+        d.color = (cat == "cancer type") ? d.groupcolor : (cat == "gender") ? d.gendercolor : (cat == "stage") ? d.stagecolor : (cat == "vital") ? d.vitalcolor : d.neg3color;
     });
     
     return newdata

@@ -23,7 +23,7 @@ function onError(res) {
     throw new Error("Something went badly wrong!");
 }
 
-function onSuccess(data,colorrange) {
+function drawSP(data,colorrange) {
     hideLoading();
     if (exist === false){
         SP.init(data,colorrange);
@@ -41,38 +41,25 @@ function onSuccess(data,colorrange) {
 
 function redrawPCA(data){
     d3.selectAll(".pcbcchild").remove();
-    d3.select("#pcacanvas").remove();
     
     var cat;
     var element = document.getElementsByClassName('pcbc');
     for (var e in element) if (element.hasOwnProperty(e)){
         if (element[e].style.background=="rgb(179, 204, 255)") {
-            cat = (element[e].id == "grouppanel") ? 'cancer type' : (element[e].id == "genderpanel") ? 'gender' : 'stage';
+            cat = (element[e].id == "grouppanel") ? 'cancer type' : (element[e].id == "genderpanel") ? 'gender' : (element[e].id == "stagepanel") ? 'stage' :(element[e].id == "vitalpanel") ? 'vital': 'neg3';
         }
     }
     
-    var prdata = PCdata.init(data,cat);
-    pcPlot.init(prdata);
-    PCBC.draw(prdata,"cancer type","#groupbarchart","#grouptitle","grouppanel");
-    PCBC.draw(prdata,"gender","#genderbarchart","#gendertitle","genderpanel");
-    PCBC.draw(prdata,"stage","#stagebarchart","#stagetitle","stagepanel");
-}
-
-
-function onSuccess3(data){
-    
-    var cat;
-    var element = document.getElementsByClassName('pcbc');
-    for (var e in element) if (element.hasOwnProperty(e)){
-        if (element[e].style.background=="rgb(179, 204, 255)") {
-            cat = (element[e].id == "grouppanel") ? 'cancer type' : (element[e].id == "genderpanel") ? 'gender' : 'stage';
-        }
-    }
     var prdata = PCdata.init(data,cat);
     pcPlot.deletedots();
     pcPlot.adddots(prdata);
-    
+    PCBC.draw(prdata,"cancer type","#groupbarchart","#grouptitle","grouppanel");
+    PCBC.draw(prdata,"gender","#genderbarchart","#gendertitle","genderpanel");
+    PCBC.draw(prdata,"stage","#stagebarchart","#stagetitle","stagepanel");
+    PCBC.draw(prdata,"vital","#vitalbarchart","#vitaltitle","vitalpanel");
+    PCBC.draw(prdata,"neg3","#neg3barchart","#neg3title","neg3panel");
 }
+
 
 d3.select('#spcompareButton').on('click', spcompareData);
 d3.select('#pcacompareButton').on('click', pcacompareData);
@@ -90,7 +77,7 @@ function spcompareData(){
 
     var colorrange = "#d73027,#f46d43,#fdae61,#fee08b,#ffffbf,#d9ef8b,#a6d96a,#66bd63,#1a9850";
     //var colorrange = d3.select('#colorinput').property("value");
-    parser.parse(arr, onError, onSuccess,colorrange);
+    parser.parse(arr, onError, drawSP,colorrange);
 }
 
 function pcacompareData(){
@@ -119,6 +106,8 @@ function pcacompareData(){
             success: function (result) {
                 //console.log(result)
                 removeCriteria();
+                d3.select("#pcacanvas").remove();
+                pcPlot.init();
                 redrawPCA(result);
             },
             error: function(e){
@@ -164,7 +153,7 @@ function pcaupdateData(){
         url: process,  // or just test.py
         dataType: "json",    
         success: function (result) {
-            onSuccess3(result);
+            redrawPCA(result);
         },
         error: function(e){
             console.log(e);
@@ -181,6 +170,8 @@ function pcaupdatefolder(){
         url: process,  // or just test.py
         dataType: "json",    
         success: function (result) {
+            d3.select("#pcacanvas").remove();
+            pcPlot.init();
             redrawPCA(result);
         },
         error: function(e){
@@ -194,6 +185,8 @@ function removeCriteria(){
     document.getElementById('criteriagroup').value = "";
     document.getElementById('criteriagender').value = "";
     document.getElementById('criteriastage').value = "";
+    document.getElementById('criteriavital').value = "";
+    document.getElementById('criterianeg3').value = "";
     
     var buttons = document.getElementById('criteriabutton');
     while (buttons.hasChildNodes()) {

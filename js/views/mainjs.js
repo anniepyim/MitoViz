@@ -30,6 +30,10 @@ $("#navbar li").click(function(e){
         flag = "SP";
         issueWarning();
     }
+    
+    if ($(this).text() == "Don't click me"){
+        alert("It's good to be curious, but I mean, really, I told you nothing would happen. So let's just back to business")
+    }
 });
     
 $("#folders").on('change',function(){

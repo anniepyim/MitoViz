@@ -4,7 +4,9 @@ var PCdata = require('./pcdata.js');
 
 var colorgroup = d3.scale.ordinal().range(["#ff004d","#ffff66","#a4ff52","#0067c6","#7d71e5"]),
     colorstage = d3.scale.ordinal().range(["#a4ff52","#ffff66","#da5802","#ff004d","#a7a5a5"]),
-    colorgender = d3.scale.ordinal().range(["#ff0074","#52a4ff"]);
+    colorgender = d3.scale.ordinal().range(["#ff0074","#52a4ff"]),
+    colorvital = d3.scale.ordinal().range(["#33ff88","#a10000","#a7a5a5"]),
+    colorneg3 = d3.scale.ordinal().range(["#e6114c","#03a9f4","#a7a5a5"]);
 
 var PCBC = function (obj) {
     if (obj instanceof PCBC) return obj;
@@ -14,7 +16,7 @@ var PCBC = function (obj) {
 
 PCBC.draw = function (indata,cat,svgname,titlename,panelname) {
         
-        var criteria = (cat == "cancer type") ? 'criteriagroup' : (cat == "gender") ? 'criteriagender' : 'criteriastage'
+        var criteria = (cat == "cancer type") ? 'criteriagroup' : (cat == "gender") ? 'criteriagender' : (cat == "stage") ? 'criteriastage' : (cat == "vital") ? 'criteriavital' : 'criterianeg3';
         
         var prdata = indata.map(function(d){
                 return{
@@ -25,8 +27,10 @@ PCBC.draw = function (indata,cat,svgname,titlename,panelname) {
                     group: d.group,
                     gender: d.gender,
                     stage: d.stage,
-                    color: (cat == "cancer type") ? d.groupcolor : (cat == "gender") ? d.gendercolor : d.stagecolor,
-                    category: (cat == "cancer type") ? d.group : (cat == "gender") ? d.gender : d.stage
+                    vital: d.vital,
+                    neg3: d.neg3,
+                    color: (cat == "cancer type") ? d.groupcolor : (cat == "gender") ? d.gendercolor : (cat == "stage") ? d.stagecolor : (cat == "vital") ? d.vitalcolor : d.neg3color,
+                    category: (cat == "cancer type") ? d.group : (cat == "gender") ? d.gender : (cat == "stage") ? d.stage : (cat == "vital") ? d.vital : d.neg3
                 };
             });
         
@@ -42,7 +46,7 @@ PCBC.draw = function (indata,cat,svgname,titlename,panelname) {
                 d.count = d.values.length;
             });
     
-        var color = (cat == "cancer type") ? colorgroup : (cat == "gender") ? colorgender : colorstage;
+        var color = (cat == "cancer type") ? colorgroup : (cat == "gender") ? colorgender : (cat == "stage") ? colorstage : (cat == "vital") ? colorvital : colorneg3;
         
         
         var BARmargin = {top: 15, right: 20, bottom: 15, left: 10},

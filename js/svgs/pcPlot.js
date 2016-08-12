@@ -300,13 +300,13 @@ function render() {
 
 }
 
-pcPlot.init = function(d){
+pcPlot.init = function(){
     sceneInit();
     gridInit(gridDepth,gridWidth,gridHeight);
-    dotsInit(d);
+    //dotsInit(d);
     //boxInit();
     //pcObj.add(new THREE.Mesh(new THREE.BoxBufferGeometry(100,100,100),new THREE.MeshNormalMaterial()))
-    render();
+    //render();
 };
 
 pcPlot.deletedots = function(){

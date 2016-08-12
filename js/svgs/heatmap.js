@@ -65,7 +65,7 @@ heatmap.processData = function (jsondata, nfunc,colorrange) {
             mutation: d.mutation.split(',')
         });
     });
-
+    
     heatmap.draw(outdata, samplelist, genelist,colorrange);
 };
 

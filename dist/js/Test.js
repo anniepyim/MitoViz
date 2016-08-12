@@ -232,7 +232,7 @@ heatmap.processData = function (jsondata, nfunc,colorrange) {
             mutation: d.mutation.split(',')
         });
     });
-
+    
     heatmap.draw(outdata, samplelist, genelist,colorrange);
 };
 
@@ -1393,7 +1393,6 @@ SP.onMouseOverNode = function(node){
     //Init tooltip if hover over gene
     if(!_.isUndefined(node.gene))
         $('.tip').append(tipTemplate(node));
-    console.log(node);
     
     highlight(node.gene);
 
@@ -1631,6 +1630,7 @@ function issueWarning(){
 },{}],11:[function(require,module,exports){
 var axios = require('axios');
 var _ = require('underscore');
+var d3 = require('d3');
 
 function parser(){}
 
@@ -1676,6 +1676,7 @@ function parse(urls, errorcb, datacb,colorrange){
                         mitomap[mito[i]] = ifExist;
                     }
                 }                
+                res.data.sort(function(a,b) { return d3.ascending(a.gene, b.gene);});
                 data = data.concat(res.data);
             });
             //console.log(data);
@@ -1700,7 +1701,7 @@ module.exports = parser;
 
 
 
-},{"axios":15,"underscore":85}],12:[function(require,module,exports){
+},{"axios":15,"d3":38,"underscore":85}],12:[function(require,module,exports){
 (function (global){
 var glob = ('undefined' === typeof window) ? global : window,
 

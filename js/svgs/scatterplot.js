@@ -237,7 +237,6 @@ SP.onMouseOverNode = function(node){
     //Init tooltip if hover over gene
     if(!_.isUndefined(node.gene))
         $('.tip').append(tipTemplate(node));
-    console.log(node);
     
     highlight(node.gene);
 
