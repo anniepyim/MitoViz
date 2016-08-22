@@ -17,6 +17,8 @@ var PCBC = function (obj) {
 PCBC.draw = function (indata,cat,svgname,titlename,panelname) {
         
         var criteria = (cat == "cancer type") ? 'criteriagroup' : (cat == "gender") ? 'criteriagender' : (cat == "stage") ? 'criteriastage' : (cat == "vital") ? 'criteriavital' : 'criterianeg3';
+    
+        var color = (cat == "cancer type") ? colorgroup : (cat == "gender") ? colorgender : (cat == "stage") ? colorstage : (cat == "vital") ? colorvital : colorneg3;
         
         var prdata = indata.map(function(d){
                 return{
@@ -45,8 +47,6 @@ PCBC.draw = function (indata,cat,svgname,titlename,panelname) {
         data.forEach(function (d) {
                 d.count = d.values.length;
             });
-    
-        var color = (cat == "cancer type") ? colorgroup : (cat == "gender") ? colorgender : (cat == "stage") ? colorstage : (cat == "vital") ? colorvital : colorneg3;
         
         
         var BARmargin = {top: 15, right: 20, bottom: 15, left: 10},

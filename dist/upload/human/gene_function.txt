@@ -615,6 +615,15 @@ ATAD3B	Translation	1	ATAD3B: May interact with mitochondrial proteins and is req
 MPV17L2	Translation	19	MPV17L2: May be involved in the biogenesis of mitochondrial ribosomes	ENSG00000254858
 DHX30	Translation	3	DHX30: May be involved in the biogenesis of mitochondrial ribosomes	ENSG00000132153
 DDX28	Translation	16	DDX28: May be involved in the biogenesis of mitochondrial ribosomes	ENSG00000182810
+EIF2AK1	Translation	7	EIF2AK1: Inhibits protein synthesis at the translation initiation level, in response to various stress conditions	ENSG00000086232
+EIF2AK3	Translation	2	EIF2AK3: Metabolic-stress sensing protein kinase that phosphorylates and inactivates the alpha subunit of eukaryotic translation initiation factor 2	ENSG00000172071
+YARS	Translation	1	YARS: Aminoacyl-tRNA synthetases that catalyze the aminoacylation of tRNA by their cognate amino acid	ENSG00000134684
+RPS19	Translation	19	RPS19: Ribosomal protein required for pre-rRNA processing and maturation of 40S ribosomal subunits	ENSG00000105372
+DKC1	Translation	X	DKC1: Has an active role in telomerase stabilization and maintenance	ENSG00000130826
+SBDS	Translation	7	SBDS: Required for the assembly of mature ribosomes and ribosome biogenesis	ENSG00000126524
+AARS	Translation	16	AARS: Alanyl-tRNA synthetase that catalyzes the attachment of alanine to tRNA(Ala)	ENSG00000090861
+RMND1	Translation	6	RMND1: Required for mitochondrial translation, possibly by coordinating the assembly or maintenance of the mitochondrial ribosome	ENSG00000155906
+C12orf65	Translation	12	C12orf65: Codon-independent translation release factor that appears to contribute to peptide chain termination in the mitochondrial translation machinery	ENSG00000130921
 MCU	Calcium trafficking	10	MCU: Involved in the accumulation of calcium ions in the matrix through ion impermeable inner mitochondrial membrane	ENSG00000156026
 SLC24A6	Calcium trafficking	12	SLC24A6: Involved in the calcium homeostasis by counteracting the calcium accumaltion in the mitochondria	ENSG00000089060
 LETM1	Calcium trafficking	4	LETM1: Might act as calcium ion and hydrogen ion antiporter exchanging hydrogen for calcium	ENSG00000168924
