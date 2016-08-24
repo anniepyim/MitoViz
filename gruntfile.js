@@ -15,6 +15,22 @@ module.exports = function(grunt) {
                 }
             }
         },
+        handlebars: {
+            compile: {
+                options: {
+                    node: true,
+                    namespace: 'Templates',
+                    partialsUseNamespace: true,
+                    processName: function(filePath) {
+                        var file = filePath.replace(/.*\/(\w+)\.hbs/, '$1');
+                        return file;
+                    }
+                },
+                files:{
+                    'js/views/templates.js': ['templates/*.hbs']
+                }
+            }
+        },
         browserify: {
             'dist/js/Test.js': ['index.js']
         },
@@ -40,13 +56,14 @@ module.exports = function(grunt) {
     });
     
     //Tasks
-    grunt.registerTask('dist', ['jshint', 'browserify']); //Generates dist folder
+    grunt.registerTask('dist', ['jshint', 'handlebars','browserify']); //Generates dist folder
     
     // Load the plugins
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-browserify');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-serve');
+    grunt.loadNpmTasks('grunt-contrib-handlebars');
     
     //Watchify
     grunt.loadNpmTasks('grunt-contrib-watch');
