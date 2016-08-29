@@ -81,9 +81,9 @@ PCdata.init = function (indata,cat) {
             d.neg3color = colorneg3(d.neg3);
         });
 
-    var newdata = addCriteria(prdata,cat)
+    var newdata = addCriteria(prdata,cat);
         
-    return newdata
+    return newdata;
 };
 
 PCdata.update = function (prdata,cat){
@@ -91,7 +91,7 @@ PCdata.update = function (prdata,cat){
     var newdata = addCriteria(prdata,cat);
     pcPlot.deletedots();
     pcPlot.adddots(newdata);
-}
+};
 
 var addCriteria = function(prdata,cat){
     
@@ -106,12 +106,12 @@ var addCriteria = function(prdata,cat){
     criterianeg3 = document.getElementById('criterianeg3').value.split(",");
     criterianeg3.pop();
 
-    var newdata=[]
+    var newdata=[];
 
-    if (criteriagroup.length == 0 && criteriagender.length == 0 && criteriastage.length == 0 && criteriavital.length == 0 && criterianeg3.length == 0) newdata = prdata;
+    if (criteriagroup.length === 0 && criteriagender.length === 0 && criteriastage.length === 0 && criteriavital.length === 0 && criterianeg3.length === 0) newdata = prdata;
     else{
         prdata.forEach(function (d) {
-            if ((contains.call(criteriagroup,d.group) || criteriagroup.length == 0) && (contains.call(criteriagender,d.gender) || criteriagender.length == 0) && (contains.call(criteriastage,d.stage) || criteriastage.length == 0) && (contains.call(criteriavital,d.vital) || criteriavital.length == 0) && (contains.call(criterianeg3,d.neg3) || criterianeg3.length == 0)) newdata.push(d);
+            if ((contains.call(criteriagroup,d.group) || criteriagroup.length === 0) && (contains.call(criteriagender,d.gender) || criteriagender.length === 0) && (contains.call(criteriastage,d.stage) || criteriastage.length === 0) && (contains.call(criteriavital,d.vital) || criteriavital.length === 0) && (contains.call(criterianeg3,d.neg3) || criterianeg3.length === 0)) newdata.push(d);
         });   
     }
     
@@ -119,9 +119,9 @@ var addCriteria = function(prdata,cat){
         d.color = (cat == "cancer type") ? d.groupcolor : (cat == "gender") ? d.gendercolor : (cat == "stage") ? d.stagecolor : (cat == "vital") ? d.vitalcolor : d.neg3color;
     });
     
-    return newdata
+    return newdata;
     
-}
+};
 
 var contains = function(needle) {
     // Per spec, the way to identify NaN is that it is not equal to itself

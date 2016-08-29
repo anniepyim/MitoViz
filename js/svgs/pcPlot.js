@@ -9,7 +9,7 @@ var div = d3.select("#pca").append("div")
 var scene, camera, renderer, controls, pcObj, boxes, dots, raycaster;
 var mouse = new THREE.Vector2(), INTERSECTED,
     pageEvent = new THREE.Vector2();
-var canvasWidth= Math.round(document.getElementById("nav_bar").offsetWidth*9/12-40),
+var canvasWidth= Math.round(document.getElementById("svgs-all").offsetWidth*9/12-40),
     canvasHeight = canvasWidth;
 var gridDepth = 100,
     gridWidth = 100,
@@ -319,10 +319,6 @@ pcPlot.adddots = function(d){
     dotsInit(d);
     render();
 };
-
-pcPlot.alert = function(){
-    alert("pcplot");
-}
 
 if (typeof define === "function" && define.amd) {
     define(pcPlot);

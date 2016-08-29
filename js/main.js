@@ -9,7 +9,7 @@ App.init = function(options){
     //Views
     var mainframe = require('./views/mainframe.js');
     App.mainframe = new mainframe();
-    App.mainframe.setElement('body').render();
+    App.mainframe.setElement('#content').render();
     
     //var NavBar = require('./views/navBar');
     

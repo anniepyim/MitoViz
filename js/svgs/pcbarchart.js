@@ -176,10 +176,10 @@ PCBC.draw = function (indata,cat,svgname,titlename,panelname) {
             button.onclick = function(e){
                 var array = document.getElementById(criteria).value.split(",");
                 var index = array.indexOf(key);
-                if (index > -1) {array.splice(index, 1);};
+                if (index > -1) {array.splice(index, 1);}
                 document.getElementById(criteria).value = array.toString();
-                this.parentNode.removeChild(this)
-            }
+                this.parentNode.removeChild(this);
+            };
             document.getElementById("criteriabutton").appendChild(button);   
         }
     }

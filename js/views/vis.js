@@ -61,8 +61,11 @@ function redrawPCA(data){
 }
 
 
-d3.select('#spcompareButton').on('click', spcompareData);
-d3.select('#pcacompareButton').on('click', pcacompareData);
+d3.select('#compareButton').on('click', function(){
+    var analysis = document.querySelector('input[name = "analysis"]:checked').value;
+    if (analysis == "scatterplotanalysis") spcompareData();
+    else pcacompareData();
+});
 d3.select('#filterbutton').on("click", pcaupdateData);
 $('#pcafolders').on('change',pcaupdatefolder);
 
@@ -88,8 +91,8 @@ function pcacompareData(){
         if (!$(this).val().includes("TCGA")) tcga = false;
     });
     
-    if (tcga == false) onError("Sorry! Only TCGA samples are allowed")
-    else if ($('#selected-sample').find('option').length < 3) onError("Please add at least 3 samples")
+    if (tcga === false) onError("Sorry! Only TCGA samples are allowed");
+    else if ($('#selected-sample').find('option').length < 3) onError("Please add at least 3 samples");
     else{
         
         var samples = document.getElementById('selected-sample');

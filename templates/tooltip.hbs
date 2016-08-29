@@ -16,8 +16,13 @@
                 
 <div class="col-md-6 info">{{pvalue}}</div>
 
-<div class="col-md-6 miniTitle">
-    utation
+<div class="col-md-12 miniTitle">
+    mutation
 </div>
                 
-<div class="col-md-6 mutation">{{mutation}}</div>
+<div class="col-md-12 mutation">
+    {{#each mutation}}
+    {{this}}<br>
+    {{/each}}
+
+</div>

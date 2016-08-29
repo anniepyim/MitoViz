@@ -12,6 +12,3 @@ require('d3-tip')(d3);
 require('underscore'); // bootstrap
 
 App = require('./js/main');
-//require('./js/views/mainframe.js');
-//require("./js/views/vis.js");
-//require('./js/views/mainjs.js');

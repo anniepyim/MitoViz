@@ -2,31 +2,25 @@ $(document).ready(function(){
     
 var flag = "SP";
 
-$("#navbar li").click(function(e){
-    $("#navbar li").prop('class','');
-    $(this).toggleClass('active');
+$('input[type=radio][name=analysis]').change(function(e){
     
-    if ($(this).text() == "PCA"){
+    if (this.value == "pcanalysis"){
         document.getElementById("scatterplot").style.display="none";
         document.getElementById("barchart").style.display="none";
         document.getElementById("heatmap").style.display="none";
-        document.getElementById("spbdiv").style.display="none";
         document.getElementById("pca").style.display="";
         document.getElementById("pcbarchart").style.display="";
-        document.getElementById("pcabdiv").style.display="";
-        flag = "PCA"
+        flag = "PCA";
         issueWarning();
         
     }
     
-    if ($(this).text() == "Scatter plot"){
+    if (this.value == "scatterplotanalysis"){
         document.getElementById("scatterplot").style.display="";
         document.getElementById("barchart").style.display="";
         document.getElementById("heatmap").style.display="";
-        document.getElementById("spbdiv").style.display="";
         document.getElementById("pca").style.display="none";
         document.getElementById("pcbarchart").style.display="none";
-        document.getElementById("pcabdiv").style.display="none";
         flag = "SP";
         issueWarning();
     }
@@ -52,7 +46,7 @@ function updateFolder(folder){
     
     if ($(folder+" option:selected").text() != "TCGA"){
         
-        var targeturl = $(folder+" option:selected").val()
+        var targeturl = $(folder+" option:selected").val();
         var folderurl = '.'+targeturl;
         var htmltext = "",
             value = "",
@@ -88,7 +82,7 @@ function updateFolder(folder){
         $('#selectallcb').prop('checked', false);
         
         if ($("#folders option:selected").text() != "TCGA"){
-            document.getElementById("subfolders-div").style.display="none"
+            document.getElementById("subfolders-div").style.display="none";
         }
         
     }else{
@@ -108,7 +102,7 @@ function updateFile() {
     
     $.each($("#files option:selected"), function(){
         var value = $(this).val();
-        if (!$('#selected-sample option[value="'+value+'"]').length>0){
+        if ((!$('#selected-sample option[value="'+value+'"]').length>0)){
             $('#selected-sample').append($('<option>', { 
                 value: $(this).val(),
                 text : $(this).text() 
@@ -153,7 +147,7 @@ function issueWarning(){
     
     if ($('#selected-sample').find('option').length > 6 && flag == "SP")
         document.getElementById('warning').innerHTML="<font color=\"red\">No more than 6 samples!";
-    else if (tcga == false && flag == "PCA")
+    else if (tcga === false && flag == "PCA")
         document.getElementById('warning').innerHTML="<font color=\"red\">Sorry! Only TCGA samples are allowed";
     else
         document.getElementById('warning').innerHTML="";
