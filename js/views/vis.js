@@ -11,7 +11,13 @@ var pcPlot = require('../svgs/pcPlot.js');
 var PCdata = require('../svgs/pcdata.js');
 var PCBC = require('../svgs/pcbarchart.js');
 var parser = require('./parser.js');
-//var exist = false;
+var exist = false;
+
+var vis = function (obj) {
+    if (obj instanceof vis) return obj;
+    if (!(this instanceof vis)) return new vis(obj);
+    this.viswrapped = obj;
+};
 
 function hideLoading() {
     d3.select('#loading').remove();
@@ -63,21 +69,23 @@ function redrawPCA(data){
 
 d3.select('#compareButton').on('click', function(){
     var analysis = document.querySelector('input[name = "analysis"]:checked').value;
-    if (analysis == "scatterplotanalysis") spcompareData();
+    if (analysis == "scatterplotanalysis") vis.spcompareData();
     else pcacompareData();
 });
 d3.select('#filterbutton').on("click", pcaupdateData);
 $('#pcafolders').on('change',pcaupdatefolder);
 
 
-function spcompareData(){
+vis.spcompareData = function(arr){
     var select = document.getElementById('selected-sample');
-    var arr = [];
-    for (i = 0; i < select.options.length; i++) {
-       arr[i] = select.options[i].value;
+    if (arr === undefined){
+        arr = [];
+        for (i = 0; i < select.options.length; i++) {
+           arr[i] = select.options[i].value;
+        } 
     }
     exist = !!document.getElementById("x-axis");
-
+    
     var colorrange = "#d73027,#f46d43,#fdae61,#fee08b,#ffffbf,#d9ef8b,#a6d96a,#66bd63,#1a9850";
     //var colorrange = d3.select('#colorinput').property("value");
     parser.parse(arr, onError, drawSP,colorrange);
@@ -197,7 +205,5 @@ function removeCriteria(){
     }
     
 }
-
-var vis = function(){};
 
 module.exports = vis;

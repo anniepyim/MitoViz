@@ -2,7 +2,7 @@ var d3 = require('d3');
 var colorbrewer = require('colorbrewer');
 var SP = require('./scatterplot.js');
 var heatmap = require('./heatmap.js');
-
+require('../views/html2canvas.min.js')
 
 
 //var color = d3.scale.category20();
@@ -15,6 +15,8 @@ var BC = function (obj) {
     if (!(this instanceof BC)) return new BC(obj);
     this.BCwrapped = obj;
 };
+
+var newdata,sampledata;
 
 BC.draw = function (jsondata,colorrange) {
     
@@ -42,13 +44,20 @@ BC.draw = function (jsondata,colorrange) {
         
     var barH = BARheight/17;
     
+    newdata=[];
+    
+    jsondata.forEach(function (d) {
+        if (!isNaN(parseFloat(d.log2)) && isFinite(d.log2))  newdata.push(d);
+    });
+    
+    
     var data = d3.nest()
         .key(function (d) {
             return d.process;
         })
-        .entries(jsondata);
+        .entries(newdata);
     
-    var sampledata = d3.nest()
+    sampledata = d3.nest()
         .key(function (d) {
             return d.sampleID;
         })
@@ -101,5 +110,94 @@ BC.draw = function (jsondata,colorrange) {
 BC.init = function (jsondata,colorrange) {
     BC.draw(jsondata,colorrange);
 };
+
+saveTextAsFile = function(){
+    try{
+    var result = "";
+    sampledata.forEach(function(dp){
+        var key = dp.key;
+        var upgenes = [], downgenes = [], mutation=[];
+        newdata.forEach(function(d){
+            if (d.sampleID == key){
+                if (d.log2 >= 1.5) upgenes.push(d);
+                if (d.log2 <= -1.5) downgenes.push(d);
+                if (d.mutation !== "") mutation.push (d);
+            }
+        });
+        result += "Results for " + key + "\n";
+        result += "----------------------------\n\n";
+        result += "UP-REGULATED GENES:\n\n";
+        result += "GENE NAME\tCHROMOSOME\tPROCESS\tLOG2FOLD\tP-VALUE\n";
+        upgenes.forEach(function(d){
+            result += d.gene+"\t"+d.chr+"\t"+d.process+"\t"+d.log2+"\t"+d.pvalue+"\n";
+        });
+        result += "----------------------------\n\n";
+        result += "DOWN-REGULATED GENES:\n\n";
+        result += "GENE NAME\tCHROMOSOME\tPROCESS\tLOG2FOLD\tP-VALUE\n";
+        downgenes.forEach(function(d){
+            result += d.gene+"\t"+d.chr+"\t"+d.process+"\t"+d.log2+"\t"+d.pvalue+"\n";
+        });
+        result += "----------------------------\n\n";
+        result += "MUTATED GENES:\n\n";
+        result += "GENE NAME\tCHROMOSOME\tPROCESS\tVARIANT DESCRIPTION\n";
+        mutation.forEach(function(d){
+            result += d.gene+"\t"+d.chr+"\t"+d.process+"\t"+d.mutation+"\n";
+        });
+        result += "----------------------------\n";
+        result += "----------------------------\n\n";
+        
+    });
+    var textToWrite = result;
+		var textFileAsBlob = new Blob([textToWrite], {type:'text/plain'});
+		var fileNameToSaveAs = "Mito_variants.txt";
+		var downloadLink = document.createElement("a");
+		downloadLink.download = fileNameToSaveAs;
+		window.URL = window.URL || window.webkitURL;
+		downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
+		downloadLink.onclick = destroyClickedElement;
+		document.body.appendChild(downloadLink);
+		downloadLink.click();
+    }
+    catch(err){
+        alert("Please select samples!");
+    }
+};
+
+	function destroyClickedElement(event)
+	{
+		// remove the link from the DOM
+    		document.body.removeChild(event.target);
+	}
+
+
+	saveAsSvg = function()
+ 	{
+ 	
+		var svg = d3.selectAll('#heatmapsvg');
+        	var html ='<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="'+svg.attr('width')+'" height="'+svg.attr('height')+'">' +svg.node().innerHTML +'</svg>';
+    		var blob = new Blob([html], { type: "image/svg+xml;charset=utf-8" });
+		var domUrl = self.URL || self.webkitURL || self;
+            	var blobUrl = domUrl.createObjectURL(blob);
+		var l = document.createElement("a");
+        	l.download = 'Mito_network.svg';
+		window.URL = window.URL || window.webkitURL;
+		l.href = window.URL.createObjectURL(blob);
+		document.body.appendChild(l);
+        	l.click();
+      
+    /*html2canvas($('#barchartsvg'), 
+    {
+      onrendered: function (canvas) {
+        var a = document.createElement('a');
+        // toDataURL defaults to png, so we need to request a jpeg, then convert for file download.
+        a.href = canvas.toDataURL("image/jpeg").replace("image/jpeg", "image/octet-stream");
+        a.download = 'somefilename.jpg';
+        a.click();
+      }
+    });*/
+	
+	}
+
+
 
 module.exports = BC;

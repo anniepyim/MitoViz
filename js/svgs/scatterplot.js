@@ -37,6 +37,8 @@ var highlightradius = 6.5;
 var clickEvent = {target: null, holdClick: false},
     tipTemplate = require('../views/templates').tooltip;
 
+var finaldata;
+
 var SP = function (obj) {
     if (obj instanceof SP) return obj;
     if (!(this instanceof SP)) return new SP(obj);
@@ -215,6 +217,7 @@ SP.update = function (jsondata, nfunc, ncolor,colorrange) {
         .transition(1000)
         .attr("r", 0)
         .remove();
+    finaldata = jsondata;
 
 };
 
@@ -263,6 +266,7 @@ SP.init = function (jsondata,colorrange) {
     
     var resp = d3.select("#scatterplot")
         .append('div')
+        .attr("id", "scatterplotsvgdiv")
         .attr('class', 'svg-container'); //container class to make it responsive
     
     SPsvg = resp
@@ -278,9 +282,6 @@ SP.init = function (jsondata,colorrange) {
     SP.update(jsondata, "Translation", "#8dd3c7",colorrange);
 };
 
-SP.alert = function(){
-    alert("SP");
-};
 
 
 if (typeof define === "function" && define.amd) {

@@ -55,7 +55,7 @@ $id = $_GET['id'];
                             <a href="../upload.html">Upload</a>
                         </li>
                         <li>
-                            <a href="../compare.html">Analysis</a>
+                            <a href="../compare.php">Analysis</a>
                         </li>
                         <li>
                             <a href="../contact.html">Contact</a>

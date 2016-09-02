@@ -1,10 +1,15 @@
 var d3 = require('d3');
 
+
 //Public members
 var App = {};
 
+var this_js_script = $('script[src*=Test]');
+    var my_var_1 = this_js_script.attr('data-my_var_1');
+    if (my_var_1) my_var_1 = my_var_1.split(',');
+//end
+
 App.init = function(options){ 
-    
     
     //Views
     var mainframe = require('./views/mainframe.js');
@@ -13,7 +18,7 @@ App.init = function(options){
     
     //var NavBar = require('./views/navBar');
     
-    //App.views = {};
+    App.views = {};
     //App.views.vis = require('./views/process.vis.js');
     
     //App.views.main = new Main();
@@ -36,8 +41,11 @@ App.init = function(options){
         
     });*/
     
-    var vis = require("./views/vis.js");
+
     var dataSelect = require('./views/mainjs.js');
+    var vis = require("./views/vis.js");
+    if (my_var_1) vis.spcompareData(my_var_1);
+    
     
 };
 
