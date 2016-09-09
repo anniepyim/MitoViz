@@ -16,7 +16,7 @@ var BC = function (obj) {
     this.BCwrapped = obj;
 };
 
-var newdata,sampledata;
+var newdata;
 
 BC.draw = function (jsondata,colorrange) {
     
@@ -51,22 +51,28 @@ BC.draw = function (jsondata,colorrange) {
     });
     
     
+    var genedata = d3.nest()
+        .key(function (d) {
+            return d.gene;
+        })
+        .entries(newdata);
+    
+    genedata.forEach(function(d){
+        d.gene = d.key;
+        d.process = d.values[0].process;
+    })
+    
     var data = d3.nest()
         .key(function (d) {
             return d.process;
         })
-        .entries(newdata);
+        .entries(genedata);
     
-    sampledata = d3.nest()
-        .key(function (d) {
-            return d.sampleID;
-        })
-        .entries(jsondata);
-
     data.forEach(function (d) {
         d.process = d.key;
-        d.count = d.values.length/sampledata.length;
+        d.count = d.values.length;
     });
+    
     
     data.sort(function(a,b) { return +b.count - +a.count; });
     

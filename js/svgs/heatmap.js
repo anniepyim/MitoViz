@@ -10,7 +10,7 @@ var heatmap = function (obj) {
 };
 
 heatmap.processData = function (jsondata, nfunc,colorrange) {
-
+    
     var newdata = [];
 
     jsondata.forEach(function (d) {
@@ -18,7 +18,8 @@ heatmap.processData = function (jsondata, nfunc,colorrange) {
             newdata.push(d);
         }
     });
-
+    
+    
     //create map for gene and sample data
     var genedata = d3.nest()
         .key(function (d) {
@@ -26,11 +27,13 @@ heatmap.processData = function (jsondata, nfunc,colorrange) {
         })
         .entries(newdata);
 
+    
     var sampledata = d3.nest()
         .key(function (d) {
             return d.sampleID;
         })
         .entries(newdata);
+    
 
     var id = 1;
     var genemap = {};
@@ -40,7 +43,8 @@ heatmap.processData = function (jsondata, nfunc,colorrange) {
         genelist.push(d.key);
         id += 1;
     });
-
+    
+    
     id = 1;
     var samplemap = {};
     var samplelist = [];
@@ -49,7 +53,7 @@ heatmap.processData = function (jsondata, nfunc,colorrange) {
         samplelist.push(d.key);
         id += 1;
     });
-
+    
     outdata = [];
 
     newdata.forEach(function (d) {
@@ -64,7 +68,7 @@ heatmap.processData = function (jsondata, nfunc,colorrange) {
             gene_function: d.gene_function, 
             mutation: d.mutation.split(',')
         });
-    });
+    });    
     
     heatmap.draw(outdata, samplelist, genelist,colorrange);
 };
@@ -242,18 +246,44 @@ heatmap.draw = function (jsondata, samplelist, genelist,colorrange) {
         var t = svg.transition().duration(3000);
         var log2r = [];
         var sorted; // sorted is zero-based index
+        var idx = 1;
+
+        
         d3.selectAll(".c" + rORc + i)
             .filter(function (ce) {
-                log2r.push(ce.log2);
+                while(ce.colidx !== idx){
+                    log2r.push(-100);
+                    idx = idx+1;
+                }
+                log2r.push(ce.log2)
+                idx = idx+1;
             });
+        
+        while(idx < genelist.length+1){
+            log2r.push(-100)
+            idx = idx+1;
+        }
+
+        
         if (rORc == "r") { // sort log2ratio of a gene
             sorted = d3.range(col_number).sort(function (a, b) {
                 if (sortOrder) {
-                    return log2r[b] - log2r[a];
+                    return log2r[a] - log2r[b]
                 } else {
-                    return log2r[a] - log2r[b];
+                    return log2r[b] - log2r[a];
                 }
             });
+            
+
+            log2r.sort(function (a, b) {
+                if (sortOrder) {
+                    return a - b;
+                } else {
+                    return b - a;
+                }
+            });
+            
+            
             t.selectAll(".cell")
                 .attr("x", function (d) {
                     return sorted.indexOf(d.colidx - 1) * gridwidth;

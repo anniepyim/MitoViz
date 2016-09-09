@@ -46,16 +46,16 @@ function parse(urls, errorcb, datacb,colorrange){
                         mitomap[mito[i]] = ifExist;
                     }
                 }                
-                res.data.sort(function(a,b) { return d3.ascending(a.gene, b.gene);});
+                /*res.data.sort(function(a,b) { return d3.ascending(a.gene, b.gene);});*/
                 data = data.concat(res.data);
             });
-            //console.log(data);
            for (var k = 0; k < data.length; k++){
                 if(mitomap[data[k].gene] === true){
                     newdata = newdata.concat(data[k]);
                 }        
             }
-            datacb(newdata,colorrange);
+            data.sort(function(a,b) { return d3.ascending(a.gene, b.gene);});
+            datacb(data,colorrange);
         
         }))
         .catch(function (res) {
