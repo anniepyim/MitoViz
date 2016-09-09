@@ -2,9 +2,30 @@
 @import url("bootstrap.min.css");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 
+.navbar-inner {
+    min-height: 0px;
+}
+
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 60px;
+    height: 60px;
+    padding-top: 0;
+    font-size:16px;
+}
+
+.navbar-brand{
+    font-size:22px;
+}
+
+.dropdown-menu li a{
+    line-height: 40px;
+    padding-top: 0;
+    height: 40px;
+}
 
 body {
-    padding-top: 50px;
+    padding-top: 60px;
     font-family: 'Montserrat', 'sans-serif';
     margin: 10;
     font-size:14px
