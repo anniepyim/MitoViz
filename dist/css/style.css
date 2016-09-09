@@ -18,11 +18,12 @@
     font-size:22px;
 }
 
-.dropdown-menu li a{
+#ddm li a{
     line-height: 40px;
     padding-top: 0;
     height: 40px;
 }
+
 
 body {
     padding-top: 60px;

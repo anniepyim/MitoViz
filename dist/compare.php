@@ -38,7 +38,7 @@ if($compare){
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Database
                             <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu" id="ddm">
                                 <li><a href="./database/tcga.html">TCGA</a></li>
                                 <li><a href="./database/aneuploidy.html">Aneuploidy</a></li>
                                 <li><a href="./database/viral.html">Viral</a></li>

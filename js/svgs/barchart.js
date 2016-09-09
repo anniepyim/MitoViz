@@ -50,6 +50,11 @@ BC.draw = function (jsondata,colorrange) {
         if (!isNaN(parseFloat(d.log2)) && isFinite(d.log2))  newdata.push(d);
     });
     
+    sampledata = d3.nest()
+        .key(function (d) {
+            return d.sampleID;
+        })
+        .entries(newdata);
     
     var genedata = d3.nest()
         .key(function (d) {
@@ -119,14 +124,18 @@ BC.init = function (jsondata,colorrange) {
 
 saveTextAsFile = function(){
     try{
+    var up = document.getElementById('up').value;
+    if (up === "") up = 1.5;
+    var down = document.getElementById('down').value;
+    if (down === "") down = -1.5;   
     var result = "";
     sampledata.forEach(function(dp){
         var key = dp.key;
         var upgenes = [], downgenes = [], mutation=[];
         newdata.forEach(function(d){
             if (d.sampleID == key){
-                if (d.log2 >= 1.5) upgenes.push(d);
-                if (d.log2 <= -1.5) downgenes.push(d);
+                if (d.log2 >= up) upgenes.push(d);
+                if (d.log2 <= down) downgenes.push(d);
                 if (d.mutation !== "") mutation.push (d);
             }
         });
