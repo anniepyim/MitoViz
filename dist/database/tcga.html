@@ -31,7 +31,7 @@
                         <li class="dropdown" class="active">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Database
                             <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu" id="ddm">
                                 <li><a href="#">TCGA</a></li>
                                 <li><a href="./aneuploidy.html">Aneuploidy</a></li>
                                 <li><a href="./viral.html">Viral</a></li>
@@ -56,11 +56,66 @@
 <div class="container">
     <div class="jumbotron" style="margin-top:20px;font-size:10px">
 
-					<h3>This page is under construction</h3>
+					<h1>Trisomy </h1>
 				
     </div>
+        <form name = "compareform" action="../compare.php" method="get">
+        <div class="row">
+            <div class="col-md-12"><h2>Hepatocellular carcinoma (HCC)</h2><br><br></div>
+            <div class="col-md-3" style="text-align: center">
+                <input class="comparecheckbox" type="checkbox" name="compare[]" value="./data/TCGA/HCC/sample1.json">
+                <a href="../php/mitomodel.php?id=TCGA/HCC/sample1">Sample 1</a>
+            </div>
+            <div class="col-md-3" style="text-align: center">
+                <input class="comparecheckbox" type="checkbox" name="compare[]" value="./data/TCGA/HCC/sample2.json">
+                <a href="../php/mitomodel.php?id=TCGA/HCC/sample2">Sample 2</a></div>
+            <div class="col-md-3" style="text-align: center">
+                <input class="comparecheckbox" type="checkbox" name="compare[]" value="./data/TCGA/HCC/sample3.json">
+                <a href="../php/mitomodel.php?id=TCGA/HCC/sample3">Sample 3</a></div>
+            <div class="col-md-3" style="text-align: center">
+                <input class="comparecheckbox" type="checkbox" name="compare[]" value="./data/TCGA/HCC/sample4.json">
+                <a href="../php/mitomodel.php?id=TCGA/HCC/sample4">Sample 4</a></div>
+            <div class="col-md-3" style="text-align: center">
+                <input class="comparecheckbox" type="checkbox" name="compare[]" value="./data/TCGA/HCC/sample5.json">
+                <a href="../php/mitomodel.php?id=TCGA/HCC/sample5">Sample 5</a></div>
+            <div class="col-md-3" style="text-align: center">
+                <input class="comparecheckbox" type="checkbox" name="compare[]" value="./data/TCGA/HCC/sample6.json">
+                <a href="../php/mitomodel.php?id=TCGA/HCC/sample6">Sample 6</a></div>
+            <div class="col-md-3" style="text-align: center">
+                <input class="comparecheckbox" type="checkbox" name="compare[]" value="./data/TCGA/HCC/sample7.json">
+                <a href="../php/mitomodel.php?id=TCGA/HCC/sample7">Sample 7</a></div>
+            <div class="col-md-3" style="text-align: center">
+                <input class="comparecheckbox" type="checkbox" name="compare[]" value="./data/TCGA/HCC/sample8.json">
+                <a href="../php/mitomodel.php?id=TCGA/HCC/sample8">Sample 8</a></div>
+        </div>
+        
+        <div><hr></div>
+        <div class="col-md-12" id="warning" style="margin-top:10px;text-align: center"></div>
+        <div class = "col-md-12" style="margin-top:10px;text-align: center;font-size:16px">Click on individual samples to visualize their expression and mutation profile<br><br>
+        Or select up to 6 samples with checkboxes for comparative analysis <br><br><input type="submit" class="btn btn-success" value="Go!">
+        </div>
+    </form>
 			
 	</div>
+<script type="text/javascript">
+    $(document).ready(function(){ 
+        $('input[type=checkbox]').on('change', function (e) {
+        if ($('input[type=checkbox]:checked').length > 6) {
+            $(this).prop('checked', false);
+            document.getElementById('warning').innerHTML="<font color=\"red\">Please select 6 samples at most!";
+        }
+        else
+            document.getElementById('warning').innerHTML="";
+        });
+        
+        $("form").submit(function (e) {
+            if ($('input[type=checkbox]:checked').length == 0){
+                e.preventDefault();
+                document.getElementById('warning').innerHTML="<font color=\"red\">Please select samples!";
+            } 
+        });
+    });
+    </script>
 </body>
 
 </html>
