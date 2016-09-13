@@ -34,7 +34,7 @@ $s=mysql_query($query, $connect);
 $quer = "create table expression (Gene_name varchar(50), Expression_Sample_1 float NOT NULL DEFAULT '0.00', Expression_Sample_2 float NOT NULL DEFAULT '0.00', log2fold_change float NOT NULL DEFAULT '0.00', p_value float NOT NULL DEFAULT '0.00')";
 $s=mysql_query($quer, $connect);
 
-$que = ("load data local infile '../data/user_uploads/raw_files/".$id."_exp.txt' into table expression FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\n' (@gene, @val1, @val2, @foch, @pval) set Gene_name = @gene, Expression_Sample_1 = @val1, Expression_Sample_2 = @val2, log2fold_change = @foch, p_value = @pval;");
+$que = ("load data local infile '../data/user_uploads/".$id."/raw/".$samplename."_exp.txt' into table expression FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\n' (@gene, @val1, @val2, @foch, @pval) set Gene_name = @gene, Expression_Sample_1 = @val1, Expression_Sample_2 = @val2, log2fold_change = @foch, p_value = @pval;");
 $z=mysql_query($que, $connect);
 
 $function = "DROP TABLE IF EXISTS `function`";
@@ -51,7 +51,7 @@ $m=mysql_query($mutants, $connect);
 $mutant="create table variant (Gene_mutname varchar(150), Reference_position bigint, Reference_base varchar(1000), Reference_variant varchar(1000), Variant_type varchar(100), Mutation_type varchar(100))";
 $m=mysql_query($mutant, $connect);
 //---------------------------modified on december 18th
-$mutan=("load data local infile '../data/user_uploads/raw_files/".$id."_var.txt' into table variant FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\n' (@gene_name, @chrmo, @position, @reference, @variant, @varianttype, @variantname) set Gene_mutname = @gene_name, Reference_position = @position, Reference_base = @reference, Reference_variant = @variant, Variant_type = @varianttype, Mutation_type = @variantname;");  
+$mutan=("load data local infile '../data/user_uploads/raw_files/".$id."/raw/".$samplename."_var.txt' into table variant FIELDS TERMINATED BY '\t' LINES TERMINATED BY '\n' (@gene_name, @chrmo, @position, @reference, @variant, @varianttype, @variantname) set Gene_mutname = @gene_name, Reference_position = @position, Reference_base = @reference, Reference_variant = @variant, Variant_type = @varianttype, Mutation_type = @variantname;");  
 $n=mysql_query($mutan, $connect);
 
 
@@ -94,8 +94,12 @@ if ( !$result )
 
 
 $id = session_id();
+$target_path = "../data/user_uploads/".$id."/json/";
+if (!is_dir($target_path)){
+    mkdir($target_path, 0777, true);
+}
 $prefix = '';
-$fp = fopen('../data/user_uploads/json_files/'.$samplename.'.json', 'w');
+$fp = fopen($target_path.$samplename.'.json', 'w');
 
  fprintf($fp, "[\n");
 while ( $row = mysql_fetch_assoc( $result))

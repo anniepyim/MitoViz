@@ -5,16 +5,17 @@ var d3 = require('d3');
 var App = {};
 
 var this_js_script = $('script[src*=Test]');
-    var my_var_1 = this_js_script.attr('data-my_var_1');
-    if (my_var_1) my_var_1 = my_var_1.split(',');
+var my_var_1 = this_js_script.attr('data-my_var_1');
+if (my_var_1) my_var_1 = my_var_1.split(',');
 //end
+var id = this_js_script.attr('data-id');
 
 App.init = function(options){ 
     
     //Views
     var mainframe = require('./views/mainframe.js');
     App.mainframe = new mainframe();
-    App.mainframe.setElement('#content').render();
+    App.mainframe.setElement('#content').render(id);
     
     //var NavBar = require('./views/navBar');
     

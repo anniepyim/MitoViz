@@ -4,8 +4,10 @@ module.exports = Backbone.View.extend({
     
     template: templates.main,
     
-    render: function(){
-        this.$el.append(this.template({}));
+    render: function(id){
+        var obj = new Object();
+        obj.id = id;
+        this.$el.append(this.template(obj));
         return this;
     },
 });

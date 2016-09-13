@@ -1,4 +1,7 @@
 <?php 
+session_start();
+
+$id = session_id();
 $compare = $_GET['compare'];
 
 if($compare){
@@ -63,7 +66,7 @@ if($compare){
         <!-- Page Content -->
         <div class = "container" id="content">
         </div>
-        <script data-my_var_1="<?php echo $jsarray; ?>" data src="./js/Test.js"></script>
+        <script data-my_var_1="<?php echo $jsarray; ?>" data-id="<?php echo $id; ?>" data src="./js/Test.js"></script>
         <script>   
             App.init();
         </script>

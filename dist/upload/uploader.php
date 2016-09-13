@@ -1,7 +1,6 @@
 <?php 
 session_start();
-$old_sessionid = session_id();
-session_regenerate_id();
+//session_regenerate_id();
 $new_sessionid = session_id();
 //$organism = $_POST['organism'];
 //switch ($organism)
@@ -20,8 +19,4 @@ $new_sessionid = session_id();
 //	exit;
 
 //}
-$new_sessionid = NULL;
-session_unset();
-session_destroy();
-unset($_SESSION);
 ?>
