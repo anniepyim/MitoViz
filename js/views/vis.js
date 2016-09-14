@@ -11,7 +11,10 @@ var pcPlot = require('../svgs/pcPlot.js');
 var PCdata = require('../svgs/pcdata.js');
 var PCBC = require('../svgs/pcbarchart.js');
 var parser = require('./parser.js');
-var exist = false;
+var mainframe = require('./mainframe.js');
+
+
+mainframe = new mainframe();
 
 var vis = function (obj) {
     if (obj instanceof vis) return obj;
@@ -30,19 +33,13 @@ function onError(res) {
 }
 
 function drawSP(data,colorrange) {
+    var el = document.getElementById( 'svgs-all' );
+    while (el.hasChildNodes()) {el.removeChild(el.firstChild);}
+    mainframe.setElement('#svgs-all').renderscplot();
     hideLoading();
-    if (exist === false){
-        SP.init(data,colorrange);
-        BC.init(data,colorrange);
-        heatmap.init(data,colorrange);
-    }
-    else{
-        SP.update(data, "Apoptosis", "#b3de69",colorrange);
-        d3.select("#barchartsvg").remove();
-        BC.init(data,colorrange);
-        d3.select("#heatmapsvg").remove();
-        heatmap.processData(data, "Apoptosis",colorrange);
-    }
+    SP.init(data,colorrange);
+    BC.init(data,colorrange);
+    heatmap.init(data,colorrange);
 }
 
 function redrawPCA(data){
@@ -72,8 +69,7 @@ d3.select('#compareButton').on('click', function(){
     if (analysis == "scatterplotanalysis") vis.spcompareData();
     else pcacompareData();
 });
-d3.select('#filterbutton').on("click", pcaupdateData);
-$('#pcafolders').on('change',pcaupdatefolder);
+
 
 
 vis.spcompareData = function(arr){
@@ -84,7 +80,6 @@ vis.spcompareData = function(arr){
            arr[i] = select.options[i].value;
         } 
     }
-    exist = !!document.getElementById("x-axis");
     
     var colorrange = "#d73027,#f46d43,#fdae61,#fee08b,#ffffbf,#d9ef8b,#a6d96a,#66bd63,#1a9850";
     //var colorrange = d3.select('#colorinput').property("value");
@@ -92,6 +87,14 @@ vis.spcompareData = function(arr){
 }
 
 function pcacompareData(){
+    
+    var el = document.getElementById( 'svgs-all' );
+    while (el.hasChildNodes()) {el.removeChild(el.firstChild);}
+    mainframe.setElement('#svgs-all').renderpca();
+    mainframe.setElement('#pcbarchart').renderpcabc();
+    
+    d3.select('#filterbutton').on("click", pcaupdateData);
+    $('#pcafolders').on('change',pcaupdatefolder);
     
     var tcga = true;
     
@@ -115,9 +118,6 @@ function pcacompareData(){
             type: "POST",
             dataType: "json",    
             success: function (result) {
-                //console.log(result)
-                removeCriteria();
-                d3.select("#pcacanvas").remove();
                 pcPlot.init();
                 redrawPCA(result);
             },

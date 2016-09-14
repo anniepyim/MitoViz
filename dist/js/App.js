@@ -213,8 +213,8 @@ App.init = function(options){
     
     App.views.vis.selector('#vis');
     
-    d3.json("../data/" + my_var_1 + ".json", function(error, nodes) {
-        if (error) return console.warn("../data/" + my_var_1 + ".json");
+    d3.json("./data/" + my_var_1 + ".json", function(error, nodes) {
+        if (error) return console.warn("./data/" + my_var_1 + ".json");
         
         d3.json(my_var_2, function(error, links) {
             if (error) return console.warn(my_var_2);

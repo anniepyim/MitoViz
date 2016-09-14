@@ -2,7 +2,7 @@
 <div class="container main">
         <div id="#wrapUp" class="row">
             
-        <div class="col-md-2">
+            <div class="col-md-2">
          <div class="row">
              
              <!--Folders to select data -->
@@ -71,83 +71,8 @@
             <div class="row tip" style="margin-top:0px;"></div>
         </div>
         
-        <div class="col-md-10">
-      <div id = "svgs-all" class="col-md-12">
-                <div id="scatterplot" class="col-md-9"></div>
-                <div id="pca" class="col-md-9" style="display:none">
-          
-        </div>
-                <div id="barchart" class="col-md-3"></div>
-                <div id="pcbarchart" class="col-md-3" style="display:none">
-                 <div class="col-md-12 midtitle" style="margin-top:20px;">
-               Show PCA by Processes
-               </div>
-                <div class="col-md-12" style="margin-top:10px;">
-                <select class="selectpicker" id="pcafolders" data-style="btn-default" title="Pick process" data-width="175px" >
-                   
-                </select>
-               </div>
-                <div class="col-md-12"><hr></div>
-               <div class="col-md-12 midtitle" style="margin-top:0px;margin-bottom:10px;">
-               Color samples by
-                </div>
-                <div id="pcbcsvg" class="col-md-12">
-                  <div class="panel-group">
-             <div class="panel panel-default pcbc" id="grouppanel" style="background:#b3ccff">
-               <div class="minititle" style="padding: 10px 10px;" id="grouptitle">
-                   <a data-toggle="collapse" href="#collapse3">Group</a>
-               </div>
-                <div id="collapse3" class="panel-collapse collapse-in">
-                 <div class="panel-body svg-container" id="groupbarchart" style="padding :0px 0px; font-size:20px"></div>
-                </div>
-              </div>
-              <div class="panel panel-default pcbc" id="genderpanel">
-               <div class="minititle" style="padding: 10px 10px;" id="gendertitle">
-                    <a data-toggle="collapse" href="#collapse1">Gender</a>
-                </div>
-                <div id="collapse1" class="panel-collapse collapse">
-                  <div class="panel-body svg-container" id="genderbarchart" style="padding :0px 0px; font-size:20px"></div>
-               </div>
-              </div>
-              <div class="panel panel-default pcbc" id="stagepanel">
-                <div class="minititle" style="padding: 10px 10px;" id="stagetitle">
-                   <a data-toggle="collapse" href="#collapse2">Stage</a>
-               </div>
-                <div id="collapse2" class="panel-collapse collapse">
-                  <div class="panel-body svg-container" id="stagebarchart" style="padding :0px 0px; font-size:20px"></div>
-                </div>
-              </div>
-              <div class="panel panel-default pcbc" id="vitalpanel">
-                <div class="minititle" style="padding: 10px 10px;" id="vitaltitle">
-                   <a data-toggle="collapse" href="#collapse4">Vital Status</a>
-                </div>
-                <div id="collapse4" class="panel-collapse collapse">
-                  <div class="panel-body svg-container" id="vitalbarchart" style="padding :0px 0px; font-size:20px"></div>
-                </div>
-              </div>
-              <div class="panel panel-default pcbc" id="neg3panel">
-               <div class="minititle" style="padding: 10px 10px;" id="neg3title">
-                    <a data-toggle="collapse" href="#collapse5">Triple Neg</a>
-                </div>
-                <div id="collapse5" class="panel-collapse collapse">
-                  <div class="panel-body svg-container" id="neg3barchart" style="padding :0px 0px; font-size:20px"></div>
-               </div>
-              </div>
+            <div class="col-md-10">
+                <div id = "svgs-all" class="col-md-12"></div>   
             </div>
-                </div>
-                <div class = "col-md-12" id="criteriabutton"></div>
-               <div class = "col-md-12" style="display:none"><input type="text" id="criteriagroup"><input type="text" id="criteriagender"><input type="text" id="criteriastage"><input type="text" id="criteriavital"><input type="text" id="criterianeg3"></div>
-                <div class = "col-md-12" style="margin-top:20px;text-align: center"><button id = "filterbutton" class="btn btn-success">Update</button>
-               </div>
-                </div>
-                <div id="heatmap" class="col-md-12"></div>
-                <div class="col-md-12">
-                    Log2FC greater than: <input type="text" id="up" size="4">
-                    Log2FC smaller than: <input type="text" id="down" size="4">
-                    <button class="btn btn-default"  onclick="saveTextAsFile()" style="float: right;"><strong>Download Data</strong></button>
-                </div>
-            </div>
-            
         </div>
-        </div>
-        </div>
+</div>

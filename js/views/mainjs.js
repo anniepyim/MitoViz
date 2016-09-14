@@ -5,22 +5,12 @@ var flag = "SP";
 $('input[type=radio][name=analysis]').change(function(e){
     
     if (this.value == "pcanalysis"){
-        document.getElementById("scatterplot").style.display="none";
-        document.getElementById("barchart").style.display="none";
-        document.getElementById("heatmap").style.display="none";
-        document.getElementById("pca").style.display="";
-        document.getElementById("pcbarchart").style.display="";
         flag = "PCA";
         issueWarning();
         
     }
     
     if (this.value == "scatterplotanalysis"){
-        document.getElementById("scatterplot").style.display="";
-        document.getElementById("barchart").style.display="";
-        document.getElementById("heatmap").style.display="";
-        document.getElementById("pca").style.display="none";
-        document.getElementById("pcbarchart").style.display="none";
         flag = "SP";
         issueWarning();
     }

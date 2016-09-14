@@ -2,7 +2,7 @@ var d3 = require('d3');
 var colorbrewer = require('colorbrewer');
 var SP = require('./scatterplot.js');
 var heatmap = require('./heatmap.js');
-require('../views/html2canvas.min.js')
+//require('../views/html2canvas.min.js')
 
 
 //var color = d3.scale.category20();

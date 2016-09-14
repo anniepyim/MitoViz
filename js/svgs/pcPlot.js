@@ -15,7 +15,7 @@ var gridDepth = 100,
     gridWidth = 100,
     gridHeight = 100;
 var rotate = true, mouseflag = 0;
-var container = document.getElementById( 'pca' ),
+var container,
     pcacanvas;
 
 var tipTemplate = require('../views/templates').pcatooltip;
@@ -32,7 +32,8 @@ function sceneInit(){
     canv.id = 'pcacanvas';
 
     document.getElementById('pca').appendChild(canv);
-
+    
+    container = document.getElementById( 'pca' );
     pcacanvas = document.getElementById( 'pcacanvas' );
     
     scene = new THREE.Scene();

@@ -19,7 +19,6 @@ if($compare){
         <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
         <script src="./js/bootstrap.min.js"></script>
         <script src="./js/bootstrap-select.js"></script>
-        <script src="./js/html2canvas.min.js"></script>
     </head>
     
     <body>
@@ -42,10 +41,11 @@ if($compare){
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Database
                             <span class="caret"></span></a>
                             <ul class="dropdown-menu" id="ddm">
-                                <li><a href="./database/tcga.html">TCGA</a></li>
-                                <li><a href="./database/aneuploidy.html">Aneuploidy</a></li>
-                                <li><a href="./database/viral.html">Viral</a></li>
-                                <li><a href="./database/trisomy.html">Trisomy</a></li> 
+                                <li><a href="./data/tcga.html">TCGA</a></li>
+                                <li><a href="./data/aneuploidy.html">Aneuploidy</a></li>
+                                <li><a href="./data/viral.html">Viral</a></li>
+                                <li><a href="./data/trisomy.html">Trisomy</a></li> 
+                                <li><a href="./data/user_uploads.php">User Uploads</a></li> 
                             </ul>
                           </li>
                         <li>
@@ -66,7 +66,7 @@ if($compare){
         <!-- Page Content -->
         <div class = "container" id="content">
         </div>
-        <script data-my_var_1="<?php echo $jsarray; ?>" data-id="<?php echo $id; ?>" data src="./js/Test.js"></script>
+        <script data-my_var_1="<?php echo $jsarray; ?>" data-id="<?php echo $id; ?>" src="./js/Test.js"></script>
         <script>   
             App.init();
         </script>
