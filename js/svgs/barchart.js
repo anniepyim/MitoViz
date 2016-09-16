@@ -65,7 +65,7 @@ BC.draw = function (jsondata,colorrange) {
     genedata.forEach(function(d){
         d.gene = d.key;
         d.process = d.values[0].process;
-    })
+    });
     
     var data = d3.nest()
         .key(function (d) {
@@ -211,7 +211,7 @@ saveTextAsFile = function(){
       }
     });*/
 	
-	}
+	};
 
 
 

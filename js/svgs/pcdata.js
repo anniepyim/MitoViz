@@ -80,9 +80,16 @@ PCdata.init = function (indata,cat) {
     prdata.forEach(function (d) {
             d.neg3color = colorneg3(d.neg3);
         });
-
-    var newdata = addCriteria(prdata,cat);
-        
+    
+    prdata.forEach(function (d) {
+        d.color = (cat == "cancer type") ? d.groupcolor : (cat == "gender") ? d.gendercolor : (cat == "stage") ? d.stagecolor : (cat == "vital") ? d.vitalcolor : d.neg3color;
+    });
+    
+    var element = document.getElementsByClassName('pcbc');
+    var newdata;
+    if (!!element[0]) newdata = addCriteria(prdata,cat);
+    else newdata = prdata;
+     
     return newdata;
 };
 
@@ -114,10 +121,6 @@ var addCriteria = function(prdata,cat){
             if ((contains.call(criteriagroup,d.group) || criteriagroup.length === 0) && (contains.call(criteriagender,d.gender) || criteriagender.length === 0) && (contains.call(criteriastage,d.stage) || criteriastage.length === 0) && (contains.call(criteriavital,d.vital) || criteriavital.length === 0) && (contains.call(criterianeg3,d.neg3) || criterianeg3.length === 0)) newdata.push(d);
         });   
     }
-    
-    newdata.forEach(function (d) {
-        d.color = (cat == "cancer type") ? d.groupcolor : (cat == "gender") ? d.gendercolor : (cat == "stage") ? d.stagecolor : (cat == "vital") ? d.vitalcolor : d.neg3color;
-    });
     
     return newdata;
     

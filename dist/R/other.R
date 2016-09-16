@@ -4,9 +4,6 @@ library(jsonlite)
 
 args = commandArgs(trailingOnly=TRUE)
 targetoutpath = "../data/PCA/"
-fileslist <- list.files()
-
-
 
 if (length(args)==0) {
   #stop("At least one argument must be supplied (input file).n", call.=FALSE)
@@ -24,9 +21,7 @@ datalist = lapply(filelist,function(x){
   test
 })
 
-
-merged = Reduce(function(x,y) {
-  print("done")
+data = Reduce(function(x,y) {
   merge(x,y)
 }, datalist)
 
@@ -37,10 +32,6 @@ url = do.call("rbind", lapply(filelist,function(x){
   c(sampleID,substring(x,2))
 }))
 
-
-clinical <- read.table("clinical-modified.txt",header=TRUE,sep="\t",check.names="FALSE")
-clin <- clinical[,c("sampleID","Cancer_type","Gender","Pathologic_stage","Vital_status","BRCA_cancer_factor_3neg")]
-colnames(clin) <- c("sampleID","group","gender","stage","vital","neg3")
 colnames(url) <- c("sampleID","url")
 
 # PCA
@@ -50,8 +41,7 @@ sampleID <- rownames(pca$x[,1:3])
 sum <- cbind(sampleID, pca$x[,1:3])
 rownames(sum) <- NULL
 sum <- as.data.frame(sum)
-df<- merge(sum,clin,by="sampleID")
-df<- merge(df,url,by="sampleID")
+df<- merge(sum,url,by="sampleID")
 df$PC1 <- as.numeric(as.character(df$PC1))
 df$PC2 <- as.numeric(as.character(df$PC2))
 df$PC3 <- as.numeric(as.character(df$PC3))
@@ -70,8 +60,7 @@ for(i in 1:length(mitofunc)){
     sum <- cbind(sampleID, pca$x[,1:3])
     rownames(sum) <- NULL
     sum <- as.data.frame(sum)
-    df<- merge(sum,clin,by="sampleID")
-    df<- merge(df,url,by="sampleID")
+    df<- merge(sum,url,by="sampleID")
     df$PC1 <- as.numeric(as.character(df$PC1))
     df$PC2 <- as.numeric(as.character(df$PC2))
     df$PC3 <- as.numeric(as.character(df$PC3))

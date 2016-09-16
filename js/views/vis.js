@@ -47,20 +47,25 @@ function redrawPCA(data){
     
     var cat;
     var element = document.getElementsByClassName('pcbc');
-    for (var e in element) if (element.hasOwnProperty(e)){
-        if (element[e].style.background=="rgb(179, 204, 255)") {
+    if (!!element[0]){
+        for (var e in element) if (element.hasOwnProperty(e)){
+            if (element[e].style.background=="rgb(179, 204, 255)") {
             cat = (element[e].id == "grouppanel") ? 'cancer type' : (element[e].id == "genderpanel") ? 'gender' : (element[e].id == "stagepanel") ? 'stage' :(element[e].id == "vitalpanel") ? 'vital': 'neg3';
+            }
         }
-    }
+    }else cat = 'cancer type';
     
     var prdata = PCdata.init(data,cat);
     pcPlot.deletedots();
     pcPlot.adddots(prdata);
-    PCBC.draw(prdata,"cancer type","#groupbarchart","#grouptitle","grouppanel");
-    PCBC.draw(prdata,"gender","#genderbarchart","#gendertitle","genderpanel");
-    PCBC.draw(prdata,"stage","#stagebarchart","#stagetitle","stagepanel");
-    PCBC.draw(prdata,"vital","#vitalbarchart","#vitaltitle","vitalpanel");
-    PCBC.draw(prdata,"neg3","#neg3barchart","#neg3title","neg3panel");
+    
+    if (!!element[0]){
+        PCBC.draw(prdata,"cancer type","#groupbarchart","#grouptitle","grouppanel");        PCBC.draw(prdata,"gender","#genderbarchart","#gendertitle","genderpanel");
+        PCBC.draw(prdata,"stage","#stagebarchart","#stagetitle","stagepanel");
+        PCBC.draw(prdata,"vital","#vitalbarchart","#vitaltitle","vitalpanel");
+        //PCBC.draw(prdata,"neg3","#neg3barchart","#neg3title","neg3panel");   
+    }
+
 }
 
 
@@ -84,40 +89,48 @@ vis.spcompareData = function(arr){
     var colorrange = "#d73027,#f46d43,#fdae61,#fee08b,#ffffbf,#d9ef8b,#a6d96a,#66bd63,#1a9850";
     //var colorrange = d3.select('#colorinput').property("value");
     parser.parse(arr, onError, drawSP,colorrange);
-}
+};
 
 function pcacompareData(){
     
-    var el = document.getElementById( 'svgs-all' );
-    while (el.hasChildNodes()) {el.removeChild(el.firstChild);}
-    mainframe.setElement('#svgs-all').renderpca();
-    mainframe.setElement('#pcbarchart').renderpcabc();
-    
-    d3.select('#filterbutton').on("click", pcaupdateData);
-    $('#pcafolders').on('change',pcaupdatefolder);
-    
-    var tcga = true;
+    var sametype = true;
+    var type;
+    var count=1;
     
     $("#selected-sample option").each(function(i){
-        if (!$(this).val().includes("TCGA")) tcga = false;
+        if (count === 1) type = $(this).val().split("/")[2];
+        else if ($(this).val().split("/")[2] != type) sametype = false;
+        count = count+1;
     });
     
-    if (tcga === false) onError("Sorry! Only TCGA samples are allowed");
-    else if ($('#selected-sample').find('option').length < 3) onError("Please add at least 3 samples");
+    
+    if (sametype === false) onError("Please select samples from the same project");
+    //else if ($('#selected-sample').find('option').length < 3) onError("Please add at least 3 samples");
     else{
+        var el = document.getElementById( 'svgs-all' );
+        while (el.hasChildNodes()) {el.removeChild(el.firstChild);}
+        mainframe.setElement('#svgs-all').renderpca();
+        
+        if (type == "TCGA") 
+        mainframe.setElement('#pcbarchart').renderpcabc();
+
+        d3.select('#filterbutton').on("click", pcaupdateData);
+        $('#pcafolders').on('change',pcaupdatefolder);
+        
         
         var samples = document.getElementById('selected-sample');
     
         for (var i = 0; i < samples.options.length; i++) { 
             samples.options[i].selected = true; 
         } 
-
+            
         jQuery.ajax({
-            url: "./R/test.py",  // or just test.py
+            url: type == "TCGA" ? "./R/tcga.py" : "./R/other.py",  // or just tcga.py
             data: $("#selected-sample").serialize(),
             type: "POST",
             dataType: "json",    
             success: function (result) {
+                //alert(result);
                 pcPlot.init();
                 redrawPCA(result);
             },
@@ -161,7 +174,7 @@ function pcaupdateData(){
     var process = $("#pcafolders option:selected").val();
     
     jQuery.ajax({
-        url: process,  // or just test.py
+        url: process,  // or just tcga.py
         dataType: "json",    
         success: function (result) {
             redrawPCA(result);
@@ -178,7 +191,7 @@ function pcaupdatefolder(){
     var process = $("#pcafolders option:selected").val();
     
     jQuery.ajax({
-        url: process,  // or just test.py
+        url: process,  // or just tcga.py
         dataType: "json",    
         success: function (result) {
             d3.select("#pcacanvas").remove();

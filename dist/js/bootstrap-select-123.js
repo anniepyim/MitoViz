@@ -448,23 +448,11 @@
       var actionsbox = this.multiple && this.options.actionsBox ?
       '<div class="bs-actionsbox">' +
         '<div style="margin-left:10px;margin-right:5px">'+
-        '<input type="checkbox" id="selectallcb"><label>Select all</label>'+
+        '<input type="checkbox" id="selectallcb" class="actions"><label>Select all</label>'+
         '</div>'+
       '</div>' 
     
           : '';
-      /*var actionsbox = this.multiple && this.options.actionsBox ?
-      '<div class="bs-actionsbox">' +
-      '<div class="btn-group btn-group-sm btn-block">' +
-      '<button type="button" class="actions-btn bs-select-all btn btn-default">' +
-      this.options.selectAllText +
-      '</button>' +
-      '<button type="button" class="actions-btn bs-deselect-all btn btn-default">' +
-      this.options.deselectAllText +
-      '</button>' +
-      '</div>' +
-      '</div>'
-          : '';*/
       var donebutton = this.multiple && this.options.doneButton ?
       '<div class="bs-donebutton">' +
       '<div class="btn-group btn-block">' +
@@ -1244,9 +1232,7 @@
       this.$searchbox.on('click', function (e) {
         e.stopPropagation();
       });
-        
-         
-        
+
       this.$menu.on('click', '.actions-btn', function (e) {
         if (that.options.liveSearch) {
           that.$searchbox.focus();
@@ -1264,23 +1250,14 @@
         }
       });
         
-   
-        
     $('#selectallcb').click(function() {
-        
-        
-        if (that.multiple === true){
-            if($(this).is(":checked")){
-                console.log(that);
+        if($(this).is(":checked")){
                 that.selectAll();
             }
             else if($(this).is(":not(:checked)")){
                 that.deselectAll();
-            }   
-        }
-
-    });
-    
+            }
+    });  
         
       this.$element.change(function () {
         that.render(false);

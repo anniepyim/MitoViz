@@ -21,7 +21,9 @@ for index, fn in enumerate(json_files):
     json_files[index] = "."+fn
 
 
-cmd = "/usr/local/bin/Rscript test.R "  + ' '.join(json_files)
+os.system("rm ../data/PCA/*")
+    
+cmd = "/usr/local/bin/Rscript other.R "  + ' '.join(json_files)
 os.system(cmd)
 
 with open("../data/PCA/All Processes-pca.json") as result:
@@ -31,7 +33,7 @@ with open("../data/PCA/All Processes-pca.json") as result:
     print json.dumps(json.load(result))
 
 
-    #print "Content-type: text/html\n"
-    #print "<html>"
-    #print cmd
-    #print "</html>"
+#print "Content-type: text/html\n"
+#print "<html>"
+#print cmd
+#print "</html>"

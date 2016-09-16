@@ -4,9 +4,6 @@ library(jsonlite)
 
 args = commandArgs(trailingOnly=TRUE)
 targetoutpath = "../data/PCA/"
-fileslist <- list.files()
-
-
 
 if (length(args)==0) {
   #stop("At least one argument must be supplied (input file).n", call.=FALSE)
@@ -17,18 +14,13 @@ if (length(args)==0) {
 
 datalist = lapply(filelist,function(x){
   test <- fromJSON(x)
-  sampleID <- test[1,"sampleID"]
-  test <- test[,c("gene","process","log2")]
-  test[,3] <- round(test[,3],3)
-  colnames(test) <- c("gene","process",sampleID)
-  test
-})
+  test[1,"sampleID"]
+  })
 
 
-merged = Reduce(function(x,y) {
-  print("done")
-  merge(x,y)
-}, datalist)
+all <- read.table("tcga.txt", header=TRUE,sep="\t",check.names="FALSE")
+datalist <- unlist(datalist)
+data <- all[,c("gene","process",datalist)]
 
 
 url = do.call("rbind", lapply(filelist,function(x){
@@ -98,5 +90,16 @@ for(i in 1:length(mitofunc)){
 #  write(dfjson,outputname)
 #}
 
+#datalist = lapply(filelist,function(x){
+#  test <- fromJSON(x)
+#  sampleID <- test[1,"sampleID"]
+#  test <- test[,c("gene","log2")]
+#  test[,2] <- round(test[,2],3)
+#  colnames(test) <- c("gene",sampleID)
+#  test
+#})
 
-
+#merged = Reduce(function(x,y) {
+#  print("done")
+#  merge(x,y)
+#}, datalist)

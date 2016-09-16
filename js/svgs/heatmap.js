@@ -255,12 +255,12 @@ heatmap.draw = function (jsondata, samplelist, genelist,colorrange) {
                     log2r.push(-100);
                     idx = idx+1;
                 }
-                log2r.push(ce.log2)
+                log2r.push(ce.log2);
                 idx = idx+1;
             });
         
         while(idx < genelist.length+1){
-            log2r.push(-100)
+            log2r.push(-100);
             idx = idx+1;
         }
 
@@ -268,7 +268,7 @@ heatmap.draw = function (jsondata, samplelist, genelist,colorrange) {
         if (rORc == "r") { // sort log2ratio of a gene
             sorted = d3.range(col_number).sort(function (a, b) {
                 if (sortOrder) {
-                    return log2r[a] - log2r[b]
+                    return log2r[a] - log2r[b];
                 } else {
                     return log2r[b] - log2r[a];
                 }

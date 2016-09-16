@@ -129,16 +129,8 @@ $('#clear-all').click(function(){
     
 function issueWarning(){
     
-    var tcga = true;
-    
-    $("#selected-sample option").each(function(i){
-        if (!$(this).val().includes("TCGA")) tcga = false;
-    });
-    
     if ($('#selected-sample').find('option').length > 6 && flag == "SP")
         document.getElementById('warning').innerHTML="<font color=\"red\">No more than 6 samples!";
-    else if (tcga === false && flag == "PCA")
-        document.getElementById('warning').innerHTML="<font color=\"red\">Sorry! Only TCGA samples are allowed";
     else
         document.getElementById('warning').innerHTML="";
 }

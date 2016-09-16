@@ -110,7 +110,7 @@ BC.draw = function (jsondata,colorrange) {
     genedata.forEach(function(d){
         d.gene = d.key;
         d.process = d.values[0].process;
-    })
+    });
     
     var data = d3.nest()
         .key(function (d) {
@@ -256,7 +256,7 @@ saveTextAsFile = function(){
       }
     });*/
 	
-	}
+	};
 
 
 
@@ -519,12 +519,12 @@ heatmap.draw = function (jsondata, samplelist, genelist,colorrange) {
                     log2r.push(-100);
                     idx = idx+1;
                 }
-                log2r.push(ce.log2)
+                log2r.push(ce.log2);
                 idx = idx+1;
             });
         
         while(idx < genelist.length+1){
-            log2r.push(-100)
+            log2r.push(-100);
             idx = idx+1;
         }
 
@@ -532,7 +532,7 @@ heatmap.draw = function (jsondata, samplelist, genelist,colorrange) {
         if (rORc == "r") { // sort log2ratio of a gene
             sorted = d3.range(col_number).sort(function (a, b) {
                 if (sortOrder) {
-                    return log2r[a] - log2r[b]
+                    return log2r[a] - log2r[b];
                 } else {
                     return log2r[b] - log2r[a];
                 }
@@ -1199,9 +1199,16 @@ PCdata.init = function (indata,cat) {
     prdata.forEach(function (d) {
             d.neg3color = colorneg3(d.neg3);
         });
-
-    var newdata = addCriteria(prdata,cat);
-        
+    
+    prdata.forEach(function (d) {
+        d.color = (cat == "cancer type") ? d.groupcolor : (cat == "gender") ? d.gendercolor : (cat == "stage") ? d.stagecolor : (cat == "vital") ? d.vitalcolor : d.neg3color;
+    });
+    
+    var element = document.getElementsByClassName('pcbc');
+    var newdata;
+    if (!!element[0]) newdata = addCriteria(prdata,cat);
+    else newdata = prdata;
+     
     return newdata;
 };
 
@@ -1233,10 +1240,6 @@ var addCriteria = function(prdata,cat){
             if ((contains.call(criteriagroup,d.group) || criteriagroup.length === 0) && (contains.call(criteriagender,d.gender) || criteriagender.length === 0) && (contains.call(criteriastage,d.stage) || criteriastage.length === 0) && (contains.call(criteriavital,d.vital) || criteriavital.length === 0) && (contains.call(criterianeg3,d.neg3) || criterianeg3.length === 0)) newdata.push(d);
         });   
     }
-    
-    newdata.forEach(function (d) {
-        d.color = (cat == "cancer type") ? d.groupcolor : (cat == "gender") ? d.gendercolor : (cat == "stage") ? d.stagecolor : (cat == "vital") ? d.vitalcolor : d.neg3color;
-    });
     
     return newdata;
     
@@ -1739,16 +1742,8 @@ $('#clear-all').click(function(){
     
 function issueWarning(){
     
-    var tcga = true;
-    
-    $("#selected-sample option").each(function(i){
-        if (!$(this).val().includes("TCGA")) tcga = false;
-    });
-    
     if ($('#selected-sample').find('option').length > 6 && flag == "SP")
         document.getElementById('warning').innerHTML="<font color=\"red\">No more than 6 samples!";
-    else if (tcga === false && flag == "PCA")
-        document.getElementById('warning').innerHTML="<font color=\"red\">Sorry! Only TCGA samples are allowed";
     else
         document.getElementById('warning').innerHTML="";
 }
@@ -1955,20 +1950,25 @@ function redrawPCA(data){
     
     var cat;
     var element = document.getElementsByClassName('pcbc');
-    for (var e in element) if (element.hasOwnProperty(e)){
-        if (element[e].style.background=="rgb(179, 204, 255)") {
+    if (!!element[0]){
+        for (var e in element) if (element.hasOwnProperty(e)){
+            if (element[e].style.background=="rgb(179, 204, 255)") {
             cat = (element[e].id == "grouppanel") ? 'cancer type' : (element[e].id == "genderpanel") ? 'gender' : (element[e].id == "stagepanel") ? 'stage' :(element[e].id == "vitalpanel") ? 'vital': 'neg3';
+            }
         }
-    }
+    }else cat = 'cancer type';
     
     var prdata = PCdata.init(data,cat);
     pcPlot.deletedots();
     pcPlot.adddots(prdata);
-    PCBC.draw(prdata,"cancer type","#groupbarchart","#grouptitle","grouppanel");
-    PCBC.draw(prdata,"gender","#genderbarchart","#gendertitle","genderpanel");
-    PCBC.draw(prdata,"stage","#stagebarchart","#stagetitle","stagepanel");
-    PCBC.draw(prdata,"vital","#vitalbarchart","#vitaltitle","vitalpanel");
-    PCBC.draw(prdata,"neg3","#neg3barchart","#neg3title","neg3panel");
+    
+    if (!!element[0]){
+        PCBC.draw(prdata,"cancer type","#groupbarchart","#grouptitle","grouppanel");        PCBC.draw(prdata,"gender","#genderbarchart","#gendertitle","genderpanel");
+        PCBC.draw(prdata,"stage","#stagebarchart","#stagetitle","stagepanel");
+        PCBC.draw(prdata,"vital","#vitalbarchart","#vitaltitle","vitalpanel");
+        //PCBC.draw(prdata,"neg3","#neg3barchart","#neg3title","neg3panel");   
+    }
+
 }
 
 
@@ -1992,40 +1992,48 @@ vis.spcompareData = function(arr){
     var colorrange = "#d73027,#f46d43,#fdae61,#fee08b,#ffffbf,#d9ef8b,#a6d96a,#66bd63,#1a9850";
     //var colorrange = d3.select('#colorinput').property("value");
     parser.parse(arr, onError, drawSP,colorrange);
-}
+};
 
 function pcacompareData(){
     
-    var el = document.getElementById( 'svgs-all' );
-    while (el.hasChildNodes()) {el.removeChild(el.firstChild);}
-    mainframe.setElement('#svgs-all').renderpca();
-    mainframe.setElement('#pcbarchart').renderpcabc();
-    
-    d3.select('#filterbutton').on("click", pcaupdateData);
-    $('#pcafolders').on('change',pcaupdatefolder);
-    
-    var tcga = true;
+    var sametype = true;
+    var type;
+    var count=1;
     
     $("#selected-sample option").each(function(i){
-        if (!$(this).val().includes("TCGA")) tcga = false;
+        if (count === 1) type = $(this).val().split("/")[2];
+        else if ($(this).val().split("/")[2] != type) sametype = false;
+        count = count+1;
     });
     
-    if (tcga === false) onError("Sorry! Only TCGA samples are allowed");
-    else if ($('#selected-sample').find('option').length < 3) onError("Please add at least 3 samples");
+    
+    if (sametype === false) onError("Please select samples from the same project");
+    //else if ($('#selected-sample').find('option').length < 3) onError("Please add at least 3 samples");
     else{
+        var el = document.getElementById( 'svgs-all' );
+        while (el.hasChildNodes()) {el.removeChild(el.firstChild);}
+        mainframe.setElement('#svgs-all').renderpca();
+        
+        if (type == "TCGA") 
+        mainframe.setElement('#pcbarchart').renderpcabc();
+
+        d3.select('#filterbutton').on("click", pcaupdateData);
+        $('#pcafolders').on('change',pcaupdatefolder);
+        
         
         var samples = document.getElementById('selected-sample');
     
         for (var i = 0; i < samples.options.length; i++) { 
             samples.options[i].selected = true; 
         } 
-
+            
         jQuery.ajax({
-            url: "./R/test.py",  // or just test.py
+            url: type == "TCGA" ? "./R/tcga.py" : "./R/other.py",  // or just tcga.py
             data: $("#selected-sample").serialize(),
             type: "POST",
             dataType: "json",    
             success: function (result) {
+                //alert(result);
                 pcPlot.init();
                 redrawPCA(result);
             },
@@ -2069,7 +2077,7 @@ function pcaupdateData(){
     var process = $("#pcafolders option:selected").val();
     
     jQuery.ajax({
-        url: process,  // or just test.py
+        url: process,  // or just tcga.py
         dataType: "json",    
         success: function (result) {
             redrawPCA(result);
@@ -2086,7 +2094,7 @@ function pcaupdatefolder(){
     var process = $("#pcafolders option:selected").val();
     
     jQuery.ajax({
-        url: process,  // or just test.py
+        url: process,  // or just tcga.py
         dataType: "json",    
         success: function (result) {
             d3.select("#pcacanvas").remove();
