@@ -10,12 +10,13 @@ $id = session_id();
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../css/style.css" rel="stylesheet" >
+    <link href="../css/database.css" rel="stylesheet" >
     
     <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/handlebars-v4.0.5.js"></script>
 
-    <!-- Latest compiled and minified CSS -->
+   
 </head>
 
 <body>
@@ -66,30 +67,47 @@ $id = session_id();
 				
     </div>
     <form name = "compareform" action="../compare.php" method="get">
+        <div class = "col-md-12" style="margin-top:10px;text-align: center;font-size:16px">Click on individual samples to visualize their expression and mutation profile<br><br>
+        Or select up to 6 samples with checkboxes for comparative analysis <br><br>           
+
+        <input id="readygo" type="submit" class="btn btn-success" value="Go!">
+        <div><hr></div>
         <div class="row" id="userfiles">
         </div><br><br>
-        
-        <div><hr></div>
-        <div class="col-md-12" id="warning" style="margin-top:10px;text-align: center"></div>
-        <div class = "col-md-12" style="margin-top:10px;text-align: center;font-size:16px">Click on individual samples to visualize their expression and mutation profile<br><br>
-        Or select up to 6 samples with checkboxes for comparative analysis <br><br><input type="submit" class="btn btn-success" value="Go!">
+            
         </div>
     </form>
 </div>
     
-    <!-- HANDLEBARS TEMPLATE -->
     <script id="userFilesTemplate" type="text/x-handlebars-template">
-    {{#files}}
-    <div class="col-md-3" style="text-align: center">
-    <input class="comparecheckbox" type="checkbox" name="compare[]" value="./data/{{url}}">
-    <a href="../mitomodel.php?id={{mitomodel}}">{{name}}</a></div>
-    {{/files}}
-
+    
+    <div class="row">
+        {{#if containfiles}}
+        {{#files}}
+        <div class="col-sm-6 col-md-4">
+            <div class="database thumbnail">
+                <div class="caption">
+                <span class="glyphicon glyphicon-ok" aria-hidden="true" style="float: left; color:white;display:none"></span>
+                    <a href="../mitomodel.php?id={{mitomodel}}"><span class="glyphicon glyphicon-eye-open" aria-hidden="true" style="float: right"></span></a>
+                    <h3>{{name}}</h3>
+                </div>
+                <input  class="comparecheckbox" type="checkbox" name="compare[]" value="./data/{{url}}">    
+            </div>
+        </div>
+        {{/files}}
+        {{else}}
+        <div class = "col-md-12" style="margin-top:10px;text-align: center;font-size:16px">
+        Upload files to visualize data!
+        </div>
+    {{/if}}
+    </div>
+    
     </script>
     
 
     <!-- RENDER TEMPLATE AFTER EVERYTHING ELSE LOADED -->
-    <script data-userid="<?php echo $id; ?>" src="../js/userFiles.js"></script>
+    
+    <script data-userid="<?php echo '../data/user_uploads/'.$id.'/json/'; ?>" src="../js/userFiles.js"></script>
     
 </body>
 

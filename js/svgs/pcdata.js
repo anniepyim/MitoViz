@@ -87,6 +87,11 @@ PCdata.init = function (indata,cat) {
     
     var element = document.getElementsByClassName('pcbc');
     var newdata;
+    
+    prdata.forEach(function (d) {
+            d.tcga = (!!element[0]) ? true : false;
+    });
+    
     if (!!element[0]) newdata = addCriteria(prdata,cat);
     else newdata = prdata;
      
@@ -94,6 +99,10 @@ PCdata.init = function (indata,cat) {
 };
 
 PCdata.update = function (prdata,cat){
+    
+    prdata.forEach(function (d) {
+        d.color = (cat == "cancer type") ? d.groupcolor : (cat == "gender") ? d.gendercolor : (cat == "stage") ? d.stagecolor : (cat == "vital") ? d.vitalcolor : d.neg3color;
+    });
     
     var newdata = addCriteria(prdata,cat);
     pcPlot.deletedots();

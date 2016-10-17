@@ -68,7 +68,8 @@ heatmap.processData = function (jsondata, nfunc,colorrange) {
             gene_function: d.gene_function, 
             mutation: d.mutation.split(',')
         });
-    });    
+    });
+    
     
     heatmap.draw(outdata, samplelist, genelist,colorrange);
 };
@@ -247,23 +248,48 @@ heatmap.draw = function (jsondata, samplelist, genelist,colorrange) {
         var log2r = [];
         var sorted; // sorted is zero-based index
         var idx = 1;
-
+        var newnew = [];
+        
         
         d3.selectAll(".c" + rORc + i)
             .filter(function (ce) {
-                while(ce.colidx !== idx){
+                newnew.push(ce);
+            });
+        
+        if (rORc == "c"){
+            newnew.sort(function(a,b) { return d3.ascending(a.rowidx, b.rowidx);});
+        }
+
+        
+        newnew.forEach(function(d){
+            if (rORc == "r"){
+                while(d.colidx !== idx){
                     log2r.push(-100);
                     idx = idx+1;
                 }
-                log2r.push(ce.log2);
-                idx = idx+1;
-            });
-        
-        while(idx < genelist.length+1){
-            log2r.push(-100);
+            }else{
+                while(d.rowidx !== idx){
+                    log2r.push(-100);
+                    idx = idx+1;    
+                }
+            }
+            log2r.push(d.log2);
             idx = idx+1;
+        });
+        
+        if (rORc == "r"){
+            while(idx < genelist.length+1){
+                log2r.push(-100);
+                idx = idx+1;
+            }     
+        }else{
+            while(idx < samplelist.length+1){
+                log2r.push(-100);
+                idx = idx+1;
+            }            
         }
 
+        
         
         if (rORc == "r") { // sort log2ratio of a gene
             sorted = d3.range(col_number).sort(function (a, b) {
@@ -273,17 +299,6 @@ heatmap.draw = function (jsondata, samplelist, genelist,colorrange) {
                     return log2r[b] - log2r[a];
                 }
             });
-            
-
-            log2r.sort(function (a, b) {
-                if (sortOrder) {
-                    return a - b;
-                } else {
-                    return b - a;
-                }
-            });
-            
-            
             t.selectAll(".cell")
                 .attr("x", function (d) {
                     return sorted.indexOf(d.colidx - 1) * gridwidth;

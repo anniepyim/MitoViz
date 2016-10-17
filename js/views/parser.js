@@ -14,7 +14,29 @@ function parse(urls, errorcb, datacb,colorrange){
     if (urls.length > 6) errorcb(new Error('No more than 6 samples!'));
     if (colorrange === "") errorcb(new Error('Pick color!'));
     
-    axios.get('./data/zzfiles/mito-genes.txt')
+    
+    axios
+    .all(funcs)
+    .then(axios.spread(function (){
+
+        var data = [];
+
+        _.each(arguments, function(res){
+            if(! _.isArray(res.data)) errorcb(new Error('response is not an array'));
+               
+            data = data.concat(res.data);
+        });
+
+        data.sort(function(a,b) { return d3.ascending(a.gene, b.gene);});
+        
+        datacb(data,colorrange);
+
+    }))
+    .catch(function (res) {
+        errorcb(res);
+    });
+    
+    /*axios.get('./data/zzfiles/mito-genes.txt')
     .then(function(response){
         var mito = [];
         mito = mito.concat(response.data.split("\n"));
@@ -46,7 +68,7 @@ function parse(urls, errorcb, datacb,colorrange){
                         mitomap[mito[i]] = ifExist;
                     }
                 }                
-                /*res.data.sort(function(a,b) { return d3.ascending(a.gene, b.gene);});*/
+                res.data.sort(function(a,b) { return d3.ascending(a.gene, b.gene);});
                 data = data.concat(res.data);
             });
            for (var k = 0; k < data.length; k++){
@@ -61,7 +83,7 @@ function parse(urls, errorcb, datacb,colorrange){
         .catch(function (res) {
             errorcb(res);
         });
-    });  
+    });*/  
     
 }
 

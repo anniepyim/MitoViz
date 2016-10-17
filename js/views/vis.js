@@ -59,6 +59,8 @@ function redrawPCA(data){
     pcPlot.deletedots();
     pcPlot.adddots(prdata);
     
+    console.log(prdata);
+    
     if (!!element[0]){
         PCBC.draw(prdata,"cancer type","#groupbarchart","#grouptitle","grouppanel");        PCBC.draw(prdata,"gender","#genderbarchart","#gendertitle","genderpanel");
         PCBC.draw(prdata,"stage","#stagebarchart","#stagetitle","stagepanel");

@@ -8,7 +8,7 @@ var template = Handlebars.compile(source);
 
 var this_js_script = $('script[src*=userFiles]');
 var id = this_js_script.attr('data-userid');
-var targeturl = '../data/user_uploads/'+id+'/json/'
+var targeturl = id;
 console.log(id);
 
 $(document).ready(function(){
@@ -21,6 +21,7 @@ $(document).ready(function(){
       success: function(data){
           var newdata = new Object();
           newdata.files = [];
+          newdata.containfiles = true;
           $.each(data, function(i,filename) { 
             var file = new Object();
             file.url = targeturl+filename;
@@ -29,33 +30,63 @@ $(document).ready(function(){
             newdata.files.push(file);
 
         });
-          console.log(newdata);
           
           // data is passed to above template
           var output = template(newdata);
           
           // HTML element with id "animalList" is set to the output above
           document.getElementById("userfiles").innerHTML = output;
+          
+          
+            $(".database").click(function(){
+                var $checkbox = $(this).find(".comparecheckbox");
+                $checkbox.prop('checked', !$checkbox.prop('checked'));
+                var $glyok = $(this).find(".glyphicon-ok");
+                if($checkbox.prop('checked')){
+                    $(this).css('background-color','#a3f379');
+                    $glyok.css('display','block');
+                }
+                else{
+                    $(this).css('background-color', 'white');
+                    $glyok.css('display','none');
+                }
+                if ($('input[type=checkbox]:checked').length > 6) {
+                    $checkbox.prop('checked', false);
+                    $(this).css('background-color', 'white');
+                    $glyok.css('display','none');
+                    //document.getElementById('warning').innerHTML="<font color=\"red\">Please select 6 samples at most!";
+                    $('<div><font color=\"red\">Please select 6 samples at most!!</div>').insertBefore('#readygo').delay(1000).fadeOut();
+                    }
+                
+                //else
+                    //document.getElementById('userfiles').innerHTML="";
+            });
+    
+          
       },
         error:function(e){
+            var newdata = new Object();
+            newdata.containfiles = false;
+            var output = template(newdata);
+            
+          
+          // HTML element with id "animalList" is set to the output above
+          document.getElementById("userfiles").innerHTML = output;
             console.log(e);
         }
     });
     
 
-    $('input[type=checkbox]').on('change', function (e) {
-    if ($('input[type=checkbox]:checked').length > 6) {
-        $(this).prop('checked', false);
-        document.getElementById('warning').innerHTML="<font color=\"red\">Please select 6 samples at most!";
-    }
-    else
-        document.getElementById('warning').innerHTML="";
-    });
+    
 
     $("form").submit(function (e) {
         if ($('input[type=checkbox]:checked').length == 0){
             e.preventDefault();
             document.getElementById('warning').innerHTML="<font color=\"red\">Please select samples!";
+        }
+        if ($('input[type=checkbox]:checked').length > 6){
+            e.preventDefault();
+            document.getElementById('warning').innerHTML="<font color=\"red\">Please select 6 samples at most!";
         } 
     });
 });

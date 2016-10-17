@@ -1,0 +1,24 @@
+
+.database{
+    height: 200px;
+}
+
+.database:hover {
+    background-color: #b3ccff !important;
+    border: #6699ff !important;
+}
+
+
+h3{
+    text-align:center;
+    margin-top: 75px;
+}
+
+span.glyphicon {
+    font-size: 1.6em;
+}
+
+span.glyphicon-eye-open:hover {
+    font-size: 1.6em;
+    color:white;
+}

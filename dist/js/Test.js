@@ -332,7 +332,8 @@ heatmap.processData = function (jsondata, nfunc,colorrange) {
             gene_function: d.gene_function, 
             mutation: d.mutation.split(',')
         });
-    });    
+    });
+    
     
     heatmap.draw(outdata, samplelist, genelist,colorrange);
 };
@@ -511,23 +512,48 @@ heatmap.draw = function (jsondata, samplelist, genelist,colorrange) {
         var log2r = [];
         var sorted; // sorted is zero-based index
         var idx = 1;
-
+        var newnew = [];
+        
         
         d3.selectAll(".c" + rORc + i)
             .filter(function (ce) {
-                while(ce.colidx !== idx){
+                newnew.push(ce);
+            });
+        
+        if (rORc == "c"){
+            newnew.sort(function(a,b) { return d3.ascending(a.rowidx, b.rowidx);});
+        }
+
+        
+        newnew.forEach(function(d){
+            if (rORc == "r"){
+                while(d.colidx !== idx){
                     log2r.push(-100);
                     idx = idx+1;
                 }
-                log2r.push(ce.log2);
-                idx = idx+1;
-            });
-        
-        while(idx < genelist.length+1){
-            log2r.push(-100);
+            }else{
+                while(d.rowidx !== idx){
+                    log2r.push(-100);
+                    idx = idx+1;    
+                }
+            }
+            log2r.push(d.log2);
             idx = idx+1;
+        });
+        
+        if (rORc == "r"){
+            while(idx < genelist.length+1){
+                log2r.push(-100);
+                idx = idx+1;
+            }     
+        }else{
+            while(idx < samplelist.length+1){
+                log2r.push(-100);
+                idx = idx+1;
+            }            
         }
 
+        
         
         if (rORc == "r") { // sort log2ratio of a gene
             sorted = d3.range(col_number).sort(function (a, b) {
@@ -537,17 +563,6 @@ heatmap.draw = function (jsondata, samplelist, genelist,colorrange) {
                     return log2r[b] - log2r[a];
                 }
             });
-            
-
-            log2r.sort(function (a, b) {
-                if (sortOrder) {
-                    return a - b;
-                } else {
-                    return b - a;
-                }
-            });
-            
-            
             t.selectAll(".cell")
                 .attr("x", function (d) {
                     return sorted.indexOf(d.colidx - 1) * gridwidth;
@@ -759,6 +774,7 @@ function dotsInit(data){
         particle.group = data[i].group;
         particle.gender = data[i].gender;
         particle.stage = data[i].stage;
+        particle.tcga = data[i].tcga;
         particle.url = data[i].url;
         particle.PC1 = format(data[i].PC1);
         particle.PC2 = format(data[i].PC2);
@@ -1206,6 +1222,11 @@ PCdata.init = function (indata,cat) {
     
     var element = document.getElementsByClassName('pcbc');
     var newdata;
+    
+    prdata.forEach(function (d) {
+            d.tcga = (!!element[0]) ? true : false;
+    });
+    
     if (!!element[0]) newdata = addCriteria(prdata,cat);
     else newdata = prdata;
      
@@ -1213,6 +1234,10 @@ PCdata.init = function (indata,cat) {
 };
 
 PCdata.update = function (prdata,cat){
+    
+    prdata.forEach(function (d) {
+        d.color = (cat == "cancer type") ? d.groupcolor : (cat == "gender") ? d.gendercolor : (cat == "stage") ? d.stagecolor : (cat == "vital") ? d.vitalcolor : d.neg3color;
+    });
     
     var newdata = addCriteria(prdata,cat);
     pcPlot.deletedots();
@@ -1771,7 +1796,48 @@ function parse(urls, errorcb, datacb,colorrange){
     if (urls.length > 6) errorcb(new Error('No more than 6 samples!'));
     if (colorrange === "") errorcb(new Error('Pick color!'));
     
-    axios.get('./data/zzfiles/mito-genes.txt')
+    
+    axios
+    .all(funcs)
+    .then(axios.spread(function (){
+
+        var data = [];
+
+        _.each(arguments, function(res){
+            if(! _.isArray(res.data)) errorcb(new Error('response is not an array'));
+               
+            data = data.concat(res.data);
+        });
+
+        data.sort(function(a,b) { return d3.ascending(a.gene, b.gene);});
+        
+        /*var genedata = d3.nest()
+            .key(function (d) {return d.gene;})
+            .entries(data);
+        var genelist = [];
+        genedata.forEach(function (d) {genelist.push(d.key);});
+        
+        var sampledata = d3.nest()
+            .key(function (d) {return d.sampleID;})
+            .entries(data);    
+        var samplelist = [];
+        sampledata.forEach(function (d) {samplelist.push(d.key);});
+        
+        for(var i=0; i<samplelist.length; i++){
+            for (j=0; j<genelist.length;j++){
+                for(k=0; k<)
+            }
+        }*/
+        
+        
+        datacb(data,colorrange);
+
+    }))
+    .catch(function (res) {
+        errorcb(res);
+    });
+    
+    /*axios.get('./data/zzfiles/mito-genes.txt')
     .then(function(response){
         var mito = [];
         mito = mito.concat(response.data.split("\n"));
@@ -1803,7 +1869,7 @@ function parse(urls, errorcb, datacb,colorrange){
                         mitomap[mito[i]] = ifExist;
                     }
                 }                
-                /*res.data.sort(function(a,b) { return d3.ascending(a.gene, b.gene);});*/
+                res.data.sort(function(a,b) { return d3.ascending(a.gene, b.gene);});
                 data = data.concat(res.data);
             });
            for (var k = 0; k < data.length; k++){
@@ -1818,7 +1884,7 @@ function parse(urls, errorcb, datacb,colorrange){
         .catch(function (res) {
             errorcb(res);
         });
-    });  
+    });*/  
     
 }
 
@@ -1849,21 +1915,27 @@ this["Templates"]["pca"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main"
 },"useData":true});
 
 this["Templates"]["pcabarchart"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<div class=\"col-md-12\"><hr></div>\n<div class=\"col-md-12 midtitle\" style=\"margin-top:0px;margin-bottom:10px;\">\n    Color samples by\n</div>\n<div id=\"pcbcsvg\" class=\"col-md-12\">\n        <div class=\"panel-group\">\n                <div class=\"panel panel-default pcbc\" id=\"grouppanel\" style=\"background:#b3ccff\">\n                    <div class=\"minititle\" style=\"padding: 10px 10px;\" id=\"grouptitle\">\n                        <a data-toggle=\"collapse\" href=\"#collapse3\">Group</a>\n                    </div>\n                    <div id=\"collapse3\" class=\"panel-collapse collapse-in\">\n                        <div class=\"panel-body svg-container\" id=\"groupbarchart\" style=\"padding :0px 0px; font-size:20px\"></div>\n                    </div>\n            </div>\n            <div class=\"panel panel-default pcbc\" id=\"genderpanel\">\n                <div class=\"minititle\" style=\"padding: 10px 10px;\" id=\"gendertitle\">\n                    <a data-toggle=\"collapse\" href=\"#collapse1\">Gender</a>\n                </div>\n                <div id=\"collapse1\" class=\"panel-collapse collapse\">\n                    <div class=\"panel-body svg-container\" id=\"genderbarchart\" style=\"padding :0px 0px; font-size:20px\"></div>\n                </div>\n            </div>\n            <div class=\"panel panel-default pcbc\" id=\"stagepanel\">\n                <div class=\"minititle\" style=\"padding: 10px 10px;\" id=\"stagetitle\">\n                    <a data-toggle=\"collapse\" href=\"#collapse2\">Stage</a>\n                </div>\n                <div id=\"collapse2\" class=\"panel-collapse collapse\">\n                    <div class=\"panel-body svg-container\" id=\"stagebarchart\" style=\"padding :0px 0px; font-size:20px\"></div>\n                </div>\n            </div>\n            <div class=\"panel panel-default pcbc\" id=\"vitalpanel\">\n                <div class=\"minititle\" style=\"padding: 10px 10px;\" id=\"vitaltitle\">\n                    <a data-toggle=\"collapse\" href=\"#collapse4\">Vital Status</a>\n                </div>\n                <div id=\"collapse4\" class=\"panel-collapse collapse\">\n                    <div class=\"panel-body svg-container\" id=\"vitalbarchart\" style=\"padding :0px 0px; font-size:20px\"></div>\n                </div>\n            </div>\n            <div class=\"panel panel-default pcbc\" id=\"neg3panel\">\n                <div class=\"minititle\" style=\"padding: 10px 10px;\" id=\"neg3title\">\n                    <a data-toggle=\"collapse\" href=\"#collapse5\">Triple Neg</a>\n                </div>\n                <div id=\"collapse5\" class=\"panel-collapse collapse\">\n                    <div class=\"panel-body svg-container\" id=\"neg3barchart\" style=\"padding :0px 0px; font-size:20px\"></div>\n                </div>\n            </div>\n    </div>\n</div>\n<div class = \"col-md-12\" id=\"criteriabutton\"></div>\n<div class = \"col-md-12\" style=\"display:none\"><input type=\"text\" id=\"criteriagroup\"><input type=\"text\" id=\"criteriagender\"><input type=\"text\" id=\"criteriastage\"><input type=\"text\" id=\"criteriavital\"><input type=\"text\" id=\"criterianeg3\">\n</div>\n<div class = \"col-md-12\" style=\"margin-top:20px;text-align: center\"><button id = \"filterbutton\" class=\"btn btn-success\">Update</button>\n</div>\n";
+    return "<div class=\"col-md-12\"><hr></div>\n<div class=\"col-md-12 midtitle\" style=\"margin-top:0px;margin-bottom:10px;\">\n    Color samples by\n</div>\n<div id=\"pcbcsvg\" class=\"col-md-12\">\n        <div class=\"panel-group\">\n                <div class=\"panel panel-default pcbc\" id=\"grouppanel\" style=\"background:#b3ccff\">\n                    <div class=\"minititle\" style=\"padding: 10px 10px;\" id=\"grouptitle\">\n                        <a data-toggle=\"collapse\" href=\"#collapse3\">Group</a>\n                    </div>\n                    <div id=\"collapse3\" class=\"panel-collapse collapse-in\">\n                        <div class=\"panel-body svg-container\" id=\"groupbarchart\" style=\"padding :0px 0px; font-size:20px\"></div>\n                    </div>\n            </div>\n            <div class=\"panel panel-default pcbc\" id=\"genderpanel\">\n                <div class=\"minititle\" style=\"padding: 10px 10px;\" id=\"gendertitle\">\n                    <a data-toggle=\"collapse\" href=\"#collapse1\">Gender</a>\n                </div>\n                <div id=\"collapse1\" class=\"panel-collapse collapse\">\n                    <div class=\"panel-body svg-container\" id=\"genderbarchart\" style=\"padding :0px 0px; font-size:20px\"></div>\n                </div>\n            </div>\n            <div class=\"panel panel-default pcbc\" id=\"stagepanel\">\n                <div class=\"minititle\" style=\"padding: 10px 10px;\" id=\"stagetitle\">\n                    <a data-toggle=\"collapse\" href=\"#collapse2\">Stage</a>\n                </div>\n                <div id=\"collapse2\" class=\"panel-collapse collapse\">\n                    <div class=\"panel-body svg-container\" id=\"stagebarchart\" style=\"padding :0px 0px; font-size:20px\"></div>\n                </div>\n            </div>\n            <div class=\"panel panel-default pcbc\" id=\"vitalpanel\">\n                <div class=\"minititle\" style=\"padding: 10px 10px;\" id=\"vitaltitle\">\n                    <a data-toggle=\"collapse\" href=\"#collapse4\">Vital Status</a>\n                </div>\n                <div id=\"collapse4\" class=\"panel-collapse collapse\">\n                    <div class=\"panel-body svg-container\" id=\"vitalbarchart\" style=\"padding :0px 0px; font-size:20px\"></div>\n                </div>\n            </div>\n            <div class=\"panel panel-default pcbc\" id=\"neg3panel\">\n                <div class=\"minititle\" style=\"padding: 10px 10px;\" id=\"neg3title\">\n                    <a data-toggle=\"collapse\" href=\"#collapse5\">Triple Neg</a>\n                </div>\n                <!--<div id=\"collapse5\" class=\"panel-collapse collapse\">\n                    <div class=\"panel-body svg-container\" id=\"neg3barchart\" style=\"padding :0px 0px; font-size:20px\"></div>\n                </div>-->\n            </div>\n    </div>\n</div>\n<div class = \"col-md-12\" id=\"criteriabutton\"></div>\n<div class = \"col-md-12\" style=\"display:none\"><input type=\"text\" id=\"criteriagroup\"><input type=\"text\" id=\"criteriagender\"><input type=\"text\" id=\"criteriastage\"><input type=\"text\" id=\"criteriavital\"><input type=\"text\" id=\"criterianeg3\">\n</div>\n<div class = \"col-md-12\" style=\"margin-top:20px;text-align: center\"><button id = \"filterbutton\" class=\"btn btn-success\">Update</button>\n</div>\n";
 },"useData":true});
 
-this["Templates"]["pcatooltip"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+this["Templates"]["pcatooltip"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
-  return "<div class=\"col-md-12 title\">"
-    + alias4(((helper = (helper = helpers.sampleID || (depth0 != null ? depth0.sampleID : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"sampleID","hash":{},"data":data}) : helper)))
-    + "</div>\n\n<div class=\"col-md-6 miniTitle\">Group</div>\n\n<div class=\"col-md-6 info\">"
+  return "<div class=\"col-md-6 miniTitle\">Group</div>\n\n<div class=\"col-md-6 info\">"
     + alias4(((helper = (helper = helpers.group || (depth0 != null ? depth0.group : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"group","hash":{},"data":data}) : helper)))
     + "</div>\n\n<div class=\"col-md-6 miniTitle\">Stage</div>\n\n<div class=\"col-md-6 info\">"
     + alias4(((helper = (helper = helpers.stage || (depth0 != null ? depth0.stage : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"stage","hash":{},"data":data}) : helper)))
     + "</div>\n\n<div class=\"col-md-6 miniTitle\">Gender</div>\n\n<div class=\"col-md-6 info\">"
     + alias4(((helper = (helper = helpers.gender || (depth0 != null ? depth0.gender : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"gender","hash":{},"data":data}) : helper)))
-    + "</div>\n\n<div class=\"col-md-12 miniTitle\">PC</div>\n\n\n<div class=\"col-md-12\" style=\"text-align:left;font-size:12px\">\n    PC1: "
+    + "</div>\n";
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
+
+  return "<div class=\"col-md-12 title\">"
+    + alias4(((helper = (helper = helpers.sampleID || (depth0 != null ? depth0.sampleID : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"sampleID","hash":{},"data":data}) : helper)))
+    + "</div>\n\n"
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.tcga : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\n<div class=\"col-md-12 miniTitle\">PC</div>\n\n\n<div class=\"col-md-12\" style=\"text-align:left;font-size:12px\">\n    PC1: "
     + alias4(((helper = (helper = helpers.PC1 || (depth0 != null ? depth0.PC1 : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"PC1","hash":{},"data":data}) : helper)))
     + "<br>\n    PC2: "
     + alias4(((helper = (helper = helpers.PC2 || (depth0 != null ? depth0.PC2 : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"PC2","hash":{},"data":data}) : helper)))
@@ -1961,6 +2033,8 @@ function redrawPCA(data){
     var prdata = PCdata.init(data,cat);
     pcPlot.deletedots();
     pcPlot.adddots(prdata);
+    
+    console.log(prdata);
     
     if (!!element[0]){
         PCBC.draw(prdata,"cancer type","#groupbarchart","#grouptitle","grouppanel");        PCBC.draw(prdata,"gender","#genderbarchart","#gendertitle","genderpanel");

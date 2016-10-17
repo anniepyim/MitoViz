@@ -168,6 +168,7 @@ function dotsInit(data){
         particle.group = data[i].group;
         particle.gender = data[i].gender;
         particle.stage = data[i].stage;
+        particle.tcga = data[i].tcga;
         particle.url = data[i].url;
         particle.PC1 = format(data[i].PC1);
         particle.PC2 = format(data[i].PC2);
