@@ -67,9 +67,12 @@ $id = session_id();
 				
     </div>
     <form name = "compareform" action="../compare.php" method="get">
-        <div class = "col-md-12" style="margin-top:10px;text-align: center;font-size:16px">Click on individual samples to visualize their expression and mutation profile<br><br>
-        Or select up to 6 samples with checkboxes for comparative analysis <br><br>           
-
+        <div class = "col-md-12" style="margin-top:10px;text-align: center;font-size:16px"><span class="glyphicon glyphicon-eye-open" aria-hidden="true" style="font-size: 1.2em"></span>
+        Click on individual samples to visualize their expression and mutation profile<br><br>
+        <span class="glyphicon glyphicon-ok" aria-hidden="true" style="font-size: 1.2em"></span>
+        Or select up to 6 samples for comparative analysis <br><br>           
+        <div style = "display:none" id = "warning1"><font color="red">Please select 6 samples at most!!</font></div>
+        <div style = "display:none" id = "warning2"><font color="red">Please select samples!!</font></div><br>
         <input id="readygo" type="submit" class="btn btn-success" value="Go!">
         <div><hr></div>
         <div class="row" id="userfiles">
@@ -84,14 +87,14 @@ $id = session_id();
     <div class="row">
         {{#if containfiles}}
         {{#files}}
-        <div class="col-sm-6 col-md-4">
+        <div class="col-sm-4 col-md-3">
             <div class="database thumbnail">
                 <div class="caption">
                 <span class="glyphicon glyphicon-ok" aria-hidden="true" style="float: left; color:white;display:none"></span>
-                    <a href="../mitomodel.php?id={{mitomodel}}"><span class="glyphicon glyphicon-eye-open" aria-hidden="true" style="float: right"></span></a>
+                    <a href="../mitomodel.php?id={{mitomodel}}"><span class="glyeye glyphicon glyphicon-eye-open" aria-hidden="true" style="float: right"></span></a>
                     <h3>{{name}}</h3>
                 </div>
-                <input  class="comparecheckbox" type="checkbox" name="compare[]" value="./data/{{url}}">    
+                <input style="visibility:hidden" class="comparecheckbox" type="checkbox" name="compare[]" value="./data/{{url}}">    
             </div>
         </div>
         {{/files}}

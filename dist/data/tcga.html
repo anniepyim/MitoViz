@@ -6,8 +6,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../css/style.css" rel="stylesheet" >
+    <link href="../css/database.css" rel="stylesheet" >
+    
     <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/handlebars-v4.0.5.js"></script>
     <!-- Latest compiled and minified CSS -->
 </head>
 
@@ -59,63 +62,53 @@
 					<h1>TCGA </h1>
 				
     </div>
-        <form name = "compareform" action="../compare.php" method="get">
-        <div class="row">
-            <div class="col-md-12"><h2>Hepatocellular carcinoma (HCC)</h2><br><br></div>
-            <div class="col-md-3" style="text-align: center">
-                <input class="comparecheckbox" type="checkbox" name="compare[]" value="./data/TCGA/HCC/sample1.json">
-                <a href="../mitomodel.php?id=TCGA/HCC/sample1">Sample 1</a>
-            </div>
-            <div class="col-md-3" style="text-align: center">
-                <input class="comparecheckbox" type="checkbox" name="compare[]" value="./data/TCGA/HCC/sample2.json">
-                <a href="../mitomodel.php?id=TCGA/HCC/sample2">Sample 2</a></div>
-            <div class="col-md-3" style="text-align: center">
-                <input class="comparecheckbox" type="checkbox" name="compare[]" value="./data/TCGA/HCC/sample3.json">
-                <a href="../mitomodel.php?id=TCGA/HCC/sample3">Sample 3</a></div>
-            <div class="col-md-3" style="text-align: center">
-                <input class="comparecheckbox" type="checkbox" name="compare[]" value="./data/TCGA/HCC/sample4.json">
-                <a href="../mitomodel.php?id=TCGA/HCC/sample4">Sample 4</a></div>
-            <div class="col-md-3" style="text-align: center">
-                <input class="comparecheckbox" type="checkbox" name="compare[]" value="./data/TCGA/HCC/sample5.json">
-                <a href="../mitomodel.php?id=TCGA/HCC/sample5">Sample 5</a></div>
-            <div class="col-md-3" style="text-align: center">
-                <input class="comparecheckbox" type="checkbox" name="compare[]" value="./data/TCGA/HCC/sample6.json">
-                <a href="../mitomodel.php?id=TCGA/HCC/sample6">Sample 6</a></div>
-            <div class="col-md-3" style="text-align: center">
-                <input class="comparecheckbox" type="checkbox" name="compare[]" value="./data/TCGA/HCC/sample7.json">
-                <a href="../mitomodel.php?id=TCGA/HCC/sample7">Sample 7</a></div>
-            <div class="col-md-3" style="text-align: center">
-                <input class="comparecheckbox" type="checkbox" name="compare[]" value="./data/TCGA/HCC/sample8.json">
-                <a href="../mitomodel.php?id=TCGA/HCC/sample8">Sample 8</a></div>
-        </div>
-        
+         <form name = "compareform" action="../compare.php" method="get">
+        <div class = "col-md-12" style="margin-top:10px;text-align: center;font-size:16px"><span class="glyphicon glyphicon-eye-open" aria-hidden="true" style="font-size: 1.2em"></span>
+        Click on individual samples to visualize their expression and mutation profile<br><br>
+        <span class="glyphicon glyphicon-ok" aria-hidden="true" style="font-size: 1.2em"></span>
+        Or select up to 6 samples for comparative analysis <br><br>           
+        <div style = "display:none" id = "warning1"><font color="red">Please select 6 samples at most!!</font></div>
+        <div style = "display:none" id = "warning2"><font color="red">Please select samples!!</font></div><br>
+        <input id="readygo" type="submit" class="btn btn-success" value="Go!">
         <div><hr></div>
-        <div class="col-md-12" id="warning" style="margin-top:10px;text-align: center"></div>
-        <div class = "col-md-12" style="margin-top:10px;text-align: center;font-size:16px">Click on individual samples to visualize their expression and mutation profile<br><br>
-        Or select up to 6 samples with checkboxes for comparative analysis <br><br><input type="submit" class="btn btn-success" value="Go!">
+        <div class="col-md-12"><h2>Hepatocellular carcinoma (HCC)</h2><br><br></div>
+        <div class="row" id="userfiles">
+        </div><br><br>
+            
         </div>
     </form>
-			
-	</div>
-<script type="text/javascript">
-    $(document).ready(function(){ 
-        $('input[type=checkbox]').on('change', function (e) {
-        if ($('input[type=checkbox]:checked').length > 6) {
-            $(this).prop('checked', false);
-            document.getElementById('warning').innerHTML="<font color=\"red\">Please select 6 samples at most!";
-        }
-        else
-            document.getElementById('warning').innerHTML="";
-        });
-        
-        $("form").submit(function (e) {
-            if ($('input[type=checkbox]:checked').length == 0){
-                e.preventDefault();
-                document.getElementById('warning').innerHTML="<font color=\"red\">Please select samples!";
-            } 
-        });
-    });
+</div>
+    
+    <script id="userFilesTemplate" type="text/x-handlebars-template">
+    
+    <div class="row">
+        {{#if containfiles}}
+        {{#files}}
+        <div class="col-sm-4 col-md-3">
+            <div class="database thumbnail">
+                <div class="caption">
+                <span class="glyphicon glyphicon-ok" aria-hidden="true" style="float: left; color:white;display:none"></span>
+                    <a href="../mitomodel.php?id={{mitomodel}}"><span class="glyeye glyphicon glyphicon-eye-open" aria-hidden="true" style="float: right"></span></a>
+                    <h3>{{name}}</h3>
+                </div>
+                <input style="visibility:hidden" class="comparecheckbox" type="checkbox" name="compare[]" value="./data/{{url}}">    
+            </div>
+        </div>
+        {{/files}}
+        {{else}}
+        <div class = "col-md-12" style="margin-top:10px;text-align: center;font-size:16px">
+        Upload files to visualize data!
+        </div>
+    {{/if}}
+    </div>
+    
     </script>
+    
+
+    <!-- RENDER TEMPLATE AFTER EVERYTHING ELSE LOADED -->
+    
+    <script data-userid="../data/tcga/HCC/" src="../js/userFiles.js"></script>
+    
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 
 .database{
-    height: 200px;
+    height: 150px;
 }
 
 .database:hover {
@@ -11,14 +11,14 @@
 
 h3{
     text-align:center;
-    margin-top: 75px;
+    margin-top: 50px;
 }
 
 span.glyphicon {
     font-size: 1.6em;
 }
 
-span.glyphicon-eye-open:hover {
+span.glyeye:hover {
     font-size: 1.6em;
     color:white;
 }

@@ -54,12 +54,8 @@ $(document).ready(function(){
                     $checkbox.prop('checked', false);
                     $(this).css('background-color', 'white');
                     $glyok.css('display','none');
-                    //document.getElementById('warning').innerHTML="<font color=\"red\">Please select 6 samples at most!";
-                    $('<div><font color=\"red\">Please select 6 samples at most!!</div>').insertBefore('#readygo').delay(1000).fadeOut();
-                    }
-                
-                //else
-                    //document.getElementById('userfiles').innerHTML="";
+                    $( "#warning1" ).fadeIn( 300 ).delay( 400 ).fadeOut( 300 );
+                }
             });
     
           
@@ -82,11 +78,11 @@ $(document).ready(function(){
     $("form").submit(function (e) {
         if ($('input[type=checkbox]:checked').length == 0){
             e.preventDefault();
-            document.getElementById('warning').innerHTML="<font color=\"red\">Please select samples!";
+            $( "#warning2" ).fadeIn( 300 ).delay( 400 ).fadeOut( 300 );
         }
         if ($('input[type=checkbox]:checked').length > 6){
             e.preventDefault();
-            document.getElementById('warning').innerHTML="<font color=\"red\">Please select 6 samples at most!";
+            $( "#warning1" ).fadeIn( 300 ).delay( 400 ).fadeOut( 300 );
         } 
     });
 });
