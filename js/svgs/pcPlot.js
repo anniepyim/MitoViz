@@ -290,7 +290,8 @@ function render() {
             if (pageEvent.x !== 0 && pageEvent.y !== 0){
                 $('.tip').empty();
                 $('.tip').append(tipTemplate(INTERSECTED));
-            }
+                console.log(INTERSECTED)
+;            }
         }   
     } else {
       if ( INTERSECTED ) {
@@ -307,6 +308,7 @@ pcPlot.init = function(){
     gridInit(gridDepth,gridWidth,gridHeight);
     //dotsInit(d);
     //boxInit();
+    //pcObj.add(new THREE.Mesh(new THREE.BoxBufferGeometry(100,100,100),new THREE.MeshNormalMaterial()))
     //pcObj.add(new THREE.Mesh(new THREE.BoxBufferGeometry(100,100,100),new THREE.MeshNormalMaterial()))
     //render();
 };

@@ -1,6 +1,7 @@
 var d3 = require('d3');
 //var pcPlot = require('./pcPlot.js');
 var PCdata = require('./pcdata.js');
+var pcbcsvgTemplate = require('../views/templates').pcabarchart2;
 
 var colorgroup = d3.scale.ordinal().range(["#ff004d","#ffff66","#a4ff52","#0067c6","#7d71e5"]),
     colorstage = d3.scale.ordinal().range(["#a4ff52","#ffff66","#da5802","#ff004d","#a7a5a5"]),
@@ -16,6 +17,18 @@ var PCBC = function (obj) {
 
 PCBC.draw = function (indata,cat,svgname,titlename,panelname) {
         
+        var element = document.getElementById(panelname);
+        if(!element){
+            var Obj = new Object();
+            Obj.panelname = panelname;
+            Obj.svgname = svgname;
+            Obj.name = cat;
+            Obj.collapse = 'col'+panelname;
+            
+            var newcontent = pcbcsvgTemplate(Obj);
+            $('#pcbcsvg').append(newcontent);
+        }
+    
         var criteria = (cat == "cancer type") ? 'criteriagroup' : (cat == "gender") ? 'criteriagender' : (cat == "stage") ? 'criteriastage' : (cat == "vital") ? 'criteriavital' : 'criterianeg3';
     
         var color = (cat == "cancer type") ? colorgroup : (cat == "gender") ? colorgender : (cat == "stage") ? colorstage : (cat == "vital") ? colorvital : colorneg3;
@@ -55,41 +68,25 @@ PCBC.draw = function (indata,cat,svgname,titlename,panelname) {
         BARwidth = svgWidth - BARmargin.left - BARmargin.right,
         BARheight = data.length * barH ,
         svgHeight = BARheight + BARmargin.top + BARmargin.bottom;
+    
+        d3svgname = '#'+svgname;
 
-        var BARsvg = d3.select(svgname)//= resp
+        var BARsvg = d3.select(d3svgname)//= resp
             .append("svg")
             .attr('class', 'canvas svg-content-responsive pcbcchild')
             .attr('preserveAspectRatio', 'xMinYMin meet')
             .attr('viewBox', [0, 0, svgWidth, svgHeight].join(' '))
             .append("g")
-            .attr("transform", "translate(" + BARmargin.left + "," + BARmargin.top + ")");
+            .attr("transform", "translate(" + BARmargin.left + "," + BARmargin.top + ")");    
         
+        var parent = document.getElementById(svgname).parentNode.parentNode.id;
+        parent = '#'+parent;
+    
+        d3.select(parent)
+            .on({"click": function(){
+                PCdata.update(indata,cat);
+            }});
         
-        BARsvg.append("rect")
-            .attr({"class": "overlay" , "width": BARwidth , "height": BARheight})
-            .style("fill","transparent")
-            .on({
-                "mouseover": function(){
-                    document.getElementById(panelname).style.border="1px solid #6699ff";},
-                "mouseout":  function(){document.getElementById(panelname).style.border="";},  
-                "click": function(){
-                    PCdata.update(indata,cat);
-                    changeBackground(panelname);
-                    }
-                });
-        
-        d3.select(titlename)
-            .on({
-                    "mouseover": function(){
-                        document.getElementById(panelname).style.border="1px solid #6699ff";},
-                    "mouseout":  function(){document.getElementById(panelname).style.border="";},  
-                    "click": function(){
-                        PCdata.update(indata,cat);
-                        changeBackground(panelname);
-                        }
-                    });
-        
-
         var xmax = Math.abs(d3.max(data, function (d) {
             return d.count;
         }));
@@ -122,13 +119,6 @@ PCBC.draw = function (indata,cat,svgname,titlename,panelname) {
                 addCriteria(criteria,d.key);
             });
     
-
-    
-    function changeBackground(panelname){
-        var element = document.getElementsByClassName('pcbc');
-        for (var e in element) if (element.hasOwnProperty(e)) element[e].style.background="white";
-        document.getElementById(panelname).style.background="#b3ccff";
-    }
     
     var contains = function(needle) {
         // Per spec, the way to identify NaN is that it is not equal to itself

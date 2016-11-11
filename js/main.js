@@ -1,28 +1,29 @@
-var d3 = require('d3');
-
-
-//Public members
 var App = {};
 
+//Get data i.e. files to be analyzed, session id, that have to be provided when the script is called on the website
 var this_js_script = $('script[src*=Test]');
-var my_var_1 = this_js_script.attr('data-my_var_1');
-if (my_var_1) my_var_1 = my_var_1.split(',');
-//end
-var id = this_js_script.attr('data-id');
+var files = this_js_script.attr('files');
+if (files) files = files.split(',');
+var id = this_js_script.attr('session-id');
 
 App.init = function(options){ 
     
-    //Views
+    //Require and render the mainframe
+    //ie the folders for selection, therefore need to provide session id as an argument to render the folder for user upload
+    //also the div for svgs, which is still empty
     var mainframe = require('./views/mainframe.js');
     App.mainframe = new mainframe();
     App.mainframe.setElement('#content').render(id);
     
-
+    //Require mainjs.js, which controls the behaviours of the selection folders
     var dataSelect = require('./views/mainjs.js');
-    var vis = require("./views/vis.js");
-    if (my_var_1) vis.spcompareData(my_var_1);
     
+    //Require vis.js, which is the entry point for vis tool
+    var vis = require("./views/vis.js");
+    //If files are already provided, vis can start
+    if (files) vis.spcompareData(files);
     
 };
 
+//Export as App so it could be App.init could be called
 module.exports = App;

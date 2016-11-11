@@ -1,4 +1,7 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+//Entry point for the app
+//Require everything needed, all will be public
+
 //jQuery = $ = require('jquery');
 jjQuery = require('jquery');
 Backbone = require('backbone');
@@ -12,37 +15,40 @@ require('d3-tip')(d3);
 
 require('underscore'); // bootstrap
 
+//Require the App so that it could called
 App = require('./js/main');
+
 },{"./js/main":2,"backbone":32,"d3":38,"d3-tip":37,"handlebars":68,"jquery":80,"underscore":85}],2:[function(require,module,exports){
-var d3 = require('d3');
-
-
-//Public members
 var App = {};
 
+//Get data i.e. files to be analyzed, session id, that have to be provided when the script is called on the website
 var this_js_script = $('script[src*=Test]');
-var my_var_1 = this_js_script.attr('data-my_var_1');
-if (my_var_1) my_var_1 = my_var_1.split(',');
-//end
-var id = this_js_script.attr('data-id');
+var files = this_js_script.attr('files');
+if (files) files = files.split(',');
+var id = this_js_script.attr('session-id');
 
 App.init = function(options){ 
     
-    //Views
+    //Require and render the mainframe
+    //ie the folders for selection, therefore need to provide session id as an argument to render the folder for user upload
+    //also the div for svgs, which is still empty
     var mainframe = require('./views/mainframe.js');
     App.mainframe = new mainframe();
     App.mainframe.setElement('#content').render(id);
     
-
+    //Require mainjs.js, which controls the behaviours of the selection folders
     var dataSelect = require('./views/mainjs.js');
-    var vis = require("./views/vis.js");
-    if (my_var_1) vis.spcompareData(my_var_1);
     
+    //Require vis.js, which is the entry point for vis tool
+    var vis = require("./views/vis.js");
+    //If files are already provided, vis can start
+    if (files) vis.spcompareData(files);
     
 };
 
+//Export as App so it could be App.init could be called
 module.exports = App;
-},{"./views/mainframe.js":9,"./views/mainjs.js":10,"./views/vis.js":13,"d3":38}],3:[function(require,module,exports){
+},{"./views/mainframe.js":9,"./views/mainjs.js":10,"./views/vis.js":13}],3:[function(require,module,exports){
 var d3 = require('d3');
 var colorbrewer = require('colorbrewer');
 var SP = require('./scatterplot.js');
@@ -896,7 +902,8 @@ function render() {
             if (pageEvent.x !== 0 && pageEvent.y !== 0){
                 $('.tip').empty();
                 $('.tip').append(tipTemplate(INTERSECTED));
-            }
+                console.log(INTERSECTED)
+;            }
         }   
     } else {
       if ( INTERSECTED ) {
@@ -939,6 +946,7 @@ if (typeof define === "function" && define.amd) {
 var d3 = require('d3');
 //var pcPlot = require('./pcPlot.js');
 var PCdata = require('./pcdata.js');
+var pcbcsvgTemplate = require('../views/templates').pcabarchart2;
 
 var colorgroup = d3.scale.ordinal().range(["#ff004d","#ffff66","#a4ff52","#0067c6","#7d71e5"]),
     colorstage = d3.scale.ordinal().range(["#a4ff52","#ffff66","#da5802","#ff004d","#a7a5a5"]),
@@ -954,6 +962,18 @@ var PCBC = function (obj) {
 
 PCBC.draw = function (indata,cat,svgname,titlename,panelname) {
         
+        var element = document.getElementById(panelname);
+        if(!element){
+            var Obj = new Object();
+            Obj.panelname = panelname;
+            Obj.svgname = svgname;
+            Obj.name = cat;
+            Obj.collapse = 'col'+panelname;
+            
+            var newcontent = pcbcsvgTemplate(Obj);
+            $('#pcbcsvg').append(newcontent);
+        }
+    
         var criteria = (cat == "cancer type") ? 'criteriagroup' : (cat == "gender") ? 'criteriagender' : (cat == "stage") ? 'criteriastage' : (cat == "vital") ? 'criteriavital' : 'criterianeg3';
     
         var color = (cat == "cancer type") ? colorgroup : (cat == "gender") ? colorgender : (cat == "stage") ? colorstage : (cat == "vital") ? colorvital : colorneg3;
@@ -993,41 +1013,25 @@ PCBC.draw = function (indata,cat,svgname,titlename,panelname) {
         BARwidth = svgWidth - BARmargin.left - BARmargin.right,
         BARheight = data.length * barH ,
         svgHeight = BARheight + BARmargin.top + BARmargin.bottom;
+    
+        d3svgname = '#'+svgname;
 
-        var BARsvg = d3.select(svgname)//= resp
+        var BARsvg = d3.select(d3svgname)//= resp
             .append("svg")
             .attr('class', 'canvas svg-content-responsive pcbcchild')
             .attr('preserveAspectRatio', 'xMinYMin meet')
             .attr('viewBox', [0, 0, svgWidth, svgHeight].join(' '))
             .append("g")
-            .attr("transform", "translate(" + BARmargin.left + "," + BARmargin.top + ")");
+            .attr("transform", "translate(" + BARmargin.left + "," + BARmargin.top + ")");    
         
+        var parent = document.getElementById(svgname).parentNode.parentNode.id;
+        parent = '#'+parent;
+    
+        d3.select(parent)
+            .on({"click": function(){
+                PCdata.update(indata,cat);
+            }});
         
-        BARsvg.append("rect")
-            .attr({"class": "overlay" , "width": BARwidth , "height": BARheight})
-            .style("fill","transparent")
-            .on({
-                "mouseover": function(){
-                    document.getElementById(panelname).style.border="1px solid #6699ff";},
-                "mouseout":  function(){document.getElementById(panelname).style.border="";},  
-                "click": function(){
-                    PCdata.update(indata,cat);
-                    changeBackground(panelname);
-                    }
-                });
-        
-        d3.select(titlename)
-            .on({
-                    "mouseover": function(){
-                        document.getElementById(panelname).style.border="1px solid #6699ff";},
-                    "mouseout":  function(){document.getElementById(panelname).style.border="";},  
-                    "click": function(){
-                        PCdata.update(indata,cat);
-                        changeBackground(panelname);
-                        }
-                    });
-        
-
         var xmax = Math.abs(d3.max(data, function (d) {
             return d.count;
         }));
@@ -1060,13 +1064,6 @@ PCBC.draw = function (indata,cat,svgname,titlename,panelname) {
                 addCriteria(criteria,d.key);
             });
     
-
-    
-    function changeBackground(panelname){
-        var element = document.getElementsByClassName('pcbc');
-        for (var e in element) if (element.hasOwnProperty(e)) element[e].style.background="white";
-        document.getElementById(panelname).style.background="#b3ccff";
-    }
     
     var contains = function(needle) {
         // Per spec, the way to identify NaN is that it is not equal to itself
@@ -1132,7 +1129,7 @@ if (typeof define === "function" && define.amd) {
 } else {
     this.PCBC = PCBC;
 }
-},{"./pcdata.js":7,"d3":38}],7:[function(require,module,exports){
+},{"../views/templates":12,"./pcdata.js":7,"d3":38}],7:[function(require,module,exports){
 var d3 = require('d3');
 var pcPlot = require('./pcPlot.js');
 
@@ -1612,6 +1609,8 @@ module.exports = Backbone.View.extend({
     
     scplot: templates.scplot,
     
+    pcabarchart2: templates.pcabarchart2,
+    
     render: function(id){
         var obj = new Object();
         obj.id = id;
@@ -1633,6 +1632,11 @@ module.exports = Backbone.View.extend({
         this.$el.append(this.scplot());
         return this;
     },
+    
+    renderpcabc2: function(id){
+        this.$el.append(this.pcabarchart2());
+        return this;
+    }
 });
 
 },{"./templates":12}],10:[function(require,module,exports){
@@ -1773,11 +1777,8 @@ function issueWarning(){
         document.getElementById('warning').innerHTML="";
 }
     
+
 });
-
-
-
-
 
 },{}],11:[function(require,module,exports){
 var axios = require('axios');
@@ -1810,25 +1811,6 @@ function parse(urls, errorcb, datacb,colorrange){
         });
 
         data.sort(function(a,b) { return d3.ascending(a.gene, b.gene);});
-        
-        /*var genedata = d3.nest()
-            .key(function (d) {return d.gene;})
-            .entries(data);
-        var genelist = [];
-        genedata.forEach(function (d) {genelist.push(d.key);});
-        
-        var sampledata = d3.nest()
-            .key(function (d) {return d.sampleID;})
-            .entries(data);    
-        var samplelist = [];
-        sampledata.forEach(function (d) {samplelist.push(d.key);});
-        
-        for(var i=0; i<samplelist.length; i++){
-            for (j=0; j<genelist.length;j++){
-                for(k=0; k<)
-            }
-        }*/
-        
         
         datacb(data,colorrange);
 
@@ -1905,9 +1887,9 @@ this["Templates"] = this["Templates"] || {};
 this["Templates"]["main"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var helper;
 
-  return "<!-- Page Content -->        \n<div class=\"container main\">\n        <div id=\"#wrapUp\" class=\"row\">\n            \n            <div class=\"col-md-2\">\n         <div class=\"row\">\n             \n             <!--Folders to select data -->\n             \n             <div class=\"col-md-12 title\" style=\"margin-top:20px;\" id=\"hihi\">\n              Data Sets\n             </div>\n              <div class=\"col-md-12\" style=\"margin-top:10px;\">\n            \n              <select class=\"selectpicker\" id=\"folders\" data-style=\"btn-default\" title=\"Pick dataset\" data-width=\"175px\" >\n                  <option value='./data/TCGA'>TCGA</option>\n                 <option value='./data/aneuploidy/'>Aneuploidy</option>\n                  <option value='./data/viral/'>Viral</option>\n                  <option value='./data/trisomy/'>Trisomy</option>\n                  <option value='./data/user_uploads/"
+  return "<!-- Page Content -->        \n<div class=\"container main\">\n        <div id=\"#wrapUp\" class=\"row\">\n            \n        <div class=\"col-md-2\">\n         <div class=\"row\">\n             \n             <!--Folders to select data -->\n             \n             <div class=\"col-md-12 title\" style=\"margin-top:20px;\" id=\"hihi\">\n              Data Sets\n             </div>\n              <div class=\"col-md-12\" style=\"margin-top:10px;\">\n            \n              <select class=\"selectpicker\" id=\"folders\" data-style=\"btn-default\" title=\"Pick dataset\" data-width=\"175px\" >\n                  <option value='./data/TCGA'>TCGA</option>\n                 <option value='./data/aneuploidy/'>Aneuploidy</option>\n                  <option value='./data/viral/'>Viral</option>\n                  <option value='./data/trisomy/'>Trisomy</option>\n                  <option value='./data/user_uploads/"
     + container.escapeExpression(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"id","hash":{},"data":data}) : helper)))
-    + "/json/'>User Uploads</option>\n             </select>\n             </div>\n\n              <div class=\"col-md-12\" style=\"margin-top:10px;display:none\" id=\"subfolders-div\">\n              <select class=\"selectpicker\" id=\"subfolders\" data-style=\"btn-default\" title=\"Pick Cancer type\" data-width=\"175px\" >\n                 <option value='./data/TCGA/BRCA/'>BRCA</option>\n                  <option value='./data/TCGA/HCC/'>HCC</option>\n                 <option value='./data/TCGA/LIHC/'>LIHC</option>\n                 <option value='./data/TCGA/LUAD/'>LUAD</option>\n                 <option value='./data/TCGA/PRAD/'>PRAD</option>\n                 <option value='./data/TCGA/THCA/'>THCA</option>\n             </select>\n             </div>\n\n              \n              <div class=\"col-md-12\" style=\"margin-top:10px;\">\n              <select class=\"selectpicker\" MULTIPLE id=\"files\" data-style=\"btn-default\" title=\"Pick samples\" data-width=\"175px\" data-actions-box=\"true\" data-selected-text-format=\"static\">\n             </select>\n             </div>\n        \n              <div class=\"col-md-12\" style=\"margin-top:10px\">\n             <form id=\"form1\">\n       <select name=\"file_list\" SIZE=\"4\" MULTIPLE id=\"selected-sample\" style=\"width: 175px;font-size: 14px\">\n             </select>\n             </form>\n              </div>\n             \n              <div class=\"col-md-12\" style=\"margin-top:10px;text-align:right\">\n              <button id = \"delete-selected\" class=\"btn btn-xs btn-default\"><span class=\"glyphicon glyphicon-remove\" aria-hidden=\"true\"></span> Remove</button>\n             <button id = \"clear-all\" class=\"btn btn-xs btn-danger\"><span class=\"glyphicon glyphicon-trash\" aria-hidden=\"true\"></span> Clear</button>\n              </div>\n              \n              <div class=\"col-md-12\" id=\"warning\" style=\"margin-top:10px\"></div>\n             \n             <!-- Select type of analysis -->\n             \n            <div class=\"col-md-12 title\" style=\"margin-top:10px;margin-bottom:10px;\">Analysis</div>\n             <div class=\"col-md-12 radio\" style=\"font-size:10px;margin:0px\">\n            <label><input type=\"radio\" name=\"analysis\" value=\"scatterplotanalysis\" checked=\"checked\">Mutations and Expressions</label>\n            </div>\n             <div class=\"col-md-12 radio\" style=\"font-size:10px;margin:0px\">\n            <label><input type=\"radio\" name=\"analysis\" value=\"pcanalysis\">Principal Components</label>\n            </div>\n             \n             <div class=\"col-md-12\" style=\"margin-top:10px;text-align: center\">\n              <button id = \"compareButton\" class=\"btn btn-success\">Compare</button>\n             </div>\n             \n              <div class=\"col-md-12\"><hr></div>\n            </div>\n            <div class=\"row tip\" style=\"margin-top:0px;\"></div>\n        </div>\n        \n            <div class=\"col-md-10\">\n                <div id = \"svgs-all\" class=\"col-md-12\"></div>   \n            </div>\n        </div>\n</div>";
+    + "/json/'>User Uploads</option>\n             </select>\n             </div>\n\n              <div class=\"col-md-12\" style=\"margin-top:10px;display:none\" id=\"subfolders-div\">\n              <select class=\"selectpicker\" id=\"subfolders\" data-style=\"btn-default\" title=\"Pick Cancer type\" data-width=\"175px\" >\n                 <option value='./data/TCGA/BRCA/'>BRCA</option>\n                  <!--<option value='./data/TCGA/HCC/'>HCC</option>-->\n                 <option value='./data/TCGA/LIHC/'>LIHC</option>\n                 <option value='./data/TCGA/LUAD/'>LUAD</option>\n                 <option value='./data/TCGA/PRAD/'>PRAD</option>\n                 <option value='./data/TCGA/THCA/'>THCA</option>\n             </select>\n             </div>\n\n              \n              <div class=\"col-md-12\" style=\"margin-top:10px;\">\n              <select class=\"selectpicker\" MULTIPLE id=\"files\" data-style=\"btn-default\" title=\"Pick samples\" data-width=\"175px\" data-actions-box=\"true\" data-selected-text-format=\"static\">\n             </select>\n             </div>\n        \n              <div class=\"col-md-12\" style=\"margin-top:10px\">\n             <form id=\"form1\">\n       <select name=\"file_list\" SIZE=\"4\" MULTIPLE id=\"selected-sample\" style=\"width: 175px;font-size: 14px\">\n             </select>\n             </form>\n              </div>\n             \n              <div class=\"col-md-12\" style=\"margin-top:10px;text-align:right\">\n              <button id = \"delete-selected\" class=\"btn btn-xs btn-default\"><span class=\"glyphicon glyphicon-remove\" aria-hidden=\"true\"></span> Remove</button>\n             <button id = \"clear-all\" class=\"btn btn-xs btn-danger\"><span class=\"glyphicon glyphicon-trash\" aria-hidden=\"true\"></span> Clear</button>\n              </div>\n              \n              <div class=\"col-md-12\" id=\"warning\" style=\"margin-top:10px\"></div>\n             \n             <!-- Select type of analysis -->\n             \n            <div class=\"col-md-12 title\" style=\"margin-top:10px;margin-bottom:10px;\">Analysis</div>\n             <div class=\"col-md-12 radio\" style=\"font-size:10px;margin:0px\">\n            <label><input type=\"radio\" name=\"analysis\" value=\"scatterplotanalysis\" checked=\"checked\">Mutations and Expressions</label>\n            </div>\n             <div class=\"col-md-12 radio\" style=\"font-size:10px;margin:0px\">\n            <label><input type=\"radio\" name=\"analysis\" value=\"pcanalysis\">Principal Components</label>\n            </div>\n             \n             <div class=\"col-md-12\" style=\"margin-top:10px;text-align: center\">\n              <button id = \"compareButton\" class=\"btn btn-success\">Compare</button>\n             </div>\n             \n              <div class=\"col-md-12\"><hr></div>\n            </div>\n            <div class=\"row tip\" style=\"margin-top:0px;\"></div>\n        </div>\n        \n            <div class=\"col-md-10\">\n                <div id = \"svgs-all\" class=\"col-md-12\"></div>   \n            </div>\n        </div>\n</div>";
 },"useData":true});
 
 this["Templates"]["pca"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
@@ -1915,7 +1897,23 @@ this["Templates"]["pca"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main"
 },"useData":true});
 
 this["Templates"]["pcabarchart"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<div class=\"col-md-12\"><hr></div>\n<div class=\"col-md-12 midtitle\" style=\"margin-top:0px;margin-bottom:10px;\">\n    Color samples by\n</div>\n<div id=\"pcbcsvg\" class=\"col-md-12\">\n        <div class=\"panel-group\">\n                <div class=\"panel panel-default pcbc\" id=\"grouppanel\" style=\"background:#b3ccff\">\n                    <div class=\"minititle\" style=\"padding: 10px 10px;\" id=\"grouptitle\">\n                        <a data-toggle=\"collapse\" href=\"#collapse3\">Group</a>\n                    </div>\n                    <div id=\"collapse3\" class=\"panel-collapse collapse-in\">\n                        <div class=\"panel-body svg-container\" id=\"groupbarchart\" style=\"padding :0px 0px; font-size:20px\"></div>\n                    </div>\n            </div>\n            <div class=\"panel panel-default pcbc\" id=\"genderpanel\">\n                <div class=\"minititle\" style=\"padding: 10px 10px;\" id=\"gendertitle\">\n                    <a data-toggle=\"collapse\" href=\"#collapse1\">Gender</a>\n                </div>\n                <div id=\"collapse1\" class=\"panel-collapse collapse\">\n                    <div class=\"panel-body svg-container\" id=\"genderbarchart\" style=\"padding :0px 0px; font-size:20px\"></div>\n                </div>\n            </div>\n            <div class=\"panel panel-default pcbc\" id=\"stagepanel\">\n                <div class=\"minititle\" style=\"padding: 10px 10px;\" id=\"stagetitle\">\n                    <a data-toggle=\"collapse\" href=\"#collapse2\">Stage</a>\n                </div>\n                <div id=\"collapse2\" class=\"panel-collapse collapse\">\n                    <div class=\"panel-body svg-container\" id=\"stagebarchart\" style=\"padding :0px 0px; font-size:20px\"></div>\n                </div>\n            </div>\n            <div class=\"panel panel-default pcbc\" id=\"vitalpanel\">\n                <div class=\"minititle\" style=\"padding: 10px 10px;\" id=\"vitaltitle\">\n                    <a data-toggle=\"collapse\" href=\"#collapse4\">Vital Status</a>\n                </div>\n                <div id=\"collapse4\" class=\"panel-collapse collapse\">\n                    <div class=\"panel-body svg-container\" id=\"vitalbarchart\" style=\"padding :0px 0px; font-size:20px\"></div>\n                </div>\n            </div>\n            <div class=\"panel panel-default pcbc\" id=\"neg3panel\">\n                <div class=\"minititle\" style=\"padding: 10px 10px;\" id=\"neg3title\">\n                    <a data-toggle=\"collapse\" href=\"#collapse5\">Triple Neg</a>\n                </div>\n                <!--<div id=\"collapse5\" class=\"panel-collapse collapse\">\n                    <div class=\"panel-body svg-container\" id=\"neg3barchart\" style=\"padding :0px 0px; font-size:20px\"></div>\n                </div>-->\n            </div>\n    </div>\n</div>\n<div class = \"col-md-12\" id=\"criteriabutton\"></div>\n<div class = \"col-md-12\" style=\"display:none\"><input type=\"text\" id=\"criteriagroup\"><input type=\"text\" id=\"criteriagender\"><input type=\"text\" id=\"criteriastage\"><input type=\"text\" id=\"criteriavital\"><input type=\"text\" id=\"criterianeg3\">\n</div>\n<div class = \"col-md-12\" style=\"margin-top:20px;text-align: center\"><button id = \"filterbutton\" class=\"btn btn-success\">Update</button>\n</div>\n";
+    return "<div class=\"col-md-12\"><hr></div>\n<div class=\"col-md-12 midtitle\" style=\"margin-top:0px;margin-bottom:10px;\">\n    Color samples by\n</div>\n<div class=\"col-md-12\">\n        <div id=\"pcbcsvg\" class=\"panel-group\">\n    </div>\n</div>\n<div class = \"col-md-12\" id=\"criteriabutton\"></div>\n<div class = \"col-md-12\" style=\"display:none\"><input type=\"text\" id=\"criteriagroup\"><input type=\"text\" id=\"criteriagender\"><input type=\"text\" id=\"criteriastage\"><input type=\"text\" id=\"criteriavital\"><input type=\"text\" id=\"criterianeg3\">\n</div>\n<div class = \"col-md-12\" style=\"margin-top:20px;text-align: center\"><button id = \"filterbutton\" class=\"btn btn-success\">Update</button>\n</div>\n";
+},"useData":true});
+
+this["Templates"]["pcabarchart2"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
+
+  return "<div class=\"panel panel-default pcbc\" id=\""
+    + alias4(((helper = (helper = helpers.panelname || (depth0 != null ? depth0.panelname : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"panelname","hash":{},"data":data}) : helper)))
+    + "\" style=\"background:#b3ccff\">\n    <div class=\"minititle\" style=\"padding: 10px 10px;\">\n        <a data-toggle=\"collapse\" href=\"#"
+    + alias4(((helper = (helper = helpers.collapse || (depth0 != null ? depth0.collapse : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"collapse","hash":{},"data":data}) : helper)))
+    + "\">"
+    + alias4(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"name","hash":{},"data":data}) : helper)))
+    + "</a>\n    </div>\n    <div id=\""
+    + alias4(((helper = (helper = helpers.collapse || (depth0 != null ? depth0.collapse : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"collapse","hash":{},"data":data}) : helper)))
+    + "\" class=\"panel-collapse collapse-in\">\n        <div class=\"panel-body svg-container\" id=\""
+    + alias4(((helper = (helper = helpers.svgname || (depth0 != null ? depth0.svgname : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"svgname","hash":{},"data":data}) : helper)))
+    + "\" style=\"padding :0px 0px; font-size:20px\"></div>\n    </div>\n</div>\n\n ";
 },"useData":true});
 
 this["Templates"]["pcatooltip"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
@@ -1974,7 +1972,6 @@ if (typeof exports === 'object' && exports) {module.exports = this["Templates"];
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{"handlebars":68}],13:[function(require,module,exports){
 //Libs
-//var fetch = require('./js/fetch.js');
 var d3 = require('d3');
 
 //Modules
@@ -1988,64 +1985,17 @@ var PCBC = require('../svgs/pcbarchart.js');
 var parser = require('./parser.js');
 var mainframe = require('./mainframe.js');
 
-
 mainframe = new mainframe();
 
-var vis = function (obj) {
+
+var vis = {};
+/*var vis = function (obj) {
     if (obj instanceof vis) return obj;
     if (!(this instanceof vis)) return new vis(obj);
     this.viswrapped = obj;
-};
+};*/
 
-function hideLoading() {
-    d3.select('#loading').remove();
-    d3.select('#cb').remove();
-}
-
-function onError(res) {
-    document.getElementById('warning').innerHTML="<font color=\"red\">"+res;
-    throw new Error("Something went badly wrong!");
-}
-
-function drawSP(data,colorrange) {
-    var el = document.getElementById( 'svgs-all' );
-    while (el.hasChildNodes()) {el.removeChild(el.firstChild);}
-    mainframe.setElement('#svgs-all').renderscplot();
-    hideLoading();
-    SP.init(data,colorrange);
-    BC.init(data,colorrange);
-    heatmap.init(data,colorrange);
-}
-
-function redrawPCA(data){
-    d3.selectAll(".pcbcchild").remove();
-    
-    var cat;
-    var element = document.getElementsByClassName('pcbc');
-    if (!!element[0]){
-        for (var e in element) if (element.hasOwnProperty(e)){
-            if (element[e].style.background=="rgb(179, 204, 255)") {
-            cat = (element[e].id == "grouppanel") ? 'cancer type' : (element[e].id == "genderpanel") ? 'gender' : (element[e].id == "stagepanel") ? 'stage' :(element[e].id == "vitalpanel") ? 'vital': 'neg3';
-            }
-        }
-    }else cat = 'cancer type';
-    
-    var prdata = PCdata.init(data,cat);
-    pcPlot.deletedots();
-    pcPlot.adddots(prdata);
-    
-    console.log(prdata);
-    
-    if (!!element[0]){
-        PCBC.draw(prdata,"cancer type","#groupbarchart","#grouptitle","grouppanel");        PCBC.draw(prdata,"gender","#genderbarchart","#gendertitle","genderpanel");
-        PCBC.draw(prdata,"stage","#stagebarchart","#stagetitle","stagepanel");
-        PCBC.draw(prdata,"vital","#vitalbarchart","#vitaltitle","vitalpanel");
-        //PCBC.draw(prdata,"neg3","#neg3barchart","#neg3title","neg3panel");   
-    }
-
-}
-
-
+//The button that starts the analysis, either SP or PCA
 d3.select('#compareButton').on('click', function(){
     var analysis = document.querySelector('input[name = "analysis"]:checked').value;
     if (analysis == "scatterplotanalysis") vis.spcompareData();
@@ -2053,7 +2003,18 @@ d3.select('#compareButton').on('click', function(){
 });
 
 
+function hideLoading() {
+    d3.select('#loading').remove();
+    d3.select('#cb').remove();
+}
 
+//Function that might be called by other func if something went wrong
+function onError(res) {
+    document.getElementById('warning').innerHTML="<font color=\"red\">"+res;
+    throw new Error("Something went badly wrong!");
+}
+
+//Function that calls parser to get data and then drawSP to draw the SP
 vis.spcompareData = function(arr){
     var select = document.getElementById('selected-sample');
     if (arr === undefined){
@@ -2067,6 +2028,21 @@ vis.spcompareData = function(arr){
     //var colorrange = d3.select('#colorinput').property("value");
     parser.parse(arr, onError, drawSP,colorrange);
 };
+
+function drawSP(data,colorrange) {
+    
+    //Remove everything on the svgs-all div
+    //Calls renderscplot that render div for SP, BC, and heatmap within svgs-all
+    var el = document.getElementById( 'svgs-all' );
+    while (el.hasChildNodes()) {el.removeChild(el.firstChild);}
+    mainframe.setElement('#svgs-all').renderscplot();
+    hideLoading();
+    
+    //Init SP, BC and heatmap that will draw things within the div for each of them respectively
+    SP.init(data,colorrange);
+    BC.init(data,colorrange);
+    heatmap.init(data,colorrange);
+}
 
 function pcacompareData(){
     
@@ -2082,19 +2058,35 @@ function pcacompareData(){
     
     
     if (sametype === false) onError("Please select samples from the same project");
-    //else if ($('#selected-sample').find('option').length < 3) onError("Please add at least 3 samples");
+    else if ($('#selected-sample').find('option').length < 3) onError("Please add at least 3 samples");
     else{
+        //Remove everything on svgs-all div and render the div for PCA plot and the side bar, ie the one for folders
         var el = document.getElementById( 'svgs-all' );
         while (el.hasChildNodes()) {el.removeChild(el.firstChild);}
         mainframe.setElement('#svgs-all').renderpca();
         
+        
+        //Render the div for barchart
         if (type == "TCGA") 
         mainframe.setElement('#pcbarchart').renderpcabc();
-
-        d3.select('#filterbutton').on("click", pcaupdateData);
+ 
+        
+        //Controls the css of pcbarchart
+        /*$('.pcbc').on({
+            'click': function(){
+                $('.pcbc').css('background','white');
+                $(this).css('background','#b3ccff');
+            },
+            'mouseenter': function(){$(this).css('border','1px solid #6699ff')},
+            'mouseleave': function(){$(this).css('border','')}
+        })*/ 
+        
+        //Update the PCA plot by calling the functions upon clicking the buttons or changing folders
+        $('#filterbutton').on('click', pcaupdateData);
         $('#pcafolders').on('change',pcaupdatefolder);
         
         
+        //Run PCA by calling a python script that calls R
         var samples = document.getElementById('selected-sample');
     
         for (var i = 0; i < samples.options.length; i++) { 
@@ -2109,13 +2101,14 @@ function pcacompareData(){
             success: function (result) {
                 //alert(result);
                 pcPlot.init();
-                redrawPCA(result);
+                drawPCA(result);
             },
             error: function(e){
                 console.log(e);
             }
         });
-
+        
+        //Retrieve files result from the python+R script runs
         var targeturl = './data/PCA/';
         var folderurl = '.'+targeturl;
         var htmltext = "",
@@ -2146,6 +2139,43 @@ function pcacompareData(){
 
 }
 
+function drawPCA(data){
+    d3.selectAll(".pcbcchild").remove();
+    
+    var cat;
+    var element = document.getElementsByClassName('pcbc');
+    if (!!element[0]){
+        for (var e in element) if (element.hasOwnProperty(e)){
+            if (element[e].style.background=="rgb(179, 204, 255)") {
+            cat = (element[e].id == "grouppanel") ? 'cancer type' : (element[e].id == "genderpanel") ? 'gender' : (element[e].id == "stagepanel") ? 'stage' :(element[e].id == "vitalpanel") ? 'vital': 'neg3';
+            }
+        }
+    }else cat = 'cancer type';
+    
+    var prdata = PCdata.init(data,cat);
+    pcPlot.deletedots();
+    pcPlot.adddots(prdata);
+
+    //if (!!element[0]){
+        PCBC.draw(prdata,"cancer type","groupbarchart","#grouptitle","grouppanel");        PCBC.draw(prdata,"gender","genderbarchart","#gendertitle","genderpanel");
+        PCBC.draw(prdata,"stage","stagebarchart","#stagetitle","stagepanel");
+        PCBC.draw(prdata,"vital","vitalbarchart","#vitaltitle","vitalpanel");
+        //PCBC.draw(prdata,"neg3","#neg3barchart","#neg3title","neg3panel");   
+    //}
+        $('.pcbc').css('background','white');
+    
+        $('.pcbc').on({
+        'click': function(){
+            $('.pcbc').css('background','white');
+            $(this).css('background','#b3ccff');
+        },
+        'mouseenter': function(){$(this).css('border','1px solid #6699ff')},
+        'mouseleave': function(){$(this).css('border','')}
+        })
+        
+
+}
+
 function pcaupdateData(){
     
     var process = $("#pcafolders option:selected").val();
@@ -2154,7 +2184,7 @@ function pcaupdateData(){
         url: process,  // or just tcga.py
         dataType: "json",    
         success: function (result) {
-            redrawPCA(result);
+            drawPCA(result);
         },
         error: function(e){
             console.log(e);
@@ -2167,13 +2197,15 @@ function pcaupdatefolder(){
     
     var process = $("#pcafolders option:selected").val();
     
+        console.log(process);
+    
     jQuery.ajax({
         url: process,  // or just tcga.py
         dataType: "json",    
         success: function (result) {
             d3.select("#pcacanvas").remove();
             pcPlot.init();
-            redrawPCA(result);
+            drawPCA(result);
         },
         error: function(e){
             console.log(e);
@@ -2195,6 +2227,7 @@ function removeCriteria(){
     }
     
 }
+
 
 module.exports = vis;
 },{"../svgs/barchart.js":3,"../svgs/heatmap.js":4,"../svgs/pcPlot.js":5,"../svgs/pcbarchart.js":6,"../svgs/pcdata.js":7,"../svgs/scatterplot.js":8,"./mainframe.js":9,"./parser.js":11,"d3":38}],14:[function(require,module,exports){

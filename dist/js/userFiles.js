@@ -39,6 +39,7 @@ $(document).ready(function(){
           
           
             $(".database").click(function(){
+                console.log("test");
                 var $checkbox = $(this).find(".comparecheckbox");
                 $checkbox.prop('checked', !$checkbox.prop('checked'));
                 var $glyok = $(this).find(".glyphicon-ok");

@@ -10,6 +10,8 @@ module.exports = Backbone.View.extend({
     
     scplot: templates.scplot,
     
+    pcabarchart2: templates.pcabarchart2,
+    
     render: function(id){
         var obj = new Object();
         obj.id = id;
@@ -31,4 +33,9 @@ module.exports = Backbone.View.extend({
         this.$el.append(this.scplot());
         return this;
     },
+    
+    renderpcabc2: function(id){
+        this.$el.append(this.pcabarchart2());
+        return this;
+    }
 });

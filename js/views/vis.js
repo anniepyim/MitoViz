@@ -1,5 +1,4 @@
 //Libs
-//var fetch = require('./js/fetch.js');
 var d3 = require('d3');
 
 //Modules
@@ -13,64 +12,17 @@ var PCBC = require('../svgs/pcbarchart.js');
 var parser = require('./parser.js');
 var mainframe = require('./mainframe.js');
 
-
 mainframe = new mainframe();
 
-var vis = function (obj) {
+
+var vis = {};
+/*var vis = function (obj) {
     if (obj instanceof vis) return obj;
     if (!(this instanceof vis)) return new vis(obj);
     this.viswrapped = obj;
-};
+};*/
 
-function hideLoading() {
-    d3.select('#loading').remove();
-    d3.select('#cb').remove();
-}
-
-function onError(res) {
-    document.getElementById('warning').innerHTML="<font color=\"red\">"+res;
-    throw new Error("Something went badly wrong!");
-}
-
-function drawSP(data,colorrange) {
-    var el = document.getElementById( 'svgs-all' );
-    while (el.hasChildNodes()) {el.removeChild(el.firstChild);}
-    mainframe.setElement('#svgs-all').renderscplot();
-    hideLoading();
-    SP.init(data,colorrange);
-    BC.init(data,colorrange);
-    heatmap.init(data,colorrange);
-}
-
-function redrawPCA(data){
-    d3.selectAll(".pcbcchild").remove();
-    
-    var cat;
-    var element = document.getElementsByClassName('pcbc');
-    if (!!element[0]){
-        for (var e in element) if (element.hasOwnProperty(e)){
-            if (element[e].style.background=="rgb(179, 204, 255)") {
-            cat = (element[e].id == "grouppanel") ? 'cancer type' : (element[e].id == "genderpanel") ? 'gender' : (element[e].id == "stagepanel") ? 'stage' :(element[e].id == "vitalpanel") ? 'vital': 'neg3';
-            }
-        }
-    }else cat = 'cancer type';
-    
-    var prdata = PCdata.init(data,cat);
-    pcPlot.deletedots();
-    pcPlot.adddots(prdata);
-    
-    console.log(prdata);
-    
-    if (!!element[0]){
-        PCBC.draw(prdata,"cancer type","#groupbarchart","#grouptitle","grouppanel");        PCBC.draw(prdata,"gender","#genderbarchart","#gendertitle","genderpanel");
-        PCBC.draw(prdata,"stage","#stagebarchart","#stagetitle","stagepanel");
-        PCBC.draw(prdata,"vital","#vitalbarchart","#vitaltitle","vitalpanel");
-        //PCBC.draw(prdata,"neg3","#neg3barchart","#neg3title","neg3panel");   
-    }
-
-}
-
-
+//The button that starts the analysis, either SP or PCA
 d3.select('#compareButton').on('click', function(){
     var analysis = document.querySelector('input[name = "analysis"]:checked').value;
     if (analysis == "scatterplotanalysis") vis.spcompareData();
@@ -78,7 +30,18 @@ d3.select('#compareButton').on('click', function(){
 });
 
 
+function hideLoading() {
+    d3.select('#loading').remove();
+    d3.select('#cb').remove();
+}
 
+//Function that might be called by other func if something went wrong
+function onError(res) {
+    document.getElementById('warning').innerHTML="<font color=\"red\">"+res;
+    throw new Error("Something went badly wrong!");
+}
+
+//Function that calls parser to get data and then drawSP to draw the SP
 vis.spcompareData = function(arr){
     var select = document.getElementById('selected-sample');
     if (arr === undefined){
@@ -92,6 +55,21 @@ vis.spcompareData = function(arr){
     //var colorrange = d3.select('#colorinput').property("value");
     parser.parse(arr, onError, drawSP,colorrange);
 };
+
+function drawSP(data,colorrange) {
+    
+    //Remove everything on the svgs-all div
+    //Calls renderscplot that render div for SP, BC, and heatmap within svgs-all
+    var el = document.getElementById( 'svgs-all' );
+    while (el.hasChildNodes()) {el.removeChild(el.firstChild);}
+    mainframe.setElement('#svgs-all').renderscplot();
+    hideLoading();
+    
+    //Init SP, BC and heatmap that will draw things within the div for each of them respectively
+    SP.init(data,colorrange);
+    BC.init(data,colorrange);
+    heatmap.init(data,colorrange);
+}
 
 function pcacompareData(){
     
@@ -107,19 +85,35 @@ function pcacompareData(){
     
     
     if (sametype === false) onError("Please select samples from the same project");
-    //else if ($('#selected-sample').find('option').length < 3) onError("Please add at least 3 samples");
+    else if ($('#selected-sample').find('option').length < 3) onError("Please add at least 3 samples");
     else{
+        //Remove everything on svgs-all div and render the div for PCA plot and the side bar, ie the one for folders
         var el = document.getElementById( 'svgs-all' );
         while (el.hasChildNodes()) {el.removeChild(el.firstChild);}
         mainframe.setElement('#svgs-all').renderpca();
         
+        
+        //Render the div for barchart
         if (type == "TCGA") 
         mainframe.setElement('#pcbarchart').renderpcabc();
-
-        d3.select('#filterbutton').on("click", pcaupdateData);
+ 
+        
+        //Controls the css of pcbarchart
+        /*$('.pcbc').on({
+            'click': function(){
+                $('.pcbc').css('background','white');
+                $(this).css('background','#b3ccff');
+            },
+            'mouseenter': function(){$(this).css('border','1px solid #6699ff')},
+            'mouseleave': function(){$(this).css('border','')}
+        })*/ 
+        
+        //Update the PCA plot by calling the functions upon clicking the buttons or changing folders
+        $('#filterbutton').on('click', pcaupdateData);
         $('#pcafolders').on('change',pcaupdatefolder);
         
         
+        //Run PCA by calling a python script that calls R
         var samples = document.getElementById('selected-sample');
     
         for (var i = 0; i < samples.options.length; i++) { 
@@ -134,13 +128,14 @@ function pcacompareData(){
             success: function (result) {
                 //alert(result);
                 pcPlot.init();
-                redrawPCA(result);
+                drawPCA(result);
             },
             error: function(e){
                 console.log(e);
             }
         });
-
+        
+        //Retrieve files result from the python+R script runs
         var targeturl = './data/PCA/';
         var folderurl = '.'+targeturl;
         var htmltext = "",
@@ -171,6 +166,43 @@ function pcacompareData(){
 
 }
 
+function drawPCA(data){
+    d3.selectAll(".pcbcchild").remove();
+    
+    var cat;
+    var element = document.getElementsByClassName('pcbc');
+    if (!!element[0]){
+        for (var e in element) if (element.hasOwnProperty(e)){
+            if (element[e].style.background=="rgb(179, 204, 255)") {
+            cat = (element[e].id == "grouppanel") ? 'cancer type' : (element[e].id == "genderpanel") ? 'gender' : (element[e].id == "stagepanel") ? 'stage' :(element[e].id == "vitalpanel") ? 'vital': 'neg3';
+            }
+        }
+    }else cat = 'cancer type';
+    
+    var prdata = PCdata.init(data,cat);
+    pcPlot.deletedots();
+    pcPlot.adddots(prdata);
+
+    //if (!!element[0]){
+        PCBC.draw(prdata,"cancer type","groupbarchart","#grouptitle","grouppanel");        PCBC.draw(prdata,"gender","genderbarchart","#gendertitle","genderpanel");
+        PCBC.draw(prdata,"stage","stagebarchart","#stagetitle","stagepanel");
+        PCBC.draw(prdata,"vital","vitalbarchart","#vitaltitle","vitalpanel");
+        //PCBC.draw(prdata,"neg3","#neg3barchart","#neg3title","neg3panel");   
+    //}
+        $('.pcbc').css('background','white');
+    
+        $('.pcbc').on({
+        'click': function(){
+            $('.pcbc').css('background','white');
+            $(this).css('background','#b3ccff');
+        },
+        'mouseenter': function(){$(this).css('border','1px solid #6699ff')},
+        'mouseleave': function(){$(this).css('border','')}
+        })
+        
+
+}
+
 function pcaupdateData(){
     
     var process = $("#pcafolders option:selected").val();
@@ -179,7 +211,7 @@ function pcaupdateData(){
         url: process,  // or just tcga.py
         dataType: "json",    
         success: function (result) {
-            redrawPCA(result);
+            drawPCA(result);
         },
         error: function(e){
             console.log(e);
@@ -192,13 +224,15 @@ function pcaupdatefolder(){
     
     var process = $("#pcafolders option:selected").val();
     
+        console.log(process);
+    
     jQuery.ajax({
         url: process,  // or just tcga.py
         dataType: "json",    
         success: function (result) {
             d3.select("#pcacanvas").remove();
             pcPlot.init();
-            redrawPCA(result);
+            drawPCA(result);
         },
         error: function(e){
             console.log(e);
@@ -220,5 +254,6 @@ function removeCriteria(){
     }
     
 }
+
 
 module.exports = vis;

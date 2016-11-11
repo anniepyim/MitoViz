@@ -135,8 +135,5 @@ function issueWarning(){
         document.getElementById('warning').innerHTML="";
 }
     
+
 });
-
-
-
-
