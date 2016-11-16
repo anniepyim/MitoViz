@@ -7,7 +7,7 @@ targetoutpath = "../data/PCA/"
 
 if (length(args)==0) {
   #stop("At least one argument must be supplied (input file).n", call.=FALSE)
-  filelist = c("test/TCGA-BH-A0B3.json","test/TCGA-BH-A0BM.json","test/TCGA-BH-A0E0.json","test/TCGA-BH-A0HK.json")
+  filelist = c("test/HCT116-21-3-c1.json","test/HCT116-5-4-p.json","test/HCT116-5-4.json","test/HCT116-8-3-c3.json")
 } else if (length(args)>=1) {
   filelist = args[1:length(args)]
 }

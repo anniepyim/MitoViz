@@ -17,7 +17,7 @@ sampleID	Cancer_type	Gender	Race	Pathologic_stage	Pathologic_T	Vital_status	Age_
 16	TCGA-GI-A2C9	BRCA	FEMALE	BLACK OR AFRICAN AMERICAN	Stage II	T3	Alive	58	[NA]	[NA]	[NA]	3-negative	Post (prior bilateral ovariectomy OR >12 mo since LMP with no prior hysterectomy)	[NA]
 17	TCGA-91-6849	LUAD	FEMALE	BLACK OR AFRICAN AMERICAN	Stage III	T2	Alive	75	[NA]	[NA]	[NA]	[NA]	[NA]	3
 18	TCGA-38-4632	LUAD	MALE	BLACK OR AFRICAN AMERICAN	Stage IV	T2	Dead	42	[NA]	[NA]	[NA]	[NA]	[NA]	4
-19	TCGA-38-4626	LUAD	FEMALE	WHITE	[[NA]]	T2b	Alive	57	[NA]	[NA]	[NA]	[NA]	[NA]	2
+19	TCGA-38-4626	LUAD	FEMALE	WHITE	[NA]	T2b	Alive	57	[NA]	[NA]	[NA]	[NA]	[NA]	2
 20	TCGA-BC-A10Q	LIHC	FEMALE	WHITE	[NA]	T2	Dead	72	YES	1	No History of Primary Risk Factors	[NA]	[NA]	[NA]
 21	TCGA-BC-A10R	LIHC	FEMALE	WHITE	[NA]	T3	Dead	66	YES	1	No History of Primary Risk Factors	[NA]	[NA]	[NA]
 22	TCGA-BC-A10T	LIHC	MALE	WHITE	[NA]	T4	Dead	76	NO	[NA]	No History of Primary Risk Factors	[NA]	[NA]	[NA]
