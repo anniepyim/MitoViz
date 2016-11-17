@@ -17,10 +17,6 @@ this["Templates"]["pca"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main"
 },"useData":true});
 
 this["Templates"]["pcabarchart"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<div class=\"col-md-12\"><hr></div>\n<div class=\"col-md-12 midtitle\" style=\"margin-top:0px;margin-bottom:10px;\">\n    Color samples by\n</div>\n<div class=\"col-md-12\">\n        <div id=\"pcbcsvg\" class=\"panel-group\">\n    </div>\n</div>\n<div class = \"col-md-12\" id=\"criteriabutton\"></div>\n<div class = \"col-md-12\" style=\"display:none\"><input type=\"text\" id=\"criteriagroup\"><input type=\"text\" id=\"criteriagender\"><input type=\"text\" id=\"criteriastage\"><input type=\"text\" id=\"criteriavital\"><input type=\"text\" id=\"criterianeg3\">\n</div>\n<div class = \"col-md-12\" style=\"margin-top:20px;text-align: center\"><button id = \"filterbutton\" class=\"btn btn-success\">Update</button>\n</div>\n";
-},"useData":true});
-
-this["Templates"]["pcabarchart2"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
   return "<div class=\"panel panel-default pcbc\" id=\""
@@ -36,15 +32,32 @@ this["Templates"]["pcabarchart2"] = Handlebars.template({"compiler":[7,">= 4.0.0
     + "\" style=\"padding :0px 0px; font-size:20px\"></div>\n    </div>\n</div>\n\n ";
 },"useData":true});
 
+this["Templates"]["pcabcframe"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    return "<div class=\"col-md-12\"><hr></div>\n<div class=\"col-md-12 midtitle\" style=\"margin-top:0px;margin-bottom:10px;\">\n    Color samples by\n</div>\n<div class=\"col-md-12\">\n        <div id=\"pcbcsvg\" class=\"panel-group\">\n    </div>\n</div>\n<div class = \"col-md-12\" id=\"criteriabutton\"></div>\n<div class = \"col-md-12\" id=\"pcbctext\" style=\"display:none\">\n</div>\n\n";
+},"useData":true});
+
+this["Templates"]["pcatext"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var helper;
+
+  return "<input type=\"text\" id=\""
+    + container.escapeExpression(((helper = (helper = helpers.criteria || (depth0 != null ? depth0.criteria : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"criteria","hash":{},"data":data}) : helper)))
+    + "\">\n\n\n";
+},"useData":true});
+
 this["Templates"]["pcatooltip"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
+    var stack1, helper, options, buffer = "";
+
+  stack1 = ((helper = (helper = helpers.attributes || (depth0 != null ? depth0.attributes : depth0)) != null ? helper : helpers.helperMissing),(options={"name":"attributes","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data}),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},options) : helper));
+  if (!helpers.attributes) { stack1 = helpers.blockHelperMissing.call(depth0,stack1,options)}
+  if (stack1 != null) { buffer += stack1; }
+  return buffer;
+},"2":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
-  return "<div class=\"col-md-6 miniTitle\">Group</div>\n\n<div class=\"col-md-6 info\">"
-    + alias4(((helper = (helper = helpers.group || (depth0 != null ? depth0.group : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"group","hash":{},"data":data}) : helper)))
-    + "</div>\n\n<div class=\"col-md-6 miniTitle\">Stage</div>\n\n<div class=\"col-md-6 info\">"
-    + alias4(((helper = (helper = helpers.stage || (depth0 != null ? depth0.stage : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"stage","hash":{},"data":data}) : helper)))
-    + "</div>\n\n<div class=\"col-md-6 miniTitle\">Gender</div>\n\n<div class=\"col-md-6 info\">"
-    + alias4(((helper = (helper = helpers.gender || (depth0 != null ? depth0.gender : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"gender","hash":{},"data":data}) : helper)))
+  return "<div class=\"col-md-6 miniTitle\">"
+    + alias4(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"name","hash":{},"data":data}) : helper)))
+    + "</div>\n\n<div class=\"col-md-6 info\">"
+    + alias4(((helper = (helper = helpers.value || (depth0 != null ? depth0.value : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"value","hash":{},"data":data}) : helper)))
     + "</div>\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
@@ -52,7 +65,7 @@ this["Templates"]["pcatooltip"] = Handlebars.template({"1":function(container,de
   return "<div class=\"col-md-12 title\">"
     + alias4(((helper = (helper = helpers.sampleID || (depth0 != null ? depth0.sampleID : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"sampleID","hash":{},"data":data}) : helper)))
     + "</div>\n\n"
-    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.tcga : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.attrexist : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "\n<div class=\"col-md-12 miniTitle\">PC</div>\n\n\n<div class=\"col-md-12\" style=\"text-align:left;font-size:12px\">\n    PC1: "
     + alias4(((helper = (helper = helpers.PC1 || (depth0 != null ? depth0.PC1 : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"PC1","hash":{},"data":data}) : helper)))
     + "<br>\n    PC2: "

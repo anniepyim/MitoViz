@@ -1,17 +1,11 @@
 <div class="col-md-12 title">{{sampleID}}</div>
 
-{{#if tcga}}
-<div class="col-md-6 miniTitle">Group</div>
+{{#if attrexist}}
+{{#attributes}}
+<div class="col-md-6 miniTitle">{{name}}</div>
 
-<div class="col-md-6 info">{{group}}</div>
-
-<div class="col-md-6 miniTitle">Stage</div>
-
-<div class="col-md-6 info">{{stage}}</div>
-
-<div class="col-md-6 miniTitle">Gender</div>
-
-<div class="col-md-6 info">{{gender}}</div>
+<div class="col-md-6 info">{{value}}</div>
+{{/attributes}}
 {{/if}}
 
 <div class="col-md-12 miniTitle">PC</div>

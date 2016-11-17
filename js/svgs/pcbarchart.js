@@ -1,13 +1,8 @@
 var d3 = require('d3');
 //var pcPlot = require('./pcPlot.js');
 var PCdata = require('./pcdata.js');
-var pcbcsvgTemplate = require('../views/templates').pcabarchart2;
-
-var colorgroup = d3.scale.ordinal().range(["#ff004d","#ffff66","#a4ff52","#0067c6","#7d71e5"]),
-    colorstage = d3.scale.ordinal().range(["#a4ff52","#ffff66","#da5802","#ff004d","#a7a5a5"]),
-    colorgender = d3.scale.ordinal().range(["#ff0074","#52a4ff"]),
-    colorvital = d3.scale.ordinal().range(["#33ff88","#a10000","#a7a5a5"]),
-    colorneg3 = d3.scale.ordinal().range(["#e6114c","#03a9f4","#a7a5a5"]);
+var pcbcsvgTemplate = require('../views/templates').pcabarchart;
+var pcbctext = require('../views/templates').pcatext;
 
 var PCBC = function (obj) {
     if (obj instanceof PCBC) return obj;
@@ -15,11 +10,12 @@ var PCBC = function (obj) {
     this.PCBCwrapped = obj;
 };
 
-PCBC.draw = function (indata,cat,svgname,titlename,panelname) {
+PCBC.draw = function (indata,pccolor,attr,cat,svgname,panelname) {
         
+        //RENDER barchart panels for svgs
         var element = document.getElementById(panelname);
         if(!element){
-            var Obj = new Object();
+            var Obj = {};
             Obj.panelname = panelname;
             Obj.svgname = svgname;
             Obj.name = cat;
@@ -27,33 +23,23 @@ PCBC.draw = function (indata,cat,svgname,titlename,panelname) {
             
             var newcontent = pcbcsvgTemplate(Obj);
             $('#pcbcsvg').append(newcontent);
+            
+            Obj = {};
+            Obj.criteria = cat + 'criteria';
+            newcontent = pcbctext(Obj);
+            $('#pcbctext').append(newcontent);
         }
     
-        var criteria = (cat == "cancer type") ? 'criteriagroup' : (cat == "gender") ? 'criteriagender' : (cat == "stage") ? 'criteriastage' : (cat == "vital") ? 'criteriavital' : 'criterianeg3';
-    
-        var color = (cat == "cancer type") ? colorgroup : (cat == "gender") ? colorgender : (cat == "stage") ? colorstage : (cat == "vital") ? colorvital : colorneg3;
+        var criteria = cat + 'criteria';
         
-        var prdata = indata.map(function(d){
-                return{
-                    sampleID: d.sampleID,
-                    pc1: +d.pc1,
-                    pc2: +d.pc2,
-                    pc3: +d.pc3,
-                    group: d.group,
-                    gender: d.gender,
-                    stage: d.stage,
-                    vital: d.vital,
-                    neg3: d.neg3,
-                    color: (cat == "cancer type") ? d.groupcolor : (cat == "gender") ? d.gendercolor : (cat == "stage") ? d.stagecolor : (cat == "vital") ? d.vitalcolor : d.neg3color,
-                    category: (cat == "cancer type") ? d.group : (cat == "gender") ? d.gender : (cat == "stage") ? d.stage : (cat == "vital") ? d.vital : d.neg3
-                };
-            });
+        //PROCESS data for barchart
+        var prdata = indata.map(function(d){return{cat: d[cat]};});
         
-        prdata.sort(function(a,b) { return d3.ascending(a.category, b.category);});
+        prdata.sort(function(a,b) { return d3.ascending(a.cat, b.cat);});
         
         var data = d3.nest()
                 .key(function (d) {
-                    return d.category;
+                    return d.cat;
                 })
                 .entries(prdata);
 
@@ -61,15 +47,17 @@ PCBC.draw = function (indata,cat,svgname,titlename,panelname) {
                 d.count = d.values.length;
             });
         
+        //RENDER barchart svg
+        var d3svgname = '#'+svgname;
         
         var BARmargin = {top: 15, right: 20, bottom: 15, left: 10},
-        svgWidth = 300,
-        barH = 40,
-        BARwidth = svgWidth - BARmargin.left - BARmargin.right,
-        BARheight = data.length * barH ,
-        svgHeight = BARheight + BARmargin.top + BARmargin.bottom;
-    
-        d3svgname = '#'+svgname;
+            svgWidth = 300,
+            barH = 40,
+            BARwidth = svgWidth - BARmargin.left - BARmargin.right,
+            BARheight = data.length * barH,
+            svgHeight = BARheight + BARmargin.top + BARmargin.bottom,
+            currentOpacity = 0;
+        
 
         var BARsvg = d3.select(d3svgname)//= resp
             .append("svg")
@@ -79,12 +67,11 @@ PCBC.draw = function (indata,cat,svgname,titlename,panelname) {
             .append("g")
             .attr("transform", "translate(" + BARmargin.left + "," + BARmargin.top + ")");    
         
-        var parent = document.getElementById(svgname).parentNode.parentNode.id;
-        parent = '#'+parent;
-    
-        d3.select(parent)
+        var d3panelname = '#'+panelname;
+  
+        d3.select(d3panelname)
             .on({"click": function(){
-                PCdata.update(indata,cat);
+                PCdata.update(indata,attr,cat);
             }});
         
         var xmax = Math.abs(d3.max(data, function (d) {
@@ -100,25 +87,41 @@ PCBC.draw = function (indata,cat,svgname,titlename,panelname) {
         .enter().append("g")
           .attr("transform", function(d, i) { return "translate(0," + i * barH + ")"; });
         
+    
         bar.append("rect")
           .attr("width", function(d) { return x(d.count); })
           .attr("height", barH - 1)
           .style("fill", function (d) {
-                return color(d.key);
+                return pccolor(d.key);
             })
           .on("click", function(d){
-                addCriteria(criteria,d.key);
+                var currentOpacity = d3.select(this.parentNode).select('line').style('opacity');
+                currentOpacity = (currentOpacity == 0) ? 1 : 0;
+                d3.select(this.parentNode).select('line').style('opacity',currentOpacity);
+                addOrRemoveCriteria(criteria,d.key,currentOpacity);
             });
 
         bar.append("text")
-          .attr("x", 0)
+          .attr("x", 7)
           .attr("y", barH / 2)
           .attr("dy", ".35em")
           .text(function(d) { return d.key+" ("+d.count+")"; })
           .on("click", function(d){
-                addCriteria(criteria,d.key);
+                var currentOpacity = d3.select(this.parentNode).select('line').style('opacity');
+                currentOpacity = (currentOpacity == 0) ? 1 : 0;
+                d3.select(this.parentNode).select('line').style('opacity',currentOpacity);
+                addOrRemoveCriteria(criteria,d.key,currentOpacity);
             });
     
+        bar.append("line")
+          .attr("x1", 0)
+          .attr("y1", 0)
+          .attr("x2", 0)
+          .attr("y2", barH - 1)
+          .attr("stroke-width", 5)
+          .attr("stroke", "#595959")
+          .attr("opacity",0);
+
     
     var contains = function(needle) {
         // Per spec, the way to identify NaN is that it is not equal to itself
@@ -147,16 +150,16 @@ PCBC.draw = function (indata,cat,svgname,titlename,panelname) {
         return indexOf.call(this, needle) > -1;
     };
     
-    function addCriteria(criteria,key){
+    function addOrRemoveCriteria(criteria,key,select){
         
         var text = document.getElementById(criteria);
         crit = text.value.split(",");
         crit.pop();
         
-        if (!contains.call(crit,key)){
+        if (!contains.call(crit,key) && select == 1){
             text.value = (text.value + key+",");
 
-            var button = document.createElement("button");
+            /*var button = document.createElement("button");
             button.className = "btn btn-xs btn-default criteriabut";
             var textnode = document.createTextNode(key);
             button.appendChild(textnode);
@@ -169,8 +172,25 @@ PCBC.draw = function (indata,cat,svgname,titlename,panelname) {
                 if (index > -1) {array.splice(index, 1);}
                 document.getElementById(criteria).value = array.toString();
                 this.parentNode.removeChild(this);
+                
+                var element = document.getElementsByClassName('pcbc');
+                var thiscat;
+                for (e in element) if (element.hasOwnProperty(e)){
+                    if (element[e].style.background=="rgb(179, 204, 255)") {
+                        thiscat = element[e].id.slice(0, -5);
+                    }
+                }
+                
+                PCdata.update(indata,attr,thiscat);
             };
-            document.getElementById("criteriabutton").appendChild(button);   
+            document.getElementById("criteriabutton").appendChild(button); */  
+        }else if(select == 0){
+                    
+            var array = document.getElementById(criteria).value.split(",");
+            var index = array.indexOf(key);
+            if (index > -1) {array.splice(index, 1);}
+            document.getElementById(criteria).value = array.toString();
+ 
         }
     }
 

@@ -92,7 +92,7 @@ function updateFile() {
     
     $.each($("#files option:selected"), function(){
         var value = $(this).val();
-        if ((!$('#selected-sample option[value="'+value+'"]').length>0)){
+        if (!($('#selected-sample option[value="'+value+'"]').length>0)){
             $('#selected-sample').append($('<option>', { 
                 value: $(this).val(),
                 text : $(this).text() 

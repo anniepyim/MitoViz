@@ -2,18 +2,13 @@ var axios = require('axios');
 var _ = require('underscore');
 var d3 = require('d3');
 
-function parser(){}
+function parserSP(){}
 
    
    
 function parse(urls, errorcb, datacb,colorrange){
     
-    var funcs = _.map(urls, axios.get);
-    
-    if (urls.length === 0) errorcb(new Error('Add samples!'));
-    if (urls.length > 6) errorcb(new Error('No more than 6 samples!'));
-    if (colorrange === "") errorcb(new Error('Pick color!'));
-    
+    var funcs = _.map(urls, axios.get);    
     
     axios
     .all(funcs)
@@ -87,8 +82,8 @@ function parse(urls, errorcb, datacb,colorrange){
     
 }
 
-parser.parse = parse;
+parserSP.parse = parse;
 
-module.exports = parser;
+module.exports = parserSP;
 
 

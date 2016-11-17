@@ -148,8 +148,7 @@ function hexToRgb(hex) { //TODO rewrite with vector output
     } : null;
 }
 
-function dotsInit(data){
-      
+function dotsInit(data,attr){
         
     dots = new THREE.Object3D();
     
@@ -165,15 +164,25 @@ function dotsInit(data){
         particle.position.z = data[i].PC2;
         particle.position.y = data[i].PC3;
         particle.sampleID = data[i].sampleID;
-        particle.group = data[i].group;
-        particle.gender = data[i].gender;
-        particle.stage = data[i].stage;
-        particle.tcga = data[i].tcga;
         particle.url = data[i].url;
         particle.PC1 = format(data[i].PC1);
         particle.PC2 = format(data[i].PC2);
         particle.PC3 = format(data[i].PC3);
-        dots.add( particle );
+        
+        particle.attrexist = data[i].attrexist;
+        
+        if (particle.attrexist){
+            particle.attributes = [];
+            for (j=0; j<attr.length; j++){
+                particle[attr[j]] = data[i][attr[j]];
+                var attribute = {};
+                attribute.name = attr[j];
+                attribute.value = data[i][attr[j]];
+                particle.attributes.push(attribute);
+            }
+        }
+    
+        dots.add(particle);
     }
     pcObj.add(dots);
     
@@ -290,8 +299,7 @@ function render() {
             if (pageEvent.x !== 0 && pageEvent.y !== 0){
                 $('.tip').empty();
                 $('.tip').append(tipTemplate(INTERSECTED));
-                console.log(INTERSECTED)
-;            }
+            }
         }   
     } else {
       if ( INTERSECTED ) {
@@ -319,8 +327,8 @@ pcPlot.deletedots = function(){
     //render();
 };
 
-pcPlot.adddots = function(d){
-    dotsInit(d);
+pcPlot.adddots = function(d,attr){
+    dotsInit(d,attr);
     render();
 };
 

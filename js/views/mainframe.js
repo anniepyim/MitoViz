@@ -6,14 +6,16 @@ module.exports = Backbone.View.extend({
     
     pca: templates.pca,
     
-    pcabarchart: templates.pcabarchart,
+    pcabcframe: templates.pcabcframe,
     
     scplot: templates.scplot,
     
-    pcabarchart2: templates.pcabarchart2,
+    pcabarchart: templates.pcabarchart,
+    
+    pcatext: templates.pcatext,
     
     render: function(id){
-        var obj = new Object();
+        var obj = {};
         obj.id = id;
         this.$el.append(this.template(obj));
         return this;
@@ -25,17 +27,12 @@ module.exports = Backbone.View.extend({
     },
     
     renderpcabc: function(){
-        this.$el.append(this.pcabarchart());
+        this.$el.append(this.pcabcframe());
         return this;
     },
     
     renderscplot: function(id){
         this.$el.append(this.scplot());
-        return this;
-    },
-    
-    renderpcabc2: function(id){
-        this.$el.append(this.pcabarchart2());
         return this;
     }
 });
