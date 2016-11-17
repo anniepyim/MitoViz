@@ -12,6 +12,7 @@ form = cgi.FieldStorage()
 #for nfile in form.keys():
 #   json_files.append(form.getvalue(nfile))
 json_files = form.getlist('file_list')
+filetype = form.getlist('filetype')
 
 # fname safety check
 
@@ -23,8 +24,10 @@ for index, fn in enumerate(json_files):
 
 os.system("rm ../data/PCA/*")
     
-cmd = "/usr/local/bin/Rscript aneuploidy.R "  + ' '.join(json_files)
+cmd = "/usr/local/bin/Rscript PCA.R "  + ' '.join(filetype) + ' ' + ' '.join(json_files)
 os.system(cmd)
+
+
 
 with open("../data/PCA/All Processes-pca.json") as result:
     #result = {'success':'true','message':'The Command Completed Successfully'};

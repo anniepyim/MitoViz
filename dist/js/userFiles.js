@@ -19,11 +19,11 @@ $(document).ready(function(){
         dataType: "json",
         data: { folderurl : targeturl },
       success: function(data){
-          var newdata = new Object();
+          var newdata = {};
           newdata.files = [];
           newdata.containfiles = true;
           $.each(data, function(i,filename) { 
-            var file = new Object();
+            var file = {};
             file.url = targeturl+filename;
             file.name = filename.split(".")[0];
             file.mitomodel = targeturl+file.name;
@@ -33,6 +33,8 @@ $(document).ready(function(){
           
           // data is passed to above template
           var output = template(newdata);
+          
+          console.log(newdata);
           
           // HTML element with id "animalList" is set to the output above
           document.getElementById("userfiles").innerHTML = output;
@@ -62,7 +64,7 @@ $(document).ready(function(){
           
       },
         error:function(e){
-            var newdata = new Object();
+            var newdata = {};
             newdata.containfiles = false;
             var output = template(newdata);
             
