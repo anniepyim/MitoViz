@@ -66,18 +66,11 @@ PCdata.init = function (indata,attr,pccolor,cat) {
         });
     }
     
-    
-    
     //Add Criteria if exist
     var element = document.getElementsByClassName('pcbc');
     var newdata;
-    if (!!element[0]) newdata = addCriteria(prdata,attr);
+    if (!!element[0]) newdata = addCriteria(prdata,attr)
     else newdata = prdata;
-    
-    //INTITIATE the scene and grid for PCA and DRAW PCA Dots with processed data
-    pcPlot.init();
-    pcPlot.deletedots();
-    pcPlot.adddots(newdata,attr);
     
     //RETURN the processed data for other purposes, e.g. barchart
     return newdata;
@@ -85,13 +78,19 @@ PCdata.init = function (indata,attr,pccolor,cat) {
 
 PCdata.update = function (prdata,attr,cat){
     
-    var colorname = cat + 'color';
+    //Add Criteria if exist
+    var element = document.getElementsByClassName('pcbc');
+    var newdata;
+    if (!!element[0]) newdata = addCriteria(prdata,attr)
+    else newdata = prdata;
     
-    prdata.forEach(function (d) {
-        d.color = d[colorname];
-    });
+    if(attr !== undefined){
+        var colorname = cat + 'color';
     
-    var newdata = addCriteria(prdata,attr);
+        newdata.forEach(function (d) {
+            d.color = d[colorname];
+        });
+    }
     pcPlot.deletedots();
     pcPlot.adddots(newdata,attr);
 };

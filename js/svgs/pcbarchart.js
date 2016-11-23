@@ -67,13 +67,6 @@ PCBC.draw = function (indata,pccolor,attr,cat,svgname,panelname) {
             .append("g")
             .attr("transform", "translate(" + BARmargin.left + "," + BARmargin.top + ")");    
         
-        var d3panelname = '#'+panelname;
-  
-        d3.select(d3panelname)
-            .on({"click": function(){
-                PCdata.update(indata,attr,cat);
-            }});
-        
         var xmax = Math.abs(d3.max(data, function (d) {
             return d.count;
         }));

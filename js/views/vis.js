@@ -7,19 +7,20 @@ var SP = require('../svgs/scatterplot.js');
 var BC = require('../svgs/barchart.js');
 var heatmap = require('../svgs/heatmap.js');
 var PCdata = require('../svgs/pcdata.js');
+var pcPlot = require('../svgs/pcPlot.js');
 var PCBC = require('../svgs/pcbarchart.js');
 var parserSP = require('./parserSP.js');
 var parserPCA = require('./parserPCA.js');
 var mainframe = require('./mainframe.js');
 mainframe = new mainframe();
 
-
+//SC and Heatmap
 //color scheme for SC plot and heatmap
 var sccolor = "#d73027,#f46d43,#fdae61,#fee08b,#ffffbf,#d9ef8b,#a6d96a,#66bd63,#1a9850";
 
+//PCA - TCGA
 //color samples by these attributes, max 5
 var attrTCGA = ['group','stage','gender','vital'];
-var attrANEU = ['cellline','type'];
 
 //color scheme for each attributes on PC plot and associated barcharts
 var pccolorTCGA = {};
@@ -28,6 +29,10 @@ pccolorTCGA[attrTCGA[1]] = d3.scale.ordinal().range(["#a4ff52","#ffff66","#ff751
 pccolorTCGA[attrTCGA[2]] = d3.scale.ordinal().range(["#ff0074","#52a4ff"]);
 pccolorTCGA[attrTCGA[3]]= d3.scale.ordinal().range(["#33ff88","#a10000","#a7a5a5"]);
 pccolorTCGA[attrTCGA[4]]= d3.scale.ordinal().range(["#e6114c","#03a9f4","#a7a5a5"]);
+
+//PCA - Aneuploidy
+//color samples by these attributes, max 5
+var attrANEU = ['cellline','type'];
 
 //color scheme for each attributes on PC plot and associated barcharts
 var pccolorANEU = {};
@@ -74,7 +79,7 @@ function drawSP(data,sccolor) {
 function pcacompareData(){
     
     var sametype = true,
-        init = true,
+        init = "all",
         count=1,
         type;
 
@@ -97,6 +102,12 @@ function pcacompareData(){
     } 
 
     var parameter = $("#selected-sample").serialize() + '&filetype=' + type;
+    
+    //Remove everything on svgs-all div and render the div for PCA plot and the side bar, ie the one for folders
+    //This has to be down before the parser since the parser will get info for files and update the folders
+    var el = document.getElementById( 'svgs-all' );
+    while (el.hasChildNodes()) {el.removeChild(el.firstChild);}
+    mainframe.setElement('#svgs-all').renderpca();
 
     //Pass to parser
     parserPCA.parse(drawPCA,onError,init,type,parameter);
@@ -107,9 +118,12 @@ function pcacompareData(){
 function drawPCA(data,init,type){
     
     var attr,
-        pccolor;
-    
-    //Define parameters for attr and colors
+        pccolor,
+        thiscat,
+        prdata;
+        
+    //I. DEFINE parameters for attr, colors, and which particular attr, ie cat is selected
+    //Define attr and pccolor
     if (type == "TCGA"){
         attr = attrTCGA;
         pccolor = pccolorTCGA;
@@ -120,68 +134,36 @@ function drawPCA(data,init,type){
     }
     else {type = 'other';}
     
-    //Initiate PCA by rendering the PCA and Barcharts divs, and PCA folders
-    if (init === true){
-        
-        //Remove everything on svgs-all div and render the div for PCA plot and the side bar, ie the one for folders
-        var el = document.getElementById( 'svgs-all' );
-        while (el.hasChildNodes()) {el.removeChild(el.firstChild);}
-        mainframe.setElement('#svgs-all').renderpca();
-        
-        //Retrieve files result from the python+R script runs and 
-        var targeturl = './data/PCA/';
-        var folderurl = '.'+targeturl;
-        var htmltext = "",
-        value = "",
-        text = "";
-
-        jQuery.ajax({
-            type: "POST",
-            url: "./php/getdirectory.php",
-            dataType: "json",
-            data: { folderurl : folderurl },
-          success: function(data){
-              $('#pcafolders').empty();
-              $.each(data, function(i,filename) {
-                value = targeturl+filename;
-                text = filename.split("-pca")[0];
-                htmltext = htmltext+'<option value=\"'+value+'\">'+text+'</option>';
-
-            });
-              
-            $("#pcafolders").html(htmltext);
-            $('#pcafolders').selectpicker('refresh');
-            $('#pcafolders').find('[value="./data/PCA/All Processes-pca.json"]').prop('selected',true);
-            $('#pcafolders').selectpicker('refresh');
-          },
-            error: function(e){
-                console.log(e);
-            }
-        });
-        
-        //Update the PCA plot by calling the functions upon clicking the buttons or changing folders
-        $('#pcafolders').on('change',function(){parserPCA.parse(drawPCA,onError,false,type);});
-    }
-    
-    //Check which panel is selected if exist
+    //Define this cat
     var element = document.getElementsByClassName('pcbc');
-    var thiscat;
     if (attr !== undefined) {thiscat = attr[0];}
     for (var e in element) if (element.hasOwnProperty(e)){
         if (element[e].style.background=="rgb(179, 204, 255)") {
             thiscat = element[e].id.slice(0, -5);
         }
+    }    
+    
+    //II. PROCESS data for PCA and barcharts
+    prdata = PCdata.init(data,attr,pccolor,thiscat);
+    
+    //IIIa. INITIATE PCA upon new analysis or changing folders
+    if (init == "all" || init == "folder") {
+        d3.select("#pcacanvas").remove();
+        pcPlot.init();
     }
     
-    //PROCESS data and DRAW PCA dots
-    var prdata = PCdata.init(data,attr,pccolor,thiscat);
+    //IIIb. DRAW PCA dots
+    pcPlot.deletedots();
+    pcPlot.adddots(prdata,attr);
     
-    //Use processed data to draw BARCHART
-    if (init === true){
+    //IV. DRAW BARCHART with processed data if its a new analysis
+    if (init == "all"){
         
         //Render the div for barchart and the SVG
         mainframe.setElement('#pcbarchart').renderpcabc();
-
+        
+        var clicking = function(){parserPCA.parse(drawPCA,onError,"update",type)};
+        
         for (i=0; i<attr.length; i++){
             var cat = attr[i],
                 color = pccolor[cat],
@@ -189,6 +171,11 @@ function drawPCA(data,init,type){
                 panelname = cat + 'panel';
 
             PCBC.draw(prdata,color,attr,cat,barchartname,panelname);
+            
+            var d3panelname = '#'+panelname;
+  
+            d3.select(d3panelname)
+                .on({"click": clicking});
         }
         
         //JQuery that controls the behaviour of Barchart
@@ -229,22 +216,6 @@ d3.select('#compareButton').on('click', function(){
     else pcacompareData();
 });
 
-/*function pcaupdateData(attr,pccolor){
-    
-    var process = $("#pcafolders option:selected").val();
-    
-    jQuery.ajax({
-        url: process,  // or just tcga.py
-        dataType: "json",    
-        success: function (result) {
-            drawPCA(result,attr,pccolor);
-        },
-        error: function(e){
-            console.log(e);
-        }
-    });
-
-}*/
 
 /*function removeCriteria(attr){
     
