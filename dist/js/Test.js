@@ -2,23 +2,20 @@
 //Entry point for the app
 //Require everything needed, all will be public
 
-//jQuery = $ = require('jquery');
-jjQuery = require('jquery');
+jQuery = require('jquery');
 Backbone = require('backbone');
-//Backbone.$ = jQuery;
-Backbone.$ = jjQuery;
+Backbone.$ = jQuery;
 
 Handlebars = require('handlebars');
 _ = require('underscore');
 d3 = require('d3');
-require('d3-tip')(d3);
 
-require('underscore'); // bootstrap
+//require('underscore'); // bootstrap
 
 //Require the App so that it could called
 App = require('./js/main');
 
-},{"./js/main":2,"backbone":33,"d3":39,"d3-tip":38,"handlebars":69,"jquery":81,"underscore":86}],2:[function(require,module,exports){
+},{"./js/main":2,"backbone":33,"d3":38,"handlebars":68,"jquery":80,"underscore":85}],2:[function(require,module,exports){
 var App = {};
 
 //Get data i.e. files to be analyzed, session id, that have to be provided when the script is called on the website
@@ -236,7 +233,7 @@ saveTextAsFile = function(){
 	}
 
 
-	saveAsSvg = function()
+	/*saveAsSvg = function()
  	{
  	
 		var svg = d3.selectAll('#heatmapsvg');
@@ -251,7 +248,7 @@ saveTextAsFile = function(){
 		document.body.appendChild(l);
         	l.click();
       
-    /*html2canvas($('#barchartsvg'), 
+    html2canvas($('#barchartsvg'), 
     {
       onrendered: function (canvas) {
         var a = document.createElement('a');
@@ -260,14 +257,14 @@ saveTextAsFile = function(){
         a.download = 'somefilename.jpg';
         a.click();
       }
-    });*/
+    });
 	
-	};
+	};*/
 
 
 
 module.exports = BC;
-},{"./heatmap.js":4,"./scatterplot.js":8,"colorbrewer":37,"d3":39}],4:[function(require,module,exports){
+},{"./heatmap.js":4,"./scatterplot.js":8,"colorbrewer":37,"d3":38}],4:[function(require,module,exports){
 var d3 = require('d3');
 var colorbrewer = require('colorbrewer');
 
@@ -609,7 +606,7 @@ if (typeof define === "function" && define.amd) {
 } else {
     this.heatmap = heatmap;
 }
-},{"./scatterplot.js":8,"colorbrewer":37,"d3":39}],5:[function(require,module,exports){
+},{"./scatterplot.js":8,"colorbrewer":37,"d3":38}],5:[function(require,module,exports){
 var d3 = require('d3');
 var THREE = require ('three');
 var OrbitControls = require('three-orbit-controls')(THREE);
@@ -951,7 +948,7 @@ if (typeof define === "function" && define.amd) {
 } else {
     this.pcPlot = pcPlot;
 }
-},{"../views/templates":13,"d3":39,"three":85,"three-orbit-controls":84}],6:[function(require,module,exports){
+},{"../views/templates":13,"d3":38,"three":84,"three-orbit-controls":83}],6:[function(require,module,exports){
 var d3 = require('d3');
 //var pcPlot = require('./pcPlot.js');
 var PCdata = require('./pcdata.js');
@@ -1151,7 +1148,7 @@ if (typeof define === "function" && define.amd) {
 } else {
     this.PCBC = PCBC;
 }
-},{"../views/templates":13,"./pcdata.js":7,"d3":39}],7:[function(require,module,exports){
+},{"../views/templates":13,"./pcdata.js":7,"d3":38}],7:[function(require,module,exports){
 var d3 = require('d3');
 var pcPlot = require('./pcPlot.js');
 
@@ -1312,7 +1309,7 @@ if (typeof define === "function" && define.amd) {
 } else {
     this.PCdata = PCdata;
 }
-},{"./pcPlot.js":5,"d3":39}],8:[function(require,module,exports){
+},{"./pcPlot.js":5,"d3":38}],8:[function(require,module,exports){
 var d3 = require('d3');
 var colorbrewer = require('colorbrewer');
 
@@ -1606,7 +1603,7 @@ if (typeof define === "function" && define.amd) {
 } else {
     this.SP = SP;
 }
-},{"../views/templates":13,"colorbrewer":37,"d3":39}],9:[function(require,module,exports){
+},{"../views/templates":13,"colorbrewer":37,"d3":38}],9:[function(require,module,exports){
 var templates = require('./templates');
 
 module.exports = Backbone.View.extend({
@@ -1966,7 +1963,7 @@ module.exports = parserSP;
 
 
 
-},{"axios":16,"d3":39,"underscore":86}],13:[function(require,module,exports){
+},{"axios":16,"d3":38,"underscore":85}],13:[function(require,module,exports){
 (function (global){
 var glob = ('undefined' === typeof window) ? global : window,
 
@@ -2073,7 +2070,7 @@ this["Templates"]["tooltip"] = Handlebars.template({"1":function(container,depth
 
 if (typeof exports === 'object' && exports) {module.exports = this["Templates"];}
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"handlebars":69}],14:[function(require,module,exports){
+},{"handlebars":68}],14:[function(require,module,exports){
 //Libs
 var d3 = require('d3');
 
@@ -2213,14 +2210,17 @@ function drawPCA(data,init,type){
     //Define this cat
     var element = document.getElementsByClassName('pcbc');
     if (attr !== undefined) {thiscat = attr[0];}
-    for (var e in element) if (element.hasOwnProperty(e)){
-        if (element[e].style.background=="rgb(179, 204, 255)") {
-            thiscat = element[e].id.slice(0, -5);
+    for (i=0;i<element.length;i++){
+        if (element[i].style.background.substring(0,18)=="rgb(179, 204, 255)") {
+            thiscat = element[i].id.slice(0, -5);
         }
     }    
     
     //II. PROCESS data for PCA and barcharts
     prdata = PCdata.init(data,attr,pccolor,thiscat);
+    
+    console.log(pccolor);
+    console.log(attr);
     
     //IIIa. INITIATE PCA upon new analysis or changing folders
     if (init == "all" || init == "folder") {
@@ -2310,7 +2310,7 @@ d3.select('#compareButton').on('click', function(){
 
 
 module.exports = vis;
-},{"../svgs/barchart.js":3,"../svgs/heatmap.js":4,"../svgs/pcPlot.js":5,"../svgs/pcbarchart.js":6,"../svgs/pcdata.js":7,"../svgs/scatterplot.js":8,"./mainframe.js":9,"./parserPCA.js":11,"./parserSP.js":12,"d3":39}],15:[function(require,module,exports){
+},{"../svgs/barchart.js":3,"../svgs/heatmap.js":4,"../svgs/pcPlot.js":5,"../svgs/pcbarchart.js":6,"../svgs/pcdata.js":7,"../svgs/scatterplot.js":8,"./mainframe.js":9,"./parserPCA.js":11,"./parserSP.js":12,"d3":38}],15:[function(require,module,exports){
 (function (process,__filename){
 /** vim: et:ts=4:sw=4:sts=4
  * @license amdefine 1.0.0 Copyright (c) 2011-2015, The Dojo Foundation All Rights Reserved.
@@ -2615,7 +2615,7 @@ function amdefine(module, requireFn) {
 module.exports = amdefine;
 
 }).call(this,require('_process'),"/node_modules/amdefine/amdefine.js")
-},{"_process":83,"path":82}],16:[function(require,module,exports){
+},{"_process":82,"path":81}],16:[function(require,module,exports){
 module.exports = require('./lib/axios');
 },{"./lib/axios":18}],17:[function(require,module,exports){
 'use strict';
@@ -2963,7 +2963,7 @@ module.exports = function dispatchRequest(config) {
 
 
 }).call(this,require('_process'))
-},{"../adapters/http":17,"../adapters/xhr":17,"_process":83}],21:[function(require,module,exports){
+},{"../adapters/http":17,"../adapters/xhr":17,"_process":82}],21:[function(require,module,exports){
 'use strict';
 
 var utils = require('./utils');
@@ -5563,7 +5563,7 @@ module.exports = {
 });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"jquery":81,"underscore":34}],34:[function(require,module,exports){
+},{"jquery":80,"underscore":34}],34:[function(require,module,exports){
 //     Underscore.js 1.8.3
 //     http://underscorejs.org
 //     (c) 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
@@ -7436,312 +7436,6 @@ if (typeof define === "function" && define.amd) {
 module.exports = require('./colorbrewer.js');
 
 },{"./colorbrewer.js":36}],38:[function(require,module,exports){
-// d3.tip
-// Copyright (c) 2013 Justin Palmer
-//
-// Tooltips for d3.js SVG visualizations
-
-(function (root, factory) {
-  if (typeof define === 'function' && define.amd) {
-    // AMD. Register as an anonymous module with d3 as a dependency.
-    define(['d3'], factory)
-  } else if (typeof module === 'object' && module.exports) {
-    // CommonJS
-    module.exports = function(d3) {
-      d3.tip = factory(d3)
-      return d3.tip
-    }
-  } else {
-    // Browser global.
-    root.d3.tip = factory(root.d3)
-  }
-}(this, function (d3) {
-
-  // Public - contructs a new tooltip
-  //
-  // Returns a tip
-  return function() {
-    var direction = d3_tip_direction,
-        offset    = d3_tip_offset,
-        html      = d3_tip_html,
-        node      = initNode(),
-        svg       = null,
-        point     = null,
-        target    = null
-
-    function tip(vis) {
-      svg = getSVGNode(vis)
-      point = svg.createSVGPoint()
-      document.body.appendChild(node)
-    }
-
-    // Public - show the tooltip on the screen
-    //
-    // Returns a tip
-    tip.show = function() {
-      var args = Array.prototype.slice.call(arguments)
-      if(args[args.length - 1] instanceof SVGElement) target = args.pop()
-
-      var content = html.apply(this, args),
-          poffset = offset.apply(this, args),
-          dir     = direction.apply(this, args),
-          nodel   = d3.select(node),
-          i       = directions.length,
-          coords,
-          scrollTop  = document.documentElement.scrollTop || document.body.scrollTop,
-          scrollLeft = document.documentElement.scrollLeft || document.body.scrollLeft
-
-      nodel.html(content)
-        .style({ opacity: 1, 'pointer-events': 'all' })
-
-      while(i--) nodel.classed(directions[i], false)
-      coords = direction_callbacks.get(dir).apply(this)
-      nodel.classed(dir, true).style({
-        top: (coords.top +  poffset[0]) + scrollTop + 'px',
-        left: (coords.left + poffset[1]) + scrollLeft + 'px'
-      })
-
-      return tip
-    }
-
-    // Public - hide the tooltip
-    //
-    // Returns a tip
-    tip.hide = function() {
-      var nodel = d3.select(node)
-      nodel.style({ opacity: 0, 'pointer-events': 'none' })
-      return tip
-    }
-
-    // Public: Proxy attr calls to the d3 tip container.  Sets or gets attribute value.
-    //
-    // n - name of the attribute
-    // v - value of the attribute
-    //
-    // Returns tip or attribute value
-    tip.attr = function(n, v) {
-      if (arguments.length < 2 && typeof n === 'string') {
-        return d3.select(node).attr(n)
-      } else {
-        var args =  Array.prototype.slice.call(arguments)
-        d3.selection.prototype.attr.apply(d3.select(node), args)
-      }
-
-      return tip
-    }
-
-    // Public: Proxy style calls to the d3 tip container.  Sets or gets a style value.
-    //
-    // n - name of the property
-    // v - value of the property
-    //
-    // Returns tip or style property value
-    tip.style = function(n, v) {
-      if (arguments.length < 2 && typeof n === 'string') {
-        return d3.select(node).style(n)
-      } else {
-        var args =  Array.prototype.slice.call(arguments)
-        d3.selection.prototype.style.apply(d3.select(node), args)
-      }
-
-      return tip
-    }
-
-    // Public: Set or get the direction of the tooltip
-    //
-    // v - One of n(north), s(south), e(east), or w(west), nw(northwest),
-    //     sw(southwest), ne(northeast) or se(southeast)
-    //
-    // Returns tip or direction
-    tip.direction = function(v) {
-      if (!arguments.length) return direction
-      direction = v == null ? v : d3.functor(v)
-
-      return tip
-    }
-
-    // Public: Sets or gets the offset of the tip
-    //
-    // v - Array of [x, y] offset
-    //
-    // Returns offset or
-    tip.offset = function(v) {
-      if (!arguments.length) return offset
-      offset = v == null ? v : d3.functor(v)
-
-      return tip
-    }
-
-    // Public: sets or gets the html value of the tooltip
-    //
-    // v - String value of the tip
-    //
-    // Returns html value or tip
-    tip.html = function(v) {
-      if (!arguments.length) return html
-      html = v == null ? v : d3.functor(v)
-
-      return tip
-    }
-
-    function d3_tip_direction() { return 'n' }
-    function d3_tip_offset() { return [0, 0] }
-    function d3_tip_html() { return ' ' }
-
-    var direction_callbacks = d3.map({
-      n:  direction_n,
-      s:  direction_s,
-      e:  direction_e,
-      w:  direction_w,
-      nw: direction_nw,
-      ne: direction_ne,
-      sw: direction_sw,
-      se: direction_se
-    }),
-
-    directions = direction_callbacks.keys()
-
-    function direction_n() {
-      var bbox = getScreenBBox()
-      return {
-        top:  bbox.n.y - node.offsetHeight,
-        left: bbox.n.x - node.offsetWidth / 2
-      }
-    }
-
-    function direction_s() {
-      var bbox = getScreenBBox()
-      return {
-        top:  bbox.s.y,
-        left: bbox.s.x - node.offsetWidth / 2
-      }
-    }
-
-    function direction_e() {
-      var bbox = getScreenBBox()
-      return {
-        top:  bbox.e.y - node.offsetHeight / 2,
-        left: bbox.e.x
-      }
-    }
-
-    function direction_w() {
-      var bbox = getScreenBBox()
-      return {
-        top:  bbox.w.y - node.offsetHeight / 2,
-        left: bbox.w.x - node.offsetWidth
-      }
-    }
-
-    function direction_nw() {
-      var bbox = getScreenBBox()
-      return {
-        top:  bbox.nw.y - node.offsetHeight,
-        left: bbox.nw.x - node.offsetWidth
-      }
-    }
-
-    function direction_ne() {
-      var bbox = getScreenBBox()
-      return {
-        top:  bbox.ne.y - node.offsetHeight,
-        left: bbox.ne.x
-      }
-    }
-
-    function direction_sw() {
-      var bbox = getScreenBBox()
-      return {
-        top:  bbox.sw.y,
-        left: bbox.sw.x - node.offsetWidth
-      }
-    }
-
-    function direction_se() {
-      var bbox = getScreenBBox()
-      return {
-        top:  bbox.se.y,
-        left: bbox.e.x
-      }
-    }
-
-    function initNode() {
-      var node = d3.select(document.createElement('div'))
-      node.style({
-        position: 'absolute',
-        top: 0,
-        opacity: 0,
-        'pointer-events': 'none',
-        'box-sizing': 'border-box'
-      })
-
-      return node.node()
-    }
-
-    function getSVGNode(el) {
-      el = el.node()
-      if(el.tagName.toLowerCase() === 'svg')
-        return el
-
-      return el.ownerSVGElement
-    }
-
-    // Private - gets the screen coordinates of a shape
-    //
-    // Given a shape on the screen, will return an SVGPoint for the directions
-    // n(north), s(south), e(east), w(west), ne(northeast), se(southeast), nw(northwest),
-    // sw(southwest).
-    //
-    //    +-+-+
-    //    |   |
-    //    +   +
-    //    |   |
-    //    +-+-+
-    //
-    // Returns an Object {n, s, e, w, nw, sw, ne, se}
-    function getScreenBBox() {
-      var targetel   = target || d3.event.target;
-
-      while ('undefined' === typeof targetel.getScreenCTM && 'undefined' === targetel.parentNode) {
-          targetel = targetel.parentNode;
-      }
-
-      var bbox       = {},
-          matrix     = targetel.getScreenCTM(),
-          tbbox      = targetel.getBBox(),
-          width      = tbbox.width,
-          height     = tbbox.height,
-          x          = tbbox.x,
-          y          = tbbox.y
-
-      point.x = x
-      point.y = y
-      bbox.nw = point.matrixTransform(matrix)
-      point.x += width
-      bbox.ne = point.matrixTransform(matrix)
-      point.y += height
-      bbox.se = point.matrixTransform(matrix)
-      point.x -= width
-      bbox.sw = point.matrixTransform(matrix)
-      point.y -= height / 2
-      bbox.w  = point.matrixTransform(matrix)
-      point.x += width
-      bbox.e = point.matrixTransform(matrix)
-      point.x -= width / 2
-      point.y -= height / 2
-      bbox.n = point.matrixTransform(matrix)
-      point.y += height
-      bbox.s = point.matrixTransform(matrix)
-
-      return bbox
-    }
-
-    return tip
-  };
-
-}));
-
-},{}],39:[function(require,module,exports){
 !function() {
   var d3 = {
     version: "3.5.16"
@@ -17296,7 +16990,7 @@ module.exports = require('./colorbrewer.js');
   });
   if (typeof define === "function" && define.amd) this.d3 = d3, define(d3); else if (typeof module === "object" && module.exports) module.exports = d3; else this.d3 = d3;
 }();
-},{}],40:[function(require,module,exports){
+},{}],39:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -17363,7 +17057,7 @@ exports['default'] = inst;
 module.exports = exports['default'];
 
 
-},{"./handlebars.runtime":41,"./handlebars/compiler/ast":43,"./handlebars/compiler/base":44,"./handlebars/compiler/compiler":46,"./handlebars/compiler/javascript-compiler":48,"./handlebars/compiler/visitor":51,"./handlebars/no-conflict":65}],41:[function(require,module,exports){
+},{"./handlebars.runtime":40,"./handlebars/compiler/ast":42,"./handlebars/compiler/base":43,"./handlebars/compiler/compiler":45,"./handlebars/compiler/javascript-compiler":47,"./handlebars/compiler/visitor":50,"./handlebars/no-conflict":64}],40:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -17431,7 +17125,7 @@ exports['default'] = inst;
 module.exports = exports['default'];
 
 
-},{"./handlebars/base":42,"./handlebars/exception":55,"./handlebars/no-conflict":65,"./handlebars/runtime":66,"./handlebars/safe-string":67,"./handlebars/utils":68}],42:[function(require,module,exports){
+},{"./handlebars/base":41,"./handlebars/exception":54,"./handlebars/no-conflict":64,"./handlebars/runtime":65,"./handlebars/safe-string":66,"./handlebars/utils":67}],41:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -17537,7 +17231,7 @@ exports.createFrame = _utils.createFrame;
 exports.logger = _logger2['default'];
 
 
-},{"./decorators":53,"./exception":55,"./helpers":56,"./logger":64,"./utils":68}],43:[function(require,module,exports){
+},{"./decorators":52,"./exception":54,"./helpers":55,"./logger":63,"./utils":67}],42:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -17570,7 +17264,7 @@ exports['default'] = AST;
 module.exports = exports['default'];
 
 
-},{}],44:[function(require,module,exports){
+},{}],43:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -17620,7 +17314,7 @@ function parse(input, options) {
 }
 
 
-},{"../utils":68,"./helpers":47,"./parser":49,"./whitespace-control":52}],45:[function(require,module,exports){
+},{"../utils":67,"./helpers":46,"./parser":48,"./whitespace-control":51}],44:[function(require,module,exports){
 /* global define */
 'use strict';
 
@@ -17788,7 +17482,7 @@ exports['default'] = CodeGen;
 module.exports = exports['default'];
 
 
-},{"../utils":68,"source-map":70}],46:[function(require,module,exports){
+},{"../utils":67,"source-map":69}],45:[function(require,module,exports){
 /* eslint-disable new-cap */
 
 'use strict';
@@ -18362,7 +18056,7 @@ function transformLiteralToPath(sexpr) {
 }
 
 
-},{"../exception":55,"../utils":68,"./ast":43}],47:[function(require,module,exports){
+},{"../exception":54,"../utils":67,"./ast":42}],46:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -18594,7 +18288,7 @@ function preparePartialBlock(open, program, close, locInfo) {
 }
 
 
-},{"../exception":55}],48:[function(require,module,exports){
+},{"../exception":54}],47:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -19722,7 +19416,7 @@ exports['default'] = JavaScriptCompiler;
 module.exports = exports['default'];
 
 
-},{"../base":42,"../exception":55,"../utils":68,"./code-gen":45}],49:[function(require,module,exports){
+},{"../base":41,"../exception":54,"../utils":67,"./code-gen":44}],48:[function(require,module,exports){
 /* istanbul ignore next */
 /* Jison generated parser */
 "use strict";
@@ -20462,7 +20156,7 @@ var handlebars = (function () {
 exports['default'] = handlebars;
 
 
-},{}],50:[function(require,module,exports){
+},{}],49:[function(require,module,exports){
 /* eslint-disable new-cap */
 'use strict';
 
@@ -20650,7 +20344,7 @@ PrintVisitor.prototype.HashPair = function (pair) {
 /* eslint-enable new-cap */
 
 
-},{"./visitor":51}],51:[function(require,module,exports){
+},{"./visitor":50}],50:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -20792,7 +20486,7 @@ exports['default'] = Visitor;
 module.exports = exports['default'];
 
 
-},{"../exception":55}],52:[function(require,module,exports){
+},{"../exception":54}],51:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -21015,7 +20709,7 @@ exports['default'] = WhitespaceControl;
 module.exports = exports['default'];
 
 
-},{"./visitor":51}],53:[function(require,module,exports){
+},{"./visitor":50}],52:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -21033,7 +20727,7 @@ function registerDefaultDecorators(instance) {
 }
 
 
-},{"./decorators/inline":54}],54:[function(require,module,exports){
+},{"./decorators/inline":53}],53:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -21064,7 +20758,7 @@ exports['default'] = function (instance) {
 module.exports = exports['default'];
 
 
-},{"../utils":68}],55:[function(require,module,exports){
+},{"../utils":67}],54:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -21106,7 +20800,7 @@ exports['default'] = Exception;
 module.exports = exports['default'];
 
 
-},{}],56:[function(require,module,exports){
+},{}],55:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -21154,7 +20848,7 @@ function registerDefaultHelpers(instance) {
 }
 
 
-},{"./helpers/block-helper-missing":57,"./helpers/each":58,"./helpers/helper-missing":59,"./helpers/if":60,"./helpers/log":61,"./helpers/lookup":62,"./helpers/with":63}],57:[function(require,module,exports){
+},{"./helpers/block-helper-missing":56,"./helpers/each":57,"./helpers/helper-missing":58,"./helpers/if":59,"./helpers/log":60,"./helpers/lookup":61,"./helpers/with":62}],56:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -21195,7 +20889,7 @@ exports['default'] = function (instance) {
 module.exports = exports['default'];
 
 
-},{"../utils":68}],58:[function(require,module,exports){
+},{"../utils":67}],57:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -21291,7 +20985,7 @@ exports['default'] = function (instance) {
 module.exports = exports['default'];
 
 
-},{"../exception":55,"../utils":68}],59:[function(require,module,exports){
+},{"../exception":54,"../utils":67}],58:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -21318,7 +21012,7 @@ exports['default'] = function (instance) {
 module.exports = exports['default'];
 
 
-},{"../exception":55}],60:[function(require,module,exports){
+},{"../exception":54}],59:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -21349,7 +21043,7 @@ exports['default'] = function (instance) {
 module.exports = exports['default'];
 
 
-},{"../utils":68}],61:[function(require,module,exports){
+},{"../utils":67}],60:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -21377,7 +21071,7 @@ exports['default'] = function (instance) {
 module.exports = exports['default'];
 
 
-},{}],62:[function(require,module,exports){
+},{}],61:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -21391,7 +21085,7 @@ exports['default'] = function (instance) {
 module.exports = exports['default'];
 
 
-},{}],63:[function(require,module,exports){
+},{}],62:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -21426,7 +21120,7 @@ exports['default'] = function (instance) {
 module.exports = exports['default'];
 
 
-},{"../utils":68}],64:[function(require,module,exports){
+},{"../utils":67}],63:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -21475,7 +21169,7 @@ exports['default'] = logger;
 module.exports = exports['default'];
 
 
-},{"./utils":68}],65:[function(require,module,exports){
+},{"./utils":67}],64:[function(require,module,exports){
 (function (global){
 /* global window */
 'use strict';
@@ -21499,7 +21193,7 @@ module.exports = exports['default'];
 
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],66:[function(require,module,exports){
+},{}],65:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -21793,7 +21487,7 @@ function executeDecorators(fn, prog, container, depths, data, blockParams) {
 }
 
 
-},{"./base":42,"./exception":55,"./utils":68}],67:[function(require,module,exports){
+},{"./base":41,"./exception":54,"./utils":67}],66:[function(require,module,exports){
 // Build out our basic SafeString type
 'use strict';
 
@@ -21810,7 +21504,7 @@ exports['default'] = SafeString;
 module.exports = exports['default'];
 
 
-},{}],68:[function(require,module,exports){
+},{}],67:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -21936,7 +21630,7 @@ function appendContextPath(contextPath, id) {
 }
 
 
-},{}],69:[function(require,module,exports){
+},{}],68:[function(require,module,exports){
 // USAGE:
 // var handlebars = require('handlebars');
 /* eslint-disable no-var */
@@ -21963,7 +21657,7 @@ if (typeof require !== 'undefined' && require.extensions) {
   require.extensions['.hbs'] = extension;
 }
 
-},{"../dist/cjs/handlebars":40,"../dist/cjs/handlebars/compiler/printer":50,"fs":35}],70:[function(require,module,exports){
+},{"../dist/cjs/handlebars":39,"../dist/cjs/handlebars/compiler/printer":49,"fs":35}],69:[function(require,module,exports){
 /*
  * Copyright 2009-2011 Mozilla Foundation and contributors
  * Licensed under the New BSD license. See LICENSE.txt or:
@@ -21973,7 +21667,7 @@ exports.SourceMapGenerator = require('./source-map/source-map-generator').Source
 exports.SourceMapConsumer = require('./source-map/source-map-consumer').SourceMapConsumer;
 exports.SourceNode = require('./source-map/source-node').SourceNode;
 
-},{"./source-map/source-map-consumer":77,"./source-map/source-map-generator":78,"./source-map/source-node":79}],71:[function(require,module,exports){
+},{"./source-map/source-map-consumer":76,"./source-map/source-map-generator":77,"./source-map/source-node":78}],70:[function(require,module,exports){
 /* -*- Mode: js; js-indent-level: 2; -*- */
 /*
  * Copyright 2011 Mozilla Foundation and contributors
@@ -22082,7 +21776,7 @@ define(function (require, exports, module) {
 
 });
 
-},{"./util":80,"amdefine":15}],72:[function(require,module,exports){
+},{"./util":79,"amdefine":15}],71:[function(require,module,exports){
 /* -*- Mode: js; js-indent-level: 2; -*- */
 /*
  * Copyright 2011 Mozilla Foundation and contributors
@@ -22230,7 +21924,7 @@ define(function (require, exports, module) {
 
 });
 
-},{"./base64":73,"amdefine":15}],73:[function(require,module,exports){
+},{"./base64":72,"amdefine":15}],72:[function(require,module,exports){
 /* -*- Mode: js; js-indent-level: 2; -*- */
 /*
  * Copyright 2011 Mozilla Foundation and contributors
@@ -22305,7 +21999,7 @@ define(function (require, exports, module) {
 
 });
 
-},{"amdefine":15}],74:[function(require,module,exports){
+},{"amdefine":15}],73:[function(require,module,exports){
 /* -*- Mode: js; js-indent-level: 2; -*- */
 /*
  * Copyright 2011 Mozilla Foundation and contributors
@@ -22424,7 +22118,7 @@ define(function (require, exports, module) {
 
 });
 
-},{"amdefine":15}],75:[function(require,module,exports){
+},{"amdefine":15}],74:[function(require,module,exports){
 /* -*- Mode: js; js-indent-level: 2; -*- */
 /*
  * Copyright 2014 Mozilla Foundation and contributors
@@ -22512,7 +22206,7 @@ define(function (require, exports, module) {
 
 });
 
-},{"./util":80,"amdefine":15}],76:[function(require,module,exports){
+},{"./util":79,"amdefine":15}],75:[function(require,module,exports){
 /* -*- Mode: js; js-indent-level: 2; -*- */
 /*
  * Copyright 2011 Mozilla Foundation and contributors
@@ -22634,7 +22328,7 @@ define(function (require, exports, module) {
 
 });
 
-},{"amdefine":15}],77:[function(require,module,exports){
+},{"amdefine":15}],76:[function(require,module,exports){
 /* -*- Mode: js; js-indent-level: 2; -*- */
 /*
  * Copyright 2011 Mozilla Foundation and contributors
@@ -23713,7 +23407,7 @@ define(function (require, exports, module) {
 
 });
 
-},{"./array-set":71,"./base64-vlq":72,"./binary-search":74,"./quick-sort":76,"./util":80,"amdefine":15}],78:[function(require,module,exports){
+},{"./array-set":70,"./base64-vlq":71,"./binary-search":73,"./quick-sort":75,"./util":79,"amdefine":15}],77:[function(require,module,exports){
 /* -*- Mode: js; js-indent-level: 2; -*- */
 /*
  * Copyright 2011 Mozilla Foundation and contributors
@@ -24114,7 +23808,7 @@ define(function (require, exports, module) {
 
 });
 
-},{"./array-set":71,"./base64-vlq":72,"./mapping-list":75,"./util":80,"amdefine":15}],79:[function(require,module,exports){
+},{"./array-set":70,"./base64-vlq":71,"./mapping-list":74,"./util":79,"amdefine":15}],78:[function(require,module,exports){
 /* -*- Mode: js; js-indent-level: 2; -*- */
 /*
  * Copyright 2011 Mozilla Foundation and contributors
@@ -24530,7 +24224,7 @@ define(function (require, exports, module) {
 
 });
 
-},{"./source-map-generator":78,"./util":80,"amdefine":15}],80:[function(require,module,exports){
+},{"./source-map-generator":77,"./util":79,"amdefine":15}],79:[function(require,module,exports){
 /* -*- Mode: js; js-indent-level: 2; -*- */
 /*
  * Copyright 2011 Mozilla Foundation and contributors
@@ -24902,7 +24596,7 @@ define(function (require, exports, module) {
 
 });
 
-},{"amdefine":15}],81:[function(require,module,exports){
+},{"amdefine":15}],80:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v3.0.0
  * https://jquery.com/
@@ -34941,7 +34635,7 @@ if ( !noGlobal ) {
 return jQuery;
 } ) );
 
-},{}],82:[function(require,module,exports){
+},{}],81:[function(require,module,exports){
 (function (process){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -35169,7 +34863,7 @@ var substr = 'ab'.substr(-1) === 'b'
 ;
 
 }).call(this,require('_process'))
-},{"_process":83}],83:[function(require,module,exports){
+},{"_process":82}],82:[function(require,module,exports){
 // shim for using process in browser
 
 var process = module.exports = {};
@@ -35262,7 +34956,7 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}],84:[function(require,module,exports){
+},{}],83:[function(require,module,exports){
 module.exports = function(THREE) {
 	var MOUSE = THREE.MOUSE
 	if (!MOUSE)
@@ -36383,7 +36077,7 @@ module.exports = function(THREE) {
 	return OrbitControls;
 }
 
-},{}],85:[function(require,module,exports){
+},{}],84:[function(require,module,exports){
 // File:src/Three.js
 
 /**
@@ -78257,7 +77951,7 @@ THREE.MorphBlendMesh.prototype.update = function ( delta ) {
 };
 
 
-},{}],86:[function(require,module,exports){
+},{}],85:[function(require,module,exports){
 //     Underscore.js 1.7.0
 //     http://underscorejs.org
 //     (c) 2009-2014 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors

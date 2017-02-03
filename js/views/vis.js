@@ -137,14 +137,17 @@ function drawPCA(data,init,type){
     //Define this cat
     var element = document.getElementsByClassName('pcbc');
     if (attr !== undefined) {thiscat = attr[0];}
-    for (var e in element) if (element.hasOwnProperty(e)){
-        if (element[e].style.background=="rgb(179, 204, 255)") {
-            thiscat = element[e].id.slice(0, -5);
+    for (i=0;i<element.length;i++){
+        if (element[i].style.background.substring(0,18)=="rgb(179, 204, 255)") {
+            thiscat = element[i].id.slice(0, -5);
         }
     }    
     
     //II. PROCESS data for PCA and barcharts
     prdata = PCdata.init(data,attr,pccolor,thiscat);
+    
+    console.log(pccolor);
+    console.log(attr);
     
     //IIIa. INITIATE PCA upon new analysis or changing folders
     if (init == "all" || init == "folder") {

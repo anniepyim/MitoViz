@@ -185,7 +185,7 @@ saveTextAsFile = function(){
 	}
 
 
-	saveAsSvg = function()
+	/*saveAsSvg = function()
  	{
  	
 		var svg = d3.selectAll('#heatmapsvg');
@@ -200,7 +200,7 @@ saveTextAsFile = function(){
 		document.body.appendChild(l);
         	l.click();
       
-    /*html2canvas($('#barchartsvg'), 
+    html2canvas($('#barchartsvg'), 
     {
       onrendered: function (canvas) {
         var a = document.createElement('a');
@@ -209,9 +209,9 @@ saveTextAsFile = function(){
         a.download = 'somefilename.jpg';
         a.click();
       }
-    });*/
+    });
 	
-	};
+	};*/
 
 
 

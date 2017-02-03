@@ -13,7 +13,6 @@ module.exports = function(grunt) {
                     module: true,
                     document: true
                 },
-                ignores: ['js/views/templates.js','js/views/html2canvas.min.js'] 
             }
         },
         handlebars: {
