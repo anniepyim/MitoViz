@@ -69,7 +69,7 @@ PCdata.init = function (indata,attr,pccolor,cat) {
     //Add Criteria if exist
     var element = document.getElementsByClassName('pcbc');
     var newdata;
-    if (!!element[0]) newdata = addCriteria(prdata,attr)
+    if (!!element[0]) newdata = addCriteria(prdata,attr);
     else newdata = prdata;
     
     //RETURN the processed data for other purposes, e.g. barchart
@@ -81,7 +81,7 @@ PCdata.update = function (prdata,attr,cat){
     //Add Criteria if exist
     var element = document.getElementsByClassName('pcbc');
     var newdata;
-    if (!!element[0]) newdata = addCriteria(prdata,attr)
+    if (!!element[0]) newdata = addCriteria(prdata,attr);
     else newdata = prdata;
     
     if(attr !== undefined){

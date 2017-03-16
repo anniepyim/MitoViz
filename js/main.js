@@ -1,7 +1,7 @@
 var App = {};
 
 //Get data i.e. files to be analyzed, session id, that have to be provided when the script is called on the website
-var this_js_script = $('script[src*=Test]');
+var this_js_script = $('script[src*=App_compare]');
 var files = this_js_script.attr('files');
 if (files) files = files.split(',');
 var id = this_js_script.attr('session-id');

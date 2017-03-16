@@ -52,6 +52,19 @@
   "mutation": ""
  },
  {
+  "gene": "MT-ND5",
+  "sampleID": "HCT116-5-4-p",
+  "chr": "MT",
+  "process": "Test",
+  "gene_function": "MT-ND5: Mitochondrially encoded NADH dehydrogenase 5 part of enzyme complex I",
+  "EMBL_ID": "ENSG00000198786",
+  "Normal": 0,
+  "Abnormal": 0,
+  "log2": 0.357757,
+  "pvalue": 0,
+  "mutation": ""
+ },
+ {
   "gene": "NDUFA4",
   "sampleID": "HCT116-5-4-p",
   "chr": "7",

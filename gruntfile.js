@@ -5,7 +5,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         jshint: {
-            files: ['gruntfile.js', 'index.js','js/**/*.js'],
+            files: ['gruntfile.js', 'index.js','js/**/*.js','!js/views/templates.js','!js/views/mainjs.js'],
             options: {
                 // options here to override JSHint defaults
                 globals: {
@@ -32,12 +32,12 @@ module.exports = function(grunt) {
             }
         },
         browserify: {
-            'dist/js/Test.js': ['index.js']
+            'dist/js/App_compare.js': ['index.js']
         },
         uglify: {
             my_target: {
                 files: {
-                    'dist/js/Test.min.js': ['dist/js/Test.js']
+                    'dist/js/App_compare.min.js': ['dist/js/App_compare.js']
                 }
             }
         },

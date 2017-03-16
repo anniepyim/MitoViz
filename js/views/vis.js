@@ -165,7 +165,7 @@ function drawPCA(data,init,type){
         //Render the div for barchart and the SVG
         mainframe.setElement('#pcbarchart').renderpcabc();
         
-        var clicking = function(){parserPCA.parse(drawPCA,onError,"update",type)};
+        var clicking = function(){parserPCA.parse(drawPCA,onError,"update",type);};
         
         for (i=0; i<attr.length; i++){
             var cat = attr[i],
