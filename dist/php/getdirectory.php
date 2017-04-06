@@ -6,7 +6,7 @@ if(isset($_POST['folderurl']))
     $filenameArray = array();
     $handle = opendir($uid);
     while($file = readdir($handle)){
-        if($file !== '.' && $file !== '..' && $file !== '.DS_Store'){
+        if($file !== '.' && $file !== '..' && $file !== '.DS_Store' && !strpos($file,'files')){
             array_push($filenameArray, $file);
         }
     }
