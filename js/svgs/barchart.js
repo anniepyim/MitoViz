@@ -20,8 +20,8 @@ var newdata;
 
 BC.draw = function (jsondata,colorrange) {
     
-    var BARmargin = {top: 20, right: 0, bottom: 30, left: 0},
-    svgHeight = 450,
+    var BARmargin = {top: 20, right: 0, bottom: 0, left: 0},
+    svgHeight = 600,
     svgWidth = 300,
     BARwidth = svgWidth - BARmargin.left - BARmargin.right,
     BARheight = svgHeight - BARmargin.top - BARmargin.bottom;

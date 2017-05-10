@@ -68,8 +68,8 @@ var newdata;
 
 BC.draw = function (jsondata,colorrange) {
     
-    var BARmargin = {top: 20, right: 0, bottom: 30, left: 0},
-    svgHeight = 450,
+    var BARmargin = {top: 0, right: 0, bottom: 0, left: 0},
+    svgHeight = 600,
     svgWidth = 300,
     BARwidth = svgWidth - BARmargin.left - BARmargin.right,
     BARheight = svgHeight - BARmargin.top - BARmargin.bottom;
@@ -356,9 +356,9 @@ heatmap.draw = function (jsondata, samplelist, genelist,colorrange) {
     });
 
     
-    var HMmargin = {top: 60, right: 0, bottom: 50, left: 60},
+    var HMmargin = {top: 60, right: 0, bottom: 50, left: 70},
         svgWidth = 1200,
-        svgHeight = 450,
+        svgHeight = 500,
         HMwidth = svgWidth - HMmargin.left - HMmargin.right, 
         HMheight = svgHeight - HMmargin.top - HMmargin.bottom,
         gridheight = HMheight / samplelist.length, 
@@ -1319,7 +1319,7 @@ var colorbrewer = require('colorbrewer');
 
 var SPmargin = {top: 20, right: 0, bottom: 30, left: 30},
     svgWidth = 900,
-    svgHeight = 450,
+    svgHeight = 550,
     SPwidth = svgWidth - SPmargin.left - SPmargin.right, 
     SPheight = svgHeight - SPmargin.top - SPmargin.bottom;
 

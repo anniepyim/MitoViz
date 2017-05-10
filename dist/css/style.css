@@ -29,7 +29,7 @@ body {
     padding-top: 60px;
     font-family: 'Montserrat', 'sans-serif';
     margin: 10;
-    font-size:14px
+    font-size:15px
 }
 
 a:link {
@@ -120,7 +120,9 @@ input[type=checkbox] {
 }
 
 #scatterplot {
-    display: inline-block
+    display: inline-block;
+    font-size: 13px;
+ 
 }
 
 .axis path,
@@ -135,7 +137,7 @@ input[type=checkbox] {
 }
 
 #heatmap{
-    font-size: 10px; 
+    font-size: 8px; 
 }
 
 .cell{

@@ -3,7 +3,7 @@ var colorbrewer = require('colorbrewer');
 
 var SPmargin = {top: 20, right: 0, bottom: 30, left: 30},
     svgWidth = 900,
-    svgHeight = 450,
+    svgHeight = 550,
     SPwidth = svgWidth - SPmargin.left - SPmargin.right, 
     SPheight = svgHeight - SPmargin.top - SPmargin.bottom;
 
