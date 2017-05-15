@@ -214,7 +214,7 @@ App.init = function(options){
     App.views.vis.selector('#vis');
     
     d3.json("./data/" + my_var_1 + ".json", function(error, nodes) {
-        if (error) return console.warn("./data/" + my_var_1 + ".json");
+        if (error) return console.warn(my_var_1 + ".json");
         
         d3.json(my_var_2, function(error, links) {
             if (error) return console.warn(my_var_2);
@@ -235,16 +235,16 @@ Handlebars = glob.Handlebars || require('handlebars');
 this["Templates"] = this["Templates"] || {};
 
 this["Templates"]["main"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<!-- Page Content -->\n<div class=\"container main\">\n    \n    \n    <div class=\"row\">\n        \n        <div class=\"col-md-3\">\n            \n            <div class=\"row\">\n            \n                <div class=\"col-md-12 title\" style=\"margin-top:20px;\">Find a Gene</div>\n            \n                <div class=\"col-md-12\" style=\"margin-top:10px;\">\n                    <input type=\"text\" class=\"form-control\" placeholder=\"Search gene by name...\">\n                    <ul class=\"list-group results\"></ul>\n                </div>\n\n\n                <div class=\"col-md-12 miniTitle\" style=\"margin-top:20px;\">\n                    Legend\n                </div>\n\n                <div class=\"col-md-6 legendText\">\n                    <strong>Color</strong> shows gene regulation\n                </div>\n\n                <div class=\"col-md-6\">\n                    <svg width=\"120\" height=\"40\">\n                        <rect x=\"0\" y=\"10\" width=\"38\" height=\"7\" fill=\"#2171b5\"></rect>\n                        <rect x=\"38\" y=\"10\" width=\"38\" height=\"7\" fill=\"#BECCAE\"></rect>\n                        <rect x=\"76\" y=\"10\" width=\"38\" height=\"7\" fill=\"#C72D0A\"></rect>\n\n                        <text x=\"10\" y=\"26\" class=\"legendText\">Up</text>\n                        <text x=\"44\" y=\"26\" class=\"legendText\">None</text>\n                        <text x=\"80\" y=\"26\" class=\"legendText\">Down</text>\n                    </svg>\n                </div>\n\n                <div class=\"col-md-6 legendText\">\n                    <strong>Dark Borders</strong> show mutations\n                </div>\n\n                <div class=\"col-md-6 legendText\">\n                    <svg width=\"120\" height=\"40\">\n                        <circle cx=\"58\" cy=\"20\" fill=\"none\" r=\"18\" stroke-width=\"1.2\" stroke=\"#2c3e50\"></circle>\n                    </svg>\n                </div>\n\n                <div class=\"col-md-6 legendText\">\n                    <strong>Size</strong> shows Log2 fold change\n                </div>\n\n                <div class=\"col-md-6 legendText\">\n                    <svg width=\"120\" height=\"40\">\n                        <circle cx=\"58\" cy=\"20\" style=\"stroke-dasharray: 2 2\" fill=\"none\" r=\"18\" stroke-width=\"1\" stroke=\"#5f6062\"></circle>\n                        <circle cx=\"58\" cy=\"31\" style=\"stroke-dasharray: 2 2\" fill=\"none\" r=\"6\" stroke-width=\"1\" stroke=\"#5f6062\"></circle>\n                    </svg>\n                </div>\n\n                <div class=\"col-md-12\">\n                    <hr>\n                </div>\n            \n            </div>\n            \n            \n            <div class=\"row tip\" style=\"margin-top:20px;\">\n            </div>\n            \n            \n        </div>\n        \n        <div class=\"col-md-9\">\n            <div id=\"vis\" class=\"vis\"></div>\n        </div> \n    </div>\n    \n</div>\n\n";
+    return "<!-- Page Content -->\n<div class=\"container main\">\n    \n    \n    <div class=\"row\">\n        \n        <div class=\"col-md-2\">\n            \n            <div class=\"row\">\n            \n                <div class=\"col-md-12 title\" style=\"margin-top:20px;\">Find a Gene</div>\n            \n                <div class=\"col-md-12\" style=\"margin-top:10px;\">\n                    <input type=\"text\" class=\"form-control\" placeholder=\"Search gene by name...\">\n                    <ul class=\"list-group results\"></ul>\n                </div>\n\n\n                <div class=\"col-md-12 miniTitle\" style=\"margin-top:20px;\">\n                    Legend\n                </div>\n\n                <div class=\"col-md-6 legendText\">\n                    <strong>Color</strong> shows gene regulation\n                </div>\n\n                <div class=\"col-md-6\">\n                    <svg width=\"70\" height=\"65\">\n                        <rect x=\"0\" y=\"10\" width=\"25\" height=\"7\" fill=\"#2171b5\"></rect>\n                        <rect x=\"0\" y=\"25\" width=\"25\" height=\"7\" fill=\"#BECCAE\"></rect>\n                        <rect x=\"0\" y=\"40\" width=\"25\" height=\"7\" fill=\"#C72D0A\"></rect>\n\n                        <text x=\"30\" y=\"17\" class=\"legendText\">Up</text>\n                        <text x=\"30\" y=\"32\" class=\"legendText\">None</text>\n                        <text x=\"30\" y=\"48\" class=\"legendText\">Down</text>\n                    </svg>\n                </div>\n\n                <div class=\"col-md-6 legendText\" style=\"padding-right:0px\">\n                    <strong>Dark Borders</strong> show mutations\n                </div>\n\n                <div class=\"col-md-6 legendText\">\n                    <svg width=\"70\" height=\"50\">\n                        <circle cx=\"25\" cy=\"18\" fill=\"none\" r=\"16\" stroke-width=\"1.2\" stroke=\"#2c3e50\"></circle>\n                    </svg>\n                </div>\n\n                <div class=\"col-md-6 legendText\">\n                    <strong>Size</strong> shows Log2 fold change\n                </div>\n\n                <div class=\"col-md-6 legendText\">\n                    <svg width=\"70\" height=\"50\">\n                        <circle cx=\"25\" cy=\"20\" style=\"stroke-dasharray: 2 2\" fill=\"none\" r=\"16\" stroke-width=\"1\" stroke=\"#5f6062\"></circle>\n                        <circle cx=\"25\" cy=\"30\" style=\"stroke-dasharray: 2 2\" fill=\"none\" r=\"6\" stroke-width=\"1\" stroke=\"#5f6062\"></circle>\n                    </svg>\n                </div>\n\n                <div class=\"col-md-12\">\n                    <hr>\n                </div>\n            \n            </div>\n            \n            \n            <div class=\"row tip\" style=\"margin-top:20px;\">\n            </div>\n            \n            \n        </div>\n        \n        <div class=\"col-md-10\">\n            <div id=\"vis\" class=\"vis\"></div>\n        </div> \n    </div>\n    \n</div>\n\n";
 },"useData":true});
 
 this["Templates"]["result"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
   return "<li class=\"list-group-item\"><span class=\"title\">"
-    + alias4(((helper = (helper = helpers.Name || (depth0 != null ? depth0.Name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"Name","hash":{},"data":data}) : helper)))
+    + alias4(((helper = (helper = helpers.gene || (depth0 != null ? depth0.gene : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"gene","hash":{},"data":data}) : helper)))
     + "</span><br><span>"
-    + alias4(((helper = (helper = helpers.Process || (depth0 != null ? depth0.Process : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"Process","hash":{},"data":data}) : helper)))
+    + alias4(((helper = (helper = helpers.process || (depth0 != null ? depth0.process : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"process","hash":{},"data":data}) : helper)))
     + "</span></li>";
 },"useData":true});
 
@@ -366,7 +366,7 @@ var selector,
     highlightColor = '#FFFBCC',
     mutationColor = '#2c3e50',
     templates = require('../templates.js'),
-    prPadding = 1.7,
+    prPadding = 1.6,
     clickEvent = {target: null, holdClick: false},
     tipTemplate = require('../templates').tooltip;
 
@@ -406,19 +406,27 @@ function initVis(){
         })
         .nodes(root);
     
-    // Use all space available while keeping padding between elements
-    var pxMin = _.min(data.processes, function(d){return d.x;}),
-        pyMin = _.min(data.processes, function(d){return d.y;}),
-        xMin = - (pxMin.x * prPadding) + pxMin.r,
-        yMin = - (pyMin.y * prPadding) + pyMin.r;
-    
     _.each(data.processes, function(d){
         d.original = {};
         d.original.x = d.x;
         d.original.y = d.y;
+        d.xmin = (d.x * prPadding) - d.r;
+        d.ymin = (d.y * prPadding) - d.r;
+    });
+    
+    // Use all space available while keeping padding between elements
+    var pxMin = _.min(data.processes, function(d){return d.xmin;}),
+        pyMin = _.min(data.processes, function(d){return d.ymin;}),
+        xMin = - (pxMin.x * prPadding) + pxMin.r,
+        yMin = - (pyMin.y * prPadding) + pyMin.r;
+        
+    
+    _.each(data.processes, function(d){
         d.x = (d.x * prPadding) + xMin;
         d.y = (d.y * prPadding) + yMin;
     });
+    
+    console.log(data.processes);
     
     _.each(data.nodes, function(d){
         d.x = d.x + (d.parent.x - d.parent.original.x);
@@ -538,7 +546,7 @@ function initVis(){
      * Create process Annotations
      *****************************/
     
-    var ann_scale = d3.scale.log().domain(d3.extent(data.processes, function(d){ return d.r; })).range([8,12]);
+    var ann_scale = d3.scale.log().domain(d3.extent(data.processes, function(d){ return d.r; })).range([6,11]);
     
     annotations = svg.selectAll('.node')
                         .data(data.processes);
