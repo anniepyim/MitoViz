@@ -4,17 +4,15 @@ var flag = "SP";
 
 $('input[type=radio][name=analysis]').change(function(e){
     
-    if (this.value == "pcanalysis"){
-        flag = "PCA";
-        issueWarning();
-        
-    }
-    
     if (this.value == "scatterplotanalysis"){
         flag = "SP";
-        issueWarning();
+    }else if (this.value == "heatmapanalysis"){
+        flag = "heatmap";
+    }else{
+        flag = "others";
     }
     
+    issueWarning();
     /*if ($(this).text() == "Don't click me"){
         alert("It's good to be curious, but I mean, really, I told you nothing would happen. So let's just back to business")
     }*/
@@ -131,6 +129,8 @@ function issueWarning(){
     
     if ($('#selected-sample').find('option').length > 6 && flag == "SP")
         document.getElementById('warning').innerHTML="<font color=\"red\">No more than 6 samples!";
+    else if ($('#selected-sample').find('option').length > 55 && flag == "heatmap")
+        document.getElementById('warning').innerHTML="<font color=\"red\">No more than 50 samples!";
     else
         document.getElementById('warning').innerHTML="";
 }

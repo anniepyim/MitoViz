@@ -11,6 +11,7 @@ var pcPlot = require('../svgs/pcPlot.js');
 var PCBC = require('../svgs/pcbarchart.js');
 var parserSP = require('./parserSP.js');
 var parserPCA = require('./parserPCA.js');
+var parserHeatmap = require('./parserHeatmap.js');
 var mainframe = require('./mainframe.js');
 mainframe = new mainframe();
 
@@ -201,9 +202,66 @@ function drawPCA(data,init,type){
     
 }
 
+function heatmapcompareData(){
+    
+    var sametype = true,
+        init = "all",
+        count=1,
+        type;
+
+    //Check the type of selected samples
+    $("#selected-sample option").each(function(i){
+        if (count === 1) type = $(this).val().split("/")[2];
+        else if ($(this).val().split("/")[2] != type) sametype = false;
+        count = count+1;
+    });
+    
+    //Check for error
+    if (type != "TCGA") onError(new Error("Please select samples only from the TCGA project"));
+    if ($('#selected-sample').find('option').length < 3) onError(new Error("Please add at least 3 samples"));
+    if (sametype === false) onError(new Error("Please select samples from the same project"));
+
+    //Get samples
+    var samples = document.getElementById('selected-sample');
+
+    for (var i = 0; i < samples.options.length; i++) { 
+        samples.options[i].selected = true; 
+    } 
+
+    var parameter = $("#selected-sample").serialize() + '&filetype=' + type;
+    
+    console.log(parameter);
+    //Remove everything on svgs-all div and render the div for PCA plot and the side bar, ie the one for folders
+    //This has to be down before the parser since the parser will get info for files and update the folders
+    var el = document.getElementById( 'svgs-all' );
+    while (el.hasChildNodes()) {el.removeChild(el.firstChild);}
+    mainframe.setElement('#svgs-all').renderheatmap();
+    
+    var parent = document.getElementById('heatmap'); 
+    var div = document.createElement('div');
+    div.setAttribute("align", "center");
+    div.innerHTML ='<img id="loading" src="./img/loading.gif">';
+    parent.appendChild(div);
+    
+    //Pass to parser
+    parserHeatmap.parse(drawHeatmap,onError,init,type,parameter);
+    
+
+}
+
+function drawHeatmap(url,init,type){
+    hideLoading();
+    var parent = document.getElementById('heatmap');
+    while (parent.firstChild) {
+        parent.removeChild(parent.firstChild);
+    }   
+    var div = document.createElement('div');
+    div.innerHTML ='<iframe src="'+url+'" frameborder="0" height="100%" width="100%"></iframe>';
+    parent.appendChild(div);
+}
+
 function hideLoading() {
     d3.select('#loading').remove();
-    d3.select('#cb').remove();
 }
 
 //Function that might be called by other func if something went wrong
@@ -216,7 +274,8 @@ function onError(res) {
 d3.select('#compareButton').on('click', function(){
     var analysis = document.querySelector('input[name = "analysis"]:checked').value;
     if (analysis == "scatterplotanalysis") vis.spcompareData();
-    else pcacompareData();
+    else if (analysis == "pcanalysis") pcacompareData();
+    else heatmapcompareData();
 });
 
 

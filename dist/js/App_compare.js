@@ -15,7 +15,7 @@ d3 = require('d3');
 //Require the App so that it could called
 App = require('./js/main');
 
-},{"./js/main":2,"backbone":33,"d3":38,"handlebars":68,"jquery":80,"underscore":85}],2:[function(require,module,exports){
+},{"./js/main":2,"backbone":34,"d3":39,"handlebars":69,"jquery":81,"underscore":86}],2:[function(require,module,exports){
 var App = {};
 
 //Get data i.e. files to be analyzed, session id, that have to be provided when the script is called on the website
@@ -45,7 +45,7 @@ App.init = function(options){
 
 //Export as App so it could be App.init could be called
 module.exports = App;
-},{"./views/mainframe.js":9,"./views/mainjs.js":10,"./views/vis.js":14}],3:[function(require,module,exports){
+},{"./views/mainframe.js":9,"./views/mainjs.js":10,"./views/vis.js":15}],3:[function(require,module,exports){
 var d3 = require('d3');
 var colorbrewer = require('colorbrewer');
 var SP = require('./scatterplot.js');
@@ -68,8 +68,8 @@ var newdata;
 
 BC.draw = function (jsondata,colorrange) {
     
-    var BARmargin = {top: 20, right: 0, bottom: 30, left: 0},
-    svgHeight = 450,
+    var BARmargin = {top: 20, right: 0, bottom: 0, left: 0},
+    svgHeight = 600,
     svgWidth = 300,
     BARwidth = svgWidth - BARmargin.left - BARmargin.right,
     BARheight = svgHeight - BARmargin.top - BARmargin.bottom;
@@ -90,7 +90,11 @@ BC.draw = function (jsondata,colorrange) {
         .append("g")
         .attr("transform", "translate(" + BARmargin.left + "," + BARmargin.top + ")");
         
-    var barH = BARheight/17;
+    var nested_data = d3.nest()
+    .key(function(d) { return d.process; })
+    .entries(jsondata);
+    
+    var barH = BARheight/(nested_data.length);
     
     newdata=[];
     
@@ -264,7 +268,7 @@ saveTextAsFile = function(){
 
 
 module.exports = BC;
-},{"./heatmap.js":4,"./scatterplot.js":8,"colorbrewer":37,"d3":38}],4:[function(require,module,exports){
+},{"./heatmap.js":4,"./scatterplot.js":8,"colorbrewer":38,"d3":39}],4:[function(require,module,exports){
 var d3 = require('d3');
 var colorbrewer = require('colorbrewer');
 
@@ -352,9 +356,9 @@ heatmap.draw = function (jsondata, samplelist, genelist,colorrange) {
     });
 
     
-    var HMmargin = {top: 60, right: 0, bottom: 50, left: 60},
+    var HMmargin = {top: 60, right: 0, bottom: 50, left: 70},
         svgWidth = 1200,
-        svgHeight = 450,
+        svgHeight = 500,
         HMwidth = svgWidth - HMmargin.left - HMmargin.right, 
         HMheight = svgHeight - HMmargin.top - HMmargin.bottom,
         gridheight = HMheight / samplelist.length, 
@@ -606,7 +610,7 @@ if (typeof define === "function" && define.amd) {
 } else {
     this.heatmap = heatmap;
 }
-},{"./scatterplot.js":8,"colorbrewer":37,"d3":38}],5:[function(require,module,exports){
+},{"./scatterplot.js":8,"colorbrewer":38,"d3":39}],5:[function(require,module,exports){
 var d3 = require('d3');
 var THREE = require ('three');
 var OrbitControls = require('three-orbit-controls')(THREE);
@@ -948,7 +952,7 @@ if (typeof define === "function" && define.amd) {
 } else {
     this.pcPlot = pcPlot;
 }
-},{"../views/templates":13,"d3":38,"three":84,"three-orbit-controls":83}],6:[function(require,module,exports){
+},{"../views/templates":14,"d3":39,"three":85,"three-orbit-controls":84}],6:[function(require,module,exports){
 var d3 = require('d3');
 //var pcPlot = require('./pcPlot.js');
 var PCdata = require('./pcdata.js');
@@ -1148,7 +1152,7 @@ if (typeof define === "function" && define.amd) {
 } else {
     this.PCBC = PCBC;
 }
-},{"../views/templates":13,"./pcdata.js":7,"d3":38}],7:[function(require,module,exports){
+},{"../views/templates":14,"./pcdata.js":7,"d3":39}],7:[function(require,module,exports){
 var d3 = require('d3');
 var pcPlot = require('./pcPlot.js');
 
@@ -1309,13 +1313,13 @@ if (typeof define === "function" && define.amd) {
 } else {
     this.PCdata = PCdata;
 }
-},{"./pcPlot.js":5,"d3":38}],8:[function(require,module,exports){
+},{"./pcPlot.js":5,"d3":39}],8:[function(require,module,exports){
 var d3 = require('d3');
 var colorbrewer = require('colorbrewer');
 
 var SPmargin = {top: 20, right: 0, bottom: 30, left: 30},
     svgWidth = 900,
-    svgHeight = 450,
+    svgHeight = 550,
     SPwidth = svgWidth - SPmargin.left - SPmargin.right, 
     SPheight = svgHeight - SPmargin.top - SPmargin.bottom;
 
@@ -1603,7 +1607,7 @@ if (typeof define === "function" && define.amd) {
 } else {
     this.SP = SP;
 }
-},{"../views/templates":13,"colorbrewer":37,"d3":38}],9:[function(require,module,exports){
+},{"../views/templates":14,"colorbrewer":38,"d3":39}],9:[function(require,module,exports){
 var templates = require('./templates');
 
 module.exports = Backbone.View.extend({
@@ -1619,6 +1623,8 @@ module.exports = Backbone.View.extend({
     pcabarchart: templates.pcabarchart,
     
     pcatext: templates.pcatext,
+    
+    heatmap: templates.heatmap,
     
     render: function(id){
         var obj = {};
@@ -1640,27 +1646,30 @@ module.exports = Backbone.View.extend({
     renderscplot: function(id){
         this.$el.append(this.scplot());
         return this;
+    },
+    
+    renderheatmap: function(id){
+        this.$el.append(this.heatmap());
+        return this;
     }
 });
 
-},{"./templates":13}],10:[function(require,module,exports){
+},{"./templates":14}],10:[function(require,module,exports){
 $(document).ready(function(){
     
 var flag = "SP";
 
 $('input[type=radio][name=analysis]').change(function(e){
     
-    if (this.value == "pcanalysis"){
-        flag = "PCA";
-        issueWarning();
-        
-    }
-    
     if (this.value == "scatterplotanalysis"){
         flag = "SP";
-        issueWarning();
+    }else if (this.value == "heatmapanalysis"){
+        flag = "heatmap";
+    }else{
+        flag = "others";
     }
     
+    issueWarning();
     /*if ($(this).text() == "Don't click me"){
         alert("It's good to be curious, but I mean, really, I told you nothing would happen. So let's just back to business")
     }*/
@@ -1777,6 +1786,8 @@ function issueWarning(){
     
     if ($('#selected-sample').find('option').length > 6 && flag == "SP")
         document.getElementById('warning').innerHTML="<font color=\"red\">No more than 6 samples!";
+    else if ($('#selected-sample').find('option').length > 55 && flag == "heatmap")
+        document.getElementById('warning').innerHTML="<font color=\"red\">No more than 50 samples!";
     else
         document.getElementById('warning').innerHTML="";
 }
@@ -1785,6 +1796,81 @@ function issueWarning(){
 });
 
 },{}],11:[function(require,module,exports){
+
+
+function parserHeatmap(){}   
+function parse(drawHeatmap,onError,init,type,parameter){
+    
+if(init == "all"){
+        
+        //RUN python script that calls R script to do PCA analysis
+        jQuery.ajax({
+            url: "./R/heatmap.py", 
+            data: parameter,
+            type: "POST",
+            dataType: "html",    
+            success: function () {
+
+                //Retrieve files result from the python+R script runs and 
+                var targeturl = './data/heatmap/';
+                var folderurl = '.'+targeturl;
+                var htmltext = "",
+                value = "",
+                text = "";
+
+                jQuery.ajax({
+                    type: "POST",
+                    url: "./php/getdirectory.php",
+                    dataType: "json",
+                    data: { folderurl : folderurl },
+                  success: function(data){
+                      $('#heatmapfolders').empty();
+                      $.each(data, function(i,filename) {
+                        value = targeturl+filename;
+                        text = filename.split(".")[0];
+                        htmltext = htmltext+'<option value=\"'+value+'\">'+text+'</option>';
+
+                    });
+
+                    $("#heatmapfolders").html(htmltext);
+                    $('#heatmapfolders').selectpicker('refresh');
+                    $('#heatmapfolders').find('[value="./data/heatmap/Apoptosis.html"]').prop('selected',true);
+                    $('#heatmapfolders').selectpicker('refresh');
+                  },
+                    error: function(e){
+                        console.log(e);
+                    }
+                });
+
+                //Update the PCA plot by calling the functions upon changing folders
+                $('#heatmapfolders').on('change',function(){
+                    parse(drawHeatmap,onError,"folder",type);
+                });
+                
+                //call the function to drawPCA
+                drawHeatmap("./data/heatmap/Apoptosis.html",init,type);
+            },
+            error: function(e){
+                onError(e);
+            }
+        });
+        
+    }else{
+        var url = $("#heatmapfolders option:selected").val();
+        drawHeatmap(url,init,type);
+    }
+
+
+    
+}
+
+parserHeatmap.parse = parse;
+
+module.exports = parserHeatmap;
+
+
+
+},{}],12:[function(require,module,exports){
 
 
 function parserPCA(){}
@@ -1872,7 +1958,7 @@ module.exports = parserPCA;
 
 
 
-},{}],12:[function(require,module,exports){
+},{}],13:[function(require,module,exports){
 var axios = require('axios');
 var _ = require('underscore');
 var d3 = require('d3');
@@ -1963,7 +2049,7 @@ module.exports = parserSP;
 
 
 
-},{"axios":16,"d3":38,"underscore":85}],13:[function(require,module,exports){
+},{"axios":17,"d3":39,"underscore":86}],14:[function(require,module,exports){
 (function (global){
 var glob = ('undefined' === typeof window) ? global : window,
 
@@ -1971,12 +2057,16 @@ Handlebars = glob.Handlebars || require('handlebars');
 
 this["Templates"] = this["Templates"] || {};
 
+this["Templates"]["heatmap"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    return "<div class=\"col-md-12\" style=\"margin-top:10px;\" align=\"center\">\n    Show Heatmap by Processes <select class=\"selectpicker\" id=\"heatmapfolders\" data-style=\"btn-default\" title=\"Pick process\" data-width=\"175px\">\n    </select>\n</div>\n<div id=\"heatmap\" class=\"col-md-12\"></div>";
+},"useData":true});
+
 this["Templates"]["main"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var helper;
 
   return "<!-- Page Content -->        \n<div class=\"container main\">\n        <div id=\"#wrapUp\" class=\"row\">\n            \n        <div class=\"col-md-2\">\n         <div class=\"row\">\n             \n             <!--Folders to select data -->\n             \n             <div class=\"col-md-12 title\" style=\"margin-top:20px;\" id=\"hihi\">\n              Data Sets\n             </div>\n              <div class=\"col-md-12\" style=\"margin-top:10px;\">\n            \n              <select class=\"selectpicker\" id=\"folders\" data-style=\"btn-default\" title=\"Pick dataset\" data-width=\"175px\" >\n                  <option value='./data/TCGA'>TCGA</option>\n                 <option value='./data/aneuploidy/'>Aneuploidy</option>\n                  <option value='./data/viral/'>Viral</option>\n                  <option value='./data/trisomy/'>Trisomy</option>\n                  <option value='./data/user_uploads/"
     + container.escapeExpression(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"id","hash":{},"data":data}) : helper)))
-    + "/json/'>User Uploads</option>\n             </select>\n             </div>\n\n              <div class=\"col-md-12\" style=\"margin-top:10px;display:none\" id=\"subfolders-div\">\n              <select class=\"selectpicker\" id=\"subfolders\" data-style=\"btn-default\" title=\"Pick Cancer type\" data-width=\"175px\" >\n                 <option value='./data/TCGA/BRCA/'>BRCA</option>\n                  <!--<option value='./data/TCGA/HCC/'>HCC</option>-->\n                 <option value='./data/TCGA/LIHC/'>LIHC</option>\n                 <option value='./data/TCGA/LUAD/'>LUAD</option>\n                 <option value='./data/TCGA/PRAD/'>PRAD</option>\n                 <option value='./data/TCGA/THCA/'>THCA</option>\n             </select>\n             </div>\n\n              \n              <div class=\"col-md-12\" style=\"margin-top:10px;\">\n              <select class=\"selectpicker\" MULTIPLE id=\"files\" data-style=\"btn-default\" title=\"Pick samples\" data-width=\"175px\" data-actions-box=\"true\" data-selected-text-format=\"static\">\n             </select>\n             </div>\n        \n              <div class=\"col-md-12\" style=\"margin-top:10px\">\n             <form id=\"form1\">\n       <select name=\"file_list\" SIZE=\"4\" MULTIPLE id=\"selected-sample\" style=\"width: 175px;font-size: 14px\">\n             </select>\n             </form>\n              </div>\n             \n              <div class=\"col-md-12\" style=\"margin-top:10px;text-align:right\">\n              <button id = \"delete-selected\" class=\"btn btn-xs btn-default\"><span class=\"glyphicon glyphicon-remove\" aria-hidden=\"true\"></span> Remove</button>\n             <button id = \"clear-all\" class=\"btn btn-xs btn-danger\"><span class=\"glyphicon glyphicon-trash\" aria-hidden=\"true\"></span> Clear</button>\n              </div>\n              \n              <div class=\"col-md-12\" id=\"warning\" style=\"margin-top:10px\"></div>\n             \n             <!-- Select type of analysis -->\n             \n            <div class=\"col-md-12 title\" style=\"margin-top:10px;margin-bottom:10px;\">Analysis</div>\n             <div class=\"col-md-12 radio\" style=\"font-size:10px;margin:0px\">\n            <label><input type=\"radio\" name=\"analysis\" value=\"scatterplotanalysis\" checked=\"checked\">Mutations and Expressions</label>\n            </div>\n             <div class=\"col-md-12 radio\" style=\"font-size:10px;margin:0px\">\n            <label><input type=\"radio\" name=\"analysis\" value=\"pcanalysis\">Principal Components</label>\n            </div>\n             \n             <div class=\"col-md-12\" style=\"margin-top:10px;text-align: center\">\n              <button id = \"compareButton\" class=\"btn btn-success\">Compare</button>\n             </div>\n             \n              <div class=\"col-md-12\"><hr></div>\n            </div>\n            <div class=\"row tip\" style=\"margin-top:0px;\"></div>\n        </div>\n        \n            <div class=\"col-md-10\">\n                <div id = \"svgs-all\" class=\"col-md-12\"></div>   \n            </div>\n        </div>\n</div>";
+    + "/json/'>User Uploads</option>\n             </select>\n             </div>\n\n              <div class=\"col-md-12\" style=\"margin-top:10px;display:none\" id=\"subfolders-div\">\n              <select class=\"selectpicker\" id=\"subfolders\" data-style=\"btn-default\" title=\"Pick Cancer type\" data-width=\"175px\" >\n                 <option value='./data/TCGA/BRCA/'>BRCA</option>\n                  <!--<option value='./data/TCGA/HCC/'>HCC</option>-->\n                 <option value='./data/TCGA/LIHC/'>LIHC</option>\n                 <option value='./data/TCGA/LUAD/'>LUAD</option>\n                 <option value='./data/TCGA/PRAD/'>PRAD</option>\n                 <option value='./data/TCGA/THCA/'>THCA</option>\n             </select>\n             </div>\n\n              \n              <div class=\"col-md-12\" style=\"margin-top:10px;\">\n              <select class=\"selectpicker\" MULTIPLE id=\"files\" data-style=\"btn-default\" title=\"Pick samples\" data-width=\"175px\" data-actions-box=\"true\" data-selected-text-format=\"static\">\n             </select>\n             </div>\n        \n              <div class=\"col-md-12\" style=\"margin-top:10px\">\n             <form id=\"form1\">\n       <select name=\"file_list\" SIZE=\"4\" MULTIPLE id=\"selected-sample\" style=\"width: 175px;font-size: 14px\">\n             </select>\n             </form>\n              </div>\n             \n              <div class=\"col-md-12\" style=\"margin-top:10px;text-align:right\">\n              <button id = \"delete-selected\" class=\"btn btn-xs btn-default\"><span class=\"glyphicon glyphicon-remove\" aria-hidden=\"true\"></span> Remove</button>\n             <button id = \"clear-all\" class=\"btn btn-xs btn-danger\"><span class=\"glyphicon glyphicon-trash\" aria-hidden=\"true\"></span> Clear</button>\n              </div>\n              \n              <div class=\"col-md-12\" id=\"warning\" style=\"margin-top:10px\"></div>\n             \n             <!-- Select type of analysis -->\n             \n            <div class=\"col-md-12 title\" style=\"margin-top:10px;margin-bottom:10px;\">Analysis</div>\n             <div class=\"col-md-12 radio\" style=\"font-size:10px;margin:0px\">\n            <label><input type=\"radio\" name=\"analysis\" value=\"scatterplotanalysis\" checked=\"checked\">Mutations and Expressions</label>\n            </div>\n             <div class=\"col-md-12 radio\" style=\"font-size:10px;margin:0px\">\n            <label><input type=\"radio\" name=\"analysis\" value=\"pcanalysis\">Principal Components</label>\n            </div>\n             <div class=\"col-md-12 radio\" style=\"font-size:10px;margin:0px\">\n            <label><input type=\"radio\" name=\"analysis\" value=\"heatmapanalysis\">Heat Map</label>\n            </div>\n             \n             <div class=\"col-md-12\" style=\"margin-top:10px;text-align: center\">\n              <button id = \"compareButton\" class=\"btn btn-success\">Compare</button>\n             </div>\n             \n              <div class=\"col-md-12\"><hr></div>\n            </div>\n            <div class=\"row tip\" style=\"margin-top:0px;\"></div>\n        </div>\n        \n            <div class=\"col-md-10\">\n                <div id = \"svgs-all\" class=\"col-md-12\"></div>   \n            </div>\n        </div>\n</div>";
 },"useData":true});
 
 this["Templates"]["pca"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
@@ -2070,7 +2160,7 @@ this["Templates"]["tooltip"] = Handlebars.template({"1":function(container,depth
 
 if (typeof exports === 'object' && exports) {module.exports = this["Templates"];}
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"handlebars":68}],14:[function(require,module,exports){
+},{"handlebars":69}],15:[function(require,module,exports){
 //Libs
 var d3 = require('d3');
 
@@ -2084,6 +2174,7 @@ var pcPlot = require('../svgs/pcPlot.js');
 var PCBC = require('../svgs/pcbarchart.js');
 var parserSP = require('./parserSP.js');
 var parserPCA = require('./parserPCA.js');
+var parserHeatmap = require('./parserHeatmap.js');
 var mainframe = require('./mainframe.js');
 mainframe = new mainframe();
 
@@ -2274,9 +2365,66 @@ function drawPCA(data,init,type){
     
 }
 
+function heatmapcompareData(){
+    
+    var sametype = true,
+        init = "all",
+        count=1,
+        type;
+
+    //Check the type of selected samples
+    $("#selected-sample option").each(function(i){
+        if (count === 1) type = $(this).val().split("/")[2];
+        else if ($(this).val().split("/")[2] != type) sametype = false;
+        count = count+1;
+    });
+    
+    //Check for error
+    if (type != "TCGA") onError(new Error("Please select samples only from the TCGA project"));
+    if ($('#selected-sample').find('option').length < 3) onError(new Error("Please add at least 3 samples"));
+    if (sametype === false) onError(new Error("Please select samples from the same project"));
+
+    //Get samples
+    var samples = document.getElementById('selected-sample');
+
+    for (var i = 0; i < samples.options.length; i++) { 
+        samples.options[i].selected = true; 
+    } 
+
+    var parameter = $("#selected-sample").serialize() + '&filetype=' + type;
+    
+    console.log(parameter);
+    //Remove everything on svgs-all div and render the div for PCA plot and the side bar, ie the one for folders
+    //This has to be down before the parser since the parser will get info for files and update the folders
+    var el = document.getElementById( 'svgs-all' );
+    while (el.hasChildNodes()) {el.removeChild(el.firstChild);}
+    mainframe.setElement('#svgs-all').renderheatmap();
+    
+    var parent = document.getElementById('heatmap'); 
+    var div = document.createElement('div');
+    div.setAttribute("align", "center");
+    div.innerHTML ='<img id="loading" src="./img/loading.gif">';
+    parent.appendChild(div);
+    
+    //Pass to parser
+    parserHeatmap.parse(drawHeatmap,onError,init,type,parameter);
+    
+
+}
+
+function drawHeatmap(url,init,type){
+    hideLoading();
+    var parent = document.getElementById('heatmap');
+    while (parent.firstChild) {
+        parent.removeChild(parent.firstChild);
+    }   
+    var div = document.createElement('div');
+    div.innerHTML ='<iframe src="'+url+'" frameborder="0" height="100%" width="100%"></iframe>';
+    parent.appendChild(div);
+}
+
 function hideLoading() {
     d3.select('#loading').remove();
-    d3.select('#cb').remove();
 }
 
 //Function that might be called by other func if something went wrong
@@ -2289,7 +2437,8 @@ function onError(res) {
 d3.select('#compareButton').on('click', function(){
     var analysis = document.querySelector('input[name = "analysis"]:checked').value;
     if (analysis == "scatterplotanalysis") vis.spcompareData();
-    else pcacompareData();
+    else if (analysis == "pcanalysis") pcacompareData();
+    else heatmapcompareData();
 });
 
 
@@ -2310,7 +2459,7 @@ d3.select('#compareButton').on('click', function(){
 
 
 module.exports = vis;
-},{"../svgs/barchart.js":3,"../svgs/heatmap.js":4,"../svgs/pcPlot.js":5,"../svgs/pcbarchart.js":6,"../svgs/pcdata.js":7,"../svgs/scatterplot.js":8,"./mainframe.js":9,"./parserPCA.js":11,"./parserSP.js":12,"d3":38}],15:[function(require,module,exports){
+},{"../svgs/barchart.js":3,"../svgs/heatmap.js":4,"../svgs/pcPlot.js":5,"../svgs/pcbarchart.js":6,"../svgs/pcdata.js":7,"../svgs/scatterplot.js":8,"./mainframe.js":9,"./parserHeatmap.js":11,"./parserPCA.js":12,"./parserSP.js":13,"d3":39}],16:[function(require,module,exports){
 (function (process,__filename){
 /** vim: et:ts=4:sw=4:sts=4
  * @license amdefine 1.0.0 Copyright (c) 2011-2015, The Dojo Foundation All Rights Reserved.
@@ -2615,9 +2764,9 @@ function amdefine(module, requireFn) {
 module.exports = amdefine;
 
 }).call(this,require('_process'),"/node_modules/amdefine/amdefine.js")
-},{"_process":82,"path":81}],16:[function(require,module,exports){
+},{"_process":83,"path":82}],17:[function(require,module,exports){
 module.exports = require('./lib/axios');
-},{"./lib/axios":18}],17:[function(require,module,exports){
+},{"./lib/axios":19}],18:[function(require,module,exports){
 'use strict';
 
 var utils = require('./../utils');
@@ -2749,7 +2898,7 @@ module.exports = function xhrAdapter(resolve, reject, config) {
   request.send(requestData);
 };
 
-},{"./../helpers/btoa":23,"./../helpers/buildURL":24,"./../helpers/cookies":26,"./../helpers/isURLSameOrigin":28,"./../helpers/parseHeaders":29,"./../helpers/transformData":31,"./../utils":32}],18:[function(require,module,exports){
+},{"./../helpers/btoa":24,"./../helpers/buildURL":25,"./../helpers/cookies":27,"./../helpers/isURLSameOrigin":29,"./../helpers/parseHeaders":30,"./../helpers/transformData":32,"./../utils":33}],19:[function(require,module,exports){
 'use strict';
 
 var defaults = require('./defaults');
@@ -2871,7 +3020,7 @@ utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
   axios[method] = bind(Axios.prototype[method], defaultInstance);
 });
 
-},{"./core/InterceptorManager":19,"./core/dispatchRequest":20,"./defaults":21,"./helpers/bind":22,"./helpers/combineURLs":25,"./helpers/isAbsoluteURL":27,"./helpers/spread":30,"./helpers/transformData":31,"./utils":32}],19:[function(require,module,exports){
+},{"./core/InterceptorManager":20,"./core/dispatchRequest":21,"./defaults":22,"./helpers/bind":23,"./helpers/combineURLs":26,"./helpers/isAbsoluteURL":28,"./helpers/spread":31,"./helpers/transformData":32,"./utils":33}],20:[function(require,module,exports){
 'use strict';
 
 var utils = require('./../utils');
@@ -2925,7 +3074,7 @@ InterceptorManager.prototype.forEach = function forEach(fn) {
 
 module.exports = InterceptorManager;
 
-},{"./../utils":32}],20:[function(require,module,exports){
+},{"./../utils":33}],21:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -2963,7 +3112,7 @@ module.exports = function dispatchRequest(config) {
 
 
 }).call(this,require('_process'))
-},{"../adapters/http":17,"../adapters/xhr":17,"_process":82}],21:[function(require,module,exports){
+},{"../adapters/http":18,"../adapters/xhr":18,"_process":83}],22:[function(require,module,exports){
 'use strict';
 
 var utils = require('./utils');
@@ -3028,7 +3177,7 @@ module.exports = {
   xsrfHeaderName: 'X-XSRF-TOKEN'
 };
 
-},{"./utils":32}],22:[function(require,module,exports){
+},{"./utils":33}],23:[function(require,module,exports){
 'use strict';
 
 module.exports = function bind(fn, thisArg) {
@@ -3041,7 +3190,7 @@ module.exports = function bind(fn, thisArg) {
   };
 };
 
-},{}],23:[function(require,module,exports){
+},{}],24:[function(require,module,exports){
 'use strict';
 
 // btoa polyfill for IE<10 courtesy https://github.com/davidchambers/Base64.js
@@ -3079,7 +3228,7 @@ function btoa(input) {
 
 module.exports = btoa;
 
-},{}],24:[function(require,module,exports){
+},{}],25:[function(require,module,exports){
 'use strict';
 
 var utils = require('./../utils');
@@ -3148,7 +3297,7 @@ module.exports = function buildURL(url, params, paramsSerializer) {
 };
 
 
-},{"./../utils":32}],25:[function(require,module,exports){
+},{"./../utils":33}],26:[function(require,module,exports){
 'use strict';
 
 /**
@@ -3162,7 +3311,7 @@ module.exports = function combineURLs(baseURL, relativeURL) {
   return baseURL.replace(/\/+$/, '') + '/' + relativeURL.replace(/^\/+/, '');
 };
 
-},{}],26:[function(require,module,exports){
+},{}],27:[function(require,module,exports){
 'use strict';
 
 var utils = require('./../utils');
@@ -3217,7 +3366,7 @@ module.exports = (
   })()
 );
 
-},{"./../utils":32}],27:[function(require,module,exports){
+},{"./../utils":33}],28:[function(require,module,exports){
 'use strict';
 
 /**
@@ -3233,7 +3382,7 @@ module.exports = function isAbsoluteURL(url) {
   return /^([a-z][a-z\d\+\-\.]*:)?\/\//i.test(url);
 };
 
-},{}],28:[function(require,module,exports){
+},{}],29:[function(require,module,exports){
 'use strict';
 
 var utils = require('./../utils');
@@ -3303,7 +3452,7 @@ module.exports = (
   })()
 );
 
-},{"./../utils":32}],29:[function(require,module,exports){
+},{"./../utils":33}],30:[function(require,module,exports){
 'use strict';
 
 var utils = require('./../utils');
@@ -3342,7 +3491,7 @@ module.exports = function parseHeaders(headers) {
   return parsed;
 };
 
-},{"./../utils":32}],30:[function(require,module,exports){
+},{"./../utils":33}],31:[function(require,module,exports){
 'use strict';
 
 /**
@@ -3371,7 +3520,7 @@ module.exports = function spread(callback) {
   };
 };
 
-},{}],31:[function(require,module,exports){
+},{}],32:[function(require,module,exports){
 'use strict';
 
 var utils = require('./../utils');
@@ -3393,7 +3542,7 @@ module.exports = function transformData(data, headers, fns) {
   return data;
 };
 
-},{"./../utils":32}],32:[function(require,module,exports){
+},{"./../utils":33}],33:[function(require,module,exports){
 'use strict';
 
 /*global toString:true*/
@@ -3639,7 +3788,7 @@ module.exports = {
   trim: trim
 };
 
-},{}],33:[function(require,module,exports){
+},{}],34:[function(require,module,exports){
 (function (global){
 //     Backbone.js 1.3.3
 
@@ -5563,7 +5712,7 @@ module.exports = {
 });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"jquery":80,"underscore":34}],34:[function(require,module,exports){
+},{"jquery":81,"underscore":35}],35:[function(require,module,exports){
 //     Underscore.js 1.8.3
 //     http://underscorejs.org
 //     (c) 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
@@ -7113,9 +7262,9 @@ module.exports = {
   }
 }.call(this));
 
-},{}],35:[function(require,module,exports){
-
 },{}],36:[function(require,module,exports){
+
+},{}],37:[function(require,module,exports){
 // This product includes color specifications and designs developed by Cynthia Brewer (http://colorbrewer.org/).
 // JavaScript specs as packaged in the D3 library (d3js.org). Please see license at http://colorbrewer.org/export/LICENSE.txt
 !function() {
@@ -7432,10 +7581,10 @@ if (typeof define === "function" && define.amd) {
 
 }();
 
-},{}],37:[function(require,module,exports){
+},{}],38:[function(require,module,exports){
 module.exports = require('./colorbrewer.js');
 
-},{"./colorbrewer.js":36}],38:[function(require,module,exports){
+},{"./colorbrewer.js":37}],39:[function(require,module,exports){
 !function() {
   var d3 = {
     version: "3.5.16"
@@ -16990,7 +17139,7 @@ module.exports = require('./colorbrewer.js');
   });
   if (typeof define === "function" && define.amd) this.d3 = d3, define(d3); else if (typeof module === "object" && module.exports) module.exports = d3; else this.d3 = d3;
 }();
-},{}],39:[function(require,module,exports){
+},{}],40:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -17057,7 +17206,7 @@ exports['default'] = inst;
 module.exports = exports['default'];
 
 
-},{"./handlebars.runtime":40,"./handlebars/compiler/ast":42,"./handlebars/compiler/base":43,"./handlebars/compiler/compiler":45,"./handlebars/compiler/javascript-compiler":47,"./handlebars/compiler/visitor":50,"./handlebars/no-conflict":64}],40:[function(require,module,exports){
+},{"./handlebars.runtime":41,"./handlebars/compiler/ast":43,"./handlebars/compiler/base":44,"./handlebars/compiler/compiler":46,"./handlebars/compiler/javascript-compiler":48,"./handlebars/compiler/visitor":51,"./handlebars/no-conflict":65}],41:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -17125,7 +17274,7 @@ exports['default'] = inst;
 module.exports = exports['default'];
 
 
-},{"./handlebars/base":41,"./handlebars/exception":54,"./handlebars/no-conflict":64,"./handlebars/runtime":65,"./handlebars/safe-string":66,"./handlebars/utils":67}],41:[function(require,module,exports){
+},{"./handlebars/base":42,"./handlebars/exception":55,"./handlebars/no-conflict":65,"./handlebars/runtime":66,"./handlebars/safe-string":67,"./handlebars/utils":68}],42:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -17231,7 +17380,7 @@ exports.createFrame = _utils.createFrame;
 exports.logger = _logger2['default'];
 
 
-},{"./decorators":52,"./exception":54,"./helpers":55,"./logger":63,"./utils":67}],42:[function(require,module,exports){
+},{"./decorators":53,"./exception":55,"./helpers":56,"./logger":64,"./utils":68}],43:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -17264,7 +17413,7 @@ exports['default'] = AST;
 module.exports = exports['default'];
 
 
-},{}],43:[function(require,module,exports){
+},{}],44:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -17314,7 +17463,7 @@ function parse(input, options) {
 }
 
 
-},{"../utils":67,"./helpers":46,"./parser":48,"./whitespace-control":51}],44:[function(require,module,exports){
+},{"../utils":68,"./helpers":47,"./parser":49,"./whitespace-control":52}],45:[function(require,module,exports){
 /* global define */
 'use strict';
 
@@ -17482,7 +17631,7 @@ exports['default'] = CodeGen;
 module.exports = exports['default'];
 
 
-},{"../utils":67,"source-map":69}],45:[function(require,module,exports){
+},{"../utils":68,"source-map":70}],46:[function(require,module,exports){
 /* eslint-disable new-cap */
 
 'use strict';
@@ -18056,7 +18205,7 @@ function transformLiteralToPath(sexpr) {
 }
 
 
-},{"../exception":54,"../utils":67,"./ast":42}],46:[function(require,module,exports){
+},{"../exception":55,"../utils":68,"./ast":43}],47:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -18288,7 +18437,7 @@ function preparePartialBlock(open, program, close, locInfo) {
 }
 
 
-},{"../exception":54}],47:[function(require,module,exports){
+},{"../exception":55}],48:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -19416,7 +19565,7 @@ exports['default'] = JavaScriptCompiler;
 module.exports = exports['default'];
 
 
-},{"../base":41,"../exception":54,"../utils":67,"./code-gen":44}],48:[function(require,module,exports){
+},{"../base":42,"../exception":55,"../utils":68,"./code-gen":45}],49:[function(require,module,exports){
 /* istanbul ignore next */
 /* Jison generated parser */
 "use strict";
@@ -20156,7 +20305,7 @@ var handlebars = (function () {
 exports['default'] = handlebars;
 
 
-},{}],49:[function(require,module,exports){
+},{}],50:[function(require,module,exports){
 /* eslint-disable new-cap */
 'use strict';
 
@@ -20344,7 +20493,7 @@ PrintVisitor.prototype.HashPair = function (pair) {
 /* eslint-enable new-cap */
 
 
-},{"./visitor":50}],50:[function(require,module,exports){
+},{"./visitor":51}],51:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -20486,7 +20635,7 @@ exports['default'] = Visitor;
 module.exports = exports['default'];
 
 
-},{"../exception":54}],51:[function(require,module,exports){
+},{"../exception":55}],52:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -20709,7 +20858,7 @@ exports['default'] = WhitespaceControl;
 module.exports = exports['default'];
 
 
-},{"./visitor":50}],52:[function(require,module,exports){
+},{"./visitor":51}],53:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -20727,7 +20876,7 @@ function registerDefaultDecorators(instance) {
 }
 
 
-},{"./decorators/inline":53}],53:[function(require,module,exports){
+},{"./decorators/inline":54}],54:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -20758,7 +20907,7 @@ exports['default'] = function (instance) {
 module.exports = exports['default'];
 
 
-},{"../utils":67}],54:[function(require,module,exports){
+},{"../utils":68}],55:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -20800,7 +20949,7 @@ exports['default'] = Exception;
 module.exports = exports['default'];
 
 
-},{}],55:[function(require,module,exports){
+},{}],56:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -20848,7 +20997,7 @@ function registerDefaultHelpers(instance) {
 }
 
 
-},{"./helpers/block-helper-missing":56,"./helpers/each":57,"./helpers/helper-missing":58,"./helpers/if":59,"./helpers/log":60,"./helpers/lookup":61,"./helpers/with":62}],56:[function(require,module,exports){
+},{"./helpers/block-helper-missing":57,"./helpers/each":58,"./helpers/helper-missing":59,"./helpers/if":60,"./helpers/log":61,"./helpers/lookup":62,"./helpers/with":63}],57:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -20889,7 +21038,7 @@ exports['default'] = function (instance) {
 module.exports = exports['default'];
 
 
-},{"../utils":67}],57:[function(require,module,exports){
+},{"../utils":68}],58:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -20985,7 +21134,7 @@ exports['default'] = function (instance) {
 module.exports = exports['default'];
 
 
-},{"../exception":54,"../utils":67}],58:[function(require,module,exports){
+},{"../exception":55,"../utils":68}],59:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -21012,7 +21161,7 @@ exports['default'] = function (instance) {
 module.exports = exports['default'];
 
 
-},{"../exception":54}],59:[function(require,module,exports){
+},{"../exception":55}],60:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -21043,7 +21192,7 @@ exports['default'] = function (instance) {
 module.exports = exports['default'];
 
 
-},{"../utils":67}],60:[function(require,module,exports){
+},{"../utils":68}],61:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -21071,7 +21220,7 @@ exports['default'] = function (instance) {
 module.exports = exports['default'];
 
 
-},{}],61:[function(require,module,exports){
+},{}],62:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -21085,7 +21234,7 @@ exports['default'] = function (instance) {
 module.exports = exports['default'];
 
 
-},{}],62:[function(require,module,exports){
+},{}],63:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -21120,7 +21269,7 @@ exports['default'] = function (instance) {
 module.exports = exports['default'];
 
 
-},{"../utils":67}],63:[function(require,module,exports){
+},{"../utils":68}],64:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -21169,7 +21318,7 @@ exports['default'] = logger;
 module.exports = exports['default'];
 
 
-},{"./utils":67}],64:[function(require,module,exports){
+},{"./utils":68}],65:[function(require,module,exports){
 (function (global){
 /* global window */
 'use strict';
@@ -21193,7 +21342,7 @@ module.exports = exports['default'];
 
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],65:[function(require,module,exports){
+},{}],66:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -21487,7 +21636,7 @@ function executeDecorators(fn, prog, container, depths, data, blockParams) {
 }
 
 
-},{"./base":41,"./exception":54,"./utils":67}],66:[function(require,module,exports){
+},{"./base":42,"./exception":55,"./utils":68}],67:[function(require,module,exports){
 // Build out our basic SafeString type
 'use strict';
 
@@ -21504,7 +21653,7 @@ exports['default'] = SafeString;
 module.exports = exports['default'];
 
 
-},{}],67:[function(require,module,exports){
+},{}],68:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -21630,7 +21779,7 @@ function appendContextPath(contextPath, id) {
 }
 
 
-},{}],68:[function(require,module,exports){
+},{}],69:[function(require,module,exports){
 // USAGE:
 // var handlebars = require('handlebars');
 /* eslint-disable no-var */
@@ -21657,7 +21806,7 @@ if (typeof require !== 'undefined' && require.extensions) {
   require.extensions['.hbs'] = extension;
 }
 
-},{"../dist/cjs/handlebars":39,"../dist/cjs/handlebars/compiler/printer":49,"fs":35}],69:[function(require,module,exports){
+},{"../dist/cjs/handlebars":40,"../dist/cjs/handlebars/compiler/printer":50,"fs":36}],70:[function(require,module,exports){
 /*
  * Copyright 2009-2011 Mozilla Foundation and contributors
  * Licensed under the New BSD license. See LICENSE.txt or:
@@ -21667,7 +21816,7 @@ exports.SourceMapGenerator = require('./source-map/source-map-generator').Source
 exports.SourceMapConsumer = require('./source-map/source-map-consumer').SourceMapConsumer;
 exports.SourceNode = require('./source-map/source-node').SourceNode;
 
-},{"./source-map/source-map-consumer":76,"./source-map/source-map-generator":77,"./source-map/source-node":78}],70:[function(require,module,exports){
+},{"./source-map/source-map-consumer":77,"./source-map/source-map-generator":78,"./source-map/source-node":79}],71:[function(require,module,exports){
 /* -*- Mode: js; js-indent-level: 2; -*- */
 /*
  * Copyright 2011 Mozilla Foundation and contributors
@@ -21776,7 +21925,7 @@ define(function (require, exports, module) {
 
 });
 
-},{"./util":79,"amdefine":15}],71:[function(require,module,exports){
+},{"./util":80,"amdefine":16}],72:[function(require,module,exports){
 /* -*- Mode: js; js-indent-level: 2; -*- */
 /*
  * Copyright 2011 Mozilla Foundation and contributors
@@ -21924,7 +22073,7 @@ define(function (require, exports, module) {
 
 });
 
-},{"./base64":72,"amdefine":15}],72:[function(require,module,exports){
+},{"./base64":73,"amdefine":16}],73:[function(require,module,exports){
 /* -*- Mode: js; js-indent-level: 2; -*- */
 /*
  * Copyright 2011 Mozilla Foundation and contributors
@@ -21999,7 +22148,7 @@ define(function (require, exports, module) {
 
 });
 
-},{"amdefine":15}],73:[function(require,module,exports){
+},{"amdefine":16}],74:[function(require,module,exports){
 /* -*- Mode: js; js-indent-level: 2; -*- */
 /*
  * Copyright 2011 Mozilla Foundation and contributors
@@ -22118,7 +22267,7 @@ define(function (require, exports, module) {
 
 });
 
-},{"amdefine":15}],74:[function(require,module,exports){
+},{"amdefine":16}],75:[function(require,module,exports){
 /* -*- Mode: js; js-indent-level: 2; -*- */
 /*
  * Copyright 2014 Mozilla Foundation and contributors
@@ -22206,7 +22355,7 @@ define(function (require, exports, module) {
 
 });
 
-},{"./util":79,"amdefine":15}],75:[function(require,module,exports){
+},{"./util":80,"amdefine":16}],76:[function(require,module,exports){
 /* -*- Mode: js; js-indent-level: 2; -*- */
 /*
  * Copyright 2011 Mozilla Foundation and contributors
@@ -22328,7 +22477,7 @@ define(function (require, exports, module) {
 
 });
 
-},{"amdefine":15}],76:[function(require,module,exports){
+},{"amdefine":16}],77:[function(require,module,exports){
 /* -*- Mode: js; js-indent-level: 2; -*- */
 /*
  * Copyright 2011 Mozilla Foundation and contributors
@@ -23407,7 +23556,7 @@ define(function (require, exports, module) {
 
 });
 
-},{"./array-set":70,"./base64-vlq":71,"./binary-search":73,"./quick-sort":75,"./util":79,"amdefine":15}],77:[function(require,module,exports){
+},{"./array-set":71,"./base64-vlq":72,"./binary-search":74,"./quick-sort":76,"./util":80,"amdefine":16}],78:[function(require,module,exports){
 /* -*- Mode: js; js-indent-level: 2; -*- */
 /*
  * Copyright 2011 Mozilla Foundation and contributors
@@ -23808,7 +23957,7 @@ define(function (require, exports, module) {
 
 });
 
-},{"./array-set":70,"./base64-vlq":71,"./mapping-list":74,"./util":79,"amdefine":15}],78:[function(require,module,exports){
+},{"./array-set":71,"./base64-vlq":72,"./mapping-list":75,"./util":80,"amdefine":16}],79:[function(require,module,exports){
 /* -*- Mode: js; js-indent-level: 2; -*- */
 /*
  * Copyright 2011 Mozilla Foundation and contributors
@@ -24224,7 +24373,7 @@ define(function (require, exports, module) {
 
 });
 
-},{"./source-map-generator":77,"./util":79,"amdefine":15}],79:[function(require,module,exports){
+},{"./source-map-generator":78,"./util":80,"amdefine":16}],80:[function(require,module,exports){
 /* -*- Mode: js; js-indent-level: 2; -*- */
 /*
  * Copyright 2011 Mozilla Foundation and contributors
@@ -24596,7 +24745,7 @@ define(function (require, exports, module) {
 
 });
 
-},{"amdefine":15}],80:[function(require,module,exports){
+},{"amdefine":16}],81:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v3.0.0
  * https://jquery.com/
@@ -34635,7 +34784,7 @@ if ( !noGlobal ) {
 return jQuery;
 } ) );
 
-},{}],81:[function(require,module,exports){
+},{}],82:[function(require,module,exports){
 (function (process){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -34863,7 +35012,7 @@ var substr = 'ab'.substr(-1) === 'b'
 ;
 
 }).call(this,require('_process'))
-},{"_process":82}],82:[function(require,module,exports){
+},{"_process":83}],83:[function(require,module,exports){
 // shim for using process in browser
 
 var process = module.exports = {};
@@ -34956,7 +35105,7 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}],83:[function(require,module,exports){
+},{}],84:[function(require,module,exports){
 module.exports = function(THREE) {
 	var MOUSE = THREE.MOUSE
 	if (!MOUSE)
@@ -36077,7 +36226,7 @@ module.exports = function(THREE) {
 	return OrbitControls;
 }
 
-},{}],84:[function(require,module,exports){
+},{}],85:[function(require,module,exports){
 // File:src/Three.js
 
 /**
@@ -77951,7 +78100,7 @@ THREE.MorphBlendMesh.prototype.update = function ( delta ) {
 };
 
 
-},{}],85:[function(require,module,exports){
+},{}],86:[function(require,module,exports){
 //     Underscore.js 1.7.0
 //     http://underscorejs.org
 //     (c) 2009-2014 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors

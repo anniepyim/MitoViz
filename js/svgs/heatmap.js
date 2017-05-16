@@ -85,9 +85,9 @@ heatmap.draw = function (jsondata, samplelist, genelist,colorrange) {
     });
 
     
-    var HMmargin = {top: 60, right: 0, bottom: 50, left: 60},
+    var HMmargin = {top: 60, right: 0, bottom: 50, left: 70},
         svgWidth = 1200,
-        svgHeight = 450,
+        svgHeight = 500,
         HMwidth = svgWidth - HMmargin.left - HMmargin.right, 
         HMheight = svgHeight - HMmargin.top - HMmargin.bottom,
         gridheight = HMheight / samplelist.length, 

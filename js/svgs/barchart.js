@@ -20,8 +20,8 @@ var newdata;
 
 BC.draw = function (jsondata,colorrange) {
     
-    var BARmargin = {top: 20, right: 0, bottom: 30, left: 0},
-    svgHeight = 450,
+    var BARmargin = {top: 20, right: 0, bottom: 0, left: 0},
+    svgHeight = 600,
     svgWidth = 300,
     BARwidth = svgWidth - BARmargin.left - BARmargin.right,
     BARheight = svgHeight - BARmargin.top - BARmargin.bottom;
@@ -42,7 +42,11 @@ BC.draw = function (jsondata,colorrange) {
         .append("g")
         .attr("transform", "translate(" + BARmargin.left + "," + BARmargin.top + ")");
         
-    var barH = BARheight/17;
+    var nested_data = d3.nest()
+    .key(function(d) { return d.process; })
+    .entries(jsondata);
+    
+    var barH = BARheight/(nested_data.length);
     
     newdata=[];
     

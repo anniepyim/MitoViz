@@ -14,6 +14,8 @@ module.exports = Backbone.View.extend({
     
     pcatext: templates.pcatext,
     
+    heatmap: templates.heatmap,
+    
     render: function(id){
         var obj = {};
         obj.id = id;
@@ -33,6 +35,11 @@ module.exports = Backbone.View.extend({
     
     renderscplot: function(id){
         this.$el.append(this.scplot());
+        return this;
+    },
+    
+    renderheatmap: function(id){
+        this.$el.append(this.heatmap());
         return this;
     }
 });
