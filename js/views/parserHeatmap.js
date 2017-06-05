@@ -1,7 +1,7 @@
 
 
 function parserHeatmap(){}   
-function parse(drawHeatmap,onError,init,type,parameter){
+function parse(drawHeatmap,onError,init,type,parameter,sessionid){
     
 if(init == "all"){
         
@@ -14,7 +14,7 @@ if(init == "all"){
             success: function () {
 
                 //Retrieve files result from the python+R script runs and 
-                var targeturl = './data/heatmap/';
+                var targeturl = './data/heatmap/'+sessionid+'/';
                 var folderurl = '.'+targeturl;
                 var htmltext = "",
                 value = "",
@@ -36,7 +36,7 @@ if(init == "all"){
 
                     $("#heatmapfolders").html(htmltext);
                     $('#heatmapfolders').selectpicker('refresh');
-                    $('#heatmapfolders').find('[value="./data/heatmap/Apoptosis.html"]').prop('selected',true);
+                    $('#heatmapfolders').find('[value="./data/heatmap/'+sessionid+'/Apoptosis.html"]').prop('selected',true);
                     $('#heatmapfolders').selectpicker('refresh');
                   },
                     error: function(e){
@@ -50,7 +50,7 @@ if(init == "all"){
                 });
                 
                 //call the function to drawPCA
-                drawHeatmap("./data/heatmap/Apoptosis.html",init,type);
+                drawHeatmap("./data/heatmap/"+sessionid+"/Apoptosis.html",init,type);
             },
             error: function(e){
                 onError(e);

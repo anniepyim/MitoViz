@@ -1786,8 +1786,8 @@ function issueWarning(){
     
     if ($('#selected-sample').find('option').length > 6 && flag == "SP")
         document.getElementById('warning').innerHTML="<font color=\"red\">No more than 6 samples!";
-    else if ($('#selected-sample').find('option').length > 55 && flag == "heatmap")
-        document.getElementById('warning').innerHTML="<font color=\"red\">No more than 50 samples!";
+    //else if ($('#selected-sample').find('option').length > 55 && flag == "heatmap")
+    //    document.getElementById('warning').innerHTML="<font color=\"red\">No more than 50 samples!";
     else
         document.getElementById('warning').innerHTML="";
 }
@@ -1799,7 +1799,7 @@ function issueWarning(){
 
 
 function parserHeatmap(){}   
-function parse(drawHeatmap,onError,init,type,parameter){
+function parse(drawHeatmap,onError,init,type,parameter,sessionid){
     
 if(init == "all"){
         
@@ -1812,7 +1812,7 @@ if(init == "all"){
             success: function () {
 
                 //Retrieve files result from the python+R script runs and 
-                var targeturl = './data/heatmap/';
+                var targeturl = './data/heatmap/'+sessionid+'/';
                 var folderurl = '.'+targeturl;
                 var htmltext = "",
                 value = "",
@@ -1834,7 +1834,7 @@ if(init == "all"){
 
                     $("#heatmapfolders").html(htmltext);
                     $('#heatmapfolders').selectpicker('refresh');
-                    $('#heatmapfolders').find('[value="./data/heatmap/Apoptosis.html"]').prop('selected',true);
+                    $('#heatmapfolders').find('[value="./data/heatmap/'+sessionid+'/Apoptosis.html"]').prop('selected',true);
                     $('#heatmapfolders').selectpicker('refresh');
                   },
                     error: function(e){
@@ -1848,7 +1848,7 @@ if(init == "all"){
                 });
                 
                 //call the function to drawPCA
-                drawHeatmap("./data/heatmap/Apoptosis.html",init,type);
+                drawHeatmap("./data/heatmap/"+sessionid+"/Apoptosis.html",init,type);
             },
             error: function(e){
                 onError(e);
@@ -1877,7 +1877,7 @@ function parserPCA(){}
 
    
    
-function parse(drawPCA,onError,init,type,parameter){
+function parse(drawPCA,onError,init,type,parameter,sessionid){
     
     if(init == "all"){
         
@@ -1890,7 +1890,7 @@ function parse(drawPCA,onError,init,type,parameter){
             success: function (result) {
 
                 //Retrieve files result from the python+R script runs and 
-                var targeturl = './data/PCA/';
+                var targeturl = './data/PCA/'+sessionid+'/';
                 var folderurl = '.'+targeturl;
                 var htmltext = "",
                 value = "",
@@ -1912,7 +1912,7 @@ function parse(drawPCA,onError,init,type,parameter){
 
                     $("#pcafolders").html(htmltext);
                     $('#pcafolders').selectpicker('refresh');
-                    $('#pcafolders').find('[value="./data/PCA/All Processes-pca.json"]').prop('selected',true);
+                    $('#pcafolders').find('[value="./data/PCA/'+sessionid+'/All Processes-pca.json"]').prop('selected',true);
                     $('#pcafolders').selectpicker('refresh');
                   },
                     error: function(e){
@@ -2242,6 +2242,9 @@ function drawSP(data,sccolor) {
 
 function pcacompareData(){
     
+    var this_js_script = $('script[src*=App_compare]');
+    var sessionid = this_js_script.attr('session-id');
+    
     var sametype = true,
         init = "all",
         count=1,
@@ -2265,7 +2268,7 @@ function pcacompareData(){
         samples.options[i].selected = true; 
     } 
 
-    var parameter = $("#selected-sample").serialize() + '&filetype=' + type;
+    var parameter = $("#selected-sample").serialize() + '&filetype=' + type +'&sessionid='+ sessionid;
     
     //Remove everything on svgs-all div and render the div for PCA plot and the side bar, ie the one for folders
     //This has to be down before the parser since the parser will get info for files and update the folders
@@ -2274,7 +2277,7 @@ function pcacompareData(){
     mainframe.setElement('#svgs-all').renderpca();
 
     //Pass to parser
-    parserPCA.parse(drawPCA,onError,init,type,parameter);
+    parserPCA.parse(drawPCA,onError,init,type,parameter,sessionid);
     
 
 }
@@ -2367,6 +2370,9 @@ function drawPCA(data,init,type){
 
 function heatmapcompareData(){
     
+    var this_js_script = $('script[src*=App_compare]');
+    var sessionid = this_js_script.attr('session-id');
+    
     var sametype = true,
         init = "all",
         count=1,
@@ -2380,7 +2386,7 @@ function heatmapcompareData(){
     });
     
     //Check for error
-    if (type != "TCGA") onError(new Error("Please select samples only from the TCGA project"));
+   // if (type != "TCGA") onError(new Error("Please select samples only from the TCGA project"));
     if ($('#selected-sample').find('option').length < 3) onError(new Error("Please add at least 3 samples"));
     if (sametype === false) onError(new Error("Please select samples from the same project"));
 
@@ -2391,7 +2397,7 @@ function heatmapcompareData(){
         samples.options[i].selected = true; 
     } 
 
-    var parameter = $("#selected-sample").serialize() + '&filetype=' + type;
+    var parameter = $("#selected-sample").serialize() + '&filetype=' + type + '&sessionid='+ sessionid;
     
     console.log(parameter);
     //Remove everything on svgs-all div and render the div for PCA plot and the side bar, ie the one for folders
@@ -2407,7 +2413,7 @@ function heatmapcompareData(){
     parent.appendChild(div);
     
     //Pass to parser
-    parserHeatmap.parse(drawHeatmap,onError,init,type,parameter);
+    parserHeatmap.parse(drawHeatmap,onError,init,type,parameter,sessionid);
     
 
 }
