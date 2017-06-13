@@ -17,7 +17,7 @@ function parse(drawPCA,onError,init,type,parameter,sessionid){
             success: function (result) {
 
                 //Retrieve files result from the python+R script runs and 
-                var targeturl = './data/PCA/'+sessionid+'/';
+                var targeturl = './data/user_uploads/'+sessionid+'/PCA/';
                 var folderurl = '.'+targeturl;
                 var htmltext = "",
                 value = "",
@@ -39,7 +39,7 @@ function parse(drawPCA,onError,init,type,parameter,sessionid){
 
                     $("#pcafolders").html(htmltext);
                     $('#pcafolders').selectpicker('refresh');
-                    $('#pcafolders').find('[value="./data/PCA/'+sessionid+'/All Processes-pca.json"]').prop('selected',true);
+                    $('#pcafolders').find('[value="./data/user_uploads/'+sessionid+'/PCA/All Processes-pca.json"]').prop('selected',true);
                     $('#pcafolders').selectpicker('refresh');
                   },
                     error: function(e){

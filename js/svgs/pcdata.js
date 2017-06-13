@@ -44,7 +44,7 @@ PCdata.init = function (indata,attr,pccolor,cat) {
     var sorting = function(a,b) {return d3.ascending(a[attr[i]], b[attr[i]]);};
     var naming = function (d) {d[colorname] = pccolor[attr[i]](d[attr[i]]);};
     //prdata - Assign color to each attribute
-    if(attr !== undefined){
+    if(pccolor !== undefined){
         for (i = 0; i < attr.length; i++){
             prdata.sort(sorting);
 

@@ -10,7 +10,10 @@ var PCBC = function (obj) {
     this.PCBCwrapped = obj;
 };
 
-PCBC.draw = function (indata,pccolor,attr,cat,svgname,panelname) {
+PCBC.draw = function (indata,pccolor,cat,svgname,panelname) {
+        
+        //console.log(pccolor);
+        //pccolor = d3.scale.ordinal().range(pccolor);
         
         //RENDER barchart panels for svgs
         var element = document.getElementById(panelname);

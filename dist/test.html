@@ -1,0 +1,34 @@
+<html>
+</html>
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script>
+
+type="aneuploidy";
+d3.json("../js/color.json", function(error,data) {
+    console.log(data[type]);
+    
+});
+    
+//PCA - TCGA
+//color samples by these attributes, max 5
+var attrTCGA = ['group','stage','gender','vital'];
+
+//color scheme for each attributes on PC plot and associated barcharts
+var pccolorTCGA = {};
+pccolorTCGA[attrTCGA[0]] = d3.scale.ordinal().range(["#ff004d","#ffff66","#a4ff52","#0067c6","#7d71e5"]);
+pccolorTCGA[attrTCGA[1]] = d3.scale.ordinal().range(["#a4ff52","#ffff66","#ff751a","#ff004d","#a7a5a5"]);
+pccolorTCGA[attrTCGA[2]] = d3.scale.ordinal().range(["#ff0074","#52a4ff"]);
+pccolorTCGA[attrTCGA[3]]= d3.scale.ordinal().range(["#33ff88","#a10000","#a7a5a5"]);
+pccolorTCGA[attrTCGA[4]]= d3.scale.ordinal().range(["#e6114c","#03a9f4","#a7a5a5"]);
+
+//PCA - Aneuploidy
+//color samples by these attributes, max 5
+var attrANEU = ['cellline','type'];
+
+//color scheme for each attributes on PC plot and associated barcharts
+var pccolorANEU = {};
+pccolorANEU[attrANEU[0]] = d3.scale.ordinal().range(["#ff0074","#52a4ff","#a7a5a5"]);
+pccolorANEU[attrANEU[1]] = d3.scale.ordinal().range(["#a4ff52","#ffff66","#ff751a","#ff004d","#a7a5a5"]);
+    
+//console.log(pccolorTCGA);
+</script>
