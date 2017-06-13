@@ -2266,7 +2266,7 @@ function pcacompareData(){
 
 function drawPCA(data,init,type){
     
-    d3.json("../js/color.json", function(error,pccolor) {
+    d3.json("main_files/color.json", function(error,pccolor) {
         var attr = [],
             thiscat,
             prdata;
