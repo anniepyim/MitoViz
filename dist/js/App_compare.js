@@ -1047,7 +1047,7 @@ PCBC.draw = function (indata,pccolor,cat,svgname,panelname) {
             })
           .on("click", function(d){
                 var currentOpacity = d3.select(this.parentNode).select('line').style('opacity');
-                currentOpacity = (currentOpacity === 0) ? 1 : 0;
+                currentOpacity = (currentOpacity == 0) ? 1 : 0;
                 d3.select(this.parentNode).select('line').style('opacity',currentOpacity);
                 addOrRemoveCriteria(criteria,d.key,currentOpacity);
             });
@@ -1059,7 +1059,7 @@ PCBC.draw = function (indata,pccolor,cat,svgname,panelname) {
           .text(function(d) { return d.key+" ("+d.count+")"; })
           .on("click", function(d){
                 var currentOpacity = d3.select(this.parentNode).select('line').style('opacity');
-                currentOpacity = (currentOpacity === 0) ? 1 : 0;
+                currentOpacity = (currentOpacity == 0) ? 1 : 0;
                 d3.select(this.parentNode).select('line').style('opacity',currentOpacity);
                 addOrRemoveCriteria(criteria,d.key,currentOpacity);
             });
