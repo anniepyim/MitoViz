@@ -129,8 +129,8 @@ function issueWarning(){
     
     if ($('#selected-sample').find('option').length > 6 && flag == "SP")
         document.getElementById('warning').innerHTML="<font color=\"red\">No more than 6 samples!";
-    else if ($('#selected-sample').find('option').length > 55 && flag == "heatmap")
-        document.getElementById('warning').innerHTML="<font color=\"red\">No more than 50 samples!";
+    //else if ($('#selected-sample').find('option').length > 55 && flag == "heatmap")
+    //    document.getElementById('warning').innerHTML="<font color=\"red\">No more than 50 samples!";
     else
         document.getElementById('warning').innerHTML="";
 }
