@@ -3,45 +3,19 @@ library(jsonlite)
 
 
 args = commandArgs(trailingOnly=TRUE)
-targetoutpath = "../data/PCA/"
+sessionid = args[1]
+targetin <- paste("../data/user_uploads/",sessionid,"/combined-PCA.csv",sep="")
+data <- read.csv(targetin, header=TRUE,sep=",",check.names="FALSE")
+targetoutpath <- paste("../data/user_uploads/",sessionid,"/PCA/",sep="")
 
 # Get filenames and type of files from arguments
 if (length(args) <= 1) {
   #stop("At least one argument must be supplied (input file).n", call.=FALSE)
-  filelist = c("test/HCT116-21-3-c1.json","test/HCT116-5-4-p.json","test/HCT116-5-4.json","test/HCT116-8-3-c3.json")
+  filelist = c("test/HCT116-5-4-p.json","test/HCT116-5-4.json","test/HCT116-8-3-c3.json","test/HCT116-8-3-c3.json")
   type = "aneuploidy"
 } else if (length(args)>1) {
-  filelist = args[2:length(args)]
-  type = args[1]
-}
-
-# Read in data by either from local (tcga data) or directly from server
-if (type == "TCGA"){
-  
-  datalist = lapply(filelist,function(x){
-    test <- fromJSON(x)
-    test[1,"sampleID"]
-  })
-  
-  all <- read.table("tcga.txt", header=TRUE,sep="\t",check.names="FALSE")
-  datalist <- unlist(datalist)
-  data <- all[,c("gene","process",datalist)]
-  
-}else{
-  
-  datalist = lapply(filelist,function(x){
-    test <- fromJSON(x)
-    sampleID <- test[1,"sampleID"]
-    test <- test[,c("gene","process","log2")]
-    test[,3] <- round(test[,3],3)
-    colnames(test) <- c("gene","process",sampleID)
-    test
-  })
-  
-  data = Reduce(function(x,y) {
-    merge(x,y)
-  }, datalist)
-  
+  filelist = args[3:length(args)]
+  type = args[2]
 }
 
 # Read clinical/info of files
@@ -64,6 +38,12 @@ colnames(url) <- c("sampleID","url")
 
 # PCA
 log2fold.all.mito <- data[,3:length(data)]
+remove <- which(apply(log2fold.all.mito,1,function(x){
+  rmd <- sum(is.na(x)) >= 1      
+  return (rmd)
+}))
+log2fold.all.mito <- log2fold.all.mito[-remove,]
+
 pca <- prcomp(t(log2fold.all.mito))
 sampleID <- rownames(pca$x[,1:3])
 sum <- cbind(sampleID, pca$x[,1:3])
@@ -88,6 +68,13 @@ write(dfjsonall,outputname)
 mitofunc <- unique(data[,"process"])
 for(i in 1:length(mitofunc)){
   subsetdata <- subset(data, process==mitofunc[i])[,3:length(data)]
+  
+  remove <- which(apply(subsetdata,1,function(x){
+    rmd <- sum(is.na(x)) >= 1      
+    return (rmd)
+  }))
+  subsetdata <- subsetdata[-remove,]
+  
   if (nrow(subsetdata) >= 3){
     pca <- prcomp(t(subsetdata))
     sampleID <- rownames(pca$x[,1:3])
@@ -105,8 +92,6 @@ for(i in 1:length(mitofunc)){
     df$PC2 <- as.numeric(as.character(df$PC2))
     df$PC3 <- as.numeric(as.character(df$PC3))
     
-
-
     dfjson <- toJSON(df)
     outputname <- paste(targetoutpath,mitofunc[i],"-pca.json", sep="")
     write(dfjson,outputname)
@@ -129,6 +114,3 @@ for(i in 1:length(mitofunc)){
 #  outputname <- paste("test/",sampleID[1],".json", sep="")
 #  write(dfjson,outputname)
 #}
-
-
-

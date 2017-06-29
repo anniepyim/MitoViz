@@ -6,7 +6,7 @@ function parserSP(){}
 
    
    
-function parse(urls, errorcb, datacb,colorrange){
+function parse(urls, errorcb, datacb,colorrange,group_name,genefunction){
     
     var funcs = _.map(urls, axios.get);    
     
@@ -21,10 +21,36 @@ function parse(urls, errorcb, datacb,colorrange){
                
             data = data.concat(res.data);
         });
+        
+        /*
+        var nested = d3.nest()
+            .key(function (d) {
+                return d.gene;
+            })
+            .entries(data);
 
+        nested.forEach(function (d) {
+            d.gene = d.key;
+            d.log2 = d3.mean(d.values, function(g) { return g.log2; })
+            d.pvalue = 1;
+            d.mutation = "";
+            delete d.key;
+            delete d.values;
+        });
+
+
+        var test = _.map(nested, function(element) {
+            var treasure = _.findWhere(genefunction, { gene: element.gene });
+            return _.extend(element, treasure);
+            });
+        
+        */
+        
         data.sort(function(a,b) { return d3.ascending(a.gene, b.gene);});
         
         datacb(data,colorrange);
+        
+        console.log(data);
 
     }))
     .catch(function (res) {

@@ -5,10 +5,34 @@
         <div class="col-md-2">
          <div class="row">
              
+            <!-- Select type of analysis -->
+             
+            <div class="col-md-12 title" style="margin-top:10px;margin-bottom:10px;">Pick Analysis</div>
+             <div class="col-md-12 radio" style="font-size:10px;margin:0px">
+            <label><input type="radio" name="analysis" value="scatterplotanalysis" checked="checked">Mutations and Expressions</label>
+            </div>
+             <div class="col-md-12 radio" style="font-size:10px;margin:0px">
+            <label><input type="radio" name="analysis" value="pcanalysis">Principal Components</label>
+            </div>
+             <div class="col-md-12 radio" style="font-size:10px;margin:0px">
+            <label><input type="radio" name="analysis" value="heatmapanalysis">Heat Map</label>
+            </div>
+             
+             <!--Grouping for Mutation analysis -->
+            <div class="col-md-12 title group-div" style="margin-top:20px;display:">Define Groups</div>
+            <div class="col-md-12 group-div" style="margin-top:10px;display:">
+              <select class="selectpicker" id="groups" data-style="btn-default" title="Pick dataset" data-width="175px" >
+                  <option value='#selected-sample'>No Grouping</option>
+                  <option value='#group1'>Group 1</option>
+                  <option value='#group2'>Group 2</option>
+             </select>
+             </div>
+             
+             
              <!--Folders to select data -->
              
              <div class="col-md-12 title" style="margin-top:20px;" id="hihi">
-              Data Sets
+              Pick Data
              </div>
               <div class="col-md-12" style="margin-top:10px;">
             
@@ -31,39 +55,53 @@
                  <option value='./data/TCGA/THCA/'>THCA</option>
              </select>
              </div>
-
-              
+             
               <div class="col-md-12" style="margin-top:10px;">
               <select class="selectpicker" MULTIPLE id="files" data-style="btn-default" title="Pick samples" data-width="175px" data-actions-box="true" data-selected-text-format="static">
              </select>
              </div>
+             
+            <!--box to store selected data --> 
         
-              <div class="col-md-12" style="margin-top:10px">
+              <div class="col-md-12 selectionbox" style="margin-top:10px" id="selected-sample_div">
              <form id="form1">
-       <select name="file_list" SIZE="4" MULTIPLE id="selected-sample" style="width: 175px;font-size: 14px">
+       <select name="file_list" SIZE="4" MULTIPLE id="selected-sample" style="width: 175px;font-size: 14px">s
              </select>
              </form>
               </div>
+             
+            <!--box to store selected data --> 
+        
+              <div class="col-md-12 selectionbox" style="margin-top:10px;display:none" id="group1_div">
+             <form id="form1">
+       <select name="file_list" SIZE="4" class="group_selection" MULTIPLE id="group1" style="width: 175px;font-size: 14px">
+             </select>
+             </form>
+              </div>
+
+            <!--box to store selected data --> 
+        
+              <div class="col-md-12 selectionbox" style="margin-top:10px;display:none" id="group2_div">
+             <form id="form1">
+       <select name="file_list" SIZE="4" class="group_selection" MULTIPLE id="group2" style="width: 175px;font-size: 14px">
+             </select>
+             </form>
+              </div>             
+             
+             
+             <!--buttons to edit selected data --> 
              
               <div class="col-md-12" style="margin-top:10px;text-align:right">
               <button id = "delete-selected" class="btn btn-xs btn-default"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Remove</button>
              <button id = "clear-all" class="btn btn-xs btn-danger"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Clear</button>
               </div>
               
+             <!--warning area --> 
+             
               <div class="col-md-12" id="warning" style="margin-top:10px"></div>
              
-             <!-- Select type of analysis -->
              
-            <div class="col-md-12 title" style="margin-top:10px;margin-bottom:10px;">Analysis</div>
-             <div class="col-md-12 radio" style="font-size:10px;margin:0px">
-            <label><input type="radio" name="analysis" value="scatterplotanalysis" checked="checked">Mutations and Expressions</label>
-            </div>
-             <div class="col-md-12 radio" style="font-size:10px;margin:0px">
-            <label><input type="radio" name="analysis" value="pcanalysis">Principal Components</label>
-            </div>
-             <div class="col-md-12 radio" style="font-size:10px;margin:0px">
-            <label><input type="radio" name="analysis" value="heatmapanalysis">Heat Map</label>
-            </div>
+             <!--the GO button --> 
              
              <div class="col-md-12" style="margin-top:10px;text-align: center">
               <button id = "compareButton" class="btn btn-success">Compare</button>

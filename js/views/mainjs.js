@@ -2,35 +2,45 @@ $(document).ready(function(){
     
 var flag = "SP";
 
+var selected = "selected-sample";
+
 $('input[type=radio][name=analysis]').change(function(e){
     
     if (this.value == "scatterplotanalysis"){
         flag = "SP";
-    }else if (this.value == "heatmapanalysis"){
-        flag = "heatmap";
+        $( ".group-div" ).css('display','');
     }else{
         flag = "others";
+        $( ".group-div" ).css('display','none');
+        $( ".selectionbox" ).css('display','none');
+        $( "selected-sample_div" ).css('display','');
     }
     
     issueWarning();
-    /*if ($(this).text() == "Don't click me"){
-        alert("It's good to be curious, but I mean, really, I told you nothing would happen. So let's just back to business")
-    }*/
 });
     
+$("#groups").on('change',function(){
+    selected = $("#groups option:selected").val();
+    $( ".selectionbox" ).css('display','none');
+    selected_div = selected+"_div"
+    $( selected_div ).css('display','');
+    
+    updateFolder("#folders",selected);
+}); 
+    
 $("#folders").on('change',function(){
-   updateFolder("#folders");
+   updateFolder("#folders",selected);
 }); 
     
 $("#subfolders").on('change',function(){
-   updateFolder("#subfolders");
+   updateFolder("#subfolders",selected);
 }); 
     
 $("#files").on('change',function(){
-    updateFile();
+    updateFile(selected);
 });
 
-function updateFolder(folder){
+function updateFolder(folder,selected){
     
     if ($(folder+" option:selected").text() != "TCGA"){
         
@@ -56,7 +66,7 @@ function updateFolder(folder){
               
             $("#files").html(htmltext);
             $('#files').selectpicker('refresh');
-            $.each($("#selected-sample option"), function(){
+            $.each($(selected+" option"), function(){
                 var value = $(this).val();
                 $('#files').find('[value="'+value+'"]').prop('selected',true);
                 $('#files').selectpicker('refresh');
@@ -75,23 +85,23 @@ function updateFolder(folder){
         
     }else{
         document.getElementById("subfolders-div").style.display="";
-        updateFolder("#subfolders");
+        updateFolder("#subfolders",selected);
     }
  
 }
 
-function updateFile() {
+function updateFile(selected) {
         
     
     $.each($("#files option:not(:selected)"), function(){
         var value = $(this).val();
-        $('#selected-sample').find('[value="'+value+'"]').remove();
+        $(selected).find('[value="'+value+'"]').remove();
     });
     
     $.each($("#files option:selected"), function(){
         var value = $(this).val();
-        if (!($('#selected-sample option[value="'+value+'"]').length>0)){
-            $('#selected-sample').append($('<option>', { 
+        if (!($(selected+' option[value="'+value+'"]').length>0)){
+            $(selected).append($('<option>', { 
                 value: $(this).val(),
                 text : $(this).text() 
             }));
@@ -105,11 +115,11 @@ function updateFile() {
 
 $('#delete-selected').click(function(){
     
-    $.each($("#selected-sample option:selected"), function(){
+    $.each($(selected+" option:selected"), function(){
         var value = $(this).val(); $('#files').find('[value="'+value+'"]').prop('selected',false);
         $('#files').selectpicker('refresh');
     });
-    $('#selected-sample option:selected').remove();
+    $(selected+' option:selected').remove();
     
     issueWarning();
     
@@ -119,7 +129,7 @@ $('#clear-all').click(function(){
     
     $('#files').selectpicker('deselectAll');
     $('#files').selectpicker('refresh');
-    $('#selected-sample').empty();
+    $(selected).empty();
     
     issueWarning();
 
@@ -129,8 +139,6 @@ function issueWarning(){
     
     if ($('#selected-sample').find('option').length > 6 && flag == "SP")
         document.getElementById('warning').innerHTML="<font color=\"red\">No more than 6 samples!";
-    //else if ($('#selected-sample').find('option').length > 55 && flag == "heatmap")
-    //    document.getElementById('warning').innerHTML="<font color=\"red\">No more than 50 samples!";
     else
         document.getElementById('warning').innerHTML="";
 }

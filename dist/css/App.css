@@ -1,3 +1,215 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
-@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css");
-.svg-container{display:inline-block;position:relative;width:100%;padding-bottom:100%;vertical-align:top;overflow:hidden}.svg-content-responsive{display:inline-block;position:absolute;top:10px;left:0}.search{fill:#55568c}.title{font-family:'Montserrat','sans-serif';font-weight:700;text-transform:uppercase;font-size:18px}.miniTitle{font-family:'Montserrat','sans-serif';font-weight:700;text-transform:uppercase;font-size:13px;text-align:left}.legendText{text-align:left;font-size:11px;line-height:1.5}.tip{text-align:center;border-right:solid 1px #ddd}.tip .process{margin-top:5px;margin-bottom:8px}.tip .function{color:#666;text-align:center;font-style:italic;margin-bottom:8px;font-size:12px}.results{display:none;position:absolute;top:35px;left:0;right:0;z-index:10;margin-top:10;-webkit-box-shadow:0 1px 2px rgba(0,0,0,0.1);-moz-box-shadow:0 1px 2px rgba(0,0,0,0.1);-ms-box-shadow:0 1px 2px rgba(0,0,0,0.1);-o-box-shadow:0 1px 2px rgba(0,0,0,0.1);box-shadow:0 1px 2px rgba(0,0,0,0.1)}.results .title{font-family:'Montserrat','sans-serif';font-weight:700;text-transform:uppercase;font-size:13px;text-align:left}.results li{display:block}.results li:first-child:before,.results li:first-child:after{display:block;content:'';width:0;height:0;position:absolute;left:50%;margin-left:-5px;border:5px outset transparent}.results li:first-child:before{border-bottom:5px solid #ddd;top:-11px}.results li:first-child:after{border-bottom:5px solid #fdfdfd;top:-10px}.results li:first-child:hover:before,.results li:first-child:hover:after{display:none}.results li:first-child{margin-top:-1px}.results li:hover{text-decoration:none;color:#fff;text-shadow:0 -1px rgba(0,0,0,0.3);border-color:#2380dd #2179d5 #1a60aa;background-color:#338cdf;cursor:pointer}.node{font-weight:500;color:#2c3e50;position:absolute;width:8em;margin-left:-4em;text-align:center;opacity:1;cursor:pointer}.node.theme{font-weight:700;text-transform:uppercase}.vis{top:0;left:0;overflow:hidden;position:relative}.canvas{height:100%;overflow:hidden}.nav_bar{border-bottom:solid 1px #ddd;padding:15px 0 0;margin:0 10px}.legend{padding:1.5em 0 0 1.5em;font-size:12px}
+@import url("font.css");
+@import url("bootstrap.min.css");
+.svg-container{display:inline-block;position:relative;width:100%;padding-bottom:100%;vertical-align:top;overflow:hidden}.svg-content-responsive{display:inline-block;position:absolute;top:10px;left:0}.search{fill:#55568c}.title{font-family:'Montserrat','sans-serif';font-weight:700;text-transform:uppercase;font-size:18px}.miniTitle{font-family:'Montserrat','sans-serif';font-weight:700;text-transform:uppercase;font-size:13px;text-align:left}.legendText{text-align:left;font-size:11px;line-height:1.5}.tip{text-align:center;border-right:solid 1px #ddd}.tip .process{margin-top:5px;margin-bottom:8px}.tip .function{color:#666;text-align:center;font-style:italic;margin-bottom:8px;font-size:12px}.results{display:none;position:absolute;top:35px;left:0;right:0;z-index:10;margin-top:10;-webkit-box-shadow:0 1px 2px rgba(0,0,0,0.1);-moz-box-shadow:0 1px 2px rgba(0,0,0,0.1);-ms-box-shadow:0 1px 2px rgba(0,0,0,0.1);-o-box-shadow:0 1px 2px rgba(0,0,0,0.1);box-shadow:0 1px 2px rgba(0,0,0,0.1)}.results .title{font-family:'Montserrat','sans-serif';font-weight:700;text-transform:uppercase;font-size:13px;text-align:left}.results li{display:block}.results li:first-child:before,.results li:first-child:after{display:block;content:'';width:0;height:0;position:absolute;left:50%;margin-left:-5px;border:5px outset transparent}.results li:first-child:before{border-bottom:5px solid #ddd;top:-11px}.results li:first-child:after{border-bottom:5px solid #fdfdfd;top:-10px}.results li:first-child:hover:before,.results li:first-child:hover:after{display:none}.results li:first-child{margin-top:-1px}.results li:hover{text-decoration:none;color:#fff;text-shadow:0 -1px rgba(0,0,0,0.3);border-color:#2380dd #2179d5 #1a60aa;background-color:#338cdf;cursor:pointer}.node{font-weight:500;color:#2c3e50;position:absolute;width:8em;margin-left:-4em;text-align:center;opacity:1;cursor:pointer}.node.theme{font-weight:700;text-transform:uppercase}.vis{top:0;left:0;overflow:hidden;position:relative}.canvas{height:100%;overflow:hidden}
+
+@import url("bootstrap-select.min.css");
+@import url("bootstrap.min.css");
+@import url("font.css");
+    
+.navbar-custom {
+  background-color: #222222;
+  border-color: transparent;
+}
+.navbar-custom .navbar-brand {
+  color: #12e2c0;
+  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+}
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus,
+.navbar-custom .navbar-brand:active,
+.navbar-custom .navbar-brand.active {
+  color: #11dbb9;
+}
+.navbar-custom .navbar-collapse {
+  border-color: rgba(255, 255, 255);
+}
+.navbar-custom .navbar-toggle {
+  background-color: #12e2c0;
+  border-color: #12e2c0;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-size: 12px;
+}
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+  background-color: #12e2c0;
+}
+.navbar-custom .nav li a {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: white;
+}
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus {
+  color: #12e2c0;
+  outline: none;
+}
+.navbar-custom .navbar-nav > .active > a {
+  border-radius: 0;
+  color: white;
+  background-color: #12e2c0;
+}
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus {
+  color: white;
+  background-color: #11dbb9;
+}
+@media (min-width: 768px) {
+  .navbar-custom {
+    background-color: #222222;
+    padding: 10px 0;
+    -webkit-transition: padding 0.3s;
+    -moz-transition: padding 0.3s;
+    transition: padding 0.3s;
+    border: none;
+  }
+  .navbar-custom .navbar-brand {
+    font-size: 2em;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .navbar-custom .navbar-nav > .active > a {
+    border-radius: 3px;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-custom.affix {
+    background-color: #222222;
+    padding: 10px 0;
+  }
+  .navbar-custom.affix .navbar-brand {
+    font-size: 1.5em;
+  }
+}
+
+#ddm li a{
+    line-height: 40px;
+    padding-top: 0;
+    height: 40px;
+}
+
+
+body {
+    font-family: 'Montserrat', 'sans-serif';
+    margin: 10;
+    font-size:14px
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: #66b3ff;
+    text-decoration: none;
+}
+
+.tip {
+    text-align: center;
+    border-right: solid 1px #DDD;
+}
+
+.tip .process{
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+
+.tip .function {
+    color: #666;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+.tip .info {
+    font-size: 13px;
+}
+
+.tip .mutation {
+    text-align: left;
+    font-size: 10px;
+}
+
+.title{
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size:18px;
+}
+
+.miniTitle{
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size:13px;
+    text-align: left;
+}
+
+.midTitle{
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 700;
+    /*text-transform: uppercase;*/
+    font-size:16px;
+    text-align: left;
+}
+
+input[type=checkbox] {
+    float: right;
+    margin-right: 0.4em;
+}
+
+#nav_bar{
+    font-size: 18px;
+}
+
+#svgs-all{
+    text-align: center
+    font-size: 13px;
+}
+
+
+#wrapUp {
+    white-space:nowrap;
+    overflow:hidden;
+}
+
+#scatterplot {
+    display: inline-block
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+#barchart {
+    display: inline-block
+}
+
+#heatmap{
+    font-size: 8px; 
+}
+
+.cell{
+    stroke: #E6E6E6;
+    stroke-width:1px;   
+  }
+
+text.text-hover {
+        fill: red;
+      }

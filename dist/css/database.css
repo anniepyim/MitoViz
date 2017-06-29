@@ -1,24 +1,23 @@
-
 .database{
-    height: 150px;
+    height: 100px;
 }
 
 .database:hover {
     background-color: #b3ccff !important;
     border: #6699ff !important;
+    cursor: pointer;
 }
 
 
-h3{
-    text-align:center;
-    margin-top: 50px;
-}
-
-span.glyphicon {
+.glyphicon {
     font-size: 1.6em;
 }
 
-span.glyeye:hover {
-    font-size: 1.6em;
+database-modal .glyeye:hover {
     color:white;
+}
+
+.btn-success {
+      font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
 }

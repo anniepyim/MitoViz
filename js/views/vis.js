@@ -9,7 +9,7 @@ var heatmap = require('../svgs/heatmap.js');
 var PCdata = require('../svgs/pcdata.js');
 var pcPlot = require('../svgs/pcPlot.js');
 var PCBC = require('../svgs/pcbarchart.js');
-var parserSP = require('./parserSP.js');
+//var parserSP = require('./parserSP.js');
 var parserPCA = require('./parserPCA.js');
 var parserHeatmap = require('./parserHeatmap.js');
 var mainframe = require('./mainframe.js');
@@ -22,23 +22,58 @@ var sccolor = "#d73027,#f46d43,#fdae61,#fee08b,#ffffbf,#d9ef8b,#a6d96a,#66bd63,#
 var vis = {};
 
 //Function that calls parser to get data and then drawSP to draw the SP
-vis.spcompareData = function(arr){
-    //Get arrays of selected samples
-    var select = document.getElementById('selected-sample');
-    if (arr === undefined){
-        arr = [];
-        for (i = 0; i < select.options.length; i++) {
-           arr[i] = select.options[i].value;
-        } 
+vis.spcompareData = function(){
+    
+    var select, arr, json;
+    
+    //Get arrays selected samples from groups
+    json = {};
+    var element = document.getElementsByClassName('group_selection');
+    for (i=0; i<element.length; i++){
+        
+        select = document.getElementById(element[i].id);
+        var selectionLength = select.options.length;
+        
+        if (selectionLength > 0){
+            
+            arr = [];
+            
+            for (j = 0; j < selectionLength; j++) {
+                arr[j] = select.options[j].value;
+            }
+            json[element[i].id] = arr;
+        }  
+        
     }
     
-    //Check for error
-    if (arr.length === 0) onError(new Error('Add samples!'));
-    if (arr.length > 6) onError(new Error('No more than 6 samples!'));
-    //if (colorrange === "") errorcb(new Error('Pick color!'));
-    
-    //var sccolor = d3.select('#colorinput').property("value");
-    parserSP.parse(arr, onError, drawSP,sccolor);
+    //Get arrays of selected samples if group's not defined  
+    if (jQuery.isEmptyObject(json)){
+        
+        select = document.getElementById('selected-sample');
+
+        json = [];
+        for (i = 0; i < select.options.length; i++) {
+           json[i] = select.options[i].value;
+        }
+            
+        if (json.length === 0) onError(new Error('Add samples!'));
+        if (json.length > 6) onError(new Error('No more than 6 samples!'));
+        
+    }
+        
+    jQuery.ajax({
+        url: "./R/SP.py", 
+        data: JSON.stringify(json),
+        type: "POST",
+        dataType: "json",    
+        success: function (data) {
+            drawSP(data,sccolor);
+        },
+        error: function(e){
+            onError(e);
+        }
+    });
+
 };
 
 function drawSP(data,sccolor) {
