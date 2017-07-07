@@ -13,6 +13,7 @@ var PCBC = require('../svgs/pcbarchart.js');
 var parserPCA = require('./parserPCA.js');
 var parserHeatmap = require('./parserHeatmap.js');
 var mainframe = require('./mainframe.js');
+var mpld3 = require('./mpld3.v0.3.js')
 mainframe = new mainframe();
 
 //SC and Heatmap
@@ -100,9 +101,15 @@ function pcacompareData(){
         init = "all",
         count=1,
         type;
+    
+    var selected = $("#groups option:selected").val();
+    if (selected == "") {
+        selected = "selected-sample";
+    }
+        
 
     //Check the type of selected samples
-    $("#selected-sample option").each(function(i){
+    $('#'+selected+' option').each(function(i){
         if (count === 1) type = $(this).val().split("/")[2];
         else if ($(this).val().split("/")[2] != type) sametype = false;
         count = count+1;
@@ -110,16 +117,16 @@ function pcacompareData(){
     
     //Check for error
     if (sametype === false) onError(new Error("Please select samples from the same project"));
-    if ($('#selected-sample').find('option').length < 3) onError(new Error("Please add at least 3 samples"));
+    if ($('#'+selected).find('option').length < 3) onError(new Error("Please add at least 3 samples"));
 
     //Get samples
-    var samples = document.getElementById('selected-sample');
+    var samples = document.getElementById(selected);
 
     for (var i = 0; i < samples.options.length; i++) { 
         samples.options[i].selected = true; 
     } 
 
-    var parameter = $("#selected-sample").serialize() + '&filetype=' + type +'&sessionid='+ sessionid;
+    var parameter = $('#'+selected).serialize() + '&filetype=' + type +'&sessionid='+ sessionid;
     
     //Remove everything on svgs-all div and render the div for PCA plot and the side bar, ie the one for folders
     //This has to be down before the parser since the parser will get info for files and update the folders
@@ -217,6 +224,7 @@ function drawPCA(data,init,type){
 }
 
 function heatmapcompareData(){
+  
     
     var this_js_script = $('script[src*=App_compare]');
     var sessionid = this_js_script.attr('session-id');
@@ -225,9 +233,14 @@ function heatmapcompareData(){
         init = "all",
         count=1,
         type;
+    
+    var selected = $("#groups option:selected").val();
+    if (selected == "") {
+        selected = "selected-sample";
+    }
 
     //Check the type of selected samples
-    $("#selected-sample option").each(function(i){
+    $('#'+selected+' option').each(function(i){
         if (count === 1) type = $(this).val().split("/")[2];
         else if ($(this).val().split("/")[2] != type) sametype = false;
         count = count+1;
@@ -235,17 +248,17 @@ function heatmapcompareData(){
     
     //Check for error
    // if (type != "TCGA") onError(new Error("Please select samples only from the TCGA project"));
-    if ($('#selected-sample').find('option').length < 3) onError(new Error("Please add at least 3 samples"));
+    if ($('#'+selected).find('option').length < 3) onError(new Error("Please add at least 3 samples"));
     if (sametype === false) onError(new Error("Please select samples from the same project"));
 
     //Get samples
-    var samples = document.getElementById('selected-sample');
+    var samples = document.getElementById(selected);
 
     for (var i = 0; i < samples.options.length; i++) { 
         samples.options[i].selected = true; 
     } 
 
-    var parameter = $("#selected-sample").serialize() + '&filetype=' + type + '&sessionid='+ sessionid;
+    var parameter = $('#'+selected).serialize() + '&filetype=' + type + '&sessionid='+ sessionid;
     
     //Remove everything on svgs-all div and render the div for PCA plot and the side bar, ie the one for folders
     //This has to be down before the parser since the parser will get info for files and update the folders
@@ -260,20 +273,95 @@ function heatmapcompareData(){
     parent.appendChild(div);
     
     //Pass to parser
-    parserHeatmap.parse(drawHeatmap,onError,init,type,parameter,sessionid);
+    parserHeatmap.parse(drawHeatmap,onError,init,parameter,sessionid);
     
 
 }
 
-function drawHeatmap(url,init,type){
+function drawHeatmap(url){
+    
     hideLoading();
+    var parent = document.getElementById('heatmap');    
+    while (parent.firstChild) {
+        parent.removeChild(parent.firstChild);
+    }  
+    
+    mpld3.register_plugin("htmltooltip", HtmlTooltipPlugin);
+    HtmlTooltipPlugin.prototype = Object.create(mpld3.Plugin.prototype);
+    HtmlTooltipPlugin.prototype.constructor = HtmlTooltipPlugin;
+    HtmlTooltipPlugin.prototype.requiredProps = ["id"];
+    HtmlTooltipPlugin.prototype.defaultProps = {labels:null,
+                                                hoffset:0,
+                                                voffset:10};
+    function HtmlTooltipPlugin(fig, props){
+        mpld3.Plugin.call(this, fig, props);
+    }
+
+    HtmlTooltipPlugin.prototype.draw = function(){
+       var obj = mpld3.get_element(this.props.id);
+       var labels = JSON.parse(this.props.labels);
+       var tooltip = d3.select("body").append("div")
+                    .attr("class", "mpld3-tooltip")
+                    .style("position", "absolute")
+                    .style("z-index", "10")
+                    .style("opacity", 0);
+
+       obj.elements()
+           .on("mouseover", function(d, i){
+
+
+                            tooltip.transition()
+                                .duration(200)
+                                .style("opacity", 0.9);
+                            tooltip.html("Sample: " + labels[i].sample + "<br/>" + "Gene: " + labels[i].gene + "<br/>" + "Log2 FC: " + labels[i].value);
+
+
+
+                })
+           .on("mousemove", function(d, i){
+                  tooltip
+                    .style("top", d3.event.pageY + this.props.voffset + "px")
+                    .style("left",d3.event.pageX + this.props.hoffset + "px");
+                }.bind(this))
+           .on("mouseout",  function(d, i){
+                            tooltip.transition()
+                                .duration(500)
+                                .style("opacity", 0);
+                })
+            .on("mousedown",  function(d, i){
+
+                var selected = $("#groups option:selected").val();
+                if (selected == "") {
+                    selected = 'selected-sample';
+                }
+               
+                var newvalue = labels[i].url;
+           
+                if ($("#"+selected+" option[value='"+newvalue+"']").length === 0){    
+                    var option = document.createElement("option");
+                    option.text = labels[i].sample;
+                    option.value = labels[i].url;
+                    var select = document.getElementById(selected);
+                    select.appendChild(option);
+                }
+               
+            });
+    };
+
+    d3.json(url,function(data){
+        mpld3.draw_figure("heatmap", data);
+    });
+
+    
+    /*hideLoading();
     var parent = document.getElementById('heatmap');
+    
     while (parent.firstChild) {
         parent.removeChild(parent.firstChild);
     }   
     var div = document.createElement('div');
     div.innerHTML ='<iframe src="'+url+'" frameborder="0" height="100%" width="100%"></iframe>';
-    parent.appendChild(div);
+    parent.appendChild(div);*/
 }
 
 function hideLoading() {

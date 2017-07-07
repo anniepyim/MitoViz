@@ -16,7 +16,7 @@ App.init = function(options){
     App.mainframe.setElement('#content').render(id);
     
     //Require mainjs.js, which controls the behaviours of the selection folders
-    var dataSelect = require('./views/mainjs.js');
+    //var dataSelect = require('./views/mainjs.js');
     
     //Require vis.js, which is the entry point for vis tool
     var vis = require("./views/vis.js");

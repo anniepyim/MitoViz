@@ -24,6 +24,8 @@ for index, fn in enumerate(json_files):
     json_files[index] = "."+fn
     
 #json_files = ["test/HCT116-5-4-p.json","test/HCT116-5-4.json","test/HCT116-8-3-c3.json","test/HCT116-8-3-c4.json"]
+#filetype = "aneuploidy"
+#sessionid= "eb48b23fd6473489433af976c9c11c9c"
 
 main = pd.read_csv("../main_files/human/gene_function.txt",sep="\t")
 main = main[['gene','process']]
@@ -32,7 +34,7 @@ main.set_index(['gene'], inplace=True)
 
 for file in json_files:
     
-    df = pd.read_json(file)
+    df = pd.read_json(file)    
     ID = df['sampleID'][1]
     df = df[['gene','log2']]
     df.drop_duplicates(["gene"],inplace=True)
@@ -49,6 +51,7 @@ os.system(cmd)
 
 targetpath= "../data/user_uploads/" + ''.join(sessionid) + "/combined-PCA.csv"
 main.to_csv(targetpath)
+
     
 cmd = "/usr/local/bin/Rscript PCA.R "  + ''.join(sessionid) + ' ' + ' '.join(filetype) + ' ' + ' '.join(json_files)
 os.system(cmd)

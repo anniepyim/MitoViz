@@ -16,6 +16,8 @@ module.exports = Backbone.View.extend({
     
     heatmap: templates.heatmap,
     
+    heatmap2: templates.heatmap2,
+    
     render: function(id){
         var obj = {};
         obj.id = id;
@@ -40,6 +42,11 @@ module.exports = Backbone.View.extend({
     
     renderheatmap: function(id){
         this.$el.append(this.heatmap());
+        return this;
+    },
+    
+    renderheatmap2: function(id){
+        this.$el.append(this.heatmap2());
         return this;
     }
 });

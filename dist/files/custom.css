@@ -1,0 +1,60 @@
+html, body {
+	height: 100%; 
+	min-height: 100%;
+}
+.wrapper {
+	box-sizing: border-box;
+	min-height: 100%;
+	padding-bottom: 47px;
+}
+header h1 {
+	font-size: 20px;
+	margin: 0;
+	line-height: 52px;
+	height: 52px;
+	overflow: hidden;
+}
+header {
+	margin-bottom: 15px;
+}
+footer, header {
+	height: 52px;
+	background: #428bca;
+	color: #fff;
+	line-height: 52px;
+}
+footer {
+	height: 32px;
+	line-height: 32px;
+	font-size: 11px;
+	margin-top: -32px;
+}
+header h1 {
+	font-size: 20px;
+	margin: 0;
+	line-height: 52px;
+}
+header, header a {
+	color: #fff;
+}
+iframe.source-window {
+	width: 100%;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	height: 400px;
+}
+#resultbox {
+	border: 1px solid #999;
+	border-radius: 10px;
+	padding : 15px;
+}
+@media(max-width: 450px) {
+	header h1 {
+		font-size: 16px;
+	}
+}
+.gutter {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}

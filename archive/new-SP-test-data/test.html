@@ -1,0 +1,110 @@
+<html>
+    
+<head>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+
+<script>
+    
+    /*
+    //Get arrays of selected samples
+    var select = document.getElementById('group1');
+    if (arr === undefined){
+        arr = [];
+        for (i = 0; i < select.options.length; i++) {
+           arr[i] = select.options[i].value;
+        } 
+    }
+    */
+    
+    var arr;
+    
+    /*
+    if (arr === undefined){
+        arr = [];
+        for (i = 0; i < 10; i++) {
+           arr[i] = "hi";
+        } 
+    }
+    */
+    
+    arr = [];
+    arr[0] = "test1.json";
+    arr[1] = "test2.json";
+    
+    var json = {};
+    json["group1"] = arr;
+    json["group2"] = arr;
+    
+    console.log(json);
+    
+    
+    //Check for error
+    //if (arr.length === 0) onError(new Error('Add samples!'));
+    //if (arr.length > 6) onError(new Error('No more than 6 samples!'));
+    //if (colorrange === "") errorcb(new Error('Pick color!'));
+    
+    //var sccolor = d3.select('#colorinput').property("value");
+    //parserSP.parse(arr, onError, drawSP,sccolor);
+    
+    /*
+    var parameter = $("#selected-sample").serialize() + '&filetype=' + type +'&sessionid='+ sessionid;
+    */
+    
+    
+    jQuery.ajax({
+    url: "./R/test.py", 
+    data: JSON.stringify(json),
+    type: "POST",
+    dataType: "html",
+    success: function (data) {
+
+        console.log(data);
+    },
+    error: function(e){
+        console.log("error")
+    }
+    
+    })
+    
+    
+    
+    
+    
+    /*
+    d3.json("test.json", function(error, data) {
+        
+    var nested = d3.nest()
+        .key(function (d) {
+            return d.gene;
+        })
+        .entries(data);
+
+    nested.forEach(function (d) {
+        d.gene = d.key;
+        d.log2 = d3.mean(d.values, function(g) { return g.log2; })
+        d.pvalue = 1;
+        d.mutation = "";
+        delete d.key;
+        delete d.values;
+    });
+    
+    
+    d3.tsv("test.txt", function(genefunction) {
+        var test = _.map(nested, function(element) {
+            var treasure = _.findWhere(genefunction, { gene: element.gene });
+            return _.extend(element, treasure);
+            });
+        console.log(test);
+        });  
+    
+    });
+    */
+</script>    
+
+
+</body>    
+</html>

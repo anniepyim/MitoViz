@@ -32,6 +32,7 @@ for index, fn in enumerate(json_files):
 #json_files = ["test/HCT116-5-4-p.json","test/HCT116-5-4.json","test/HCT116-8-3-c3.json","test/HCT116-8-3-c4.json"]
 #sessionid= "eb48b23fd6473489433af976c9c11c9c"
 
+
 class PluginBase(object):
     def get_dict(self):
         return self.dict_
@@ -70,51 +71,14 @@ class PointHTMLTooltip2(PluginBase):
                       "hoffset": hoffset,
                       "voffset": voffset}
 
-main = pd.read_csv("../main_files/human/gene_function.txt",sep="\t")
-main = main[['gene','process']]
-
-main.set_index(['gene'], inplace=True)
-
-urls = pd.DataFrame()
-
-for file in json_files:
-    
-    df = pd.read_json(file)
-    
-    url = {'sample': df['sampleID'][1], 'url': file[1:]}
-    url = pd.DataFrame(url, index=[0])
-    #url.set_index(['sample'], inplace=True)
-    
-    ID = df['sampleID'][1]
-    df = df[['gene','log2']]
-    df.drop_duplicates(["gene"],inplace=True)
-    df.set_index(['gene'], inplace=True)
-    df.rename(columns={'log2':ID}, inplace=True)
-
-    if main.empty:
-        main = df
-    else:
-        main = main.join(df)
-        
-    if urls.empty:
-        urls = url
-    else:
-        urls = pd.concat([urls,url])
-
-
-cmd = "rm -R ../data/user_uploads/" + ''.join(sessionid) + "/heatmap/*"
-os.system(cmd)
-
-targetpath= "../data/user_uploads/" + ''.join(sessionid) + "/combined-heatmap.csv"
-main.to_csv(targetpath)
-
-targeturlpath= "../data/user_uploads/" + ''.join(sessionid) + "/combined-url.csv"
-urls.to_csv(targeturlpath)
-
 outputpath= "../data/user_uploads/" + ''.join(sessionid) + "/heatmap/"
+main = pd.read_csv("../data/user_uploads/" + ''.join(sessionid) + "/combined-heatmap.csv")
+urls = pd.read_csv("../data/user_uploads/" + ''.join(sessionid) + "/combined-url.csv")
+main.set_index(['gene'],inplace=True)
+
 
 processes = sorted(main.process.unique())
-processes = processes[0:5]
+processes = processes[5:]
 for process in processes:
     
     df = main[main['process'] == process]   

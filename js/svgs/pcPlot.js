@@ -230,16 +230,17 @@ function onDocumentMouseMove( event ) {
     pageEvent.y = event.clientY - rect.top;
 
     mouseflag = 1;
-    
-
-
-
 
   }
 
 function onDocumentMouseClick( event ) {
 
     event.preventDefault();
+    
+    var selected = $("#groups option:selected").val();
+    if (selected == "") {
+        selected = document.getElementById('selected-sample');
+    }
     
     var rect = pcacanvas.getBoundingClientRect();
 
@@ -253,11 +254,11 @@ function onDocumentMouseClick( event ) {
     
     var dotvalue = INTERSECTED.url;
     
-    if ($("#selected-sample option[value='"+dotvalue+"']").length === 0){    
+    if ($("#"+selected+" option[value='"+dotvalue+"']").length === 0){    
         var option = document.createElement("option");
         option.text = INTERSECTED.sampleID;
         option.value = INTERSECTED.url;
-        var select = document.getElementById("selected-sample");
+        var select = document.getElementById(selected);
         select.appendChild(option);
     }
 

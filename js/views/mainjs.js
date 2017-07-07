@@ -1,8 +1,10 @@
+var addSelectInpKeyPress;
+
 $(document).ready(function(){
     
 var flag = "SP";
 
-var selected = "selected-sample";
+var selected = "#selected-sample";
 
 $('input[type=radio][name=analysis]').change(function(e){
     
@@ -12,20 +14,15 @@ $('input[type=radio][name=analysis]').change(function(e){
     }else{
         flag = "others";
         $( ".group-div" ).css('display','none');
-        $( ".selectionbox" ).css('display','none');
-        $( "selected-sample_div" ).css('display','');
+        //$( ".selectionbox" ).css('display','none');
+        //$( "selected-sample_div" ).css('display','');
     }
     
     issueWarning();
 });
     
 $("#groups").on('change',function(){
-    selected = $("#groups option:selected").val();
-    $( ".selectionbox" ).css('display','none');
-    selected_div = selected+"_div"
-    $( selected_div ).css('display','');
-    
-    updateFolder("#folders",selected);
+    updateGroups();
 }); 
     
 $("#folders").on('change',function(){
@@ -113,6 +110,19 @@ function updateFile(selected) {
 
 }
 
+function updateGroups(){
+    
+    selected = "#"+$("#groups option:selected").val();
+    if (selected == "#") selected = "#selected-sample";
+    
+    $( ".selectionbox" ).css('display','none');
+    selected_div = selected+"_div"
+    $( selected_div ).css('display','');
+    
+    updateFolder("#folders",selected);
+
+}
+
 $('#delete-selected').click(function(){
     
     $.each($(selected+" option:selected"), function(){
@@ -142,6 +152,71 @@ function issueWarning(){
     else
         document.getElementById('warning').innerHTML="";
 }
+
+
+function addSelectItem(t,ev)
+{
+    ev.stopPropagation();
+
+    var oplength = $('#groups > option').length - 3;
+
+    if (oplength > 6){
+        ev.preventDefault();
+        $( "#groupwarning" ).fadeIn( 300 ).delay( 400 ).fadeOut( 300 );
+        return;
+    }
+    var txt=$(t).prev().val().replace(/[^a-z0-9]/gi,"");
+    if ($.trim(txt)=='') return;
+    
+    //Add option to list
+    var p=$(t).closest('.bootstrap-select').prev();
+    var o=$('option', p).eq(-3);
+    o.before( $("<option>", { "selected": true, "text": txt, "value": txt}) );
+    p.selectpicker('refresh');
     
 
+    //Add select box
+    var divid = txt+"_div"
+    $("#selected-sample_div").after($("<div>", { "class": "col-md-12 selectionbox", "style": "margin-top:10px", "id": divid}));
+    document.getElementById(divid).innerHTML="<form><select name='file_list' SIZE='4' class='group_selection selectionlist' MULTIPLE id='"+txt+"' style='width: 175px;font-size: 14px'></select></form>"
+    
+    updateGroups();
+    
+}
+ 
+addSelectInpKeyPress = function(t,ev)
+{
+   ev.stopPropagation();
+ 
+   // do not allow pipe character
+   if (ev.which==124) ev.preventDefault();
+    
+    if (ev.which==32) ev.preventDefault();
+ 
+   // enter character adds the option
+   if (ev.which==13)
+   {
+      ev.preventDefault();
+      addSelectItem($(t).next(),ev);
+   }
+}
+
+
+$("#removegroup").click(function(){
+    
+
+    selected = $("#groups option:selected").val();
+    $('#groups').find('[value="'+selected+'"]').remove();
+    selected = "#"+selected;
+    $('#groups').selectpicker('refresh');
+    
+    selected_div = selected+"_div"
+    $(selected_div).remove();
+    
+    updateGroups();
+})
+    
 });
+
+
+    

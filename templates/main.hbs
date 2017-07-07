@@ -21,13 +21,17 @@
              <!--Grouping for Mutation analysis -->
             <div class="col-md-12 title group-div" style="margin-top:20px;display:">Define Groups</div>
             <div class="col-md-12 group-div" style="margin-top:10px;display:">
-              <select class="selectpicker" id="groups" data-style="btn-default" title="Pick dataset" data-width="175px" >
-                  <option value='#selected-sample'>No Grouping</option>
-                  <option value='#group1'>Group 1</option>
-                  <option value='#group2'>Group 2</option>
+              <select class="selectpicker" id="groups" data-style="btn-default" title="Create Groups" data-width="175px">
+                  <option class="divider" data-divider="true"></option>
+                <option class="additem" data-content="<input type=text onKeyDown='event.stopPropagation();' onKeyPress='addSelectInpKeyPress(this,event)' onClick='event.stopPropagation()' placeholder='Add item'> <span class='glyphicon glyphicon-plus addnewicon' onClick='addSelectItem(this,event,1);'></span>"></option>
              </select>
              </div>
              
+            <!--button to remove group -->
+             
+             <div class="col-md-12 group-div" style="margin-top:10px;text-align:right">
+              <button id = "removegroup" class="btn btn-xs btn-default"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Remove Selected Group</button>
+              </div>
              
              <!--Folders to select data -->
              
@@ -65,30 +69,12 @@
         
               <div class="col-md-12 selectionbox" style="margin-top:10px" id="selected-sample_div">
              <form id="form1">
-       <select name="file_list" SIZE="4" MULTIPLE id="selected-sample" style="width: 175px;font-size: 14px">s
+       <select name="file_list" SIZE="4" class="selectionlist" MULTIPLE id="selected-sample" style="width: 175px;font-size: 14px">
              </select>
              </form>
               </div>
              
-            <!--box to store selected data --> 
-        
-              <div class="col-md-12 selectionbox" style="margin-top:10px;display:none" id="group1_div">
-             <form id="form1">
-       <select name="file_list" SIZE="4" class="group_selection" MULTIPLE id="group1" style="width: 175px;font-size: 14px">
-             </select>
-             </form>
-              </div>
-
-            <!--box to store selected data --> 
-        
-              <div class="col-md-12 selectionbox" style="margin-top:10px;display:none" id="group2_div">
-             <form id="form1">
-       <select name="file_list" SIZE="4" class="group_selection" MULTIPLE id="group2" style="width: 175px;font-size: 14px">
-             </select>
-             </form>
-              </div>             
-             
-             
+                         
              <!--buttons to edit selected data --> 
              
               <div class="col-md-12" style="margin-top:10px;text-align:right">
@@ -99,6 +85,7 @@
              <!--warning area --> 
              
               <div class="col-md-12" id="warning" style="margin-top:10px"></div>
+            <div style="display:none" class="col-md-12" id="groupwarning" style="margin-top:10px"><font color = "red">No more than 6 groups!</font></div>
              
              
              <!--the GO button --> 

@@ -864,18 +864,18 @@ TOP1MT	Replication & Transcription	NA	DNA binding; DNA topoisomerase activity; D
 TOP3A	Replication & Transcription	NA	DNA binding; DNA topoisomerase activity; DNA topoisomerase type I activity; zinc ion binding	NA
 APEX2	Replication & Transcription	X	APEX2: Involved in the mitochondrial DNA base excision repair	ENSG00000169188
 TRMT2B	Replication & Transcription	X	TRMT2B: Shows posttranscriptional modifications activity in the human mitochondrial tRNAs	ENSG00000188917
-GCLM	ROS defense	1	GCLM: Catalyzes the first step reaction which combines cystein and glutamate to form glutamylcysteine	ENSG00000023909
-GLRX2	ROS defense	1	GLRX2: Involved in the control of mitochndrial protein gluthathionylation	ENSG00000023572
-GCLC	ROS defense	6	GCLC: Catalyzes the first step reaction which combines cystein and glutamate to form glutamylcysteine	ENSG00000001084
-GSTA1	ROS defense	6	GSTA1: Mitochondrial gluthathione-S-transferases through gluthothione conjugation or proxide reduction detoxify harmful byproducts	ENSG00000243955
-GSTA2	ROS defense	6	GSTA2: Mitochondrial gluthathione-S-transferases through gluthothione conjugation or proxide reduction detoxify harmful byproducts	ENSG00000244067
-GSTA4	ROS defense	6	GSTA4: Mitochondrial gluthathione-S-transferases through gluthothione conjugation or proxide reduction detoxify harmful byproducts	ENSG00000170899
-GSTP1	ROS defense	11	GSTP1: Mitochondrial gluthathione-S-transferases through gluthothione conjugation or proxide reduction detoxify harmful byproducts	ENSG00000084207
-MPV17L	ROS defense	16	MPV17L: May have a role in the metabolism of reactive oxygen species	ENSG00000156968
-SCLC25A11	ROS defense	17	SLC25A11: May be involved in the transport of gluthathione into the mitochondria	ENSG00000108528
-SCLC25A10	ROS defense	17	SLC25A10: May be involved in the transport of gluthathione into the mitochondria	ENSG00000183048
-GSS	ROS defense	20	GSS: Catalyzes the formation of gluthathione from glutamylcysteine by combining it with the glycine	ENSG00000100983
-SOD1	ROS defense	21	SOD1: May be involved in the removal of superoxides in the inter membrane space of mitochondria	ENSG00000142168
+GCLM	ROS Defense	1	GCLM: Catalyzes the first step reaction which combines cystein and glutamate to form glutamylcysteine	ENSG00000023909
+GLRX2	ROS Defense	1	GLRX2: Involved in the control of mitochndrial protein gluthathionylation	ENSG00000023572
+GCLC	ROS Defense	6	GCLC: Catalyzes the first step reaction which combines cystein and glutamate to form glutamylcysteine	ENSG00000001084
+GSTA1	ROS Defense	6	GSTA1: Mitochondrial gluthathione-S-transferases through gluthothione conjugation or proxide reduction detoxify harmful byproducts	ENSG00000243955
+GSTA2	ROS Defense	6	GSTA2: Mitochondrial gluthathione-S-transferases through gluthothione conjugation or proxide reduction detoxify harmful byproducts	ENSG00000244067
+GSTA4	ROS Defense	6	GSTA4: Mitochondrial gluthathione-S-transferases through gluthothione conjugation or proxide reduction detoxify harmful byproducts	ENSG00000170899
+GSTP1	ROS Defense	11	GSTP1: Mitochondrial gluthathione-S-transferases through gluthothione conjugation or proxide reduction detoxify harmful byproducts	ENSG00000084207
+MPV17L	ROS Defense	16	MPV17L: May have a role in the metabolism of reactive oxygen species	ENSG00000156968
+SCLC25A11	ROS Defense	17	SLC25A11: May be involved in the transport of gluthathione into the mitochondria	ENSG00000108528
+SCLC25A10	ROS Defense	17	SLC25A10: May be involved in the transport of gluthathione into the mitochondria	ENSG00000183048
+GSS	ROS Defense	20	GSS: Catalyzes the formation of gluthathione from glutamylcysteine by combining it with the glycine	ENSG00000100983
+SOD1	ROS Defense	21	SOD1: May be involved in the removal of superoxides in the inter membrane space of mitochondria	ENSG00000142168
 CAT	ROS Defense	NA	catalase activity; heme binding	NA
 GLRX5	ROS Defense	NA	electron carrier activity; protein disulfide oxidoreductase activity	NA
 GPX1	ROS Defense	NA	glutathione peroxidase activity	NA
