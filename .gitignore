@@ -2,4 +2,4 @@
 .Rhistory
 .RData
 
-dist/data/user_uploads/
+dist/data/user_uploads/*
