@@ -852,7 +852,7 @@ function onDocumentMouseClick( event ) {
     
     var selected = $("#groups option:selected").val();
     if (selected == "") {
-        selected = document.getElementById('selected-sample');
+        selected = "selected-sample";
     }
     
     var rect = pcacanvas.getBoundingClientRect();
@@ -3602,6 +3602,39 @@ function pcacompareData(){
         count=1,
         type;
     
+    var json = {};
+    var element = document.getElementsByClassName('group_selection');
+    for (i=0; i<element.length; i++){
+        
+        select = document.getElementById(element[i].id);
+        var selectionLength = select.options.length;
+        
+        if (selectionLength > 0){
+            
+            arr = [];
+            
+            for (j = 0; j < selectionLength; j++) {
+                arr[j] = select.options[j].value;
+            }
+            json[element[i].id] = arr;
+        }  
+        
+    }
+    
+    //Get arrays of selected samples if group's not defined  
+    if (jQuery.isEmptyObject(json)){
+        
+        select = document.getElementById('selected-sample');
+
+        json = [];
+        for (i = 0; i < select.options.length; i++) {
+           json[i] = select.options[i].value;
+        }
+            
+        if (json.length === 0) onError(new Error('Add samples!'));
+        
+    }
+    
     var selected = $("#groups option:selected").val();
     if (selected == "") {
         selected = "selected-sample";
@@ -3625,23 +3658,30 @@ function pcacompareData(){
     for (var i = 0; i < samples.options.length; i++) { 
         samples.options[i].selected = true; 
     } 
-
-    var parameter = $('#'+selected).serialize() + '&filetype=' + type +'&sessionid='+ sessionid;
+    
+    //var parameter = $('#'+selected).serialize() + '&filetype=' + type +'&sessionid='+ sessionid;
+    var parameter = 'jsons=' + JSON.stringify(json) + '&filetype=' + type +'&sessionid='+ sessionid;
+    
     
     //Remove everything on svgs-all div and render the div for PCA plot and the side bar, ie the one for folders
     //This has to be down before the parser since the parser will get info for files and update the folders
     var el = document.getElementById( 'svgs-all' );
     while (el.hasChildNodes()) {el.removeChild(el.firstChild);}
     mainframe.setElement('#svgs-all').renderpca();
-
-    //Pass to parser
-    parserPCA.parse(drawPCA,onError,init,type,parameter,sessionid);
     
-
+    var parent = document.getElementById('pca'); 
+    var div = document.createElement('div');
+    div.setAttribute("align", "center");
+    div.innerHTML ='<img id="loading" src="./img/loading.gif">';
+    parent.appendChild(div);
+    
+    //Pass to parser
+    parserPCA.parse(drawPCA,onError,init,type,parameter,sessionid);   
 }
 
 function drawPCA(data,init,type){
     
+    hideLoading();
     d3.json("main_files/color.json", function(error,pccolor) {
         var attr = [],
             thiscat,
@@ -3689,16 +3729,18 @@ function drawPCA(data,init,type){
             var clicking = function(){parserPCA.parse(drawPCA,onError,"update",type);};
 
             for (key in pccolor){
-                var color = pccolor[key],
-                    barchartname = key + 'barchart',
-                    panelname = key + 'panel';
+                if (prdata[0].hasOwnProperty(key)){
+                    var color = pccolor[key],
+                        barchartname = key + 'barchart',
+                        panelname = key + 'panel';
 
-                PCBC.draw(prdata,color,key,barchartname,panelname);
+                    PCBC.draw(prdata,color,key,barchartname,panelname);
 
-                var d3panelname = '#'+panelname;
+                    var d3panelname = '#'+panelname;
 
-                d3.select(d3panelname)
-                    .on({"click": clicking});
+                    d3.select(d3panelname)
+                        .on({"click": clicking});
+                }
             }
 
             //JQuery that controls the behaviour of Barchart

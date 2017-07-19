@@ -1,4 +1,4 @@
-sampleID	Cancer_type	Gender	Race	Pathologic_stage	Pathologic_T	Vital_status	Age_at_diagnosis	Family_history	Cancer_first_degree_relatives	Hepato_carcer_factor	BRCA_cancer_factor_3neg	BRCA_cancer_factor_menopause	LUAD_cancer_factor
+sampleID	cancer_type	gender	Race	stage	Pathologic_T	vital	Age_at_diagnosis	Family_history	Cancer_first_degree_relatives	Hepato_carcer_factor	BRCA_cancer_factor_3neg	BRCA_cancer_factor_menopause	LUAD_cancer_factor
 1	TCGA-E2-A1BC	BRCA	FEMALE	[NA]	Stage I	T1c	Alive	63	[NA]	[NA]	[NA]	Others	Post (prior bilateral ovariectomy OR >12 mo since LMP with no prior hysterectomy)	[NA]
 2	TCGA-DD-A39Z	LIHC	FEMALE	[NA]	Stage II	T2	Dead	43	YES	1	Alcohol consumption	[NA]	[NA]	[NA]
 3	TCGA-DD-A3A1	LIHC	MALE	[NA]	Stage III	T3b	Dead	65	YES	1	No History of Primary Risk Factors	[NA]	[NA]	[NA]

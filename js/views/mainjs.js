@@ -11,6 +11,9 @@ $('input[type=radio][name=analysis]').change(function(e){
     if (this.value == "scatterplotanalysis"){
         flag = "SP";
         $( ".group-div" ).css('display','');
+    }else if (this.value == "pcanalysis"){
+        flag = "PCA";
+        $( ".group-div" ).css('display','');
     }else{
         flag = "others";
         $( ".group-div" ).css('display','none');
@@ -215,7 +218,11 @@ $("#removegroup").click(function(){
     
     updateGroups();
 })
-    
+
+$('.selectpicker').selectpicker({
+    dropupAuto: false
+});
+
 });
 
 

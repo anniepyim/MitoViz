@@ -239,7 +239,7 @@ function onDocumentMouseClick( event ) {
     
     var selected = $("#groups option:selected").val();
     if (selected == "") {
-        selected = document.getElementById('selected-sample');
+        selected = "selected-sample";
     }
     
     var rect = pcacanvas.getBoundingClientRect();
