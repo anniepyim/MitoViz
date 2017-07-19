@@ -1,8 +1,0 @@
-gene	process	chr	function	ENSG
-ATP5F1	Electron Transport Chain	NA	hydrogen-exporting ATPase activity; phosphorylative mechanism; proton-transporting ATP synthase activity; rotational mechanism	NA
-DAP3	Translation	NA	structural constituent of ribosome	NA
-COX20	Electron Transport Chain	NA		NA
-ACSL5	Fatty Acid Biosynthesis and Elongation	NA	long-chain fatty acid-CoA ligase activity	NA
-GLRX5	ROS Defense	NA	electron carrier activity; protein disulfide oxidoreductase activity	NA
-AADAT	Amino Acid Metabolism	NA	catalytic activity; pyridoxal phosphate binding	NA
-AASS	Amino Acid Metabolism	NA	saccharopine dehydrogenase (NAD+; L-lysine-forming) activity	NA
