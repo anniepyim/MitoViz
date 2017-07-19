@@ -40,7 +40,7 @@ if($compare){
         <link href="./css/style.css" rel="stylesheet" >
         <script src="./js/jquery-1.12.4.min.js"></script>
         <script src="./js/bootstrap.min.js"></script>
-        <script src="./files/bootstrap-select.js"></script>
+        <script src="./js/bootstrap-select.js"></script>
         <script src="../js/views/mainjs.js"></script>
         <link rel="icon" type="image/png" href="img/logos/favicon.png">
     </head>

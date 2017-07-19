@@ -193,8 +193,10 @@ function drawPCA(data,init,type){
         pccolor = pccolor[type];
         
         for (var key in pccolor){
-            pccolor[key] = d3.scale.ordinal().range(pccolor[key]);
-            attr.push(key);
+            if (data[0].hasOwnProperty(key)){
+                pccolor[key] = d3.scale.ordinal().range(pccolor[key]);
+                attr.push(key);   
+            }
         }
 
         //Define this cat
