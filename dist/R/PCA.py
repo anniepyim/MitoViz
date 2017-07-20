@@ -21,9 +21,6 @@ sessionid = form.getvalue('sessionid')
 data = json.loads(jsons)
 isGroup = isinstance(data, dict)
 
-with open('test.json', 'w') as fp:
-    fp.write(jsons)
-
 genefunc = pd.read_csv("../main_files/human/gene_function.txt",sep="\t")
 genefunc = genefunc[['gene','process']]
 
