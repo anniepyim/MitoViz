@@ -150,7 +150,7 @@ function pcacompareData(){
     
     //Check for error
     if (sametype === false) onError(new Error("Please select samples from the same project"));
-    if ($('#'+selected).find('option').length < 3) onError(new Error("Please add at least 3 samples"));
+    //if ($('#'+selected).find('option').length < 3) onError(new Error("Please add at least 3 samples"));
 
     //Get samples
     var samples = document.getElementById(selected);
@@ -292,7 +292,7 @@ function heatmapcompareData(){
     
     //Check for error
    // if (type != "TCGA") onError(new Error("Please select samples only from the TCGA project"));
-    if ($('#'+selected).find('option').length < 3) onError(new Error("Please add at least 3 samples"));
+    //if ($('#'+selected).find('option').length < 3) onError(new Error("Please add at least 3 samples"));
     if (sametype === false) onError(new Error("Please select samples from the same project"));
 
     //Get samples
