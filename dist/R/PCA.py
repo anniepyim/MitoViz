@@ -28,6 +28,8 @@ if filetype == "aneuploidy":
     info = pd.read_csv("aneuploidy-data.txt",sep="\t")
 elif filetype == "TCGA":
     info = pd.read_csv("tcga-data.txt",sep="\t")
+else:
+    info = ""
 
 main = pd.DataFrame()
 grouping = pd.DataFrame()
@@ -100,7 +102,8 @@ pcadf = pd.DataFrame(X,columns=['PC1','PC2','PC3'],index=y).reset_index()
 pcadf.rename(columns={'index': "sampleID"}, inplace=True)
 
 pcadf = pd.merge(pcadf,grouping,on='sampleID',how='inner')
-pcadf = pd.merge(pcadf,info,on='sampleID',how='inner')
+if info != "":
+    pcadf = pd.merge(pcadf,info,on='sampleID',how='inner')
 
 pcadict = pcadf.to_dict(orient='records')
 pcadf = pcadf.to_json(orient='records')
@@ -128,8 +131,9 @@ for proc in mitoproc:
         pcadf2 = pd.DataFrame(X,columns=['PC1','PC2','PC3'],index=y).reset_index()
         pcadf2.rename(columns={'index': "sampleID"}, inplace=True)
 
-        pcadf2 = pd.merge(pcadf2,info,on='sampleID',how='inner')
         pcadf2 = pd.merge(pcadf2,grouping,on='sampleID',how='inner')
+        if info != "":
+            pcadf2 = pd.merge(pcadf2,info,on='sampleID',how='inner')
 
         pcadict2 = pcadf2.to_dict(orient='records')
         with open('../data/user_uploads/'+''.join(sessionid)+'/PCA/'+''.join(proc)+'-pca.json', 'w') as fp:
