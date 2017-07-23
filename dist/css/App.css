@@ -187,7 +187,7 @@ input[type=checkbox] {
 }
 
 #scatterplot {
-    display: inline-block
+    /*display: inline-block*/
 }
 
 .axis path,
@@ -198,7 +198,7 @@ input[type=checkbox] {
 }
 
 #barchart {
-    display: inline-block
+    /*display: inline-block*/
 }
 
 #heatmap{
