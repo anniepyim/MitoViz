@@ -106,8 +106,8 @@ SP.update = function (jsondata, nfunc, ncolor,colorrange) {
     var ymax = Math.abs(d3.max(data, function (d) {
         return d.log2;
     }));
-    //var yabs = Math.max(ymin, ymax);
-    var yabs = 5;
+    var yabs = Math.max(ymin, ymax);
+    if (yabs > 5) yabs = 5;
     y.domain([yabs * -1, yabs]);
     //y.domain([-5,5])
 
