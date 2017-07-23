@@ -1,7 +1,7 @@
 {
     "TCGA" : {
         "cancer_type" : ["#ff004d","#ffff66","#a4ff52","#0067c6","#7d71e5"], 
-        "stage" : ["#a4ff52","#ffff66","#ff751a","#ff004d","#a7a5a5"],
+        "stage" : ["#a7a5a5","#a4ff52","#ffff66","#ff751a","#ff004d"],
         "gender" : ["#ff0074","#52a4ff"],
         "vital" : ["#33ff88","#a10000","#a7a5a5"],
         "group" : ["#ff004d","#a4ff52","#0067c6","#ffff66","#7d71e5","#ff751a"]
