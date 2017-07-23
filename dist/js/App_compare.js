@@ -1427,7 +1427,7 @@ SP.update = function (jsondata, nfunc, ncolor,colorrange) {
         return d.log2;
     }));
     var yabs = Math.max(ymin, ymax);
-    if (yabs > 5) yabs = 5;
+    if (yabs > 6) yabs = 6;
     y.domain([yabs * -1, yabs]);
     //y.domain([-5,5])
 
