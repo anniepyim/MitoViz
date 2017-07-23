@@ -7,12 +7,14 @@ import pandas as pd
 
 import collections
 import pandas as pd
+
+import matplotlib
+matplotlib.use('Agg')
+
 import mpld3
 import seaborn as sns
-
-from mpld3 import plugins
-import matplotlib
 from mpld3 import utils
+from mpld3 import plugins
 
 ## re for json files
 FNRE = re.compile("\S+\.json$")
