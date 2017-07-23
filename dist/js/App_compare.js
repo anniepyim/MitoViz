@@ -3342,7 +3342,7 @@ function parse(drawPCA,onError,init,type,parameter,sessionid){
             type: "POST",
             dataType: "json",    
             success: function (result) {
-
+																console.log(result)
                 //Retrieve files result from the python+R script runs and 
                 var targeturl = './data/user_uploads/'+sessionid+'/PCA/';
                 var folderurl = '.'+targeturl;
