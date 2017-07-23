@@ -3225,6 +3225,36 @@ if(init == "all"){
                 url = "./data/user_uploads/"+sessionid+"/heatmap/Apoptosis.json";
                 drawHeatmap(url);
                 
+																//Retrieve files result from the python+R script runs and 
+																var targeturl = './data/user_uploads/'+sessionid+'/heatmap/';
+																var folderurl = '.'+targeturl;
+																var htmltext = "",
+																value = "",
+																text = "";
+
+																jQuery.ajax({
+																				type: "POST",
+																				url: "./php/getdirectory.php",
+																				dataType: "json",
+																				data: { folderurl : folderurl },
+																		success: function(data){
+																						$('#heatmapfolders').empty();
+																						$.each(data, function(i,filename) {
+																								value = targeturl+filename;
+																								text = filename.split(".")[0];
+																								htmltext = htmltext+'<option value=\"'+value+'\">'+text+'</option>';
+
+																				});
+
+																				$("#heatmapfolders").html(htmltext);
+																				$('#heatmapfolders').selectpicker('refresh');
+																				$('#heatmapfolders').find('[value="./data/user_uploads/'+sessionid+'/heatmap/Apoptosis.json"]').prop('selected',true);
+																				$('#heatmapfolders').selectpicker('refresh');
+																		},
+																				error: function(e){
+																								console.log(e);
+																				}
+																});
                 
                 jQuery.ajax({
                     url: "./R/heatmap2.py", 

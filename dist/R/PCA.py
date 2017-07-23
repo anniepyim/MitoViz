@@ -16,7 +16,7 @@ sessionid = form.getvalue('sessionid')
 
 #data = ["test/HCT116-5-4-p.json","test/HCT116-5-4.json","test/HCT116-8-3-c3.json","test/HCT116-8-3-c4.json"]
 #filetype = "aneuploidy"
-#sessionid= "1fc40dfda008941e57491cf5f8d4f8ba"
+#sessionid= "63b63967735f3518d5b6e001515e7c6a"
 
 data = json.loads(jsons)
 isGroup = isinstance(data, dict)
@@ -29,7 +29,7 @@ if filetype == "aneuploidy":
 elif filetype == "TCGA":
     info = pd.read_csv("tcga-data.txt",sep="\t")
 else:
-    info = ""
+    info = pd.DataFrame()
 
 main = pd.DataFrame()
 grouping = pd.DataFrame()
@@ -38,7 +38,7 @@ index=0
 if (not isGroup):
     for jsonfile in data:
         thefile = "../"+jsonfile
-        df = pd.read_json("../"+jsonfile)
+        df = pd.read_json(thefile)
         samplename = df['sampleID'][0]
         df = df[['gene','log2']]
         df.drop_duplicates(["gene"],inplace=True)
@@ -102,7 +102,7 @@ pcadf = pd.DataFrame(X,columns=['PC1','PC2','PC3'],index=y).reset_index()
 pcadf.rename(columns={'index': "sampleID"}, inplace=True)
 
 pcadf = pd.merge(pcadf,grouping,on='sampleID',how='inner')
-if info != "":
+if info.empty == False:
     pcadf = pd.merge(pcadf,info,on='sampleID',how='inner')
 
 pcadict = pcadf.to_dict(orient='records')
@@ -132,7 +132,7 @@ for proc in mitoproc:
         pcadf2.rename(columns={'index': "sampleID"}, inplace=True)
 
         pcadf2 = pd.merge(pcadf2,grouping,on='sampleID',how='inner')
-        if info != "":
+        if info.empty == False:
             pcadf2 = pd.merge(pcadf2,info,on='sampleID',how='inner')
 
         pcadict2 = pcadf2.to_dict(orient='records')
