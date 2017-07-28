@@ -11,9 +11,9 @@ App.init = function(options){
     //Require and render the mainframe
     //ie the folders for selection, therefore need to provide session id as an argument to render the folder for user upload
     //also the div for svgs, which is still empty
-    var mainframe = require('./views/mainframe.js');
-    App.mainframe = new mainframe();
-    App.mainframe.setElement('#content').render(id);
+    //var mainframe = require('./views/mainframe.js');
+    //App.mainframe = new mainframe();
+    //App.mainframe.setElement('#content').render(id);
     
     //Require mainjs.js, which controls the behaviours of the selection folders
     //var dataSelect = require('./views/mainjs.js');

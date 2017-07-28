@@ -29,9 +29,9 @@ App.init = function(options){
     //Require and render the mainframe
     //ie the folders for selection, therefore need to provide session id as an argument to render the folder for user upload
     //also the div for svgs, which is still empty
-    var mainframe = require('./views/mainframe.js');
-    App.mainframe = new mainframe();
-    App.mainframe.setElement('#content').render(id);
+    //var mainframe = require('./views/mainframe.js');
+    //App.mainframe = new mainframe();
+    //App.mainframe.setElement('#content').render(id);
     
     //Require mainjs.js, which controls the behaviours of the selection folders
     //var dataSelect = require('./views/mainjs.js');
@@ -45,7 +45,7 @@ App.init = function(options){
 
 //Export as App so it could be App.init could be called
 module.exports = App;
-},{"./views/mainframe.js":9,"./views/vis.js":14}],3:[function(require,module,exports){
+},{"./views/vis.js":14}],3:[function(require,module,exports){
 var d3 = require('d3');
 var colorbrewer = require('colorbrewer');
 var SP = require('./scatterplot.js');
@@ -3342,6 +3342,7 @@ function parse(drawPCA,onError,init,type,parameter,sessionid){
             type: "POST",
             dataType: "json",    
             success: function (result) {
+
                 //Retrieve files result from the python+R script runs and 
                 var targeturl = './data/user_uploads/'+sessionid+'/PCA/';
                 var folderurl = '.'+targeturl;
