@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 import cgi, os, re, sys
-import cgitb;cgitb.enable()
+#import cgitb;cgitb.enable()
 import json
 import pandas as pd
 
@@ -12,9 +12,10 @@ import matplotlib
 matplotlib.use('Agg')
 
 import mpld3
-import seaborn as sns
 from mpld3 import utils
 from mpld3 import plugins
+import seaborn_hm
+#import seaborn as sns
 
 ## re for json files
 FNRE = re.compile("\S+\.json$")
@@ -92,7 +93,7 @@ for process in processes:
     if (df.shape[0] >= 3):
     
         cbar_kws = { 'vmin' : -2, 'vmax':2 }
-        cm= sns.clustermap(df,mask=mask,**cbar_kws)
+        cm= seaborn_hm.clustermap(df,mask=mask,**cbar_kws)
         
         p = cm.heatmap.mesh
         df2 = cm.data2d

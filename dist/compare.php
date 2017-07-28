@@ -1,16 +1,13 @@
 <?php 
-if ($_COOKIE['mitoviz_user_upload']!='') { 
+if (isset($_COOKIE['mitoviz_user_upload'])) { 
         session_id($_COOKIE['mitoviz_user_upload']);
-}
-
-if (isset($_GET["muu"])) {
-        session_id($_GET["muu"]);
 }
 
 session_start();
 
 $id = session_id();
-    
+setcookie('mitoviz_user_upload',$id,time() + (86400 * 7));
+
 $PCA_path = "data/user_uploads/".$id."/PCA/";
 if (!is_dir($PCA_path)){
     mkdir($PCA_path, 0777, true);
@@ -41,7 +38,7 @@ if($compare){
         <script src="./js/jquery-1.12.4.min.js"></script>
         <script src="./js/bootstrap.min.js"></script>
         <script src="./js/bootstrap-select.js"></script>
-        <script src="../js/views/mainjs.js"></script>
+        <script src="../js/mainjs.js"></script>
         <link rel="icon" type="image/png" href="img/logos/favicon.png">
     </head>
     

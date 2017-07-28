@@ -14,9 +14,9 @@ jsons = form.getvalue('jsons')
 filetype = form.getvalue('filetype')
 sessionid = form.getvalue('sessionid')
 
-#data = ["test/HCT116-5-4-p.json","test/HCT116-5-4.json","test/HCT116-8-3-c3.json","test/HCT116-8-3-c4.json"]
-#filetype = "aneuploidy"
-#sessionid= "63b63967735f3518d5b6e001515e7c6a"
+#data = ["data/TCGA/BRCA/TCGA-A7-A0CE.json","data/TCGA/BRCA/TCGA-A7-A0CH.json","data/TCGA/BRCA/TCGA-A7-A0D9.json","data/TCGA/BRCA/TCGA-A7-A0DB.json"]
+#filetype = "TCGA"
+#sessionid= "9a6d86b0446a7c96b968cb99a6866c5a"
 
 data = json.loads(jsons)
 isGroup = isinstance(data, dict)

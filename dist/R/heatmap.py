@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 import cgi, os, re, sys
-import cgitb;cgitb.enable()
+#import cgitb;cgitb.enable()
 import json
 import pandas as pd
 
@@ -12,9 +12,10 @@ import matplotlib
 matplotlib.use('Agg')
 
 import mpld3
-import seaborn as sns
 from mpld3 import utils
 from mpld3 import plugins
+import seaborn_hm
+#import seaborn as sns
 
 ## re for json files
 FNRE = re.compile("\S+\.json$")
@@ -32,7 +33,7 @@ for index, fn in enumerate(json_files):
     json_files[index] = "."+fn
 
 #json_files = ["test/HCT116-5-4-p.json","test/HCT116-5-4.json","test/HCT116-8-3-c3.json","test/HCT116-8-3-c4.json"]
-#sessionid= "eb48b23fd6473489433af976c9c11c9c"
+#sessionid= "test"
 
 class PluginBase(object):
     def get_dict(self):
@@ -128,7 +129,7 @@ for process in processes:
     if (df.shape[0] >= 3):
     
         cbar_kws = { 'vmin' : -2, 'vmax':2 }
-        cm= sns.clustermap(df,mask=mask,**cbar_kws)
+        cm= seaborn_hm.clustermap(df,mask=mask,**cbar_kws)
         
         p = cm.heatmap.mesh
         df2 = cm.data2d
